@@ -1,6 +1,6 @@
 ---
 layout: default
-title: プロジェクト・タイトル
+title: index.mdから作ってます！
 ---
  
 プロジェクト・タイトル
