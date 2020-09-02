@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<title>{{ page.title }} | Think Twice</title>
+	<title>{% if page.title != 'Top' %}{{ page.title }} | {% endif %}Think Twice</title>
 	<link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
@@ -10,7 +10,10 @@
 {% include header.html %}
 {% include navigation.html %}
 
-<h1>{{ page.title }}</h1>
+{% if page.title != 'Home' %}
+	<h1>{{ page.title }}</h1>
+{% endif %}
+
 <div class="update_date">
 {% if page.created %}作成日 {{ page.created }}{% endif %}{% if page.updated %}/ 更新日 {{ page.updated }}{% endif %}
 </div>

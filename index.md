@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Think Twice
+title: Home
 ---
 
 ## これは何？
