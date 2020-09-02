@@ -1,3 +1,5 @@
+- name: Home
+  link: /
 - name: Programming
   link: /programming.html
 - name: About

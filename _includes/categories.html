@@ -1,0 +1,8 @@
+<nav>
+    {% for category in site.data.categories %}
+        <a href="{{ category.link }}"
+        {% if page.url == category.link or page.category == category.name %}class="current"{% endif %}
+        >{{category.name}}</a>
+    {% endfor %}
+</nav>
+

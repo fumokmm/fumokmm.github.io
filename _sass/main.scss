@@ -1,21 +1,35 @@
+// 全体
+body {
+    background-color: #e6eae3; // 灰黄緑 https://www.colordic.org/colorscheme/2364
+    color: #323331;
+}
+
 .current {
-    color: green;
+    background-color: #d0ebbc;
 }
 .update_date {
     text-align: right;
+    font-style: italic;
+    font-size: small;
 }
 .header {
     font-size: 20pt;
     border-bottom-width: 1px;
     border-bottom-color: black;
     border-bottom-style: solid;
+    margin-bottom: 5px;
 }
 .footer {
     border-top-width: 1px;
     border-top-color: black;
     border-top-style: solid;
+    margin-top: 20px;
 }
 a.simple_link {
     text-decoration: none;
     color: black;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
 }

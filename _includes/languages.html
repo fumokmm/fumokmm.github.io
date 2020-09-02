@@ -1,0 +1,7 @@
+<div>
+    {% for lang in site.data.programming.languages %}
+        <a href="{{ lang.link }}"
+        {% if page.url == lang.link or page.language == lang.name %}class="current"{% endif %}
+        >{{lang.name}}</a>
+    {% endfor %}
+</div>

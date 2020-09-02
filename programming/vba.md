@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: programming
+category: Programming
+language: VBA
 title: VBA
 created: 2020-09-02
 updated: 2020-09-02
@@ -8,7 +10,7 @@ updated: 2020-09-02
 こちらはVBAのメモになります。
 
 <ul>
-    {% for category in site.data.programming.vba.categories %}
-    {% comment %}<li><a href="{{ category.link }}">{{ category.name }}</a></li>{% endcomment %}
+    {% for topic in site.data.programming.vba.topics %}
+    <li><a href="{{ topic.link }}">{{ topic.name }}</a></li>
     {% endfor %}
 </ul>

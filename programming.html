@@ -1,9 +1,14 @@
 ---
 layout: default
-title: プログラミング言語
+title: Programming
 ---
-<nav>
-    {% for item in site.data.programming.programming_languages %}
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{item.name}}</a>
+<p>こちらはプログラミング関連のメモになります。</p>
+
+<table>
+    {% for lang in site.data.programming.languages %}
+    <tr>
+        <td><a href="{{ lang.link }}">{{ lang.name }}</a></td>
+        <td>{{ lang.description }}</td>
+    </tr>
     {% endfor %}
-</nav>
+</table>

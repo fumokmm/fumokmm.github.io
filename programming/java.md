@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: programming
+category: Programming
+language: Java
 title: Java
 ---
 

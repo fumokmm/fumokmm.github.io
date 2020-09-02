@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title != 'Top' %}{{ page.title }} | {% endif %}Think Twice</title>
+	<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+{% include header.html %}
+{% include categories.html %}
+
+{{content}}
+
+{% include footer.html %}
+
+</body>
+</html>

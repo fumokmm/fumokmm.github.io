@@ -1,0 +1,9 @@
+- name: Java
+  link: /programming/java.html
+  description: プログラミング言語Javaについてのメモ
+- name: VBA
+  link: /programming/vba.html
+  description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ
+- name: Go
+  link: /programming/go.html
+  description: Google社が開発したプログラミング言語Goについてのメモ
