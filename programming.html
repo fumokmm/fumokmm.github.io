@@ -1,0 +1,9 @@
+---
+layout: default
+title: プログラミング言語
+---
+<nav>
+    {% for item in site.data.programming.programming_languages %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{item.name}}</a>
+    {% endfor %}
+</nav>
