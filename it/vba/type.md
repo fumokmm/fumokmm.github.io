@@ -11,31 +11,45 @@ VBAで利用可能な型は以下があります。
         <th>分類</th>
         <th>名称</th>
         <th>データ型</th>
+        <th>未初期化状態の値</th>
+        <th>説明</th>
     </tr>
     <tr>
         <td rowspan="6">数値</td>
         <td>バイト型</td>
         <td>Byte</td>
+        <td>0</td>
+        <td>1Byteで表せる正の整数値</td>
     </tr>
     <tr>
         <td>整数型</td>
         <td>Integer</td>
+        <td>0</td>
+        <td>2Byteで表せる整数値</td>
     </tr>
     <tr>
         <td>長整数型</td>
         <td>Long</td>
+        <td>0</td>
+        <td>4Byteで表せる整数値</td>
     </tr>
     <tr>
         <td>単精度浮動小数点型</td>
         <td>Single</td>
+        <td>0</td>
+        <td>4Byteで表せる浮動小数点値</td>
     </tr>
     <tr>
         <td>倍精度浮動小数点型</td>
         <td>Double</td>
+        <td>0</td>
+        <td>8Byteで表せる浮動小数点値</td>
     </tr>
     <tr>
         <td>通貨型</td>
         <td>Currency</td>
+        <td>0</td>
+        <td>8Byteで表せる固定小数点値</td>
     </tr>
     <tr>
         <td>ブール値</td>
