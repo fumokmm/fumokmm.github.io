@@ -2,7 +2,7 @@
 layout: default
 title: About
 created: 2020-09-02
-created: 2020-09-03
+updated: 2020-09-03
 ---
 
 ## これは何？
