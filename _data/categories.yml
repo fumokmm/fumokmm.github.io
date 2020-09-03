@@ -1,6 +1,8 @@
 - name: Home
   link: /
 - name: Programming
-  link: /programming.html
+  link: /programming/
+- name: Database
+  link: /database/
 - name: About
-  link: /about.html
+  link: /about/

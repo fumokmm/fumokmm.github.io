@@ -1,7 +1,7 @@
 <div>
-    {% for lang in site.data.programming.languages %}
-        <a href="{{ lang.link }}"
-        {% if page.url == lang.link or page.language == lang.name %}class="current"{% endif %}
-        >{{lang.name}}</a>
+    {% for item in site.data.programming.languages %}
+        <a href="{{ item.link }}"
+        {% if page.url == item.link or page.language == item.name %}class="current"{% endif %}
+        >{{item.name}}</a>
     {% endfor %}
 </div>

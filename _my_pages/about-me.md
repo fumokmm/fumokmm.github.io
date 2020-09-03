@@ -1,0 +1,4 @@
+---
+permalink: /aboutme
+---
+アバウトミーなページ5

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: About
 created: 2020-09-02
 updated: 2020-09-03

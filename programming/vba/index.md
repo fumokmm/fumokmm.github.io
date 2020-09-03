@@ -1,8 +1,6 @@
 ---
-layout: programming
-category: Programming
 language: VBA
-title: VBA
+title: VBAのメモ
 created: 2020-09-02
 updated: 2020-09-02
 ---

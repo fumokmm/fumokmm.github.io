@@ -1,8 +1,6 @@
 ---
-layout: programming
-category: Programming
 language: Go
-title: Go
+title: Goのメモ
 ---
 
 こちらはGoのメモになります。

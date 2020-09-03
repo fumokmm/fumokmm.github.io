@@ -1,6 +1,4 @@
 ---
-layout: programming
-category: Programming
 language: VBA
 title: VBAの型
 created: 2020-09-02

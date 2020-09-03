@@ -1,0 +1,7 @@
+<div>
+    {% for item in site.data.database.databases %}
+        <a href="{{ item.link }}"
+        {% if page.url == item.link or page.database == item.name %}class="current"{% endif %}
+        >{{item.name}}</a>
+    {% endfor %}
+</div>

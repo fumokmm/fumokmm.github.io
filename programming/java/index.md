@@ -1,8 +1,6 @@
 ---
-layout: programming
-category: Programming
 language: Java
-title: Java
+title: Javaのメモ
 ---
 
 こちらはJavaのメモになります。
