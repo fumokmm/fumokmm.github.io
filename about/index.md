@@ -1,7 +1,7 @@
 ---
-title: About
+title: Think Twiceについて
 created: 2020-09-02
-updated: 2020-09-03
+updated: 2020-09-04
 ---
 
 ## これは何？
