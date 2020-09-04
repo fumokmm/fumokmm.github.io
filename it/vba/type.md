@@ -55,33 +55,47 @@ VBAで利用可能な型は以下があります。
         <td>ブール値</td>
         <td>ブール型</td>
         <td>Boolean</td>
+        <td>False</td>
+        <td>TrueまたはFalseのどちらかの値を取るデータ型</td>
     </tr>
     <tr>
         <td>日付</td>
         <td>日付型</td>
         <td>Date</td>
+        <td>1899年12月30日0時0分0秒</td>
+        <td>日付と時刻</td>
     </tr>
     <tr>
         <td>文字列</td>
         <td>文字列型</td>
         <td>String</td>
+        <td>vbNullString</td>
+        <td>文字列</td>
     </tr>
     <tr>
         <td rowspan="2">オブジェクト</td>
         <td>オブジェクト型</td>
         <td>Object</td>
+        <td>Nothing</td>
+        <td>任意のオブジェクト参照を表すデータ型</td>
     </tr>
     <tr>
         <td>固有オブジェクト型</td>
         <td>Range / Worksheet など</td>
+        <td>Nothing</td>
+        <td>特定の種類のオブジェクト参照を表すデータ型</td>
     </tr>
     <tr>
         <td colspan="2">ユーザー定義型</td>
         <td>ユーザーが定義したデータ型</td>
+        <td>要素ごとの未初期化状態の値</td>
+        <td>Typeステートメントを仕様して定義される任意のデータ型</td>
     </tr>
     <tr>
         <td colspan="2">バリアント型</td>
         <td>Variant</td>
+        <td>Empty</td>
+        <td>あらゆる種類の値を扱う特殊なデータ型</td>
     </tr>
 </table>
 
