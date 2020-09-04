@@ -1,6 +1,6 @@
 - name: Oracle
-  link: /database/oracle/
+  link: /it/oracle/
   description: Oracle社が作成しているデータベースOracleについてのメモ
 - name: SQL Server
-  link: /database/sqlserver/
+  link: /it/sqlserver/
   description: Microsoftが作成しているデータベースSQL Serverについてのメモ

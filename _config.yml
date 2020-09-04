@@ -6,13 +6,7 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "programming"
+      path: "it"
     values:
-      layout: "programming"
-      category: "Programming"
-  -
-    scope:
-      path: "database"
-    values:
-      layout: "database"
-      category: "Database"
+      layout: "it"
+      category: "IT"

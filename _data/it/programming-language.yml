@@ -1,9 +1,9 @@
 - name: Java
-  link: /programming/java/
+  link: /it/java/
   description: プログラミング言語Javaについてのメモ
 - name: VBA
-  link: /programming/vba/
+  link: /it/vba/
   description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ
 - name: Go
-  link: /programming/go/
+  link: /it/go/
   description: Google社が開発したプログラミング言語Goについてのメモ

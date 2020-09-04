@@ -1,7 +1,0 @@
-<div>
-    {% for item in site.data.programming.languages %}
-        <a href="{{ item.link }}"
-        {% if page.url == item.link or page.language == item.name %}class="current"{% endif %}
-        >{{item.name}}</a>
-    {% endfor %}
-</div>
