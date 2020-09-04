@@ -1,5 +1,4 @@
 ---
-language: Java
 title: Javaのメモ
 ---
 

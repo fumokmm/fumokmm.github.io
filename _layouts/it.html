@@ -1,8 +1,16 @@
 ---
-layout: default
+layout: base
 ---
-{{content}}
+{% assign category = site.data.category | find: 'name', page.category %}
+{% assign sub_category = site.data.it.sub_category | find: 'name', page.sub_category %}
+<div>
+    <a href="{{ category.link }}">技術系メモ</a>
+    {% if sub_category.link != page.url %}
+    | <a href="{{ sub_category.link }}">{{ sub_category.name }}のメモ</a>
+    {% endif %}
+</div>
 
-<p>
-    <a href="/it/">技術系メモ</a>へ戻る
-</p>
+{% include updated.html %}
+{% include main-title.html %}
+
+{{content}}

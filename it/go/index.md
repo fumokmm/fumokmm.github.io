@@ -1,5 +1,4 @@
 ---
-language: Go
 title: Goのメモ
 ---
 

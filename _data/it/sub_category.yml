@@ -1,0 +1,20 @@
+- name: Go
+  link: /it/go/
+  type: programming_language
+  description: Google社が開発したプログラミング言語Goについてのメモ
+- name: Java
+  link: /it/java/
+  type: programming_language
+  description: プログラミング言語Javaについてのメモ
+- name: Oracle
+  link: /it/oracle/
+  type: database
+  description: Oracle社が作成しているデータベースOracleについてのメモ
+- name: SQL Server
+  link: /it/sqlserver/
+  type: database
+  description: Microsoftが作成しているデータベースSQL Serverについてのメモ
+- name: VBA
+  link: /it/vba/
+  type: programming_language
+  description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ

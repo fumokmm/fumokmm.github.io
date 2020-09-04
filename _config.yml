@@ -10,3 +10,28 @@ defaults:
     values:
       layout: "it"
       category: "IT"
+  -
+    scope:
+      path: "it/go"
+    values:
+      sub_category: "Go"
+  -
+    scope:
+      path: "it/java"
+    values:
+      sub_category: "Java"
+  -
+    scope:
+      path: "it/oracle"
+    values:
+      sub_category: "Oracle"
+  -
+    scope:
+      path: "it/sqlserver"
+    values:
+      sub_category: "SQL Server"
+  -
+    scope:
+      path: "it/vba"
+    values:
+      sub_category: "VBA"

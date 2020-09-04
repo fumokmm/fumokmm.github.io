@@ -1,5 +1,4 @@
 ---
-database: Oracle
 title: Oracleのメモ
 ---
 

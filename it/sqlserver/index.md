@@ -1,5 +1,4 @@
 ---
-database: SQL Server
 title: SQL Serverのメモ
 ---
 

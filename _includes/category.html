@@ -3,6 +3,7 @@
         <a href="{{ item.link }}"
         {% if page.url == item.link or page.category == item.name %}class="current"{% endif %}
         >{{item.name}}</a>
+        {% if item.name != 'About' %} | {% endif %}
     {% endfor %}
 </nav>
 

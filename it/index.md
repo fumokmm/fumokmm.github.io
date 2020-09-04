@@ -2,13 +2,11 @@
 layout: default
 title: 技術系メモ
 ---
-## こちらは技術系メモになります
-
-
-### こちらはプログラミング関連のメモになります
+## こちらはプログラミング関連のメモになります
 
 <table>
-    {% for item in site.data.it.programming-language %}
+    {% assign languages = site.data.it.sub_category | where: 'type', 'programming_language' %}
+    {% for item in languages %}
     <tr>
         <td><a href="{{ item.link }}">{{ item.name }}</a></td>
         <td>{{ item.description }}</td>
@@ -19,7 +17,8 @@ title: 技術系メモ
 ## こちらはデータベース関連のメモになります
 
 <table>
-    {% for item in site.data.it.database %}
+    {% assign databases = site.data.it.sub_category | where: 'type', 'database' %}
+    {% for item in databases %}
     <tr>
         <td><a href="{{ item.link }}">{{ item.name }}</a></td>
         <td>{{ item.description }}</td>
