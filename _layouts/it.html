@@ -1,8 +1,8 @@
 ---
 layout: base
 ---
-{% assign category = site.data.category | find: 'name', page.category %}
-{% assign sub_category = site.data.it.sub_category | find: 'name', page.sub_category %}
+{% assign category = site.data.category | where: 'name', page.category | first %}
+{% assign sub_category = site.data.it.sub_category | where: 'name', page.sub_category | first %}
 <div>
     <a href="{{ category.link }}">技術系メモ</a>
     {% if sub_category.link != page.url %}
