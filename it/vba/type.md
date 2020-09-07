@@ -1,5 +1,4 @@
 ---
-language: VBA
 title: VBAの型
 created: 2020-09-02
 updated: 2020-09-02

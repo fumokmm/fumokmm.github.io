@@ -1,3 +1,7 @@
+- name: Access
+  link: /it/access/
+  type: database
+  description: Microsoft社が開発したOfficeツールの一つ。簡易データベース機能を備える
 - name: Go
   link: /it/go/
   type: programming_language

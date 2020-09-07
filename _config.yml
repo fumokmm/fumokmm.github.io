@@ -12,6 +12,11 @@ defaults:
       category: "IT"
   -
     scope:
+      path: "it/access"
+    values:
+      sub_category: "Access"
+  -
+    scope:
       path: "it/go"
     values:
       sub_category: "Go"

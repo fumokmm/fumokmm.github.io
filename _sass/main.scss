@@ -44,10 +44,11 @@ table, tr, th, td {
     overflow: auto;
     font-family: Consolas, 'Meiryo UI', 'Courier New', Monaco, monospace;
     //font-size: 10.5pt;
-    .em {
+    em {
+        font-style: normal;
         color: #f88;
     }
-    .cm {
-        color: #888;
-    }
+    //cm {
+    //    color: #888;
+    //}
 }
