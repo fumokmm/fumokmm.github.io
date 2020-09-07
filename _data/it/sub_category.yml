@@ -2,23 +2,29 @@
   link: /it/access/
   type: database
   description: Microsoft社が開発したOfficeツールの一つ。簡易データベース機能を備える
+  updated: 2020-09-07
 - name: Go
   link: /it/go/
   type: programming_language
   description: Google社が開発したプログラミング言語Goについてのメモ
+  updated: 2020-09-05
 - name: Java
   link: /it/java/
   type: programming_language
   description: プログラミング言語Javaについてのメモ
+  updated: 2020-09-05
 - name: Oracle
   link: /it/oracle/
   type: database
   description: Oracle社が作成しているデータベースOracleについてのメモ
+  updated: 2020-09-05
 - name: SQL Server
   link: /it/sqlserver/
   type: database
   description: Microsoftが作成しているデータベースSQL Serverについてのメモ
+  updated: 2020-09-05
 - name: VBA
   link: /it/vba/
   type: programming_language
   description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ
+  updated: 2020-09-08

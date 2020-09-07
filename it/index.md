@@ -1,6 +1,8 @@
 ---
 layout: default
 title: 技術系メモ
+created: 2020-09-02
+updated: 2020-09-08
 ---
 ## こちらはプログラミング関連のメモになります
 
@@ -10,6 +12,7 @@ title: 技術系メモ
     <tr>
         <td><a href="{{ item.link }}">{{ item.name }}</a></td>
         <td>{{ item.description }}</td>
+        <td>{{ item.updated }}更新</td>
     </tr>
     {% endfor %}
 </table>
@@ -22,6 +25,7 @@ title: 技術系メモ
     <tr>
         <td><a href="{{ item.link }}">{{ item.name }}</a></td>
         <td>{{ item.description }}</td>
+        <td>{{ item.updated }}更新</td>
     </tr>
     {% endfor %}
 </table>

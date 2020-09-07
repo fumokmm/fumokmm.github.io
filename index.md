@@ -1,5 +1,7 @@
 ---
 title: Home
+created: 2020-09-02
+updated: 2020-09-02
 ---
 
 ## これは何？
