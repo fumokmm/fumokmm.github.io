@@ -33,3 +33,21 @@ a.simple_link {
 table, tr, th, td {
     border: 1px solid black;
 }
+
+.code {
+    white-space: pre-wrap;
+    margin: 1em 0 1em 0;
+    border: 1px solid #ccc;
+    //border-radius: 0px 2px 2px 2px;
+    padding: 5px;
+    background-color: #f6f6f6;
+    overflow: auto;
+    font-family: Consolas, 'Meiryo UI', 'Courier New', Monaco, monospace;
+    //font-size: 10.5pt;
+    .em {
+        color: #f88;
+    }
+    .cm {
+        color: #888;
+    }
+}
