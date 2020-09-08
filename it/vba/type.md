@@ -101,4 +101,4 @@ VBAで利用可能な型は以下があります。
 
 ### 参考
 
-- [書籍『パーフェクト Excel VBA』](https://www.amazon.co.jp/dp/B081V1NV7G/ref=cm_sw_r_tw_dp_x_A58tFbFY6PFYE)
+- {% include book/book_449.html %} {% comment %} パーフェクト Excel VBA {% endcomment %}
