@@ -1,16 +1,12 @@
 - name: Home
   link: /
   description: トップページ
-  updated: 2020-09-02
 - name: IT
   link: /it/
   description: 技術系メモ
-  updated: 2020-09-02
 - name: Reading
   link: /reading/
   description: 読書についてのメモ
-  updated: 2020-09-09
 - name: About
   link: /about/
   description: このサイトについて
-  updated: 2020-09-08
