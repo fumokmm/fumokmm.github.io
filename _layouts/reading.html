@@ -1,0 +1,16 @@
+---
+layout: base
+---
+{% assign category = site.data.category | where: 'name', page.category | first %}
+{% assign sub_category = site.data.reading.sub_category | where: 'name', page.sub_category | first %}
+<div>
+    <a href="{{ category.link }}">読書についてのメモ</a>
+    {% if sub_category.link != page.url %}
+    | <a href="{{ sub_category.link }}">{{ sub_category.name }}のメモ</a>
+    {% endif %}
+</div>
+
+{% include updated.html %}
+{% include main-title.html %}
+
+{{content}}
