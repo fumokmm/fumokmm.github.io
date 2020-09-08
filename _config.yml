@@ -1,42 +1,42 @@
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: "it"
     values:
       layout: "it"
       category: "IT"
-  -
-    scope:
+  - scope:
       path: "it/access"
     values:
       sub_category: "Access"
-  -
-    scope:
+  - scope:
       path: "it/go"
     values:
       sub_category: "Go"
-  -
-    scope:
+  - scope:
       path: "it/java"
     values:
       sub_category: "Java"
-  -
-    scope:
+  - scope:
       path: "it/oracle"
     values:
       sub_category: "Oracle"
-  -
-    scope:
+  - scope:
       path: "it/sqlserver"
     values:
       sub_category: "SQL Server"
-  -
-    scope:
+  - scope:
       path: "it/vba"
     values:
       sub_category: "VBA"
+  - scope:
+      path: "reading"
+    values:
+      layout: "reading"
+      category: "Reading"
+
+collections:
+  - history

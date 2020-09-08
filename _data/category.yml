@@ -7,6 +7,9 @@
 - name: Reading
   link: /reading/
   description: 読書についてのメモ
+- name: History
+  link: /history/
+  description: 更新履歴
 - name: About
   link: /about/
   description: このサイトについて
