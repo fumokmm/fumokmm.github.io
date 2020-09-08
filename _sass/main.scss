@@ -61,3 +61,55 @@ code {
 .copyright {
     text-align: left;
 }
+
+// 参考: https://saruwakakun.com/html-css/reference/blockquote
+blockquote {
+    position: relative;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: #323331;
+    background: #d5d8d1;
+    p {
+        position: relative;
+        padding: 0;
+        margin: 10px 0;
+        z-index: 3;
+        line-height: 1.7;
+    }
+    cite {
+        position: relative;
+        z-index: 3;
+        display: block;
+        text-align: right;
+        color: #323331;
+        font-size: 0.9em;
+    }
+}
+blockquote:before {
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    content: "\f10d";
+    //font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
+    color: #e6eae3;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 900;
+}
+blockquote:after {
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    text-align: center;
+    content: "\f10e";
+    //font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
+    color: #e6eae3;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 900;
+}

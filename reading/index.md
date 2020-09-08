@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 読書についてのメモ
-created: 2020-09-08
-updated: 2020-09-08
+created: 2020-09-09
+updated: 2020-09-09
 ---
 ## こちらは読書についてのメモになります
 
