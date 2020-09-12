@@ -29,3 +29,17 @@ updated: 2020-09-08
     </tr>
     {% endfor %}
 </table>
+
+## こちらはOS関連のメモになります
+
+<table>
+    {% assign operating_systems = site.data.it.sub_category | where: 'type', 'operating_system' %}
+    {% for item in operating_systems %}
+    <tr>
+        <td><a href="{{ item.link }}">{{ item.name }}</a></td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+

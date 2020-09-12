@@ -1,3 +1,5 @@
+# Front Matterのデフォルト設定
+
 defaults:
   - scope:
       path: ""
@@ -37,6 +39,23 @@ defaults:
     values:
       layout: "reading"
       category: "Reading"
+  - scope:
+      path: "_articles/it"
+    values:
+      layout: "it2"
+      category: "IT"
+  - scope:
+      path: "_articles/it/linux"
+    values:
+      sub_category: Linux
+
+# コレクションの設定
+
+collections_dir: collections
 
 collections:
-  - history
+  history:
+    output: false
+  articles:
+    output: true
+    permalink: /:path
