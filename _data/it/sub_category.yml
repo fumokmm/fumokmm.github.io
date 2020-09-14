@@ -23,6 +23,13 @@
   type: database
   description: Oracle社が作成しているデータベースOracleについてのメモ
   updated: 2020-09-05
+
+# P
+- name: PowerShell
+  link: /it/powershell/
+  type: shellscript
+  description: Microsoft社が開発したシェルPowerShellについてのメモ
+  
 - name: SQL Server
   link: /it/sqlserver/
   type: database
