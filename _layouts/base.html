@@ -5,16 +5,7 @@
 	<title>{{ page.title }} | Think Twice</title>
 	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/styles.css">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1154677-2"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-1154677-2');
-	</script>
+	{% include tools/google_analytics.html %}
 </head>
 <body>
 
