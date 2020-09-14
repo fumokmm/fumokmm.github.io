@@ -19,7 +19,7 @@
 - name: Linux
   link: /it/linux/
   type: operating_system
-  description: Linuxについてのメモ
+  description: リーナス・ベネディクト・トーバルズ氏（Linus Benedict Torvalds)によって開発されたOS、Linuxついてのメモ
 
 - name: Oracle
   link: /it/oracle/
