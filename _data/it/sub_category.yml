@@ -13,11 +13,14 @@
   type: programming_language
   description: プログラミング言語Javaについてのメモ
   updated: 2020-09-05
+
+# L
+
 - name: Linux
   link: /it/linux/
   type: operating_system
   description: Linuxについてのメモ
-  updated: 2020-09-11
+
 - name: Oracle
   link: /it/oracle/
   type: database

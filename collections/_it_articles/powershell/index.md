@@ -6,8 +6,8 @@ updated: 2020-09-14
 こちらはPowerShellのメモになります。
 
 <ul>
-    {% assign list = site.articles  | where: 'category', 'IT'
-                                    | where: 'sub_category', 'PowerShell' %}
+    {% assign list = site.it_articles  | where: 'category', 'IT'
+                                       | where: 'sub_category', 'PowerShell' %}
     {% for item in list %}
         {% assign filename = item.url | split: '/' | reverse | first %}
         {% if filename != 'index' %}
