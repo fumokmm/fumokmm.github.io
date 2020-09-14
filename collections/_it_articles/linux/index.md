@@ -6,8 +6,8 @@ updated: 2020-09-11
 こちらはLinuxのメモになります。
 
 <ul>
-    {% assign list = site.articles  | where: 'category', 'IT'
-                                    | where: 'sub_category', 'Linux' %}
+    {% assign list = site.it_articles  | where: 'category', 'IT'
+                                       | where: 'sub_category', 'Linux' %}
     {% for item in list %}
         {% assign filename = item.url | split: '/' | reverse | first %}
         {% if filename != 'index' %}

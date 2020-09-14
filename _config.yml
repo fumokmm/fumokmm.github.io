@@ -39,15 +39,21 @@ defaults:
     values:
       layout: "reading"
       category: "Reading"
+
+# IT記事
   - scope:
-      path: "_articles/it"
+      path: "_it_articles"
     values:
       layout: "it2"
       category: "IT"
   - scope:
-      path: "_articles/it/linux"
+      path: "_it_articles/linux"
     values:
       sub_category: Linux
+  - scope:
+      path: "_it_articles/powershell"
+    values:
+      sub_category: PowerShell
 
 # コレクションの設定
 
@@ -56,6 +62,6 @@ collections_dir: collections
 collections:
   history:
     output: false
-  articles:
+  it_articles:
     output: true
-    permalink: /:path
+    permalink: /it/:path

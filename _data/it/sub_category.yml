@@ -13,16 +13,26 @@
   type: programming_language
   description: プログラミング言語Javaについてのメモ
   updated: 2020-09-05
+
+# L
+
 - name: Linux
   link: /it/linux/
   type: operating_system
   description: Linuxについてのメモ
-  updated: 2020-09-11
+
 - name: Oracle
   link: /it/oracle/
   type: database
   description: Oracle社が作成しているデータベースOracleについてのメモ
   updated: 2020-09-05
+
+# P
+- name: PowerShell
+  link: /it/powershell/
+  type: shellscript
+  description: Microsoft社が開発したシェルPowerShellについてのメモ
+  
 - name: SQL Server
   link: /it/sqlserver/
   type: database
