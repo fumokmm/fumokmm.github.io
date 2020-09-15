@@ -1,67 +1,79 @@
 # Front Matterのデフォルト設定
-
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
-  - scope:
-      path: "it"
-    values:
-      layout: "it"
-      category: "IT"
-  - scope:
-      path: "it/access"
-    values:
-      sub_category: "Access"
-  - scope:
-      path: "it/go"
-    values:
-      sub_category: "Go"
-  - scope:
-      path: "it/java"
-    values:
-      sub_category: "Java"
-  - scope:
-      path: "it/oracle"
-    values:
-      sub_category: "Oracle"
-  - scope:
-      path: "it/sqlserver"
-    values:
-      sub_category: "SQL Server"
-  - scope:
-      path: "it/vba"
-    values:
-      sub_category: "VBA"
-  - scope:
-      path: "reading"
-    values:
-      layout: "reading"
-      category: "Reading"
 
-# IT記事
+################################## IT記事
   - scope:
       path: "_it_articles"
     values:
-      layout: "it2"
+      layout: "it"
       category: "IT"
+
+# IT記事のサブカテゴリ
+  - scope:
+      path: "_it_articles/access"
+    values:
+      sub_category: "Access"
+  - scope:
+      path: "_it_articles/go"
+    values:
+      sub_category: "Go"
+  - scope:
+      path: "_it_articles/java"
+    values:
+      sub_category: "Java"
   - scope:
       path: "_it_articles/linux"
     values:
       sub_category: Linux
   - scope:
+      path: "_it_articles/oracle"
+    values:
+      sub_category: "Oracle"
+  - scope:
       path: "_it_articles/powershell"
     values:
       sub_category: PowerShell
+  - scope:
+      path: "_it_articles/sqlserver"
+    values:
+      sub_category: "SQL Server"
+  - scope:
+      path: "_it_articles/vba"
+    values:
+      sub_category: "VBA"
+
+################################## 読書
+  - scope:
+      path: "_reading_articles"
+    values:
+      layout: "reading"
+      category: "Reading"
+
+# 読書のサブカテゴリ
+# 読書法
+  - scope:
+      path: "_reading_articles/method"
+    values:
+      sub_category: "読書法"
 
 # コレクションの設定
-
 collections_dir: collections
 
 collections:
+  # 更新履歴
   history:
     output: false
+
+  # IT記事
   it_articles:
     output: true
     permalink: /it/:path
+
+  # 読書の記事
+  reading_articles:
+    output: true
+    permalink: /reading/:path

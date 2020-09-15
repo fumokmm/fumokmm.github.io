@@ -1,31 +1,32 @@
+# A
 - name: Access
   link: /it/access/
   type: database
   description: Microsoft社が開発したOfficeツールの一つ。簡易データベース機能を備える
-  updated: 2020-09-07
+
+# G
 - name: Go
   link: /it/go/
   type: programming_language
   description: Google社が開発したプログラミング言語Goについてのメモ
-  updated: 2020-09-05
+
+# J
 - name: Java
   link: /it/java/
   type: programming_language
   description: プログラミング言語Javaについてのメモ
-  updated: 2020-09-05
 
 # L
-
 - name: Linux
   link: /it/linux/
   type: operating_system
   description: リーナス・ベネディクト・トーバルズ氏（Linus Benedict Torvalds)によって開発されたOS、Linuxついてのメモ
 
+# O
 - name: Oracle
   link: /it/oracle/
   type: database
   description: Oracle社が作成しているデータベースOracleについてのメモ
-  updated: 2020-09-05
 
 # P
 - name: PowerShell
@@ -33,13 +34,14 @@
   type: shellscript
   description: Microsoft社が開発したシェルPowerShellについてのメモ
   
+# S
 - name: SQL Server
   link: /it/sqlserver/
   type: database
   description: Microsoftが作成しているデータベースSQL Serverについてのメモ
-  updated: 2020-09-05
+
+# V
 - name: VBA
   link: /it/vba/
   type: programming_language
   description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ
-  updated: 2020-09-08

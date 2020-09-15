@@ -7,12 +7,16 @@ updated: 2020-09-14
 ## こちらはプログラミング関連のメモになります
 
 <table>
-    {% assign languages = site.data.it.sub_category | where: 'type', 'programming_language' %}
-    {% for item in languages %}
+    {% assign programming_languages = site.data.sub_category_it | where: 'type', 'programming_language' %}
+    {% for programming_language in programming_languages %}
     <tr>
-        <td><a href="{{ item.link }}">{{ item.name }}</a></td>
-        <td>{{ item.description }}</td>
-        <td>{{ item.updated }}更新</td>
+        {% assign articles = site.it_articles  | where: 'category', 'IT'
+                                               | where: 'sub_category', programming_language.name %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ programming_language.link }}">{{ programming_language.name }}</a></td>
+        <td>{{ programming_language.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
 </table>
@@ -20,12 +24,16 @@ updated: 2020-09-14
 ## こちらはデータベース関連のメモになります
 
 <table>
-    {% assign databases = site.data.it.sub_category | where: 'type', 'database' %}
-    {% for item in databases %}
+    {% assign databases = site.data.sub_category_it | where: 'type', 'database' %}
+    {% for database in databases %}
     <tr>
-        <td><a href="{{ item.link }}">{{ item.name }}</a></td>
-        <td>{{ item.description }}</td>
-        <td>{{ item.updated }}更新</td>
+        {% assign articles = site.it_articles  | where: 'category', 'IT'
+                                               | where: 'sub_category', database.name %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ database.link }}">{{ database.name }}</a></td>
+        <td>{{ database.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
 </table>
@@ -33,7 +41,7 @@ updated: 2020-09-14
 ## こちらはOS関連のメモになります
 
 <table>
-    {% assign operating_systems = site.data.it.sub_category | where: 'type', 'operating_system' %}
+    {% assign operating_systems = site.data.sub_category_it | where: 'type', 'operating_system' %}
     {% for operating_system in operating_systems %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
@@ -50,7 +58,7 @@ updated: 2020-09-14
 ## こちらはシェルスクリプト関連のメモになります
 
 <table>
-    {% assign shell_scripts = site.data.it.sub_category | where: 'type', 'shellscript' %}
+    {% assign shell_scripts = site.data.sub_category_it | where: 'type', 'shellscript' %}
     {% for shell_script in shell_scripts %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
