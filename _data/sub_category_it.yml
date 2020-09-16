@@ -38,10 +38,15 @@
 - name: SQL Server
   link: /it/sqlserver/
   type: database
-  description: Microsoftが作成しているデータベースSQL Serverについてのメモ
+  description: Microsoft社が作成しているデータベースSQL Serverについてのメモ
 
 # V
 - name: VBA
   link: /it/vba/
   type: programming_language
   description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ
+
+- name: VSCode
+  link: /it/vscode/
+  type: editor
+  description: Microsoft社が開発したエディターVisual Studio Codeについてのメモ

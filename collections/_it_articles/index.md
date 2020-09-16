@@ -2,7 +2,7 @@
 layout: default
 title: 技術系メモ
 created: 2020-09-02
-updated: 2020-09-14
+updated: 2020-09-16
 ---
 ## こちらはプログラミング関連のメモになります
 
@@ -67,6 +67,23 @@ updated: 2020-09-14
 
         <td><a href="{{ shell_script.link }}">{{ shell_script.name }}</a></td>
         <td>{{ shell_script.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+
+## こちらはエディタ関連のメモになります
+
+<table>
+    {% assign editors = site.data.sub_category_it | where: 'type', 'editor' %}
+    {% for editor in editors %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category', 'IT'
+                                               | where: 'sub_category', editor.name %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ editor.link }}">{{ editor.name }}</a></td>
+        <td>{{ editor.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}

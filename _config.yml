@@ -45,6 +45,10 @@ defaults:
       path: "_it_articles/vba"
     values:
       sub_category: "VBA"
+  - scope:
+      path: "_it_articles/vscode"
+    values:
+      sub_category: "VSCode"
 
 ################################## 読書
   - scope:
