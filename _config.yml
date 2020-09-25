@@ -18,6 +18,10 @@ defaults:
     values:
       sub_category: "Access"
   - scope:
+      path: "_it_articles/chrome"
+    values:
+      sub_category: "Chrome"
+  - scope:
       path: "_it_articles/go"
     values:
       sub_category: "Go"

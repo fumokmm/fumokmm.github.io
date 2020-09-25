@@ -4,6 +4,12 @@
   type: database
   description: Microsoft社が開発したOfficeツールの一つ。簡易データベース機能を備える
 
+# C
+- name: Chrome
+  link: /it/chrome/
+  type: browser
+  description: Google社が開発しているブラウザ
+  
 # G
 - name: Go
   link: /it/go/

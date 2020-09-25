@@ -88,3 +88,20 @@ updated: 2020-09-16
     </tr>
     {% endfor %}
 </table>
+
+## こちらはブラウザ関連のメモになります
+
+<table>
+    {% assign browsers = site.data.sub_category_it | where: 'type', 'browser' %}
+    {% for browser in browsers %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category', 'IT'
+                                               | where: 'sub_category', browser.name %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ browser.link }}">{{ browser.name }}</a></td>
+        <td>{{ browser.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
