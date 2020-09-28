@@ -80,6 +80,10 @@ collections:
   it_articles:
     output: true
     permalink: /it/:path
+    order:
+      - powershell/execution_policy.md
+      - powershell/tips.md
+      - powershell/sitelink.md
 
   # 読書の記事
   reading_articles:
