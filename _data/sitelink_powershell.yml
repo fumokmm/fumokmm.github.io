@@ -1,0 +1,103 @@
+- site_name: ExRecord
+  top_url: http://exrecord.net/
+  detail_name: PowerShell一覧
+  detail_url: http://exrecord.net/category/powershell
+
+- site_name: topvalue’s blog
+  top_url: http://topvalue.hatenablog.com/
+  detail_name: powershellカテゴリー
+  detail_url: http://topvalue.hatenablog.com/archive/category/powershell
+
+- site_name: topvalue’s blog
+  top_url: http://topvalue.hatenablog.com/
+  detail_name: powershell ISEカテゴリー
+  detail_url: http://topvalue.hatenablog.com/archive/category/powershell%20ISE
+
+- site_name: AWS CLI -eq PowerShell
+  top_url: https://aws-cli-eq-pwsh.shibata.tech/
+
+- site_name: バヤシタ
+  top_url: https://bayashita.com/
+  detail_name: PowerShellカテゴリー
+  detail_url: https://bayashita.com/p/category/show/22
+
+- site_name: PowerShell from Japan!! Blog
+  top_url: https://blog.powershell-from.jp/
+
+- site_name: しばたテックブログ
+  top_url: https://blog.shibata.tech/
+  detail_name: PowerShellカテゴリー
+  detail_url: https://blog.shibata.tech/archive/category/PowerShell
+
+- site_name: チェシャわら
+  top_url: https://cheshire-wara.com/
+  detail_name: サイトマップ
+  detail_url: https://cheshire-wara.com/site-map/
+
+- site_name: ほそぼそプログラミング日記
+  top_url: https://hosopro.blogspot.com/
+  detail_name: PowerShellカテゴリー
+  detail_url: https://hosopro.blogspot.com/p/powershell.html
+
+- site_name: 自動化.work
+  top_url: https://jidouka.work/
+  detail_name: PowerShell一覧
+  detail_url: https://jidouka.work/?cat=8
+
+- site_name: マイクロソフト党ブログ
+  top_url: https://microsoftou.com/
+  detail_name: PowerShellカテゴリー
+  detail_url: https://microsoftou.com/category/ps/
+
+- site_name: Qiita
+  top_url: https://qiita.com/
+  detail_name: powershell検索結果
+  detail_url: https://qiita.com/search?q=powershell
+
+- site_name: SEブログ
+  top_url: https://soma-engineering.com/
+  detail_name: PowerShellに関連する記事
+  detail_url: https://soma-engineering.com/category/coding/powershell/
+
+- site_name: tech.guitarrapc.cóm
+  top_url: https://tech.guitarrapc.com/
+  detail_name: PowerShellカテゴリー
+  detail_url: https://tech.guitarrapc.com/archive/category/PowerShell
+
+- site_name: いつも隣にITのお仕事
+  top_url: https://tonari-it.com/
+  detail_name: powershell検索結果
+  detail_url: https://tonari-it.com/?s=powershell
+
+- site_name: WIN.JUST4FUN.BIZ
+  top_url: https://win.just4fun.biz/
+  detail_name: PowerShell備忘録
+  detail_url: https://win.just4fun.biz/?PowerShell
+
+- site_name: it-swarm-ja.tech
+  top_url: https://www.it-swarm-ja.tech/ja/
+  detail_name: PowerShellカテゴリー
+  detail_url: https://www.it-swarm.dev/ja/powershell/
+
+- site_name: IT Knowledge 109
+  top_url: https://www.itc109.com/knowledge/
+  detail_name: PowerShellカテゴリー
+  detail_url: https://www.itc109.com/knowledge/category/powershell
+
+- site_name: PowerShell Gallery
+  top_url: https://www.powershellgallery.com/
+
+- site_name: MURA の Home Page
+  top_url: http://www.vwnet.jp/
+  detail_name: PowerShellコーナー
+  detail_url: https://www.vwnet.jp/Windows/etc.asp#PowerShell
+
+- site_name: IT Search+
+  top_url: https://news.mynavi.jp/itsearch/
+  detail_name: PowerShell Core入門の連載一覧
+  detail_url: https://news.mynavi.jp/itsearch/series/devsoft/powershell_core_-.html
+
+- site_name: PowerShell 逆引きリファレンス
+  top_url: http://powershell.web.fc2.com/Html/Index.html
+  detail_name: 記事一覧
+  detail_url: http://powershell.web.fc2.com/Html/Index.html
