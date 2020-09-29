@@ -84,6 +84,7 @@ collections:
       - powershell/execution_policy.md
       - powershell/tips.md
       - powershell/sitelink.md
+      - sqlserver/ssms_tips.md
       - vba/grammar.md
       - vba/type.md
       - vba/sitelink.md
