@@ -81,6 +81,8 @@ collections:
     output: true
     permalink: /it/:path
     order:
+      - access/function.md
+      - access/tips.md
       - powershell/execution_policy.md
       - powershell/tips.md
       - powershell/sitelink.md
