@@ -11,6 +11,7 @@ updated: 2020-09-18
 - [実行中のスクリプトのファイル名を取得](#get-the-file-name-of-the-running-script)
 
 ### <a name="get-the-directory-where-the-script-is-running">実行中のスクリプトのあるディレクトリを取得</a>
+{% include update_info.html created="2020-09-18" updated="2020-09-18" %}
 
 `$PSScriptRoot`という`自動変数`にスクリプトファイル(.ps1)がどこに置かれているかが格納されているようです。(バージョン3.0以降)
 
@@ -23,6 +24,7 @@ Write-Host $PSScriptRoot
 - [スクリプトフォルダーの取得](https://www.vwnet.jp/Windows/PowerShell/pwd.htm)
 
 ### <a name="get-the-file-name-of-the-running-script">実行中のスクリプトのファイル名を取得</a>
+{% include update_info.html created="2020-09-18" updated="2020-09-18" %}
 
 `$PSCommandPath`という`自動変数`にスクリプトファイル(.ps1)のパスが格納されているようです。  
 これを`\`で分割して最後の要素を取得すれば実行中のスクリプトのファイル名が取得できます。(バージョン3.0以降)

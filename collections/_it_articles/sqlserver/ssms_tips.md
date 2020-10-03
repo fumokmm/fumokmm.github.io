@@ -10,6 +10,7 @@ updated: 2020-09-29
 - [NULLを入力する方法](#how-to-enter-null)
 
 ### <a name="how-to-enter-null">NULLを入力する方法</a>
+{% include update_info.html created="2020-09-29" updated="2020-09-29" %}
 
 (v17.9.1)
 1. テーブルを右クリックし、「上位 200 行の編集」をクリック

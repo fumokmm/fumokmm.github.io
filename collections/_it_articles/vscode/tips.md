@@ -11,6 +11,7 @@ updated: 2020-09-28
 - [矩形選択](#rectangular-selection)
 
 ### <a name="selection-next-match">選択内容を次々に拡張</a>
+{% include update_info.html created="2020-09-16" updated="2020-09-16" %}
 
 1. 部分選択をする
 1. `Ctrl + D` で選択部分の次のマッチに拡張
@@ -26,6 +27,7 @@ updated: 2020-09-28
 
 
 ### <a name="rectangular-selection">矩形選択</a>
+{% include update_info.html created="2020-09-28" updated="2020-09-28" %}
 
 - `Shift + Alt` を押しながらマウスで選択
 
