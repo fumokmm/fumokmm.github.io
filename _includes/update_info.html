@@ -1,0 +1,5 @@
+{% if include.created != include.updated %}
+<div class="updated article">{{ include.created }} 作成<br>{{ include.updated }} 更新</div>
+{% else %}
+<div class="updated article">{{ include.created }} 作成</div>
+{% endif %}

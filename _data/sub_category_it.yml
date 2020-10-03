@@ -46,6 +46,11 @@
   type: database
   description: Microsoft社が作成しているデータベースSQL Serverについてのメモ
 
+- name: Subversion
+  link: /it/subversion/
+  type: version_control_system
+  description: 	Apacheソフトウェア財団が開発している集中型バージョン管理システムSubversion(SVN)についてのメモ
+
 # V
 - name: VBA
   link: /it/vba/

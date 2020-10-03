@@ -46,6 +46,10 @@ defaults:
     values:
       sub_category: "SQL Server"
   - scope:
+      path: "_it_articles/subversion"
+    values:
+      sub_category: "Subversion"
+  - scope:
       path: "_it_articles/vba"
     values:
       sub_category: "VBA"
@@ -87,6 +91,7 @@ collections:
       - powershell/tips.md
       - powershell/sitelink.md
       - sqlserver/ssms_tips.md
+      - subversion/tips.html
       - vba/grammar.md
       - vba/type.md
       - vba/sitelink.md
