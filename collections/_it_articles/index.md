@@ -122,3 +122,20 @@ updated: 2020-09-16
     </tr>
     {% endfor %}
 </table>
+
+## こちらはその他のメモになります
+
+<table>
+    {% assign others = site.data.sub_category_it | where: 'type', 'other' %}
+    {% for other in others %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category', 'IT'
+                                               | where: 'sub_category', other.name %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ other.link }}">{{ other.name }}</a></td>
+        <td>{{ other.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>

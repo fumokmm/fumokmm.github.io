@@ -38,6 +38,10 @@ defaults:
     values:
       sub_category: "Oracle"
   - scope:
+      path: "_it_articles/other"
+    values:
+      sub_category: "その他"
+  - scope:
       path: "_it_articles/powershell"
     values:
       sub_category: PowerShell

@@ -61,3 +61,9 @@
   link: /it/vscode/
   type: editor
   description: Microsoft社が開発したエディターVisual Studio Codeについてのメモ
+
+# そ
+- name: その他
+  link: /it/other/
+  type: other
+  description: IT関係のその他のメモ
