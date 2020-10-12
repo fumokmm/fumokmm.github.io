@@ -91,6 +91,8 @@ collections:
     order:
       - access/function.md
       - access/tips.md
+      - other/term.md
+      - other/quote.md
       - powershell/execution_policy.md
       - powershell/tips.md
       - powershell/sitelink.md

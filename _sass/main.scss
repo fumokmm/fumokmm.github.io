@@ -35,6 +35,14 @@ a.simple_link {
     color: black;
 }
 
+// /it/other/quote.md などで利用
+.quote-updated {
+    text-align: right;
+    margin-bottom: 25px;
+    margin-top: -10px;
+    margin-right: 40px;
+}
+
 table, tr, th, td {
     border: 1px solid black;
 }
