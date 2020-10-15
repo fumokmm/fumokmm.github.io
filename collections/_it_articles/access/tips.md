@@ -1,7 +1,7 @@
 ---
 title: AccessのTips
 created: 2020-10-01
-updated: 2020-10-14
+updated: 2020-10-15
 ---
 ここではAccessのちょっとしたTipsをまとめておきます。
 
@@ -26,7 +26,7 @@ Accessをそのまま起動するとAutoExecマクロや起動オプションが
 - [アクセスを開発者モードで開く方法](https://note.mokuzine.net/ms-access-open-dev-mode/)
 
 #### <a name="how-to-recreate-table-link-using-vba-code">VBAコードでテーブルリンクを再作成する方法</a>
-{% include update_info.html created="2020-10-14" updated="2020-10-14" %}
+{% include update_info.html created="2020-10-14" updated="2020-10-15" %}
 
 Accessでテーブルリンクを作成する場合、ローカルPCに設定したDSNを使って設定したりできますが、  
 個人的に使うような用途以外で、複数人のPCで利用するようなAccessファイルを作成した場合に、  
@@ -35,7 +35,9 @@ Accessでテーブルリンクを作成する場合、ローカルPCに設定し
 以下に示すようなVBAコードでDSNなしのテーブルリンク設定をすることができます。  
 (SQL Serverへのテーブルリンクを想定しています)
 
-<pre class="code">
+<div class="code-box">
+<div class="title">テーブルリンク再作成</div>
+<pre>
 Sub テーブルリンク再作成()
     On Error Resume Next
     
@@ -54,7 +56,7 @@ Sub テーブルリンク再作成()
     CurrentDb.TableDefs.Append p_td
 End Sub
 </pre>
-
+</div>
 
 - 動作概要は以下のようになります。
   - `CurrentDb.TableDefs.Delete`にて既存のテーブルリンクがある場合削除します。(テーブルリンク名はスキーマ名とテーブル名をアンダーバーで繋いだものとしています。たぶんAccess標準の動き)
@@ -66,14 +68,16 @@ End Sub
 なお、上記はユーザID/パスワード認証の例です。  
 Windows認証の場合、`Connect`の部分を`Trusted_Connection=Yes`とすればOKです。
 
-<pre class="code">
-    Set p_td = CurrentDb.CreateTableDef( _
-        Name:=<em>"dbo_Users"</em>, _
-        Attributes:=dbAttachSavePWD, _
-        SourceTableName:=<em>"dbo.Users"</em>, _
-        Connect:="ODBC;DRIVER=SQL Server;SERVER=<em>&lt;サーバ名&gt;</em>;DATABASE=<em>&lt;データベース名&gt;</em>;<em class="blue">Trusted_Connection=Yes</em>" _
-    )
+<div class="code-box no-title">
+<pre>
+Set p_td = CurrentDb.CreateTableDef( _
+    Name:=<em>"dbo_Users"</em>, _
+    Attributes:=dbAttachSavePWD, _
+    SourceTableName:=<em>"dbo.Users"</em>, _
+    Connect:="ODBC;DRIVER=SQL Server;SERVER=<em>&lt;サーバ名&gt;</em>;DATABASE=<em>&lt;データベース名&gt;</em>;<em class="blue">Trusted_Connection=Yes</em>" _
+)
 </pre>
+</div>
 
 #### <a name="how-to-recreate-table-link-using-vba-code-reference">参考</a>
 

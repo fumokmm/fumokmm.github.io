@@ -52,27 +52,55 @@ code {
     font-weight: bold;
 }
 
-.code {
-    white-space: pre-wrap;
-    margin: 1em 0 1em 0;
-    border: 1px solid #ccc;
-    //border-radius: 0px 2px 2px 2px;
-    padding: 5px;
+@mixin make-code-pre() {
+    pre {
+        margin: 0; 
+        padding: 0;
+        white-space: pre-wrap;
+        background-color: #f6f6f6;
+        overflow: auto;
+        font-family: Consolas, 'Meiryo UI', 'Courier New', Monaco, monospace;
+        em {
+            font-style: normal;
+            color: #f88;
+            &.blue {
+                font-style: normal;
+                color: #88f;
+            }
+        }
+    }
+}
+
+.code-box {
+    // タイトル付きのスタイル
+    position: relative;
+    margin: 1em 0;
+    padding: 22px 10px 7px;
+    border: solid 1px #ccc;
     background-color: #f6f6f6;
-    overflow: auto;
-    font-family: Consolas, 'Meiryo UI', 'Courier New', Monaco, monospace;
-    //font-size: 10.5pt;
-    em {
-        font-style: normal;
-        color: #f88;
+    .title {
+        position: absolute;
+        display: inline-block;
+        top: -2px;
+        left: -2px;
+        padding: 0 9px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        background-color: #777;
+        color: #ffffff;
     }
-    em.blue {
-        font-style: normal;
-        color: #88f;
+    @include make-code-pre();
+
+    // タイトルがない場合のスタイル
+    &.no-title {
+        position: relative;
+        margin: 1em 0;
+        padding: 8px 10px 7px;
+        border: solid 1px #ccc;
+        background-color: #f6f6f6;
+        @include make-code-pre();
     }
-    //cm {
-    //    color: #888;
-    //}
 }
 
 .copyright {
