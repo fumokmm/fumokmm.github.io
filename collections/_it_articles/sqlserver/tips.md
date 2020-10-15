@@ -10,7 +10,7 @@ updated: 2020-10-15
 - [テーブルをバックアップするSQL](#sql-for-backing-up-table)
 
 ## <a name="sql-for-backing-up-table">テーブルをバックアップするSQL</a>
-{% include update_info.html created="2020-10-15" updated="2020-10-15" %}
+{% include update_info.html created="2020-07-15" updated="2020-10-15" %}
 
 テーブルをサクっとバックアップしたい場合に使えるSQLです。
 
