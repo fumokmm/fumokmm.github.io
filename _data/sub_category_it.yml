@@ -10,6 +10,12 @@
   type: browser
   description: Google社が開発しているブラウザ
   
+# D
+- name: Database
+  link: /it/database/
+  type: database
+  description: データベース全般について
+  
 # G
 - name: Go
   link: /it/go/

@@ -23,6 +23,10 @@ defaults:
     values:
       sub_category: "Chrome"
   - scope:
+      path: "_it_articles/database"
+    values:
+      sub_category: "Database"
+  - scope:
       path: "_it_articles/go"
     values:
       sub_category: "Go"
