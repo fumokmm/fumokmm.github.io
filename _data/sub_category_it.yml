@@ -51,6 +51,12 @@
   type: version_control_system
   description: 	Apacheソフトウェア財団が開発している集中型バージョン管理システムSubversion(SVN)についてのメモ
 
+# T
+- name: Teams
+  link: /it/teams/
+  type: instant_messenger
+  description: Microsoft社が作成しているリモートワークのためのコラボレーションツール
+  
 # V
 - name: VBA
   link: /it/vba/
