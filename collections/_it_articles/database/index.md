@@ -1,13 +1,13 @@
 ---
 title: Databaseのメモ
-created: 2020-10-16
-updated: 2020-10-16
+created: 2020-10-24
+updated: 2020-10-24
 ---
-こちらはDatabase全般ののメモになります。
+こちらはDatabase全般のメモになります。
 
 <ul>
     {% assign list = site.it_articles  | where: 'category', 'IT'
-                                       | where: 'sub_category', 'DatabaseDatabase' %}
+                                       | where: 'sub_category', 'Database' %}
     {% for item in list %}
         {% assign filename = item.url | split: '/' | reverse | first %}
         {% if filename != 'index' %}

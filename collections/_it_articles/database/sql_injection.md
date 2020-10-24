@@ -1,94 +1,103 @@
 ---
 title: SQLインジェクションのまとめ
 created: 2008-04-12
-updated: 2020-10-16
+updated: 2020-10-24
 ---
 こちらはSQLインジェクションについてまとめたものになります。
 
 ## 目次
 
 - [ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜](#case1)
+- [ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜](#case2)
+
 
 
 ## <a name="case1">ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜</a>
-まずは、SQLインジェクションの最も基本的な攻撃パターンであるシングルクォート「'」を使った手法のご紹介から。
+まずは、SQLインジェクションの最も基本的な攻撃パターンであるシングルクォート「`'`」を使った手法をご紹介します。
 
 ### 攻撃手法
-以下のようなテーブルがあるとする。
+以下のようなテーブルがあるとします。
 
-<div align="center">
-[テーブル名：ユーザマスタ]
-|*ユーザID|*パスワード|
-|admin|admin|
-|fumo|hoge|
-|cynthia|piyo|
-|rose|fuga|
+<table>
+    <tr><th>ユーザID</th><th>パスワード</th></tr>
+    <tr><td>admin</td><td>admin</td></tr>
+    <tr><td>fumo</td><td>hoge</td></tr>
+    <tr><td>cynthia</td><td>piyo</td></tr>
+    <tr><td>rose</td><td>fuga</td></tr>
+</table>
+
+<div class="code-box">
+<div class="title">SQL</div>
+<pre>
+SELECT * FROM ユーザマスタ WHERE ユーザID = '$userId' AND パスワード = '$passwd'
+</pre>
 </div>
 
+ユーザによって入力されたユーザID、パスワードをそれぞれ`$userId`、`$passwd`に代入し、上記SQLにてその存在が確認できればログインできるWEBページがあります。
+悪意あるユーザがユーザID「`fumo`」としてパスワードを入力せずにログインを試みる際に入力するパラメータは、以下のようになります。
 
->|sql|
-SELECT * FROM ユーザマスタ WHERE ユーザID = '{$userId}' AND パスワード = '{$passwd}'
-||<
+<dl>
+  <dt>$userId</dt>
+  <dd>fumo</dd>
+  <dt>$passwd</dt>
+  <dd>' OR 'A' = 'A</dd>
+</dl>
 
+結果、生成されるSQL文は以下のようなものになります。
 
-ユーザによって入力されたユーザID、パスワードをそれぞれ{$userId}、{$passwd}に代入し、上記SQLにてその存在が確認できればログインできるWEBページがある。
-悪意あるユーザがユーザID「fumo」としてパスワードを入力せずにログインを試みる際に入力するパラメータは、以下のようになる。
+<div class="code-box">
+<div class="title">SQL</div>
+<pre>
+SELECT * FROM ユーザマスタ WHERE ユーザID = 'fumo' AND <em>パスワード = '' OR 'A' = 'A'</em>
+</pre>
+</div>
 
+パラメータとして入力値「`'`」を含ませることで、パスワードに関するWHERE句の条件式を一旦終端させ、次にORを含ませると、「`'A' = 'A'`」という恒真式がORの対象になります。  
+よって、WHERE句全体が常に真となり、パスワードを入力せずにユーザID「`fumo`」としてログインすることが可能となります。
 
-:$userId:「fumo」
-:$passwd:「' OR 'A' = 'A」
-
-
-結果、生成されるSQL文は以下のようなものになる。
-
-
->|sql|
-SELECT * FROM ユーザマスタ WHERE ユーザID = 'fumo' AND パスワード = '' OR 'A' = 'A'
-||<
-
-
-パラメータとして入力値「'」を含ませることで、パスワードに関するWHERE句の条件式を一旦終端させ、次にORを含ませると、「'A' = 'A'」という恒真式がORの対象になる。
-よって、WHERE句全体が常に真となり、パスワードを入力せずにユーザID「fumo」としてログインすることが可能となる。
-
-
-ちなみに、「'A' = 'A」の部分は「'1' = '1」でも「'' = '」でもよい。
-OR以降が常に真となるような恒真式が記述されることが重要である。
+ちなみに、「`'A' = 'A`」の部分は「`'1' = '1`」でも「`'' = '`」でも大丈夫です。OR以降が常に真となるような恒真式が記述されることが重要です。
 
 
-**ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜
-さてお次は、ケース１の応用例として任意のSQL文を実行させる手法をご紹介する。ここではレコードの全件削除を例にとって説明する。
+## <a name="case2">ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜</a>
 
+さて次は、ケース１の応用例として任意のSQL文を実行させる手法を紹介します。  
+ここではレコードの全件削除を例にとって説明します。
 
-***攻撃手法
-SQL文におけるセミコロン「;」は、ステートメントを分割するデリミタである。この「;」を使って複数のSQL文を連結させることができる。
-利用するテーブルはケース１と同じものとして、今回は以下のようにパラメータを入力してみる。
+### 攻撃手法
+SQL文におけるセミコロン「`;`」は、ステートメントを分割するデリミタです。この「`;`」を使って複数のSQL文を連結させることができます。  
+利用するテーブルはケース１と同じものとして、今回は以下のようにパラメータを入力してみます。
 
-
-:$userId:「 (何も入力しない) 」
-:$passwd:「'; DELETE FROM ユーザマスタ WHERE 'A' = 'A」
-
+<dl>
+  <dt>$userId</dt>
+  <dd> (何も入力しない) </dd>
+  <dt>$passwd</dt>
+  <dd>'; DELETE FROM ユーザマスタ WHERE 'A' = 'A</dd>
+</dl>
 
 さて、どんなSQLが生成されるでしょうか。
 
 
->|sql|
-SELECT * FROM ユーザマスタ WHERE ユーザID = '' AND パスワード = ''; DELETE FROM ユーザマスタ WHERE 'A' = 'A'
-||<
+<div class="code-box">
+<div class="title">SQL</div>
+<pre>
+SELECT * FROM ユーザマスタ WHERE ユーザID = '' AND パスワード = ''<em>; DELETE FROM ユーザマスタ WHERE 'A' = 'A'</em>
+</pre>
+</div>
 
+このようになります。  
+これは以下のように二つのSQL文が続けて実行されることを意味します。
 
-となる。これは以下のように二つのSQL文が続けて実行されることを意味する。
-
-
->|sql|
+<div class="code-box">
+<div class="title">SQL</div>
+<pre>
 SELECT * FROM ユーザマスタ WHERE ユーザID = '' AND パスワード = '';
 DELETE FROM ユーザマスタ WHERE 'A' = 'A'
-||<
+</pre>
+</div>
 
-
-一つ目のSELECT文は実行されるが無害である。
-このようにパラメータに「;」を含ませることで、WHERE句を一旦終端させ、全件削除のDELETE文をさせることができる。
-なお、「'」の数をあわせるために、ケース１と同様に「'A' = 'A'」という恒真式となるようにして、DELETE文のWHERE区を無効化している。
-
+一つ目のSELECT文は実行されますが無害です。  
+このようにパラメータに「`;`」を含ませることで、WHERE句を一旦終端させ、全件削除のDELETE文をさせることができます。  
+なお、「`'`」の数をあわせるために、ケース１と同様に「`'A' = 'A'`」という恒真式にして、DELETE文のWHERE句を無効化しています。
 
 **ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜
 更に応用例として、コメントアウト「--」を使用してパスワード入力部分のSQLを無効化する手法をご紹介する。
@@ -317,10 +326,12 @@ UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'a
 データベースに格納済みの値ももれなく行う必要がある。
 
 
-**参考書籍
-ISBN:9784798017938:detail
+## 参考書籍
 
+- {% include book/book_593.html %} {% comment %} テクニカルエンジニア 情報セキュリティ［午後］オリジナル問題集 2008年度版 {% endcomment %}
 
-**関連情報 (2009-01-24更新)
-[http://ja.wikipedia.org/wiki/SQL%E3%82%A4%E3%83%B3%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3:title]
-[http://www.atmarkit.co.jp/fsecurity/column/ueno/42.html:title]
+## 関連情報
+{% include update_info.html created="2009-01-24" updated="2020-10-24" %}
+
+- [(Wikipedia) SQLインジェクション](http://ja.wikipedia.org/wiki/SQL%E3%82%A4%E3%83%B3%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3)
+- [(@IT) 今夜分かるSQLインジェクション対策](https://www.atmarkit.co.jp/ait/articles/0611/02/news127.html)
