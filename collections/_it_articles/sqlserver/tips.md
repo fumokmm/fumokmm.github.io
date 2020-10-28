@@ -1,14 +1,43 @@
 ---
 title: SQL ServerのTips
 created: 2020-10-15
-updated: 2020-10-23
+updated: 2020-10-28
 ---
 ここではSQL ServerのちょっとしたTipsをまとめておきます。
 
 ## <a name="index">目次</a>
 
+- [テーブルから列を削除する](#removing-a-column-from-a-table)
 - [テーブルをバックアップするSQL](#sql-for-backing-up-table)
 - [同一インスタンス内にデータベースを複製する](#duplicate-the-database-in-the-same-instance)
+
+## <a name="removing-a-column-from-a-table">テーブルから列を削除する</a>
+{% include update_info.html created="2020-10-28" updated="2020-10-28" %}
+
+テーブルから列を削除するALTER文です。
+
+<div class="code-box">
+<div class="title">テーブルから列を削除するSQL</div>
+<pre>
+ALTER TABLE <em>&lt;テーブル名&gt;</em> DROP COLUMN <em>&lt;カラム名&gt;</em>;
+</pre>
+</div>
+
+### 例
+以下SQLを実行すると、`M_USER`テーブルの`EMAIL_ADDRESS`というカラムが削除されます。
+<div class="code-box no-title">
+<pre>
+ALTER TABLE <em>M_USER</em> DROP COLUMN <em>EMAIL_ADDRESS</em>;
+</pre>
+</div>
+
+### 注意事項
+- テーブルから列を削除すると、列および列に含まれているすべてのデータが削除されます。
+- CHECK制約がある列を削除することはできません。最初に制約を削除する必要があります。
+
+### <a name="removing-a-column-from-a-table-reference">参考</a>
+- [(Microsoft Docs) テーブルからの列の削除](https://docs.microsoft.com/ja-jp/sql/relational-databases/tables/delete-columns-from-a-table?view=sql-server-ver15)
+
 
 ## <a name="sql-for-backing-up-table">テーブルをバックアップするSQL</a>
 {% include update_info.html created="2020-07-15" updated="2020-10-15" %}
@@ -54,5 +83,4 @@ SELECT * INTO <em>M_USER_20201015</em> FROM <em>M_USER</em>;
     1. 「OK」をクリック
 
 ### <a name="duplicate-the-database-in-the-same-instance-reference">参考</a>
-
 - [(REONTOSANTA) SQLServerで同一インスタンス内にデータベースを複製する](https://knowledge.reontosanta.com/archives/786)
