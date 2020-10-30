@@ -123,6 +123,23 @@ updated: 2020-09-16
     {% endfor %}
 </table>
 
+## こちらはインスタントメッセンジャー関連のメモになります
+
+<table>
+    {% assign sub_categories = site.data.sub_category_it | where: 'type', 'instant_messenger' %}
+    {% for sub_category in sub_categories %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category', 'IT'
+                                               | where: 'sub_category', sub_category.name %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ sub_category.link }}">{{ sub_category.name }}</a></td>
+        <td>{{ sub_category.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+
 ## こちらはその他のメモになります
 
 <table>

@@ -54,6 +54,10 @@ defaults:
     values:
       sub_category: "Subversion"
   - scope:
+      path: "_it_articles/teams"
+    values:
+      sub_category: "Teams"
+  - scope:
       path: "_it_articles/vba"
     values:
       sub_category: "VBA"
