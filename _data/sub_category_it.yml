@@ -2,74 +2,87 @@
 - name: Access
   link: /it/access/
   type: database
+  sub_category_id: database03
   description: Microsoft社が開発したOfficeツールの一つ。簡易データベース機能を備える
 
 # C
 - name: Chrome
   link: /it/chrome/
   type: browser
+  sub_category_id: browser01
   description: Google社が開発しているブラウザ
   
 # G
 - name: Go
   link: /it/go/
   type: programming_language
+  sub_category_id: programming_language02
   description: Google社が開発したプログラミング言語Goについてのメモ
 
 # J
 - name: Java
   link: /it/java/
   type: programming_language
+  sub_category_id: programming_language01
   description: プログラミング言語Javaについてのメモ
 
 # L
 - name: Linux
   link: /it/linux/
   type: operating_system
+  sub_category_id: operating_system01
   description: リーナス・ベネディクト・トーバルズ氏（Linus Benedict Torvalds)によって開発されたOS、Linuxついてのメモ
 
 # O
 - name: Oracle
   link: /it/oracle/
   type: database
+  sub_category_id: database04
   description: Oracle社が作成しているデータベースOracleについてのメモ
 
 # P
 - name: PowerShell
   link: /it/powershell/
   type: shellscript
+  sub_category_id: shellscript01
   description: Microsoft社が開発したシェルPowerShellについてのメモ
   
 # S
 - name: SQL Server
   link: /it/sqlserver/
   type: database
+  sub_category_id: database02
   description: Microsoft社が作成しているデータベースSQL Serverについてのメモ
 
 - name: Subversion
   link: /it/subversion/
   type: version_control_system
+  sub_category_id: version_control_system01
   description: 	Apacheソフトウェア財団が開発している集中型バージョン管理システムSubversion(SVN)についてのメモ
 
 # T
 - name: Teams
   link: /it/teams/
   type: instant_messenger
+  sub_category_id: instant_messenger01
   description: Microsoft社が作成しているリモートワークのためのコラボレーションツール
   
 # V
 - name: VBA
   link: /it/vba/
   type: programming_language
+  sub_category_id: programming_language03
   description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ
 
 - name: VSCode
   link: /it/vscode/
   type: editor
+  sub_category_id: editor01
   description: Microsoft社が開発したエディターVisual Studio Codeについてのメモ
 
 # そ
 - name: その他
   link: /it/other/
   type: other
+  sub_category_id: other01
   description: IT関係のその他のメモ

@@ -1,4 +1,5 @@
 - name: 読書法
   link: /reading/method/
   type: method
+  sub_category_id: method01
   description: 読書法についてのメモ
