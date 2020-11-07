@@ -7,7 +7,8 @@ updated: 2020-09-09
 ## こちらは読書についてのメモになります
 
 <table>
-    {% assign methods = site.data.sub_category_reading | where: 'type', 'method' %}
+    {% assign methods = site.data.sub_category_reading | where: 'type', 'method'
+                                                       | sort: 'sub_category_id' %}
     {% for method in methods %}
     <tr>
         {% assign articles = site.reading_articles  | where: 'category', 'Reading'

@@ -7,7 +7,8 @@ updated: 2020-09-16
 ## こちらはプログラミング関連のメモになります
 
 <table>
-    {% assign programming_languages = site.data.sub_category_it | where: 'type', 'programming_language' %}
+    {% assign programming_languages = site.data.sub_category_it | where: 'type', 'programming_language'
+                                                                | sort: 'sub_category_id' %}
     {% for programming_language in programming_languages %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
@@ -24,7 +25,8 @@ updated: 2020-09-16
 ## こちらはデータベース関連のメモになります
 
 <table>
-    {% assign databases = site.data.sub_category_it | where: 'type', 'database' %}
+    {% assign databases = site.data.sub_category_it | where: 'type', 'database'
+                                                    | sort: 'sub_category_id' %}
     {% for database in databases %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
@@ -41,7 +43,8 @@ updated: 2020-09-16
 ## こちらはOS関連のメモになります
 
 <table>
-    {% assign operating_systems = site.data.sub_category_it | where: 'type', 'operating_system' %}
+    {% assign operating_systems = site.data.sub_category_it | where: 'type', 'operating_system'
+                                                            | sort: 'sub_category_id' %}
     {% for operating_system in operating_systems %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
@@ -58,7 +61,8 @@ updated: 2020-09-16
 ## こちらはシェルスクリプト関連のメモになります
 
 <table>
-    {% assign shell_scripts = site.data.sub_category_it | where: 'type', 'shellscript' %}
+    {% assign shell_scripts = site.data.sub_category_it | where: 'type', 'shellscript'
+                                                        | sort: 'sub_category_id' %}
     {% for shell_script in shell_scripts %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
@@ -75,7 +79,8 @@ updated: 2020-09-16
 ## こちらはエディタ関連のメモになります
 
 <table>
-    {% assign editors = site.data.sub_category_it | where: 'type', 'editor' %}
+    {% assign editors = site.data.sub_category_it | where: 'type', 'editor'
+                                                  | sort: 'sub_category_id' %}
     {% for editor in editors %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
@@ -92,7 +97,8 @@ updated: 2020-09-16
 ## こちらはブラウザ関連のメモになります
 
 <table>
-    {% assign browsers = site.data.sub_category_it | where: 'type', 'browser' %}
+    {% assign browsers = site.data.sub_category_it | where: 'type', 'browser'
+                                                   | sort: 'sub_category_id' %}
     {% for browser in browsers %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
@@ -109,7 +115,8 @@ updated: 2020-09-16
 ## こちらはバージョン管理システム関連のメモになります
 
 <table>
-    {% assign sub_categories = site.data.sub_category_it | where: 'type', 'version_control_system' %}
+    {% assign sub_categories = site.data.sub_category_it | where: 'type', 'version_control_system'
+                                                         | sort: 'sub_category_id' %}
     {% for sub_category in sub_categories %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
@@ -126,7 +133,8 @@ updated: 2020-09-16
 ## こちらはインスタントメッセンジャー関連のメモになります
 
 <table>
-    {% assign sub_categories = site.data.sub_category_it | where: 'type', 'instant_messenger' %}
+    {% assign sub_categories = site.data.sub_category_it | where: 'type', 'instant_messenger'
+                                                         | sort: 'sub_category_id' %}
     {% for sub_category in sub_categories %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
@@ -143,7 +151,8 @@ updated: 2020-09-16
 ## こちらはその他のメモになります
 
 <table>
-    {% assign others = site.data.sub_category_it | where: 'type', 'other' %}
+    {% assign others = site.data.sub_category_it | where: 'type', 'other'
+                                                 | sort: 'sub_category_id' %}
     {% for other in others %}
     <tr>
         {% assign articles = site.it_articles  | where: 'category', 'IT'
