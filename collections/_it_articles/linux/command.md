@@ -1,5 +1,6 @@
 ---
 title: Linuxコマンド
+display_order: 10
 created: 2020-09-11
 updated: 2020-09-11
 ---

@@ -4,6 +4,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      display_order: 0
 
 ################################## IT記事
   - scope:

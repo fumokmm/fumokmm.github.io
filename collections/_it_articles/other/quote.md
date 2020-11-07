@@ -1,5 +1,6 @@
 ---
 title: IT名言
+display_order: 20
 created: 2020-10-12
 updated: 2020-10-12
 ---

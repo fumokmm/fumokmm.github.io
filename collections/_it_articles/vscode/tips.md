@@ -1,5 +1,6 @@
 ---
 title: VSCodeのTips
+display_order: 900
 created: 2020-09-16
 updated: 2020-09-28
 ---
