@@ -93,19 +93,6 @@ collections:
   it_articles:
     output: true
     permalink: /it/:path
-    order:
-      - access/function.md
-      - access/tips.md
-      - other/term.md
-      - other/quote.md
-      - powershell/execution_policy.md
-      - powershell/tips.md
-      - powershell/sitelink.md
-      - sqlserver/ssms_tips.md
-      - subversion/tips.html
-      - vba/grammar.md
-      - vba/type.md
-      - vba/sitelink.md
 
   # 読書の記事
   reading_articles:
