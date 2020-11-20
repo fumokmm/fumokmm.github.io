@@ -1,6 +1,6 @@
 ---
 title: SQL Serverで取得結果行を1列に連結するSQL
-display_order: 10
+display_order: 20
 created: 2020-11-07
 updated: 2020-11-07
 ---
