@@ -10,6 +10,7 @@ updated: 2020-11-21
 ## <a name="index">目次</a>
 
 - [テーブル定義情報を取得するSQL](#sql)
+- [関連メモ](#related)
 - [参考](#reference)
 
 ## <a name="sql">テーブル定義情報を取得するSQL</a>
@@ -85,6 +86,10 @@ ORDER BY
 GO
 </pre>
 </div>
+
+## <a name="related">関連メモ</a>
+
+- [Oracleでテーブル定義情報を取得するSQL](/it/oracle/sql_to_get_table_definition_information.html)
 
 ## <a name="reference">参考</a>
 
