@@ -3,4 +3,8 @@
   detail_name: エクセルVBA一覧
   detail_url: https://excelwork.info/excel/category/excel-vba/
 
- 
+# 2020-11-29 追加
+- site_name: Office TANAKA
+  top_url: http://officetanaka.net/index.stm
+  detail_name: Excel VBAコンテンツ
+  detail_url: http://officetanaka.net/excel/vba/
