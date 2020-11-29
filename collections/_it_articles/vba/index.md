@@ -12,10 +12,12 @@ updated: 2020-09-08
     {% for item in list %}
         {% assign filename = item.url | split: '/' | reverse | first %}
         {% if filename != 'index' %}
+            <li>
             {% comment %}
-            <li>[{{ item.display_order }}]<a href="{{ item.url }}.html">{{ item.title }}</a> ({{ item.updated }}更新)</li>
+            [{{ item.display_order }}]
             {% endcomment %}
-            <li><a href="{{ item.url }}.html">{{ item.title }}</a> ({{ item.updated }}更新)</li>
+            <a href="{{ item.url }}.html">{{ item.title }}</a> ({{ item.updated }}更新)
+            </li>
         {% endif %}
     {% endfor %}
 </ul>

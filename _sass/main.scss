@@ -67,6 +67,10 @@ code {
                 font-style: normal;
                 color: #88f;
             }
+            &.comment {
+                font-style: normal;
+                color: rgb(0, 184, 0);
+            }
         }
     }
 }

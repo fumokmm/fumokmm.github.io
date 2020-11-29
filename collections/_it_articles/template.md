@@ -35,6 +35,8 @@ updated: 2020-11-21
 <pre>
 タイトル無しのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
+文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 </pre>
 </div>
 
@@ -43,5 +45,7 @@ updated: 2020-11-21
 <pre>
 タイトル付きのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
+文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="comment">コメント強調</em>するには&lt;em 
 </pre>
 </div>
