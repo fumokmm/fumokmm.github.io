@@ -52,7 +52,14 @@
   type: shellscript
   sub_category_id: shellscript01
   description: Microsoft社が開発したシェルPowerShellについてのメモ
-  
+
+# R
+- name: Ruby
+  link: /it/ruby/
+  type: programming_language
+  sub_category_id: programming_language04
+  description: まつもとゆきひろ氏（通称&#58;Matz）により開発されたオブジェクト指向スクリプト言語についてのメモ
+
 # S
 - name: SQL Server
   link: /it/sqlserver/
