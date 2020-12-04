@@ -2,7 +2,7 @@
 title: SQL ServerのTips
 display_order: 900
 created: 2020-10-15
-updated: 2020-10-28
+updated: 2020-12-04
 ---
 ここではSQL ServerのちょっとしたTipsをまとめておきます。
 
@@ -11,6 +11,7 @@ updated: 2020-10-28
 - [テーブルから列を削除する](#removing-a-column-from-a-table)
 - [テーブルをバックアップするSQL](#sql-for-backing-up-table)
 - [同一インスタンス内にデータベースを複製する](#duplicate-the-database-in-the-same-instance)
+- [IDENTITY指定された列に明示的な値をINSERTする](#identity-insert)
 
 ## <a name="removing-a-column-from-a-table">テーブルから列を削除する</a>
 {% include update_info.html created="2020-10-28" updated="2020-10-28" %}
@@ -85,3 +86,30 @@ SELECT * INTO <em>M_USER_20201015</em> FROM <em>M_USER</em>;
 
 ### <a name="duplicate-the-database-in-the-same-instance-reference">参考</a>
 - [(REONTOSANTA) SQLServerで同一インスタンス内にデータベースを複製する](https://knowledge.reontosanta.com/archives/786)
+
+
+## <a name="identity-insert">IDENTITY指定された列に明示的な値をINSERTする</a>
+{% include update_info.html created="2020-12-04" updated="2020-12-04" %}
+
+IDENTITYが指定された列の値を直接指定したINSERT文はエラーとなって実行できません。  
+そこで、`IDENTITY_INSERT`を`ON`に設定することでそれを一時解除できます。
+
+<div class="code-box">
+<div class="title">IDENTITY_INSERTをONにする</div>
+<pre>
+SET IDENTITY_INSERT <em>&lt;テーブル名&gt;</em> ON;
+</pre>
+</div>
+
+INSERT文を作るときに、列名は明示的に指定する必要があるようです。
+
+元に戻す場合は、OFFにします。
+<div class="code-box">
+<div class="title">IDENTITY_INSERTをOFFにする</div>
+<pre>
+SET IDENTITY_INSERT <em>&lt;テーブル名&gt;</em> OFF;
+</pre>
+</div>
+
+### <a name="identity-insert-reference">参考</a>
+- [(ilovex) 【SQLSERVER】自動採番列が定義されているテーブルへのデータ登録](https://www.ilovex.co.jp/blog/system/sqlserver/sqlserver-9.html)
