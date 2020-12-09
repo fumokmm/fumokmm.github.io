@@ -1,0 +1,13 @@
+{% comment %}
+- 記事の時は、articleFlg = true を設定
+- チャプターの時は、articleFlg が未定義となり、記事ページにリダイレクトする
+{% endcomment %}
+<script>
+    {% if include.type == 'article' %}
+        var articleFlg = true;
+    {% elsif include.type == 'chapter' %}
+        if (typeof articleFlg === 'undefined') {
+            window.location.href = '{{ page.article }}.html';
+        }
+    {% endif %}
+</script>
