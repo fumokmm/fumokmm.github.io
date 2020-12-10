@@ -2,7 +2,7 @@
 title: SQL ServerのTips
 display_order: 900
 created: 2020-10-15
-updated: 2020-12-04
+updated: 2020-12-09
 ---
 {% include article_def.html type="article" %}
 
