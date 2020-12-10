@@ -11,13 +11,13 @@
   type: browser
   sub_category_id: browser01
   description: Google社が開発しているブラウザ
-  
+
 # D
 - name: Database
   link: /it/database/
   type: database
   description: データベース全般について
-  
+
 # G
 - name: Go
   link: /it/go/
@@ -53,6 +53,13 @@
   sub_category_id: shellscript01
   description: Microsoft社が開発したシェルPowerShellについてのメモ
 
+# P
+- name: Python
+  link: /it/python/
+  type: programming_language
+  sub_category_id: programming_language05
+  description: プログラミング言語Pythonについてのメモ
+
 # R
 - name: Ruby
   link: /it/ruby/
@@ -79,7 +86,7 @@
   type: instant_messenger
   sub_category_id: instant_messenger01
   description: Microsoft社が作成しているリモートワークのためのコラボレーションツール
-  
+
 # V
 - name: VBA
   link: /it/vba/

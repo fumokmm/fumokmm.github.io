@@ -35,7 +35,7 @@ a.simple_link {
     color: black;
 }
 
-div.goto-index {
+div.goto-pagetop {
     text-align: right;
 }
 
@@ -56,7 +56,7 @@ code {
     font-weight: bold;
 }
 
-@mixin make-code-pre($preColor, $preBackgroundColor, $emColor, $emColorBlue, $emColorComment) {
+@mixin make-code-pre($preColor, $preBackgroundColor, $emColor, $emColorBlue, $emColorComment, $emColorCommand) {
     pre {
         margin: 0; 
         padding: 0;
@@ -75,6 +75,10 @@ code {
             &.comment {
                 font-style: normal;
                 color: $emColorComment;
+            }
+            &.command {
+                font-style: normal;
+                color: $emColorCommand;
             }
         }
     }
@@ -111,7 +115,8 @@ code {
         $preBackgroundColor: #f6f6f6,
         $emColor:#ff0078,
         $emColorBlue: #4c43da,
-        $emColorComment: #00bc42
+        $emColorComment: #00bc42,
+        $emColorCommand: #cccccc
     );
 }
 
@@ -146,7 +151,8 @@ code {
         $preBackgroundColor: #fff4ca,
         $emColor: #ff0b0b,
         $emColorBlue: #0084dc,
-        $emColorComment: #4caf50
+        $emColorComment: #4caf50,
+        $emColorCommand: #cccccc
     );
 }
 
@@ -181,7 +187,8 @@ code {
         $preBackgroundColor: #777,
         $emColor: rgb(255, 177, 177),
         $emColorBlue: #adf,
-        $emColorComment: #ad7
+        $emColorComment: #ad7,
+        $emColorCommand: #cccccc
     );
 }
 

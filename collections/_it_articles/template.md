@@ -39,6 +39,7 @@ updated: 2020-12-08
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
+文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
 </div>
 
@@ -49,6 +50,7 @@ updated: 2020-12-08
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em 
+文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
 </div>
 
@@ -60,6 +62,7 @@ updated: 2020-12-08
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
+文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
 </div>
 
@@ -70,6 +73,7 @@ updated: 2020-12-08
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em 
+文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
 </div>
 
@@ -81,6 +85,7 @@ updated: 2020-12-08
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
+文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
 </div>
 
@@ -91,5 +96,6 @@ updated: 2020-12-08
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em 
+文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
 </div>

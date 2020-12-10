@@ -1,13 +1,13 @@
 ---
-title: SQL Serverのメモ
-created: 2020-09-05
-updated: 2020-09-29
+title: Pythonのメモ
+created: 2020-12-10
+updated: 2020-12-10
 ---
-こちらはSQL Serverのメモになります。
+こちらはPythonのメモになります。
 
 <ul>
     {% assign list = site.it_articles  | where: 'category', 'IT'
-                                       | where: 'sub_category', 'SQL Server'
+                                       | where: 'sub_category', 'Python'
                                        | sort: 'display_order' %}
     {% for item in list %}
         {% unless item.chapter_no %}
