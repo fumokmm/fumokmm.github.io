@@ -148,6 +148,24 @@ updated: 2020-09-16
     {% endfor %}
 </table>
 
+## こちらはアプリケーション関連のメモになります
+
+<table>
+    {% assign applications = site.data.sub_category_it | where: 'type', 'application'
+                                                       | sort: 'sub_category_id' %}
+    {% for appli in applications %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category', 'IT'
+                                               | where: 'sub_category', appli.name %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ appli.link }}">{{ appli.name }}</a></td>
+        <td>{{ appli.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+
 ## こちらはその他のメモになります
 
 <table>

@@ -18,6 +18,12 @@
   type: database
   description: データベース全般について
 
+# E
+- name: Excel
+  link: /it/excel/
+  type: application
+  description: Microsoft Excelについて
+
 # G
 - name: Go
   link: /it/go/
