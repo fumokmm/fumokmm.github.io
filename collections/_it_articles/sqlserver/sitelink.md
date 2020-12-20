@@ -1,5 +1,5 @@
 ---
-title: SQLServer関連サイト
+title: SQL Server関連サイト
 display_order: 920
 created: 2020-12-16
 updated: 2020-12-16
