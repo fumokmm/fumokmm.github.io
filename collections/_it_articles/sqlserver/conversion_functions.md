@@ -1,5 +1,5 @@
 ---
-title: SQL Serverの変換系関数(CONVERT, CAST, FORMAT, PARSE)
+title: SQL Serverの変換系関数(CAST, CONVERT, FORMAT, PARSE)
 display_order: 30
 created: 2020-12-20
 updated: 2020-12-20
@@ -12,7 +12,7 @@ updated: 2020-12-20
                                            | sort: 'chapter_no' %}
 
 SQL ServerのSQL内でよく使う変関係関数をメモしておきます。  
-ここでは、`CONVERT`, `CAST`, `FORMAT`, `PARSE`について書いています。
+ここでは、`CAST`, `CONVERT`, `FORMAT`, `PARSE`について書いています。
 
 ## <a name="index">目次</a>
 

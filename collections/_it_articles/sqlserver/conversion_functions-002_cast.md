@@ -9,3 +9,11 @@ updated: 2020-12-20
 {% include article_def.html type="chapter" %}
 
 CASTは…
+
+<div class="code-box">
+<div class="title">CASTの構文</div>
+<pre>
+CAST(expression AS data_type [(length)])  
+</pre>
+</div>
+  
