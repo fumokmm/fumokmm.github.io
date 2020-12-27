@@ -1,0 +1,130 @@
+# A
+- sub_category_id: access
+  sub_category_label: Access
+  link: /it/access/
+  sub_category_group: database
+  sub_category_order: database03
+  description: Microsoft社が開発したOfficeツールの一つ。簡易データベース機能を備える
+
+# C
+- sub_category_id: chrome
+  sub_category_label: Chrome
+  link: /it/chrome/
+  sub_category_group: browser
+  sub_category_order: browser01
+  description: Google社が開発しているブラウザ
+
+# D
+- sub_category_id: database
+  sub_category_label: Database
+  link: /it/database/
+  sub_category_group: database
+  description: データベース全般について
+
+# E
+- sub_category_id: excel
+  sub_category_label: Excel
+  link: /it/excel/
+  sub_category_group: application
+  description: Microsoft Excelについて
+
+# G
+- sub_category_id: go
+  sub_category_label: Go
+  link: /it/go/
+  sub_category_group: programming_language
+  sub_category_order: programming_language02
+  description: Google社が開発したプログラミング言語Goについてのメモ
+
+# J
+- sub_category_id: java
+  sub_category_label: Java
+  link: /it/java/
+  sub_category_group: programming_language
+  sub_category_order: programming_language01
+  description: プログラミング言語Javaについてのメモ
+
+# L
+- sub_category_id: linux
+  sub_category_label: Linux
+  link: /it/linux/
+  sub_category_group: operating_system
+  sub_category_order: operating_system01
+  description: リーナス・ベネディクト・トーバルズ氏（Linus Benedict Torvalds)によって開発されたOS、Linuxついてのメモ
+
+# O
+- sub_category_id: oracle
+  sub_category_label: Oracle
+  link: /it/oracle/
+  sub_category_group: database
+  sub_category_order: database04
+  description: Oracle社が作成しているデータベースOracleについてのメモ
+
+# P
+- sub_category_id: powershell
+  sub_category_label: PowerShell
+  link: /it/powershell/
+  sub_category_group: shellscript
+  sub_category_order: shellscript01
+  description: Microsoft社が開発したシェルPowerShellについてのメモ
+
+- sub_category_id: python
+  sub_category_label: Python
+  link: /it/python/
+  sub_category_group: programming_language
+  sub_category_order: programming_language05
+  description: プログラミング言語Pythonについてのメモ
+
+# R
+- sub_category_id: ruby
+  sub_category_label: Ruby
+  link: /it/ruby/
+  sub_category_group: programming_language
+  sub_category_order: programming_language04
+  description: まつもとゆきひろ氏（通称&#58;Matz）により開発されたオブジェクト指向スクリプト言語についてのメモ
+
+# S
+- sub_category_id: sqlserver
+  sub_category_label: SQL Server
+  link: /it/sqlserver/
+  sub_category_group: database
+  sub_category_order: database02
+  description: Microsoft社が作成しているデータベースSQL Serverについてのメモ
+
+- sub_category_id: subversion
+  sub_category_label: Subversion
+  link: /it/subversion/
+  sub_category_group: version_control_system
+  sub_category_order: version_control_system01
+  description: 	Apacheソフトウェア財団が開発している集中型バージョン管理システムSubversion(SVN)についてのメモ
+
+# T
+- sub_category_id: teams
+  sub_category_label: Teams
+  link: /it/teams/
+  sub_category_group: instant_messenger
+  sub_category_order: instant_messenger01
+  description: Microsoft社が作成しているリモートワークのためのコラボレーションツール
+
+# V
+- sub_category_id: vba
+  sub_category_label: VBA
+  link: /it/vba/
+  sub_category_group: programming_language
+  sub_category_order: programming_language03
+  description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ
+
+- sub_category_id: vscode
+  sub_category_label: VSCode
+  link: /it/vscode/
+  sub_category_group: editor
+  sub_category_order: editor01
+  description: Microsoft社が開発したエディターVisual Studio Codeについてのメモ
+
+# そ
+- sub_category_id: other
+  sub_category_label: その他
+  link: /it/other/
+  sub_category_group: other
+  sub_category_order: other01
+  description: IT関係のその他のメモ

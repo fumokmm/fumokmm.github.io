@@ -6,8 +6,6 @@ chapter_title: 同一インスタンス内にデータベースを複製する
 created: 2020-10-23
 updated: 2020-10-23
 ---
-{% include article_def.html type="chapter" %}
-
 `SQL Server Management Studio`の`バックアップ`と`復元`を利用してデータベースを複製する手順です。  
 ここでは、復元元データベース名を`DB1`、復元先データベース名を`DB2`として説明しています。
 

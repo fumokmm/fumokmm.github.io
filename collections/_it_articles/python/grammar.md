@@ -6,8 +6,8 @@ updated: 2020-12-10
 ---
 {% include article_def.html type="article" %}
 
-{% assign chapter_list = site.it_articles  | where: 'category', 'IT'
-                                           | where: 'sub_category', 'Python'
+{% assign chapter_list = site.it_articles  | where: 'category_id', 'it'
+                                           | where: 'sub_category_id', 'python'
                                            | where: 'article', page.url
                                            | sort: 'chapter_no' %}
 

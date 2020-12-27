@@ -6,8 +6,6 @@ chapter_title: テーブルから列を削除する
 created: 2020-10-28
 updated: 2020-10-28
 ---
-{% include article_def.html type="chapter" %}
-
 テーブルから列を削除するALTER文です。
 
 <div class="code-box">

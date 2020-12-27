@@ -6,8 +6,8 @@ updated: 2020-12-17
 こちらはExcelのメモになります。
 
 <ul>
-    {% assign list = site.it_articles  | where: 'category', 'IT'
-                                       | where: 'sub_category', 'Excel'
+    {% assign list = site.it_articles  | where: 'category_id', 'it'
+                                       | where: 'sub_category_id', 'excel'
                                        | sort: 'display_order' %}
     {% for item in list %}
         {% unless item.chapter_no %}

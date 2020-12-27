@@ -6,8 +6,6 @@ chapter_title: テーブルをバックアップするSQL
 created: 2020-07-15
 updated: 2020-10-15
 ---
-{% include article_def.html type="chapter" %}
-
 テーブルをサクっとバックアップしたい場合に使えるSQLです。
 
 <div class="code-box">

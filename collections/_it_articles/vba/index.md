@@ -6,8 +6,8 @@ updated: 2020-09-08
 こちらはVBAのメモになります。
 
 <ul>
-    {% assign list = site.it_articles  | where: 'category', 'IT'
-                                       | where: 'sub_category', 'VBA'
+    {% assign list = site.it_articles  | where: 'category_id', 'it'
+                                       | where: 'sub_category_id', 'vba'
                                        | sort: 'display_order' %}
     {% for item in list %}
         {% assign filename = item.url | split: '/' | reverse | first %}

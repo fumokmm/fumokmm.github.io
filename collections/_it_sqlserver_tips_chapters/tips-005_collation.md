@@ -6,8 +6,6 @@ chapter_title: 照合順序設定を確認するSQL
 created: 2020-12-11
 updated: 2020-12-11
 ---
-{% include article_def.html type="chapter" %}
-
 <div class="code-box">
 <div class="title">サーバーの照合順序設定を確認するSQL</div>
 <pre>

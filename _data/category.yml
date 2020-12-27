@@ -1,15 +1,24 @@
-- name: Home
+- category_id: home
+  category_label: Home
   link: /
   description: トップページ
-- name: IT
+
+- category_id: it
+  category_label: IT
   link: /it/
   description: 技術系メモ
-- name: Reading
+
+- category_id: reading
+  category_label: Reading
   link: /reading/
   description: 読書についてのメモ
-- name: History
+
+- category_id: history
+  category_label: History
   link: /history/
   description: 更新履歴
-- name: About
+
+- category_id: about
+  category_label: About
   link: /about/
   description: このサイトについて

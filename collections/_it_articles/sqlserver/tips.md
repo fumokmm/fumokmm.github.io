@@ -4,12 +4,7 @@ display_order: 900
 created: 2020-10-15
 updated: 2020-12-16
 ---
-{% include article_def.html type="article" %}
-
-{% assign chapter_list = site.it_articles  | where: 'category', 'IT'
-                                           | where: 'sub_category', 'SQL Server'
-                                           | where: 'article', page.url
-                                           | sort: 'chapter_no' %}
+{% assign chapter_list = site.it_sqlserver_tips_chapters %}
 
 ここではSQL ServerのちょっとしたTipsをまとめておきます。
 

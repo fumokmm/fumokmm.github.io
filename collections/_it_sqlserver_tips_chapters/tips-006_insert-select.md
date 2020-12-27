@@ -6,8 +6,6 @@ chapter_title: SELECT結果をINSERTするSQL
 created: 2020-12-16
 updated: 2020-12-16
 ---
-{% include article_def.html type="chapter" %}
-
 いわゆるINSERT-SELECTです。
 
 <div class="code-box">
