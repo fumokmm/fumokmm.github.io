@@ -123,10 +123,10 @@
 
 # W
 - sub_category_id: windows
-  sub_category_label: windows
+  sub_category_label: Windows
   link: /it/windows/
   sub_category_group: operating_system
-  sub_category_order: operating_system01
+  sub_category_order: operating_system02
   description: Microsoft社が開発したオペレーティングシステムについてのメモ
 
 # そ
