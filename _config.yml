@@ -82,6 +82,10 @@ defaults:
       path: "_it_articles/vscode"
     values:
       sub_category_id: "vscode"
+  - scope:
+      path: "_it_articles/windows"
+    values:
+      sub_category_id: "windows"
 
 ################################## 読書
   - scope:
@@ -111,6 +115,8 @@ collections:
 
   # /it/sqlserver/tips
   it_sqlserver_tips_chapters:
+  # /it/windows/tips
+  it_windows_tips_chapters:
 
   # 読書の記事
   reading_articles:

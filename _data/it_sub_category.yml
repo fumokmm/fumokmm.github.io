@@ -121,6 +121,14 @@
   sub_category_order: editor01
   description: Microsoft社が開発したエディターVisual Studio Codeについてのメモ
 
+# W
+- sub_category_id: windows
+  sub_category_label: windows
+  link: /it/windows/
+  sub_category_group: operating_system
+  sub_category_order: operating_system01
+  description: Microsoft社が開発したオペレーティングシステムについてのメモ
+
 # そ
 - sub_category_id: other
   sub_category_label: その他
