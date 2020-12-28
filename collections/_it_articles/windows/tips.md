@@ -1,8 +1,8 @@
 ---
 title: WindowsのTips
 display_order: 900
-created: 2020-12-28
-updated: 2020-12-28
+created: 2020-12-29
+updated: 2020-12-29
 ---
 {% assign chapter_list = site.it_windows_tips_chapters %}
 

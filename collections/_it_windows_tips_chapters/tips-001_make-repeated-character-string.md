@@ -3,8 +3,8 @@ article: /it/windows/tips
 chapter_no: 001
 chapter_id: make-repeated-character-string
 chapter_title: 手っ取り早く繰り返し文字を作る方法
-created: 2020-12-28
-updated: 2020-12-28
+created: 2020-12-29
+updated: 2020-12-29
 ---
 手っ取り早く繰り返し文字を作りたい場合  
 例えば255文字の`A`が欲しい場合は、以下のように[PowerShell](/it/powershell/)を利用すると速いです。
