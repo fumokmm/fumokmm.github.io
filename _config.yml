@@ -107,16 +107,20 @@ collections_dir: collections
 collections:
   # 更新履歴
   history:
+  # /it/windows/tips
+  it_windows_tips_chapters:
+  # /it/sqlserver/tips
+  it_sqlserver_tips_chapters:
+
+  # 以下、出力するコレクション ---------------------
+  #   ※output:true じゃないコレクションをそれより前に定義しておかないと
+  #     コレクション内から、コレクションを呼び出したときに、Liquid Tagsがなぜか利用できないので
+  #     注意すること(201229)
 
   # IT記事
   it_articles:
     output: true
     permalink: /it/:path
-
-  # /it/sqlserver/tips
-  it_sqlserver_tips_chapters:
-  # /it/windows/tips
-  it_windows_tips_chapters:
 
   # 読書の記事
   reading_articles:
