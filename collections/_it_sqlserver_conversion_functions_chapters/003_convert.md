@@ -6,8 +6,6 @@ chapter_title: CONVERT
 created: 2020-12-20
 updated: 2020-12-20
 ---
-{% include article_def.html type="chapter" %}
-
 <div class="code-box">
 <div class="title">CONVERTの構文</div>
 <pre>

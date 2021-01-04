@@ -6,6 +6,4 @@ chapter_title: FORMAT
 created: 2020-12-20
 updated: 2020-12-20
 ---
-{% include article_def.html type="chapter" %}
-
 FORMATは…

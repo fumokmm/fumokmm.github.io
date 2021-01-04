@@ -6,8 +6,6 @@ chapter_title: CAST
 created: 2020-12-22
 updated: 2020-12-22
 ---
-{% include article_def.html type="chapter" %}
-
 CASTが一番シンプルな形になります。  
 
 <div class="code-box">

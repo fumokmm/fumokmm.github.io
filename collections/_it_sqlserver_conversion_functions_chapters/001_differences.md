@@ -6,8 +6,6 @@ chapter_title: 4つの変換系関数の違い
 created: 2020-12-21
 updated: 2020-12-21
 ---
-{% include article_def.html type="chapter" %}
-
 4つは変換系関数ということで似ているんですが、違いを簡単にまとめると以下のようになります。
 
 - `CAST`と`CONVERT`は型変換
