@@ -2,7 +2,7 @@
 title: Linuxコマンド
 display_order: 10
 created: 2020-09-11
-updated: 2020-09-11
+updated: 2021-01-04
 ---
 Linuxコマンドのメモです。
 
@@ -17,7 +17,7 @@ Linuxコマンドのメモです。
 
 #### <a name="ls_option">lsのオプション</a>
 
-<table>
+<table class="normal">
     <tr>
         <th>オプション</th>
         <th>説明</th>

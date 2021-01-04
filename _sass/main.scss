@@ -1,3 +1,5 @@
+// 色サンプル: https://www.color-sample.com/
+
 // 全体
 body {
     background-color: #e6eae3; // 灰黄緑 https://www.colordic.org/colorscheme/2364
@@ -45,10 +47,6 @@ div.goto-pagetop {
     margin-bottom: 25px;
     margin-top: -10px;
     margin-right: 40px;
-}
-
-table, tr, th, td {
-    border: 1px solid black;
 }
 
 code {
@@ -117,7 +115,7 @@ code {
         $emColorBlue: #4c43da,
         $emColorComment: #00bc42,
         $emColorCommand: #cccccc
-    );
+    )
 }
 
 // コードPRE(入力用)
@@ -153,7 +151,7 @@ code {
         $emColorBlue: #0084dc,
         $emColorComment: #4caf50,
         $emColorCommand: #cccccc
-    );
+    )
 }
 
 // コードPRE(出力用)
@@ -189,7 +187,7 @@ code {
         $emColorBlue: #adf,
         $emColorComment: #ad7,
         $emColorCommand: #cccccc
-    );
+    )
 }
 
 .copyright {
@@ -246,4 +244,41 @@ blockquote:after {
     font-size: 40px;
     line-height: 1;
     font-weight: 900;
+}
+
+// 参考: https://saruwakakun.com/html-css/basic/table
+//       https://code-kitchen.dev/html/table/
+@mixin make-table-style($thBackgroundColor, $tdBackgroundColor) {
+    //width: 100%;
+    //margin: 0 10px;
+    th {
+        background: $thBackgroundColor;
+    }
+    td {
+        background:$tdBackgroundColor;
+    }
+}
+
+table {
+    border-collapse: collapse; // テーブル自体には枠なし
+    overflow: auto;
+    th {
+        white-space: nowrap; // 勝手に折り返さない
+        border: 1px solid #323331;
+        background: inherit;
+        padding: 5px;
+    }
+    td {
+        border: 1px solid #323331;
+        background: inherit;
+        padding: 5px;
+    }
+
+    // テーブル標準スタイル(緑)
+    &.normal {
+        @include make-table-style(
+            $thBackgroundColor: #aae5d2,
+            $tdBackgroundColor: #f6fff2
+        )
+    }
 }

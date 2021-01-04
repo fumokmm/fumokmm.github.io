@@ -2,7 +2,7 @@
 layout: default_layout
 title: テンプレートのページ
 created: 2020-11-21
-updated: 2020-12-08
+updated: 2021-01-04
 ---
 テンプレートのページ。
 
@@ -114,12 +114,7 @@ updated: 2020-12-08
 
 ※改行はできないので注意
 
-<table>
-    <colgroup>
-        <col width="33%" />
-        <col width="33%" />
-        <col width="33%" />
-    </colgroup>
+<table class="normal">
     <thead>
         <tr>
             <th>左揃え</th>
