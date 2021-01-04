@@ -15,7 +15,6 @@ SQL ServerのSQL内でよく使う変関係関数をメモしておきます。
 {% for chapter_item in chapter_list %}
 <li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>
 {% endfor %}
-<li><a href="#explicit-convertion-table">参考：変換表</a></li>
 </ul>
 
 {% comment %} 以下、記事 {% endcomment %}
@@ -26,9 +25,3 @@ SQL ServerのSQL内でよく使う変関係関数をメモしておきます。
 {{ chapter_item.content | markdownify }}
 {% include goto_pagetop.html %}
 {% endfor %}
-
-## <a name="explicit-convertion-table">参考：変換表</a>
-
-![](https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumokmm/20201220/20201220151008.png)
-
-- [CAST and CONVERT (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql?view=sql-server-ver15)より参照
