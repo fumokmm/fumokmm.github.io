@@ -1,12 +1,12 @@
 ---
-title: SQL ServerのTips
+title: WindowsのTips
 display_order: 900
-created: 2020-10-15
-updated: 2020-12-16
+created: 2020-12-29
+updated: 2020-12-29
 ---
-{% assign chapter_list = site.it_sqlserver_tips_chapters %}
+{% assign chapter_list = site.it_windows_tips_chapters %}
 
-ここではSQL ServerのちょっとしたTipsをまとめておきます。
+ここではWindowsのちょっとしたTipsをまとめておきます。
 
 ## <a name="index">目次</a>
 

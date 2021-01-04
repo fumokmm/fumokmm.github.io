@@ -6,8 +6,6 @@ chapter_title: IDENTITY指定された列に明示的な値をINSERTする
 created: 2020-12-04
 updated: 2020-12-04
 ---
-{% include article_def.html type="chapter" %}
-
 IDENTITYが指定された列の値を直接指定したINSERT文はエラーとなって実行できません。  
 そこで、`IDENTITY_INSERT`を`ON`に設定することでそれを一時解除できます。
 

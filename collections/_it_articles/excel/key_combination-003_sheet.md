@@ -4,7 +4,7 @@ chapter_no: 003
 chapter_id: sheet
 chapter_title: シート操作
 created: 2020-12-17
-updated: 2020-12-17
+updated: 2020-12-23
 ---
 {% include article_def.html type="chapter" %}
 
@@ -28,3 +28,9 @@ updated: 2020-12-17
   <dt>シート見出しの色変更</dt>
   <dd>[Alt + H] [O] [T]</dd>
 </dl>
+
+### 参考
+
+- [(超文系Excel講座) シート間を移動してシート名を変更するショートカット](https://bunkei-excel.com/539.html)
+- [(Office Hack) Excelのシート名変更のショートカットキー（Windows）](https://office-hack.com/excel/shortcutkey-sheetname-change/)
+- [(できるネット) ショートカットキーでワークシートの名前を変更する](https://dekiru.net/article/12471/)

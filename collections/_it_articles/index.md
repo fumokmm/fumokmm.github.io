@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_layout
 title: 技術系メモ
 created: 2020-09-02
 updated: 2020-09-16
@@ -7,15 +7,15 @@ updated: 2020-09-16
 ## こちらはプログラミング関連のメモになります
 
 <table>
-    {% assign programming_languages = site.data.sub_category_it | where: 'type', 'programming_language'
-                                                                | sort: 'sub_category_id' %}
+    {% assign programming_languages = site.data.it_sub_category | where: 'sub_category_group', 'programming_language'
+                                                                | sort: 'sub_category_order' %}
     {% for programming_language in programming_languages %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', programming_language.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', programming_language.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ programming_language.link }}">{{ programming_language.name }}</a></td>
+        <td><a href="{{ programming_language.link }}">{{ programming_language.sub_category_label }}</a></td>
         <td>{{ programming_language.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
@@ -25,15 +25,15 @@ updated: 2020-09-16
 ## こちらはデータベース関連のメモになります
 
 <table>
-    {% assign databases = site.data.sub_category_it | where: 'type', 'database'
-                                                    | sort: 'sub_category_id' %}
+    {% assign databases = site.data.it_sub_category | where: 'sub_category_group', 'database'
+                                                    | sort: 'sub_category_order' %}
     {% for database in databases %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', database.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', database.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ database.link }}">{{ database.name }}</a></td>
+        <td><a href="{{ database.link }}">{{ database.sub_category_label }}</a></td>
         <td>{{ database.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
@@ -43,15 +43,15 @@ updated: 2020-09-16
 ## こちらはOS関連のメモになります
 
 <table>
-    {% assign operating_systems = site.data.sub_category_it | where: 'type', 'operating_system'
-                                                            | sort: 'sub_category_id' %}
+    {% assign operating_systems = site.data.it_sub_category | where: 'sub_category_group', 'operating_system'
+                                                            | sort: 'sub_category_order' %}
     {% for operating_system in operating_systems %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', operating_system.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', operating_system.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ operating_system.link }}">{{ operating_system.name }}</a></td>
+        <td><a href="{{ operating_system.link }}">{{ operating_system.sub_category_label }}</a></td>
         <td>{{ operating_system.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
@@ -61,15 +61,15 @@ updated: 2020-09-16
 ## こちらはシェルスクリプト関連のメモになります
 
 <table>
-    {% assign shell_scripts = site.data.sub_category_it | where: 'type', 'shellscript'
-                                                        | sort: 'sub_category_id' %}
+    {% assign shell_scripts = site.data.it_sub_category | where: 'sub_category_group', 'shellscript'
+                                                        | sort: 'sub_category_order' %}
     {% for shell_script in shell_scripts %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', shell_script.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', shell_script.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ shell_script.link }}">{{ shell_script.name }}</a></td>
+        <td><a href="{{ shell_script.link }}">{{ shell_script.sub_category_label }}</a></td>
         <td>{{ shell_script.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
@@ -79,15 +79,15 @@ updated: 2020-09-16
 ## こちらはエディタ関連のメモになります
 
 <table>
-    {% assign editors = site.data.sub_category_it | where: 'type', 'editor'
-                                                  | sort: 'sub_category_id' %}
+    {% assign editors = site.data.it_sub_category | where: 'sub_category_group', 'editor'
+                                                  | sort: 'sub_category_order' %}
     {% for editor in editors %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', editor.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', editor.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ editor.link }}">{{ editor.name }}</a></td>
+        <td><a href="{{ editor.link }}">{{ editor.sub_category_label }}</a></td>
         <td>{{ editor.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
@@ -97,15 +97,15 @@ updated: 2020-09-16
 ## こちらはブラウザ関連のメモになります
 
 <table>
-    {% assign browsers = site.data.sub_category_it | where: 'type', 'browser'
-                                                   | sort: 'sub_category_id' %}
+    {% assign browsers = site.data.it_sub_category | where: 'sub_category_group', 'browser'
+                                                   | sort: 'sub_category_order' %}
     {% for browser in browsers %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', browser.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', browser.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ browser.link }}">{{ browser.name }}</a></td>
+        <td><a href="{{ browser.link }}">{{ browser.sub_category_label }}</a></td>
         <td>{{ browser.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
@@ -115,15 +115,15 @@ updated: 2020-09-16
 ## こちらはバージョン管理システム関連のメモになります
 
 <table>
-    {% assign sub_categories = site.data.sub_category_it | where: 'type', 'version_control_system'
-                                                         | sort: 'sub_category_id' %}
+    {% assign sub_categories = site.data.it_sub_category | where: 'sub_category_group', 'version_control_system'
+                                                         | sort: 'sub_category_order' %}
     {% for sub_category in sub_categories %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', sub_category.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', sub_category.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ sub_category.link }}">{{ sub_category.name }}</a></td>
+        <td><a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a></td>
         <td>{{ sub_category.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
@@ -133,15 +133,15 @@ updated: 2020-09-16
 ## こちらはインスタントメッセンジャー関連のメモになります
 
 <table>
-    {% assign sub_categories = site.data.sub_category_it | where: 'type', 'instant_messenger'
-                                                         | sort: 'sub_category_id' %}
+    {% assign sub_categories = site.data.it_sub_category | where: 'sub_category_group', 'instant_messenger'
+                                                         | sort: 'sub_category_order' %}
     {% for sub_category in sub_categories %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', sub_category.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', sub_category.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ sub_category.link }}">{{ sub_category.name }}</a></td>
+        <td><a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a></td>
         <td>{{ sub_category.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
@@ -151,15 +151,15 @@ updated: 2020-09-16
 ## こちらはアプリケーション関連のメモになります
 
 <table>
-    {% assign applications = site.data.sub_category_it | where: 'type', 'application'
-                                                       | sort: 'sub_category_id' %}
+    {% assign applications = site.data.it_sub_category | where: 'sub_category_group', 'application'
+                                                       | sort: 'sub_category_order' %}
     {% for appli in applications %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', appli.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', appli.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ appli.link }}">{{ appli.name }}</a></td>
+        <td><a href="{{ appli.link }}">{{ appli.sub_category_label }}</a></td>
         <td>{{ appli.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
@@ -169,15 +169,15 @@ updated: 2020-09-16
 ## こちらはその他のメモになります
 
 <table>
-    {% assign others = site.data.sub_category_it | where: 'type', 'other'
-                                                 | sort: 'sub_category_id' %}
+    {% assign others = site.data.it_sub_category | where: 'sub_category_group', 'other'
+                                                 | sort: 'sub_category_order' %}
     {% for other in others %}
     <tr>
-        {% assign articles = site.it_articles  | where: 'category', 'IT'
-                                               | where: 'sub_category', other.name %}
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', other.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
-        <td><a href="{{ other.link }}">{{ other.name }}</a></td>
+        <td><a href="{{ other.link }}">{{ other.sub_category_label }}</a></td>
         <td>{{ other.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>

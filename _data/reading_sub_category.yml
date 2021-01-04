@@ -1,0 +1,6 @@
+- sub_category_id: method
+  sub_category_label: 読書法
+  link: /reading/method/
+  sub_category_group: method
+  sub_category_order: method01
+  description: 読書法についてのメモ

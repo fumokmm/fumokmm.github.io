@@ -1,13 +1,13 @@
 ---
-title: VBAのメモ
-created: 2020-09-02
-updated: 2020-09-08
+title: Windowsのメモ
+created: 2020-12-28
+updated: 2020-12-28
 ---
-こちらはVBAのメモになります。
+こちらはWindowsのメモになります。
 
 <ul>
     {% assign list = site.it_articles  | where: 'category_id', 'it'
-                                       | where: 'sub_category_id', 'vba'
+                                       | where: 'sub_category_id', 'windows'
                                        | sort: 'display_order' %}
     {% for item in list %}
         {% assign filename = item.url | split: '/' | reverse | first %}
@@ -16,7 +16,7 @@ updated: 2020-09-08
             {% comment %}
             [{{ item.display_order }}]
             {% endcomment %}
-            <a href="{{ item.url }}.html">{{ item.title }}</a> ({{ item.updated }}更新)
+            <a href="{{ item.url }}">{{ item.title }}</a> ({{ item.updated }}更新)
             </li>
         {% endif %}
     {% endfor %}

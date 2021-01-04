@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_layout
 title: テンプレートのページ
 created: 2020-11-21
 updated: 2020-12-08

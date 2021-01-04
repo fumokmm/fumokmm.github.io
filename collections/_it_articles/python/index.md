@@ -6,8 +6,8 @@ updated: 2020-12-10
 こちらはPythonのメモになります。
 
 <ul>
-    {% assign list = site.it_articles  | where: 'category', 'IT'
-                                       | where: 'sub_category', 'Python'
+    {% assign list = site.it_articles  | where: 'category_id', 'it'
+                                       | where: 'sub_category_id', 'python'
                                        | sort: 'display_order' %}
     {% for item in list %}
         {% unless item.chapter_no %}

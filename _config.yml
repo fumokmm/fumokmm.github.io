@@ -3,99 +3,103 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: "default_layout"
       display_order: 0
 
 ################################## IT記事
   - scope:
       path: "_it_articles"
     values:
-      layout: "it"
-      category: "IT"
+      layout: "it_article_layout"
+      category_id: "it"
 
 # IT記事のサブカテゴリ
   - scope:
       path: "_it_articles/access"
     values:
-      sub_category: "Access"
+      sub_category_id: "access"
   - scope:
       path: "_it_articles/chrome"
     values:
-      sub_category: "Chrome"
+      sub_category_id: "chrome"
   - scope:
       path: "_it_articles/database"
     values:
-      sub_category: "Database"
+      sub_category_id: "database"
   - scope:
       path: "_it_articles/excel"
     values:
-      sub_category: "Excel"
+      sub_category_id: "excel"
   - scope:
       path: "_it_articles/go"
     values:
-      sub_category: "Go"
+      sub_category_id: "go"
   - scope:
       path: "_it_articles/java"
     values:
-      sub_category: "Java"
+      sub_category_id: "java"
   - scope:
       path: "_it_articles/linux"
     values:
-      sub_category: Linux
+      sub_category_id: linux
   - scope:
       path: "_it_articles/oracle"
     values:
-      sub_category: "Oracle"
+      sub_category_id: "oracle"
   - scope:
       path: "_it_articles/other"
     values:
-      sub_category: "その他"
+      sub_category_id: "other"
   - scope:
       path: "_it_articles/powershell"
     values:
-      sub_category: PowerShell
+      sub_category_id: powershell
   - scope:
       path: "_it_articles/python"
     values:
-      sub_category: Python
+      sub_category_id: python
   - scope:
       path: "_it_articles/ruby"
     values:
-      sub_category: Ruby
+      sub_category_id: ruby
   - scope:
       path: "_it_articles/sqlserver"
     values:
-      sub_category: "SQL Server"
+      sub_category_id: "sqlserver"
   - scope:
       path: "_it_articles/subversion"
     values:
-      sub_category: "Subversion"
+      sub_category_id: "subversion"
   - scope:
       path: "_it_articles/teams"
     values:
-      sub_category: "Teams"
+      sub_category_id: "teams"
   - scope:
       path: "_it_articles/vba"
     values:
-      sub_category: "VBA"
+      sub_category_id: "vba"
   - scope:
       path: "_it_articles/vscode"
     values:
-      sub_category: "VSCode"
+      sub_category_id: "vscode"
+  - scope:
+      path: "_it_articles/windows"
+    values:
+      sub_category_id: "windows"
 
 ################################## 読書
   - scope:
       path: "_reading_articles"
     values:
-      layout: "reading"
-      category: "Reading"
+      layout: "reading_layout"
+      category_id: "reading"
 
 # 読書のサブカテゴリ
 # 読書法
   - scope:
       path: "_reading_articles/method"
     values:
-      sub_category: "読書法"
+      sub_category_id: "method"
 
 # コレクションの設定
 collections_dir: collections
@@ -103,7 +107,15 @@ collections_dir: collections
 collections:
   # 更新履歴
   history:
-    output: false
+  # /it/windows/tips
+  it_windows_tips_chapters:
+  # /it/sqlserver/tips
+  it_sqlserver_tips_chapters:
+
+  # 以下、出力するコレクション ---------------------
+  #   ※output:true じゃないコレクションをそれより前に定義しておかないと
+  #     コレクション内から、コレクションを呼び出したときに、Liquid Tagsがなぜか利用できないので
+  #     注意すること(201229)
 
   # IT記事
   it_articles:

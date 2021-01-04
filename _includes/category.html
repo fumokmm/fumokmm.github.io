@@ -1,9 +1,9 @@
 <nav>
     {% for item in site.data.category %}
         <a href="{{ item.link }}"
-        {% if page.url == item.link or page.category == item.name %}class="current"{% endif %}
-        >{{item.name}}</a>
-        {% if item.name != 'About' %} | {% endif %}
+        {% if page.url == item.link or page.category == item.category_id %}class="current"{% endif %}
+        >{{item.category_label}}</a>
+        {% if item.category_id != 'about' %} | {% endif %}
     {% endfor %}
 </nav>
 
