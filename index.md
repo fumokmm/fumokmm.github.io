@@ -1,12 +1,12 @@
 ---
 title: Home
 created: 2020-09-02
-updated: 2020-09-09
+updated: 2021-01-04
 ---
 ## これは何？
 
 Think Twiceをご覧いただき、ありがとうございます。
-このサイトは<a href="https://twitter.com/fumokmm">@fumokmm</a>のメモサイトです。  
+このサイトは[@fumokmm](https://twitter.com/fumokmm)のメモサイトです。  
 ブログでの情報整理に限界を感じ、サイトでの整理方法に戻ってきました。  
 主にプログラミングのネタが多いです。  
 日々更新中ですので、良かったら見て行って下さい。  

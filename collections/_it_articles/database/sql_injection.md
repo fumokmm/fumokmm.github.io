@@ -2,7 +2,7 @@
 title: SQLインジェクションのまとめ
 display_order: 10
 created: 2008-04-12
-updated: 2020-11-21
+updated: 2021-01-04
 ---
 当メモは2008-04-12に[投稿されたもの](https://npnl.hatenablog.jp/entry/20080412/1207965105)を加筆修正し、再掲したものです。
 
@@ -27,7 +27,7 @@ updated: 2020-11-21
 ### 攻撃手法
 以下のようなテーブルがあるとします。
 
-<table style="width: 300px;">
+<table class="normal">
     <caption>テーブル名：ユーザマスタ</caption>
     <tr><th>ユーザID</th><th>パスワード</th></tr>
     <tr><td>admin</td><td>admin</td></tr>
@@ -172,7 +172,7 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = 'ro
 つまり、「`admin`」のパスワードが分からなくても「`admin`」のパスワードを変更することが可能となるわけです。  
 更新後のテーブルの様子は以下のようになります。
 
-<table style="width: 300px;">
+<table class="normal">
     <caption>テーブル名：ユーザマスタ(更新後)</caption>
     <tr><th>ユーザID</th><th>パスワード</th></tr>
     <tr><td>admin</td><td><strong>malice</strong></td></tr>
@@ -208,7 +208,7 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = '' 
 [ケース３](#case3)と同様に「`'A' = 'A'`」の恒真式にしつつ、それ以降をコメントアウトしてWHERE句を無効化しています。結果、全員のパスワードが「`malice`」に変更されてしまいます。  
 更新後のテーブルの様子は以下のようになります。
 
-<table style="width: 300px;">
+<table class="normal">
     <caption>テーブル名：ユーザマスタ(更新後)</caption>
     <tr><th>ユーザID</th><th>パスワード</th></tr>
     <tr><td>admin</td><td><strong>malice</strong></td></tr>
@@ -224,7 +224,7 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = '' 
 SQL文に含まれたパラメータに対して、危険な文字列を検出し特殊文字として認識させないように適切に置換・除去を行うエスケープ処理(サニタイジング)で対応します。  
 エスケープ対象は処理系によって異なりますが、一般的には次の通りです。
 
-<table>
+<table class="normal">
     <tr><th>特殊文字</th><th>エスケープ処理</th></tr>
     <tr><td>'</td><td>''</td></tr>
     <tr><td>;</td><td>受理しない</td></tr>
@@ -280,7 +280,7 @@ UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID
 
 以下のようにして新規登録します。
 
-<table style="width: 300px;">
+<table class="normal">
     <tr><td>ユーザID</td><td>admin' --</td></tr>
     <tr><td>パスワード</td><td>passwd</td></tr>
 </table>
@@ -296,7 +296,7 @@ INSERT INTO ユーザマスタ VALUES ( 'admin<em>''</em> --', 'passwd' )
 
 結果、ユーザID「`admin' --`」としてユーザ登録されます。
 
-<table style="width: 300px;">
+<table class="normal">
     <caption>テーブル名：ユーザマスタ(登録後)</caption>
     <tr><th>ユーザID</th><th>パスワード</th></tr>
     <tr><td>admin</td><td>admin</td></tr>
