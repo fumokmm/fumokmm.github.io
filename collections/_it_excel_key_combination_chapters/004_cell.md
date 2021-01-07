@@ -6,8 +6,6 @@ chapter_title: セル操作
 created: 2020-12-17
 updated: 2020-12-17
 ---
-{% include article_def.html type="chapter" %}
-
 <dl>
   <dt>セル挿入</dt>
   <dd>[Alt + H] [I] [2] [I]</dd>

@@ -2,14 +2,9 @@
 title: Excel作業効率を上げるキーコンビネーション
 display_order: 900
 created: 2020-12-17
-updated: 2020-12-23
+updated: 2021-01-08
 ---
-{% include article_def.html type="article" %}
-
-{% assign chapter_list = site.it_articles  | where: 'category_id', 'it'
-                                           | where: 'sub_category_id', 'excel'
-                                           | where: 'article', page.url
-                                           | sort: 'chapter_no' %}
+{% assign chapter_list = site.it_excel_key_combination_chapters %}
 
 ここではExcel作業するときに知っていると作業効率の上がるキーコンビネーションをまとめておきます。
 
