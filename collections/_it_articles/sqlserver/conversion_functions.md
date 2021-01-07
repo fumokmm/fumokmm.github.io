@@ -2,7 +2,7 @@
 title: SQL Serverの変換系関数(CAST, CONVERT, FORMAT, PARSE)
 display_order: 30
 created: 2020-12-20
-updated: 2021-01-04
+updated: 2021-01-07
 ---
 {% assign chapter_list = site.it_sqlserver_conversion_functions_chapters %}
 

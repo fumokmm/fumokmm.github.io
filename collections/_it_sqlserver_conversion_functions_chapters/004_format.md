@@ -6,4 +6,4 @@ chapter_title: FORMAT
 created: 2020-12-20
 updated: 2020-12-20
 ---
-FORMATは…
+FORMATは…また後で書きます。
