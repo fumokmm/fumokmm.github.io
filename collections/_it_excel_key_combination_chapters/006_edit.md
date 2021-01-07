@@ -6,8 +6,6 @@ chapter_title: 編集操作
 created: 2020-12-17
 updated: 2020-12-17
 ---
-{% include article_def.html type="chapter" %}
-
 <dl>
   <dt>値貼り付け</dt>
   <dd>
