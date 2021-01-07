@@ -2,9 +2,9 @@
 title: PowerShell関連サイト
 display_order: 910
 created: 2020-09-28
-updated: 2020-09-28
+updated: 2021-01-04
 ---
-<table>
+<table class="normal">
   <thead>
     <tr>
       <th style="text-align: left">サイト名など</th>

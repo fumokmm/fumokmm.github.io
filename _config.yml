@@ -109,6 +109,8 @@ collections:
   history:
   # /it/windows/tips
   it_windows_tips_chapters:
+  # /it/sqlserver/conversion_functions
+  it_sqlserver_conversion_functions_chapters:
   # /it/sqlserver/tips
   it_sqlserver_tips_chapters:
 

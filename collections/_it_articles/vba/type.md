@@ -2,11 +2,11 @@
 title: VBAの型
 display_order: 20
 created: 2020-09-02
-updated: 2020-09-02
+updated: 2021-01-04
 ---
 VBAで利用可能な型は以下があります。
 
-<table>
+<table class="normal">
     <tr>
         <th>分類</th>
         <th>名称</th>
