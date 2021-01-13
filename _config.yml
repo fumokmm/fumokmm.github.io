@@ -107,6 +107,8 @@ collections_dir: collections
 collections:
   # 更新履歴
   history:
+  # /it/java/java_enums_cannot_be_inherited_but_interfaces_can
+  it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
   # /it/excel/key_combination
   it_excel_key_combination_chapters:
   # /it/sqlserver/conversion_functions
