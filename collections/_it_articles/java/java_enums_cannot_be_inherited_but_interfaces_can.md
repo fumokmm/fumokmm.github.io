@@ -2,7 +2,7 @@
 title: Javaのenumは継承できないけどインタフェースが継承できる
 display_order: 10
 created: 2012-05-03
-updated: 2021-01-12
+updated: 2021-01-14
 ---
 {% assign chapter_list = site.it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters %}
 
