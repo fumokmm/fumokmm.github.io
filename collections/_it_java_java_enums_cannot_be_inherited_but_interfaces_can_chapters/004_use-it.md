@@ -4,7 +4,7 @@ chapter_no: 004
 chapter_id: use-it
 chapter_title: 使ってみる
 created: 2012-05-03
-updated: 2021-01-13
+updated: 2021-01-14
 ---
 <div class="code-box">
 <div class="title">Colored型で取得</div>

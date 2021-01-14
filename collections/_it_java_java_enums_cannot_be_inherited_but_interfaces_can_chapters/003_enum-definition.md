@@ -4,7 +4,7 @@ chapter_no: 003
 chapter_id: enum-definition
 chapter_title: enum定義
 created: 2012-05-03
-updated: 2021-01-13
+updated: 2021-01-14
 ---
 <div class="code-box">
 <div class="title">enum定義</div>

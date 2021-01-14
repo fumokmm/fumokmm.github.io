@@ -4,7 +4,7 @@ chapter_no: 005
 chapter_id: supplement
 chapter_title: 補足
 created: 2012-05-03
-updated: 2021-01-13
+updated: 2021-01-14
 ---
 今回作ったインタフェースのColoredは`#getColor()`メソッドしか定義していませんので、enumにもとからあるメソッド(`#name()`とか)は当然の事ながら使えません。なので、必要に応じてinterfaceの方に加えておくとよいでしょう。
 

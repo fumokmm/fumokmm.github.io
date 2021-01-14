@@ -4,7 +4,7 @@ chapter_no: 002
 chapter_id: interfaceoduction
 chapter_title: インタフェース
 created: 2012-05-03
-updated: 2021-01-13
+updated: 2021-01-14
 ---
 <div class="code-box">
 <div class="title">インタフェース</div>
