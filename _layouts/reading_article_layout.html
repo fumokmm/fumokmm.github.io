@@ -8,7 +8,7 @@ layout: base_layout
 
     {% assign sub_category_index_link = sub_category.link | append: 'index' %}
     {% if sub_category_index_link != page.url %}
-    | <a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}のメモ</a>
+    | <a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a>
     {% endif %}
 </div>
 
