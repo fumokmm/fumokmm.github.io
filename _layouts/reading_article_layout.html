@@ -6,9 +6,9 @@ layout: base_layout
 <div>
     <a href="{{ category.link }}">読書についてのメモ</a>
 
-    {% assign sub_category_link = sub_category.link | append: 'index' %}
-    {% if sub_category_link != page.url %}
-    | <a href="{{ sub_category.link }}">{{ sub_category.name }}のメモ</a>
+    {% assign sub_category_index_link = sub_category.link | append: 'index' %}
+    {% if sub_category_index_link != page.url %}
+    | <a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}のメモ</a>
     {% endif %}
 </div>
 

@@ -1,3 +1,10 @@
+- sub_category_id: charmpoint
+  sub_category_label: 読書の魅力
+  link: /reading/charmpoint/
+  sub_category_group: charmpoint
+  sub_category_order: charmpoint01
+  description: 読書の魅力についてのメモ
+
 - sub_category_id: method
   sub_category_label: 読書法
   link: /reading/method/

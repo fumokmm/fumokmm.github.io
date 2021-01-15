@@ -1,15 +1,13 @@
 ---
-title: 読書法についてのメモ
-created: 2020-09-09
-updated: 2020-09-09
+title: 読書の魅力についてのメモ
+created: 2021-01-15
+updated: 2021-01-15
 ---
-こちらは読書法についてのメモになります。  
-様々な書籍に色々と読書法が書かれていますが、どれも似通ったことを言っていることがほとんどです。  
-本質的なことをまとめておきたいと思います。
+こちらは読書の魅力についてのメモになります。
 
 <ul>
     {% assign list = site.reading_articles  | where: 'category_id', 'reading'
-                                            | where: 'sub_category_id', 'method'
+                                            | where: 'sub_category_id', 'charmpoint'
                                             | sort: 'display_order' %}
     {% for item in list %}
         {% assign filename = item.url | split: '/' | reverse | first %}

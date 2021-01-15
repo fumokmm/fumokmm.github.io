@@ -91,11 +91,16 @@ defaults:
   - scope:
       path: "_reading_articles"
     values:
-      layout: "reading_layout"
+      layout: "reading_article_layout"
       category_id: "reading"
 
 # 読書のサブカテゴリ
-# 読書法
+  # 読書の魅力
+  - scope:
+      path: "_reading_articles/charmpoint"
+    values:
+      sub_category_id: "charmpoint"
+  # 読書法
   - scope:
       path: "_reading_articles/method"
     values:
@@ -107,6 +112,7 @@ collections_dir: collections
 collections:
   # 更新履歴
   history:
+
   # /it/java/java_enums_cannot_be_inherited_but_interfaces_can
   it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
   # /it/excel/key_combination
@@ -117,6 +123,11 @@ collections:
   it_sqlserver_tips_chapters:
   # /it/windows/tips
   it_windows_tips_chapters:
+
+  # /reading/charmpoint/about_book
+  reading_charmpoint_about_book_chapters:
+  # /reading/method/read_from_ending
+  reading_method_read_from_ending_chapters:
 
   # 以下、出力するコレクション ---------------------
   #   ※output:true じゃないコレクションをそれより前に定義しておかないと
