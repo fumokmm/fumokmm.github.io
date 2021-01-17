@@ -4,8 +4,8 @@
         {% if category.category_id == 'it' %}
             {% for sub_category in site.data.it_sub_category %}
                 {% if sub_category.sub_category_id == include.sub_category_id %}
-                    <td>{{ category.category_label }}</td>
-                    <td>{{ sub_category.sub_category_label }}</td>
+                    <td><a href="{{ category.link }}">{{ category.category_label }}</a></td>
+                    <td><a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a></td>
                     {% break %}
                 {% endif %}
             {% endfor %}
@@ -14,8 +14,8 @@
         {% if category.category_id == 'reading' %}
             {% for sub_category in site.data.reading_sub_category %}
                 {% if sub_category.sub_category_id == include.sub_category_id %}
-                    <td>{{ category.category_label }}</td>
-                    <td>{{ sub_category.sub_category_label }}</td>
+                    <td><a href="{{ category.link }}">{{ category.category_label }}</a></td>
+                    <td><a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a></td>
                     {% break %}
                 {% endif %}
             {% endfor %}
