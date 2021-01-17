@@ -1,4 +1,20 @@
+{% assign article_count = 0 %}
+{% for article in all_articles %}
+    {% assign filename = article.url | split: '/' | reverse | first %}
+    {% if filename != 'index' %}
+        {% assign article_count = article_count | plus: 1 %}
+    {% endif %}
+{% endfor %}
+全 {{ article_count }} 件
+
 <table>
+    <tr>
+        <th>タイトル</th>
+        <th>カテゴリ</th>
+        <th>サブカテゴリ</th>
+        <th>作成日</th>
+        <th>更新日</th>
+    </tr>
     {% for article in all_articles %}
         {% assign filename = article.url | split: '/' | reverse | first %}
         {% if filename != 'index' %}
