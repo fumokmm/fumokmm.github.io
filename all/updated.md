@@ -1,5 +1,4 @@
 ---
-layout: all_layout
 title: 全メモのリスト
 created: 2021-01-17
 updated: 2021-01-17

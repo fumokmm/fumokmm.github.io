@@ -106,6 +106,13 @@ defaults:
     values:
       sub_category_id: "method"
 
+################################## 全メモのリスト
+  - scope:
+      path: "all"
+    values:
+      layout: "all_layout"
+      category_id: "all"
+
 # コレクションの設定
 collections_dir: collections
 
