@@ -13,6 +13,11 @@
   link: /reading/
   description: 読書についてのメモ
 
+- category_id: all
+  category_label: All
+  link: /all/
+  description: 全てのメモ
+
 - category_id: history
   category_label: History
   link: /history/

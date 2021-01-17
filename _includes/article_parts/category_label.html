@@ -1,0 +1,25 @@
+{% for category in site.data.category %}
+    {% if category.category_id == include.category_id %}
+
+        {% if category.category_id == 'it' %}
+            {% for sub_category in site.data.it_sub_category %}
+                {% if sub_category.sub_category_id == include.sub_category_id %}
+                    <td>{{ category.category_label }}</td>
+                    <td>{{ sub_category.sub_category_label }}</td>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        {% if category.category_id == 'reading' %}
+            {% for sub_category in site.data.reading_sub_category %}
+                {% if sub_category.sub_category_id == include.sub_category_id %}
+                    <td>{{ category.category_label }}</td>
+                    <td>{{ sub_category.sub_category_label }}</td>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+    {% endif %}
+{% endfor %}

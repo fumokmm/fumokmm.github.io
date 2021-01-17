@@ -1,0 +1,16 @@
+---
+layout: base_layout
+---
+<div>
+    <a href="{% link all/index.md %}"{% if page.name == 'index.md' %} class="current"{% endif %}>ID順</a>
+    | <a href="{% link all/created.md %}"{% if page.name == 'created.md' %} class="current"{% endif %}>作成日順</a>
+    | <a href="{% link all/created_desc.md %}"{% if page.name == 'created_desc.md' %} class="current"{% endif %}>作成日順(降順)</a>
+    | <a href="{% link all/updated.md %}"{% if page.name == 'updated.md' %} class="current"{% endif %}>更新日順</a>
+    | <a href="{% link all/updated_desc.md %}"{% if page.name == 'updated_desc.md' %} class="current"{% endif %}>更新日順(降順)</a>
+</div>
+
+{% include updated.html %}
+{% include tools/ninja_share_button.html %}
+{% include main_title.html %}
+
+{{content}}

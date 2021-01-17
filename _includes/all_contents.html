@@ -1,0 +1,17 @@
+<table>
+    {% for article in all_articles %}
+        {% assign filename = article.url | split: '/' | reverse | first %}
+        {% if filename != 'index' %}
+            <tr>
+                <td><a href="{{ article.url }}">{{ article.title }}</a></td>
+                {% include article_parts/category_label.html category_id=article.category_id sub_category_id=article.sub_category_id %}
+                {% if article.created == article.updated %}
+                    <td colspan="2">{{ article.created }}作成</td>
+                {% else %}
+                    <td>{{ article.created }}作成</td>
+                    <td>{{ article.updated }}更新</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+    {% endfor %}
+</table>
