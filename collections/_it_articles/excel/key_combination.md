@@ -2,7 +2,7 @@
 title: Excel作業効率を上げるキーコンビネーション
 display_order: 900
 created: 2020-12-17
-updated: 2021-01-08
+updated: 2021-01-18
 ---
 {% assign chapter_list = site.it_excel_key_combination_chapters %}
 
@@ -20,7 +20,7 @@ updated: 2021-01-08
 
 {% for chapter_item in chapter_list %}
 ## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
-{% include update_info.html created=chapter_item.created updated=chapter_item.updated %}
+<div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
 {{ chapter_item.content | markdownify }}
 {% include goto_pagetop.html %}
 {% endfor %}
