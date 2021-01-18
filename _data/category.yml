@@ -13,6 +13,11 @@
   link: /reading/
   description: 読書についてのメモ
 
+- category_id: life
+  category_label: Life
+  link: /life/
+  description: 人生についてのメモ
+
 - category_id: all
   category_label: All
   link: /all/

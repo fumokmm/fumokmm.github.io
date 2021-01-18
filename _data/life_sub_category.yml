@@ -1,0 +1,13 @@
+- sub_category_id: xxxx
+  sub_category_label: カテゴリ１
+  link: /life/xxxx/
+  sub_category_group: xxxx
+  sub_category_order: xxxx01
+  description: カテゴリ１についてのメモ
+
+- sub_category_id: yyyy
+  sub_category_label: カテゴリ２
+  link: /life/yyyy/
+  sub_category_group: yyyy
+  sub_category_order: yyyy01
+  description: カテゴリ２についてのメモ
