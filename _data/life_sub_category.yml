@@ -1,13 +1,13 @@
-- sub_category_id: xxxx
-  sub_category_label: カテゴリ１
-  link: /life/xxxx/
-  sub_category_group: xxxx
-  sub_category_order: xxxx01
-  description: カテゴリ１についてのメモ
+- sub_category_id: minimalism
+  sub_category_label: 断捨離
+  link: /life/minimalism/
+  sub_category_group: minimalism
+  sub_category_order: minimalism01
+  description: 断捨離についてのメモ
 
-- sub_category_id: yyyy
-  sub_category_label: カテゴリ２
-  link: /life/yyyy/
-  sub_category_group: yyyy
-  sub_category_order: yyyy01
-  description: カテゴリ２についてのメモ
+- sub_category_id: attitude
+  sub_category_label: 態度
+  link: /life/attitude/
+  sub_category_group: attitude
+  sub_category_order: attitude01
+  description: 態度についてのメモ

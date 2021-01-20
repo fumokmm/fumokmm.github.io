@@ -106,6 +106,26 @@ defaults:
     values:
       sub_category_id: "method"
 
+################################## 人生
+  - scope:
+      path: "_life_articles"
+    values:
+      layout: "life_article_layout"
+      category_id: "life"
+
+# 人生のサブカテゴリ
+  # 断捨離
+  - scope:
+      path: "_life_articles/minimalism"
+    values:
+      sub_category_id: "minimalism"
+
+  # 態度
+  - scope:
+      path: "_life_articles/attitude"
+    values:
+      sub_category_id: "attitude"
+
 ################################## 全メモのリスト
   - scope:
       path: "all"
@@ -136,6 +156,11 @@ collections:
   # /reading/method/read_from_ending
   reading_method_read_from_ending_chapters:
 
+  # /life/attitude/expectations
+  life_attitude_expectations_chapters:
+  # /life/minimalism/discard
+  life_minimalism_discard_chapters:
+
   # 以下、出力するコレクション ---------------------
   #   ※output:true じゃないコレクションをそれより前に定義しておかないと
   #     コレクション内から、コレクションを呼び出したときに、Liquid Tagsがなぜか利用できないので
@@ -150,3 +175,8 @@ collections:
   reading_articles:
     output: true
     permalink: /reading/:path
+
+  # 人生の記事
+  life_articles:
+    output: true
+    permalink: /life/:path
