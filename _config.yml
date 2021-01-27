@@ -126,6 +126,12 @@ defaults:
     values:
       sub_category_id: "attitude"
 
+  # 目的
+  - scope:
+      path: "_life_articles/purpose"
+    values:
+      sub_category_id: "purpose"
+
 ################################## 全メモのリスト
   - scope:
       path: "all"
@@ -160,6 +166,9 @@ collections:
   life_attitude_expectations_chapters:
   # /life/minimalism/discard
   life_minimalism_discard_chapters:
+
+  # /life/purpose/ultimate_goal
+  life_purpose_ultimate_goal_chapters:
 
   # 以下、出力するコレクション ---------------------
   #   ※output:true じゃないコレクションをそれより前に定義しておかないと

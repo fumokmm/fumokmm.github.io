@@ -11,3 +11,10 @@
   sub_category_group: attitude
   sub_category_order: attitude01
   description: 態度についてのメモ
+
+- sub_category_id: purpose
+  sub_category_label: 目的
+  link: /life/purpose/
+  sub_category_group: purpose
+  sub_category_order: purpose01
+  description: 目的についてのメモ
