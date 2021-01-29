@@ -61,6 +61,13 @@
   description: Oracle社が作成しているデータベースOracleについてのメモ
 
 # P
+- sub_category_id: problem
+  sub_category_label: プログラミングお題
+  link: /it/problem/
+  sub_category_group: programming_language
+  sub_category_order: programming_language90
+  description: プログラミングお題についてのメモ
+
 - sub_category_id: powershell
   sub_category_label: PowerShell
   link: /it/powershell/

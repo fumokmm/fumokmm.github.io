@@ -2,7 +2,7 @@
 layout: default_layout
 title: 技術系メモ
 created: 2020-09-02
-updated: 2020-09-16
+updated: 2021-01-29
 ---
 ## こちらはプログラミング関連のメモになります
 

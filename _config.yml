@@ -51,6 +51,10 @@ defaults:
     values:
       sub_category_id: "other"
   - scope:
+      path: "_it_articles/problem"
+    values:
+      sub_category_id: "problem"
+  - scope:
       path: "_it_articles/powershell"
     values:
       sub_category_id: powershell
@@ -148,6 +152,8 @@ collections:
 
   # /it/java/java_enums_cannot_be_inherited_but_interfaces_can
   it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
+  # /it/problem/hot_summer_day
+  it_problem_hot_summer_day_chapters:
   # /it/excel/key_combination
   it_excel_key_combination_chapters:
   # /it/sqlserver/conversion_functions
