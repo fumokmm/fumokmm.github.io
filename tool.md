@@ -27,8 +27,8 @@ updated: 2021-01-15
 document.getElementById('convertBefore').addEventListener('change', () => {
     let before = document.getElementById('convertBefore');
     let after = document.getElementById('convertAfter');
-    after.innerText = before.value.replace(/&/, '&amp;')
-                                  .replace(/\</, '&lt;')
-                                  .replace(/\>/, '&gt;');
+    after.innerText = before.value.replace(/&/g, '&amp;')
+                                  .replace(/\</g, '&lt;')
+                                  .replace(/\>/g, '&gt;');
 }, false);
 </script>
