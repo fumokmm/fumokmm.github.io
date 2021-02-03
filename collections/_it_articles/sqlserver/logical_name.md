@@ -1,6 +1,6 @@
 ---
 title: SQL Serverでテーブル論理名とか列論理名を指定する方法
-display_order: 40
+display_order: 50
 created: 2021-01-29
 updated: 2021-01-29
 ---

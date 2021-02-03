@@ -1,13 +1,10 @@
 ---
-title: SQL Serverの変換系関数(CAST, CONVERT, FORMAT, PARSE)
-display_order: 40
-created: 2020-12-20
-updated: 2021-01-07
+title: SQL ServerのDDL
+display_order: 10
+created: 2021-02-03
+updated: 2021-02-03
 ---
-{% assign chapter_list = site.it_sqlserver_conversion_functions_chapters %}
-
-SQL ServerのSQL内でよく使う変関係関数をメモしておきます。  
-ここでは、`CAST`, `CONVERT`, `FORMAT`, `PARSE`について書いています。
+{% assign chapter_list = site.it_sqlserver_ddl_chapters %}
 
 ## <a name="index">目次</a>
 

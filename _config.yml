@@ -156,6 +156,8 @@ collections:
   it_problem_hot_summer_day_chapters:
   # /it/excel/key_combination
   it_excel_key_combination_chapters:
+  # /it/sqlserver/ddl
+  it_sqlserver_ddl_chapters:
   # /it/sqlserver/logical_name
   it_sqlserver_logical_name_chapters:
   # /it/sqlserver/conversion_functions
