@@ -1,3 +1,16 @@
 メンテナンス
 - チャプター参照記事の書き方が古いものがあるので、最新化する
+    OK _it_excel_key_combination_chapters
+    OK _it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters
+    OK _it_problem_hot_summer_day_chapters
+    OK _it_sqlserver_conversion_functions_chapters
+    OK _it_sqlserver_logical_name_chapters
+    OK _it_sqlserver_tips_chapters
+    OK _it_windows_tips_chapters
+    OK _life_attitude_expectations_chapters
+    OK _life_minimalism_discard_chapters
+    OK _life_purpose_ultimate_goal_chapters
+    OK _reading_charmpoint_about_book_chapters
+    OK _reading_method_read_from_ending_chapters
+
 - その他で雑多にしてしまっているTips記事の整理
