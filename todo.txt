@@ -5,6 +5,4 @@
 
 - チャプターの中のFront Matterのarticle:はいらない
 
-- {% include article_def.html type="chapter" %}を消す
-
 - pythonの関連サイト集(sitelink)を作る
