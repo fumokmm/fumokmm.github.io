@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/conversion_functions
 chapter_no: 003
 chapter_id: convert
 chapter_title: CONVERT

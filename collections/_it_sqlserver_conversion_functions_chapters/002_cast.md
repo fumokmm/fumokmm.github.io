@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/conversion_functions
 chapter_no: 002
 chapter_id: cast
 chapter_title: CAST

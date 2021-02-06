@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/tips
 chapter_no: 006
 chapter_id: insert-select
 chapter_title: SELECT結果をINSERTするSQL

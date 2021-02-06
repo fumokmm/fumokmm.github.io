@@ -1,5 +1,4 @@
 ---
-article: /it/excel/key_combination
 chapter_no: 002
 chapter_id: column
 chapter_title: 列操作

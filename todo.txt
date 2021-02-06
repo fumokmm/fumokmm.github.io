@@ -3,6 +3,4 @@
 
 - その他で雑多にしてしまっているTips記事の整理
 
-- チャプターの中のFront Matterのarticle:はいらない
-
 - pythonの関連サイト集(sitelink)を作る

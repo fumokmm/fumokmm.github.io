@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/conversion_functions
 chapter_no: 999
 chapter_id: explicit-convertion-table
 chapter_title: 参考：変換表
