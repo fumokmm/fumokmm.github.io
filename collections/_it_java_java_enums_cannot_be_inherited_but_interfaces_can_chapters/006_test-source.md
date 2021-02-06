@@ -1,5 +1,4 @@
 ---
-article: /it/java/java_enums_cannot_be_inherited_but_interfaces_can_chapters
 chapter_no: 006
 chapter_id: test-source
 chapter_title: テストを書いた

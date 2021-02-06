@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/tips
 chapter_no: 003
 chapter_id: duplicate-the-database-in-the-same-instance
 chapter_title: 同一インスタンス内にデータベースを複製する

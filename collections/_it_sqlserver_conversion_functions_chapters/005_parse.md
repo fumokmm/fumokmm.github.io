@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/conversion_functions
 chapter_no: 005
 chapter_id: parse
 chapter_title: PARSE

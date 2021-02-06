@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/tips
 chapter_no: 004
 chapter_id: identity-insert
 chapter_title: IDENTITY指定された列に明示的な値をINSERTする

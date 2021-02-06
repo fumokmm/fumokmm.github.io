@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/tips
 chapter_no: 002
 chapter_id: sql-for-backing-up-table
 chapter_title: テーブルをバックアップするSQL

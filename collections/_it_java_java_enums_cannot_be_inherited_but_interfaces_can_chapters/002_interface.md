@@ -1,5 +1,4 @@
 ---
-article: /it/java/java_enums_cannot_be_inherited_but_interfaces_can_chapters
 chapter_no: 002
 chapter_id: interfaceoduction
 chapter_title: インタフェース

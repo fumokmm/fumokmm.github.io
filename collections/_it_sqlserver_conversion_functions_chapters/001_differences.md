@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/conversion_functions
 chapter_no: 001
 chapter_id: differences
 chapter_title: 4つの変換系関数の違い

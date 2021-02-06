@@ -1,5 +1,4 @@
 ---
-article: /it/excel/key_combination
 chapter_no: 003
 chapter_id: sheet
 chapter_title: シート操作

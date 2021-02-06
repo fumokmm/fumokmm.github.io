@@ -1,13 +1,10 @@
 ---
-article: /it/python/grammar
 chapter_no: 002
 chapter_id: comment
 chapter_title: コメント
 created: 2020-12-10
 updated: 2020-12-10
 ---
-{% include article_def.html type="chapter" %}
-
 ### 行コメント
 
 `#`以降が行コメントになります。

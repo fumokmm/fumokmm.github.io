@@ -1,5 +1,4 @@
 ---
-article: /it/excel/key_combination
 chapter_no: 006
 chapter_id: edit
 chapter_title: 編集操作

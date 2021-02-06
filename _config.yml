@@ -150,35 +150,21 @@ collections:
   # 更新履歴
   history:
 
-  # /it/java/java_enums_cannot_be_inherited_but_interfaces_can
-  it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
-  # /it/problem/hot_summer_day
-  it_problem_hot_summer_day_chapters:
-  # /it/excel/key_combination
+  # チャプター
   it_excel_key_combination_chapters:
-  # /it/sqlserver/ddl
-  it_sqlserver_ddl_chapters:
-  # /it/sqlserver/logical_name
-  it_sqlserver_logical_name_chapters:
-  # /it/sqlserver/conversion_functions
+  it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
+  it_problem_hot_summer_day_chapters:
+  it_python_grammar_chapters:
   it_sqlserver_conversion_functions_chapters:
-  # /it/sqlserver/tips
+  it_sqlserver_ddl_chapters:
+  it_sqlserver_logical_name_chapters:
   it_sqlserver_tips_chapters:
-  # /it/windows/tips
   it_windows_tips_chapters:
-
-  # /reading/charmpoint/about_book
-  reading_charmpoint_about_book_chapters:
-  # /reading/method/read_from_ending
-  reading_method_read_from_ending_chapters:
-
-  # /life/attitude/expectations
   life_attitude_expectations_chapters:
-  # /life/minimalism/discard
   life_minimalism_discard_chapters:
-
-  # /life/purpose/ultimate_goal
   life_purpose_ultimate_goal_chapters:
+  reading_charmpoint_about_book_chapters:
+  reading_method_read_from_ending_chapters:
 
   # 以下、出力するコレクション ---------------------
   #   ※output:true じゃないコレクションをそれより前に定義しておかないと

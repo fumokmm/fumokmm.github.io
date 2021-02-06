@@ -1,5 +1,4 @@
 ---
-article: /it/excel/key_combination
 chapter_no: 005
 chapter_id: filter
 chapter_title: フィルター操作

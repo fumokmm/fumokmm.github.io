@@ -4,12 +4,7 @@ display_order: 10
 created: 2020-12-10
 updated: 2020-12-10
 ---
-{% include article_def.html type="article" %}
-
-{% assign chapter_list = site.it_articles  | where: 'category_id', 'it'
-                                           | where: 'sub_category_id', 'python'
-                                           | where: 'article', page.url
-                                           | sort: 'chapter_no' %}
+{% assign chapter_list = site.it_python_grammar_chapters %}
 
 ここではPythonの文法を簡単にまとめておきます。特に記載のない場合、Python3を対象としています。
 
@@ -25,7 +20,7 @@ updated: 2020-12-10
 
 {% for chapter_item in chapter_list %}
 ## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
-{% include update_info.html created=chapter_item.created updated=chapter_item.updated %}
+<div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
 {{ chapter_item.content | markdownify }}
 {% include goto_pagetop.html %}
 {% endfor %}

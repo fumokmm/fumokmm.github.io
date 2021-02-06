@@ -1,5 +1,4 @@
 ---
-article: /it/windows/tips
 chapter_no: 001
 chapter_id: make-repeated-character-string
 chapter_title: 手っ取り早く繰り返し文字を作る方法

@@ -1,13 +1,10 @@
 ---
-article: /it/python/grammar
 chapter_no: 001
 chapter_id: helloworld
 chapter_title: ハローワールド
 created: 2020-12-10
 updated: 2020-12-10
 ---
-{% include article_def.html type="chapter" %}
-
 `print`を使います。
 
 <div class="code-box">

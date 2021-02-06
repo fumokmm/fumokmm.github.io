@@ -1,5 +1,4 @@
 ---
-article: /it/java/java_enums_cannot_be_inherited_but_interfaces_can_chapters
 chapter_no: 003
 chapter_id: enum-definition
 chapter_title: enum定義

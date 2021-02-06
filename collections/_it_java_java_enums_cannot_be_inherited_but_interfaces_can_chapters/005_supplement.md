@@ -1,5 +1,4 @@
 ---
-article: /it/java/java_enums_cannot_be_inherited_but_interfaces_can_chapters
 chapter_no: 005
 chapter_id: supplement
 chapter_title: 補足

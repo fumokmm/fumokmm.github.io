@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/tips
 chapter_no: 005
 chapter_id: collation
 chapter_title: 照合順序設定を確認するSQL

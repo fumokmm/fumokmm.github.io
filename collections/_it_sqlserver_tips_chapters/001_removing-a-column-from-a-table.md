@@ -1,5 +1,4 @@
 ---
-article: /it/sqlserver/tips
 chapter_no: 001
 chapter_id: removing-a-column-from-a-table
 chapter_title: テーブルから列を削除する
