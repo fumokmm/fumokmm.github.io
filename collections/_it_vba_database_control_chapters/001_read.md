@@ -3,14 +3,14 @@ chapter_no: 001
 chapter_id: read
 chapter_title: データの読み取り
 created: 2021-02-08
-updated: 2021-02-08
+updated: 2021-02-09
 ---
 ADODBを利用してデータの読み取りを行うサンプルです。  
 以下の参照設定が必要です。
 - Microsoft ActiveX Data Objects 6.1 Library
 - Microsoft ActiveX Data Objects Recordset 6.0 Library
 <div class="code-box">
-<div class="title">SQL</div>
+<div class="title">SQL Serverに接続しデータを読み取る</div>
 <pre>
 Dim p_conn As ADODB.Connection
 Set p_conn = New ADODB.Connection
@@ -40,7 +40,8 @@ p_conn.Close
 </div>
 
 ### ポイント
-- 強調部分は適宜変更して下さい。(接続文字列部分)
+- 接続文字列部分はSQL Server用のユーザ指定版となります。
+  - 強調部分は適宜変更して下さい。(接続文字列部分)
 - ADODB.Recordsetで値を取得する構文として `.Fields!項目名` っていうのもあるみたいです。
 - SQLを発行した後は、Do Until p_rs.EOF ～～ p_rs.MoveNext Loop はテンプレです。
 - オープンしたレコードセットとコネクションのクローズは忘れずに
