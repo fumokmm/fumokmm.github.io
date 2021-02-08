@@ -52,3 +52,4 @@ p_conn.Close
 - [(MyRecord) Excel VBA ADOを使用して外部データベースのレコードを参照する](https://kosapi.com/post-3765/#Recordset.Open)
 - [(ExcelWork.info) データベース（SQL Server）に接続する（ADO）](https://excelwork.info/excel/databasesqlserver/)
 - [(Excelでお仕事！) ADOでデータを取得する。](http://www.asahi-net.or.jp/~ef2o-inue/vba_o/sub05_130_030.html)
+- [(Motohiro's Home Page) VB ADO 操作](http://donijan.com/web-g/donijan.com/public_html/motohiro/manual/vb/ADO.htm)
