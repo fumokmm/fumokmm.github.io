@@ -2,7 +2,7 @@
 title: VBAでデータベース操作
 display_order: 40
 created: 2021-02-08
-updated: 2021-02-08
+updated: 2021-02-09
 ---
 {% assign chapter_list = site.it_vba_database_control_chapters %}
 
