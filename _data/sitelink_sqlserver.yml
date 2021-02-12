@@ -3,3 +3,9 @@
   top_url: https://www.projectgroup.info/
   detail_name: Microsoft SQL ServerのTips
   detail_url: https://www.projectgroup.info/tips/SQLServer/index.html
+
+# 2021-02-12 追加
+- site_name: REONTOSANTA
+  top_url: https://knowledge.reontosanta.com/
+  detail_name: REONTOSANTAさんのSQL Serverカテゴリ
+  detail_url: https://knowledge.reontosanta.com/archives/category/database/sqlserver

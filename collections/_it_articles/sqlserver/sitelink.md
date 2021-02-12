@@ -2,7 +2,7 @@
 title: SQL Server関連サイト
 display_order: 920
 created: 2020-12-16
-updated: 2021-01-04
+updated: 2021-02-12
 ---
 <table class="normal">
   <thead>
