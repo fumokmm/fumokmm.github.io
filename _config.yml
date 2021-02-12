@@ -152,6 +152,7 @@ collections:
 
   # チャプター
   it_excel_key_combination_chapters:
+  it_java_database_control_chapters:
   it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
   it_problem_hot_summer_day_chapters:
   it_python_grammar_chapters:
@@ -159,6 +160,7 @@ collections:
   it_sqlserver_ddl_chapters:
   it_sqlserver_logical_name_chapters:
   it_sqlserver_tips_chapters:
+  it_vba_database_control_chapters:
   it_windows_tips_chapters:
   life_attitude_expectations_chapters:
   life_minimalism_discard_chapters:
