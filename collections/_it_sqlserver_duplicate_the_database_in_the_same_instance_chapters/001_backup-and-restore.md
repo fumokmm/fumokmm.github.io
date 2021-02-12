@@ -1,9 +1,9 @@
 ---
-chapter_no: 003
-chapter_id: duplicate-the-database-in-the-same-instance
-chapter_title: 同一インスタンス内にデータベースを複製する
+chapter_no: 001
+chapter_id: backup-and-restore
+chapter_title: バックアップと復元
 created: 2020-10-23
-updated: 2020-10-23
+updated: 2021-02-12
 ---
 `SQL Server Management Studio`の`バックアップ`と`復元`を利用してデータベースを複製する手順です。  
 ここでは、復元元データベース名を`DB1`、復元先データベース名を`DB2`として説明しています。
@@ -21,9 +21,6 @@ updated: 2020-10-23
     1. 「オプション」で以下を設定する
         1. 「既存のデータベースを上書きする」をチェックする
         1. 必要に応じて、「次のデータベースファイルに復元」の内容を変更する
-        1. 行データ:任意のファイルパスのmdfファイル
-        1. ログ:任意のldfファイル
+            1. 行データ:任意のファイルパスのmdfファイル
+            1. ログ:任意のldfファイル
     1. 「OK」をクリック
-
-### 参考
-- [(REONTOSANTA) SQLServerで同一インスタンス内にデータベースを複製する](https://knowledge.reontosanta.com/archives/786)
