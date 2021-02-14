@@ -9,7 +9,6 @@
   - メニューの並び順は右のようにする（更新日順(降順) | 作成日順 | 作成日順(降順) | 更新日順 | ID順）
 - 過去のhistoryでリンク切れになっているものを修復するため、%link化を推進する
 - 過去のhistoryでリンク切れになっているものを修復
-  - collections/_history/2020/09/2020-09-02.md
   - collections/_history/2020/09/2020-09-07.md
   - collections/_history/2020/09/2020-09-08.md
   - collections/_history/2020/09/2020-09-09.md
