@@ -2,7 +2,7 @@
     {% for item in site.data.category %}
         <a href="{{ item.link }}"
         {% if page.url == item.link or page.category_id == item.category_id %}class="current"{% endif %}
-        >{{item.category_label}}</a>
+        >{{ item.category_label }}</a>
         {% if item.category_id != 'about' %} | {% endif %}
     {% endfor %}
 </nav>
