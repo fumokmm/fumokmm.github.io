@@ -5,12 +5,12 @@ chapter_title: 列追加
 created: 2021-02-15
 updated: 2021-02-15
 ---
-テーブルへの列追加
+テーブルへ列を追加するALTER文です。
 
 <div class="code-box-syntax">
 <div class="title">構文</div>
 <pre>
-ALTER TABLE &lt;テーブル名&gt; ADD &lt;カラム名&gt; &lt;型定義...&gt;;
+ALTER TABLE <em>&lt;テーブル名&gt;</em> ADD <em>&lt;カラム名&gt;</em> <em>&lt;型定義...&gt;</em>;
 </pre>
 </div>
 
@@ -19,7 +19,7 @@ ALTER TABLE &lt;テーブル名&gt; ADD &lt;カラム名&gt; &lt;型定義...&gt
 <div class="code-box">
 <div class="title">列、Scoreの追加</div>
 <pre>
-ALTER TABLE dbo.[User] ADD Score INT NOT NULL DEFAULT 0;
+ALTER TABLE <em>dbo.[User]</em> ADD <em>Score</em> <em>INT NOT NULL DEFAULT 0</em>;
 </pre>
 </div>
 
