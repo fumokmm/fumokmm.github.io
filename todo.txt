@@ -55,3 +55,7 @@
   - collections/_history/2021/02/2021-02-09.md
   - collections/_history/2021/02/2021-02-12.md
 - template.mdに.code-box-syntax(コードPRE(構文、定義用))のサンプルテーブルを追加
+- 記事の先頭に元記事の参照を入れる
+  - 当メモはyyyy-mm-ddに[投稿されたもの]を加筆修正し、再掲したものです。　の一文を入れる。
+
+
