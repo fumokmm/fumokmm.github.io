@@ -11,7 +11,9 @@ updated: 2020-10-15
 - [ユーザ名とパスワードの記録場所 on Windows](#location-of-user-name-and-password-on-windows)
 
 ### <a name="location-of-user-name-and-password-on-windows">ユーザ名とパスワードの記録場所 on Windows</a>
-{% include update_info.html created="2007-08-20" updated="2020-10-15" %}
+{% include update_info.html created="2007-08-20" updated="2021-02-16" %}
+
+当メモは2007-08-20に[投稿されたもの](https://npnl.hatenablog.jp/entry/20070820/1187575030)を加筆修正し、再掲したものです。
 
 一回記憶させてしまったユーザ名とパスワードをリセットしたいと思っても、設定ダイアログからは編集できないようです。  
 設定ファイルの保存場所は、

@@ -46,7 +46,6 @@
   - collections/_history/2021/01/2021-01-07.md
   - collections/_history/2021/01/2021-01-14.md
   - collections/_history/2021/01/2021-01-15.md
-  - collections/_history/2021/01/2021-01-17.md
   - collections/_history/2021/01/2021-01-18.md
   - collections/_history/2021/01/2021-01-20.md
   - collections/_history/2021/01/2021-01-27.md
@@ -55,3 +54,11 @@
   - collections/_history/2021/02/2021-02-08.md
   - collections/_history/2021/02/2021-02-09.md
   - collections/_history/2021/02/2021-02-12.md
+- template.mdに.code-box-syntax(コードPRE(構文、定義用))のサンプルテーブルを追加
+- _it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters をリネーム(先頭のjavaを除去)
+
+
+
+
+
+
