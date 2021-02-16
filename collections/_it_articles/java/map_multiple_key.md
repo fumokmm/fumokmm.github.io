@@ -1,12 +1,12 @@
 ---
-title: Javaでデータベース操作
-display_order: 100
-created: 2021-02-09
-updated: 2021-02-09
+title: JavaでMapに複数のキーを指定する方法
+display_order: 20
+created: 2009-01-16
+updated: 2021-02-16
 ---
-{% assign chapter_list = site.it_java_database_control_chapters %}
+{% assign chapter_list = site.it_java_map_multiple_key_chapters %}
 
-こちらはJavaでデータベース操作を行う方法のメモです。  
+当メモは2009-01-16に[投稿されたもの](https://npnl.hatenablog.jp/entry/20090116/1232123160)を加筆修正し、再掲したものです。
 
 ## <a name="index">目次</a>
 
