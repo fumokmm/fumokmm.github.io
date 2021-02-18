@@ -1,0 +1,6 @@
+- sub_category_id: physics
+  sub_category_label: 物理
+  link: /science/physics/
+  sub_category_group: physics
+  sub_category_order: physics01
+  description: 物理のメモ

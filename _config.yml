@@ -91,6 +91,20 @@ defaults:
     values:
       sub_category_id: "windows"
 
+################################## 科学
+  - scope:
+      path: "_science_articles"
+    values:
+      layout: "science_article_layout"
+      category_id: "science"
+
+# 科学のメモのサブカテゴリ
+  # 物理のメモ
+  - scope:
+      path: "_science_articles/physics"
+    values:
+      sub_category_id: "physics"
+
 ################################## 人生
   - scope:
       path: "_life_articles"
@@ -181,6 +195,11 @@ collections:
   it_articles:
     output: true
     permalink: /it/:path
+
+  # 科学の記事
+  science_articles:
+    output: true
+    permalink: /science/:path
 
   # 人生の記事
   life_articles:
