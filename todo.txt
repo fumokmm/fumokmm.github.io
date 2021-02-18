@@ -56,9 +56,5 @@
   - collections/_history/2021/02/2021-02-12.md
 - template.mdに.code-box-syntax(コードPRE(構文、定義用))のサンプルテーブルを追加
 - _it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters をリネーム(先頭のjavaを除去)
-
-
-
-
-
+- toolの変換のテキストボックスの配置を左・右にして、真ん中に変換ボタンを付ける
 
