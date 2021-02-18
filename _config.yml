@@ -185,6 +185,7 @@ collections:
   life_purpose_ultimate_goal_chapters:
   reading_charmpoint_about_book_chapters:
   reading_method_read_from_ending_chapters:
+  science_physics_time_chapters:
 
   # 以下、出力するコレクション ---------------------
   #   ※output:true じゃないコレクションをそれより前に定義しておかないと
