@@ -91,25 +91,6 @@ defaults:
     values:
       sub_category_id: "windows"
 
-################################## 読書
-  - scope:
-      path: "_reading_articles"
-    values:
-      layout: "reading_article_layout"
-      category_id: "reading"
-
-# 読書のサブカテゴリ
-  # 読書の魅力
-  - scope:
-      path: "_reading_articles/charmpoint"
-    values:
-      sub_category_id: "charmpoint"
-  # 読書法
-  - scope:
-      path: "_reading_articles/method"
-    values:
-      sub_category_id: "method"
-
 ################################## 人生
   - scope:
       path: "_life_articles"
@@ -135,6 +116,25 @@ defaults:
       path: "_life_articles/purpose"
     values:
       sub_category_id: "purpose"
+
+################################## 読書
+  - scope:
+      path: "_reading_articles"
+    values:
+      layout: "reading_article_layout"
+      category_id: "reading"
+
+# 読書のサブカテゴリ
+  # 読書の魅力
+  - scope:
+      path: "_reading_articles/charmpoint"
+    values:
+      sub_category_id: "charmpoint"
+  # 読書法
+  - scope:
+      path: "_reading_articles/method"
+    values:
+      sub_category_id: "method"
 
 ################################## 全メモのリスト
   - scope:
@@ -180,12 +180,12 @@ collections:
     output: true
     permalink: /it/:path
 
-  # 読書の記事
-  reading_articles:
-    output: true
-    permalink: /reading/:path
-
   # 人生の記事
   life_articles:
     output: true
     permalink: /life/:path
+
+  # 読書の記事
+  reading_articles:
+    output: true
+    permalink: /reading/:path

@@ -8,15 +8,15 @@
   link: /it/
   description: 技術系メモ
 
-- category_id: reading
-  category_label: Reading
-  link: /reading/
-  description: 読書についてのメモ
-
 - category_id: life
   category_label: Life
   link: /life/
   description: 人生についてのメモ
+
+- category_id: reading
+  category_label: Reading
+  link: /reading/
+  description: 読書についてのメモ
 
 - category_id: all
   category_label: All
