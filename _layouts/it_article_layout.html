@@ -4,7 +4,7 @@ layout: base_layout
 {% assign category = site.data.category | where: 'category_id', page.category_id | first %}
 {% assign sub_category = site.data.it_sub_category | where: 'sub_category_id', page.sub_category_id | first %}
 <div>
-    <a href="{{ category.link }}">技術系メモ</a>
+    <a href="{{ category.link }}">IT技術メモ</a>
 
     {% assign sub_category_index_link = sub_category.link | append: 'index' %}
     {% if sub_category_index_link != page.url %}

@@ -6,7 +6,7 @@
 - category_id: it
   category_label: IT
   link: /it/
-  description: 技術系メモ
+  description: IT技術メモ
 
 - category_id: life
   category_label: Life
