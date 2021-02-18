@@ -2,7 +2,7 @@
 layout: default_layout
 title: ツールのページ
 created: 2021-01-15
-updated: 2021-01-15
+updated: 2021-02-18
 ---
 ツールのページです。
 
@@ -16,26 +16,54 @@ updated: 2021-01-15
 
 ## <a name="code-box">コードPRE用HTML変換</a>
 
-変換前
-<textarea id="CodeBoxConvertBefore" rows="4" cols="40">
-</textarea>
-
-変換後
-<textarea id="CodeBoxConvertAfter" rows="4" cols="40">
-</textarea>
+<table>
+    <tr>
+        <th>変換前</th>
+        <th></th>
+        <th>変換後</th>
+    </tr>
+    <tr>
+        <td>
+            <textarea id="CodeBoxConvertBefore" rows="20" cols="80"></textarea>
+        </td>
+        <td>
+            <table style="border: 0px;">
+                <tr><td style="border: 0px;"><input type="button" id="CodeBoxConvertBtn" value="変換 -&gt;"></td></tr>
+                <tr><td style="border: 0px;"><input type="button" id="CodeBoxClearBtn" value="クリア"></td></tr>
+            </table>
+        </td>
+        <td>
+            <textarea id="CodeBoxConvertAfter" rows="20" cols="80"></textarea>
+        </td>
+    </tr>
+</table>
 
 ## <a name="table-html">テーブルHTML生成</a>
 
-変換前
-<textarea id="TableHtmlConvertBefore" rows="4" cols="40">
-</textarea>
-
-変換後
-<textarea id="TableHtmlConvertAfter" rows="4" cols="40">
-</textarea>
+<table>
+    <tr>
+        <th>変換前</th>
+        <th></th>
+        <th>変換後</th>
+    </tr>
+    <tr>
+        <td>
+            <textarea id="TableHtmlConvertBefore" rows="20" cols="80"></textarea>
+        </td>
+        <td>
+            <table style="border: 0px;">
+                <tr><td style="border: 0px;"><input type="button" id="TableHtmlConvertBtn" value="変換 -&gt;"></td></tr>
+                <tr><td style="border: 0px;"><input type="button" id="TableHtmlClearBtn" value="クリア"></td></tr>
+            </table>
+        </td>
+        <td>
+            <textarea id="TableHtmlConvertAfter" rows="20" cols="80"></textarea>
+        </td>
+    </tr>
+</table>
 
 <script>
-document.getElementById('CodeBoxConvertBefore').addEventListener('change', () => {
+document.getElementById('CodeBoxConvertBtn').addEventListener('click', () => {
     let before = document.getElementById('CodeBoxConvertBefore');
     let after = document.getElementById('CodeBoxConvertAfter');
     after.value = before.value.replace(/&/g, '&amp;')
@@ -43,24 +71,36 @@ document.getElementById('CodeBoxConvertBefore').addEventListener('change', () =>
                               .replace(/\>/g, '&gt;');
 }, false);
 
-document.getElementById('TableHtmlConvertBefore').addEventListener('change', () => {
+document.getElementById('CodeBoxClearBtn').addEventListener('click', () => {
+    let after = document.getElementById('CodeBoxConvertAfter');
+    after.value = '';
+}, false);
+
+
+document.getElementById('TableHtmlConvertBtn').addEventListener('click', () => {
     let before = document.getElementById('TableHtmlConvertBefore');
     let after = document.getElementById('TableHtmlConvertAfter');
     let lines = before.value.split(/\r?\n/);
-    after.innerHTML = '';
-    after.innerHTML += '<table>\n';
+    after.value = '';
+    after.value += '<table>\n';
     for (let i = 0; i < lines.length; i++) {
-        after.innerHTML += '\t<tr>\n';
+        after.value += '\t<tr>\n';
         let columns = lines[i].split(/\t/);
         columns.forEach(col => {
             if (i == 0) {
-                after.innerHTML += '\t\t<th>' + col + '</th>\n';
+                after.value += '\t\t<th>' + col + '</th>\n';
             } else {
-                after.innerHTML += '\t\t<td>' + col + '</td>\n';
+                after.value += '\t\t<td>' + col + '</td>\n';
             }
         });
-        after.innerHTML += '\t</tr>\n';
+        after.value += '\t</tr>\n';
     }
-    after.innerHTML += '</table>';
+    after.value += '</table>';
 }, false);
+
+document.getElementById('TableHtmlClearBtn').addEventListener('click', () => {
+    let after = document.getElementById('TableHtmlConvertAfter');
+    after.value = ''
+}, false);
+
 </script>
