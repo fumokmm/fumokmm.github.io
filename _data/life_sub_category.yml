@@ -13,8 +13,8 @@
   description: 態度についてのメモ
 
 - sub_category_id: purpose
-  sub_category_label: 目的
+  sub_category_label: 人生の目的について
   link: /life/purpose/
   sub_category_group: purpose
   sub_category_order: purpose01
-  description: 目的についてのメモ
+  description: 人生の目的についてのメモ
