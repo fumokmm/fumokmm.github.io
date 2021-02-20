@@ -1,9 +1,9 @@
 ---
 chapter_no: 001
-chapter_id: stop
+chapter_id: ultimate-goal
 chapter_title: 最終目的
 created: 2021-01-27
-updated: 2021-01-27
+updated: 2021-02-20
 ---
 こんな寓話がある。  
 > **釣り人の寓話**  
@@ -22,8 +22,7 @@ updated: 2021-01-27
 > 「好きなことができるんだよ」  
 > そして男はこう答える。  
 > 「好きなことができるって？だったら釣りをするなぁ」
+>
+> <cite>{% include book/book_46.html %} {% comment %} なぜ、この人と話をすると楽になるのか {% endcomment %}より</cite>
 
 - 結局のところ、人生においてやりたいことをやっている時が一番幸せなのである。
-
-### 参考
-- {% include book/book_46.html %} {% comment %} なぜ、この人と話をすると楽になるのか {% endcomment %}
