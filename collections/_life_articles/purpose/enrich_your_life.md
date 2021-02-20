@@ -1,10 +1,10 @@
 ---
-title: 人生の最終目的について
-display_order: 20
-created: 2021-01-27
-updated: 2021-01-27
+title: 人生を豊かにする方法
+display_order: 10
+created: 2021-02-20
+updated: 2021-02-20
 ---
-{% assign chapter_list = site.life_purpose_ultimate_goal_chapters %}
+{% assign chapter_list = site.life_purpose_enrich_your_life_chapters %}
 
 ## <a name="index">目次</a>
 
