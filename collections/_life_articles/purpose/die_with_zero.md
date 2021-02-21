@@ -1,10 +1,10 @@
 ---
-title: 人生を豊かにする方法
+title: ゼロで死ね
 display_order: 10
 created: 2021-02-20
-updated: 2021-02-20
+updated: 2021-02-21
 ---
-{% assign chapter_list = site.life_purpose_enrich_your_life_chapters %}
+{% assign chapter_list = site.life_purpose_die_with_zero_chapters %}
 
 ## <a name="index">目次</a>
 
