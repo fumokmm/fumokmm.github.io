@@ -167,7 +167,7 @@ collections:
   # チャプター
   it_excel_key_combination_chapters:
   it_java_database_control_chapters:
-  it_java_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
+  it_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
   it_java_map_multiple_key_chapters:
   it_problem_hot_summer_day_chapters:
   it_python_grammar_chapters:
