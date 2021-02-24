@@ -11,6 +11,7 @@ updated: 2021-01-04
 
 - [見出し](#header)
 - [コードPRE(通常用)](#code-box)
+- [コードPRE(構文、定義用)](#code-box-syntax)
 - [コードPRE(入力用)](#code-box-input)
 - [コードPRE(出力用)](#code-box-output)
 - [テーブル](#table)
@@ -45,6 +46,29 @@ updated: 2021-01-04
 </div>
 
 <div class="code-box">
+<div class="title">SQL</div>
+<pre>
+タイトル付きのコードPRE
+文字列を<em>強調</em>するには&lt;em&gt;を利用します。
+文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
+文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
+</pre>
+</div>
+
+## <a name="code-box-syntax">コードPRE(構文、定義用)</a>
+
+<div class="code-box-syntax no-title">
+<pre>
+タイトル無しのコードPRE
+文字列を<em>強調</em>するには&lt;em&gt;を利用します。
+文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
+文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
+</pre>
+</div>
+
+<div class="code-box-syntax">
 <div class="title">SQL</div>
 <pre>
 タイトル付きのコードPRE
@@ -100,6 +124,8 @@ updated: 2021-01-04
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
 </div>
+
+
 
 ## <a name="table">テーブル</a>
 
