@@ -36,6 +36,13 @@
   sub_category_order: programming_language02
   description: Google社が開発したプログラミング言語Goについてのメモ
 
+- sub_category_id: git
+  sub_category_label: Git
+  link: /it/git/
+  sub_category_group: version_control_system
+  sub_category_order: version_control_system01
+  description: Google社が開発したプログラミング言語Goについてのメモ
+
 # J
 - sub_category_id: java
   sub_category_label: Java
@@ -102,8 +109,8 @@
   sub_category_label: Subversion
   link: /it/subversion/
   sub_category_group: version_control_system
-  sub_category_order: version_control_system01
-  description: 	Apacheソフトウェア財団が開発している集中型バージョン管理システムSubversion(SVN)についてのメモ
+  sub_category_order: version_control_system02
+  description: Apacheソフトウェア財団が開発している集中型バージョン管理システムSubversion(SVN)についてのメモ
 
 # T
 - sub_category_id: teams
