@@ -10,16 +10,9 @@ updated: 2020-12-17
                                        | where: 'sub_category_id', 'excel'
                                        | sort: 'display_order' %}
     {% for item in list %}
-        {% unless item.chapter_no %}
-            {% assign filename = item.url | split: '/' | reverse | first %}
-            {% if filename != 'index' %}
-                <li>
-                {% comment %}
-                [{{ item.display_order }}]
-                {% endcomment %}
-                <a href="{{ item.url }}.html">{{ item.title }}</a> ({{ item.updated }}更新)
-                </li>
-            {% endif %}
-        {% endunless %}
+        {% assign filename = item.url | split: '/' | reverse | first %}
+        {% if filename != 'index' %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a> ({{ item.updated }}更新)</li>
+        {% endif %}
     {% endfor %}
 </ul>
