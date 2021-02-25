@@ -55,3 +55,5 @@
   - collections/_history/2021/02/2021-02-08.md
   - collections/_history/2021/02/2021-02-09.md
   - collections/_history/2021/02/2021-02-12.md
+- 各サブカテゴリページからのリンク先が ～～.html になっている。.htmlは除去する。
+  例: https://fumokmm.github.io/reading/charmpoint/ とかの 「本について」 のリンク先とか。
