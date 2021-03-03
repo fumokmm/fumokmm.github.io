@@ -21,7 +21,7 @@ $ git <em class="blue">config</em> <em>user.name "hoge"</em>
 $ git <em class="blue">config</em> <em>user.email "hoge@hoge.com"</em>
 </pre>
 </div>
-- グローバルとの違いは--globalオプションの有無です。
+- グローバルとの違いは`--global`オプションの有無です。
 
 <div class="code-box">
 <div class="title">Gitの出力の色分けを有効にする</div>
