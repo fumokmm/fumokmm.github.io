@@ -38,7 +38,6 @@ $ git <em class="blue">add</em> <em class="command">-u</em> <em>&lt;パス*&gt;<
 - 「追跡しているファイル」とは、過去に`git add`コマンドなどによりGitが追跡対象と認識しているファイルを指します。
 - ファイルの修正だけでなく削除も適切に処理されます。
 
-
 <div class="code-box">
 <div class="title">追跡しているファイルへの修正をすべてコミットする</div>
 <pre>
