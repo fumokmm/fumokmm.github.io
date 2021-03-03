@@ -3,7 +3,7 @@ chapter_no: 004
 chapter_id: branch
 chapter_title: ブランチ(branch, merge, cherry-pick)
 created: 2010-11-07
-updated: 2010-11-07
+updated: 2021-03-03
 ---
 <div class="code-box">
 <div class="title">ローカルのブランチを表示する</div>
@@ -110,8 +110,10 @@ $ git <em class="blue">branch</em> <em class="command">--no-merged</em>
 <div class="title">１つのブランチの履歴を圧縮して別の履歴にする</div>
 <pre>
 $ git <em class="blue">merge</em> <em class="command">--squash</em> <em>&lt;ブランチ名&gt;</em>
+$ git <em class="blue">commit</em>
 </pre>
 </div>
+- `<ブランチ名>`のブランチでコミットした内容が圧縮されてステージされた状態になりますので、その後コミットして下さい。
 
 <div class="code-box">
 <div class="title">ブランチを削除する</div>
