@@ -135,6 +135,12 @@ defaults:
     values:
       sub_category_id: "purpose"
 
+  # 失敗
+  - scope:
+      path: "_life_articles/failure"
+    values:
+      sub_category_id: "failure"
+
 ################################## 読書
   - scope:
       path: "_reading_articles"
@@ -188,6 +194,7 @@ collections:
   it_vba_type_chapters:
   it_windows_tips_chapters:
   life_attitude_expectations_chapters:
+  life_failure_uneasiness_chapters:
   life_minimalism_discard_chapters:
   life_purpose_die_with_zero_chapters:
   life_purpose_ultimate_goal_chapters:

@@ -18,3 +18,10 @@
   sub_category_group: purpose
   sub_category_order: purpose01
   description: 人生の目的についてのメモ
+
+- sub_category_id: failure
+  sub_category_label: 失敗について
+  link: /life/failure/
+  sub_category_group: failure
+  sub_category_order: failure01
+  description: 失敗についてのメモ
