@@ -11,6 +11,7 @@ updated: 2021-02-18
 
 - [コードPRE用HTML変換](#code-box)
 - [テーブルHTML生成](#table-html)
+- [ケバブケースに変換](#kebab-case)
 
 - - -
 
@@ -62,6 +63,31 @@ updated: 2021-02-18
     </tr>
 </table>
 
+
+## <a name="kebab-case">ケバブケースに変換</a>
+
+<table>
+    <tr>
+        <th>変換前</th>
+        <th></th>
+        <th>変換後</th>
+    </tr>
+    <tr>
+        <td>
+            <textarea id="KebabCaseConvertBefore" rows="20" cols="80"></textarea>
+        </td>
+        <td>
+            <table style="border: 0px;">
+                <tr><td style="border: 0px;"><input type="button" id="KebabCaseConvertBtn" value="変換 -&gt;"></td></tr>
+                <tr><td style="border: 0px;"><input type="button" id="KebabCaseClearBtn" value="クリア"></td></tr>
+            </table>
+        </td>
+        <td>
+            <textarea id="KebabCaseConvertAfter" rows="20" cols="80"></textarea>
+        </td>
+    </tr>
+</table>
+
 <script>
 document.getElementById('CodeBoxConvertBtn').addEventListener('click', () => {
     let before = document.getElementById('CodeBoxConvertBefore');
@@ -101,6 +127,22 @@ document.getElementById('TableHtmlConvertBtn').addEventListener('click', () => {
 document.getElementById('TableHtmlClearBtn').addEventListener('click', () => {
     let after = document.getElementById('TableHtmlConvertAfter');
     after.value = ''
+}, false);
+
+document.getElementById('KebabCaseConvertBtn').addEventListener('click', () => {
+    let before = document.getElementById('KebabCaseConvertBefore');
+    let after = document.getElementById('KebabCaseConvertAfter');
+    let lines = before.value.split(/\r?\n/);
+    after.value = '';
+    for (let i = 0; i < lines.length; i++) {
+        after.value += lines[i].toLowerCase().replace(/\s/g, '-');
+        after.value += '\n';
+    }
+}, false);
+
+document.getElementById('KebabCaseClearBtn').addEventListener('click', () => {
+    let after = document.getElementById('KebabCaseConvertAfter');
+    after.value = '';
 }, false);
 
 </script>
