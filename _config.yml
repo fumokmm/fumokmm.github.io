@@ -233,3 +233,8 @@ collections:
   reading_articles:
     output: true
     permalink: /reading/:path
+
+# 除外ファイル/ディレクトリ
+exclude:
+  - todo.txt
+  - _scripts
