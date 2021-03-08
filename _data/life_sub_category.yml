@@ -25,3 +25,10 @@
   sub_category_group: failure
   sub_category_order: failure01
   description: 失敗についてのメモ
+
+- sub_category_id: time_management
+  sub_category_label: 時間管理について
+  link: /life/time_management/
+  sub_category_group: time_management
+  sub_category_order: time_management01
+  description: 時間管理についてのメモ

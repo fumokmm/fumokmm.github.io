@@ -141,6 +141,12 @@ defaults:
     values:
       sub_category_id: "failure"
 
+  # 時間管理
+  - scope:
+      path: "_life_articles/time_management"
+    values:
+      sub_category_id: "time_management"
+
 ################################## 読書
   - scope:
       path: "_reading_articles"
@@ -198,6 +204,7 @@ collections:
   life_minimalism_discard_chapters:
   life_purpose_die_with_zero_chapters:
   life_purpose_ultimate_goal_chapters:
+  life_time_management_item_202103_chapters:
   reading_charmpoint_about_book_chapters:
   reading_method_read_from_ending_chapters:
   science_physics_time_chapters:
