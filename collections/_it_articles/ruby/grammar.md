@@ -4,17 +4,23 @@ display_order: 10
 created: 2020-12-03
 updated: 2020-12-03
 ---
+{% assign chapter_list = site.it_ruby_grammar_chapters %}
+
 ここではRubyの文法を簡単にまとめておきます。
 
 ## <a name="index">目次</a>
 
-- [Truthy](#truthy)
-- [参考](#reference)
+<ul>
+{% for chapter_item in chapter_list %}
+<li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>
+{% endfor %}
+</ul>
 
-### <a name="truthy">Truthy</a>
+{% comment %} 以下、記事 {% endcomment %}
 
-Rubyでは、条件式などで偽とみなされる値(falsey value)を`nil`と`false`のみと定めていて、それ以外のオブジェクトはすべて真とみなされる値(truthy value)となります。
-
-### <a name="reference">参考</a>
-
-- {% include book/book_373.html %} {% comment %} Ruby on Rails 5.0 初級①: 経路、アクション、テンプレート {% endcomment %}
+{% for chapter_item in chapter_list %}
+## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
+<div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
+{{ chapter_item.content | markdownify }}
+{% include goto_pagetop.html %}
+{% endfor %}
