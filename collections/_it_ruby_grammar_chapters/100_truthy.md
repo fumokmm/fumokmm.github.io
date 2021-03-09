@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 100
 chapter_id: truthy
 chapter_title: Truthy
 created: 2020-12-03
