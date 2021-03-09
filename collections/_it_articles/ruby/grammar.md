@@ -2,7 +2,7 @@
 title: Rubyの文法
 display_order: 10
 created: 2020-12-03
-updated: 2021-03-09
+updated: 2021-03-10
 ---
 {% assign chapter_list = site.it_ruby_grammar_chapters %}
 
