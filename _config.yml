@@ -191,6 +191,7 @@ collections:
   it_problem_hot_summer_day_chapters:
   it_python_grammar_chapters:
   it_ruby_grammar_chapters:
+  it_ruby_string_chapters:
   it_sqlserver_conversion_functions_chapters:
   it_sqlserver_ddl_chapters:
   it_sqlserver_duplicate_the_database_in_the_same_instance_chapters:
