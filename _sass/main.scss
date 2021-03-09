@@ -161,7 +161,7 @@ code {
     padding: 22px 10px 7px;
     border: solid 1px #ccc;
     color: inherit;
-    background-color: #dbdaf8;
+    background-color: #edffff;
     // タイトルがない場合のスタイル
     &.no-title {
         padding: 8px 10px 7px;
@@ -176,12 +176,12 @@ code {
         line-height: 20px;
         font-size: 12px;
         color: #333333;
-        background-color: #bebcf7;
+        background-color: #c5ffff;
         border: 1px solid #ccc;
     }
     @include make-code-pre(
         $preColor: inherit,
-        $preBackgroundColor: #dbdaf8,
+        $preBackgroundColor: #edffff,
         $emColor: #ff0b0b,
         $emColorBlue: #0084dc,
         $emColorComment: #4abd4f,
