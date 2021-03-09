@@ -6,7 +6,7 @@ updated: 2021-03-09
 ---
 {% assign chapter_list = site.it_ruby_string_chapters %}
 
-ここではRubyの文字列操作について単にまとめておきます。
+ここではRubyの文字列操作について簡単にまとめておきます。
 
 ## <a name="index">目次</a>
 
