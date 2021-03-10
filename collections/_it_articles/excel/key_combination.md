@@ -2,7 +2,7 @@
 title: Excel作業効率を上げるキーコンビネーション
 display_order: 900
 created: 2020-12-17
-updated: 2021-01-18
+updated: 2021-03-10
 ---
 {% assign chapter_list = site.it_excel_key_combination_chapters %}
 
