@@ -45,13 +45,24 @@
   - collections/_history/2021/02/2021-02-08.md
   - collections/_history/2021/02/2021-02-09.md
   - collections/_history/2021/02/2021-02-12.md
-- サブカテゴリ記事の更新日付と、キャプチャー記事の更新日付を見て、
-  キャプチャー記事の更新日付の方が新しいものがあれば、
-  サブカテゴリ―記事に反映する
-- RubyでURLの結合をするときは`File.join`使うと幸せになった
-  https://qiita.com/ryonext/items/0bfd2592d713211bbc2f
-  https://docs.ruby-lang.org/ja/latest/method/File/s/join.html
-  https://docs.ruby-lang.org/ja/latest/class/Pathname.html
-- end_with
-  https://docs.ruby-lang.org/ja/latest/method/String/i/end_with=3f.html
-- Rubyの文法のrequireのメモを書く
+
+- Rubyの記事にする
+  - Rubyの文法のrequireのメモを書く
+  - RubyでURLの結合をするときは`File.join`使うと幸せになった
+    https://qiita.com/ryonext/items/0bfd2592d713211bbc2f
+    https://docs.ruby-lang.org/ja/latest/method/File/s/join.html
+    https://docs.ruby-lang.org/ja/latest/class/Pathname.html
+  - end_with
+    https://docs.ruby-lang.org/ja/latest/method/String/i/end_with=3f.html
+  - その他いっぱい
+    https://www.javadrive.jp/ruby/hash/index1.html
+    https://qiita.com/mogulla3/items/fbc2a46478872bebbc47
+    https://qiita.com/k-penguin-sato/items/7f98335ef631ea5ce7ad
+    https://www.javadrive.jp/ruby/string_class/index10.html
+    https://qiita.com/hkengo/items/3c894f408931d0d0c9d5
+    https://qiita.com/ka-miyata/items/8b72c82784544096c00a
+    https://docs.ruby-lang.org/ja/latest/method/FileTest/m/directory=3f.html
+    https://www.javadrive.jp/ruby/hash/index2.html
+    https://techacademy.jp/magazine/31099
+    https://qiita.com/prgseek/items/c0fc2ffc8e1736348486#-%E6%9B%9C%E6%97%A5%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B-1
+    https://docs.ruby-lang.org/ja/latest/class/Date.html
