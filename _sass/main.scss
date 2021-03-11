@@ -6,6 +6,33 @@ body {
     color: #323331;
 }
 
+// 記事内のリンク
+article.main {
+    // アイコン https://iconarchive.com/
+    // 内部向けリンク
+    a[href^="/"] {
+        background: url("/assets/img/icon/16x16/Next-2-2-icon.png") no-repeat scroll left center transparent;
+        padding-left: 21px;
+        padding-top: 1px;
+        padding-right: 4px;
+        margin-left: 4px;
+        //font-weight: bold;
+    }
+
+    // アイコン https://iconarchive.com/
+    // 外部向けリンク
+    a[href^="http://"],
+    a[href^="https://"] {
+        background: url("/assets/img/icon/16x16/Programming-External-Link-icon.png") no-repeat scroll right center transparent;
+        padding-right: 20px;
+        padding-top: 3px;
+        padding-left: 4px;
+        margin-right: 6px;
+        //font-weight: bold;
+    }
+}
+
+
 .current {
     background-color: #d0ebbc;
 }
@@ -69,6 +96,16 @@ a.simple_link {
 
 div.goto-pagetop {
     text-align: right;
+
+    // アイコン https://iconarchive.com/
+    a {
+        background: url("/assets/img/icon/16x16/Turn-Up-icon.png") no-repeat scroll right center transparent;
+        padding-right: 20px;
+        padding-top: 3px;
+        padding-left: 4px;
+        margin-right: 6px;
+        //font-weight: bold;
+    }
 }
 
 // /it/other/quote.md などで利用

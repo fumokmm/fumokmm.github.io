@@ -56,4 +56,3 @@
   - end_with
     https://docs.ruby-lang.org/ja/latest/method/String/i/end_with=3f.html
 - Rubyの文法のrequireのメモを書く
-- 外部のリンクへのアイコン付与、内部リンクはアイコンなし
