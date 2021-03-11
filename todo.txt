@@ -49,4 +49,11 @@
   キャプチャー記事の更新日付の方が新しいものがあれば、
   サブカテゴリ―記事に反映する
   →せっかくだからrubyでチェッカー作るか
+  - RubyでURLの結合をするときは`File.join`使うと幸せになった
+    https://qiita.com/ryonext/items/0bfd2592d713211bbc2f
+    https://docs.ruby-lang.org/ja/latest/method/File/s/join.html
+    https://docs.ruby-lang.org/ja/latest/class/Pathname.html
+  - end_with
+    https://docs.ruby-lang.org/ja/latest/method/String/i/end_with=3f.html
 - Rubyの文法のrequireのメモを書く
+- 外部のリンクへのアイコン付与、内部リンクはアイコンなし
