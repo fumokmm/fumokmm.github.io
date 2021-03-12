@@ -3,7 +3,7 @@ chapter_no: 004
 chapter_id: branch
 chapter_title: ブランチ(branch, merge, cherry-pick)
 created: 2010-11-07
-updated: 2021-03-03
+updated: 2021-03-12
 ---
 <div class="code-box">
 <div class="title">ローカルのブランチを表示する</div>
@@ -79,18 +79,37 @@ $ git <em class="blue">merge</em> <em class="command">--no-commit</em> <em>&lt;�
 </div>
 
 <div class="code-box">
-<div class="title">コミットのチェリーピック（つまみ食い）</div>
+<div class="title">特定のコミットのみ取り込む（チェリーピック）</div>
 <pre>
-$ git <em class="blue">cherry-pick</em> <em class="command">-n</em> <em>&lt;コミット名&gt;</em>
+$ git <em class="blue">cherry-pick</em> <em>&lt;コミット名&gt;</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">特定のコミット範囲(Aの一つ後～Bまで)のみ取り込む（チェリーピック）</div>
+<pre>
+$ git <em class="blue">cherry-pick</em> <em>&lt;コミットA&gt;</em>..<em>&lt;コミットB&gt;</em>
+</pre>
+</div>
+- 範囲指定する際、始点の`<コミットA>`は[開始範囲に含まれない](https://dackdive.hateblo.jp/entry/2016/06/06/203542)ことに注意して下さい。
+  - `<コミットA>`～`<コミットB>`を取り込みたい場合は、`コミットA^..コミットB`のようにして、`<コミットA>`の一つ前から指定します。
+
+<div class="code-box">
+<div class="title">特定のコミット範囲(AからBまで)のみ取り込む（チェリーピック）</div>
+<pre>
+$ git <em class="blue">cherry-pick</em> <em>&lt;コミットA&gt;^</em>..<em>&lt;コミットB&gt;</em>
 </pre>
 </div>
 
 <div class="code-box">
 <div class="title">チェリーピックだけしてコミットしない（つまみ食いの寸止め）</div>
 <pre>
+$ git <em class="blue">cherry-pick</em> <em class="command">-n</em> <em>&lt;コミット名&gt;</em>
+または
 $ git <em class="blue">cherry-pick</em> <em class="command">--no-commit</em> <em>&lt;コミット名&gt;</em>
 </pre>
 </div>
+- コミットはされず、ステージされた状態となります。
 
 <div class="code-box">
 <div class="title">マージ済みのブランチ一覧を表示する</div>
