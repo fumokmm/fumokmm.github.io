@@ -69,3 +69,5 @@
       https://techacademy.jp/magazine/31099
       https://qiita.com/prgseek/items/c0fc2ffc8e1736348486#-%E6%9B%9C%E6%97%A5%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B-1
       https://docs.ruby-lang.org/ja/latest/class/Date.html
+- 要出典
+  - 「飲み物をすべて水に替えるとどうなるか」の「病気のリスクを下げる」の「一日に5杯の水を飲むと心臓発作のリスクを41%減らせるという研究結果も出ています。」の部分

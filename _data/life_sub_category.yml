@@ -32,3 +32,11 @@
   sub_category_group: time_management
   sub_category_order: time_management01
   description: 時間管理についてのメモ
+
+- sub_category_id: eat
+  sub_category_label: 食事について
+  link: /life/eat/
+  sub_category_group: health
+  sub_category_order: 001
+  description: 食事についてのメモ
+  
