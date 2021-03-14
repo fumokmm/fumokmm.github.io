@@ -68,6 +68,7 @@
       https://techacademy.jp/magazine/31099
       https://qiita.com/prgseek/items/c0fc2ffc8e1736348486#-%E6%9B%9C%E6%97%A5%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B-1
       https://docs.ruby-lang.org/ja/latest/class/Date.html
+  - 「AccessでVBAコードを使ってテーブルリンクを再作成する方法」内の「DNS」を用語に追記してそちらにリンクする
 
 - 移行予定の過去記事
   - Groovy
