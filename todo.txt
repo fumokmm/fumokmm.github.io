@@ -5,7 +5,6 @@
   - サブカテゴリIDの整理(ymlの構造をサブカテゴリのマップにしたら、indexでうまいこと使えるかも)
   - 過去のhistoryでリンク切れになっているものを修復するため、%link化を推進する
   - 過去のhistoryでリンク切れになっているものを修復
-    - collections/_history/2020/10/2020-10-01.md
     - collections/_history/2020/10/2020-10-02.md
     - collections/_history/2020/10/2020-10-08.md
     - collections/_history/2020/10/2020-10-09.md
