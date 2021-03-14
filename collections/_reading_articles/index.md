@@ -2,7 +2,7 @@
 layout: default_layout
 title: 読書についてのメモ
 created: 2020-09-09
-updated: 2021-01-15
+updated: 2021-02-20
 ---
 ## こちらは読書の魅力についてのメモになります
 <table>

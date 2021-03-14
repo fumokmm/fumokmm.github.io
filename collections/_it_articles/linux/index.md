@@ -1,7 +1,7 @@
 ---
 title: Linuxのメモ
 created: 2020-09-11
-updated: 2020-09-11
+updated: 2021-02-26
 ---
 こちらはLinuxのメモになります。
 
