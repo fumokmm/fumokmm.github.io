@@ -1,29 +1,9 @@
 require 'date'
 
-class Article
-  attr_reader :fullpath
-  @@basedir
-
-  def initialize(full_path)
-    @full_path = full_path
-  end
-
-  def self.basedir=(basedir)
-    @@basedir = basedir
-  end
-  def self.basedir
-    @@basedir
-  end
-
-  def to_s
-    puts "[#{@full_path}]"
-  end
-end
-
 # ベースディレクトリ
-Article.basedir = File.expand_path("#{__dir__}/..") + '/'
+base_dir = File.expand_path("#{__dir__}/..") + '/'
 # collectionsディレクトリ
-collections_dir = Dir.new(File.join(Article.basedir, 'collections'))
+collections_dir = Dir.new(File.join(base_dir, 'collections'))
 
 # ファイルから updated: 行の読み込み
 def read_updated(path_name)
@@ -31,6 +11,21 @@ def read_updated(path_name)
     if line.start_with? 'updated: '
       return Date.parse(line.chomp[/\d{4}-\d{2}-\d{2}/, 0])
     end
+  end
+end
+
+# 更新日付を書き換える
+class ReplaceUpdated
+  def initialize(file_path, old_updated, new_updated)
+    @file_path = file_path
+    @old_updated = old_updated
+    @new_updated = new_updated
+  end
+
+  def exec
+    buffer = File.open(@file_path, 'r') { |f| f.read() }
+    buffer.gsub!(/^updated: *#{@old_updated}.*$/, "updated: #{@new_updated}")  
+    File.open(@file_path, 'w') { |f| f.write(buffer) }
   end
 end
 
@@ -202,5 +197,6 @@ end
 [info1, info2, info3, info4].flatten.each do |info|
   if info['updated_orig'] < info['updated']
     puts "現状: #{info['updated_orig']} => 更新後: #{info['updated']} -- #{info['path']}"
+    ReplaceUpdated.new(info['path'], info['updated_orig'], info['updated']).exec
   end
 end
