@@ -49,13 +49,27 @@
   - 記事をチャプター化
     - SQLインジェクションの記事
   - Rubyの記事にする
-    - Rubyの文法のrequireのメモを書く
-    - RubyでURLの結合をするときは`File.join`使うと幸せになった
-      https://qiita.com/ryonext/items/0bfd2592d713211bbc2f
-      https://docs.ruby-lang.org/ja/latest/method/File/s/join.html
-      https://docs.ruby-lang.org/ja/latest/class/Pathname.html
-    - end_with
-      https://docs.ruby-lang.org/ja/latest/method/String/i/end_with=3f.html
+    - 文法
+      - Rubyの文法のrequireのメモを書く
+      - https://www.javadrive.jp/ruby/for/index1.html while文
+
+    - File I/O
+      - RubyでURLの結合をするときは`File.join`使うと幸せになった
+        https://qiita.com/ryonext/items/0bfd2592d713211bbc2f
+        https://docs.ruby-lang.org/ja/latest/method/File/s/join.html
+        https://docs.ruby-lang.org/ja/latest/class/Pathname.html
+        https://qiita.com/yoshiokaCB/items/46224d07b22c57ba8dd3 ファイル内容の書き換え
+        https://docs.ruby-lang.org/ja/latest/method/Kernel/m/open.html File.openの引数
+
+    - 文字列
+      - end_with
+        https://docs.ruby-lang.org/ja/latest/method/String/i/end_with=3f.html
+      - https://qiita.com/nomuyoshi/items/819942f06cc4c7fd8a26 複数行文字列はヒアドキュメント <<と-<<の違いは何？
+
+    - 配列やArray
+      https://qiita.com/dddisk/items/8ad2d5570edf3c577eea 二次元配列
+      https://ruby-doc.org/core-2.5.0/Array.html#method-i-each Array
+
     - その他いっぱい
       https://www.javadrive.jp/ruby/hash/index1.html
       https://qiita.com/mogulla3/items/fbc2a46478872bebbc47
@@ -68,6 +82,8 @@
       https://techacademy.jp/magazine/31099
       https://qiita.com/prgseek/items/c0fc2ffc8e1736348486#-%E6%9B%9C%E6%97%A5%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B-1
       https://docs.ruby-lang.org/ja/latest/class/Date.html
+
+
   - 「AccessでVBAコードを使ってテーブルリンクを再作成する方法」内の「DNS」を用語に追記してそちらにリンクする
 
 - 移行予定の過去記事
