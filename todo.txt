@@ -41,6 +41,7 @@
     - collections/_history/2021/02/2021-02-08.md
     - collections/_history/2021/02/2021-02-09.md
     - collections/_history/2021/02/2021-02-12.md
+  - VSCodeのサブカテゴリラベルをVisual Studio Codeへ変更
 
 - メモ整理
   - その他で雑多にしてしまっているTips記事の整理
@@ -52,6 +53,7 @@
     - 文法
       - Rubyの文法のrequireのメモを書く
       - https://www.javadrive.jp/ruby/for/index1.html while文
+      - https://qiita.com/ngron/items/dd3cd8eb8ef58bd1c1fc
 
     - File I/O
       - RubyでURLの結合をするときは`File.join`使うと幸せになった
@@ -69,6 +71,7 @@
     - 配列やArray
       https://qiita.com/dddisk/items/8ad2d5570edf3c577eea 二次元配列
       https://ruby-doc.org/core-2.5.0/Array.html#method-i-each Array
+      https://www.sejuku.net/blog/14332 配列の初期化
 
     - その他いっぱい
       https://www.javadrive.jp/ruby/hash/index1.html
@@ -82,7 +85,8 @@
       https://techacademy.jp/magazine/31099
       https://qiita.com/prgseek/items/c0fc2ffc8e1736348486#-%E6%9B%9C%E6%97%A5%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B-1
       https://docs.ruby-lang.org/ja/latest/class/Date.html
-
+      https://blog.tokoyax.com/entry/ruby/increment インクリメントがない
+        http://blog.tavi-travelog.net/2012/10/25/increment-of-ruby
 
   - 「AccessでVBAコードを使ってテーブルリンクを再作成する方法」内の「DNS」を用語に追記してそちらにリンクする
 
