@@ -89,6 +89,9 @@
 
   - 「AccessでVBAコードを使ってテーブルリンクを再作成する方法」内の「DNS」を用語に追記してそちらにリンクする
 
+  - Jekyllのメモページを作成
+    - https://jekyllrb.com/tutorials/custom-404-page/ Custom 404 Page
+
 - 移行予定の過去記事
   - Groovy
     - [Groovy基礎文法最速マスター](https://npnl.hatenablog.jp/entry/20100605/1275736594) 2010-06-05
