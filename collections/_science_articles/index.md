@@ -2,7 +2,7 @@
 layout: default_layout
 title: 科学のメモ
 created: 2021-02-18
-updated: 2021-02-18
+updated: 2021-03-16
 ---
 ## こちらは物理のメモになります
 <table>
@@ -15,7 +15,7 @@ updated: 2021-02-18
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ sub_cat.link }}">{{ sub_cat.sub_category_label }}</a></td>
-        <td>{{ sub_cat.description }}</td>
+        <td markdown="span">{{ sub_cat.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}

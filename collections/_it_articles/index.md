@@ -16,7 +16,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ programming_language.link }}">{{ programming_language.sub_category_label }}</a></td>
-        <td>{{ programming_language.description }}</td>
+        <td markdown="span">{{ programming_language.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
@@ -34,7 +34,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ database.link }}">{{ database.sub_category_label }}</a></td>
-        <td>{{ database.description }}</td>
+        <td markdown="span">{{ database.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
@@ -52,7 +52,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ operating_system.link }}">{{ operating_system.sub_category_label }}</a></td>
-        <td>{{ operating_system.description }}</td>
+        <td markdown="span">{{ operating_system.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
@@ -70,7 +70,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ shell_script.link }}">{{ shell_script.sub_category_label }}</a></td>
-        <td>{{ shell_script.description }}</td>
+        <td markdown="span">{{ shell_script.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
@@ -88,7 +88,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ editor.link }}">{{ editor.sub_category_label }}</a></td>
-        <td>{{ editor.description }}</td>
+        <td markdown="span">{{ editor.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
@@ -106,7 +106,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ browser.link }}">{{ browser.sub_category_label }}</a></td>
-        <td>{{ browser.description }}</td>
+        <td markdown="span">{{ browser.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
@@ -124,7 +124,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a></td>
-        <td>{{ sub_category.description }}</td>
+        <td markdown="span">{{ sub_category.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
@@ -142,7 +142,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a></td>
-        <td>{{ sub_category.description }}</td>
+        <td markdown="span">{{ sub_category.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
@@ -160,7 +160,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ appli.link }}">{{ appli.sub_category_label }}</a></td>
-        <td>{{ appli.description }}</td>
+        <td markdown="span">{{ appli.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
@@ -178,7 +178,7 @@ updated: 2021-03-16
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
         <td><a href="{{ other.link }}">{{ other.sub_category_label }}</a></td>
-        <td>{{ other.description }}</td>
+        <td markdown="span">{{ other.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}

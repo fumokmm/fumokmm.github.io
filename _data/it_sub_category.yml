@@ -57,7 +57,7 @@
   link: /it/linux/
   sub_category_group: operating_system
   sub_category_order: operating_system01
-  description: リーナス・ベネディクト・トーバルズ氏（Linus Benedict Torvalds)によって開発されたOS、Linuxついてのメモ
+  description: "[リーナス・ベネディクト・トーバルズ氏](https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%BC%E3%83%8A%E3%82%B9%E3%83%BB%E3%83%88%E3%83%BC%E3%83%90%E3%83%AB%E3%82%BA)（Linus Benedict Torvalds)によって開発されたOS、Linuxついてのメモ"
 
 # O
 - sub_category_id: oracle
@@ -95,7 +95,7 @@
   link: /it/ruby/
   sub_category_group: programming_language
   sub_category_order: programming_language04
-  description: まつもとゆきひろ氏（通称&#58;Matz）により開発されたオブジェクト指向スクリプト言語についてのメモ
+  description: "[まつもとゆきひろ氏](https://ja.wikipedia.org/wiki/%E3%81%BE%E3%81%A4%E3%82%82%E3%81%A8%E3%82%86%E3%81%8D%E3%81%B2%E3%82%8D)（通称:Matz）により開発されたオブジェクト指向スクリプト言語についてのメモ"
 
 # S
 - sub_category_id: sqlserver
