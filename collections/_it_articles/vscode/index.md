@@ -1,9 +1,9 @@
 ---
-title: VSCodeのメモ
+title: Visual Studio Codeのメモ
 created: 2020-09-16
 updated: 2020-09-16
 ---
-こちらはVSCodeのメモになります。
+こちらはVisual Studio Codeのメモになります。
 
 <ul>
     {% assign list = site.it_articles  | where: 'category_id', 'it'

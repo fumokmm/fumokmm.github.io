@@ -1,10 +1,10 @@
 ---
-title: VSCodeのTips
+title: Visual Studio CodeのTips
 display_order: 900
 created: 2020-09-16
 updated: 2020-09-28
 ---
-ここではVSCodeのちょっとしたTipsをまとめておきます。
+ここではVisual Studio CodeのちょっとしたTipsをまとめておきます。
 
 ## <a name="index">目次</a>
 

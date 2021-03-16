@@ -41,7 +41,6 @@
     - collections/_history/2021/02/2021-02-08.md
     - collections/_history/2021/02/2021-02-09.md
     - collections/_history/2021/02/2021-02-12.md
-  - VSCodeのサブカテゴリラベルをVisual Studio Codeへ変更
 
 - メモ整理
   - その他で雑多にしてしまっているTips記事の整理
