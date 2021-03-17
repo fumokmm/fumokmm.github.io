@@ -21,7 +21,7 @@ require <em>'./path/to/file'</em>
 </pre>
 </div>
 
-- `require`と似ているものに、[load](#load)、[include](#include)、[extend](#extend)があります。
+- `require`と似ているものに、[load](#load)、[include](#include)、[prepend](#prepend)、[extend](#extend)があります。
 
 ### 参考
 - [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)
