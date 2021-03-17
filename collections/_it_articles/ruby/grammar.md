@@ -10,11 +10,39 @@ updated: 2021-03-10
 
 ## <a name="index">目次</a>
 
-<ul>
-{% for chapter_item in chapter_list %}
-<li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>
-{% endfor %}
-</ul>
+{% assign chapter_a = chapter_list | where: 'chapter_group', 'a' %}
+{% assign chapter_b = chapter_list | where: 'chapter_group', 'b' %}
+{% assign chapter_c = chapter_list | where: 'chapter_group', 'c' %}
+
+<table>
+    <tr>
+        <td>
+            <ul>
+                <li>基礎文法
+                    <ul>{% for chapter_item in chapter_a %}
+                    <li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>{% endfor %}
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+            <li>外部ライブラリの読み込み
+                <ul>{% for chapter_item in chapter_b %}
+                <li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>{% endfor %}
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+            <li>参照・参考
+                <ul>{% for chapter_item in chapter_c %}
+                <li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>{% endfor %}
+                </ul>
+            </li>
+            </ul>
+        </td>
+    </tr>
+</table>
 
 {% comment %} 以下、記事 {% endcomment %}
 

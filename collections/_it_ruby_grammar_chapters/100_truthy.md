@@ -2,6 +2,7 @@
 chapter_no: 100
 chapter_id: truthy
 chapter_title: Truthy
+chapter_group: a
 created: 2020-12-03
 updated: 2020-12-03
 ---
