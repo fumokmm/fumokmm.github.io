@@ -16,9 +16,10 @@ updated: 2021-03-18
     {% assign group_name = chapter_group_items.name %}
     {% assign group_label_item = chapter_group_items.items | where_exp: "chapter_group_label", "chapter_group_label != nil" | first %}
     {% assign group_label = group_label_item.chapter_group_label %}
+    {% assign chapter_items = chapter_group_items.items | sort: "chapter_no" %}
     <ul>
         <li><a href="#{{ group_name }}">{{ group_label }}</a>
-            <ul>{% for chapter_item in chapter_group_items.items | sort: "chapter_no" %}
+            <ul>{% for chapter_item in chapter_items %}
                 {% if chapter_item.chapter_group_label == nil %}
                 <li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>
                 {% endif %}{% endfor %}
@@ -33,10 +34,11 @@ updated: 2021-03-18
     {% assign group_name = chapter_group_items.name %}
     {% assign group_label_item = chapter_group_items.items | where_exp: "chapter_group_label", "chapter_group_label != nil" | first %}
     {% assign group_label = group_label_item.chapter_group_label %}
+    {% assign chapter_items = chapter_group_items.items | sort: "chapter_no" %}
 
 ## <a name="{{ group_name }}">{{ group_label }}</a>
 
-    {% for chapter_item in chapter_group_items.items | sort: "chapter_no" %}
+    {% for chapter_item in chapter_items %}
     {% if chapter_item.chapter_group_label == nil %}
 
 ## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
