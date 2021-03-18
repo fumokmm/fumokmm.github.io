@@ -1,14 +1,14 @@
 ---
-chapter_no: 061
-chapter_id: prepend
-chapter_title: prepend
-chapter_group: b
+chapter_no: 053
+chapter_id: include
+chapter_title: include
+chapter_group: external-library
 created: 2021-03-17
 updated: 2021-03-17
 ---
 あとで書きます。
 
-- `prepend`と似ているものに、[require](#require)、[load](#load)、[include](#include)、[extend](#extend)があります。
+- `include`と似ているものに、[require](#require)、[load](#load)、[prepend](#prepend)、[extend](#extend)があります。
 
 ### 参考
 - [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)

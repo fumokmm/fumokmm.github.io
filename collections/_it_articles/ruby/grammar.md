@@ -5,89 +5,45 @@ created: 2020-12-03
 updated: 2021-03-10
 ---
 {% assign chapter_list = site.it_ruby_grammar_chapters %}
+{% assign chapter_groups = chapter_list | group_by: "chapter_group" %}
 
 ここではRubyの文法を簡単にまとめておきます。
 
 ## <a name="index">目次</a>
 
-{% assign chapter_a = chapter_list | where: 'chapter_group', 'a' %}
-{% assign chapter_b = chapter_list | where: 'chapter_group', 'b' %}
-{% assign chapter_c = chapter_list | where: 'chapter_group', 'c' %}
-
-<div style="
-    display: flex;
-    flex-wrap;
-    margin-left: -8px;
-    margin-right: -8px;
-">
-    <div style="
-        flex-basis: 33%;
-        margin-left: 8px;
-        margin-right: 8px;
-    ">
-        <ul>
-            <li><a href="#basic">基礎文法</a>
-                <ul>{% for chapter_item in chapter_a %}
-                <li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>{% endfor %}
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <div style="
-        flex-basis: 33%;
-        margin-left: 8px;
-        margin-right: 8px;
-    ">
-        <ul>
-            <li><a href="#external-library">外部ライブラリの読み込み</a>
-                <ul>{% for chapter_item in chapter_b %}
-                <li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>{% endfor %}
-                </ul>
-            </li>
-        </ul>
-    </div>
-    
-    <div style="
-        flex-basis: 33%;
-        margin-left: 8px;
-        margin-right: 8px;
-    ">
-        <ul>
-            <li><a href="#reference_g">参照・参考</a>
-                <ul>{% for chapter_item in chapter_c %}
-                <li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>{% endfor %}
-                </ul>
-            </li>
-        </ul>
-    </div>
+<div style="column-count: 2;">
+{% for chapter_group_items in chapter_groups %}
+    {% assign group_name = chapter_group_items.name %}
+    {% assign group_label_item = chapter_group_items.items | where_exp: "chapter_group_label", "chapter_group_label != nil" | first %}
+    {% assign group_label = group_label_item.chapter_group_label %}
+    <ul>
+        <li><a href="#{{ group_name }}">{{ group_label }}</a>
+            <ul>{% for chapter_item in chapter_group_items.items | sort: "chapter_no" %}
+                {% if chapter_item.chapter_group_label == nil %}
+                <li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>
+                {% endif %}{% endfor %}
+            </ul>
+        </li>
+    </ul>{% endfor %}
 </div>
 
 {% comment %} 以下、記事 {% endcomment %}
 
-## <a name="basic">基礎文法</a>
+{% for chapter_group_items in chapter_groups %}
+    {% assign group_name = chapter_group_items.name %}
+    {% assign group_label_item = chapter_group_items.items | where_exp: "chapter_group_label", "chapter_group_label != nil" | first %}
+    {% assign group_label = group_label_item.chapter_group_label %}
 
-{% for chapter_item in chapter_a %}
+## <a name="{{ group_name }}">{{ group_label }}</a>
+
+    {% for chapter_item in chapter_group_items.items | sort: "chapter_no" %}
+    {% if chapter_item.chapter_group_label == nil %}
+
 ## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
 <div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
 {{ chapter_item.content | markdownify }}
 {% include goto_pagetop.html %}
-{% endfor %}
 
-## <a name="external-library">外部ライブラリの読み込み</a>
-
-{% for chapter_item in chapter_b %}
-## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
-<div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
-{{ chapter_item.content | markdownify }}
-{% include goto_pagetop.html %}
-{% endfor %}
-
-## <a name="reference_g">参照・参考</a>
-
-{% for chapter_item in chapter_c %}
-## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
-<div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
-{{ chapter_item.content | markdownify }}
-{% include goto_pagetop.html %}
+    {% endif %}
+    {% endfor %}
 {% endfor %}
