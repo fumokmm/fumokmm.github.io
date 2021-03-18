@@ -4,7 +4,7 @@ chapter_id: require
 chapter_title: require
 chapter_group: external-library
 created: 2021-03-10
-updated: 2021-03-17
+updated: 2021-03-18
 ---
 `require`は外部ファイルを読み込む関数です。標準ライブラリや自分で書いたスクリプトなどを読み込みます。  
 <div class="code-box-syntax">

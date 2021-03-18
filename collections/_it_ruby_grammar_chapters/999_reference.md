@@ -4,7 +4,7 @@ chapter_id: reference
 chapter_title: 参考
 chapter_group: reference-group
 created: 2020-12-03
-updated: 2021-03-17
+updated: 2021-03-18
 ---
 - {% include book/book_373.html %} {% comment %} Ruby on Rails 5.0 初級①: 経路、アクション、テンプレート {% endcomment %}
 - [(Let'sプログラミング) if文](https://www.javadrive.jp/ruby/if/index1.html)
