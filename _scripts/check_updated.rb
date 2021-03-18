@@ -149,6 +149,7 @@ info4 = info3.map { |info|
 
     # updated行の読み込み
     updated = read_updated(path_name)
+    next if updated == nil # 更新日が取得できない場合、nilを返却
 
     # 結果に変換
     { 'parent_path' => info['path'],
@@ -163,7 +164,7 @@ info4 = info3.map { |info|
       'updated' => updated
     }
   }
-}.filter{|item| item}.flatten
+}.filter{|item| item}.flatten.filter{|item| item}
 # nilでないものに絞る
 
 info4.each do |inf4|
