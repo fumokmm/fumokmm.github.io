@@ -4,11 +4,15 @@ chapter_id: include
 chapter_title: include
 chapter_group: external-library
 created: 2021-03-18
-updated: 2021-03-18
+updated: 2021-03-19
 ---
 あとで書きます。
 
-- `include`と似ているものに、[require](#require)、[load](#load)、[prepend](#prepend)、[extend](#extend)があります。
+### 関連項目
+- [require](#require)
+- [load](#load)
+- [prepend](#prepend)
+- [extend](#extend)
 
 ### 参考
 - [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)
