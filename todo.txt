@@ -94,8 +94,22 @@
 
   - 「AccessでVBAコードを使ってテーブルリンクを再作成する方法」内の「DNS」を用語に追記してそちらにリンクする
 
+  - YAMLでマップ(ハッシュ)の書き方
+
   - Jekyllのメモページを作成
     - https://jekyllrb.com/tutorials/custom-404-page/ Custom 404 Page
+    - https://jekyllrb.com/docs/liquid/filters/ Filters
+        where_exp:
+        group_by:
+        group_by_exp:
+        などが便利
+
+  - CSS
+    - https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Columns/Using_multi-column_layouts 段組みレイアウトの使用
+
+  - PowerShell
+    - http://www.vwnet.jp/Windows/PowerShell/2018013002/SeparateConfig.htm PowerShell スクリプトで使う「設定」を分離する
+    - http://www.vwnet.jp/Windows/PowerShell/2018013001/ClassDefinitionSeparation.htm PowerShell での Class 定義分離
 
 - 移行予定の過去記事
   - Groovy
