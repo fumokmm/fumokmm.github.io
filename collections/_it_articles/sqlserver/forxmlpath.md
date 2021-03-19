@@ -1,5 +1,6 @@
 ---
 title: SQL Serverで取得結果行を1列に連結するSQL
+article_group_id: sql-group
 display_order: 30
 created: 2020-11-07
 updated: 2020-11-07

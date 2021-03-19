@@ -1,5 +1,6 @@
 ---
 title: SQL ServerのDDL
+article_group_id: control-group
 display_order: 10
 created: 2021-02-03
 updated: 2021-02-15

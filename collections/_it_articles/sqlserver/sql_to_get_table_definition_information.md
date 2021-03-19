@@ -1,5 +1,6 @@
 ---
 title: SQL Serverでテーブル定義情報を取得するSQL
+article_group_id: control-group
 display_order: 20
 created: 2020-11-21
 updated: 2020-11-21

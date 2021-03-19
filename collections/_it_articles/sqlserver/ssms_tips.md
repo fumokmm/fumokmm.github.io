@@ -1,5 +1,6 @@
 ---
 title: SQL Server Management StudioのTips
+article_group_id: tips-group
 display_order: 910
 created: 2020-09-29
 updated: 2020-09-29

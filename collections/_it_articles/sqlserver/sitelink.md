@@ -1,5 +1,6 @@
 ---
 title: SQL Server関連サイト
+article_group_id: reference-group
 display_order: 920
 created: 2020-12-16
 updated: 2021-02-12
