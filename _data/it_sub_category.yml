@@ -101,6 +101,11 @@
 - sub_category_id: sqlserver
   sub_category_label: SQL Server
   link: /it/sqlserver/
+  article_group:
+    - group_sql: SQL
+      group_control: データベース管理
+      group_tips: Tips
+      group_reference: 参照・参考 
   sub_category_group: database
   sub_category_order: database02
   description: Microsoft社が作成しているデータベースSQL Serverについてのメモ
