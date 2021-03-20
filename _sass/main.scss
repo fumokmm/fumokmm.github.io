@@ -6,6 +6,22 @@ body {
     color: #323331;
 }
 
+// <b>強調</b>
+b {
+    font-weight: bold;
+}
+
+// *強調*, _強調_
+em {
+    font-weight: normal;
+    text-decoration: underline wavy;
+}
+// **強調**, __強調__
+strong {
+    font-weight: bold;
+    text-decoration: underline wavy;
+}
+
 // 記事内のリンク
 article.main {
     // アイコン https://iconarchive.com/
@@ -31,7 +47,6 @@ article.main {
         //font-weight: bold;
     }
 }
-
 
 .current {
     background-color: #d0ebbc;
@@ -123,7 +138,12 @@ div.goto-pagetop {
 
 code {
     color: darkgreen;
-    font-weight: bold;
+    background-color: #fdfdfd;
+    //font-weight: bold;
+    //font-size: large;
+    padding: 0.1em 0.4em;
+    border-radius: 0.5em;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 @mixin make-code-pre($preColor, $preBackgroundColor, $emColor, $emColorBlue, $emColorComment, $emColorCommand) {
@@ -137,6 +157,8 @@ code {
         font-family: Consolas, 'Meiryo UI', 'Courier New', Monaco, monospace;
         em {
             font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
             color: $emColor;
             &.blue {
                 font-style: normal;
