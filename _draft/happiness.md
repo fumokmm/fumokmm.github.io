@@ -9,4 +9,5 @@ https://twitter.com/africakotowaza/status/1373806138517381121
 > しあわせは いつも自分のこころがきめる
 >
 > 相田みつを
-
+### 参考
+[](https://gakuen.koka.ac.jp/archives/673)
