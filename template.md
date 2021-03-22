@@ -11,6 +11,8 @@ updated: 2021-03-22
 
 - [見出し](#header)
 - [コードPRE](#code-box)
+- [引用](#cite)
+- [書籍参照](#book-reference)
 - [テーブル](#table)
 
 - - -
@@ -264,7 +266,43 @@ updated: 2021-03-22
 </pre>
 </div>
 
+## <a name="cite">引用</a>
 
+### 書式
+
+- `>`の中でHTMLタグや、`{% raw %}{% ... %}{% endraw %}`も使えます
+<div class="code-box no-title">
+<pre>
+&gt; <em class="blue">&lt;b&gt;タイトルなど&lt;/b&gt;</em>
+&gt; 
+&gt; 人は、告白の言葉に負けないくらい、別れの言葉に力を入れるものである。
+&gt; <em>&lt;cite&gt;</em>{% raw %}{% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}{% endraw %}より<em>&lt;/cite&gt;</em>
+</pre>
+</div>
+
+### デモ
+
+> <b>別れの言葉</b>
+> 
+> 人は、告白の言葉に負けないくらい、別れの言葉に力を入れるものである。
+> <cite>{% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}より</cite>
+
+## <a name="book-reference">書籍参照</a>
+
+### 書式
+
+- `include`を使います
+- 引数は`book_xxx.html`へのパスです
+
+<div class="code-box no-title">
+<pre>
+{% raw %}<em>{% include</em> <em class="command">book/book_588.html</em> <em>%}</em> <em class="comment">{% comment %} 一生忘れない読書 {% endcomment %}</em>{% endraw %}
+</pre>
+</div>
+
+### デモ
+
+{% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}
 
 ## <a name="table">テーブル</a>
 
