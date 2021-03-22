@@ -39,4 +39,10 @@
   sub_category_group: health
   sub_category_order: 001
   description: 食事についてのメモ
-  
+
+- sub_category_id: happiness
+  sub_category_label: 幸せ
+  link: /life/happiness/
+  sub_category_group: happiness
+  sub_category_order: 001
+  description: 幸せについてのメモ
