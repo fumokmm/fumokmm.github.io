@@ -3,7 +3,7 @@ chapter_no: 004
 chapter_id: branch
 chapter_title: ブランチ(branch, merge, cherry-pick)
 created: 2010-11-07
-updated: 2021-03-12
+updated: 2021-03-23
 ---
 <div class="code-box">
 <div class="title">ローカルのブランチを表示する</div>
@@ -77,6 +77,14 @@ $ git <em class="blue">merge</em> <em>&lt;ブランチ名&gt;</em>
 $ git <em class="blue">merge</em> <em class="command">--no-commit</em> <em>&lt;ブランチ名&gt;</em>
 </pre>
 </div>
+
+<div class="code-box">
+<div class="title">強制的にマージコミットを作りながらマージ（ファストフォワードしない）</div>
+<pre>
+$ git <em class="blue">merge</em> <em class="command">--no-ff</em> <em>&lt;ブランチ名&gt;</em>
+</pre>
+</div>
+- (参考) [(Qiita) マージコミットとFast-forwardマージ](https://qiita.com/shyamahira/items/59ff8aa1cf7b893aab60)
 
 <div class="code-box">
 <div class="title">特定のコミットのみ取り込む（チェリーピック）</div>
