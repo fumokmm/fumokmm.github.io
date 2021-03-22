@@ -147,11 +147,17 @@ defaults:
     values:
       sub_category_id: "time_management"
 
-  # 時間管理
+  # 食事について
   - scope:
       path: "_life_articles/eat"
     values:
       sub_category_id: "eat"
+
+  # 幸せについて
+  - scope:
+      path: "_life_articles/happiness"
+    values:
+      sub_category_id: "happiness"
 
 ################################## 読書
   - scope:
@@ -214,6 +220,7 @@ collections:
   life_attitude_expectations_chapters:
   life_eat_change_all_drinks_to_water_chapters:
   life_failure_uneasiness_chapters:
+  life_happiness_quote_chapters:
   life_minimalism_discard_chapters:
   life_purpose_die_with_zero_chapters:
   life_purpose_ultimate_goal_chapters:
