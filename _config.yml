@@ -251,3 +251,4 @@ collections:
 exclude:
   - todo.txt
   - _scripts
+  - _draft
