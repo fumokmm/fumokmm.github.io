@@ -2,7 +2,7 @@
 layout: default_layout
 title: テンプレートのページ
 created: 2020-11-21
-updated: 2021-01-04
+updated: 2021-03-22
 ---
 テンプレートのページ。
 
@@ -10,14 +10,32 @@ updated: 2021-01-04
 ## <a name="index">目次</a>
 
 - [見出し](#header)
-- [コードPRE(通常用)](#code-box)
-- [コードPRE(構文、定義用)](#code-box-syntax)
-- [コードPRE(入力用)](#code-box-input)
-- [コードPRE(出力用)](#code-box-output)
+- [コードPRE](#code-box)
 - [テーブル](#table)
 
 - - -
 ## <a name="header">見出し</a>
+
+### 書式
+<div class="code-box">
+<div class="title">見出し</div>
+<pre>
+# 見出し1
+## 見出し2
+### 見出し3
+#### 見出し4
+##### 見出し5
+###### 見出し6
+
+見出し1
+=======
+
+見出し2
+-------
+</pre>
+</div>
+
+### デモ
 
 # 見出し1
 ## 見出し2
@@ -33,7 +51,128 @@ updated: 2021-01-04
 -------
 
 - - -
-## <a name="code-box">コードPRE(通常用)</a>
+## <a name="code-box">コードPRE</a>
+
+### 強調
+
+- 強調するには`<em></em>`を用います
+- 青強調するには`<em class="blue"></em>`を用います
+- コメント強調するには`<em class="comment"></em>`を用います
+- コマンド強調するには`<em class="command"></em>`を用います
+
+### 書式
+
+#### 1.通常用
+
+<div class="code-box">
+<div class="title">コードPRE(通常用)</div>
+<pre>
+&lt;div class="<em class="blue">code-box</em> <em>no-title</em>"&gt;
+&lt;pre&gt;
+<em class="comment">ここにコード...
+ここにコード...</em>
+&lt;/pre&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">コードPRE(通常用) - タイトル付き</div>
+<pre>
+&lt;div class="<em class="blue">code-box</em>"&gt;
+<em>&lt;div class="title"&gt;</em><em class="comment">ここにタイトル</em><em>&lt;/div&gt;</em>
+&lt;pre&gt;
+<em class="comment">ここにコード...
+ここにコード...</em>
+&lt;/pre&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+#### 2.構文、定義用
+
+<div class="code-box-syntax">
+<div class="title">コードPRE(構文、定義用)</div>
+<pre>
+&lt;div class="<em class="blue">code-box-syntax</em> <em>no-title</em>"&gt;
+&lt;pre&gt;
+<em class="comment">ここにコード...
+ここにコード...</em>
+&lt;/pre&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+<div class="code-box-syntax">
+<div class="title">コードPRE(構文、定義用) - タイトル付き</div>
+<pre>
+&lt;div class="<em class="blue">code-box-syntax</em>"&gt;
+<em>&lt;div class="title"&gt;</em><em class="comment">ここにタイトル</em><em>&lt;/div&gt;</em>
+&lt;pre&gt;
+<em class="comment">ここにコード...
+ここにコード...</em>
+&lt;/pre&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+#### 3.入力用
+
+<div class="code-box-input">
+<div class="title">コードPRE(入力用)</div>
+<pre>
+&lt;div class="<em class="blue">code-box-input</em> <em>no-title</em>"&gt;
+&lt;pre&gt;
+<em class="comment">ここにコード...
+ここにコード...</em>
+&lt;/pre&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+<div class="code-box-input">
+<div class="title">コードPRE(入力用) - タイトル付き</div>
+<pre>
+&lt;div class="<em class="blue">code-box-input</em>"&gt;
+<em>&lt;div class="title"&gt;</em><em class="comment">ここにタイトル</em><em>&lt;/div&gt;</em>
+&lt;pre&gt;
+<em class="comment">ここにコード...
+ここにコード...</em>
+&lt;/pre&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+#### 4.出力用
+
+<div class="code-box-output">
+<div class="title">コードPRE(出力用)</div>
+<pre>
+&lt;div class="<em class="blue">code-box-output</em> <em>no-title</em>"&gt;
+&lt;pre&gt;
+<em class="comment">ここにコード...
+ここにコード...</em>
+&lt;/pre&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">コードPRE(出力用) - タイトル付き</div>
+<pre>
+&lt;div class="<em class="blue">code-box-output</em>"&gt;
+<em>&lt;div class="title"&gt;</em><em class="comment">ここにタイトル</em><em>&lt;/div&gt;</em>
+&lt;pre&gt;
+<em class="comment">ここにコード...
+ここにコード...</em>
+&lt;/pre&gt;
+&lt;/div&gt;
+</pre>
+</div>
+
+### デモ
+
+#### 1.通常用
 
 <div class="code-box no-title">
 <pre>
@@ -56,7 +195,7 @@ updated: 2021-01-04
 </pre>
 </div>
 
-## <a name="code-box-syntax">コードPRE(構文、定義用)</a>
+#### 2.構文、定義用
 
 <div class="code-box-syntax no-title">
 <pre>
@@ -79,7 +218,7 @@ updated: 2021-01-04
 </pre>
 </div>
 
-## <a name="code-box-input">コードPRE(入力用)</a>
+#### 3.入力用
 
 <div class="code-box-input no-title">
 <pre>
@@ -102,7 +241,7 @@ updated: 2021-01-04
 </pre>
 </div>
 
-## <a name="code-box-output">コードPRE(出力用)</a>
+#### 4.出力用
 
 <div class="code-box-output no-title">
 <pre>
@@ -129,16 +268,9 @@ updated: 2021-01-04
 
 ## <a name="table">テーブル</a>
 
-|左揃え      |  中央揃え |          右揃え |
-|:-----------|:--------:|----------------:|
-|Restricted  |〇        |構成ファイルの読み込みやスクリプトの実行を行わないデフォルトはこれ。|
-|AllSigned   |          |すべてのスクリプトと構成ファイルが信頼された発行元によって署名されていることを要求する。ユーザーがローカルに書き込むスクリプトを含む。|
-|RemoteSigned|          |インターネットからダウンロードされたすべてのスクリプトおよび構成ファイルが、信頼された発行元によって署名されていることを要求します。ユーザーがローカルに書き込むスクリプトは除く。|
-|Unrestricted|          |すべての構成ファイルを読み込み、すべてのスクリプトを実行する。インターネットからダウンロードされた署名されていないスクリプトを実行する場合、スクリプトを実行する前に確認を求められる。|
-|Bypass      |          |何もブロックされず、警告もメッセージも表示されない。|
-|Undefined   |          |現在のスコープから現在割り当てられている実行ポリシーを削除する。このパラメーターは、グループポリシースコープ内で設定された実行ポリシーは削除しない。|
+### テーブル
 
-※改行はできないので注意
+- タグの属性に`markdown="span"`と入れることで、そのタグ内でMarkdown記法が使える
 
 <table class="normal">
     <thead>
@@ -163,3 +295,16 @@ updated: 2021-01-04
     <tbody>
     </tbody>
 </table>
+
+### マークダウン
+
+|左揃え      |  中央揃え |          右揃え |
+|:-----------|:--------:|----------------:|
+|Restricted  |〇        |構成ファイルの読み込みやスクリプトの実行を行わないデフォルトはこれ。|
+|AllSigned   |          |すべてのスクリプトと構成ファイルが信頼された発行元によって署名されていることを要求する。ユーザーがローカルに書き込むスクリプトを含む。|
+|RemoteSigned|          |インターネットからダウンロードされたすべてのスクリプトおよび構成ファイルが、信頼された発行元によって署名されていることを要求します。ユーザーがローカルに書き込むスクリプトは除く。|
+|Unrestricted|          |すべての構成ファイルを読み込み、すべてのスクリプトを実行する。インターネットからダウンロードされた署名されていないスクリプトを実行する場合、スクリプトを実行する前に確認を求められる。|
+|Bypass      |          |何もブロックされず、警告もメッセージも表示されない。|
+|Undefined   |          |現在のスコープから現在割り当てられている実行ポリシーを削除する。このパラメーターは、グループポリシースコープ内で設定された実行ポリシーは削除しない。|
+
+※改行はできないので注意
