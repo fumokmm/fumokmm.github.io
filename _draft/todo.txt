@@ -51,9 +51,8 @@
     - SQLインジェクションの記事
   - Rubyの記事にする
     - 文法
-      - Rubyの文法のrequireのメモを書く
       - https://www.javadrive.jp/ruby/for/index1.html while文
-      - https://qiita.com/ngron/items/dd3cd8eb8ef58bd1c1fc
+      - https://qiita.com/ngron/items/dd3cd8eb8ef58bd1c1fc attr_accessor
 
     - File I/O
       - RubyでURLの結合をするときは`File.join`使うと幸せになった
