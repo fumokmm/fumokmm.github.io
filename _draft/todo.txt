@@ -130,6 +130,8 @@
     - [Gosuをインストールしてみた](https://npnl.hatenablog.jp/entry/20110327/1302357708)
   - JavaScript
     - [JavaScriptの文字列のエスケープ](https://npnl.hatenablog.jp/entry/20070130/1170117853)
+  - Subversion
+    - [リポジトリのバックアップ／復元](https://npnl.hatenablog.jp/entry/20080420/1208706121) 2008-04-20
 
 - 要出典
   - 「飲み物をすべて水に替えるとどうなるか」の「病気のリスクを下げる」の「一日に5杯の水を飲むと心臓発作のリスクを41%減らせるという研究結果も出ています。」の部分
