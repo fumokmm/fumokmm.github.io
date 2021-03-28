@@ -1,6 +1,9 @@
 - 移行予定の過去記事
   - Excel VBA
     - [Excel VBAでUTF-8でパーセントエンコードされた文字列をデコードする(簡易版)](https://npnl.hatenablog.jp/entry/2019/12/16/193140)
+    - [VBAのマクロで外部コマンドを呼び出すサンプル](https://npnl.hatenablog.jp/entry/2019/06/24/190110)
+    - [ExcelのHYPERLINK関数で同一ブック内の別シートにリンクしたい場合は # を付けるといいみたい](https://npnl.hatenablog.jp/entry/2019/11/16/184018)
+
   - Groovy
     - [Groovy基礎文法最速マスター](https://npnl.hatenablog.jp/entry/20100605/1275736594) 2010-06-05
     - [Groovyのループいろいろ](https://npnl.hatenablog.jp/entry/20081211/1229015622) 2008-12-11
