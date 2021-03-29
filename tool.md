@@ -16,6 +16,8 @@ updated: 2021-03-12
 
 - - -
 
+{% include goto_pagetop.html %}
+
 ## <a name="code-box">コードPRE用HTML変換</a>
 
 <table>
@@ -39,6 +41,8 @@ updated: 2021-03-12
         </td>
     </tr>
 </table>
+
+{% include goto_pagetop.html %}
 
 ## <a name="table-html">テーブルHTML生成</a>
 
@@ -64,6 +68,7 @@ updated: 2021-03-12
     </tr>
 </table>
 
+{% include goto_pagetop.html %}
 
 ## <a name="snake-case">スネークケースに変換</a>
 
@@ -89,6 +94,8 @@ updated: 2021-03-12
     </tr>
 </table>
 
+{% include goto_pagetop.html %}
+
 ## <a name="kebab-case">ケバブケースに変換</a>
 
 <table>
@@ -112,6 +119,8 @@ updated: 2021-03-12
         </td>
     </tr>
 </table>
+
+{% include goto_pagetop.html %}
 
 <script>
 document.getElementById('CodeBoxConvertBtn').addEventListener('click', () => {
@@ -160,7 +169,7 @@ document.getElementById('SnakeCaseConvertBtn').addEventListener('click', () => {
     let lines = before.value.split(/\r?\n/);
     after.value = '';
     for (let i = 0; i < lines.length; i++) {
-        after.value += lines[i].toLowerCase().replace(/\s/g, '_');
+        after.value += lines[i].toLowerCase().replace(/[\s_-]+/g, '_');
         after.value += '\n';
     }
 }, false);
@@ -176,7 +185,7 @@ document.getElementById('KebabCaseConvertBtn').addEventListener('click', () => {
     let lines = before.value.split(/\r?\n/);
     after.value = '';
     for (let i = 0; i < lines.length; i++) {
-        after.value += lines[i].toLowerCase().replace(/\s/g, '-');
+        after.value += lines[i].toLowerCase().replace(/[\s_-]+/g, '-');
         after.value += '\n';
     }
 }, false);

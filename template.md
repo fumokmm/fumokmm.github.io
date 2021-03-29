@@ -52,6 +52,7 @@ updated: 2021-03-22
 見出し2
 -------
 
+{% include goto_pagetop.html %}
 - - -
 ## <a name="code-box">コードPRE</a>
 
@@ -266,6 +267,8 @@ updated: 2021-03-22
 </pre>
 </div>
 
+{% include goto_pagetop.html %}
+
 ## <a name="cite">引用</a>
 
 ### 書式
@@ -287,6 +290,8 @@ updated: 2021-03-22
 > 人は、告白の言葉に負けないくらい、別れの言葉に力を入れるものである。
 > <cite>{% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}より</cite>
 
+{% include goto_pagetop.html %}
+
 ## <a name="book-reference">書籍参照</a>
 
 ### 書式
@@ -303,6 +308,8 @@ updated: 2021-03-22
 ### デモ
 
 {% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}
+
+{% include goto_pagetop.html %}
 
 ## <a name="table">テーブル</a>
 
@@ -346,3 +353,5 @@ updated: 2021-03-22
 |Undefined   |          |現在のスコープから現在割り当てられている実行ポリシーを削除する。このパラメーターは、グループポリシースコープ内で設定された実行ポリシーは削除しない。|
 
 ※改行はできないので注意
+
+{% include goto_pagetop.html %}
