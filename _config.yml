@@ -63,6 +63,10 @@ defaults:
     values:
       sub_category_id: powershell
   - scope:
+      path: "_it_articles/windows_batch"
+    values:
+      sub_category_id: windows_batch
+  - scope:
       path: "_it_articles/python"
     values:
       sub_category_id: python
@@ -218,6 +222,7 @@ collections:
   it_vba_type_chapters:
   it_vba_url_decode_chapters:
   it_vscode_debug_ruby_chapters:
+  it_windows_batch_grammar_chapters:
   it_windows_tips_chapters:
   life_attitude_expectations_chapters:
   life_eat_change_all_drinks_to_water_chapters:

@@ -82,6 +82,13 @@
   sub_category_order: shellscript01
   description: Microsoft社が開発したシェルPowerShellについてのメモ
 
+- sub_category_id: windows_batch
+  sub_category_label: Windows Batch
+  link: /it/windows_batch/
+  sub_category_group: shellscript
+  sub_category_order: shellscript02
+  description: Microsoft社が開発したWindows用のシェルについてのメモ
+
 - sub_category_id: python
   sub_category_label: Python
   link: /it/python/
