@@ -1,0 +1,30 @@
+- 移行予定の過去記事
+  - Excel VBA
+    - [Excel VBAでUTF-8でパーセントエンコードされた文字列をデコードする(簡易版)](https://npnl.hatenablog.jp/entry/2019/12/16/193140)
+    - [VBAのマクロで外部コマンドを呼び出すサンプル](https://npnl.hatenablog.jp/entry/2019/06/24/190110)
+    - [ExcelのHYPERLINK関数で同一ブック内の別シートにリンクしたい場合は # を付けるといいみたい](https://npnl.hatenablog.jp/entry/2019/11/16/184018)
+
+  - Groovy
+    - [Groovy基礎文法最速マスター](https://npnl.hatenablog.jp/entry/20100605/1275736594) 2010-06-05
+    - [Groovyのループいろいろ](https://npnl.hatenablog.jp/entry/20081211/1229015622) 2008-12-11
+    - [Java使いをGroovyに引き込むサンプル集](https://npnl.hatenablog.jp/entry/20110213/1297616436) 2011-02-13
+    - [Groovyでデータベース操作（GroovySQL）](https://npnl.hatenablog.jp/entry/20090505/1241504105) 2009-05-05
+    - [配列のキャスト](https://npnl.hatenablog.jp/entry/20080902/1220372739) 2008-09-02
+  - Java
+    - [Javaで毎回完全に異なる乱数を取得する方法](https://npnl.hatenablog.jp/entry/20090116/1232120896)
+    - [JavaでPropertyDescriptorを使ってBeanのプロパティに簡単にアクセスする](https://npnl.hatenablog.jp/entry/2012/04/29/014121)
+    - [Javaでログ用にファイル名、クラス名、メソッド名、行番号などを取得](https://npnl.hatenablog.jp/entry/20070724/1185294796)
+    - [Javaのpackage, importではまった](https://npnl.hatenablog.jp/entry/20090505/1241510804)
+    - [Javaでenumを使ってプロパティファイルのキーを定義する](https://npnl.hatenablog.jp/entry/2012/05/03/141341)
+    - [JavaEEでリクエストのHTTPヘッダに値を付加する](https://npnl.hatenablog.jp/entry/2012/04/22/095341)
+  - Ruby
+    - [Ruby基礎文法ひとめぐり](https://npnl.hatenablog.jp/entry/20110410/1302405896) 2011-04-10
+    - [Rubyが令和に対応したみたいです](https://npnl.hatenablog.jp/entry/2019/06/07/122603) 2019-06-07
+  - Windows Batch
+    - [バイナリ分割されたファイルを結合する for Windows](https://npnl.hatenablog.jp/entry/20110310/1299758354)
+  - その他
+    - [Gosuをインストールしてみた](https://npnl.hatenablog.jp/entry/20110327/1302357708)
+  - JavaScript
+    - [JavaScriptの文字列のエスケープ](https://npnl.hatenablog.jp/entry/20070130/1170117853)
+  - Subversion
+    - [リポジトリのバックアップ／復元](https://npnl.hatenablog.jp/entry/20080420/1208706121) 2008-04-20
