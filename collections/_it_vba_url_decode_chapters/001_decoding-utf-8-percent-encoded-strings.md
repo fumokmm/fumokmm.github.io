@@ -7,11 +7,12 @@ updated: 2021-03-29
 ---
 当メモは2019-12-16に[投稿されたもの](https://npnl.hatenablog.jp/entry/2019/12/16/193140)を加筆修正し、再掲したものです。
 
-Excel VBAでUTF-8でパーセントエンコードされた文字列をデコードする必要があり、ちょっと調べてみたらADODB.Streamを使うと出来そうだったのでやってみた。
+Excel VBAでUTF-8でパーセントエンコードされた文字列をデコードする必要があり、  
+ちょっと調べてみたら`ADODB.Stream`を使うと出来そうだったのでやってみた。
 
 ### 環境
-Windows 10 (バージョン 1903) 64bit
-Excel Office365 MSO (16.0.12228.20322) 64bit
+- Windows 10 (バージョン 1903) 64bit
+- Excel Office365 MSO (16.0.12228.20322) 64bit
 
 ### コード
 <div class="code-box">
@@ -19,7 +20,7 @@ Excel Office365 MSO (16.0.12228.20322) 64bit
 <pre>
 Option Explicit
 
-'''
+<em class="comment">'''
 ' UTF-8でパーセントエンコードされた文字列をデコードします
 '
 ' @param percentEncodedStr UTF-8でパーセントエンコードされた文字列
@@ -27,44 +28,44 @@ Option Explicit
 '
 ' ※ADODB.Streamを利用するため、ツール &gt; 参照設定で
 ' 「Microsoft ActiveX Data Objects 6.1 Library」を追加してください。
-'
+'</em>
 Public Function PercentDecode(percentEncodedStr As String) As String
-  ' 空文字なら空文字を返却
+  <em class="comment">' 空文字なら空文字を返却</em>
   If IsEmpty(percentEncodedStr) Then
     PercentDecode = ""
     Exit Function
   End If
 
-  ' ストリームをオープン
+  <em class="comment">' ストリームをオープン</em>
   Dim objStm As ADODB.Stream
   Set objStm = New ADODB.Stream
   objStm.Open
   
-  ' ストリームをリセット
+  <em class="comment">' ストリームをリセット</em>
   objStm.Position = 0
   objStm.SetEOS
   
-  ' バイナリを書き込み
+  <em class="comment">' バイナリを書き込み</em>
   objStm.Type = ADODB.adTypeBinary
   objStm.Write ToHexBytes(percentEncodedStr)
   
-  ' UTF-8でテキスト読み込み
+  <em class="comment">' UTF-8でテキスト読み込み</em>
   objStm.Position = 0
   objStm.Type = ADODB.adTypeText
   objStm.Charset = "UTF-8"
-  PercentDecode = objStm.ReadText() ' 結果返却
+  PercentDecode = objStm.ReadText() <em class="comment">' 結果返却</em>
   
-  ' ストリームをクローズ
+  <em class="comment">' ストリームをクローズ</em>
   objStm.Close
   Set objStm = Nothing
 End Function
 
-'''
+<em class="comment">'''
 ' UTF-8でパーセントエンコードされた文字列をバイト配列に変換します
 '
 ' @param percentEncodedStr UTF-8でパーセントエンコードされた文字列
 ' @return バイト配列
-'
+'</em>
 Private Function ToHexBytes(percentEncodedStr As String) As Byte()
   Dim size As Long
   size = Len(percentEncodedStr) / 3
@@ -82,11 +83,21 @@ End Function
 </div>
 
 ### 使い方
-PercentDecodeがパブリック関数になっているので、こちらをExcelの数式などとして利用するだけ。引数はパーセントエンコードされた文字列を受け取り、戻り値はデコードした文字列となる。
+`PercentDecode`がパブリック関数になっているので、こちらをExcelの数式などとして利用するだけです。  
+引数はパーセントエンコードされた文字列を受け取り、戻り値はデコードした文字列となります。
 
 ### デモ
-f:id:fumokmm:20191216192520g:plain
-注意
-なお、すべての文字が3バイトにパーセントエンコードされていた場合しか想定していません。また、例外処理なども省略しています。あくまでテスト用ということで利用する際はもうちょっとアレンジが必要。
+![](https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumokmm/20191216/20191216192520.gif?changed=1616979768)
 
-参考
+### 注意
+なお、すべての文字が3バイトにパーセントエンコードされていた場合しか想定していません。  
+また、例外処理なども省略しています。あくまでテスト用ということで利用する際はもうちょっとアレンジが必要です。  
+利用される際はご注意下さい。
+
+### 参考
+- [(hakeの日記) EXCEL VBAメモ - UTF-8バイト列を文字に変換する](https://hake.hatenablog.com/entry/20161117/p1)
+- [(Non Soft) ADODB.Streamによる文字コード変換のサンプル(VB6)](http://nonsoft.la.coocan.jp/SoftSample/SampleModADOS.html)
+- [(インストラクターのネタ帳) URLデコードを行う](https://www.relief.jp/docs/003799.html)
+
+### 元記事
+- [元記事](https://npnl.hatenablog.jp/entry/2019/12/16/193140)
