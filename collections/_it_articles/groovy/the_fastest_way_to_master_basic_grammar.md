@@ -6,7 +6,9 @@ updated: 2021-03-30
 ---
 {% assign chapter_list = site.it_groovy_the_fastest_way_to_master_basic_grammar_chapters %}
 
-当メモは2010-06-05に[投稿されたもの](https://npnl.hatenablog.jp/entry/20100605/1275736594)を加筆修正し、再掲したものです。
+当メモは2010-06-05に[投稿されたもの](https://npnl.hatenablog.jp/entry/20100605/1275736594)を加筆修正し、再掲したものです。  
+当初の掲載からだいぶ時間が経過していますので、古い内容のものもあると思いますのでご注意下さい。  
+順次アップデートしていく予定です。
 
 ## <a name="index">目次</a>
 
