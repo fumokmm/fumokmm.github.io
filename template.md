@@ -2,7 +2,7 @@
 layout: default_layout
 title: テンプレートのページ
 created: 2020-11-21
-updated: 2021-03-22
+updated: 2021-03-30
 ---
 テンプレートのページ。
 
@@ -316,6 +316,7 @@ updated: 2021-03-22
 ### テーブル
 
 - タグの属性に`markdown="span"`と入れることで、そのタグ内でMarkdown記法が使える
+- tableタグの属性に`class="normal"`を指定すると、以下のような背景色のテーブルとなります
 
 <table class="normal">
     <thead>
