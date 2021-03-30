@@ -407,8 +407,8 @@ table {
     // テーブル標準スタイル(緑)
     &.normal {
         @include make-table-style(
-            $thBackgroundColor: #aae5d2,
-            $tdBackgroundColor: #f6fff2
+            $thBackgroundColor: #e3f3ce,
+            $tdBackgroundColor: #fbfff7
         )
     }
 }
