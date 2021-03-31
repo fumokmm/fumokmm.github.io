@@ -33,3 +33,16 @@ https://www.excelforum.com/excel-formulas-and-functions/1017416-is-there-a-formu
 
 URLデコードを行う
 https://www.relief.jp/docs/003799.html
+
+
+# On Error Resumeのあたりの話
+- `On Error Resume Next` すると、エラーが発生したらその行の次の行から処理が実行される
+- `On Error Goto 0` すると、エラーハンドリングが解除される (0ってのがイケてない…)
+- `On Error Goto <ラベル>` で`<ラベル>`にジャンプした後、`Resume Next` すると、跳び元の行の次の行から処理が続行される
+  - `<ラベル>`の中でエラー状況の復帰処理を書いて、その後戻ってくる感じ
+
+### 参考
+- [(Office TANAKA) エラーに負けない](http://officetanaka.net/excel/vba/tips/tips104.htm)
+- [(Office TANAKA) On Error](http://officetanaka.net/excel/vba/statement/OnError.htm)
+- [(Microsoft \| Docs) On Error statement](https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/on-error-statement)
+
