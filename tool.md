@@ -2,7 +2,7 @@
 layout: default_layout
 title: ツールのページ
 created: 2021-01-15
-updated: 2021-03-12
+updated: 2021-03-31
 ---
 ツールのページです。
 
@@ -142,15 +142,15 @@ document.getElementById('TableHtmlConvertBtn').addEventListener('click', () => {
     let after = document.getElementById('TableHtmlConvertAfter');
     let lines = before.value.split(/\r?\n/);
     after.value = '';
-    after.value += '<table>\n';
+    after.value += '<table class="normal">\n';
     for (let i = 0; i < lines.length; i++) {
         after.value += '\t<tr>\n';
         let columns = lines[i].split(/\t/);
         columns.forEach(col => {
             if (i == 0) {
-                after.value += '\t\t<th>' + col + '</th>\n';
+                after.value += '\t\t<th markdown="span">' + col + '</th>\n';
             } else {
-                after.value += '\t\t<td>' + col + '</td>\n';
+                after.value += '\t\t<td markdown="span">' + col + '</td>\n';
             }
         });
         after.value += '\t</tr>\n';
