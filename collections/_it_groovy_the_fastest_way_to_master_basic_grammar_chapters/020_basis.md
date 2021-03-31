@@ -3,7 +3,7 @@ chapter_no: 020
 chapter_id: basis
 chapter_title: 基礎
 created: 2010-06-05
-updated: 2021-03-30
+updated: 2021-03-31
 ---
 ### Groovyの実行
 <table class="normal">
@@ -58,3 +58,58 @@ println "hi"
 </div>
 - 上記はすべて同じ意味となります。
 
+### アサーション
+Groovyではどこでも`assert文`を利用できます。  
+コード内に*assertテストを埋め込んでコードの正当性を保つのがGroovyのスタイル*です。
+
+<div class="code-box-syntax">
+<div class="title">書式</div>
+<pre>
+assert <em>式, コメント</em>
+</pre>
+</div>
+- 上記のような形式で利用できます。
+- コメントは省略可能です。
+
+<div class="code-box no-title">
+<pre>
+def a = 10
+def b = 20
+assert 30 == a + b, '足したら30のはず'
+</pre>
+</div>
+- 式が真の間は実行しても何も起こりませんが、偽の場合はエラーとなります。
+- assert文が文に埋め込まれているおかげで、その時点での変数などの状態の正当性が主張できるわけです。
+
+以降、サンプルコードでも`assert文`を利用します。
+
+### 等値性と同一性
+`#equals()`は`==`、`==`は`#is()`。  
+分かりにくいので、Javaと比較すると以下のようになります。
+
+<table class="normal">
+	<tr>
+		<th></th>
+		<th>Groovy</th>
+		<th>Java</th>
+	</tr>
+	<tr>
+		<td>等値性</td>
+		<td>a == b</td>
+		<td>a.equals(b)</td>
+	</tr>
+	<tr>
+		<td>同一性</td>
+		<td>a.is(b)</td>
+		<td>a == b</td>
+	</tr>
+</table>
+また、nullに対してもチェック可能です。
+
+<div class="code-box-syntax">
+<div class="title">等値性と同一性</div>
+<pre>
+assert null <em>==</em> null
+assert !(null <em>==</em> 1)
+</pre>
+</div>
