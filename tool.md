@@ -2,7 +2,7 @@
 layout: default_layout
 title: ツールのページ
 created: 2021-01-15
-updated: 2021-03-12
+updated: 2021-03-31
 ---
 ツールのページです。
 
@@ -15,6 +15,8 @@ updated: 2021-03-12
 - [ケバブケースに変換](#kebab-case)
 
 - - -
+
+{% include goto_pagetop.html %}
 
 ## <a name="code-box">コードPRE用HTML変換</a>
 
@@ -40,6 +42,8 @@ updated: 2021-03-12
     </tr>
 </table>
 
+{% include goto_pagetop.html %}
+
 ## <a name="table-html">テーブルHTML生成</a>
 
 <table>
@@ -64,6 +68,7 @@ updated: 2021-03-12
     </tr>
 </table>
 
+{% include goto_pagetop.html %}
 
 ## <a name="snake-case">スネークケースに変換</a>
 
@@ -89,6 +94,8 @@ updated: 2021-03-12
     </tr>
 </table>
 
+{% include goto_pagetop.html %}
+
 ## <a name="kebab-case">ケバブケースに変換</a>
 
 <table>
@@ -113,6 +120,8 @@ updated: 2021-03-12
     </tr>
 </table>
 
+{% include goto_pagetop.html %}
+
 <script>
 document.getElementById('CodeBoxConvertBtn').addEventListener('click', () => {
     let before = document.getElementById('CodeBoxConvertBefore');
@@ -133,15 +142,15 @@ document.getElementById('TableHtmlConvertBtn').addEventListener('click', () => {
     let after = document.getElementById('TableHtmlConvertAfter');
     let lines = before.value.split(/\r?\n/);
     after.value = '';
-    after.value += '<table>\n';
+    after.value += '<table class="normal">\n';
     for (let i = 0; i < lines.length; i++) {
         after.value += '\t<tr>\n';
         let columns = lines[i].split(/\t/);
         columns.forEach(col => {
             if (i == 0) {
-                after.value += '\t\t<th>' + col + '</th>\n';
+                after.value += '\t\t<th markdown="span">' + col + '</th>\n';
             } else {
-                after.value += '\t\t<td>' + col + '</td>\n';
+                after.value += '\t\t<td markdown="span">' + col + '</td>\n';
             }
         });
         after.value += '\t</tr>\n';
@@ -160,7 +169,7 @@ document.getElementById('SnakeCaseConvertBtn').addEventListener('click', () => {
     let lines = before.value.split(/\r?\n/);
     after.value = '';
     for (let i = 0; i < lines.length; i++) {
-        after.value += lines[i].toLowerCase().replace(/\s/g, '_');
+        after.value += lines[i].toLowerCase().replace(/[\s_-]+/g, '_');
         after.value += '\n';
     }
 }, false);
@@ -176,7 +185,7 @@ document.getElementById('KebabCaseConvertBtn').addEventListener('click', () => {
     let lines = before.value.split(/\r?\n/);
     after.value = '';
     for (let i = 0; i < lines.length; i++) {
-        after.value += lines[i].toLowerCase().replace(/\s/g, '-');
+        after.value += lines[i].toLowerCase().replace(/[\s_-]+/g, '-');
         after.value += '\n';
     }
 }, false);

@@ -98,6 +98,14 @@ article.main {
     }
 }
 
+// Markdownの注釈
+.footnotes {
+    border-top-width: 1px;
+    border-top-color: black;
+    border-top-style: solid;
+    margin-top: 20px;
+}
+
 .footer {
     border-top-width: 1px;
     border-top-color: black;
@@ -407,8 +415,8 @@ table {
     // テーブル標準スタイル(緑)
     &.normal {
         @include make-table-style(
-            $thBackgroundColor: #aae5d2,
-            $tdBackgroundColor: #f6fff2
+            $thBackgroundColor: #e3f3ce,
+            $tdBackgroundColor: #fbfff7
         )
     }
 }

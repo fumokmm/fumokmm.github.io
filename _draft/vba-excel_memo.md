@@ -33,3 +33,76 @@ https://www.excelforum.com/excel-formulas-and-functions/1017416-is-there-a-formu
 
 URLデコードを行う
 https://www.relief.jp/docs/003799.html
+
+
+# On Error Resumeのあたりの話
+- `On Error Resume Next` すると、エラーが発生したらその行の次の行から処理が実行される
+- `On Error Goto 0` すると、エラーハンドリングが解除される (0ってのがイケてない…)
+- `On Error Goto <ラベル>` で`<ラベル>`にジャンプした後、`Resume Next` すると、跳び元の行の次の行から処理が続行される
+  - `<ラベル>`の中でエラー状況の復帰処理を書いて、その後戻ってくる感じ
+
+### 参考
+- [(Office TANAKA) エラーに負けない](http://officetanaka.net/excel/vba/tips/tips104.htm)
+- [(Office TANAKA) On Error](http://officetanaka.net/excel/vba/statement/OnError.htm)
+- [(Microsoft \| Docs) On Error statement](https://docs.microsoft.com/en-us/office/vba/language/reference/user-interface-help/on-error-statement)
+
+
+# 関数呼び出し
+
+まずは用語
+- Subプロシージャ      = 戻り値なしの処理を宣言するときに使う
+- Functionプロシージャ = 戻り値ありの処理を宣言するときに使う
+
+Sub sub0()
+Sub sub1(s1 As String)
+Sub sub2(s1 As String, s2 As String)
+Function func0() As String
+Function func1(s1 As String) As String
+Function func2(s1 As String, s2 As String) As String
+
+sub0
+sub1 "a"
+sub2 "a", "b"
+
+' これはNG(括弧を付けたい場合は、頭にCallがいる)
+' sub0()
+' sub1("a")
+' sub2("a", "b")
+
+' 括弧を付けたい場合は、頭にCallを付ける
+Call sub0() ' → 自動フォーマッターで、Call sub0 にされてしまう…
+Call sub0
+Call sub1("a")
+Call sub2("a", "b")
+
+Dim res As String
+res = func0
+res = func0() ' → 戻り値ありの場合は、引数が0個の場合、括弧を付けても付けなくてもよい
+res = func1("a")
+res = func2("a", "b")
+
+' これはNG(戻り値ありの場合は、Callは付けられない)
+' Call res = func0
+' Call res = func0()
+' Call res = func1("a")
+' Call res = func2("a", "b")
+
+まとめ
+-----
+
+- 戻り値なしの時は、基本的には括弧を省略する
+- 戻り値なしの時にも括弧を使いたい場合は、頭にCallを付ける
+- ただし、頭にCallを付けると、引数がない場合場合を除き、基本的には括弧が必要になるので注意
+
+- 戻り値ありの時には、基本的に括弧は省略できない(括弧は必須)
+- ただし、引数がなしの場合に限り括弧を省略できる(括弧を付けてもよい)
+- 逆に、戻り値ありの時にはCallは使えない(使わない) (一部例外あり)
+  - 例外: Call 構文を使用して、ネイティブまたはユーザー定義の関数を呼び出す場合、関数の戻り値は破棄されます。
+
+- 関数呼び出しといったら括弧が付きものの文化で育った人は、Callを使うといいかも
+- 逆に戻り値あり、なしで書き方を明確に使い分けたい派の人は、出来る限り括弧を省略するスタイルを採用してみるといいかも
+
+https://docs.microsoft.com/ja-jp/office/vba/language/concepts/getting-started/calling-sub-and-function-procedures
+https://docs.microsoft.com/ja-jp/office/vba/language/concepts/getting-started/using-parentheses-in-code
+https://docs.microsoft.com/ja-jp/office/vba/language/reference/user-interface-help/call-statement
+

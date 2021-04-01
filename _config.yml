@@ -63,10 +63,6 @@ defaults:
     values:
       sub_category_id: powershell
   - scope:
-      path: "_it_articles/windows_batch"
-    values:
-      sub_category_id: windows_batch
-  - scope:
       path: "_it_articles/python"
     values:
       sub_category_id: python
@@ -98,6 +94,10 @@ defaults:
       path: "_it_articles/windows"
     values:
       sub_category_id: "windows"
+  - scope:
+      path: "_it_articles/windows_batch"
+    values:
+      sub_category_id: windows_batch
 
 ################################## 科学
   - scope:

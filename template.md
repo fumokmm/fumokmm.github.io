@@ -2,7 +2,7 @@
 layout: default_layout
 title: テンプレートのページ
 created: 2020-11-21
-updated: 2021-03-22
+updated: 2021-03-30
 ---
 テンプレートのページ。
 
@@ -52,6 +52,7 @@ updated: 2021-03-22
 見出し2
 -------
 
+{% include goto_pagetop.html %}
 - - -
 ## <a name="code-box">コードPRE</a>
 
@@ -266,6 +267,8 @@ updated: 2021-03-22
 </pre>
 </div>
 
+{% include goto_pagetop.html %}
+
 ## <a name="cite">引用</a>
 
 ### 書式
@@ -287,6 +290,8 @@ updated: 2021-03-22
 > 人は、告白の言葉に負けないくらい、別れの言葉に力を入れるものである。
 > <cite>{% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}より</cite>
 
+{% include goto_pagetop.html %}
+
 ## <a name="book-reference">書籍参照</a>
 
 ### 書式
@@ -304,11 +309,14 @@ updated: 2021-03-22
 
 {% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}
 
+{% include goto_pagetop.html %}
+
 ## <a name="table">テーブル</a>
 
 ### テーブル
 
 - タグの属性に`markdown="span"`と入れることで、そのタグ内でMarkdown記法が使える
+- tableタグの属性に`class="normal"`を指定すると、以下のような背景色のテーブルとなります
 
 <table class="normal">
     <thead>
@@ -346,3 +354,5 @@ updated: 2021-03-22
 |Undefined   |          |現在のスコープから現在割り当てられている実行ポリシーを削除する。このパラメーターは、グループポリシースコープ内で設定された実行ポリシーは削除しない。|
 
 ※改行はできないので注意
+
+{% include goto_pagetop.html %}
