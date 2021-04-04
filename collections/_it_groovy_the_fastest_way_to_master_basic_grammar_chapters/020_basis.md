@@ -109,7 +109,7 @@ assert 30 == a + b, '足したら30のはず'
 </table>
 また、nullに対してもチェック可能です。
 
-<div class="code-box-syntax">
+<div class="code-box">
 <div class="title">等値性と同一性</div>
 <pre>
 assert null <em>==</em> null

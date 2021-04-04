@@ -3,7 +3,7 @@ chapter_no: 030
 chapter_id: data-type
 chapter_title: 2. データ型
 created: 2010-06-05
-updated: 2021-04-01
+updated: 2021-04-02
 ---
 ### すべてがObject(プリミティブはない)
 `1`、 `1.0f`などのJavaでのプリミティブは  `java.lang.Integer`や、`java.lang.Float`などのラッパーでラッピングされているため、  
@@ -48,3 +48,19 @@ updated: 2021-04-01
 		<td markdown="span">1.23, 4.56, 1.4E4, 2.8e4, 1.23g, 1.23G</td>
 	</tr>
 </table>
+
+### def (型の指定)
+defキーワードはどんな型でもよいということを示すために使われます。  
+明示的に型を指定してもよいです。
+<div class="code-box">
+<div class="title">型の指定</div>
+<pre>
+<em>def</em> a = 1      <em class="comment">// => 実際の型はjava.lang.Integer (暗黙の型付け)</em>
+<em>def</em> b = 1.0f   <em class="comment">// => 実際の型はjava.lang.Float   (暗黙の型付け)</em>
+<em>int</em> c = 1      <em class="comment">// => 実際の型はjava.lang.Integer (Javaの基本型を使った明示的な型付け)</em>
+<em>float</em> d = 1    <em class="comment">// => 実際の型はjava.lang.Float   (Javaの基本型を使った明示的な型付け)</em>
+<em>Integer</em> e = 1  <em class="comment">// => 実際の型はjava.lang.Integer (参照型の型名を使った明示的な型付け)</em>
+<em>String</em> f = '1' <em class="comment">// => 実際の型はjava.lang.String  (参照型の型名を使った明示的な型付け)</em>
+</pre>
+</div>
+`int`や`float`などは`java.lang.Integer`や`java.lang.Float`のエイリアスです。
