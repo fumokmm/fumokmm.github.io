@@ -163,6 +163,12 @@ defaults:
     values:
       sub_category_id: "happiness"
 
+  # 運について
+  - scope:
+      path: "_life_articles/luck"
+    values:
+      sub_category_id: "luck"
+
 ################################## 読書
   - scope:
       path: "_reading_articles"
@@ -228,6 +234,7 @@ collections:
   life_eat_change_all_drinks_to_water_chapters:
   life_failure_uneasiness_chapters:
   life_happiness_quote_chapters:
+  life_luck_how_to_be_lucky_chapters:
   life_minimalism_discard_chapters:
   life_purpose_die_with_zero_chapters:
   life_purpose_purpose_for_study_chapters:
