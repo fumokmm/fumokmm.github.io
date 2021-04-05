@@ -41,7 +41,7 @@
   description: 食事についてのメモ
 
 - sub_category_id: happiness
-  sub_category_label: 幸せ
+  sub_category_label: 幸せについて
   link: /life/happiness/
   sub_category_group: happiness
   sub_category_order: 001
