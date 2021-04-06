@@ -99,20 +99,6 @@ defaults:
     values:
       sub_category_id: windows_batch
 
-################################## 科学
-  - scope:
-      path: "_science_articles"
-    values:
-      layout: "science_article_layout"
-      category_id: "science"
-
-# 科学のメモのサブカテゴリ
-  # 物理のメモ
-  - scope:
-      path: "_science_articles/physics"
-    values:
-      sub_category_id: "physics"
-
 ################################## 人生
   - scope:
       path: "_life_articles"
@@ -188,6 +174,20 @@ defaults:
     values:
       sub_category_id: "method"
 
+################################## 科学
+  - scope:
+      path: "_science_articles"
+    values:
+      layout: "science_article_layout"
+      category_id: "science"
+
+# 科学のメモのサブカテゴリ
+  # 物理のメモ
+  - scope:
+      path: "_science_articles/physics"
+    values:
+      sub_category_id: "physics"
+
 ################################## 全メモのリスト
   - scope:
       path: "all"
@@ -255,11 +255,6 @@ collections:
     output: true
     permalink: /it/:path
 
-  # 科学の記事
-  science_articles:
-    output: true
-    permalink: /science/:path
-
   # 人生の記事
   life_articles:
     output: true
@@ -269,6 +264,11 @@ collections:
   reading_articles:
     output: true
     permalink: /reading/:path
+
+  # 科学の記事
+  science_articles:
+    output: true
+    permalink: /science/:path
 
 # 除外ファイル/ディレクトリ
 exclude:
