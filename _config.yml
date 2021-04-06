@@ -223,6 +223,7 @@ collections:
   it_sqlserver_logical_name_chapters:
   it_sqlserver_rank_denserank_rownumber_chapters:
   it_sqlserver_tips_chapters:
+  it_sqlserver_update_chapters:
   it_subversion_tips_chapters:
   it_vba_database_control_chapters:
   it_vba_type_chapters:
