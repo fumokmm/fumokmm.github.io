@@ -2,7 +2,7 @@
 title: SQL ServerのDDL
 article_group_id: control-group
 display_order: 10
-created: 2021-02-03
+created: 2020-10-28
 updated: 2021-04-06
 ---
 {% assign chapter_list = site.it_sqlserver_ddl_chapters %}
