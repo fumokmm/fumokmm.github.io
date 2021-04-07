@@ -226,6 +226,7 @@ collections:
   it_sqlserver_update_chapters:
   it_subversion_tips_chapters:
   it_vba_database_control_chapters:
+  it_vba_parentheses_in_procedure_calls_chapters:
   it_vba_type_chapters:
   it_vba_url_decode_chapters:
   it_vscode_debug_ruby_chapters:
