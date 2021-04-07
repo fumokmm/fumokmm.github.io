@@ -2,8 +2,8 @@
 chapter_no: 002
 chapter_id: summary
 chapter_title: まとめ
-created: 2021-04-08
-updated: 2021-04-08
+created: 2021-04-07
+updated: 2021-04-07
 ---
 ### 戻り値なしの時
 - 戻り値なしの時は、基本的には括弧を省略する。

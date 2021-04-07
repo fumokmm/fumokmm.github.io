@@ -2,7 +2,7 @@
 title: VBAでプロシージャ呼び出し時の括弧について
 display_order: 60
 created: 2021-04-07
-updated: 2021-04-08
+updated: 2021-04-07
 ---
 {% assign chapter_list = site.it_vba_parentheses_in_procedure_calls_chapters %}
 

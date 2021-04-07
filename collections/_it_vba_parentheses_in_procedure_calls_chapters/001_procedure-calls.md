@@ -2,8 +2,8 @@
 chapter_no: 001
 chapter_id: procedure-calls
 chapter_title: プロシージャ呼び出し
-created: 2021-04-08
-updated: 2021-04-08
+created: 2021-04-07
+updated: 2021-04-07
 ---
 まずは用語です。
 
