@@ -2,7 +2,7 @@
 layout: default_layout
 title: テンプレートのページ
 created: 2020-11-21
-updated: 2021-03-30
+updated: 2021-04-06
 ---
 テンプレートのページ。
 
@@ -299,11 +299,43 @@ updated: 2021-03-30
 - `include`を使います
 - 引数は`book_xxx.html`へのパスです
 
+BOOK# <input type="text" id="BookReferenceBookNumber" value="588">
+書名(コメント部分) <input type="text" id="BookReferenceBookNameComment" value="一生忘れない読書">
+<input type="button" id="BookReferenceRevert" value="元に戻す">
+
 <div class="code-box no-title">
-<pre>
+<pre id="BookReferencePre">
 {% raw %}<em>{% include</em> <em class="command">book/book_588.html</em> <em>%}</em> <em class="comment">{% comment %} 一生忘れない読書 {% endcomment %}</em>{% endraw %}
 </pre>
 </div>
+
+<script>
+    let bookNumber = document.getElementById('BookReferenceBookNumber');
+    let bookNameComment = document.getElementById('BookReferenceBookNameComment');
+    let bookReferenceRevert = document.getElementById('BookReferenceRevert');
+    let bookReferencePre = document.getElementById('BookReferencePre');
+
+    // 「BOOK#」変更時
+    // 「書名(コメント部分) 」変更時
+    let updateToValue = () => {
+        {% raw %}
+        bookReferencePre.innerHTML = bookReferencePre.innerHTML
+            .replace(/book\/book_.*\.html/, `book/book_${bookNumber.value.trim()}.html`)
+            .replace(/{% comment %} .* {% endcomment %}/, `{% comment %} ${bookNameComment.value.trim()} {% endcomment %}`);
+        {% endraw %}
+    };
+    ['change', 'keyup', 'keydown', 'keypress'].forEach(e => {
+        bookNumber.addEventListener(e, updateToValue, false);
+        bookNameComment.addEventListener(e, updateToValue, false);
+    });
+
+    // 「元に戻す」押下時
+    bookReferenceRevert.addEventListener('click', () => {
+        bookNumber.value = '588';
+        bookNameComment.value = '一生忘れない読書';
+        bookNumber.dispatchEvent(new Event('change'));
+    }, false);
+</script>
 
 ### デモ
 

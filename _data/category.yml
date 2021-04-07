@@ -8,11 +8,6 @@
   link: /it/
   description: IT技術メモ
 
-- category_id: science
-  category_label: Science
-  link: /science/
-  description: 科学についてのメモ
-
 - category_id: life
   category_label: Life
   link: /life/
@@ -22,6 +17,11 @@
   category_label: Reading
   link: /reading/
   description: 読書についてのメモ
+
+- category_id: science
+  category_label: Science
+  link: /science/
+  description: 科学についてのメモ
 
 - category_id: all
   category_label: All
