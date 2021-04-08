@@ -4,6 +4,8 @@
 - 見た目
 
 - サイトの構造
+  - sub_category_order, display_order, chapter_noの定義で頭に0を付けるのをやめる
+    エクスプローラやVSCode上では頭にゼロを付けなくてもソートはいい感じみたいなので
   - 過去のhistoryでリンク切れになっているものを修復するため、%link化を推進する
   - 過去のhistoryでリンク切れになっているものを修復
     - collections/_history/2020/10/2020-10-08.md
