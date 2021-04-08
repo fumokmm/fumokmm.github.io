@@ -3,7 +3,7 @@ chapter_no: 030
 chapter_id: data-type
 chapter_title: 2. データ型
 created: 2010-06-05
-updated: 2021-04-04
+updated: 2021-04-08
 ---
 ### すべてがObject(プリミティブはない)
 `1`、 `1.0f`などのJavaでのプリミティブは  `java.lang.Integer`や、`java.lang.Float`などのラッパーでラッピングされているため、  

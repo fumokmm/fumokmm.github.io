@@ -3,7 +3,7 @@ chapter_no: 010
 chapter_id: getting-started
 chapter_title: はじめに
 created: 2010-06-05
-updated: 2021-04-01
+updated: 2021-04-08
 ---
 GroovyはJavaのシンタクスシュガーな上位互換として設計されており、  
 妥当なJavaプログラムであれば、*ほぼそのままでGroovyプログラムとして動かすことができます*([参照](https://npnl.hatenablog.jp/entry/20110212/1297522544))。  

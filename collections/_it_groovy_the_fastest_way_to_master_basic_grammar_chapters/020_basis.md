@@ -3,7 +3,7 @@ chapter_no: 020
 chapter_id: basis
 chapter_title: 1. 基礎
 created: 2010-06-05
-updated: 2021-03-31
+updated: 2021-04-08
 ---
 ### Groovyの実行
 <table class="normal">

@@ -2,7 +2,7 @@
 title: Groovy基礎文法最速マスター
 display_order: 10
 created: 2010-06-05
-updated: 2021-03-30
+updated: 2021-04-08
 ---
 {% assign chapter_list = site.it_groovy_the_fastest_way_to_master_basic_grammar_chapters %}
 
