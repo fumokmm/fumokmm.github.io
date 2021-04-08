@@ -33,7 +33,7 @@
   sub_category_label: Go
   link: /it/go/
   sub_category_group: programming_language
-  sub_category_order: programming_language02
+  sub_category_order: 006
   description: Google社が開発したプログラミング言語Goについてのメモ
 
 - sub_category_id: git
@@ -43,12 +43,19 @@
   sub_category_order: version_control_system01
   description: Google社が開発したプログラミング言語Goについてのメモ
 
+- sub_category_id: groovy
+  sub_category_label: Groovy
+  link: /it/groovy/
+  sub_category_group: programming_language
+  sub_category_order: 006
+  description: Javaから派生した動的型付けのプログラミング言語についてのメモ
+
 # J
 - sub_category_id: java
   sub_category_label: Java
   link: /it/java/
   sub_category_group: programming_language
-  sub_category_order: programming_language01
+  sub_category_order: 001
   description: プログラミング言語Javaについてのメモ
 
 # L
@@ -72,7 +79,7 @@
   sub_category_label: プログラミングお題
   link: /it/problem/
   sub_category_group: programming_language
-  sub_category_order: programming_language90
+  sub_category_order: 090
   description: プログラミングお題についてのメモ
 
 - sub_category_id: powershell
@@ -86,7 +93,7 @@
   sub_category_label: Python
   link: /it/python/
   sub_category_group: programming_language
-  sub_category_order: programming_language05
+  sub_category_order: 005
   description: プログラミング言語Pythonについてのメモ
 
 # R
@@ -94,7 +101,7 @@
   sub_category_label: Ruby
   link: /it/ruby/
   sub_category_group: programming_language
-  sub_category_order: programming_language04
+  sub_category_order: 004
   description: "[まつもとゆきひろ氏](https://ja.wikipedia.org/wiki/%E3%81%BE%E3%81%A4%E3%82%82%E3%81%A8%E3%82%86%E3%81%8D%E3%81%B2%E3%82%8D)（通称:Matz）により開発されたオブジェクト指向スクリプト言語についてのメモ"
 
 # S
@@ -134,7 +141,7 @@
   sub_category_label: VBA
   link: /it/vba/
   sub_category_group: programming_language
-  sub_category_order: programming_language03
+  sub_category_order: 003
   description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ
 
 - sub_category_id: vscode
