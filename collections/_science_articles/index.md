@@ -4,7 +4,7 @@ title: 科学のメモ
 created: 2021-02-18
 updated: 2021-03-16
 ---
-## こちらは物理のメモになります
+## こちらは物理学のメモになります
 <table>
     {% assign sub_categories = site.data.science_sub_category | where: 'sub_category_group', 'physics'
                                                               | sort: 'sub_category_order' %}

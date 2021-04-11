@@ -186,7 +186,7 @@ defaults:
       category_id: "science"
 
 # 科学のメモのサブカテゴリ
-  # 物理のメモ
+  # 物理学のメモ
   - scope:
       path: "_science_articles/physics"
     values:
