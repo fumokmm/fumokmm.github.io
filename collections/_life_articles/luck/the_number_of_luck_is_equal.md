@@ -1,10 +1,10 @@
 ---
-title: 幸運になる方法
+title: 運の数は平等である
 display_order: 10
 created: 2021-04-05
-updated: 2021-04-05
+updated: 2021-04-13
 ---
-{% assign chapter_list = site.life_luck_how_to_be_lucky_chapters %}
+{% assign chapter_list = site.life_luck_the_number_of_luck_is_equal_chapters %}
 
 ## <a name="index">目次</a>
 
