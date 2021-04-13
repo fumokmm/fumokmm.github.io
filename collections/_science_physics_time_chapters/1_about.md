@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: about
 chapter_title: 時間について
 created: 2021-02-18
