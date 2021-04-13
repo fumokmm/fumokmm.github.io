@@ -192,6 +192,12 @@ defaults:
     values:
       sub_category_id: "physics"
 
+  # 心理学のメモ
+  - scope:
+      path: "_science_articles/psychology"
+    values:
+      sub_category_id: "psychology"
+
 ################################## 全メモのリスト
   - scope:
       path: "all"
@@ -250,6 +256,7 @@ collections:
   reading_charmpoint_about_book_chapters:
   reading_method_read_from_ending_chapters:
   science_physics_time_chapters:
+  science_psychology_norm_of_reciprocity_chapters:
 
   # 以下、出力するコレクション ---------------------
   #   ※output:true じゃないコレクションをそれより前に定義しておかないと
