@@ -1,5 +1,5 @@
 ---
-chapter_no: 002
+chapter_no: 2
 chapter_id: answer
 chapter_title: 答え
 created: 2021-01-29
