@@ -166,10 +166,17 @@
   sub_category_order: shellscript02
   description: Microsoft社が開発したWindows用のシェルについてのメモ
 
+- sub_category_id: structured_text_data_format
+  sub_category_label: 構造化テキストデータフォーマット
+  link: /it/structured_text_data_format/
+  sub_category_group: other
+  sub_category_order: 1
+  description: 構造化テキストデータフォーマットのメモ
+
 # そ
 - sub_category_id: other
   sub_category_label: その他
   link: /it/other/
   sub_category_group: other
-  sub_category_order: other01
+  sub_category_order: 2
   description: IT関係のその他のメモ
