@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: problem
 chapter_title: お題
 created: 2021-01-29
