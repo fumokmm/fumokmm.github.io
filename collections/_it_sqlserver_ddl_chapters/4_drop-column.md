@@ -1,14 +1,14 @@
 ---
-chapter_no: 003
+chapter_no: 4
 chapter_id: drop-column
 chapter_title: 列削除
 created: 2020-10-28
-updated: 2021-02-15
+updated: 2021-04-22
 ---
 テーブルから列を削除するALTER文です。
 
 <div class="code-box-syntax">
-<div class="title">テーブルから列を削除するSQL</div>
+<div class="title">構文</div>
 <pre>
 ALTER TABLE <em>&lt;テーブル名&gt;</em> DROP COLUMN <em>&lt;カラム名&gt;</em>;
 </pre>
@@ -16,7 +16,8 @@ ALTER TABLE <em>&lt;テーブル名&gt;</em> DROP COLUMN <em>&lt;カラム名&gt
 
 ### 例
 以下SQLを実行すると、`M_USER`テーブルの`EMAIL_ADDRESS`というカラムが削除されます。
-<div class="code-box no-title">
+<div class="code-box">
+<div class="title">列、EMAIL_ADDRESSを削除</div>
 <pre>
 ALTER TABLE <em>M_USER</em> DROP COLUMN <em>EMAIL_ADDRESS</em>;
 </pre>
