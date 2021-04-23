@@ -2,7 +2,7 @@
 title: PowerShell関連サイト
 display_order: 910
 created: 2020-09-28
-updated: 2021-01-04
+updated: 2021-04-23
 ---
 <table class="normal">
   <thead>
