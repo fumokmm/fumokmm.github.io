@@ -227,6 +227,7 @@ collections:
   it_java_map_multiple_key_chapters:
   it_linux_command_history_next_chapters:
   it_other_term_chapters:
+  it_powershell_extract_n_lines_from_the_beginning_of_a_text_file_chapters:
   it_problem_find_m_integers_that_all_add_up_to_n_chapters:
   it_problem_hot_summer_day_chapters:
   it_python_grammar_chapters:
