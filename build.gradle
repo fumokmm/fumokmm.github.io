@@ -1,0 +1,5 @@
+task copyArticles(type: Copy) {
+    from '_articles/it/'
+    into 'collections/_it_articles/'
+    include '**/*.md'
+}

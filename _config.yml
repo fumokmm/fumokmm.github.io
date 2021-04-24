@@ -292,6 +292,8 @@ collections:
 
 # 除外ファイル/ディレクトリ
 exclude:
-  - todo.txt
-  - _scripts
+  - _articles
   - _draft
+  - _scripts
+  - build.gradle
+  - todo.txt
