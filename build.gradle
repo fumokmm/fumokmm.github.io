@@ -10,10 +10,12 @@ task copyArticles(type: Copy) {
     
     ["it"].each { category ->
         // サブカテゴリのindex.md
-        from("${projectDir}/_articles/${category}/") {
-            into "_${category}_articles/"
-            include "*/*.md"
-        }
+        //   → collections配下で管理して二重管理を防ぐ [210426]
+        // from("${projectDir}/_articles/${category}/") {
+        //     into "_${category}_articles/"
+        //     include "*/*.md"
+        // }
+
         // サブカテゴリのメモ(makeArticlesにて結合済み)
         from("${projectDir}/.work/articles/${category}/") {
             into "_${category}_articles/"
