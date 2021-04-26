@@ -3,7 +3,7 @@ title: SQL ServerのDDL
 article_group_id: control-group
 display_order: 10
 created: 2020-10-28
-updated: 2021-04-22
+updated: 2021-04-26
 ---
 
 
@@ -11,6 +11,8 @@ updated: 2021-04-22
 
 <ul>
 <li><a href="#index">INDEX</a></li>
+<li><a href="#login">LOGIN</a></li>
+<li><a href="#user">USER</a></li>
 <li><a href="#add-column">列追加</a></li>
 <li><a href="#alter-column">列変更</a></li>
 <li><a href="#drop-column">列削除</a></li>
@@ -47,6 +49,87 @@ CREATE <em>UNIQUE</em> INDEX &lt;インデックス名&gt; ON &lt;テーブル�
 
 ### 参考
 - [(Microsoft \| Docs) CREATE INDEX (Transact-SQL)](https://docs.microsoft.com/ja-jp/sql/t-sql/statements/create-index-transact-sql?view=sql-server-ver15)
+
+{% include goto_pagetop.html %}
+
+## <a name="login">LOGIN</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-04-26" updated="2021-04-26" %}</div>
+ログイン関連のメモです。
+
+<div class="code-box-syntax">
+<div class="title">ログイン情報の作成</div>
+<pre>
+CREATE LOGIN <em>ログインID</em>
+WITH
+  PASSWORD = <em>'パスワード'</em>,
+  DEFAULT_DATABASE = <em>データベース名</em>,
+  CHECK_EXPIRATION = OFF, -- 有効期限チェックしない
+  CHECK_POLICY = OFF -- パスワードの複雑性要件をチェックしない
+GO
+</pre>
+</div>
+
+### 参考
+- [(Qiita) \[Microsoft\] SQLから始めるSQL Serverデータベース](https://qiita.com/sengoku/items/d628d0ac50ef54da4268)
+
+{% include goto_pagetop.html %}
+
+## <a name="user">USER</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-04-26" updated="2021-04-26" %}</div>
+ユーザー関連のメモです。
+
+### データベースユーザー作成
+
+データベースにログイン情報と一致するユーザーを作成します。
+<div class="code-box-syntax">
+<div class="title">ユーザー情報の作成(ログイン情報と一致するユーザー)</div>
+<pre>
+USE 「データベース]
+GO
+CREATE USER <em>ログインID</em>
+GO
+</pre>
+</div>
+
+データベースにログイン情報と一致しないユーザーを作る場合は以下のように`FOR LOGIN`を追加します。
+<div class="code-box-syntax">
+<div class="title">ユーザー情報の作成(ログインIDを指定)</div>
+<pre>
+USE 「データベース]
+GO
+CREATE USER ログインID <em>FOR LOGIN [ログインID]</em>
+GO
+</pre>
+</div>
+
+### ロール割り当て
+
+ロールを割り当てます。
+<div class="code-box-syntax">
+<div class="title">ロールを割り当て</div>
+<pre>
+USE [データベース]
+GO
+EXEC <em class="blue">sp_addrolemember</em> <em>'db_owner', 'ログインID'</em>
+GO
+</pre>
+</div>
+
+### パスワード変更
+
+パスワードを変更します。
+<div class="code-box-syntax">
+<div class="title">パスワードを変更</div>
+<pre>
+ALTER LOGIN ログインID
+WITH
+  PASSWORD = <em>'新パスワード'</em>
+GO
+</pre>
+</div>
+
+### 参考
+- [(Qiita) \[Microsoft\] SQLから始めるSQL Serverデータベース](https://qiita.com/sengoku/items/d628d0ac50ef54da4268)
 
 {% include goto_pagetop.html %}
 
@@ -156,12 +239,13 @@ ALTER SCHEMA <em>dbo</em> TRANSFER <em>newschema</em>.M_USER;
 {% include goto_pagetop.html %}
 
 ## <a name="reference">参考</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-04-06" updated="2021-04-22" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-04-06" updated="2021-04-26" %}</div>
 - [(iPentec) テーブルのスキーマを変更する - SQL Server Tips](https://www.ipentec.com/document/sql-server-change-table-scheme)
 - [(Microsoft \| Docs) ALTER TABLE (Transact-SQL)](https://docs.microsoft.com/ja-jp/sql/t-sql/statements/alter-table-transact-sql?view=sql-server-ver15)
 - [(Microsoft \| Docs) テーブルからの列の削除](https://docs.microsoft.com/ja-jp/sql/relational-databases/tables/delete-columns-from-a-table?view=sql-server-ver15)
 - [(Microsoft \| Docs) テーブルへの列の追加 (データベース エンジン)](https://docs.microsoft.com/ja-jp/sql/relational-databases/tables/add-columns-to-a-table-database-engine?view=sql-server-ver15)
 - [(PROJECT GROUP) テーブル定義を変更する（ALTER TABLE）](https://www.projectgroup.info/tips/SQLServer/SQL/SQL000005.html)
+- [(Qiita) \[Microsoft\] SQLから始めるSQL Serverデータベース](https://qiita.com/sengoku/items/d628d0ac50ef54da4268)
 
 {% include goto_pagetop.html %}
 

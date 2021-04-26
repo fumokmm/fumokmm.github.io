@@ -1,5 +1,5 @@
 ---
-chapter_no: 4
+chapter_no: 32
 chapter_id: drop-column
 chapter_title: 列削除
 created: 2020-10-28
