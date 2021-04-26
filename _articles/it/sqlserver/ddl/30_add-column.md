@@ -1,5 +1,5 @@
 ---
-chapter_no: 2
+chapter_no: 30
 chapter_id: add-column
 chapter_title: 列追加
 created: 2021-02-15
