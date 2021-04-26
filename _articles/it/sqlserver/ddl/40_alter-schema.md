@@ -1,5 +1,5 @@
 ---
-chapter_no: 5
+chapter_no: 40
 chapter_id: alter-schema
 chapter_title: スキーマ
 created: 2021-04-06
