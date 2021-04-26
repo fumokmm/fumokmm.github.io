@@ -1,13 +1,13 @@
 ---
-title: Accessのメモ
-created: 2020-09-07
-updated: 2020-10-15
+title: Rubyのメモ
+created: 2020-12-03
+updated: 2021-03-19
 ---
-こちらはAccessのメモになります。
+こちらはRubyのメモになります。
 
 <ul>
     {% assign list = site.it_articles  | where: 'category_id', 'it'
-                                       | where: 'sub_category_id', 'access'
+                                       | where: 'sub_category_id', 'ruby'
                                        | sort: 'display_order' %}
     {% for item in list %}
         {% assign filename = item.url | split: '/' | reverse | first %}

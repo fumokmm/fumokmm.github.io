@@ -295,5 +295,6 @@ exclude:
   - _articles
   - _draft
   - _scripts
+  - .work
   - build.gradle
   - todo.txt

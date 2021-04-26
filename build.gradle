@@ -1,5 +1,17 @@
+apply from: '_scripts/makeArticles.gradle'
+defaultTasks "copyArticles"
+
+task clean(type: Delete) {
+    delete "${projectDir}/.work/articles/it"
+}
+
 task copyArticles(type: Copy) {
-    from '_articles/it/'
-    into 'collections/_it_articles/'
-    include '**/*.md'
+    dependsOn "makeArticles"
+    
+    ["it"].each { category ->
+        from("${projectDir}/.work/articles/${category}/") {
+            into "_${category}_articles/"
+        }
+    }
+    into "${projectDir}/collections"
 }
