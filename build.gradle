@@ -9,6 +9,12 @@ task copyArticles(type: Copy) {
     dependsOn "makeArticles"
     
     ["it"].each { category ->
+        // サブカテゴリのindex.md
+        from("${projectDir}/_articles/${category}/") {
+            into "_${category}_articles/"
+            include "*/*.md"
+        }
+        // サブカテゴリのメモ(makeArticlesにて結合済み)
         from("${projectDir}/.work/articles/${category}/") {
             into "_${category}_articles/"
         }
