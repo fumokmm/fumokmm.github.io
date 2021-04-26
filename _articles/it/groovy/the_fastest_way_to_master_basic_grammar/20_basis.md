@@ -1,5 +1,5 @@
 ---
-chapter_no: 020
+chapter_no: 20
 chapter_id: basis
 chapter_title: 1. 基礎
 created: 2010-06-05

@@ -1,5 +1,5 @@
 ---
-chapter_no: 005
+chapter_no: 5
 chapter_id: save-money
 chapter_title: お金が貯まる
 created: 2021-03-13

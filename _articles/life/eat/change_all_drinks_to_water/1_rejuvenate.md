@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: rejuvenate
 chapter_title: 若返る
 created: 2021-03-13
