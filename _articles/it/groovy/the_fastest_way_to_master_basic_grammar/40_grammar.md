@@ -1,5 +1,5 @@
 ---
-chapter_no: 040
+chapter_no: 40
 chapter_id: grammar
 chapter_title: 3. 文法
 created: 2010-06-05

@@ -1,5 +1,5 @@
 ---
-chapter_no: 002
+chapter_no: 2
 chapter_id: lose-weight
 chapter_title: 痩せる
 created: 2021-03-13

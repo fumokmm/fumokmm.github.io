@@ -1,0 +1,27 @@
+apply from: '_scripts/makeArticles.gradle'
+defaultTasks "copyArticles"
+
+task clean(type: Delete) {
+    delete "${projectDir}/.work/articles/it"
+}
+
+task copyArticles(type: Copy) {
+    dependsOn "makeArticles"
+
+    def categories = "it life reading science".split(/\s+/).toList()
+
+    categories.each { category ->
+        // サブカテゴリのindex.md
+        //   → collections配下で管理して二重管理を防ぐ [210426]
+        // from("${projectDir}/_articles/${category}/") {
+        //     into "_${category}_articles/"
+        //     include "*/*.md"
+        // }
+
+        // サブカテゴリのメモ(makeArticlesにて結合済み)
+        from("${projectDir}/.work/articles/${category}/") {
+            into "_${category}_articles/"
+        }
+    }
+    into "${projectDir}/collections"
+}

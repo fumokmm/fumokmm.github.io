@@ -1,5 +1,5 @@
 ---
-chapter_no: 050
+chapter_no: 50
 chapter_id: class
 chapter_title: 4. クラス
 created: 2010-06-05

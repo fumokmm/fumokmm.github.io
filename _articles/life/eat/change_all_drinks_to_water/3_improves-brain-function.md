@@ -1,5 +1,5 @@
 ---
-chapter_no: 003
+chapter_no: 3
 chapter_id: improves-brain-function
 chapter_title: 脳の働きが良くなる
 created: 2021-03-13

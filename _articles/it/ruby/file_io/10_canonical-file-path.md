@@ -1,5 +1,5 @@
 ---
-chapter_no: 010
+chapter_no: 10
 chapter_id: canonical-file-path
 chapter_title: ファイルパスを絶対パスに変換する
 created: 2021-03-09

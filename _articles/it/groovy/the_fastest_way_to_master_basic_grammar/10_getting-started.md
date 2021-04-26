@@ -1,5 +1,5 @@
 ---
-chapter_no: 010
+chapter_no: 10
 chapter_id: getting-started
 chapter_title: はじめに
 created: 2010-06-05
