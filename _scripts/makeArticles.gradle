@@ -1,18 +1,20 @@
 task makeArticles() {
     def dirs = []
-    def fileTree = fileTree("${projectDir}/_articles/it/")
-    fileTree.include "*/*"
-    fileTree.visit{
-        // 4つ親がプロジェクトディレクトリとなるディレクトリを取得
-        if (it.file.directory && it.file.parentFile.parentFile.parentFile.parentFile == projectDir) {
-            dirs << it.file
+    ["it"].each { category ->
+        def fileTree = fileTree("${projectDir}/_articles/${category}/")
+        fileTree.include "*/*"
+        fileTree.visit{
+            // 4つ親がプロジェクトディレクトリとなるディレクトリを取得
+            if (it.file.directory && it.file.parentFile.parentFile.parentFile.parentFile == projectDir) {
+                dirs << it.file
+            }
         }
     }
     // ディレクトリ内の .mdを操作
     dirs.each{ dir ->
-        def topArticle = dir.listFiles().find{ it.name == 'article.md' }
-        assert topArticle, "${dir}にarticle.mdがあるはず"
-        def chapters = dir.listFiles().findAll{ it.name != 'article.md' }
+        def topArticle = dir.listFiles().find{ it.name == 'index.md' }
+        assert topArticle, "${dir}にindex.mdがあるはず"
+        def chapters = dir.listFiles().findAll{ it.name != 'index.md' }
         assert chapters.size() > 0, "${dir}にチャプターが1件以上あるはず"
         def chapterMap = [:] as TreeMap
         chapters.each { chap ->
@@ -67,7 +69,6 @@ task makeArticles() {
 
         chapterMap.each { chapter_no, chap ->
             toPath.withWriterAppend { writer ->
-                println "★${chap.frontMatter.chapter_id}"
                 writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
                 writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
                 writer << chap.body << '\n'

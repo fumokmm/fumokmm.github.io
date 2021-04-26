@@ -221,7 +221,6 @@ collections:
   it_access_tips_chapters:
   it_excel_key_combination_chapters:
   it_git_command_chapters:
-  it_groovy_the_fastest_way_to_master_basic_grammar_chapters:
   it_java_database_control_chapters:
   it_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
   it_java_map_multiple_key_chapters:
@@ -231,7 +230,6 @@ collections:
   it_problem_find_m_integers_that_all_add_up_to_n_chapters:
   it_problem_hot_summer_day_chapters:
   it_python_grammar_chapters:
-  it_ruby_file_io_chapters:
   it_ruby_grammar_chapters:
   it_ruby_string_chapters:
   it_sqlserver_conversion_functions_chapters:
