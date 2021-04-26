@@ -1,5 +1,5 @@
 ---
-chapter_no: 006
+chapter_no: 6
 chapter_id: be-careful
 chapter_title: 注意
 created: 2021-03-13

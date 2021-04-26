@@ -1,21 +1,24 @@
 task makeArticles() {
+    def categories = "it life reading science".split(/\s+/).toList()
+
     def dirs = []
-    ["it"].each { category ->
+    categories.each { category ->
         def fileTree = fileTree("${projectDir}/_articles/${category}/")
         fileTree.include "*/*"
         fileTree.visit{
             // 4つ親がプロジェクトディレクトリとなるディレクトリを取得
             if (it.file.directory && it.file.parentFile.parentFile.parentFile.parentFile == projectDir) {
-                dirs << it.file
+                dirs << [dir: it.file, category: category]
             }
         }
     }
+
     // ディレクトリ内の .mdを操作
     dirs.each{ dir ->
-        def topArticle = dir.listFiles().find{ it.name == 'index.md' }
-        assert topArticle, "${dir}にindex.mdがあるはず"
-        def chapters = dir.listFiles().findAll{ it.name != 'index.md' }
-        assert chapters.size() > 0, "${dir}にチャプターが1件以上あるはず"
+        def topArticle = dir.dir.listFiles().find{ it.name == 'index.md' }
+        assert topArticle, "${dir.dir}にindex.mdがあるはず"
+        def chapters = dir.dir.listFiles().findAll{ it.name != 'index.md' }
+        assert chapters.size() > 0, "${dir.dir}にチャプターが1件以上あるはず"
         def chapterMap = [:] as TreeMap
         chapters.each { chap ->
             def frontMatter = [:]
@@ -51,7 +54,7 @@ task makeArticles() {
                                                   frontMatter: frontMatter,
                                                   body: body.toString()]
         }
-        def toPath = new File(topArticle.parentFile.absolutePath.replace("${projectDir}/_articles/it", "${projectDir}/.work/articles/it") + '.md')
+        def toPath = new File(topArticle.parentFile.absolutePath.replace("${projectDir}/_articles/${dir.category}", "${projectDir}/.work/articles/${dir.category}") + '.md')
         toPath.parentFile.mkdirs()
         toPath.delete()
         toPath.withWriterAppend { writer ->

@@ -1,5 +1,5 @@
 ---
-chapter_no: 004
+chapter_no: 4
 chapter_id: reduce-the-risk-of-disease
 chapter_title: 病気のリスクを下げる
 created: 2021-03-13

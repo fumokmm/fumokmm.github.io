@@ -7,8 +7,10 @@ task clean(type: Delete) {
 
 task copyArticles(type: Copy) {
     dependsOn "makeArticles"
-    
-    ["it"].each { category ->
+
+    def categories = "it life reading science".split(/\s+/).toList()
+
+    categories.each { category ->
         // サブカテゴリのindex.md
         //   → collections配下で管理して二重管理を防ぐ [210426]
         // from("${projectDir}/_articles/${category}/") {
