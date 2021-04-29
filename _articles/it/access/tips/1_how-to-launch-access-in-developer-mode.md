@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: how-to-launch-access-in-developer-mode
 chapter_title: Accessを開発者モードで起動する方法
 created: 2020-10-01

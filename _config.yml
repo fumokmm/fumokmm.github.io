@@ -217,7 +217,6 @@ collections:
   history:
 
   # チャプター
-  it_access_tips_chapters:
   it_excel_key_combination_chapters:
   it_git_command_chapters:
   it_java_database_control_chapters:
