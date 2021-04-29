@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: recreate-table-link
 chapter_title: テーブルリンク再作成
 created: 2020-10-14
