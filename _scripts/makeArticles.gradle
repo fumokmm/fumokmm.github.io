@@ -72,6 +72,7 @@ task makeArticles() {
 
         chapterMap.each { chapter_no, chap ->
             toPath.withWriterAppend { writer ->
+                writer << '* * *\n'
                 writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
                 writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
                 writer << chap.body << '\n'

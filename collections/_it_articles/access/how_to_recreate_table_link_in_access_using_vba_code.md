@@ -18,6 +18,7 @@ Accessでテーブルリンクを作成する場合、ローカルPCに設定し
 <li><a href="#reference">参考</a></li>
 </ul>
 
+* * *
 ## <a name="recreate-table-link">テーブルリンク再作成</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-14" updated="2020-10-15" %}</div>
 <div class="code-box">
@@ -66,6 +67,7 @@ Set p_td = CurrentDb.CreateTableDef( _
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="reference">参考</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-14" updated="2020-10-15" %}</div>
 - [(Microsoft Docs) Access でリンクテーブルに対して SQL Server への DSN レス接続を作成する方法](https://docs.microsoft.com/ja-jp/office/troubleshoot/access/create-dsn-less-connection-linkted-table)

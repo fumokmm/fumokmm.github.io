@@ -20,6 +20,7 @@ updated: 2021-04-08
 <li><a href="#reference">参照</a></li>
 </ul>
 
+* * *
 ## <a name="getting-started">はじめに</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 GroovyはJavaのシンタクスシュガーな上位互換として設計されており、  
@@ -35,6 +36,7 @@ Groovyを利用すれば*世界中に存在する有益なJava資産をすべて
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="basis">1. 基礎</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### Groovyの実行
@@ -151,6 +153,7 @@ assert !(null <em>==</em> 1)
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="data-type">2. データ型</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### すべてがObject(プリミティブはない)
@@ -499,6 +502,7 @@ a $${color} car
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="grammar">3. 文法</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### 文
@@ -799,6 +803,7 @@ assert y.to == 9
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="class">4. クラス</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### 暗黙的インポート
@@ -868,6 +873,7 @@ assert groovyBook.title == 'No Groovy, No Life'
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="reference">参照</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### 元記事

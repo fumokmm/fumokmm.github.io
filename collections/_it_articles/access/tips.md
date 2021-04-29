@@ -13,6 +13,7 @@ updated: 2020-10-01
 <li><a href="#how-to-launch-access-in-developer-mode">Accessを開発者モードで起動する方法</a></li>
 </ul>
 
+* * *
 ## <a name="how-to-launch-access-in-developer-mode">Accessを開発者モードで起動する方法</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-01" updated="2020-10-01" %}</div>
 Accessをそのまま起動するとAutoExecマクロや起動オプションが実行されてしまいます。  

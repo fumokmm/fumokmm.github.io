@@ -18,6 +18,7 @@ updated: 2021-03-13
 <li><a href="#reference">参考</a></li>
 </ul>
 
+* * *
 ## <a name="rejuvenate">若返る</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-13" updated="2021-03-13" %}</div>
 - 水を飲むと体内の毒をを排出してくれます。 → 老化防止
@@ -25,6 +26,7 @@ updated: 2021-03-13
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="lose-weight">痩せる</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-13" updated="2021-03-13" %}</div>
 - 9日間、飲み物を全て水に変えることで、1日に8kmジョギングするのと同じカロリーを消費することができます。
@@ -36,6 +38,7 @@ updated: 2021-03-13
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="improves-brain-function">脳の働きが良くなる</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-13" updated="2021-03-13" %}</div>
 - 人間の脳は80%が水でできています。
@@ -46,6 +49,7 @@ updated: 2021-03-13
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="reduce-the-risk-of-disease">病気のリスクを下げる</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-13" updated="2021-03-13" %}</div>
 - 高血圧症、膀胱炎、大腸がん等様々な病気のリスクを下げることができます。
@@ -54,6 +58,7 @@ updated: 2021-03-13
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="save-money">お金が貯まる</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-13" updated="2021-03-13" %}</div>
 - 私たちはずいぶん多くのお金をお酒や砂糖水に費やしています。
@@ -62,6 +67,7 @@ updated: 2021-03-13
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="be-careful">注意</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-13" updated="2021-03-13" %}</div>
 - 水は体にとてもいいものですが、飲みすぎは禁物です。
@@ -70,6 +76,7 @@ updated: 2021-03-13
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="reference">参考</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-13" updated="2021-03-13" %}</div>
 ### 参考動画
