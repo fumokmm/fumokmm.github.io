@@ -292,4 +292,3 @@ exclude:
   - _scripts
   - .work
   - build.gradle
-  - todo.txt
