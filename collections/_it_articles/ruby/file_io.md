@@ -14,6 +14,7 @@ updated: 2021-03-10
 <li><a href="#reference">参考</a></li>
 </ul>
 
+* * *
 ## <a name="canonical-file-path">ファイルパスを絶対パスに変換する</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-03-10" %}</div>
 <div class="code-box">
@@ -39,6 +40,7 @@ require 'pathname'
 
 {% include goto_pagetop.html %}
 
+* * *
 ## <a name="reference">参考</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-03-09" %}</div>
 - [(Stack Overflow) Canonical File Path in Ruby](https://stackoverflow.com/questions/3502611/canonical-file-path-in-ruby)
