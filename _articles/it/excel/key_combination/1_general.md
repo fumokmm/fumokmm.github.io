@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: general
 chapter_title: 全般
 created: 2021-03-25

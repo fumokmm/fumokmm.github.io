@@ -1,5 +1,5 @@
 ---
-chapter_no: 004
+chapter_no: 4
 chapter_id: sheet
 chapter_title: シート操作
 created: 2020-12-17
