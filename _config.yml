@@ -255,7 +255,6 @@ collections:
   reading_charmpoint_about_book_chapters:
   reading_method_read_from_ending_chapters:
   science_physics_time_chapters:
-  science_psychology_norm_of_reciprocity_chapters:
 
   # 以下、出力するコレクション ---------------------
   #   ※output:true じゃないコレクションをそれより前に定義しておかないと
