@@ -2,8 +2,6 @@ task makeArticles() {
     group = '記事管理'
     description = '_articles配下の記事を結合して、.workに記事を作成します。'
 
-    def categories = "it life reading science".split(/\s+/).toList()
-
     def dirs = []
     categories.each { category ->
         def fileTree = fileTree("${projectDir}/_articles/${category}/")
@@ -83,5 +81,6 @@ task makeArticles() {
                 writer << '\n'
             }
         }
+        println "${toPath}"
     }
 }

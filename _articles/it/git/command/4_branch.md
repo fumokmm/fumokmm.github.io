@@ -1,5 +1,5 @@
 ---
-chapter_no: 004
+chapter_no: 4
 chapter_id: branch
 chapter_title: ブランチ(branch, merge, cherry-pick)
 created: 2010-11-07

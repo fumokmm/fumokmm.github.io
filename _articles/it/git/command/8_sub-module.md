@@ -1,5 +1,5 @@
 ---
-chapter_no: 008
+chapter_no: 8
 chapter_id: sub-module
 chapter_title: サブモジュール(submodule)
 created: 2010-11-07

@@ -1,5 +1,5 @@
 ---
-chapter_no: 010
+chapter_no: 5
 chapter_id: tag
 chapter_title: タグ(tag)
 created: 2010-11-07

@@ -1,5 +1,5 @@
 ---
-chapter_no: 003
+chapter_no: 3
 chapter_id: routine-work
 chapter_title: 日常の作業(add, commit, checkout, reset)
 created: 2010-11-07

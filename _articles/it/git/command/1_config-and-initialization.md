@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: config-and-initialization
 chapter_title: 設定と初期化(config)
 created: 2010-11-07

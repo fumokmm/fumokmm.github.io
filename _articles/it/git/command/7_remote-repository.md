@@ -1,5 +1,5 @@
 ---
-chapter_no: 007
+chapter_no: 7
 chapter_id: remote-repository
 chapter_title: リモートリポジトリ(remote)
 created: 2010-11-07

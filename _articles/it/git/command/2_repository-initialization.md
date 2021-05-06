@@ -1,5 +1,5 @@
 ---
-chapter_no: 002
+chapter_no: 2
 chapter_id: repository-initialization
 chapter_title: リポジトリの初期化(init, clone)
 created: 2010-11-07
