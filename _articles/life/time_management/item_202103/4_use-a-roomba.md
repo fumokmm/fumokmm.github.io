@@ -1,5 +1,5 @@
 ---
-chapter_no: 004
+chapter_no: 4
 chapter_id: use-a-roomba
 chapter_title: ルンバを使う
 created: 2021-03-08

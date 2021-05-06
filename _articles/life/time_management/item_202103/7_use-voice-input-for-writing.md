@@ -1,5 +1,5 @@
 ---
-chapter_no: 007
+chapter_no: 7
 chapter_id: use-voice-input-for-writing
 chapter_title: 音声入力で文章を書く
 created: 2021-03-08

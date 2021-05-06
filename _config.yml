@@ -217,7 +217,6 @@ collections:
   history:
 
   # チャプター
-  it_excel_key_combination_chapters:
   it_git_command_chapters:
   it_java_database_control_chapters:
   it_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
@@ -253,7 +252,6 @@ collections:
   life_purpose_die_with_zero_chapters:
   life_purpose_purpose_for_study_chapters:
   life_purpose_ultimate_goal_chapters:
-  life_time_management_item_202103_chapters:
   reading_charmpoint_about_book_chapters:
   reading_method_read_from_ending_chapters:
   science_physics_time_chapters:

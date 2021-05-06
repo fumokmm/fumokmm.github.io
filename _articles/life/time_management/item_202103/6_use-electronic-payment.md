@@ -1,5 +1,5 @@
 ---
-chapter_no: 006
+chapter_no: 6
 chapter_id: use-electronic-payment
 chapter_title: 電子決済を使う
 created: 2021-03-08

@@ -1,5 +1,5 @@
 ---
-chapter_no: 002
+chapter_no: 2
 chapter_id: use-a-drum-type-washing-machine
 chapter_title: ドラム式洗濯機を使う
 created: 2021-03-08

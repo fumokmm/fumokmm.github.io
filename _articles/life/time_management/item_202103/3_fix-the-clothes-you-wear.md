@@ -1,5 +1,5 @@
 ---
-chapter_no: 003
+chapter_no: 3
 chapter_id: fix-the-clothes-you-wear
 chapter_title: 着る服を固定する
 created: 2021-03-08

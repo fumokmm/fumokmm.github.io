@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: use-online-supermarket
 chapter_title: ネットスーパーを使う
 created: 2021-03-08

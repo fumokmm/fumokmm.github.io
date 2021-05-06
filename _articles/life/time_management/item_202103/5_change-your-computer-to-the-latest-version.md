@@ -1,5 +1,5 @@
 ---
-chapter_no: 005
+chapter_no: 5
 chapter_id: change-your-computer-to-the-latest-version
 chapter_title: パソコン周りは最新のものに変える
 created: 2021-03-08

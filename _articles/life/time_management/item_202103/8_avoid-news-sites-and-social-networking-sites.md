@@ -1,5 +1,5 @@
 ---
-chapter_no: 008
+chapter_no: 8
 chapter_id: avoid-news-sites-and-social-networking-sites
 chapter_title: ニュースサイトとSNSを見ない
 created: 2021-03-08
