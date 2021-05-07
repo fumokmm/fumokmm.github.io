@@ -6,7 +6,6 @@ updated: 2021-03-10
 ---
 ここではRubyのファイルI/Oについて簡単にまとめておきます。
 
-
 ## <a name="index">目次</a>
 
 <ul id="index_ul">

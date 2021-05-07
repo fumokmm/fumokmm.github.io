@@ -6,7 +6,6 @@ updated: 2021-02-16
 ---
 当メモは2009-01-16に[投稿されたもの](https://npnl.hatenablog.jp/entry/20090116/1232123160)を加筆修正し、再掲したものです。
 
-
 ## <a name="index">目次</a>
 
 <ul id="index_ul">

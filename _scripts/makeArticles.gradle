@@ -62,7 +62,6 @@ task makeArticles() {
             toPath.delete()
             toPath.withWriterAppend { writer ->
                 writer << topArticle.text << '\n'
-                writer << '\n'
                 writer << "## <a name=\"index\">目次</a>" << '\n'
                 writer << '\n'
                 writer << "<ul id=\"index_ul\">" << '\n'
