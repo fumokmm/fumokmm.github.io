@@ -1,5 +1,5 @@
 ---
-chapter_no: 002
+chapter_no: 2
 chapter_id: setting
 chapter_title: 設定
 created: 2021-02-26

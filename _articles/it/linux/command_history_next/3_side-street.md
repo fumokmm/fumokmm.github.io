@@ -1,5 +1,5 @@
 ---
-chapter_no: 003
+chapter_no: 3
 chapter_id: side-street
 chapter_title: 横道
 created: 2021-02-26
