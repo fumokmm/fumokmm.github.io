@@ -8,7 +8,7 @@ updated: 2021-04-13
 
 ## <a name="index">目次</a>
 
-<ul>
+<ul id="index_ul">
 <li><a href="#about">返報性の原理・返報性の法則</a></li>
 <li><a href="#reference">参考</a></li>
 </ul>
@@ -37,3 +37,4 @@ updated: 2021-04-13
 
 {% include goto_pagetop.html %}
 
+{% include footnotes_link.html %}

@@ -9,7 +9,7 @@ updated: 2021-03-25
 
 ## <a name="index">目次</a>
 
-<ul>
+<ul id="index_ul">
 <li><a href="#general">全般</a></li>
 <li><a href="#row">行操作</a></li>
 <li><a href="#column">列操作</a></li>
@@ -145,3 +145,4 @@ updated: 2021-03-25
 
 {% include goto_pagetop.html %}
 
+{% include footnotes_link.html %}

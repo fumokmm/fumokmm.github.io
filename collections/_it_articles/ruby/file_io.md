@@ -9,7 +9,7 @@ updated: 2021-03-10
 
 ## <a name="index">目次</a>
 
-<ul>
+<ul id="index_ul">
 <li><a href="#canonical-file-path">ファイルパスを絶対パスに変換する</a></li>
 <li><a href="#reference">参考</a></li>
 </ul>
@@ -47,3 +47,4 @@ require 'pathname'
 
 {% include goto_pagetop.html %}
 
+{% include footnotes_link.html %}

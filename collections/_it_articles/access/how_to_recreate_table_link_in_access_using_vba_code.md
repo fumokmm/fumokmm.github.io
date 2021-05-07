@@ -13,7 +13,7 @@ Accessでテーブルリンクを作成する場合、ローカルPCに設定し
 
 ## <a name="index">目次</a>
 
-<ul>
+<ul id="index_ul">
 <li><a href="#recreate-table-link">テーブルリンク再作成</a></li>
 <li><a href="#reference">参考</a></li>
 </ul>
@@ -75,3 +75,4 @@ Set p_td = CurrentDb.CreateTableDef( _
 
 {% include goto_pagetop.html %}
 
+{% include footnotes_link.html %}

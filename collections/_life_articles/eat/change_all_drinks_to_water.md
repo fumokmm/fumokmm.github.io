@@ -8,7 +8,7 @@ updated: 2021-03-13
 
 ## <a name="index">目次</a>
 
-<ul>
+<ul id="index_ul">
 <li><a href="#rejuvenate">若返る</a></li>
 <li><a href="#lose-weight">痩せる</a></li>
 <li><a href="#improves-brain-function">脳の働きが良くなる</a></li>
@@ -85,3 +85,4 @@ updated: 2021-03-13
 
 {% include goto_pagetop.html %}
 
+{% include footnotes_link.html %}

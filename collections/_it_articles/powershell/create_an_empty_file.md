@@ -7,7 +7,7 @@ updated: 2021-04-30
 
 ## <a name="index">目次</a>
 
-<ul>
+<ul id="index_ul">
 <li><a href="#create-an-empty-file">空ファイルを作成する</a></li>
 <li><a href="#overwrite-an-existing-file">既存ファイルがあった場合、上書きする</a></li>
 <li><a href="#include-the-specified-string-in-the-file">指定した文字列をファイルに含める</a></li>
@@ -92,3 +92,4 @@ New-Item &lt;ファイルのパス&gt; <em>-ItemType</em> <em class="blue">Direc
 
 {% include goto_pagetop.html %}
 
+{% include footnotes_link.html %}
