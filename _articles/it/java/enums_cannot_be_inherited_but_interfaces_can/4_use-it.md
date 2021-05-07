@@ -1,5 +1,5 @@
 ---
-chapter_no: 004
+chapter_no: 4
 chapter_id: use-it
 chapter_title: 使ってみる
 created: 2012-05-03

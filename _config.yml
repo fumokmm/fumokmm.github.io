@@ -217,9 +217,6 @@ collections:
   history:
 
   # チャプター
-  it_java_database_control_chapters:
-  it_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
-  it_java_map_multiple_key_chapters:
   it_linux_command_history_next_chapters:
   it_other_term_chapters:
   it_powershell_extract_n_lines_from_the_beginning_of_a_text_file_chapters:

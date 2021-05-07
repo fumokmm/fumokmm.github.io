@@ -1,5 +1,5 @@
 ---
-chapter_no: 002
+chapter_no: 2
 chapter_id: caution
 chapter_title: 注意点
 created: 2009-01-16

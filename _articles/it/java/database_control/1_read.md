@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: read
 chapter_title: データの読み取り
 created: 2021-02-09

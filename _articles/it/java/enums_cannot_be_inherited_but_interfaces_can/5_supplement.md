@@ -1,5 +1,5 @@
 ---
-chapter_no: 005
+chapter_no: 5
 chapter_id: supplement
 chapter_title: 補足
 created: 2012-05-03

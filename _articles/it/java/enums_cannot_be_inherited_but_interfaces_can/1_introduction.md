@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: introduction
 chapter_title: はじめに
 created: 2012-05-03

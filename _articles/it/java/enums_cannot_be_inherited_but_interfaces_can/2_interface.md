@@ -1,5 +1,5 @@
 ---
-chapter_no: 002
+chapter_no: 2
 chapter_id: interfaceoduction
 chapter_title: インタフェース
 created: 2012-05-03

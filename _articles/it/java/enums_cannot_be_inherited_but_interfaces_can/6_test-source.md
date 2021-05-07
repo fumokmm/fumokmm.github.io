@@ -1,5 +1,5 @@
 ---
-chapter_no: 006
+chapter_no: 6
 chapter_id: test-source
 chapter_title: テストを書いた
 created: 2012-05-03

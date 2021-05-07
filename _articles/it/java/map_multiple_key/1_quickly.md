@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: quickly
 chapter_title: 手っ取り早く複数のキーを指定する
 created: 2009-01-16

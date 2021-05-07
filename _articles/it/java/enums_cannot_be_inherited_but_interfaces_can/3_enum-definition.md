@@ -1,5 +1,5 @@
 ---
-chapter_no: 003
+chapter_no: 3
 chapter_id: enum-definition
 chapter_title: enum定義
 created: 2012-05-03
