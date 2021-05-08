@@ -292,3 +292,6 @@ exclude:
   - _scripts
   - .work
   - build.gradle
+  - gradle
+  - gradlew
+  - gradlew.bat
