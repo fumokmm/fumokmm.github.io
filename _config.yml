@@ -34,10 +34,19 @@ defaults:
       path: "_it_articles/go"
     values:
       sub_category_id: "go"
+
+  # Gradle
+  - scope:
+      path: "_it_articles/gradle"
+    values:
+      sub_category_id: "gradle"
+
+  # Groovy
   - scope:
       path: "_it_articles/groovy"
     values:
       sub_category_id: "groovy"
+
   - scope:
       path: "_it_articles/git"
     values:

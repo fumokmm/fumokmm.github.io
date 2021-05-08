@@ -43,6 +43,13 @@
   sub_category_order: version_control_system01
   description: Google社が開発したプログラミング言語Goについてのメモ
 
+- sub_category_id: gradle
+  sub_category_label: Gradle
+  link: /it/gradle/
+  sub_category_group: build_tool
+  sub_category_order: 10
+  description: "[Groovy](/it/groovy/)製のビルドツールです。"
+
 - sub_category_id: groovy
   sub_category_label: Groovy
   link: /it/groovy/
