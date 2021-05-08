@@ -2,7 +2,7 @@
 layout: default_layout
 title: IT技術メモ
 created: 2020-09-02
-updated: 2021-04-30
+updated: 2021-05-08
 ---
 ## こちらはプログラミング関連のメモになります
 
@@ -161,6 +161,24 @@ updated: 2021-04-30
 
         <td><a href="{{ appli.link }}">{{ appli.sub_category_label }}</a></td>
         <td markdown="span">{{ appli.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+
+## こちらはビルドツール関連のメモになります
+
+<table>
+    {% assign build_tools = site.data.it_sub_category | where: 'sub_category_group', 'build_tool'
+                                                       | sort: 'sub_category_order' %}
+    {% for build_tool in build_tools %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', build_tool.sub_category_id %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ build_tool.link }}">{{ build_tool.sub_category_label }}</a></td>
+        <td markdown="span">{{ build_tool.description }}</td>
         <td>{{ last_updated_article.updated }}更新</td>
     </tr>
     {% endfor %}
