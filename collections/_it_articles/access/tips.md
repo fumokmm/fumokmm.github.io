@@ -6,10 +6,9 @@ updated: 2020-10-01
 ---
 ここではAccessのちょっとしたTipsをまとめておきます。
 
-
 ## <a name="index">目次</a>
 
-<ul>
+<ul id="index_ul">
 <li><a href="#how-to-launch-access-in-developer-mode">Accessを開発者モードで起動する方法</a></li>
 </ul>
 
@@ -29,3 +28,4 @@ Accessをそのまま起動するとAutoExecマクロや起動オプションが
 
 {% include goto_pagetop.html %}
 
+{% include footnotes_link.html %}

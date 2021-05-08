@@ -8,10 +8,9 @@ updated: 2021-04-08
 当初の掲載からだいぶ時間が経過していますので、古い内容のものもあると思いますのでご注意下さい。  
 順次アップデートしていく予定です。
 
-
 ## <a name="index">目次</a>
 
-<ul>
+<ul id="index_ul">
 <li><a href="#getting-started">はじめに</a></li>
 <li><a href="#basis">1. 基礎</a></li>
 <li><a href="#data-type">2. データ型</a></li>
@@ -903,3 +902,4 @@ assert groovyBook.title == 'No Groovy, No Life'
 
 {% include goto_pagetop.html %}
 
+{% include footnotes_link.html %}

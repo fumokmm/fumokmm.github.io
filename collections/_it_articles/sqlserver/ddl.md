@@ -6,10 +6,9 @@ created: 2020-10-28
 updated: 2021-04-26
 ---
 
-
 ## <a name="index">目次</a>
 
-<ul>
+<ul id="index_ul">
 <li><a href="#index">INDEX</a></li>
 <li><a href="#login">LOGIN</a></li>
 <li><a href="#user">USER</a></li>
@@ -257,3 +256,4 @@ ALTER SCHEMA <em>dbo</em> TRANSFER <em>newschema</em>.M_USER;
 
 {% include goto_pagetop.html %}
 
+{% include footnotes_link.html %}

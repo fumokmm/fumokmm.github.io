@@ -34,10 +34,19 @@ defaults:
       path: "_it_articles/go"
     values:
       sub_category_id: "go"
+
+  # Gradle
+  - scope:
+      path: "_it_articles/gradle"
+    values:
+      sub_category_id: "gradle"
+
+  # Groovy
   - scope:
       path: "_it_articles/groovy"
     values:
       sub_category_id: "groovy"
+
   - scope:
       path: "_it_articles/git"
     values:
@@ -217,12 +226,6 @@ collections:
   history:
 
   # チャプター
-  it_excel_key_combination_chapters:
-  it_git_command_chapters:
-  it_java_database_control_chapters:
-  it_java_enums_cannot_be_inherited_but_interfaces_can_chapters:
-  it_java_map_multiple_key_chapters:
-  it_linux_command_history_next_chapters:
   it_other_term_chapters:
   it_powershell_extract_n_lines_from_the_beginning_of_a_text_file_chapters:
   it_problem_find_m_integers_that_all_add_up_to_n_chapters:
@@ -253,11 +256,9 @@ collections:
   life_purpose_die_with_zero_chapters:
   life_purpose_purpose_for_study_chapters:
   life_purpose_ultimate_goal_chapters:
-  life_time_management_item_202103_chapters:
   reading_charmpoint_about_book_chapters:
   reading_method_read_from_ending_chapters:
   science_physics_time_chapters:
-  science_psychology_norm_of_reciprocity_chapters:
 
   # 以下、出力するコレクション ---------------------
   #   ※output:true じゃないコレクションをそれより前に定義しておかないと
