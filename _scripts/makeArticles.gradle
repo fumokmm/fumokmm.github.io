@@ -22,8 +22,15 @@ task makeArticles() {
             assert topArticle, "${dir.dir}にindex.mdがあるはず"
             def chapters = dir.dir.listFiles().findAll{ it.name != 'index.md' }
             assert chapters.size() > 0, "${dir.dir}にチャプターが1件以上あるはず"
+
+            def toPath = new File(topArticle.parentFile.absolutePath.replace("${projectDir}/_articles/${dir.category}", "${projectDir}/.work/articles/${dir.category}") + '.md')
+            println "${toPath}"
+            toPath.parentFile.mkdirs()
+            toPath.delete()
+
             def chapterMap = [:] as TreeMap
             chapters.each { chap ->
+                println "  > ${chap}"
                 def frontMatter = [:]
                 def body = '' << '' // as StringBuilder
                 chap.withReader{ reader ->
@@ -57,9 +64,7 @@ task makeArticles() {
                                                     frontMatter: frontMatter,
                                                     body: body.toString()]
             }
-            def toPath = new File(topArticle.parentFile.absolutePath.replace("${projectDir}/_articles/${dir.category}", "${projectDir}/.work/articles/${dir.category}") + '.md')
-            toPath.parentFile.mkdirs()
-            toPath.delete()
+
             toPath.withWriterAppend { writer ->
                 writer << topArticle.text << '\n'
                 writer << "## <a name=\"index\">目次</a>" << '\n'
