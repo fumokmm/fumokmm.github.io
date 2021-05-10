@@ -1,5 +1,5 @@
 ---
-chapter_no: 010
+chapter_no: 10
 chapter_id: include
 chapter_title: 文字列にある文字列が含まれているかを調べる
 created: 2021-03-09

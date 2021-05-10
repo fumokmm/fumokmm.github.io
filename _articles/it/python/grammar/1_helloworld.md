@@ -1,5 +1,5 @@
 ---
-chapter_no: 001
+chapter_no: 1
 chapter_id: helloworld
 chapter_title: ハローワールド
 created: 2020-12-10

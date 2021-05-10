@@ -1,5 +1,5 @@
 ---
-chapter_no: 002
+chapter_no: 2
 chapter_id: comment
 chapter_title: コメント
 created: 2020-12-10
