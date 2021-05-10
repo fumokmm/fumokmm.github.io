@@ -226,8 +226,6 @@ collections:
   history:
 
   # チャプター
-  it_problem_find_m_integers_that_all_add_up_to_n_chapters:
-  it_problem_hot_summer_day_chapters:
   it_python_grammar_chapters:
   it_ruby_grammar_chapters:
   it_ruby_string_chapters:
