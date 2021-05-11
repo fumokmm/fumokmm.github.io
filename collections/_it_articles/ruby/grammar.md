@@ -9,22 +9,31 @@ updated: 2021-03-19
 ## <a name="index">目次</a>
 
 <div style="column-count: 2;">
-
-<ul id="index_ul">
-<li><a href="#null">null</a></li>
-<li><a href="#if">条件分岐 - If文</a></li>
-<li><a href="#truthy">Truthy</a></li>
-<li><a href="#null">null</a></li>
-<li><a href="#require">require</a></li>
-<li><a href="#load">load</a></li>
-<li><a href="#include">include</a></li>
-<li><a href="#prepend">prepend</a></li>
-<li><a href="#extend">extend</a></li>
-<li><a href="#null">null</a></li>
-<li><a href="#reference">参考</a></li>
-</ul>
+    <ul id="index_ul">
+        <li><a href="#basic">基礎文法</a>
+            <ul>
+                <li><a href="#if">条件分岐 - If文</a></li>
+                <li><a href="#truthy">Truthy</a></li>
+            </ul>
+        </li>
+        <li><a href="#external-library">外部ライブラリの読み込み</a>
+            <ul>
+                <li><a href="#require">require</a></li>
+                <li><a href="#load">load</a></li>
+                <li><a href="#include">include</a></li>
+                <li><a href="#prepend">prepend</a></li>
+                <li><a href="#extend">extend</a></li>
+            </ul>
+        </li>
+        <li><a href="#reference-group">参照・参考</a>
+            <ul>
+                <li><a href="#reference">参考</a></li>
+            </ul>
+        </li>
+    </ul>
 </div>
-## <a name="基礎文法">基礎文法</a>
+
+## <a name="basic">基礎文法</a>
 * * *
 ## <a name="if">条件分岐 - If文</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-03-09" %}</div>
@@ -60,7 +69,7 @@ Rubyでは、条件式などで偽とみなされる値(falsey value)を`nil`と
 
 {% include goto_pagetop.html %}
 
-## <a name="外部ライブラリの読み込み">外部ライブラリの読み込み</a>
+## <a name="external-library">外部ライブラリの読み込み</a>
 * * *
 ## <a name="require">require</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-10" updated="2021-03-19" %}</div>
@@ -178,7 +187,7 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 
 {% include goto_pagetop.html %}
 
-## <a name="参照・参考">参照・参考</a>
+## <a name="reference-group">参照・参考</a>
 * * *
 ## <a name="reference">参考</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-03" updated="2021-03-18" %}</div>

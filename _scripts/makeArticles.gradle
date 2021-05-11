@@ -40,27 +40,27 @@ task makeArticles() {
                     reader.readLine() // 先頭の ---は飛ばす
                     def line = ''
                     while (line != '---') {
-                        if (line.startsWith('chapter_no')) {
+                        if (line.startsWith('chapter_no:')) {
                             frontMatter['chapter_no'] = line.split(':')[1].trim().toInteger()
                         }
-                        if (line.startsWith('chapter_id')) {
+                        if (line.startsWith('chapter_id:')) {
                             frontMatter['chapter_id'] = line.split(':')[1].trim()
                         }
-                        if (line.startsWith('chapter_title')) {
+                        if (line.startsWith('chapter_title:')) {
                             frontMatter['chapter_title'] = line.split(':')[1].trim()
                         }
-                        if (line.startsWith('created')) {
+                        if (line.startsWith('created:')) {
                             frontMatter['created'] = Date.parse('yyyy-MM-dd', line.split(':')[1].trim())
                         }
-                        if (line.startsWith('updated')) {
+                        if (line.startsWith('updated:')) {
                             frontMatter['updated'] = Date.parse('yyyy-MM-dd', line.split(':')[1].trim())
                         }
                         // チャプターグループ関連定義
-                        if (line.startsWith('chapter_group')) {
+                        if (line.startsWith('chapter_group:')) {
                             frontMatter['chapter_group'] = line.split(':')[1].trim()
                             hasChapterGroup = true
                         }
-                        if (line.startsWith('chapter_group_label')) {
+                        if (line.startsWith('chapter_group_label:')) {
                             frontMatter['chapter_group_label'] = line.split(':')[1].trim()
                         }
                         line = reader.readLine()
@@ -88,17 +88,29 @@ task makeArticles() {
                 writer << '\n'
             }
             def doWriteIndexChapterGroup = { writer ->
+                def chapterGroups = chapterMap.groupBy{ chapter_no, chap -> chap.frontMatter.chapter_group }
+
                 writer << topArticle.text << '\n'
                 writer << "## <a name=\"index\">目次</a>" << '\n'
                 writer << '\n'
                 writer << '<div style="column-count: 2;">' << '\n'
-                writer << '\n'
-                writer << "<ul id=\"index_ul\">" << '\n'
-                chapterMap.each { chapter_no, chap ->
-                    writer << "<li><a href=\"#${ chap.frontMatter.chapter_id }\">${ chap.frontMatter.chapter_title }</a></li>" << '\n'
+                writer << "    <ul id=\"index_ul\">" << '\n'
+
+                chapterGroups.each{ chapterGroup, chapterGroupItems ->
+                    def groupLabelItem = chapterGroupItems.values().findAll{ it.frontMatter.containsKey('chapter_group_label') }.first()
+                    def groupLabel = groupLabelItem.frontMatter.chapter_group_label
+                    def chapterItems = chapterGroupItems.values().findAll{ !it.frontMatter.containsKey('chapter_group_label') }.sort{ it.frontMatter.chapter_no }
+
+                    writer << "        <li><a href=\"#${chapterGroup}\">${groupLabel}</a>" << '\n'
+                    writer << '            <ul>' << '\n'
+                    chapterItems.each { chapterItem ->
+                    writer << "                <li><a href=\"#${ chapterItem.frontMatter.chapter_id }\">${ chapterItem.frontMatter.chapter_title }</a></li>" << '\n'
+                    }
+                    writer << '            </ul>' << '\n'
+                    writer << '        </li>' << '\n'
                 }
-                writer << "</ul>" << '\n'
-                writer << '</div>'
+                writer << '    </ul>' << '\n'
+                writer << '</div>' << '\n'
                 writer << '\n'
             }
 
@@ -112,7 +124,7 @@ task makeArticles() {
             }
            def doWriteBodyChapterGroup = { writer, chapter_no, chap ->
                 if (chap.frontMatter.containsKey('chapter_group_label')) {
-                    writer << "## <a name=\"${chap.frontMatter.chapter_group_label}\">${chap.frontMatter.chapter_group_label}</a>" << '\n'
+                    writer << "## <a name=\"${chap.frontMatter.chapter_group}\">${chap.frontMatter.chapter_group_label}</a>" << '\n'
                 } else {
                     writer << '* * *' << '\n'
                     writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
