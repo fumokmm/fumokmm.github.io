@@ -28,6 +28,9 @@ task makeArticles() {
             toPath.parentFile.mkdirs()
             toPath.delete()
 
+            // チャプターグループを含んでいればチャプターグループ
+            def hasChapterGroup = false
+
             def chapterMap = [:] as TreeMap
             chapters.each { chap ->
                 println "  > ${chap}"
@@ -55,6 +58,7 @@ task makeArticles() {
                         // チャプターグループ関連定義
                         if (line.startsWith('chapter_group')) {
                             frontMatter['chapter_group'] = line.split(':')[1].trim()
+                            hasChapterGroup = true
                         }
                         if (line.startsWith('chapter_group_label')) {
                             frontMatter['chapter_group_label'] = line.split(':')[1].trim()
@@ -72,7 +76,7 @@ task makeArticles() {
                                                       body: body.toString()]
             }
 
-            toPath.withWriterAppend { writer ->
+            def doWriteIndexNormal = { writer ->
                 writer << topArticle.text << '\n'
                 writer << "## <a name=\"index\">目次</a>" << '\n'
                 writer << '\n'
@@ -83,10 +87,34 @@ task makeArticles() {
                 writer << "</ul>" << '\n'
                 writer << '\n'
             }
+            def doWriteIndexChapterGroup = { writer ->
+                writer << topArticle.text << '\n'
+                writer << "## <a name=\"index\">目次</a>" << '\n'
+                writer << '\n'
+                writer << '<div style="column-count: 2;">' << '\n'
+                writer << '\n'
+                writer << "<ul id=\"index_ul\">" << '\n'
+                chapterMap.each { chapter_no, chap ->
+                    writer << "<li><a href=\"#${ chap.frontMatter.chapter_id }\">${ chap.frontMatter.chapter_title }</a></li>" << '\n'
+                }
+                writer << "</ul>" << '\n'
+                writer << '</div>'
+                writer << '\n'
+            }
 
-            chapterMap.each { chapter_no, chap ->
-                toPath.withWriterAppend { writer ->
-                    writer << '* * *\n'
+            def doWriteBodyNormal = { writer, chapter_no, chap ->
+                writer << '* * *' << '\n'
+                writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
+                writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
+                writer << chap.body << '\n'
+                writer << "{% include goto_pagetop.html %}" << '\n'
+                writer << '\n'
+            }
+           def doWriteBodyChapterGroup = { writer, chapter_no, chap ->
+                if (chap.frontMatter.containsKey('chapter_group_label')) {
+                    writer << "## <a name=\"${chap.frontMatter.chapter_group_label}\">${chap.frontMatter.chapter_group_label}</a>" << '\n'
+                } else {
+                    writer << '* * *' << '\n'
                     writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
                     writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
                     writer << chap.body << '\n'
@@ -95,9 +123,22 @@ task makeArticles() {
                 }
             }
 
-            toPath.withWriterAppend { writer ->
+            def doWriteFootnotes = { writer ->
                 writer << "{% include footnotes_link.html %}" << '\n'
             }
+
+            // 書き込み実施
+            toPath.withWriterAppend(hasChapterGroup ?
+                doWriteIndexChapterGroup :
+                doWriteIndexNormal)
+            chapterMap.each { chapter_no, chap ->
+                toPath.withWriterAppend { writer ->
+                    doWriteBodyChapterGroup ?
+                        doWriteBodyChapterGroup(writer, chapter_no, chap) :
+                        doWriteBodyNormal(writer, chapter_no, chap)
+                }
+            }
+            toPath.withWriterAppend doWriteFootnotes
         }
     }
 }
