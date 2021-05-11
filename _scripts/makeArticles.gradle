@@ -52,6 +52,13 @@ task makeArticles() {
                         if (line.startsWith('updated')) {
                             frontMatter['updated'] = Date.parse('yyyy-MM-dd', line.split(':')[1].trim())
                         }
+                        // チャプターグループ関連定義
+                        if (line.startsWith('chapter_group')) {
+                            frontMatter['chapter_group'] = line.split(':')[1].trim()
+                        }
+                        if (line.startsWith('chapter_group_label')) {
+                            frontMatter['chapter_group_label'] = line.split(':')[1].trim()
+                        }
                         line = reader.readLine()
                     }
                     while(true) {
@@ -61,8 +68,8 @@ task makeArticles() {
                     }
                 }
                 chapterMap[frontMatter.chapter_no] = [file: chap,
-                                                    frontMatter: frontMatter,
-                                                    body: body.toString()]
+                                                      frontMatter: frontMatter,
+                                                      body: body.toString()]
             }
 
             toPath.withWriterAppend { writer ->
