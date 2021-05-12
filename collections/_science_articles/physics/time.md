@@ -4,21 +4,26 @@ display_order: 10
 created: 2021-02-18
 updated: 2021-02-18
 ---
-{% assign chapter_list = site.science_physics_time_chapters %}
 
 ## <a name="index">目次</a>
 
-<ul>
-{% for chapter_item in chapter_list %}
-<li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>
-{% endfor %}
+<ul id="index_ul">
+<li><a href="#about">時間について</a></li>
+<li><a href="#reference">参考</a></li>
 </ul>
 
-{% comment %} 以下、記事 {% endcomment %}
+* * *
+## <a name="about">時間について</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-02-18" updated="2021-02-18" %}</div>
+なぜ時間は過去から未来に流れるのか。なぜ過去は定まっているのに未来は未知なのか。
 
-{% for chapter_item in chapter_list %}
-## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
-<div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
-{{ chapter_item.content | markdownify }}
 {% include goto_pagetop.html %}
-{% endfor %}
+
+* * *
+## <a name="reference">参考</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-02-18" updated="2021-02-18" %}</div>
+- {% include book/book_126.html %} {% comment %} 時間はどこで生まれるのか {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+{% include footnotes_link.html %}

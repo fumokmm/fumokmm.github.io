@@ -225,38 +225,6 @@ collections:
   # 更新履歴
   history:
 
-  # チャプター
-  it_sqlserver_duplicate_the_database_in_the_same_instance_chapters:
-  it_sqlserver_logical_name_chapters:
-  it_sqlserver_rank_denserank_rownumber_chapters:
-  it_sqlserver_tips_chapters:
-  it_sqlserver_update_chapters:
-  it_subversion_tips_chapters:
-  it_vba_database_control_chapters:
-  it_vba_parentheses_in_procedure_calls_chapters:
-  it_vba_type_chapters:
-  it_vba_url_decode_chapters:
-  it_vscode_debug_ruby_chapters:
-  it_windows_batch_grammar_chapters:
-  it_windows_tips_chapters:
-  life_attitude_expectations_chapters:
-  life_failure_uneasiness_chapters:
-  life_happiness_quote_chapters:
-  life_luck_how_to_think_about_getting_lucky_chapters:
-  life_luck_the_number_of_luck_is_equal_chapters:
-  life_minimalism_discard_chapters:
-  life_purpose_die_with_zero_chapters:
-  life_purpose_purpose_for_study_chapters:
-  life_purpose_ultimate_goal_chapters:
-  reading_charmpoint_about_book_chapters:
-  reading_method_read_from_ending_chapters:
-  science_physics_time_chapters:
-
-  # 以下、出力するコレクション ---------------------
-  #   ※output:true じゃないコレクションをそれより前に定義しておかないと
-  #     コレクション内から、コレクションを呼び出したときに、Liquid Tagsがなぜか利用できないので
-  #     注意すること(201229)
-
   # IT記事
   it_articles:
     output: true
