@@ -46,6 +46,7 @@ task copyArticles(type: Copy) {
 task checkUpdated(type: CrossPlatformExec) {
     group = '記事管理'
     description = 'check_update.rbを実行して、更新日付を調整します。'
+    mustRunAfter 'copyArticles'
 
     commandLine 'ruby', "${projectDir}/_scripts/check_updated.rb"
 }

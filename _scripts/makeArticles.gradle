@@ -22,28 +22,46 @@ task makeArticles() {
             assert topArticle, "${dir.dir}にindex.mdがあるはず"
             def chapters = dir.dir.listFiles().findAll{ it.name != 'index.md' }
             assert chapters.size() > 0, "${dir.dir}にチャプターが1件以上あるはず"
+
+            def toPath = new File(topArticle.parentFile.absolutePath.replace("${projectDir}/_articles/${dir.category}", "${projectDir}/.work/articles/${dir.category}") + '.md')
+            println "${toPath}"
+            toPath.parentFile.mkdirs()
+            toPath.delete()
+
+            // チャプターグループを含んでいればチャプターグループ
+            def hasChapterGroup = false
+
             def chapterMap = [:] as TreeMap
             chapters.each { chap ->
+                println "  > ${chap}"
                 def frontMatter = [:]
                 def body = '' << '' // as StringBuilder
                 chap.withReader{ reader ->
                     reader.readLine() // 先頭の ---は飛ばす
                     def line = ''
                     while (line != '---') {
-                        if (line.startsWith('chapter_no')) {
+                        if (line.startsWith('chapter_no:')) {
                             frontMatter['chapter_no'] = line.split(':')[1].trim().toInteger()
                         }
-                        if (line.startsWith('chapter_id')) {
+                        if (line.startsWith('chapter_id:')) {
                             frontMatter['chapter_id'] = line.split(':')[1].trim()
                         }
-                        if (line.startsWith('chapter_title')) {
+                        if (line.startsWith('chapter_title:')) {
                             frontMatter['chapter_title'] = line.split(':')[1].trim()
                         }
-                        if (line.startsWith('created')) {
+                        if (line.startsWith('created:')) {
                             frontMatter['created'] = Date.parse('yyyy-MM-dd', line.split(':')[1].trim())
                         }
-                        if (line.startsWith('updated')) {
+                        if (line.startsWith('updated:')) {
                             frontMatter['updated'] = Date.parse('yyyy-MM-dd', line.split(':')[1].trim())
+                        }
+                        // チャプターグループ関連定義
+                        if (line.startsWith('chapter_group:')) {
+                            frontMatter['chapter_group'] = line.split(':')[1].trim()
+                            hasChapterGroup = true
+                        }
+                        if (line.startsWith('chapter_group_label:')) {
+                            frontMatter['chapter_group_label'] = line.split(':')[1].trim()
                         }
                         line = reader.readLine()
                     }
@@ -54,13 +72,11 @@ task makeArticles() {
                     }
                 }
                 chapterMap[frontMatter.chapter_no] = [file: chap,
-                                                    frontMatter: frontMatter,
-                                                    body: body.toString()]
+                                                      frontMatter: frontMatter,
+                                                      body: body.toString()]
             }
-            def toPath = new File(topArticle.parentFile.absolutePath.replace("${projectDir}/_articles/${dir.category}", "${projectDir}/.work/articles/${dir.category}") + '.md')
-            toPath.parentFile.mkdirs()
-            toPath.delete()
-            toPath.withWriterAppend { writer ->
+
+            def doWriteIndexNormal = { writer ->
                 writer << topArticle.text << '\n'
                 writer << "## <a name=\"index\">目次</a>" << '\n'
                 writer << '\n'
@@ -71,10 +87,46 @@ task makeArticles() {
                 writer << "</ul>" << '\n'
                 writer << '\n'
             }
+            def doWriteIndexChapterGroup = { writer ->
+                def chapterGroups = chapterMap.groupBy{ chapter_no, chap -> chap.frontMatter.chapter_group }
 
-            chapterMap.each { chapter_no, chap ->
-                toPath.withWriterAppend { writer ->
-                    writer << '* * *\n'
+                writer << topArticle.text << '\n'
+                writer << "## <a name=\"index\">目次</a>" << '\n'
+                writer << '\n'
+                writer << '<div style="column-count: 2;">' << '\n'
+                writer << "    <ul id=\"index_ul\">" << '\n'
+
+                chapterGroups.each{ chapterGroup, chapterGroupItems ->
+                    def groupLabelItem = chapterGroupItems.values().findAll{ it.frontMatter.containsKey('chapter_group_label') }.first()
+                    def groupLabel = groupLabelItem.frontMatter.chapter_group_label
+                    def chapterItems = chapterGroupItems.values().findAll{ !it.frontMatter.containsKey('chapter_group_label') }.sort{ it.frontMatter.chapter_no }
+
+                    writer << "        <li><a href=\"#${chapterGroup}\">${groupLabel}</a>" << '\n'
+                    writer << '            <ul>' << '\n'
+                    chapterItems.each { chapterItem ->
+                    writer << "                <li><a href=\"#${ chapterItem.frontMatter.chapter_id }\">${ chapterItem.frontMatter.chapter_title }</a></li>" << '\n'
+                    }
+                    writer << '            </ul>' << '\n'
+                    writer << '        </li>' << '\n'
+                }
+                writer << '    </ul>' << '\n'
+                writer << '</div>' << '\n'
+                writer << '\n'
+            }
+
+            def doWriteBodyNormal = { writer, chapter_no, chap ->
+                writer << '* * *' << '\n'
+                writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
+                writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
+                writer << chap.body << '\n'
+                writer << "{% include goto_pagetop.html %}" << '\n'
+                writer << '\n'
+            }
+           def doWriteBodyChapterGroup = { writer, chapter_no, chap ->
+                if (chap.frontMatter.containsKey('chapter_group_label')) {
+                    writer << "## <a name=\"${chap.frontMatter.chapter_group}\">${chap.frontMatter.chapter_group_label}</a>" << '\n'
+                } else {
+                    writer << '* * *' << '\n'
                     writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
                     writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
                     writer << chap.body << '\n'
@@ -83,9 +135,22 @@ task makeArticles() {
                 }
             }
 
-            toPath.withWriterAppend { writer ->
+            def doWriteFootnotes = { writer ->
                 writer << "{% include footnotes_link.html %}" << '\n'
             }
+
+            // 書き込み実施
+            toPath.withWriterAppend(hasChapterGroup ?
+                doWriteIndexChapterGroup :
+                doWriteIndexNormal)
+            chapterMap.each { chapter_no, chap ->
+                toPath.withWriterAppend { writer ->
+                    doWriteBodyChapterGroup ?
+                        doWriteBodyChapterGroup(writer, chapter_no, chap) :
+                        doWriteBodyNormal(writer, chapter_no, chap)
+                }
+            }
+            toPath.withWriterAppend doWriteFootnotes
         }
     }
 }

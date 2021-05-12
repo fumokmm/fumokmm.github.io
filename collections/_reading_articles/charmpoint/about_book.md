@@ -4,21 +4,29 @@ display_order: 10
 created: 2021-01-15
 updated: 2021-02-20
 ---
-{% assign chapter_list = site.reading_charmpoint_about_book_chapters %}
 
 ## <a name="index">目次</a>
 
-<ul>
-{% for chapter_item in chapter_list %}
-<li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>
-{% endfor %}
+<ul id="index_ul">
+<li><a href="#world-in-the-book">本の中の世界</a></li>
+<li><a href="#reference">参考</a></li>
 </ul>
 
-{% comment %} 以下、記事 {% endcomment %}
+* * *
+## <a name="world-in-the-book">本の中の世界</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-01-15" updated="2021-02-20" %}</div>
+> 自分の頭の中にあるものには限りがある。自分の知らない世界があり、知らない世界を体験したことがある人がまとめあげたものが本である。
+> <cite>{% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}より</cite>
 
-{% for chapter_item in chapter_list %}
-## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
-<div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
-{{ chapter_item.content | markdownify }}
+- 本の魅力は、自分の知らない世界を識ることができることにある。
+
 {% include goto_pagetop.html %}
-{% endfor %}
+
+* * *
+## <a name="reference">参考</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-01-15" updated="2021-01-14" %}</div>
+- {% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+{% include footnotes_link.html %}

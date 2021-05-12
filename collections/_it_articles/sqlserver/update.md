@@ -5,23 +5,36 @@ display_order: 10
 created: 2021-04-06
 updated: 2021-04-06
 ---
-{% assign chapter_list = site.it_sqlserver_update_chapters %}
-
 こちらは更新系(UPDATE)のSQLのメモになります。
 
 ## <a name="index">目次</a>
 
-<ul>
-{% for chapter_item in chapter_list %}
-<li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>
-{% endfor %}
+<ul id="index_ul">
+<li><a href="#update-data-with-information-from-other-tables">他テーブルの情報でデータを更新する</a></li>
 </ul>
 
-{% comment %} 以下、記事 {% endcomment %}
+* * *
+## <a name="update-data-with-information-from-other-tables">他テーブルの情報でデータを更新する</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-04-06" updated="2021-04-06" %}</div>
+<div class="code-box">
+<div class="title">他テーブルの情報でデータを更新するSQL</div>
+<pre>
+UPDATE
+  <em>&lt;更新したいテーブル&gt;</em>
+SET
+  aaa = <em class="blue">a</em>.xxx
+  bbb = <em class="blue">a</em>.yyy
+  ccc = <em class="blue">a</em>.zzz
+FROM
+  <em class="blue">&lt;他テーブル&gt; a</em>
+WHERE
+    <em>&lt;更新したいテーブル&gt;</em>.id1 = <em class="blue">a</em>.id1
+AND <em>&lt;更新したいテーブル&gt;</em>.id2 = <em class="blue">a</em>.id2
+AND <em>&lt;更新したいテーブル&gt;</em>.id3 = <em class="blue">a</em>.id3
+</pre>
+</div>
+- `<他テーブル>`は別名指定(上記例では`a`)できるのですが、`<更新したいテーブル>`は別名指定できないようなので、フルでテーブル名を指定します。
 
-{% for chapter_item in chapter_list %}
-## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
-<div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
-{{ chapter_item.content | markdownify }}
 {% include goto_pagetop.html %}
-{% endfor %}
+
+{% include footnotes_link.html %}
