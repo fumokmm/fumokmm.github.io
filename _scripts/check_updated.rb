@@ -127,13 +127,15 @@ info3 = info2.map { |info|
     article_id = article_file_name[/^(.+).md$/, 1]
 
     # パス情報を構築
-    # _articles内に記事があるか確認
+    # _articles内に記事があるか確認 (記事ファイル名をフォルダ名にして当ててみて検索)
     if Dir.exist?("#{articles_dir.path}/#{info['category_id']}/#{info['sub_category_id']}/#{article_id}")
       dir_name = "#{articles_dir.path}/#{info['category_id']}/#{info['sub_category_id']}/#{article_id}"
       file_name = "index.md" # index.md 固定
+      made_by_articles = true # _articles内のチャプターから生成されたかどうか
     else
       dir_name = info['dir']
       file_name = article_file_name
+      made_by_articles = false # _articles内のチャプターから生成されたかどうか
     end
     path_name = File.join(dir_name, file_name)
 
@@ -149,19 +151,21 @@ info3 = info2.map { |info|
       'sub_category_id' => info['sub_category_id'],
       'article_id' => article_id,
       'updated_orig' => updated,
-      'updated' => updated
+      'updated' => updated,
+      'made_by_articles' => made_by_articles # _articles内のチャプターから生成されたかどうか
     }
   }
 }.flatten
 
 #############################################
 # 4. 記事チャプター情報の構築
-#   記事情報のパスから、チャプター情報のディレクトリ名を構築、
-#   チャプター情報のディレクトリが存在しない場合はそこで処理終了
-#   チャプター情報のディレクトリが存在する場合、ディレクトリ配下のファイルを取得する
+#   記事情報のパスから、_articles内のチャプター記事なのか_collections配下の生記事なのかを調べて
+#   _articles内のチャプター記事の場合、チャプター記事を読み込んでる素tで返却
+#   _collections配下の生記事の場合、それ自体を返却
 info4 = info3.map { |info|
-  # ファイル名が index.md の場合は、_articlesの内部
-  if info['file'] == 'index.md'
+  # _articles内のチャプターから生成された場合
+  if info['made_by_articles']
+    # index.md を除くチャプター記事を集めて返却
     next Dir.new(info['dir']).children.filter{ |name|
       FileTest.file?(File.join(info['dir'], name)) && name != 'index.md'
     }.map { |chapter_file_name|
@@ -169,33 +173,24 @@ info4 = info3.map { |info|
     }
   end
 
-  # チャプターディレクトリ名を構築
-  chapter_dir_name = "_#{info['category_id']}_#{info['sub_category_id']}_#{info['article_id']}_chapters"
-  # チャプターディレクトリ(フルパス)
-  chapter_dir = File.join(collections_dir, chapter_dir_name)
-  # チャプターディレクトリがない場合はそのままこの情報を返す
-  if !Dir.exist?(chapter_dir)
-    next info
-  end
-
-  # チャプターディレクトリ内を検索
-  Dir.new(chapter_dir).children.filter{ |name|
-    FileTest.file?(File.join(chapter_dir, name))
-  }.map { |chapter_file_name|
-    read_chapter(info, chapter_dir, chapter_file_name)
-  }
+  # _articles内のチャプターから生成されていない場合は
+  # _collections配下の生記事なのでそのまま返却
+  next info
 
 }.filter{|item| item}.flatten.filter{|item| item}
 # nilでないものに絞る
 
 info4.each do |inf4|
   # チャプターの更新日
-  path = inf4['path']
   updated4 = inf4['updated']
 
   # 記事の更新日
   inf3 = info3.find{ |inf| inf['path'] == inf4['parent_path'] }
-  inf3 = inf4 if inf3 == nil
+  # _collections配下のサブカテゴリの生記事名を親に持つ記事が見つからない場合、
+  # それは生記事なので、それ自身として扱う
+  if inf3 == nil
+    inf3 = inf4
+  end
   updated3 = inf3['updated']
   if updated4 > updated3
       inf3['updated'] = updated4
@@ -211,7 +206,6 @@ info4.each do |inf4|
   # カテゴリの更新日
   inf1 = info1.find{ |inf| inf['path'] == inf2['parent_path'] }
   updated1 = inf1['updated']
-  puts "#{inf1['path']} #{inf2['path']} ★#{updated2} ★#{updated1}"
   if updated2 > updated1
     inf1['updated'] = updated2
   end
