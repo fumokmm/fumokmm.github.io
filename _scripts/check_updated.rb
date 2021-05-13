@@ -204,15 +204,16 @@ info4.each do |inf4|
   # サブカテゴリの更新日
   inf2 = info2.find{ |inf| inf['path'] == inf3['parent_path'] }
   updated2 = inf2['updated']
-  if updated4 > updated2
-    inf2['updated'] = updated4
+  if updated3 > updated2
+    inf2['updated'] = updated3
   end
 
   # カテゴリの更新日
   inf1 = info1.find{ |inf| inf['path'] == inf2['parent_path'] }
   updated1 = inf1['updated']
-  if updated4 > updated1
-    inf1['updated'] = updated4
+  puts "#{inf1['path']} #{inf2['path']} ★#{updated2} ★#{updated1}"
+  if updated2 > updated1
+    inf1['updated'] = updated2
   end
 end
 
