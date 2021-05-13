@@ -1,7 +1,7 @@
 task makeArticles() {
     group = '記事管理'
     description = '_articles配下の記事を結合して、.workに記事を作成します。'
-    mustRunAfter 'clean'
+    dependsOn 'checkUpdated' // 記事生成前に更新日付が更新されていること
 
     doFirst {
         def dirs = []
@@ -24,7 +24,7 @@ task makeArticles() {
             assert chapters.size() > 0, "${dir.dir}にチャプターが1件以上あるはず"
 
             def toPath = new File(topArticle.parentFile.absolutePath.replace("${projectDir}/_articles/${dir.category}", "${projectDir}/.work/articles/${dir.category}") + '.md')
-            println "${toPath}"
+            //println "${toPath}"
             toPath.parentFile.mkdirs()
             toPath.delete()
 
@@ -33,7 +33,7 @@ task makeArticles() {
 
             def chapterMap = [:] as TreeMap
             chapters.each { chap ->
-                println "  > ${chap}"
+                //println "  > ${chap}"
                 def frontMatter = [:]
                 def body = '' << '' // as StringBuilder
                 chap.withReader{ reader ->

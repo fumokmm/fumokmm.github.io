@@ -46,12 +46,12 @@ task copyArticles(type: Copy) {
 task checkUpdated(type: CrossPlatformExec) {
     group = '記事管理'
     description = 'check_update.rbを実行して、更新日付を調整します。'
-    mustRunAfter 'copyArticles'
+    mustRunAfter 'clean' // cleanが同時指定されている場合、先にcleanを実行すること
 
     commandLine 'ruby', "${projectDir}/_scripts/check_updated.rb"
 }
 
-task updateAll(dependsOn: ['clean', 'copyArticles', 'checkUpdated']) {
-    group = '記事管理'
-    description = 'clean -> makeArticles -> copyArticles -> checkUpdate の順に実行'
-}
+// task updateAll(dependsOn: ['clean', 'checkUpdated', 'makeArticles', 'copyArticles']) {
+//     group = '記事管理'
+//     description = 'clean -> copyArticles -> makeArticles -> checkUpdate の順に実行'
+// }

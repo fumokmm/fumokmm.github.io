@@ -97,7 +97,7 @@ End Function
 引数はパーセントエンコードされた文字列を受け取り、戻り値はデコードした文字列となります。
 
 ### デモ
-![](https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumokmm/20191216/20191216192520.gif?changed=1616979768)
+![](https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumokmm/20191216/20191216192520.gif)
 
 ### 注意
 なお、すべての文字が3バイトにパーセントエンコードされていた場合しか想定していません。  
