@@ -92,6 +92,13 @@
 - sub_category_id: powershell
   sub_category_label: PowerShell
   link: /it/powershell/
+  article_group:
+    - id: basis-group
+      label: 基本事項
+    - id: tips-group
+      label: Tips
+    - id: reference-group
+      label: 参照・参考
   sub_category_group: shellscript
   sub_category_order: shellscript01
   description: Microsoft社が開発したシェルPowerShellについてのメモ
