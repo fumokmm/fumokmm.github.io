@@ -105,3 +105,7 @@
 # 2021-04-23 追加
 - site_name: Windows PowerShellサポート
   top_url: https://www.wannko.net/powershell/index.html
+
+# 2021-05-16 追加
+- site_name: PowerShell Scripting Weblog
+  top_url: http://winscript.jp/powershell/
