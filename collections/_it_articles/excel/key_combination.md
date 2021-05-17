@@ -2,7 +2,7 @@
 title: Excel作業効率を上げるキーコンビネーション
 display_order: 900
 created: 2020-12-17
-updated: 2021-03-25
+updated: 2021-05-17
 ---
 ここではExcel作業するときに知っていると作業効率の上がるキーコンビネーションをまとめておきます。
 
@@ -93,13 +93,14 @@ updated: 2021-03-25
 
 * * *
 ## <a name="cell">セル操作</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2021-01-08" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2021-05-17" %}</div>
 ### セルの値の操作
 {% include article_parts/key_combination.html title="セルの値をすべてクリア" key1="Alt + H" key2="E" key3="A" %}
 {% include article_parts/key_combination.html title="セルの書式のクリア" key1="Alt + H" key2="E" key3="F" %}
 {% include article_parts/key_combination.html title="セルの数式と値のクリア" key1="Alt + H" key2="E" key3="C" %}
 {% include article_parts/key_combination.html title="セルのコメントのクリア" key1="Alt + H" key2="E" key3="M" %}
 {% include article_parts/key_combination.html title="セルのハイパーリンクのクリア" key1="Alt + H" key2="E" key3="L" %}
+{% include article_parts/key_combination.html title="セルの背景色を「塗りつぶしなし」にする" key1="Alt + H" key2="H" key3="N" %}
 
 ### セル自体の操作
 {% include article_parts/key_combination.html title="セル挿入" key1="Alt + H" key2="I" key3="2" key4="I" %}
