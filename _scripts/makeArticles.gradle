@@ -1,3 +1,8 @@
+/**
+ * 引数 -P=makeTargetにカンマ区切りで、_articlesのパスをカンマ区切りで指定した場合、
+ * その全てが含まれる場合のみ、対象makeArticlesの対象となります。
+ * 例: $ ./gradlew makeArticles -PmakeTarget=/groovy,/git
+ */
 task makeArticles() {
     group = '記事管理'
     description = '_articles配下の記事を結合して、.workに記事を作成します。'
@@ -5,13 +10,20 @@ task makeArticles() {
 
     doFirst {
         def dirs = []
-        categoryList.each { category ->
+        categoryList
+        .each { category ->
             def fileTree = fileTree("${projectDir}/_articles/${category}/")
             fileTree.include "*/*"
-            fileTree.visit{
+            fileTree.visit { vis ->
                 // 4つ親がプロジェクトディレクトリとなるディレクトリを取得
-                if (it.file.directory && it.file.parentFile.parentFile.parentFile.parentFile == projectDir) {
-                    dirs << [dir: it.file, category: category]
+                if (vis.file.directory && vis.file.parentFile.parentFile.parentFile.parentFile == projectDir) {
+                    if (project.hasProperty('makeTarget')) {
+                        if (makeTarget.split(',')*.trim().any{ vis.file.absolutePath.contains(it) }) {
+                            dirs << [dir: vis.file, category: category]
+                        }
+                    } else {
+                        dirs << [dir: vis.file, category: category]
+                    }
                 }
             }
         }
@@ -24,7 +36,7 @@ task makeArticles() {
             assert chapters.size() > 0, "${dir.dir}にチャプターが1件以上あるはず"
 
             def toPath = new File(topArticle.parentFile.absolutePath.replace("${projectDir}/_articles/${dir.category}", "${projectDir}/.work/articles/${dir.category}") + '.md')
-            //println "${toPath}"
+            println "${toPath}"
             toPath.parentFile.mkdirs()
             toPath.delete()
 
