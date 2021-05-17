@@ -37,19 +37,26 @@
   sub_category_label: 食事について
   link: /life/eat/
   sub_category_group: health
-  sub_category_order: 001
+  sub_category_order: 1
   description: 食事についてのメモ
 
 - sub_category_id: happiness
   sub_category_label: 幸せについて
   link: /life/happiness/
   sub_category_group: happiness
-  sub_category_order: 001
+  sub_category_order: 1
   description: 幸せについてのメモ
 
 - sub_category_id: luck
   sub_category_label: 運について
   link: /life/luck/
   sub_category_group: luck
-  sub_category_order: 001
+  sub_category_order: 1
   description: 運についてのメモ
+
+- sub_category_id: human_relations
+  sub_category_label: 人間関係について
+  link: /life/human_relations/
+  sub_category_group: human_relations
+  sub_category_order: 1
+  description: 人間関係についてのメモ
