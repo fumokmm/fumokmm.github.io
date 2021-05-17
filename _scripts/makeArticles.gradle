@@ -5,7 +5,7 @@
  */
 task makeArticles() {
     group = '記事管理'
-    description = '_articles配下の記事を結合して、.workに記事を作成します。'
+    description = '_articles配下の記事を結合して、.workに記事を作成します。(オプション: -PmakeTarget=xxx)'
     dependsOn 'checkUpdated' // 記事生成前に更新日付が更新されていること
 
     doFirst {
