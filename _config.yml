@@ -172,6 +172,12 @@ defaults:
     values:
       sub_category_id: "luck"
 
+  # 人間関係について
+  - scope:
+      path: "_life_articles/human_relations"
+    values:
+      sub_category_id: "human_relations"
+
 ################################## 読書
   - scope:
       path: "_reading_articles"
