@@ -51,3 +51,5 @@ task writeProp {
 - [(Qiita) Gradle (build.gradle) 読み書き入門](https://qiita.com/hatimiti/items/a127311d739c9d3e0045)
 - [(Gradle User Manual) Command-Line Interface](https://docs.gradle.org/current/userguide/command_line_interface.html)
 - [(Gradle User Manual) Project properties](https://docs.gradle.org/current/userguide/build_environment.html#sec:project_properties)
+
+{% include footnotes_link.html %}
