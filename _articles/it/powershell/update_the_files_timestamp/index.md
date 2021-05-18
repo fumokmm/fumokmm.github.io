@@ -40,6 +40,6 @@ Get-ItemProperty aaa.txt | Get-Member
 
 などとすることで確認できます。
 
-### <a name="update-the-files-timestamp-reference">参考</a>
+## <a name="update-the-files-timestamp-reference">参考</a>
 
 - [(Qiita) ファイルのタイムスタンプを変更する](https://qiita.com/kmr_hryk/items/882b4851e23cec607e70)

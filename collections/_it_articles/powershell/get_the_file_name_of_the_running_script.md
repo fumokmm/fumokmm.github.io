@@ -16,7 +16,7 @@ Write-Host $scriptName
 </pre>
 </div>
 
-### <a name="get-the-file-name-of-the-running-script-reference">参考</a>
+## <a name="get-the-file-name-of-the-running-script-reference">参考</a>
 
 - [(バヤシタ) 実行中のスクリプトのファイル名を取得する方法](https://bayashita.com/p/entry/show/207)
 
