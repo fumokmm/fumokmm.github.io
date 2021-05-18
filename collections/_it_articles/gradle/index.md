@@ -1,7 +1,7 @@
 ---
 title: Gradleのメモ
 created: 2021-05-08
-updated: 2021-05-08
+updated: 2021-05-18
 ---
 こちらはGradleのメモになります。
 
