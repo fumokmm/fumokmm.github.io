@@ -1,0 +1,2 @@
+  - CSS
+    - https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Columns/Using_multi-column_layouts 段組みレイアウトの使用

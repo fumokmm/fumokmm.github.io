@@ -3,7 +3,7 @@ chapter_no: 1
 chapter_id: config-and-initialization
 chapter_title: 設定と初期化(config)
 created: 2010-11-07
-updated: 2010-11-07
+updated: 2021-05-19
 ---
 <div class="code-box">
 <div class="title">グローバルなユーザ名とメールアドレスを設定する</div>
@@ -36,6 +36,15 @@ $ git <em class="blue">config</em> <em class="command">--global</em> <em>color.u
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>core.quotepath false</em>
 </pre>
 </div>
+
+- 日本語のファイル名が以下のように文字化けするときは`core.quotepath false`を設定すると文字化けしなくなります。
+
+<div class="code-box-output no-title">
+<pre>
+create mode 100644 "_draft/IT\351\226\242\351\200\243/access.md"
+</pre>
+</div>
+
 
 <div class="code-box">
 <div class="title">Gitコマンドのエイリアスを作る</div>

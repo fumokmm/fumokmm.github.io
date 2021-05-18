@@ -2,7 +2,7 @@
 title: Gitコマンドのメモ
 display_order: 10
 created: 2010-11-07
-updated: 2021-03-23
+updated: 2021-05-19
 ---
 当メモは2010-11-07に[投稿されたもの](https://npnl.hatenablog.jp/entry/20101107/1289121576)を加筆修正し、再掲したものです。
 基本的に当時の内容そのままとなっておりますので、8割りくらいは今でも通用すると思いますが、  
@@ -29,7 +29,7 @@ updated: 2021-03-23
 
 * * *
 ## <a name="config-and-initialization">設定と初期化(config)</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2010-11-07" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-05-19" %}</div>
 <div class="code-box">
 <div class="title">グローバルなユーザ名とメールアドレスを設定する</div>
 <pre>
@@ -61,6 +61,15 @@ $ git <em class="blue">config</em> <em class="command">--global</em> <em>color.u
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>core.quotepath false</em>
 </pre>
 </div>
+
+- 日本語のファイル名が以下のように文字化けするときは`core.quotepath false`を設定すると文字化けしなくなります。
+
+<div class="code-box-output no-title">
+<pre>
+create mode 100644 "_draft/IT\351\226\242\351\200\243/access.md"
+</pre>
+</div>
+
 
 <div class="code-box">
 <div class="title">Gitコマンドのエイリアスを作る</div>
@@ -827,7 +836,7 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 
 * * *
 ## <a name="reference">参照</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-03-23" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-05-19" %}</div>
 ### 元記事
 - [(No Programming, No Life) Gitコマンドリファレンス](https://npnl.hatenablog.jp/entry/20101107/1289121576)
 
@@ -848,6 +857,7 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 - [(侍エンジニアブログ) git cherry-pickを完全マスター!特定コミットのみを取り込む方法](https://www.sejuku.net/blog/71544)
 - [(dackdive's blog) \[git\]複数のcommitをまとめてcherry-pickする)](https://dackdive.hateblo.jp/entry/2016/06/06/203542)
 - [(Qiita) マージコミットとFast-forwardマージ](https://qiita.com/shyamahira/items/59ff8aa1cf7b893aab60)
+- [(まくまくGitノート) git diff や git status での日本語の文字化けを防ぐ (core.page, core.quotepath)](https://maku77.github.io/git/settings/garbling.html)
 
 {% include goto_pagetop.html %}
 
