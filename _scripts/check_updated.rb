@@ -132,6 +132,7 @@ info3 = info2.map { |info|
       dir_name = "#{articles_dir.path}/#{info['category_id']}/#{info['sub_category_id']}/#{article_id}"
       file_name = "index.md" # index.md 固定
       made_by_articles = true # _articles内のチャプターから生成されたかどうか
+      has_chapter = Dir.new(dir_name).children.filter{ |chap| chap != 'index.md' }.size() > 0
     else
       dir_name = info['dir']
       file_name = article_file_name
@@ -152,7 +153,8 @@ info3 = info2.map { |info|
       'article_id' => article_id,
       'updated_orig' => updated,
       'updated' => updated,
-      'made_by_articles' => made_by_articles # _articles内のチャプターから生成されたかどうか
+      'made_by_articles' => made_by_articles, # _articles内のチャプターから生成されたかどうか
+      'has_chapter' => has_chapter # _articles内でチャプターがあるかどうか(チャプター無しはindex.mdのみ)
     }
   }
 }.flatten
@@ -180,9 +182,11 @@ info4 = info3.map { |info|
 }.filter{|item| item}.flatten.filter{|item| item}
 # nilでないものに絞る
 
+# 更新日の置き換え
+# 1) チャプターから手繰る
 info4.each do |inf4|
-  # チャプターの更新日
-  updated4 = inf4['updated']
+  # チャプターの更新日を基準更新日として取得
+  updated = inf4['updated']
 
   # 記事の更新日
   inf3 = info3.find{ |inf| inf['path'] == inf4['parent_path'] }
@@ -191,23 +195,38 @@ info4.each do |inf4|
   if inf3 == nil
     inf3 = inf4
   end
-  updated3 = inf3['updated']
-  if updated4 > updated3
-      inf3['updated'] = updated4
+  if inf3['updated'] < updated
+      inf3['updated'] = updated
   end
 
   # サブカテゴリの更新日
   inf2 = info2.find{ |inf| inf['path'] == inf3['parent_path'] }
-  updated2 = inf2['updated']
-  if updated3 > updated2
-    inf2['updated'] = updated3
+  if inf2['updated'] < updated
+    inf2['updated'] = updated
   end
 
   # カテゴリの更新日
   inf1 = info1.find{ |inf| inf['path'] == inf2['parent_path'] }
-  updated1 = inf1['updated']
-  if updated2 > updated1
-    inf1['updated'] = updated2
+  if inf1['updated'] < updated
+    inf1['updated'] = updated
+  end
+end
+
+# 2) チャプターなしを手繰る
+info3.filter{ |inf3| !inf3['has_chapter'] }.each do |inf3|
+  # 記事indexの更新日を基準更新日として取得
+  updated = inf3['updated']
+
+  # サブカテゴリの更新日
+  inf2 = info2.find{ |inf| inf['path'] == inf3['parent_path'] }
+  if inf2['updated'] < updated
+    inf2['updated'] = updated
+  end
+
+  # カテゴリの更新日
+  inf1 = info1.find{ |inf| inf['path'] == inf2['parent_path'] }
+  if inf1['updated'] < updated
+    inf1['updated'] = updated
   end
 end
 
