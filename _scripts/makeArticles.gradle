@@ -1,6 +1,7 @@
 /**
  * 引数 -P=makeTargetにカンマ区切りで、_articlesのパスをカンマ区切りで指定した場合、
  * その全てが含まれる場合のみ、対象makeArticlesの対象となります。
+ * makeTargetの値に "all" のみ指定されている場合に限り、全てのファイルを対象とします。
  * 例: $ ./gradlew makeArticles -PmakeTarget=/groovy,/git
  */
 task makeArticles() {
@@ -18,7 +19,9 @@ task makeArticles() {
                 // 4つ親がプロジェクトディレクトリとなるディレクトリを取得
                 if (vis.file.directory && vis.file.parentFile.parentFile.parentFile.parentFile == projectDir) {
                     if (project.hasProperty('makeTarget')) {
-                        if (makeTarget.split(',')*.trim().any{ vis.file.absolutePath.contains(it) }) {
+                        if (project.makeTarget == 'all' ||
+                            project.makeTarget.split(',')*.trim().any{ vis.file.absolutePath.contains(it) }
+                        ) {
                             dirs << [dir: vis.file, category: category]
                         }
                     } else {
