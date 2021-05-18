@@ -1,0 +1,2 @@
+- http://www.vwnet.jp/Windows/PowerShell/2018013002/SeparateConfig.htm PowerShell スクリプトで使う「設定」を分離する
+- http://www.vwnet.jp/Windows/PowerShell/2018013001/ClassDefinitionSeparation.htm PowerShell での Class 定義分離
