@@ -16,4 +16,4 @@ Write-Host $PSScriptRoot
 
 ### <a name="get-the-directory-where-the-script-is-running-reference">参考</a>
 
-- [スクリプトフォルダーの取得](https://www.vwnet.jp/Windows/PowerShell/pwd.htm)
+- [(Windows にまつわる e.t.c.) スクリプトフォルダーの取得](https://www.vwnet.jp/Windows/PowerShell/pwd.htm)

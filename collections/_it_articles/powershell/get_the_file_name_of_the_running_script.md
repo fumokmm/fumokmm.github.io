@@ -18,6 +18,6 @@ Write-Host $scriptName
 
 ### <a name="get-the-file-name-of-the-running-script-reference">参考</a>
 
-- [実行中のスクリプトのファイル名を取得する方法](https://bayashita.com/p/entry/show/207)
+- [(バヤシタ) 実行中のスクリプトのファイル名を取得する方法](https://bayashita.com/p/entry/show/207)
 
 {% include footnotes_link.html %}
