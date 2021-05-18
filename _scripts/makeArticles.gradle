@@ -33,7 +33,9 @@ task makeArticles() {
             def topArticle = dir.dir.listFiles().find{ it.name == 'index.md' }
             assert topArticle, "${dir.dir}にindex.mdがあるはず"
             def chapters = dir.dir.listFiles().findAll{ it.name != 'index.md' }
-            assert chapters.size() > 0, "${dir.dir}にチャプターが1件以上あるはず"
+
+            // チャプターがあるかどうか
+            boolean hasChapter = chapters.size() > 0
 
             def toPath = new File(topArticle.parentFile.absolutePath.replace("${projectDir}/_articles/${dir.category}", "${projectDir}/.work/articles/${dir.category}") + '.md')
             println "${toPath}"
@@ -41,7 +43,7 @@ task makeArticles() {
             toPath.delete()
 
             // チャプターグループを含んでいればチャプターグループ
-            def hasChapterGroup = false
+            boolean hasChapterGroup = false
 
             def chapterMap = [:] as TreeMap
             chapters.each { chap ->
@@ -88,6 +90,7 @@ task makeArticles() {
                                                       body: body.toString()]
             }
 
+            // 通常の目次部分
             def doWriteIndexNormal = { writer ->
                 writer << topArticle.text << '\n'
                 writer << "## <a name=\"index\">目次</a>" << '\n'
@@ -99,6 +102,8 @@ task makeArticles() {
                 writer << "</ul>" << '\n'
                 writer << '\n'
             }
+
+            // 目次部分 (チャプターグループあり)
             def doWriteIndexChapterGroup = { writer ->
                 def chapterGroups = chapterMap.groupBy{ chapter_no, chap -> chap.frontMatter.chapter_group }
 
@@ -126,6 +131,12 @@ task makeArticles() {
                 writer << '\n'
             }
 
+            // Bodyのみ
+            def doWriteBodyOnly = { writer ->
+                writer << topArticle.text << '\n'
+            }
+
+            // 通常のBody (チャプターグループなし)
             def doWriteBodyNormal = { writer, chapter_no, chap ->
                 writer << '* * *' << '\n'
                 writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
@@ -134,7 +145,9 @@ task makeArticles() {
                 writer << "{% include goto_pagetop.html %}" << '\n'
                 writer << '\n'
             }
-           def doWriteBodyChapterGroup = { writer, chapter_no, chap ->
+
+            // Body (チャプターグループあり)
+            def doWriteBodyChapterGroup = { writer, chapter_no, chap ->
                 if (chap.frontMatter.containsKey('chapter_group_label')) {
                     writer << "## <a name=\"${chap.frontMatter.chapter_group}\">${chap.frontMatter.chapter_group_label}</a>" << '\n'
                 } else {
@@ -147,21 +160,34 @@ task makeArticles() {
                 }
             }
 
+            // 注釈部分
             def doWriteFootnotes = { writer ->
                 writer << "{% include footnotes_link.html %}" << '\n'
             }
 
+            ////////////////////////////////
             // 書き込み実施
-            toPath.withWriterAppend(hasChapterGroup ?
-                doWriteIndexChapterGroup :
-                doWriteIndexNormal)
-            chapterMap.each { chapter_no, chap ->
-                toPath.withWriterAppend { writer ->
-                    doWriteBodyChapterGroup ?
-                        doWriteBodyChapterGroup(writer, chapter_no, chap) :
-                        doWriteBodyNormal(writer, chapter_no, chap)
+
+            // チャプターがある場合
+            if (hasChapter) {
+                toPath.withWriterAppend(hasChapterGroup ?
+                    doWriteIndexChapterGroup :
+                    doWriteIndexNormal)
+
+                chapterMap.each { chapter_no, chap ->
+                    toPath.withWriterAppend { writer ->
+                        doWriteBodyChapterGroup ?
+                            doWriteBodyChapterGroup(writer, chapter_no, chap) :
+                            doWriteBodyNormal(writer, chapter_no, chap)
+                    }
                 }
+
+            // チャプターがない場合 (Bodyのみ)
+            } else {
+                toPath.withWriterAppend doWriteBodyOnly
             }
+
+            // 注釈部分の書き込み
             toPath.withWriterAppend doWriteFootnotes
         }
     }
