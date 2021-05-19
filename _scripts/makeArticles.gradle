@@ -78,6 +78,16 @@ task makeArticles() {
                         body << line << '\n'
                     }
                 }
+
+                // chapter_id: があって chapter_title: がない場合、chapter_titleをchapter_idで補う
+                if (frontMatter.containsKey('chapter_id') && !frontMatter.containsKey('chapter_title')) {
+                    frontMatter['chapter_title'] = frontMatter.chapter_id
+
+                // chapter_title: があって chapter_id: がない場合、chapter_idをchapter_titleで補う
+                } else if (frontMatter.containsKey('chapter_title') && !frontMatter.containsKey('chapter_id')) {
+                    frontMatter['chapter_id'] = frontMatter.chapter_title
+                }
+
                 chapterMap[frontMatter.chapter_no] = [file: chap,
                                                       frontMatter: frontMatter,
                                                       body: body.toString()]
