@@ -1,12 +1,12 @@
 /**
- * 引数 -P=makeTargetにカンマ区切りで、_articlesのパスをカンマ区切りで指定した場合、
+ * 引数 -Ptargetにカンマ区切りで、_articlesのパスをカンマ区切りで指定した場合、
  * その全てが含まれる場合のみ、対象makeArticlesの対象となります。
- * makeTargetの値に "all" のみ指定されている場合に限り、全てのファイルを対象とします。
- * 例: $ ./gradlew makeArticles -PmakeTarget=/groovy,/git
+ * targetの値に "all" のみ指定されている場合に限り、全てのファイルを対象とします。
+ * 例: $ ./gradlew makeArticles -Ptarget=/groovy,/git
  */
 task makeArticles() {
     group = '記事管理'
-    description = '_articles配下の記事を結合して、.workに記事を作成します。(オプション: -PmakeTarget=xxx)'
+    description = '_articles配下の記事を結合して、.workに記事を作成します。(オプション: -Ptarget=xxx)'
     dependsOn 'checkUpdated' // 記事生成前に更新日付が更新されていること
 
     doFirst {
@@ -18,9 +18,9 @@ task makeArticles() {
             fileTree.visit { vis ->
                 // 4つ親がプロジェクトディレクトリとなるディレクトリを取得
                 if (vis.file.directory && vis.file.parentFile.parentFile.parentFile.parentFile == projectDir) {
-                    if (project.hasProperty('makeTarget')) {
-                        if (project.makeTarget == 'all' ||
-                            project.makeTarget.split(',')*.trim().any{ vis.file.absolutePath.contains(it) }
+                    if (project.hasProperty('target')) {
+                        if (project.target == 'all' ||
+                            project.target.split(',')*.trim().any{ vis.file.absolutePath.contains(it) }
                         ) {
                             dirs << [dir: vis.file, category: category]
                         }
