@@ -6,6 +6,11 @@ body {
     color: #323331;
 }
 
+// 中央揃え
+.center {
+    text-align: center;
+}
+
 // <b>強調</b>
 b {
     font-weight: bold;
@@ -45,6 +50,19 @@ article.main {
         padding-left: 4px;
         margin-right: 6px;
         //font-weight: bold;
+    }
+
+    // 記事内の画像
+    img {
+        // 横幅は最大100% (100%を超える場合は100%になるように調整される)
+        max-width: 100%;
+        // 高さは縦横比を保持しつつ自動設定
+        height: auto;
+
+        // 中央揃え
+        // display: block;
+        // margin-left: auto;
+        // margin-right: auto;
     }
 }
 
