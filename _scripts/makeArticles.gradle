@@ -1,12 +1,12 @@
 /**
- * 引数 -P=makeTargetにカンマ区切りで、_articlesのパスをカンマ区切りで指定した場合、
+ * 引数 -Ptargetにカンマ区切りで、_articlesのパスをカンマ区切りで指定した場合、
  * その全てが含まれる場合のみ、対象makeArticlesの対象となります。
- * makeTargetの値に "all" のみ指定されている場合に限り、全てのファイルを対象とします。
- * 例: $ ./gradlew makeArticles -PmakeTarget=/groovy,/git
+ * targetの値に "all" のみ指定されている場合に限り、全てのファイルを対象とします。
+ * 例: $ ./gradlew makeArticles -Ptarget=/groovy,/git
  */
 task makeArticles() {
     group = '記事管理'
-    description = '_articles配下の記事を結合して、.workに記事を作成します。(オプション: -PmakeTarget=xxx)'
+    description = '_articles配下の記事を結合して、.workに記事を作成します。(オプション: -Ptarget=xxx)'
     dependsOn 'checkUpdated' // 記事生成前に更新日付が更新されていること
 
     doFirst {
@@ -18,9 +18,9 @@ task makeArticles() {
             fileTree.visit { vis ->
                 // 4つ親がプロジェクトディレクトリとなるディレクトリを取得
                 if (vis.file.directory && vis.file.parentFile.parentFile.parentFile.parentFile == projectDir) {
-                    if (project.hasProperty('makeTarget')) {
-                        if (project.makeTarget == 'all' ||
-                            project.makeTarget.split(',')*.trim().any{ vis.file.absolutePath.contains(it) }
+                    if (project.hasProperty('target')) {
+                        if (project.target == 'all' ||
+                            project.target.split(',')*.trim().any{ vis.file.absolutePath.contains(it) }
                         ) {
                             dirs << [dir: vis.file, category: category]
                         }
@@ -57,28 +57,18 @@ task makeArticles() {
                     reader.readLine() // 先頭の ---は飛ばす
                     def line = ''
                     while (line != '---') {
-                        if (line.startsWith('chapter_no:')) {
-                            frontMatter['chapter_no'] = line.split(':')[1].trim().toInteger()
-                        }
-                        if (line.startsWith('chapter_id:')) {
-                            frontMatter['chapter_id'] = line.split(':')[1].trim()
-                        }
-                        if (line.startsWith('chapter_title:')) {
-                            frontMatter['chapter_title'] = line.split(':')[1].trim()
-                        }
-                        if (line.startsWith('created:')) {
-                            frontMatter['created'] = Date.parse('yyyy-MM-dd', line.split(':')[1].trim())
-                        }
-                        if (line.startsWith('updated:')) {
-                            frontMatter['updated'] = Date.parse('yyyy-MM-dd', line.split(':')[1].trim())
-                        }
-                        // チャプターグループ関連定義
-                        if (line.startsWith('chapter_group:')) {
-                            frontMatter['chapter_group'] = line.split(':')[1].trim()
-                            hasChapterGroup = true
-                        }
-                        if (line.startsWith('chapter_group_label:')) {
-                            frontMatter['chapter_group_label'] = line.split(':')[1].trim()
+                        switch (line) {
+                            case ~/^chapter_no:.*/    : frontMatter['chapter_no'] = line.split(':')[1].trim().toInteger(); break
+                            case ~/^chapter_id:.*/    : frontMatter['chapter_id'] = line.split(':')[1].trim(); break
+                            case ~/chapter_title:.*/  : frontMatter['chapter_title'] = line.split(':')[1].trim(); break
+                            case ~/^created:.*/       : frontMatter['created'] = Date.parse('yyyy-MM-dd', line.split(':')[1].trim()); break
+                            case ~/^updated:.*/       : frontMatter['updated'] = Date.parse('yyyy-MM-dd', line.split(':')[1].trim()); break
+                            // チャプターグループ関連定義
+                            case ~/^chapter_group:.*/ :
+                                frontMatter['chapter_group'] = line.split(':')[1].trim()
+                                hasChapterGroup = true
+                                break
+                            case ~/^chapter_group_label:.*/ : frontMatter['chapter_group_label'] = line.split(':')[1].trim(); break
                         }
                         line = reader.readLine()
                     }
@@ -88,6 +78,16 @@ task makeArticles() {
                         body << line << '\n'
                     }
                 }
+
+                // chapter_id: があって chapter_title: がない場合、chapter_titleをchapter_idで補う
+                if (frontMatter.containsKey('chapter_id') && !frontMatter.containsKey('chapter_title')) {
+                    frontMatter['chapter_title'] = frontMatter.chapter_id
+
+                // chapter_title: があって chapter_id: がない場合、chapter_idをchapter_titleで補う
+                } else if (frontMatter.containsKey('chapter_title') && !frontMatter.containsKey('chapter_id')) {
+                    frontMatter['chapter_id'] = frontMatter.chapter_title
+                }
+
                 chapterMap[frontMatter.chapter_no] = [file: chap,
                                                       frontMatter: frontMatter,
                                                       body: body.toString()]
