@@ -2,9 +2,9 @@
 layout: default_layout
 title: テンプレートのページ
 created: 2020-11-21
-updated: 2021-04-06
+updated: 2021-05-20
 ---
-テンプレートのページ。
+こちらはテンプレートのページです。ツールのページは[こちら]({% link tool.md %})です。
 
 - - -
 ## <a name="index">目次</a>
