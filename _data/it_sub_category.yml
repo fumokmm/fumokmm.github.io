@@ -97,6 +97,8 @@
       label: 基本事項
     - id: tips-group
       label: Tips
+    - id: trouble-shooting-group
+      label: トラブルシューティング
     - id: reference-group
       label: 参照・参考
   sub_category_group: shellscript
