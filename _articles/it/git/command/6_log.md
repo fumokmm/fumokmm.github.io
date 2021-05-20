@@ -3,7 +3,7 @@ chapter_no: 6
 chapter_id: log
 chapter_title: 履歴(log, diff)
 created: 2010-11-07
-updated: 2010-11-07
+updated: 2021-05-20
 ---
 <div class="code-box">
 <div class="title">履歴をすべて表示する</div>
@@ -72,6 +72,29 @@ $ git <em class="blue">log</em> <em>&lt;起点&gt;...&lt;終点&gt;</em>
 <div class="title">ログの履歴を１行ずつで表示する</div>
 <pre>
 $ git <em class="blue">log</em> <em class="command">--pretty=</em><em>oneline</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">ログをグラフで表示する</div>
+<pre>
+$ git <em class="blue">log</em> <em class="command">--graph</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">ログのグラフで表示する(履歴は１行で表示)</div>
+<pre>
+$ git <em class="blue">log</em> <em class="command">--graph</em> <em class="command">--pretty=</em><em>oneline</em>
+</pre>
+</div>
+なお、`--graph`については[こちら](https://blog.toshimaru.net/git-log-graph/)紹介されている以下のエイリアスを設定するとキレイなグラフが簡単に見れるようになります。
+<div class="code-box">
+<div class="title">.gitconfig</div>
+<pre>
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 </pre>
 </div>
 
