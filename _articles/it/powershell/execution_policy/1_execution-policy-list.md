@@ -1,22 +1,10 @@
 ---
-title: PowerShellの実行ポリシーのについて
-article_group_id: basis-group
-display_order: 10
+chapter_no: 1
+chapter_id: execution-policy-list
+chapter_title: 実行ポリシー一覧
 created: 2020-09-14
 updated: 2020-09-14
 ---
-PowerShellの実行ポリシーのについてメモです。
-
-## <a name="index">目次</a>
-
-<ul id="index_ul">
-<li><a href="#execution-policy-list">実行ポリシー一覧</a></li>
-<li><a href="#reference">参考</a></li>
-</ul>
-
-* * *
-## <a name="execution-policy-list">実行ポリシー一覧</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-09-14" updated="2020-09-14" %}</div>
 
 |ポリシー     |デフォルト|説明             |
 |:----------:|:--------:|:----------------|
@@ -29,14 +17,3 @@ PowerShellの実行ポリシーのについてメモです。
 
 ローカルで自分用に書いて使うスクリプトで良く使うのは `RemoteSigned` 。  
 こちらはローカルで作成したファイルについては、署名されていなくても利用できる。
-
-{% include goto_pagetop.html %}
-
-* * *
-## <a name="reference">参考</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-09-14" updated="2020-09-14" %}</div>
-- [PowerShellのExecutionPolicyのスコープとかについて詳しく](https://qiita.com/kikuchi/items/59f219eae2a172880ba6)
-
-{% include goto_pagetop.html %}
-
-{% include footnotes_link.html %}
