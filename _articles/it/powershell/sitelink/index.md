@@ -29,5 +29,3 @@ updated: 2021-05-16
     {% endfor %}
   </tbody>
 </table>
-
-{% include footnotes_link.html %}
