@@ -2,7 +2,7 @@
 title: Gitコマンドのメモ
 display_order: 10
 created: 2010-11-07
-updated: 2021-05-19
+updated: 2021-05-20
 ---
 当メモは2010-11-07に[投稿されたもの](https://npnl.hatenablog.jp/entry/20101107/1289121576)を加筆修正し、再掲したものです。
 基本的に当時の内容そのままとなっておりますので、8割りくらいは今でも通用すると思いますが、  
@@ -433,7 +433,7 @@ $ git <em class="blue">push</em> <em class="command">--delete</em> <em class="bl
 
 * * *
 ## <a name="log">履歴(log, diff)</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2010-11-07" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-05-20" %}</div>
 <div class="code-box">
 <div class="title">履歴をすべて表示する</div>
 <pre>
@@ -501,6 +501,29 @@ $ git <em class="blue">log</em> <em>&lt;起点&gt;...&lt;終点&gt;</em>
 <div class="title">ログの履歴を１行ずつで表示する</div>
 <pre>
 $ git <em class="blue">log</em> <em class="command">--pretty=</em><em>oneline</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">ログをグラフで表示する</div>
+<pre>
+$ git <em class="blue">log</em> <em class="command">--graph</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">ログのグラフで表示する(履歴は１行で表示)</div>
+<pre>
+$ git <em class="blue">log</em> <em class="command">--graph</em> <em class="command">--pretty=</em><em>oneline</em>
+</pre>
+</div>
+なお、`--graph`については[こちら](https://blog.toshimaru.net/git-log-graph/)紹介されている以下のエイリアスを設定するとキレイなグラフが簡単に見れるようになります。
+<div class="code-box">
+<div class="title">.gitconfig</div>
+<pre>
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 </pre>
 </div>
 
@@ -836,7 +859,7 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 
 * * *
 ## <a name="reference">参照</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-05-19" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-05-20" %}</div>
 ### 元記事
 - [(No Programming, No Life) Gitコマンドリファレンス](https://npnl.hatenablog.jp/entry/20101107/1289121576)
 
@@ -858,6 +881,7 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 - [(dackdive's blog) \[git\]複数のcommitをまとめてcherry-pickする)](https://dackdive.hateblo.jp/entry/2016/06/06/203542)
 - [(Qiita) マージコミットとFast-forwardマージ](https://qiita.com/shyamahira/items/59ff8aa1cf7b893aab60)
 - [(まくまくGitノート) git diff や git status での日本語の文字化けを防ぐ (core.page, core.quotepath)](https://maku77.github.io/git/settings/garbling.html)
+- [(Hack Your Design!) 美しき git log --graph のエイリアス](https://blog.toshimaru.net/git-log-graph/)
 
 {% include goto_pagetop.html %}
 
