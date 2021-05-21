@@ -1,5 +1,5 @@
 ---
-title: SQL Serverで取得結果行を1列に連結するSQL
+title: SQL Serverで取得結果行を1列に連結するSQL(FOR XML PATH)
 article_group_id: sql-group
 display_order: 30
 created: 2020-11-07
@@ -9,15 +9,19 @@ updated: 2020-11-07
 
 ## <a name="index">目次</a>
 
-- [下準備](#step-1)
-- [さっそくやってみよう](#step-2)
-- [補足1 STUFF関数](#sup-1)
-- [補足2 SUBSTRING関数でもよい](#sup-2)
-- [補足3 FOR XML PATH](#sup-3)
-- [補足4 他のデータベースでは](#sup-4)
+<ul id="index_ul">
+<li><a href="#下準備">下準備</a></li>
+<li><a href="#さっそくやってみよう">さっそくやってみよう</a></li>
+<li><a href="#補足1 STUFF関数">補足1 STUFF関数</a></li>
+<li><a href="#補足2 SUBSTRING関数でもよい">補足2 SUBSTRING関数でもよい</a></li>
+<li><a href="#補足3 FOR XML PATH">補足3 FOR XML PATH</a></li>
+<li><a href="#補足4 他のデータベースでは">補足4 他のデータベースでは</a></li>
+<li><a href="#参考">参考</a></li>
+</ul>
 
-## <a name="step-1">下準備</a>
-
+* * *
+## <a name="下準備">下準備</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 こんなテーブルとデータがあったとします。
 
 <div class="code-box">
@@ -48,8 +52,11 @@ SELECT * FROM Table1 ORDER BY NO
 |青組|田中|
 |黄組|伊藤,黄組|
 
-## <a name="step-2">さっそくやってみよう</a>
+{% include goto_pagetop.html %}
 
+* * *
+## <a name="さっそくやってみよう">さっそくやってみよう</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 さっそくやって行きましょう。SQL Serverでは、`FOR XML PATH`を使うことで実現することができます。
 
 <div class="code-box">
@@ -104,8 +111,11 @@ FROM
 
 これで完成！ちょっとごちゃごちゃしますが、わりと簡単にできるみたいですね。
 
-## <a name="sup-1">補足1 STUFF関数</a>
+{% include goto_pagetop.html %}
 
+* * *
+## <a name="補足1 STUFF関数">補足1 STUFF関数</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 `STUFF関数`は、引数を4つ取る関数で、指定した文字列(第1引数)の、指定した位置(第2引数)から、指定した文字数(第3引数)分を、置換文字列(第4引数)に置き換える関数です。以下のような感じになります。
 
 <div class="code-box">
@@ -123,8 +133,11 @@ a**new**efg
 </pre>
 </div>
 
-## <a name="sup-2">補足2 SUBSTRING関数でもよい</a>
+{% include goto_pagetop.html %}
 
+* * *
+## <a name="補足2 SUBSTRING関数でもよい">補足2 SUBSTRING関数でもよい</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 先頭の`,`さえ除去できればいいので、以下のようにサブクエリにしてから、SUBSTRING関数を使っても可能ですね。
 
 <div class="code-box">
@@ -162,8 +175,11 @@ FROM
 </pre>
 </div>
 
-## <a name="sup-3">補足3 FOR XML PATH</a>
+{% include goto_pagetop.html %}
 
+* * *
+## <a name="補足3 FOR XML PATH">補足3 FOR XML PATH</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 FOR XML PATHはSQLの後ろに付与して、XMLとして結果を取得するものです。  
 例えば以下のように全データを取得してみると…
 
@@ -346,15 +362,25 @@ SELECT
 </pre>
 </div>
 
-## <a name="sup-4">補足4 他のデータベースでは</a>
+{% include goto_pagetop.html %}
 
+* * *
+## <a name="補足4 他のデータベースでは">補足4 他のデータベースでは</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 なお、MySQL(MariaDB) では、`GROUP_CONCAT関数`、Oracleでは`LISTAGG関数`をで同様の処理が可能とのことです。
 
-#### <a name="reference">参考</a>
+{% include goto_pagetop.html %}
 
+* * *
+## <a name="参考">参考</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 - [[SQL Server] 縦に並んだデータを横にカンマ区切りの列データで取得する方法](https://webbibouroku.com/Blog/Article/forxmlpath)
 - [(Microsoft Docs) FOR XML での PATH モードの使用](https://docs.microsoft.com/ja-jp/sql/relational-databases/xml/use-path-mode-with-for-xml?view=sql-server-ver15)
 - [(Microsoft Docs) value() メソッド (xml データ型)](https://docs.microsoft.com/ja-jp/sql/t-sql/xml/value-method-xml-data-type?view=sql-server-ver15)
 - [(Microsoft Docs) STUFF (Transact-SQL)](https://docs.microsoft.com/ja-jp/sql/t-sql/functions/stuff-transact-sql?view=sql-server-ver15)
 - [(it-swarm-ja.tech) SQLSERVERのListAGG](https://www.it-swarm-ja.tech/ja/sql/sqlserver%E3%81%AElistagg/1072750335/)
 - [(SHIFT the Oracle) LISTAGG（集計関数）](https://www.shift-the-oracle.com/sql/aggregate-functions/listagg.html)
+
+{% include goto_pagetop.html %}
+
+{% include footnotes_link.html %}
