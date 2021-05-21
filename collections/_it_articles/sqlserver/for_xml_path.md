@@ -12,11 +12,11 @@ updated: 2020-11-07
 <ul id="index_ul">
 <li><a href="#下準備">下準備</a></li>
 <li><a href="#さっそくやってみよう">さっそくやってみよう</a></li>
-<li><a href="#補足1 STUFF関数">補足1 STUFF関数</a></li>
+<li><a href="#stuff">補足1 STUFF関数</a></li>
 <li><a href="#補足2 SUBSTRING関数でもよい">補足2 SUBSTRING関数でもよい</a></li>
 <li><a href="#補足3 FOR XML PATH">補足3 FOR XML PATH</a></li>
 <li><a href="#補足4 他のデータベースでは">補足4 他のデータベースでは</a></li>
-<li><a href="#参考">参考</a></li>
+<li><a href="#reference">参考</a></li>
 </ul>
 
 * * *
@@ -81,8 +81,8 @@ FROM
 |黄組|,伊藤,渡辺|
 |黄組|,伊藤,渡辺|
 
-いい感じになってきましたが、先頭の `,` が邪魔なので[STUFF関数](#sup-1)を使って除去してみましょう。  
-[STUFF関数](#sup-1)を組み込んでみるとこうなります。取得する先頭に`,`が付くので、それを除去しています。
+いい感じになってきましたが、先頭の `,` が邪魔なので[STUFF関数](#stuff)を使って除去してみましょう。  
+[STUFF関数](#stuff)を組み込んでみるとこうなります。取得する先頭に`,`が付くので、それを除去しています。
 
 <div class="code-box">
 <div class="title">SQL</div>
@@ -114,7 +114,7 @@ FROM
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="補足1 STUFF関数">補足1 STUFF関数</a>
+## <a name="stuff">補足1 STUFF関数</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 `STUFF関数`は、引数を4つ取る関数で、指定した文字列(第1引数)の、指定した位置(第2引数)から、指定した文字数(第3引数)分を、置換文字列(第4引数)に置き換える関数です。以下のような感じになります。
 
@@ -334,7 +334,7 @@ FOR XML PATH('')
 
 さきほど、注意として書きましたが、XML型ではなく文字列型に変換する正式なやり方は、  
 `TYPEディレクティブ`で受け取って、`valueメソッド`で`NVARCHAR`に変換してあげるといいみたいです。  
-詳細は、以下の[参照](#reference)を参考にして下さい。
+詳細は、以下の[参考](#reference)を参考にして下さい。
 
 <div class="code-box">
 <div class="title">SQL</div>
@@ -372,7 +372,7 @@ SELECT
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a>
+## <a name="reference">参考</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 - [[SQL Server] 縦に並んだデータを横にカンマ区切りの列データで取得する方法](https://webbibouroku.com/Blog/Article/forxmlpath)
 - [(Microsoft Docs) FOR XML での PATH モードの使用](https://docs.microsoft.com/ja-jp/sql/relational-databases/xml/use-path-mode-with-for-xml?view=sql-server-ver15)

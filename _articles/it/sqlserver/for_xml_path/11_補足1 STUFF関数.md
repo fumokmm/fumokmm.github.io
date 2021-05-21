@@ -1,5 +1,6 @@
 ---
 chapter_no: 11
+chapter_id: stuff
 chapter_title: 補足1 STUFF関数
 created: 2020-11-07
 updated: 2020-11-07

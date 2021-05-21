@@ -158,7 +158,7 @@ FOR XML PATH('')
 
 さきほど、注意として書きましたが、XML型ではなく文字列型に変換する正式なやり方は、  
 `TYPEディレクティブ`で受け取って、`valueメソッド`で`NVARCHAR`に変換してあげるといいみたいです。  
-詳細は、以下の[参照](#reference)を参考にして下さい。
+詳細は、以下の[参考](#reference)を参考にして下さい。
 
 <div class="code-box">
 <div class="title">SQL</div>
