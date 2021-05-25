@@ -178,6 +178,12 @@ defaults:
     values:
       sub_category_id: "human_relations"
 
+  # 意識と無意識について
+  - scope:
+      path: "_life_articles/consciousness_and_unconsciousness"
+    values:
+      sub_category_id: "consciousness_and_unconsciousness"
+
 ################################## 読書
   - scope:
       path: "_reading_articles"
