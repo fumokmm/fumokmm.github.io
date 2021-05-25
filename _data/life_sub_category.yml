@@ -60,3 +60,10 @@
   sub_category_group: human_relations
   sub_category_order: 1
   description: 人間関係についてのメモ
+
+- sub_category_id: consciousness_and_unconsciousness
+  sub_category_label: 意識と無意識について
+  link: /life/consciousness_and_unconsciousness/
+  sub_category_group: mind
+  sub_category_order: 1
+  description: 意識と無意識についてのメモ
