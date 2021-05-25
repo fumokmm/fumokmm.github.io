@@ -157,7 +157,7 @@ updated: 2021-05-25
     {% endfor %}
 </table>
 
-## こちらは意識と無意識についてのメモになります
+## こちらは精神や心についてのメモになります
 <table>
     {% assign sub_categories = site.data.life_sub_category | where: 'sub_category_group', 'mind'
                                                            | sort: 'sub_category_order' %}
