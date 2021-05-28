@@ -3,7 +3,7 @@ title: PowerShellの文法
 article_group_id: basis-group
 display_order: 10
 created: 2021-05-16
-updated: 2021-05-16
+updated: 2021-05-28
 ---
 
 ## <a name="index">目次</a>
@@ -15,7 +15,7 @@ updated: 2021-05-16
 
 * * *
 ## <a name="basis">1. 基礎</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-16" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
 ### コンソールに文字表示
 `Write-Host`コマンドレットを使用します。
 <div class="code-box no-title">
@@ -41,6 +41,28 @@ updated: 2021-05-16
 #&gt;</em>
 </pre>
 </div>
+
+### 式の途中で改行する
+式の途中で改行するには<code>バッククォート(`)</code>を使用します。
+ちなみに[Windows Batchの方]({% link _it_articles/windows_batch/grammar.md %}#basis)では`サーカムフレックス(^)`を利用していましたね。
+<div class="code-box no-title">
+<pre>
+New-Item "c:\temp\myfile.txt" <em>`</em>
+    -type file <em>`</em>
+    -value "test"
+</pre>
+</div>
+
+パイプ`(|)`を後ろに置く場合は<code>バッククォート(`)</code>無しで改行できます。
+<div class="code-box no-title">
+<pre>
+Get-Process <em>|</em>
+   Where-Object {$_.CPU -gt 500} <em>|</em>
+   Select-Object -first 3 
+</pre>
+</div>
+
+- 参考：[ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
 
 ### 変数宣言
 PowerShellでは変数は頭に`$`を付けて宣言します。
@@ -111,6 +133,7 @@ PowerShellでは変数は頭に`$`を付けて宣言します。
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-16" %}</div>
 - [(PowerShell Scripting Weblog) PowerShell基礎文法最速マスター](http://winscript.jp/powershell/202)
 - [(鷲ノ巣) PowerShell のスコープ完全に理解した](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)
+- [(バヤシタ) ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
 
 {% include goto_pagetop.html %}
 
