@@ -7,9 +7,6 @@ https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/
 CSV読み込み - Import-Csv
 https://yanor.net/wiki/?PowerShell/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%AC%E3%83%83%E3%83%88/CSV%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF+-+Import-Csv
 
-ソースコードの式の途中で改行する方法
-https://bayashita.com/p/entry/show/87
-
 Where-Object
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.1
 
