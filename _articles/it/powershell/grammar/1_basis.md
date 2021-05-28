@@ -5,8 +5,6 @@ chapter_title: 1. 基礎
 created: 2021-05-16
 updated: 2021-05-28
 ---
-{% capture link_to_it_windows_batch %}{% link _it_articles/windows_batch/index.md %}{% endcapture %}★{% assign link_to_it_windows_batch = link_to_it_windows_batch | remove: 'index' %}
-
 ### コンソールに文字表示
 `Write-Host`コマンドレットを使用します。
 <div class="code-box no-title">
@@ -34,8 +32,8 @@ updated: 2021-05-28
 </div>
 
 ### 式の途中で改行する
-式の途中で改行するには<code>バッククォート(`)</code>使用します。
-ちなみに[Windows Batch]({{link_to_it_windows_batch}})の方では`サーカムフレックス(^)`を利用していましたね。
+式の途中で改行するには<code>バッククォート(`)</code>を使用します。
+ちなみに[Windows Batchの方]({% link _it_articles/windows_batch/grammar.md %}#basis)では`サーカムフレックス(^)`を利用していましたね。
 <div class="code-box no-title">
 <pre>
 New-Item "c:\temp\myfile.txt" <em>`</em>

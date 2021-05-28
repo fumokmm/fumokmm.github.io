@@ -16,8 +16,6 @@ updated: 2021-05-28
 * * *
 ## <a name="basis">1. 基礎</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
-{% capture link_to_it_windows_batch %}{% link _it_articles/windows_batch/index.md %}{% endcapture %}★{% assign link_to_it_windows_batch = link_to_it_windows_batch | remove: 'index' %}
-
 ### コンソールに文字表示
 `Write-Host`コマンドレットを使用します。
 <div class="code-box no-title">
@@ -45,8 +43,8 @@ updated: 2021-05-28
 </div>
 
 ### 式の途中で改行する
-式の途中で改行するには<code>バッククォート(`)</code>使用します。
-[Windows Batch]({{link_to_it_windows_batch}})では`サーカムフレックス(^)`を利用していましたね。
+式の途中で改行するには<code>バッククォート(`)</code>を使用します。
+ちなみに[Windows Batchの方]({% link _it_articles/windows_batch/grammar.md %}#basis)では`サーカムフレックス(^)`を利用していましたね。
 <div class="code-box no-title">
 <pre>
 New-Item "c:\temp\myfile.txt" <em>`</em>
@@ -55,7 +53,7 @@ New-Item "c:\temp\myfile.txt" <em>`</em>
 </pre>
 </div>
 
-パイプを後ろに置く場合は<code>バッククォート(`)</code>無しで改行できます。
+パイプ`(|)`を後ろに置く場合は<code>バッククォート(`)</code>無しで改行できます。
 <div class="code-box no-title">
 <pre>
 Get-Process <em>|</em>
