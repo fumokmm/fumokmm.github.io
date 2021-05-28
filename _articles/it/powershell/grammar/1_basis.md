@@ -3,8 +3,10 @@ chapter_no: 1
 chapter_id: basis
 chapter_title: 1. 基礎
 created: 2021-05-16
-updated: 2021-05-16
+updated: 2021-05-28
 ---
+{% capture link_to_it_windows_batch %}{% link _it_articles/windows_batch/index.md %}{% endcapture %}★{% assign link_to_it_windows_batch = link_to_it_windows_batch | remove: 'index' %}
+
 ### コンソールに文字表示
 `Write-Host`コマンドレットを使用します。
 <div class="code-box no-title">
@@ -30,6 +32,28 @@ updated: 2021-05-16
 #&gt;</em>
 </pre>
 </div>
+
+### 式の途中で改行する
+式の途中で改行するには<code>バッククォート(`)</code>使用します。
+ちなみに[Windows Batch]({{link_to_it_windows_batch}})の方では`サーカムフレックス(^)`を利用していましたね。
+<div class="code-box no-title">
+<pre>
+New-Item "c:\temp\myfile.txt" <em>`</em>
+    -type file <em>`</em>
+    -value "test"
+</pre>
+</div>
+
+パイプ`(|)`を後ろに置く場合は<code>バッククォート(`)</code>無しで改行できます。
+<div class="code-box no-title">
+<pre>
+Get-Process <em>|</em>
+   Where-Object {$_.CPU -gt 500} <em>|</em>
+   Select-Object -first 3 
+</pre>
+</div>
+
+- 参考：[ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
 
 ### 変数宣言
 PowerShellでは変数は頭に`$`を付けて宣言します。
