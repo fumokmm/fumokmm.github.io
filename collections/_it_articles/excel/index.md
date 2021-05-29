@@ -1,7 +1,7 @@
 ---
 title: Excelのメモ
 created: 2020-12-17
-updated: 2021-05-28
+updated: 2021-05-29
 ---
 こちらはExcelのメモになります。
 
