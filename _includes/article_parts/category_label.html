@@ -11,16 +11,6 @@
             {% endfor %}
         {% endif %}
 
-        {% if category.category_id == 'science' %}
-            {% for sub_category in site.data.science_sub_category %}
-                {% if sub_category.sub_category_id == include.sub_category_id %}
-                    <td><a href="{{ category.link }}">{{ category.category_label }}</a></td>
-                    <td><a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a></td>
-                    {% break %}
-                {% endif %}
-            {% endfor %}
-        {% endif %}
-
         {% if category.category_id == 'life' %}
             {% for sub_category in site.data.life_sub_category %}
                 {% if sub_category.sub_category_id == include.sub_category_id %}
@@ -41,5 +31,25 @@
             {% endfor %}
         {% endif %}
 
-    {% endif %}
+        {% if category.category_id == 'science' %}
+            {% for sub_category in site.data.science_sub_category %}
+                {% if sub_category.sub_category_id == include.sub_category_id %}
+                    <td><a href="{{ category.link }}">{{ category.category_label }}</a></td>
+                    <td><a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a></td>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        {% if category.category_id == 'economy' %}
+            {% for sub_category in site.data.economy_sub_category %}
+                {% if sub_category.sub_category_id == include.sub_category_id %}
+                    <td><a href="{{ category.link }}">{{ category.category_label }}</a></td>
+                    <td><a href="{{ sub_category.link }}">{{ sub_category.sub_category_label }}</a></td>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        {% endif %}
 {% endfor %}

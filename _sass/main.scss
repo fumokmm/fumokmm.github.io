@@ -27,7 +27,7 @@ strong {
     text-decoration: underline wavy;
 }
 
-// 記事内のリンク
+// 記事内の…
 article.main {
     // アイコン https://iconarchive.com/
     // 内部向けリンク
@@ -63,6 +63,27 @@ article.main {
         // display: block;
         // margin-left: auto;
         // margin-right: auto;
+    }
+
+    // 定義の説明
+    dl {
+        // 用語
+        dt {
+            font-size: 125%;
+            font-weight: bold;
+            // 用語へのリンク
+            a[href^="/"] {
+                background: none;
+                color: #bbb;
+                padding-left: 5px;
+                padding-top: 0px;
+                padding-right: 0px;
+                margin-left: 0px;
+            }
+        }
+        // 用語に対する説明
+        //dd {
+        //}
     }
 }
 

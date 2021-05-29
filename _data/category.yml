@@ -23,6 +23,11 @@
   link: /science/
   description: 科学についてのメモ
 
+- category_id: economy
+  category_label: Economy
+  link: /economy/
+  description: 経済についてのメモ
+
 - category_id: all
   category_label: All
   link: /all/

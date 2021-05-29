@@ -8,7 +8,7 @@ defaultTasks "copyArticles"
 
 ext {
     // カテゴリ
-    categoryList = ['it', 'life', 'reading', 'science']
+    categoryList = ['it', 'life', 'reading', 'science', 'economy']
 }
 
 task clean(type: Delete) {

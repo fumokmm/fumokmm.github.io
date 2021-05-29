@@ -223,6 +223,20 @@ defaults:
     values:
       sub_category_id: "psychology"
 
+################################## 経済
+  - scope:
+      path: "_economy_articles"
+    values:
+      layout: "economy_article_layout"
+      category_id: "economy"
+
+# 経済についてのメモのサブカテゴリ
+  # 投資についてのメモ
+  - scope:
+      path: "_economy_articles/investment"
+    values:
+      sub_category_id: "investment"
+
 ################################## 全メモのリスト
   - scope:
       path: "all"
@@ -256,6 +270,11 @@ collections:
   science_articles:
     output: true
     permalink: /science/:path
+
+  # 経済の記事
+  economy_articles:
+    output: true
+    permalink: /economy/:path
 
 # 除外ファイル/ディレクトリ
 exclude:
