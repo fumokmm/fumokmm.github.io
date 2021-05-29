@@ -6,9 +6,9 @@ updated: 2021-05-29
 こちらは投資についてのメモになります。
 
 <ul>
-    {% assign list = site.it_articles  | where: 'category_id', 'economy'
-                                       | where: 'sub_category_id', 'investment'
-                                       | sort: 'display_order' %}
+    {% assign list = site.economy_articles  | where: 'category_id', 'economy'
+                                            | where: 'sub_category_id', 'investment'
+                                            | sort: 'display_order' %}
     {% for item in list %}
         {% assign filename = item.url | split: '/' | reverse | first %}
         {% if filename != 'index' %}

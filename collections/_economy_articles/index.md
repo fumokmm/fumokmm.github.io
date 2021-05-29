@@ -10,7 +10,7 @@ updated: 2021-05-29
                                                               | sort: 'sub_category_order' %}
     {% for sub_cat in sub_categories %}
     <tr>
-        {% assign articles = site.economy_articles  | where: 'category_id', 'investment'
+        {% assign articles = site.economy_articles  | where: 'category_id', 'economy'
                                                     | where: 'sub_category_id', sub_cat.sub_category_id %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
