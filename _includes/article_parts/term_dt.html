@@ -1,0 +1,5 @@
+<dt markdown="span">
+<a name="{{ include.title }}">{{ include.title }}</a>
+{% if include.type == "economy" %}<a href="{% link _economy_articles/investment/term.md %}#{{ include.title }}">§</a>{% endif %}
+{% if include.type == "it" %}<a href="{% link _it_articles/other/term.md %}#{{ include.title }}">§</a>{% endif %}
+</dt>
