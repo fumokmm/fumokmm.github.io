@@ -19,7 +19,7 @@ updated: 2021-03-16
 </ul>
 
 * * *
-## <a name="install-ruby-extension">Ruby用の拡張を導入する</a>
+## <a name="install-ruby-extension">Ruby用の拡張を導入する</a><a href="#install-ruby-extension">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-16" updated="2021-03-16" %}</div>
 これを書いている時点でインストールしたものは以下です。
 <div class="code-box no-title">
@@ -36,7 +36,7 @@ VS Marketplace Link: [https://marketplace.visualstudio.com/items?itemName=reborn
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="isntall-gem-for-debugging">デバッグ用Gemを導入する</a>
+## <a name="isntall-gem-for-debugging">デバッグ用Gemを導入する</a><a href="#isntall-gem-for-debugging">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-16" updated="2021-03-16" %}</div>
 <div class="code-box-output no-title">
 <pre>
@@ -56,7 +56,7 @@ $ bundle install
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="configuration-file">Visual Studio Code用の設定ファイルを作成する</a>
+## <a name="configuration-file">Visual Studio Code用の設定ファイルを作成する</a><a href="#configuration-file">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-16" updated="2021-03-16" %}</div>
 <div class="code-box">
 <div class="title">.vscode/launch.json</div>
@@ -82,7 +82,7 @@ $ bundle install
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="try-it">動かしてみる</a>
+## <a name="try-it">動かしてみる</a><a href="#try-it">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-16" updated="2021-03-16" %}</div>
 - `main.rb`内にブレークポイントを付けます。
 - `Activity Bar`の`Run and Debug`を開き、再生ボタンの中から、`Debug Local File`を実行します。
@@ -98,7 +98,7 @@ $ bundle install
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-16" updated="2021-03-16" %}</div>
 - [(DevelopersIO) Visual Studio CodeによるRubyのデバッグ](https://dev.classmethod.jp/articles/visual-studio-code-ruby-debug/)
 

@@ -13,7 +13,7 @@ updated: 2020-10-01
 </ul>
 
 * * *
-## <a name="how-to-launch-access-in-developer-mode">Accessを開発者モードで起動する方法</a>
+## <a name="how-to-launch-access-in-developer-mode">Accessを開発者モードで起動する方法</a><a href="#how-to-launch-access-in-developer-mode">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-01" updated="2020-10-01" %}</div>
 Accessをそのまま起動するとAutoExecマクロや起動オプションが実行されてしまいます。  
 そこで、`Shiftキー` を押したまま、アイコンをダブルクリックで起動することで、  

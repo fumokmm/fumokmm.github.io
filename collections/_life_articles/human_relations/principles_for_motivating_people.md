@@ -14,7 +14,7 @@ updated: 2021-05-17
 </ul>
 
 * * *
-## <a name="there-are-eight-things-that-people-want">人間が欲しいものは8つある</a>
+## <a name="there-are-eight-things-that-people-want">人間が欲しいものは8つある</a><a href="#there-are-eight-things-that-people-want">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-17" updated="2021-05-17" %}</div>
 ### 人間の欲求
 - 健康
@@ -34,7 +34,7 @@ updated: 2021-05-17
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="three-principles-that-move-people">人を動かす3原則</a>
+## <a name="three-principles-that-move-people">人を動かす3原則</a><a href="#three-principles-that-move-people">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-17" updated="2021-05-17" %}</div>
 ### 1. 相手を褒める
 - 褒められれば自分は重要な存在なのだと思う
@@ -54,7 +54,7 @@ updated: 2021-05-17
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-17" updated="2021-05-17" %}</div>
 ### 関連メモ
 - [人に好かれる原則について]({% link _life_articles/human_relations/principles_for_making_people_like_you.md %})

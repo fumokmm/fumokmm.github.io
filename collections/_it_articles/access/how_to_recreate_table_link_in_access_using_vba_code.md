@@ -19,7 +19,7 @@ Accessでテーブルリンクを作成する場合、ローカルPCに設定し
 </ul>
 
 * * *
-## <a name="recreate-table-link">テーブルリンク再作成</a>
+## <a name="recreate-table-link">テーブルリンク再作成</a><a href="#recreate-table-link">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-14" updated="2020-10-15" %}</div>
 <div class="code-box">
 <div class="title">テーブルリンク再作成</div>
@@ -68,7 +68,7 @@ Set p_td = CurrentDb.CreateTableDef( _
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-14" updated="2020-10-15" %}</div>
 - [(Microsoft Docs) Access でリンクテーブルに対して SQL Server への DSN レス接続を作成する方法](https://docs.microsoft.com/ja-jp/office/troubleshoot/access/create-dsn-less-connection-linkted-table)
 - [(「分かりそう」で「分からない」でも「分かった」気になれるIT用語辞典) DSN【DB】](https://wa3.i-3-i.info/word12383.html)

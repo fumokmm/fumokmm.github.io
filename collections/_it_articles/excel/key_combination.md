@@ -19,14 +19,14 @@ updated: 2021-05-17
 </ul>
 
 * * *
-## <a name="general">全般</a>
+## <a name="general">全般</a><a href="#general">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-25" updated="2021-03-25" %}</div>
 {% include article_parts/key_combination.html title="直前の操作を繰り返す" key1="F4" %}
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="row">行操作</a>
+## <a name="row">行操作</a><a href="#row">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2021-03-25" %}</div>
 ### <a name="row-insert-and-delete">挿入・削除</a>
 {% include article_parts/key_combination.html title="行挿入" key1="Alt + H" key2="I" key3="2" key4="R" %}
@@ -49,7 +49,7 @@ updated: 2021-05-17
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="column">列操作</a>
+## <a name="column">列操作</a><a href="#column">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2021-03-25" %}</div>
 ### <a name="column-insert-and-delete">挿入・削除</a>
 {% include article_parts/key_combination.html title="列挿入" key1="Alt + H" key2="I" key3="2" key4="C" %}
@@ -71,7 +71,7 @@ updated: 2021-05-17
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="sheet">シート操作</a>
+## <a name="sheet">シート操作</a><a href="#sheet">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2021-03-25" %}</div>
 ### シート自体
 {% include article_parts/key_combination.html title="シート挿入" key1="Alt + H" key2="I" key3="2" key4="S" %}
@@ -92,7 +92,7 @@ updated: 2021-05-17
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="cell">セル操作</a>
+## <a name="cell">セル操作</a><a href="#cell">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2021-05-17" %}</div>
 ### セルの値の操作
 {% include article_parts/key_combination.html title="セルの値をすべてクリア" key1="Alt + H" key2="E" key3="A" %}
@@ -109,7 +109,7 @@ updated: 2021-05-17
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="filter">フィルター操作</a>
+## <a name="filter">フィルター操作</a><a href="#filter">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2020-12-23" %}</div>
 <dl>
   <dt>フィルターのクリア（フィルターされた状態で実施）</dt>
@@ -123,7 +123,7 @@ updated: 2021-05-17
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="edit">編集操作</a>
+## <a name="edit">編集操作</a><a href="#edit">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2021-03-15" %}</div>
 ### 値貼り付け
 {% include article_parts/key_combination.html title="値貼り付け(1)" key1="Alt + H" key2="V" key3="V" additional="セルをコピーしていた場合" %}

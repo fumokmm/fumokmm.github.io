@@ -13,7 +13,7 @@ updated: 2021-04-13
 </ul>
 
 * * *
-## <a name="luck-is-fair-to-everyone">運は誰にでも公平に降り注いでいる</a>
+## <a name="luck-is-fair-to-everyone">運は誰にでも公平に降り注いでいる</a><a href="#luck-is-fair-to-everyone">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-05" updated="2021-04-13" %}</div>
 - 私たちの身の回りには目に見えない幸運・不運が無数に存在している。
 - 幸運は誰にでも公平に降り注いでいるのだが、脳はそれを認識しない。
@@ -27,7 +27,7 @@ updated: 2021-04-13
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-05" updated="2021-04-13" %}</div>
 ### 参考動画
 - [(YouTubeチャンネル) 本要約チャンネル](https://www.youtube.com/channel/UCEixleMT76xDzoiEb9ZA7XA)

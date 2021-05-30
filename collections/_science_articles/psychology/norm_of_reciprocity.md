@@ -13,7 +13,7 @@ updated: 2021-04-13
 </ul>
 
 * * *
-## <a name="about">返報性の原理・返報性の法則</a>
+## <a name="about">返報性の原理・返報性の法則</a><a href="#about">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-13" updated="2021-04-13" %}</div>
 「返報性の原理」や「返報性の返報性」の法則と呼ばれているもの。  
 これは、他の人から何かを貰ったとき「お返しをしないと気が済まない」と感じる心理です。
@@ -28,7 +28,7 @@ updated: 2021-04-13
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-13" updated="2021-04-13" %}</div>
 - {% include book/book_592.html %} {% comment %} なぜか話しかけたくなる人、ならない人 {% endcomment %}
 - [(Wikipedia ja) 返報性の原理](https://ja.wikipedia.org/wiki/%E8%BF%94%E5%A0%B1%E6%80%A7%E3%81%AE%E5%8E%9F%E7%90%86)

@@ -17,7 +17,7 @@ updated: 2020-12-16
 </ul>
 
 * * *
-## <a name="sql-for-backing-up-table">テーブルをバックアップするSQL</a>
+## <a name="sql-for-backing-up-table">テーブルをバックアップするSQL</a><a href="#sql-for-backing-up-table">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-07-15" updated="2020-10-15" %}</div>
 テーブルをサクっとバックアップしたい場合に使えるSQLです。
 
@@ -39,7 +39,7 @@ SELECT * INTO <em>M_USER_20201015</em> FROM <em>M_USER</em>;
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="identity-insert">IDENTITY指定された列に明示的な値をINSERTする</a>
+## <a name="identity-insert">IDENTITY指定された列に明示的な値をINSERTする</a><a href="#identity-insert">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-04" updated="2020-12-04" %}</div>
 IDENTITYが指定された列の値を直接指定したINSERT文はエラーとなって実行できません。  
 そこで、`IDENTITY_INSERT`を`ON`に設定することでそれを一時解除できます。
@@ -67,7 +67,7 @@ SET IDENTITY_INSERT <em>&lt;テーブル名&gt;</em> OFF;
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="collation">照合順序設定を確認するSQL</a>
+## <a name="collation">照合順序設定を確認するSQL</a><a href="#collation">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-11" updated="2020-12-11" %}</div>
 <div class="code-box">
 <div class="title">サーバーの照合順序設定を確認するSQL</div>
@@ -103,7 +103,7 @@ FROM
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="insert-select">SELECT結果をINSERTするSQL</a>
+## <a name="insert-select">SELECT結果をINSERTするSQL</a><a href="#insert-select">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-16" updated="2020-12-16" %}</div>
 いわゆるINSERT-SELECTです。
 

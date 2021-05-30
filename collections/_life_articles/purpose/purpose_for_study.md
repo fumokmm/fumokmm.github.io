@@ -12,7 +12,7 @@ updated: 2021-03-26
 </ul>
 
 * * *
-## <a name="why-studying-just-for-the-sake-of-being-given-is-boring">与えられただけの勉強がなぜつまらないか</a>
+## <a name="why-studying-just-for-the-sake-of-being-given-is-boring">与えられただけの勉強がなぜつまらないか</a><a href="#why-studying-just-for-the-sake-of-being-given-is-boring">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-26" updated="2021-03-26" %}</div>
 こちらの内容は、アメリカの哲学者、デューイ（1859年-1952年）の思想によるものです。  
 デューイは20世紀における代表的哲学者の一人で「プラグマティズム」の代表的人物とのこと。

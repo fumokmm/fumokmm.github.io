@@ -14,7 +14,7 @@ updated: 2021-04-06
 </ul>
 
 * * *
-## <a name="update-data-with-information-from-other-tables">他テーブルの情報でデータを更新する</a>
+## <a name="update-data-with-information-from-other-tables">他テーブルの情報でデータを更新する</a><a href="#update-data-with-information-from-other-tables">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-06" updated="2021-04-06" %}</div>
 <div class="code-box">
 <div class="title">他テーブルの情報でデータを更新するSQL</div>

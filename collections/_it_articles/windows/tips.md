@@ -13,7 +13,7 @@ updated: 2020-12-29
 </ul>
 
 * * *
-## <a name="make-repeated-character-string">手っ取り早く繰り返し文字を作る方法</a>
+## <a name="make-repeated-character-string">手っ取り早く繰り返し文字を作る方法</a><a href="#make-repeated-character-string">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-29" updated="2020-12-29" %}</div>
 {% capture link_to_powershell %}{% link _it_articles/powershell/index.md %}{% endcapture %}
 

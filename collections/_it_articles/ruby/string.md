@@ -14,7 +14,7 @@ updated: 2021-03-09
 </ul>
 
 * * *
-## <a name="include">文字列にある文字列が含まれているかを調べる</a>
+## <a name="include">文字列にある文字列が含まれているかを調べる</a><a href="#include">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-03-09" %}</div>
 <div class="code-box">
 <div class="title">If文 - 条件式に後ろが改行の場合はthenを省略できる</div>
@@ -31,7 +31,7 @@ updated: 2021-03-09
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-03-09" %}</div>
 - [オブジェクト指向スクリプト言語 Ruby リファレンスマニュアル](https://docs.ruby-lang.org/ja/latest/doc/index.html)
 - [class String](https://docs.ruby-lang.org/ja/latest/class/String.html)

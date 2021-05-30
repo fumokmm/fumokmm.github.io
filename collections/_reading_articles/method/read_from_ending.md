@@ -13,7 +13,7 @@ updated: 2021-02-20
 </ul>
 
 * * *
-## <a name="read-from-ending">「おわりに」から読む</a>
+## <a name="read-from-ending">「おわりに」から読む</a><a href="#read-from-ending">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-15" updated="2021-02-20" %}</div>
 > 人は、告白の言葉に負けないくらい、別れの言葉に力を入れるものである。
 > <cite>{% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}より</cite>
@@ -24,7 +24,7 @@ updated: 2021-02-20
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-15" updated="2021-01-14" %}</div>
 - {% include book/book_588.html %} {% comment %} 一生忘れない読書 {% endcomment %}
 

@@ -14,7 +14,7 @@ updated: 2020-12-10
 </ul>
 
 * * *
-## <a name="helloworld">ハローワールド</a>
+## <a name="helloworld">ハローワールド</a><a href="#helloworld">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-10" updated="2020-12-10" %}</div>
 `print`を使います。
 
@@ -62,7 +62,7 @@ Hello, World
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="comment">コメント</a>
+## <a name="comment">コメント</a><a href="#comment">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-10" updated="2020-12-10" %}</div>
 ### 行コメント
 

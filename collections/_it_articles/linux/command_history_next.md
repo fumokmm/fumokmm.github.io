@@ -15,7 +15,7 @@ updated: 2021-02-26
 </ul>
 
 * * *
-## <a name="introduction">はじめに</a>
+## <a name="introduction">はじめに</a><a href="#introduction">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-26" updated="2021-02-26" %}</div>
 今まで、`Ctrl + R`でコマンド履歴を戻りすぎた時、先に進む方法が分からず、  
 仕方なく`Ctrl + C`で一旦終了させてから再度`Ctrl + R`でやり直すという方法を取っていましたが、
@@ -32,7 +32,7 @@ updated: 2021-02-26
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="setting">設定</a>
+## <a name="setting">設定</a><a href="#setting">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-26" updated="2021-02-26" %}</div>
 ### 設定を確認（設定前）
 <div class="code-box-output no-title">
@@ -93,7 +93,7 @@ isig icanon iexten echo echoe echok -echonl -noflsh -xcase -tostop -echoprt echo
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="side-street">横道</a>
+## <a name="side-street">横道</a><a href="#side-street">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-26" updated="2021-02-26" %}</div>
 - [(ITmedia) 「Ctrl」＋「S」でキー入力が受け付けられなくなる](https://www.itmedia.co.jp/help/tips/linux/l0612.html)
   - 「Ctrl」＋「S」でスクリーンロック
@@ -102,7 +102,7 @@ isig icanon iexten echo echoe echok -echonl -noflsh -xcase -tostop -echoprt echo
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-26" updated="2021-02-26" %}</div>
 - [(SOFTELメモ Developer's blog) ctrl+rで進みすぎたとき反対向きに進むにはctrl+s](https://www.softel.co.jp/blogs/tech/archives/5616)
 - [(Qiita) Bashでコマンド履歴から検索して実行する](https://qiita.com/quwa/items/3a23c9dbe510e3e0f58e)

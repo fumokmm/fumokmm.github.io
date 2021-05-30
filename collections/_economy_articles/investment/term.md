@@ -14,7 +14,7 @@ updated: 2021-05-29
 </ul>
 
 * * *
-## <a name="さ">さ</a>
+## <a name="さ">さ</a><a href="#さ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-05-29" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="economy" title="指値" %}
@@ -33,7 +33,7 @@ updated: 2021-05-29
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="な">な</a>
+## <a name="な">な</a><a href="#な">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-05-29" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="economy" title="成行" %}
@@ -54,7 +54,7 @@ updated: 2021-05-29
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-05-29" %}</div>
 - [(おてがる投資のすすめ) 株の指値、成行（成り行き）、はどっちを使えばいい？違いと使い分け方を徹底解説](https://lightningshift.com/market-limit-order/)
 

@@ -19,7 +19,7 @@ updated: 2021-05-19
 </ul>
 
 * * *
-## <a name="はじめに">はじめに</a>
+## <a name="はじめに">はじめに</a><a href="#はじめに">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-05-04" updated="2021-05-19" %}</div>
 VBAプロジェクトのソースって、他のJavaやCなどのプログラミング言語と違って、ExcelやAccessでVisual Studio Editor(VBE)をわざわざ開かないと閲覧・編集できないし、バージョン管理もしづらいですよね。  
 そんなとき、ソースを右クリックし「ファイルのエクスポート」をすることができますが、これがファイル単位でしか行えないから非常に不便、みなさんそんな風に感じませんか？そこで、この記事では、そんな悩み多きVBAプロジェクトで、全ソースを一括でエクスポートする方法をご紹介します。
@@ -29,14 +29,14 @@ VBAプロジェクトのソースって、他のJavaやCなどのプログラミ
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="想定読者">想定読者</a>
+## <a name="想定読者">想定読者</a><a href="#想定読者">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-05-04" updated="2021-05-19" %}</div>
 この記事はある程度VBAのスキルがある読者を想定しています。少なくてもVBAプロジェクトのソースをエクスポートして、ソース管理したいな・・・と思えるくらいの人を想定しています。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="準備">準備</a>
+## <a name="準備">準備</a><a href="#準備">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-05-04" updated="2021-05-19" %}</div>
 まずはVBAプロジェクトの下準備が必要です。具体的には以下の参照設定にチェックが付けられているか確認して下さい。
 - Microsoft Visual Basic for Applications Extensibility 5.3
@@ -55,7 +55,7 @@ VBAプロジェクトのソースって、他のJavaやCなどのプログラミ
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="方法">方法</a>
+## <a name="方法">方法</a><a href="#方法">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-05-04" updated="2021-05-19" %}</div>
 - １．まずVBEを開きます。(`Alt + F11`)
 - ２．標準モジュールで新規モジュールを作成します。例では`ExportModule`という名前で作成しました。(名前は任意)
@@ -144,7 +144,7 @@ End Sub
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="信頼性に欠けるというエラーが出た場合は？">信頼性に欠けるというエラーが出た場合は？</a>
+## <a name="信頼性に欠けるというエラーが出た場合は？">信頼性に欠けるというエラーが出た場合は？</a><a href="#信頼性に欠けるというエラーが出た場合は？">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-05-04" updated="2021-05-19" %}</div>
 実行時に「信頼性に欠ける」というエラーが出た場合、「開発者向けのマクロ設定」の「VBA プロジェクト オブジェクト モデルへのアクセスを信頼する」のチェックボックスにチェックを付けてから実行してみて下さい。
 
@@ -157,14 +157,14 @@ End Sub
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="まとめ">まとめ</a>
+## <a name="まとめ">まとめ</a><a href="#まとめ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-05-04" updated="2021-05-19" %}</div>
 ここではVBAプロジェクトで、全ソースを一括でエクスポートする方法をご紹介しました。 アドインにするなどすればもっと便利にできると思いますが、サクっと一括エクスポートできる環境を整えたい場合には、ぜひ今回ご紹介した方法を利用してみて下さいね！
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-05-04" updated="2021-05-19" %}</div>
 ### 元記事
 - [(No Programming, No Life) 【VBA】VBAプロジェクトの全ソースを一括エクスポートする](https://npnl.hatenablog.jp/entry/2020/05/04/185054)

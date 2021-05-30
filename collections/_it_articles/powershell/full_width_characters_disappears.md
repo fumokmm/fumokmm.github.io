@@ -16,7 +16,7 @@ updated: 2021-05-20
 </ul>
 
 * * *
-## <a name="動作確認バージョン">動作確認バージョン</a>
+## <a name="動作確認バージョン">動作確認バージョン</a><a href="#動作確認バージョン">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-20" updated="2021-05-20" %}</div>
 ### Windows
 Microsoft Windows  
@@ -43,7 +43,7 @@ SerializationVersion           1.1.0.1
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="事象">事象</a>
+## <a name="事象">事象</a><a href="#事象">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-20" updated="2021-05-20" %}</div>
 PowerShellで矢印などの全角文字を含むパスをドラッグ＆ドロップすると、矢印部分が失われてしまうという事象が発生しています。  
 以下イメージを参照して下さい。
@@ -55,7 +55,7 @@ PowerShellで矢印などの全角文字を含むパスをドラッグ＆ドロ�
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="原因と対策">原因と対策</a>
+## <a name="原因と対策">原因と対策</a><a href="#原因と対策">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-20" updated="2021-05-20" %}</div>
 ### 原因
 > 本事象は、Windows の Powershell の問題として認識しており、次期バージョンにて問題が修正されるよう障害情報には登録をしております。  
@@ -86,7 +86,7 @@ PowerShellで矢印などの全角文字を含むパスをドラッグ＆ドロ�
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a>
+## <a name="参考">参考</a><a href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-20" updated="2021-05-20" %}</div>
 ### 関連ツイート
 - [PowerShellのコンソールに矢印入りのパスをドロップすると消えちゃう問題、なんとかならんかな…。](https://twitter.com/fumokmm/status/1394988356900118531)

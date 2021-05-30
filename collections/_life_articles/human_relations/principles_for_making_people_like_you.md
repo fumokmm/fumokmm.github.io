@@ -13,7 +13,7 @@ updated: 2021-05-17
 </ul>
 
 * * *
-## <a name="six-principles-of-peoples-like">人に好かれる6原則</a>
+## <a name="six-principles-of-peoples-like">人に好かれる6原則</a><a href="#six-principles-of-peoples-like">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-17" updated="2021-05-17" %}</div>
 ### 1. 誠実な関心を寄せる
 - 純粋に相手に興味があって、会えたら喜んで一方的に好意を寄せてくる下心がない人が愛される
@@ -45,7 +45,7 @@ updated: 2021-05-17
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-17" updated="2021-05-17" %}</div>
 ### 関連メモ
 - [人を動かす原則について]({% link _life_articles/human_relations/principles_for_motivating_people.md %})

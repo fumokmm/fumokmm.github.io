@@ -18,7 +18,7 @@ updated: 2021-01-29
 </ul>
 
 * * *
-## <a name="add">追加(sys.sp_addextendedproperty)</a>
+## <a name="add">追加(sys.sp_addextendedproperty)</a><a href="#add">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 テーブルや列に論理名を追加するには、sys.sp_addextendedpropertyを使います。
 
@@ -91,7 +91,7 @@ EXEC sys.sp_<em>add</em>extendedproperty @name=N'MS_Description'
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="update">修正(sys.sp_updateextendedproperty)</a>
+## <a name="update">修正(sys.sp_updateextendedproperty)</a><a href="#update">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 テーブルや列に論理名を修正するには、sys.sp_updateextendedpropertyを使います。
 
@@ -140,7 +140,7 @@ EXEC sys.sp_<em>update</em>extendedproperty @name=N'MS_Description' <em class="c
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="drop">削除(sys.sp_dropextendedproperty)</a>
+## <a name="drop">削除(sys.sp_dropextendedproperty)</a><a href="#drop">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 テーブルや列に論理名を削除するには、sys.sp_dropextendedpropertyを使います。  
 追加、修正と違うのは、`@value`が指定できないことくらいです。
@@ -186,7 +186,7 @@ EXEC sys.sp_<em>drop</em>extendedproperty @name=N'MS_Description' <em class="com
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="confirmation">確認方法</a>
+## <a name="confirmation">確認方法</a><a href="#confirmation">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 ### SQLで確認する場合
 
@@ -233,7 +233,7 @@ order by
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="supplement">補足</a>
+## <a name="supplement">補足</a><a href="#supplement">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 今回ご紹介したSQL内に出てくる文字列部分の `N'xxx'` となっているのはUnicode文字列ですよという意味です。  
 古い内容ですが、[ここ](https://oshiete.goo.ne.jp/qa/280266.html)などの話が参考になります。
@@ -241,7 +241,7 @@ order by
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 - [(PROJECT GROUP) テーブルの列にコメントを追加・修正・削除・取得する](https://www.projectgroup.info/tips/SQLServer/SQL/SQL000035.html)
 - [(SQL Docs) sp_addextendedproperty (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-addextendedproperty-transact-sql?view=sql-server-ver15)

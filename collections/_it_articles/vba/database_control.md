@@ -14,7 +14,7 @@ updated: 2021-02-09
 </ul>
 
 * * *
-## <a name="read">データの読み取り</a>
+## <a name="read">データの読み取り</a><a href="#read">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-08" updated="2021-02-09" %}</div>
 ADODBを利用してデータの読み取りを行うサンプルです。  
 以下の参照設定が必要です。
@@ -69,7 +69,7 @@ p_conn.Close
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="related">関連メモ</a>
+## <a name="related">関連メモ</a><a href="#related">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-09" updated="2021-02-09" %}</div>
 ### 他言語でのデータベース操作
 - [Javaでデータベース操作]({% link _it_articles/java/database_control.md %})
