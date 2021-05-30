@@ -2,7 +2,7 @@
 layout: default_layout
 title: 人生についてのメモ
 created: 2021-01-20
-updated: 2021-05-25
+updated: 2021-05-30
 ---
 ## こちらは断捨離についてのメモになります
 <table>
