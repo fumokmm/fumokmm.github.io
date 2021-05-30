@@ -1,9 +1,9 @@
 ---
-title: 人生の目的について
+title: 目的について
 created: 2021-01-26
-updated: 2021-03-26
+updated: 2021-05-30
 ---
-こちらは人生の目的についてのメモになります。
+こちらは目的についてのメモになります。
 
 <ul>
     {% assign list = site.life_articles | where: 'category_id', 'life'

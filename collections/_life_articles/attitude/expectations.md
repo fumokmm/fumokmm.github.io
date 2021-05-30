@@ -2,20 +2,20 @@
 title: 期待について
 display_order: 10
 created: 2021-01-20
-updated: 2021-05-12
+updated: 2021-05-30
 ---
 
 ## <a name="index">目次</a>
 
 <ul id="index_ul">
-<li><a href="#letting-go-of-expectations">期待を捨てる</a></li>
-<li><a href="#how-to-find-your-hidden-expectations">自分の隠れた期待の見つけ方</a></li>
+<li><a href="#期待を捨てる">期待を捨てる</a></li>
+<li><a href="#自分の隠れた期待の見つけ方">自分の隠れた期待の見つけ方</a></li>
 <li><a href="#reference">参考</a></li>
 </ul>
 
 * * *
-## <a name="letting-go-of-expectations">期待を捨てる</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-01-20" updated="2021-01-20" %}</div>
+## <a name="期待を捨てる">期待を捨てる</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-01-20" updated="2021-05-30" %}</div>
 > 何も期待しないとき、あなたは今という瞬間を生きられる。 未来への不安も過去の拒絶もなくシンプルに訪れた状況を歓迎できる。  
 > そしてすべてを受け容れるとは、仕方なく妥協するという意味ではない。引き受けて責任を取るという意味だ。  
 > 覚えておいて欲しい。自分が権利と責任を持っているものは、いつでも変えられる。  
@@ -27,11 +27,12 @@ updated: 2021-05-12
 
 - 最後のエピクテトスの言葉がすべてをうまくまとめている。
 - 今に責任を持って生きていく態度を持てば世界は一変する。
+- 思考パターン的には[無意識のパターンの「自分原因型」]({% link _life_articles/consciousness_and_unconsciousness/unconscious_patterns.md %}#現実の責任者は誰か - 「他者原因型」vs「自分原因型」)で生きましょうということかな。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="how-to-find-your-hidden-expectations">自分の隠れた期待の見つけ方</a>
+## <a name="自分の隠れた期待の見つけ方">自分の隠れた期待の見つけ方</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-12" updated="2021-05-12" %}</div>
 ### 1. まず、人生のうまくいっていない部分を思い起こして紙に書き出す
 - 期待していたことをできるかぎり詳しく書き出す。
