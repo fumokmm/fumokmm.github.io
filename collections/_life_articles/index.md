@@ -38,7 +38,7 @@ updated: 2021-05-30
     {% endfor %}
 </table>
 
-## こちらは人生の目的についてのメモになります
+## こちらは目的についてのメモになります
 <table>
     {% assign sub_categories = site.data.life_sub_category | where: 'sub_category_group', 'purpose'
                                                            | sort: 'sub_category_order' %}
