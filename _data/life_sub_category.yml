@@ -13,11 +13,11 @@
   description: 態度についてのメモ
 
 - sub_category_id: purpose
-  sub_category_label: 人生の目的について
+  sub_category_label: 目的について
   link: /life/purpose/
   sub_category_group: purpose
   sub_category_order: purpose01
-  description: 人生の目的についてのメモ
+  description: 目的についてのメモ
 
 - sub_category_id: failure
   sub_category_label: 失敗について
