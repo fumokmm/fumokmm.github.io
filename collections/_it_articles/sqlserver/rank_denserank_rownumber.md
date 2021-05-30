@@ -16,7 +16,7 @@ updated: 2021-02-15
 </ul>
 
 * * *
-## <a name="behavior">RANKとDENSE_RANKとROW_NUMBERの振る舞い</a>
+## <a name="behavior">RANKとDENSE_RANKとROW_NUMBERの振る舞い</a><a href="#behavior">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-15" updated="2021-02-15" %}</div>
 RANKとDENSE_RANKとROW_NUMBERはそれぞれ似ているけどちょっとだけ違うので違いをメモしておきます。
 
@@ -135,7 +135,7 @@ FROM [dbo].[User]
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="partition-by">PARTITION BY句で区切って順位付けする</a>
+## <a name="partition-by">PARTITION BY句で区切って順位付けする</a><a href="#partition-by">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-15" updated="2021-02-15" %}</div>
 [RANKとDENSE_RANKとROW_NUMBERの振る舞い](#behavior)で使ったテーブルをちょっと加工して、  
 以下のようなデータを持つテーブル`User`を準備します。
@@ -335,7 +335,7 @@ ORDER BY [Class], [Score]
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-15" updated="2021-02-15" %}</div>
 - [集計関数（RANK,DENSE_RANK,ROW_NUMBER）の結果の違い](https://www.projectgroup.info/tips/SQLServer/MSSQL_00000044.html)
 - [(Qiita) 分析関数（ウインドウ関数）をわかりやすく説明してみた](https://qiita.com/tlokweng/items/fc13dc30cc1aa28231c5)

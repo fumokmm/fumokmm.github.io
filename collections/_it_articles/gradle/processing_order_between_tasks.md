@@ -17,7 +17,7 @@ updated: 2021-05-08
 </ul>
 
 * * *
-## <a name="depends-on">dependsOn</a>
+## <a name="depends-on">dependsOn</a><a href="#depends-on">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-08" updated="2021-05-08" %}</div>
 ### dependsOnとは
 - `dependsOn`はタスクに定義するもので、*このタスクは他のタスクが依存してますよ～*というのを定義してあげるものです。
@@ -44,7 +44,7 @@ taskA.dependsOn(taskB, taskC, taskD, ...)
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="must-run-after">mustRunAfter</a>
+## <a name="must-run-after">mustRunAfter</a><a href="#must-run-after">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-08" updated="2021-05-08" %}</div>
 ### mustRunAfterとは
 - [dependsOn](#depends-on)でガッチガチにタスク間の依存関係を定義していけば実行順の制御はできるのですが
@@ -75,7 +75,7 @@ $ gradle taskA taskB
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参照</a>
+## <a name="reference">参照</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-08" updated="2021-05-08" %}</div>
 - [(Qiita) Gradle のタスク定義のあれこれ](https://qiita.com/opengl-8080/items/0a192b62ee87d8ac7578)
 - [(日々常々) Gradleのタスクは順番ちゃんとしよう](https://irof.hateblo.jp/entry/2019/12/13/172428)

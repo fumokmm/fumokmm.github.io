@@ -142,7 +142,7 @@ task makeArticles() {
             // 通常のBody (チャプターグループなし)
             def doWriteBodyNormal = { writer, chapter_no, chap ->
                 writer << '* * *' << '\n'
-                writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
+                writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a><a href=\"#${chap.frontMatter.chapter_id}\">§</a>" << '\n'
                 writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
                 writer << chap.body << '\n'
                 writer << "{% include goto_pagetop.html %}" << '\n'
@@ -152,10 +152,10 @@ task makeArticles() {
             // Body (チャプターグループあり)
             def doWriteBodyChapterGroup = { writer, chapter_no, chap ->
                 if (chap.frontMatter.containsKey('chapter_group_label')) {
-                    writer << "## <a name=\"${chap.frontMatter.chapter_group}\">${chap.frontMatter.chapter_group_label}</a>" << '\n'
+                    writer << "## <a name=\"${chap.frontMatter.chapter_group}\">${chap.frontMatter.chapter_group_label}</a><a href=\"#${chap.frontMatter.chapter_group}\">§</a>" << '\n'
                 } else {
                     writer << '* * *' << '\n'
-                    writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a>" << '\n'
+                    writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a><a href=\"#${chap.frontMatter.chapter_id}\">§</a>" << '\n'
                     writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
                     writer << chap.body << '\n'
                     writer << "{% include goto_pagetop.html %}" << '\n'

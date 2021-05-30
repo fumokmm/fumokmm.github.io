@@ -20,7 +20,7 @@ updated: 2021-04-26
 </ul>
 
 * * *
-## <a name="index">INDEX</a>
+## <a name="index">INDEX</a><a href="#index">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-03" updated="2021-02-15" %}</div>
 インデックス関連
 
@@ -53,7 +53,7 @@ CREATE <em>UNIQUE</em> INDEX &lt;インデックス名&gt; ON &lt;テーブル�
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="login">LOGIN</a>
+## <a name="login">LOGIN</a><a href="#login">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-26" updated="2021-04-26" %}</div>
 ログイン関連のメモです。
 
@@ -76,7 +76,7 @@ GO
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="user">USER</a>
+## <a name="user">USER</a><a href="#user">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-26" updated="2021-04-26" %}</div>
 ユーザー関連のメモです。
 
@@ -136,7 +136,7 @@ GO
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="add-column">列追加</a>
+## <a name="add-column">列追加</a><a href="#add-column">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-15" updated="2021-02-15" %}</div>
 テーブルへ列を追加するALTER文です。
 
@@ -163,7 +163,7 @@ ALTER TABLE <em>dbo.[User]</em> ADD <em>Score</em> <em>INT NOT NULL DEFAULT 0</e
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="alter-column">列変更</a>
+## <a name="alter-column">列変更</a><a href="#alter-column">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-22" updated="2021-04-22" %}</div>
 テーブルの列を変更するALTER文です。
 
@@ -189,7 +189,7 @@ ALTER TABLE <em>dbo.[User]</em> ALTER COLUMN <em>Score</em> <em>INT NOT NULL DEF
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="drop-column">列削除</a>
+## <a name="drop-column">列削除</a><a href="#drop-column">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-28" updated="2021-04-22" %}</div>
 テーブルから列を削除するALTER文です。
 
@@ -219,7 +219,7 @@ ALTER TABLE <em>M_USER</em> DROP COLUMN <em>EMAIL_ADDRESS</em>;
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="alter-schema">スキーマ</a>
+## <a name="alter-schema">スキーマ</a><a href="#alter-schema">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-06" updated="2021-04-22" %}</div>
 スキーマ関係のALTER文です。
 
@@ -245,7 +245,7 @@ ALTER SCHEMA <em>dbo</em> TRANSFER <em>newschema</em>.M_USER;
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-06" updated="2021-04-26" %}</div>
 - [(iPentec) テーブルのスキーマを変更する - SQL Server Tips](https://www.ipentec.com/document/sql-server-change-table-scheme)
 - [(Microsoft \| Docs) ALTER TABLE (Transact-SQL)](https://docs.microsoft.com/ja-jp/sql/t-sql/statements/alter-table-transact-sql?view=sql-server-ver15)

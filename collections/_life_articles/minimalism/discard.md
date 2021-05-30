@@ -13,7 +13,7 @@ updated: 2021-01-20
 </ul>
 
 * * *
-## <a name="stop">やめてみる</a>
+## <a name="stop">やめてみる</a><a href="#stop">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-20" updated="2021-01-20" %}</div>
 - やめてみることを通して、強制的に、しかも無理なく習慣を変えていくスタイルを確立できる。
 - ゴミ箱を減らしてみると、ゴミを溜め込まなくなる。ゴミを捨てる場所がなくなるから、すぐに処分しなきゃならなくなるから。それにちょこまか動くことになって軽い運動にもなる。
@@ -23,7 +23,7 @@ updated: 2021-01-20
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-20" updated="2021-01-20" %}</div>
 - {% include book/book_563.html %} {% comment %} やめたみた。 {% endcomment %}
 

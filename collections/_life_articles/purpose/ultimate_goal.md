@@ -13,7 +13,7 @@ updated: 2021-02-20
 </ul>
 
 * * *
-## <a name="ultimate-goal">最終目的</a>
+## <a name="ultimate-goal">最終目的</a><a href="#ultimate-goal">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-27" updated="2021-02-20" %}</div>
 こんな寓話がある。  
 > <b>釣り人の寓話</b>  
@@ -40,7 +40,7 @@ updated: 2021-02-20
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-27" updated="2021-01-27" %}</div>
 - {% include book/book_46.html %} {% comment %} なぜ、この人と話をすると楽になるのか {% endcomment %}
 

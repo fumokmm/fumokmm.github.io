@@ -15,7 +15,7 @@ updated: 2021-02-16
 </ul>
 
 * * *
-## <a name="quickly">手っ取り早く複数のキーを指定する</a>
+## <a name="quickly">手っ取り早く複数のキーを指定する</a><a href="#quickly">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2009-01-16" updated="2021-02-16" %}</div>
 `java.util.Map`のキーとして複数のキーを手っ取り早く指定するには、Stringが格納された`java.util.ArrayList<String>`あたりをキーにするとよいです。  
 これは、`java.util.ArrayList`はインスタンスが異なっても、格納されている要素が同じ場合は適切なハッシュコード`#hashCode()`と`#equals()`による同一性が保証されるためです。  
@@ -59,7 +59,7 @@ assert result == null;
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="caution">注意点</a>
+## <a name="caution">注意点</a><a href="#caution">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2009-01-16" updated="2021-02-16" %}</div>
 [ここ](https://sleepy-yoshi.hatenablog.com/entry/20080123/p1)にも書いてありますが、`java.util.TreeMap`の場合、キーとして指定できる値が`java.lang.Comparable`インタフェースを実装しているインスタンスを指定する必要があり、  
 内部では`#compareTo()`を利用して、同一性を判定しています。(`#compareTo()`が0を返すと*同じインスタンス*と判定します。それ以外だと*違うインスタンス*と判定します。)  
@@ -71,7 +71,7 @@ assert result == null;
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a>
+## <a name="reference">参考</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2009-01-16" updated="2021-02-16" %}</div>
 - [(シリコンの谷のゾンビ) TreeMapのキーに注意](https://sleepy-yoshi.hatenablog.com/entry/20080123/p1)
 

@@ -12,7 +12,7 @@ updated: 2021-05-13
 </ul>
 
 * * *
-## <a name="rectangle-selection">矩形選択</a>
+## <a name="rectangle-selection">矩形選択</a><a href="#rectangle-selection">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-13" updated="2021-05-13" %}</div>
 - `Alt + マウスで選択`。
 

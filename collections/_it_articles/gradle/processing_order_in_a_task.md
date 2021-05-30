@@ -16,14 +16,14 @@ Gradleの処理順序は難しい…。
 </ul>
 
 * * *
-## <a name="operating-environment">動作環境</a>
+## <a name="operating-environment">動作環境</a><a href="#operating-environment">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-08" updated="2021-05-08" %}</div>
 `WSL`上の`Ubuntu 20.04.1 LTS`にて、`Gradle 7.0`で動作確認しています。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="build-life-cycle">ビルドライフサイクル</a>
+## <a name="build-life-cycle">ビルドライフサイクル</a><a href="#build-life-cycle">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-08" updated="2021-05-08" %}</div>
 Gradleの実行は大きく３つのフェーズに分かれています。
 スクリプト中のどこに記述するかによって、どのフェーズで実行されるかが異なるので注意が必要です。
@@ -53,7 +53,7 @@ Gradleの実行は大きく３つのフェーズに分かれています。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="processing-order">処理順序</a>
+## <a name="processing-order">処理順序</a><a href="#processing-order">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-08" updated="2021-05-08" %}</div>
 ここでは、サンプルのビルドスクリプトで、[ビルドライフサイクル](#build-life-cycle)で言うところの`設定フェーズ`と`実行フェーズ`の処理順序を見て行きます。  
 
@@ -136,7 +136,7 @@ BUILD SUCCESSFUL in 659ms
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参照</a>
+## <a name="reference">参照</a><a href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-08" updated="2021-05-08" %}</div>
 - [(Qiita) Gradle のタスク定義のあれこれ](https://qiita.com/opengl-8080/items/0a192b62ee87d8ac7578)
 
