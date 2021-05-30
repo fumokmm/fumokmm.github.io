@@ -6,7 +6,7 @@ updated: 2020-12-29
 ---
 ここではWindowsのちょっとしたTipsをまとめておきます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#make-repeated-character-string">手っ取り早く繰り返し文字を作る方法</a></li>

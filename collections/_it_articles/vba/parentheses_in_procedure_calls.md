@@ -6,7 +6,7 @@ updated: 2021-04-07
 ---
 VBAでプロシージャ呼び出し時、括弧を付けなければいけなかったり、付けなくても大丈夫だったりと分かりづらいのでまとめました。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#procedure-calls">プロシージャ呼び出し</a></li>

@@ -6,7 +6,7 @@ updated: 2021-03-10
 ---
 ここではRubyのファイルI/Oについて簡単にまとめておきます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#canonical-file-path">ファイルパスを絶対パスに変換する</a></li>

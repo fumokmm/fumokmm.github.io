@@ -6,7 +6,7 @@ updated: 2021-05-17
 ---
 ここではExcel作業するときに知っていると作業効率の上がるキーコンビネーションをまとめておきます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#general">全般</a></li>

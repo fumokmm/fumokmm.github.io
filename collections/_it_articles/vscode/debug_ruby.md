@@ -8,7 +8,7 @@ updated: 2021-03-16
 {% assign link_to_it_ruby = link_to_it_ruby | remove: 'index' %}
 [Ruby]({{link_to_it_ruby}})をVisual Studio Codeで書く時にデバッグする方法のメモです。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#install-ruby-extension">Ruby用の拡張を導入する</a></li>

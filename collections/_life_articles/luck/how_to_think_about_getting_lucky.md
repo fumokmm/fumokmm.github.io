@@ -5,7 +5,7 @@ created: 2021-04-13
 updated: 2021-04-13
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#lucky-people-take-care-of-themselves">運の良い人は自分を大切にする</a></li>

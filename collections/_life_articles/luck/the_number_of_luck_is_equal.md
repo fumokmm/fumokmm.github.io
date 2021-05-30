@@ -5,7 +5,7 @@ created: 2021-04-05
 updated: 2021-04-13
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#luck-is-fair-to-everyone">運は誰にでも公平に降り注いでいる</a></li>

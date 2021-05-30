@@ -6,7 +6,7 @@ created: 2021-05-26
 updated: 2021-05-26
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#NULLのソート順">NULLのソート順</a></li>

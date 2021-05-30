@@ -6,7 +6,7 @@ updated: 2020-10-01
 ---
 ここではAccessのちょっとしたTipsをまとめておきます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#how-to-launch-access-in-developer-mode">Accessを開発者モードで起動する方法</a></li>

@@ -7,7 +7,7 @@ updated: 2021-02-15
 ---
 ※メモの中で出てくる人物名は仮名です。たまたま同性同名の方がいらっしゃいましたらごめんなさい。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#behavior">RANKとDENSE_RANKとROW_NUMBERの振る舞い</a></li>

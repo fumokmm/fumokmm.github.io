@@ -7,7 +7,7 @@ updated: 2020-12-16
 ---
 ここではSQL ServerのちょっとしたTipsをまとめておきます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#sql-for-backing-up-table">テーブルをバックアップするSQL</a></li>

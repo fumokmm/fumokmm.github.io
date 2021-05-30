@@ -11,7 +11,7 @@ Accessでテーブルリンクを作成する場合、ローカルPCに設定し
 以下に示すようなVBAコードでDSNなしのテーブルリンク設定をすることができます。  
 (SQL Serverへのテーブルリンクを想定しています)
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#recreate-table-link">テーブルリンク再作成</a></li>

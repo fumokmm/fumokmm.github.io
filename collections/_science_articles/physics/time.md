@@ -5,7 +5,7 @@ created: 2021-02-18
 updated: 2021-02-18
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#about">時間について</a></li>

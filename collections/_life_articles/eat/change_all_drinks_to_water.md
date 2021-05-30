@@ -5,7 +5,7 @@ created: 2021-03-13
 updated: 2021-03-13
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#rejuvenate">若返る</a></li>

@@ -7,7 +7,7 @@ updated: 2020-09-14
 ---
 PowerShellの実行ポリシーのについてメモです。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#execution-policy-list">実行ポリシー一覧</a></li>

@@ -5,7 +5,7 @@ created: 2021-01-27
 updated: 2021-02-20
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#ultimate-goal">最終目的</a></li>

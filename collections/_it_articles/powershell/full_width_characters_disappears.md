@@ -6,7 +6,7 @@ created: 2021-05-20
 updated: 2021-05-20
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#動作確認バージョン">動作確認バージョン</a></li>

@@ -12,7 +12,7 @@ updated: 2021-05-20
 よく使う(と思われる)機能をさらっと調べるためのリファレンスですので、  
 より詳細な機能を調べる際には[Git ユーザマニュアル (バージョン 1.5.3 以降用)](https://img.atwikiimg.com/www8.atwiki.jp/git_jp/pub/Documentation.ja/user-manual.html)や[Gitマニュアルのリファレンス](https://git-scm.com/docs)などをご参照下さい。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#config-and-initialization">設定と初期化(config)</a></li>

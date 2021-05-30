@@ -5,7 +5,7 @@ created: 2021-03-26
 updated: 2021-03-26
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#why-studying-just-for-the-sake-of-being-given-is-boring">与えられただけの勉強がなぜつまらないか</a></li>

@@ -5,7 +5,7 @@ created: 2020-09-09
 updated: 2021-02-20
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#read-from-ending">「おわりに」から読む</a></li>

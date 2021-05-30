@@ -96,7 +96,7 @@ task makeArticles() {
             // 通常の目次部分
             def doWriteIndexNormal = { writer ->
                 writer << topArticle.text << '\n'
-                writer << "## <a name=\"index\">目次</a>" << '\n'
+                writer << "## <a name=\"index\">目次</a><a href=\"#目次\">§</a>" << '\n'
                 writer << '\n'
                 writer << "<ul id=\"index_ul\">" << '\n'
                 chapterMap.each { chapter_no, chap ->
@@ -111,7 +111,7 @@ task makeArticles() {
                 def chapterGroups = chapterMap.groupBy{ chapter_no, chap -> chap.frontMatter.chapter_group }
 
                 writer << topArticle.text << '\n'
-                writer << "## <a name=\"index\">目次</a>" << '\n'
+                writer << "## <a name=\"index\">目次</a><a href=\"#目次\">§</a>" << '\n'
                 writer << '\n'
                 writer << '<div style="column-count: 2;">' << '\n'
                 writer << "    <ul id=\"index_ul\">" << '\n'

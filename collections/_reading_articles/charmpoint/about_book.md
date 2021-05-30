@@ -5,7 +5,7 @@ created: 2021-01-15
 updated: 2021-02-20
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#world-in-the-book">本の中の世界</a></li>

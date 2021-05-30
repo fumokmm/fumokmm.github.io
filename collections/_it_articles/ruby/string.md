@@ -6,7 +6,7 @@ updated: 2021-03-09
 ---
 ここではRubyの文字列操作について簡単にまとめておきます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#include">文字列にある文字列が含まれているかを調べる</a></li>

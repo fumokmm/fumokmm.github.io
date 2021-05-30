@@ -6,7 +6,7 @@ updated: 2021-02-09
 ---
 こちらはJavaでデータベース操作を行う方法のメモです。  
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#read">データの読み取り</a></li>

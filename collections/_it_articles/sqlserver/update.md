@@ -7,7 +7,7 @@ updated: 2021-04-06
 ---
 こちらは更新系(UPDATE)のSQLのメモになります。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#update-data-with-information-from-other-tables">他テーブルの情報でデータを更新する</a></li>

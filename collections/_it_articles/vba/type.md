@@ -6,7 +6,7 @@ updated: 2021-01-04
 ---
 こちらはVBAの型についてのメモです。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#types">利用可能な型</a></li>

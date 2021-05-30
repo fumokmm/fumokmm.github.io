@@ -5,7 +5,7 @@ created: 2021-03-04
 updated: 2021-03-04
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#does-not-occur">心配ごとの96%は実際には起こらない</a></li>

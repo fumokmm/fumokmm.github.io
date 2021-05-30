@@ -6,7 +6,7 @@ updated: 2021-02-16
 ---
 ここではSubversionのちょっとしたTipsをまとめておきます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#location-of-user-name-and-password-on-windows">ユーザ名とパスワードの記録場所 on Windows</a></li>

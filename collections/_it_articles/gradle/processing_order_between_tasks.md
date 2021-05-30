@@ -8,7 +8,7 @@ updated: 2021-05-08
 - 例えばJavaのビルドなどで、Jarを作る前にはコンパイルが終わっている前提であるとかです。
 - そんな時、Gradleでは[dependsOn](#depends-on)を使います。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#depends-on">dependsOn</a></li>

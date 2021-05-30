@@ -6,7 +6,7 @@ updated: 2021-05-29
 ---
 IT用語のひとこと説明です。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#C">C</a></li>

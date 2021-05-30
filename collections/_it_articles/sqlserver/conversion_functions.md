@@ -8,7 +8,7 @@ updated: 2021-01-07
 SQL ServerのSQL内でよく使う変関係関数をメモしておきます。  
 ここでは、`CAST`, `CONVERT`, `FORMAT`, `PARSE`について書いています。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#differences">4つの変換系関数の違い</a></li>

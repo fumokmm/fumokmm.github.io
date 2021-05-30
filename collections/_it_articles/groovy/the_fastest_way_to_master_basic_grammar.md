@@ -8,7 +8,7 @@ updated: 2021-04-08
 当初の掲載からだいぶ時間が経過していますので、古い内容のものもあると思いますのでご注意下さい。  
 順次アップデートしていく予定です。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#getting-started">はじめに</a></li>

@@ -5,7 +5,7 @@ created: 2021-05-25
 updated: 2021-05-30
 ---
 {% include book/book_611.html %} {% comment %} なぜかうまくいく人のすごい無意識 {% endcomment %}による分類では14パターンあります。
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#主体性 - 「主体行動型」vs「反映分析型」">主体性 - 「主体行動型」vs「反映分析型」</a></li>

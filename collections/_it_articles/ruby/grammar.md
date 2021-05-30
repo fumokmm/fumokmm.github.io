@@ -6,7 +6,7 @@ updated: 2021-03-19
 ---
 ここではRubyの文法を簡単にまとめておきます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <div style="column-count: 2;">
     <ul id="index_ul">

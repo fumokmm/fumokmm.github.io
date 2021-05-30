@@ -6,7 +6,7 @@ updated: 2020-12-10
 ---
 ここではPythonの文法を簡単にまとめておきます。特に記載のない場合、Python3を対象としています。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#helloworld">ハローワールド</a></li>

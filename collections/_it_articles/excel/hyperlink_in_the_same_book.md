@@ -9,7 +9,7 @@ updated: 2021-05-29
 Excelの同一ブック内でセルにハイパーリンクを張ってシート間をジャンプさせたいことがある。  
 普通だとハイパーリンクの挿入(`Ctrl + K`)とかで挿入すると思いますが、標準の`HYPERLINK関数`でも実現できます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#HYPERLINK関数">HYPERLINK関数</a></li>

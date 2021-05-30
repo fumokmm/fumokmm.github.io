@@ -6,7 +6,7 @@ updated: 2021-05-08
 ---
 Gradleの処理順序は難しい…。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#operating-environment">動作環境</a></li>

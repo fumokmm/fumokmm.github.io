@@ -7,7 +7,7 @@ updated: 2020-11-07
 ---
 複数取得される結果を結合して1列で取得したい場合があります。SQL Serverでそれを行うSQLについてメモしておきます。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#下準備">下準備</a></li>

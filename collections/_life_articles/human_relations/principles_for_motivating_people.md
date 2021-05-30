@@ -5,7 +5,7 @@ created: 2021-05-17
 updated: 2021-05-17
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#there-are-eight-things-that-people-want">人間が欲しいものは8つある</a></li>

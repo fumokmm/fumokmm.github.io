@@ -6,7 +6,7 @@ created: 2021-04-23
 updated: 2021-04-23
 ---
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#method">やり方</a></li>

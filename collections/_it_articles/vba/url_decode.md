@@ -6,7 +6,7 @@ updated: 2021-03-29
 ---
 こちらはVBAでURLデコードを行う方法についてのメモです。
 
-## <a name="index">目次</a>
+## <a name="index">目次</a><a href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#decoding-utf-8-percent-encoded-strings">UTF-8でパーセントエンコードされた文字列をデコードする(簡易版)</a></li>
