@@ -72,10 +72,61 @@ task makeArticles() {
                         }
                         line = reader.readLine()
                     }
+
+                    boolean isInnerTable = false
+                    def innerTableBody = '' << '' // as StringBuilder
+                    def escapeHtmlTag = {
+                        it.replaceAll(/&/, '&amp;')
+                          .replaceAll(/\</, '&lt;')
+                          .replaceAll(/\>/, '&gt;')
+                    }
+                    def convertToEmTag = { innerBody ->
+                        // {em:<種類>{ で開始して、 }em} で終わる部分を <em class="<種類>">値</em>に変換
+                        innerBody.replaceAll(/(?s)\{em:?(blue|comment|command)?\{(.*?)\}em\}/) { match, type, value ->
+                            "<em${type ? " class=\"${type}\"": ''}>${value}</em>"
+                        }
+                    }
                     while(true) {
                         line = reader.readLine()
                         if (line == null) break
-                        body << line << '\n'
+
+                        // 行を読み取ってbodyに追加
+                        // テーブル定義マクロ内かどうか
+                        if (! isInnerTable) {
+                            if (! line.startsWith('```')) {
+                                body << line << '\n'
+
+                            } else {
+                                isInnerTable = true
+                                // オプションを取得
+                                def opt = line.replaceFirst(/^```/, '').with {
+                                    if (it == '') [:]
+                                    else {
+                                        it.contains(':') ?
+                                            it.split(':').with { [type: it[0].trim(), title: it[-1].trim()] } :
+                                            [type: it]
+                                    }
+                                }
+                                body << "<div class=\"code-box${opt && opt.type ? '-' + opt.type : ''}${!opt || !opt.title ? ' no-title' : ''}\">" << '\n'
+                                if (opt && opt.title) {
+                                    body << "<div class=\"title\">${opt.title}</div>" << '\n'
+                                }
+                                body << '<pre>' << '\n'
+                                innerTableBody.length = 0
+                            }
+
+                        } else {
+                            if (! line.startsWith('```')) {
+                                innerTableBody << line << '\n'
+
+                            } else {
+                                isInnerTable = false
+                                // 関数合成でescapeHtmlTagしてから、convertToEmTagする
+                                body << (escapeHtmlTag >> convertToEmTag)(innerTableBody.toString())
+                                body << '''|</pre>
+                                           |</div>'''.stripMargin() << '\n'
+                            }
+                        }
                     }
                 }
 
