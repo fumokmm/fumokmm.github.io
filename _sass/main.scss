@@ -69,8 +69,9 @@ article.main {
     dl {
         // 用語
         dt {
-            font-size: 125%;
+            font-size: 150%;
             font-weight: bold;
+            color: rgb(75, 75, 255);
             // 用語へのリンク
             a[href^="/"] {
                 background: none;
