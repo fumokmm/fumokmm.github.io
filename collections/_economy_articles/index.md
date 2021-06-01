@@ -2,7 +2,7 @@
 layout: default_layout
 title: 経済についてのメモ
 created: 2021-05-29
-updated: 2021-05-29
+updated: 2021-06-01
 ---
 ## こちらは投資についてのメモになります
 <table>
