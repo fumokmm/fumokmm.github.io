@@ -59,6 +59,13 @@ defaults:
       path: "_it_articles/linux"
     values:
       sub_category_id: linux
+
+  # Liquid
+  - scope:
+      path: "_it_articles/liquid"
+    values:
+      sub_category_id: liquid
+
   - scope:
       path: "_it_articles/oracle"
     values:

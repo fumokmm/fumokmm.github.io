@@ -184,6 +184,26 @@ updated: 2021-05-31
     {% endfor %}
 </table>
 
+## こちらはテンプレート言語関連のメモになります
+
+<table>
+    {% assign template_languages = site.data.it_sub_category | where: 'sub_category_group', 'template_language'
+                                                             | sort: 'sub_category_order' %}
+    {% for template_language in template_languages %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', template_language.sub_category_id %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ template_language.link }}">{{ template_language.sub_category_label }}</a></td>
+        <td markdown="span">{{ template_language.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
 ## こちらはその他のメモになります
 
 <table>
