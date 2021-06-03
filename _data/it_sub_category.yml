@@ -73,6 +73,13 @@
   sub_category_order: operating_system01
   description: "[リーナス・ベネディクト・トーバルズ氏](https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%BC%E3%83%8A%E3%82%B9%E3%83%BB%E3%83%88%E3%83%BC%E3%83%90%E3%83%AB%E3%82%BA)（Linus Benedict Torvalds)によって開発されたOS、Linuxついてのメモ"
 
+- sub_category_id: liquid
+  sub_category_label: Liquid
+  link: /it/liquid/
+  sub_category_group: template_language
+  sub_category_order: 10
+  description: "Liquidは[Shopify](https://www.shopify.com/)作成の[Ruby](/it/ruby)で書かれたテンプレート言語です。Jekyllなどでも使われています。"
+
 # O
 - sub_category_id: oracle
   sub_category_label: Oracle
