@@ -65,6 +65,14 @@
   sub_category_order: 10
   description: プログラミング言語Javaについてのメモ
 
+# J
+- sub_category_id: julia
+  sub_category_label: Julia
+  link: /it/julia/
+  sub_category_group: programming_language
+  sub_category_order: 70
+  description: Juliaは、数値解析や計算科学に適している高レベルで高性能な動的プログラミング言語です。
+
 # L
 - sub_category_id: linux
   sub_category_label: Linux
