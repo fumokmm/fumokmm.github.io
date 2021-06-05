@@ -5,7 +5,7 @@ created: 2021-04-20
 updated: 2021-04-20
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#problem">お題</a></li>
@@ -13,7 +13,7 @@ updated: 2021-04-20
 </ul>
 
 * * *
-## <a name="problem">お題</a><a href="#problem">§</a>
+## <a name="problem">お題</a><a class="heading-anchor-permalink" href="#problem">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-20" updated="2021-04-20" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
@@ -30,7 +30,7 @@ updated: 2021-04-20
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="by_groovy">Groovyで解いてみた</a><a href="#by_groovy">§</a>
+## <a name="by_groovy">Groovyで解いてみた</a><a class="heading-anchor-permalink" href="#by_groovy">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-20" updated="2021-04-20" %}</div>
 再帰呼び出しで実装してみました。副作用起こしてるのであまりきれいではないですね。
 

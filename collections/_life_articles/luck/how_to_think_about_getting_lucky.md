@@ -5,7 +5,7 @@ created: 2021-04-13
 updated: 2021-04-13
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#lucky-people-take-care-of-themselves">運の良い人は自分を大切にする</a></li>
@@ -18,7 +18,7 @@ updated: 2021-04-13
 </ul>
 
 * * *
-## <a name="lucky-people-take-care-of-themselves">運の良い人は自分を大切にする</a><a href="#lucky-people-take-care-of-themselves">§</a>
+## <a name="lucky-people-take-care-of-themselves">運の良い人は自分を大切にする</a><a class="heading-anchor-permalink" href="#lucky-people-take-care-of-themselves">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-13" updated="2021-04-13" %}</div>
 - 美味しくて健康的な食事を摂り、綺麗な服を来て身なりを整えてやること。
 - 人は人を身なりで判断する。身なりを整えるだけで大切に扱われる可能性が増える。
@@ -26,7 +26,7 @@ updated: 2021-04-13
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="lucky-people-believe-they-are-lucky">運の良い人は自分は運がいいと思い込む</a><a href="#lucky-people-believe-they-are-lucky">§</a>
+## <a name="lucky-people-believe-they-are-lucky">運の良い人は自分は運がいいと思い込む</a><a class="heading-anchor-permalink" href="#lucky-people-believe-they-are-lucky">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-13" updated="2021-04-13" %}</div>
 - 自分は運の良い人思い込んでいる人は努力の余地が生まれるが、自分は運が悪いと思い込んでいる人にはその余地が生まれない。
   - 例えば、就職活動の最終面接に落ちたとき
@@ -43,7 +43,7 @@ updated: 2021-04-13
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="lucky-people-make-the-most-of-what-they-have">運の良い人は今の自分を活かす</a><a href="#lucky-people-make-the-most-of-what-they-have">§</a>
+## <a name="lucky-people-make-the-most-of-what-they-have">運の良い人は今の自分を活かす</a><a class="heading-anchor-permalink" href="#lucky-people-make-the-most-of-what-they-have">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-13" updated="2021-04-13" %}</div>
 - 先天的な欠点と思われるもの(背が低いとか)が本当に欠点となるかは誰にも分からない。
 - 運が良い人は今自分にあるものを最大限に活かすことを考えている。
@@ -52,7 +52,7 @@ updated: 2021-04-13
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="lucky-people-have-their-own-measure-of-happiness">運の良い人は自分なりの幸せのものさしを持つ</a><a href="#lucky-people-have-their-own-measure-of-happiness">§</a>
+## <a name="lucky-people-have-their-own-measure-of-happiness">運の良い人は自分なりの幸せのものさしを持つ</a><a class="heading-anchor-permalink" href="#lucky-people-have-their-own-measure-of-happiness">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-13" updated="2021-04-13" %}</div>
 - 他の人のことは気にせず、自分の尺度で行動する。
 - 幸せそうな人は常に気分よく過ごしている人で、そういう人は人を引き寄せる。
@@ -60,7 +60,7 @@ updated: 2021-04-13
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="lucky-people-are-considerate-of-others">運の良い人は他人を思いやる</a><a href="#lucky-people-are-considerate-of-others">§</a>
+## <a name="lucky-people-are-considerate-of-others">運の良い人は他人を思いやる</a><a class="heading-anchor-permalink" href="#lucky-people-are-considerate-of-others">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-13" updated="2021-04-13" %}</div>
 - 運が良くなる人は利他行動を取る人。
 - 運は人が運んでくることが多い。
@@ -71,7 +71,7 @@ updated: 2021-04-13
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="lucky-people-have-clear-goals-and-dreams">運の良い人は目標や夢を明確にする</a><a href="#lucky-people-have-clear-goals-and-dreams">§</a>
+## <a name="lucky-people-have-clear-goals-and-dreams">運の良い人は目標や夢を明確にする</a><a class="heading-anchor-permalink" href="#lucky-people-have-clear-goals-and-dreams">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-13" updated="2021-04-13" %}</div>
 - 運が良いことと、それをキャッチできるかは別問題。
   - 常に自分の目標や夢を明確にし、アンテナを張っておく。
@@ -81,7 +81,7 @@ updated: 2021-04-13
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-13" updated="2021-04-13" %}</div>
 ### 参考動画
 - [(YouTubeチャンネル) 本要約チャンネル](https://www.youtube.com/channel/UCEixleMT76xDzoiEb9ZA7XA)

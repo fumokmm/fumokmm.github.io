@@ -6,7 +6,7 @@ created: 2021-05-31
 updated: 2021-05-31
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#ファイル名を取得">ファイル名を取得</a></li>
@@ -14,7 +14,7 @@ updated: 2021-05-31
 </ul>
 
 * * *
-## <a name="ファイル名を取得">ファイル名を取得</a><a href="#ファイル名を取得">§</a>
+## <a name="ファイル名を取得">ファイル名を取得</a><a class="heading-anchor-permalink" href="#ファイル名を取得">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-31" updated="2021-05-31" %}</div>
 拡張子ありの場合は`GetFileName`を使います。拡張子なしの場合`GetFileNameWithoutExtension`を使います。
 
@@ -37,7 +37,7 @@ fileA
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a><a href="#参考">§</a>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-31" updated="2021-05-31" %}</div>
 - [(Qiita @Kosen-amaiさん) PowerShellメモ　パス関連操作](https://qiita.com/Kosen-amai/items/c7669e711d6b5743a840)
 

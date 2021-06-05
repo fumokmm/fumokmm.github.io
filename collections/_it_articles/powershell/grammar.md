@@ -6,7 +6,7 @@ created: 2021-05-16
 updated: 2021-05-28
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#basis">1. 基礎</a></li>
@@ -14,7 +14,7 @@ updated: 2021-05-28
 </ul>
 
 * * *
-## <a name="basis">1. 基礎</a><a href="#basis">§</a>
+## <a name="basis">1. 基礎</a><a class="heading-anchor-permalink" href="#basis">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
 ### コンソールに文字表示
 `Write-Host`コマンドレットを使用します。
@@ -129,7 +129,7 @@ PowerShellでは変数は頭に`$`を付けて宣言します。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-16" %}</div>
 - [(PowerShell Scripting Weblog) PowerShell基礎文法最速マスター](http://winscript.jp/powershell/202)
 - [(鷲ノ巣) PowerShell のスコープ完全に理解した](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)

@@ -7,7 +7,7 @@ updated: 2020-11-07
 ---
 複数取得される結果を結合して1列で取得したい場合があります。SQL Serverでそれを行うSQLについてメモしておきます。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#下準備">下準備</a></li>
@@ -20,7 +20,7 @@ updated: 2020-11-07
 </ul>
 
 * * *
-## <a name="下準備">下準備</a><a href="#下準備">§</a>
+## <a name="下準備">下準備</a><a class="heading-anchor-permalink" href="#下準備">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 こんなテーブルとデータがあったとします。
 
@@ -55,7 +55,7 @@ SELECT * FROM Table1 ORDER BY NO
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="さっそくやってみよう">さっそくやってみよう</a><a href="#さっそくやってみよう">§</a>
+## <a name="さっそくやってみよう">さっそくやってみよう</a><a class="heading-anchor-permalink" href="#さっそくやってみよう">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 さっそくやって行きましょう。SQL Serverでは、`FOR XML PATH`を使うことで実現することができます。
 
@@ -114,7 +114,7 @@ FROM
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="stuff">補足1 STUFF関数</a><a href="#stuff">§</a>
+## <a name="stuff">補足1 STUFF関数</a><a class="heading-anchor-permalink" href="#stuff">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 `STUFF関数`は、引数を4つ取る関数で、指定した文字列(第1引数)の、指定した位置(第2引数)から、指定した文字数(第3引数)分を、置換文字列(第4引数)に置き換える関数です。以下のような感じになります。
 
@@ -136,7 +136,7 @@ a**new**efg
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="補足2 SUBSTRING関数でもよい">補足2 SUBSTRING関数でもよい</a><a href="#補足2 SUBSTRING関数でもよい">§</a>
+## <a name="補足2 SUBSTRING関数でもよい">補足2 SUBSTRING関数でもよい</a><a class="heading-anchor-permalink" href="#補足2 SUBSTRING関数でもよい">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 先頭の`,`さえ除去できればいいので、以下のようにサブクエリにしてから、SUBSTRING関数を使っても可能ですね。
 
@@ -178,7 +178,7 @@ FROM
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="補足3 FOR XML PATH">補足3 FOR XML PATH</a><a href="#補足3 FOR XML PATH">§</a>
+## <a name="補足3 FOR XML PATH">補足3 FOR XML PATH</a><a class="heading-anchor-permalink" href="#補足3 FOR XML PATH">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 FOR XML PATHはSQLの後ろに付与して、XMLとして結果を取得するものです。  
 例えば以下のように全データを取得してみると…
@@ -365,14 +365,14 @@ SELECT
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="補足4 他のデータベースでは">補足4 他のデータベースでは</a><a href="#補足4 他のデータベースでは">§</a>
+## <a name="補足4 他のデータベースでは">補足4 他のデータベースでは</a><a class="heading-anchor-permalink" href="#補足4 他のデータベースでは">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 なお、MySQL(MariaDB) では、`GROUP_CONCAT関数`、Oracleでは`LISTAGG関数`をで同様の処理が可能とのことです。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 - [[SQL Server] 縦に並んだデータを横にカンマ区切りの列データで取得する方法](https://webbibouroku.com/Blog/Article/forxmlpath)
 - [(Microsoft Docs) FOR XML での PATH モードの使用](https://docs.microsoft.com/ja-jp/sql/relational-databases/xml/use-path-mode-with-for-xml?view=sql-server-ver15)

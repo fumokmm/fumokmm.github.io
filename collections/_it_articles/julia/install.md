@@ -7,7 +7,7 @@ updated: 2021-06-05
 {% capture link_to_it_powershell %}{% link _it_articles/powershell/index.md %}{% endcapture %}
 {% assign link_to_it_powershell = link_to_it_powershell | remove: 'index' %}
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#ダウンロード">ダウンロード</a></li>
@@ -17,14 +17,14 @@ updated: 2021-06-05
 </ul>
 
 * * *
-## <a name="ダウンロード">ダウンロード</a><a href="#ダウンロード">§</a>
+## <a name="ダウンロード">ダウンロード</a><a class="heading-anchor-permalink" href="#ダウンロード">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-05" updated="2021-06-05" %}</div>
 - [こちら](https://julialang.org/downloads/)から自分の環境に合わせてモジュールをダウンロードします。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="インストール">インストール</a><a href="#インストール">§</a>
+## <a name="インストール">インストール</a><a class="heading-anchor-permalink" href="#インストール">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-05" updated="2021-06-05" %}</div>
 - ダウンロードしてきたモジュールをインストールします。
 
@@ -47,7 +47,7 @@ updated: 2021-06-05
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="動作確認">動作確認</a><a href="#動作確認">§</a>
+## <a name="動作確認">動作確認</a><a class="heading-anchor-permalink" href="#動作確認">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-05" updated="2021-06-05" %}</div>
 - 先ほどのコンソールでも良いですが、[PowerShell]({{link_to_it_powershell}})を立ち上げて試してみました。
 
@@ -80,7 +80,7 @@ updated: 2021-06-05
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a><a href="#参考">§</a>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-05" updated="2021-06-05" %}</div>
 - [(Julia) 公式サイト](https://julialang.org/)
 - [(Julia) Getting Started](https://docs.julialang.org/en/v1/manual/getting-started/)

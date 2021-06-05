@@ -6,7 +6,7 @@ updated: 2021-02-09
 ---
 こちらはJavaでデータベース操作を行う方法のメモです。  
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#read">データの読み取り</a></li>
@@ -14,7 +14,7 @@ updated: 2021-02-09
 </ul>
 
 * * *
-## <a name="read">データの読み取り</a><a href="#read">§</a>
+## <a name="read">データの読み取り</a><a class="heading-anchor-permalink" href="#read">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-09" updated="2021-02-09" %}</div>
 JDBCを利用してデータの読み取りを行うサンプルです。  
 Javaの基本的な説明は端折っております。
@@ -66,7 +66,7 @@ class DBReadSample {
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="related">関連メモ</a><a href="#related">§</a>
+## <a name="related">関連メモ</a><a class="heading-anchor-permalink" href="#related">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-09" updated="2021-02-09" %}</div>
 ### 他言語でのデータベース操作
 - [VBAでデータベース操作]({% link _it_articles/vba/database_control.md %})

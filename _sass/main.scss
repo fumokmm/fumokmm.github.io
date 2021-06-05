@@ -27,6 +27,25 @@ strong {
     text-decoration: underline wavy;
 }
 
+// アンカーのパーマリンク(§)の表示非表示設定(通常は非表示)
+h1, h2, h3, h4, h5, h6 {
+    a.heading-anchor-permalink {
+        background: none;
+        color: #bbb;
+        padding-left: 5px;
+        padding-top: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        visibility: hidden;
+    }
+}
+// アンカーのパーマリンク(§)の表示非表示設定(ホバー時のみ表示)
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    a.heading-anchor-permalink {
+        visibility: visible;
+    }
+}
+
 // 記事内の…
 article.main {
     // アイコン https://iconarchive.com/
@@ -72,31 +91,27 @@ article.main {
             font-size: 150%;
             font-weight: bold;
             color: rgb(75, 75, 255);
-            // 用語へのリンク
-            a[href^="/"] {
+            // アンカーのパーマリンク(§)の表示非表示設定(通常は非表示)
+            a.heading-anchor-permalink {
                 background: none;
                 color: #bbb;
                 padding-left: 5px;
                 padding-top: 0px;
                 padding-right: 0px;
                 margin-left: 0px;
+                visibility: hidden;
             }
         }
+        // アンカーのパーマリンク(§)の表示非表示設定(ホバー時のみ表示)
+        dt:hover {
+            a.heading-anchor-permalink {
+                visibility: visible;
+            }
+        }
+
         // 用語に対する説明
         //dd {
         //}
-    }
-
-    // 見出し2
-    h2 {
-        a[href^="#"] {
-            background: none;
-            color: #bbb;
-            padding-left: 5px;
-            padding-top: 0px;
-            padding-right: 0px;
-            margin-left: 0px;
-        }
     }
 }
 

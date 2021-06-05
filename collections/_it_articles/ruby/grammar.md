@@ -6,7 +6,7 @@ updated: 2021-03-19
 ---
 ここではRubyの文法を簡単にまとめておきます。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <div style="column-count: 2;">
     <ul id="index_ul">
@@ -33,9 +33,9 @@ updated: 2021-03-19
     </ul>
 </div>
 
-## <a name="basic">基礎文法</a><a href="#basic">§</a>
+## <a name="basic">基礎文法</a><a class="heading-anchor-permalink" href="#basic">§</a>
 * * *
-## <a name="if">条件分岐 - If文</a><a href="#if">§</a>
+## <a name="if">条件分岐 - If文</a><a class="heading-anchor-permalink" href="#if">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-03-09" %}</div>
 <div class="code-box-syntax">
 <div class="title">If文</div>
@@ -63,15 +63,15 @@ updated: 2021-03-19
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="truthy">Truthy</a><a href="#truthy">§</a>
+## <a name="truthy">Truthy</a><a class="heading-anchor-permalink" href="#truthy">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-03" updated="2020-12-03" %}</div>
 Rubyでは、条件式などで偽とみなされる値(falsey value)を`nil`と`false`のみと定めていて、それ以外のオブジェクトはすべて真とみなされる値(truthy value)となります。
 
 {% include goto_pagetop.html %}
 
-## <a name="external-library">外部ライブラリの読み込み</a><a href="#external-library">§</a>
+## <a name="external-library">外部ライブラリの読み込み</a><a class="heading-anchor-permalink" href="#external-library">§</a>
 * * *
-## <a name="require">require</a><a href="#require">§</a>
+## <a name="require">require</a><a class="heading-anchor-permalink" href="#require">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-10" updated="2021-03-19" %}</div>
 `require`は外部ファイルを読み込む関数です。標準ライブラリや自分で書いたスクリプトなどを読み込みます。  
 [load](#load)とほぼ同じ機能を提供しますが、`require`は*一度読み込まれたスクリプトは再読み込みしない*点が異なっています。
@@ -104,7 +104,7 @@ require <em>'./path/to/file'</em>
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="load">load</a><a href="#load">§</a>
+## <a name="load">load</a><a class="heading-anchor-permalink" href="#load">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-18" updated="2021-03-19" %}</div>
 `load`は外部ファイルを読み込む関数です。標準ライブラリや自分で書いたスクリプトなどを読み込みます。  
 [require](#require)とほぼ同じ機能を提供しますが、`load`は*スクリプトを再読み込みする*点と、*拡張子の`.rb`が省略できない*ところが異なっています。  
@@ -138,7 +138,7 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="include">include</a><a href="#include">§</a>
+## <a name="include">include</a><a class="heading-anchor-permalink" href="#include">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-18" updated="2021-03-19" %}</div>
 あとで書きます。
 
@@ -155,7 +155,7 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="prepend">prepend</a><a href="#prepend">§</a>
+## <a name="prepend">prepend</a><a class="heading-anchor-permalink" href="#prepend">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-18" updated="2021-03-19" %}</div>
 あとで書きます。
 
@@ -172,7 +172,7 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="extend">extend</a><a href="#extend">§</a>
+## <a name="extend">extend</a><a class="heading-anchor-permalink" href="#extend">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-18" updated="2021-03-19" %}</div>
 あとで書きます。
 
@@ -187,9 +187,9 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 
 {% include goto_pagetop.html %}
 
-## <a name="reference-group">参照・参考</a><a href="#reference-group">§</a>
+## <a name="reference-group">参照・参考</a><a class="heading-anchor-permalink" href="#reference-group">§</a>
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-03" updated="2021-03-18" %}</div>
 - {% include book/book_373.html %} {% comment %} Ruby on Rails 5.0 初級①: 経路、アクション、テンプレート {% endcomment %}
 - [(Let'sプログラミング) if文](https://www.javadrive.jp/ruby/if/index1.html)

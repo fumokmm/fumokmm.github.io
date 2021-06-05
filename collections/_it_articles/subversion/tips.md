@@ -6,14 +6,14 @@ updated: 2021-02-16
 ---
 ここではSubversionのちょっとしたTipsをまとめておきます。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#location-of-user-name-and-password-on-windows">ユーザ名とパスワードの記録場所 on Windows</a></li>
 </ul>
 
 * * *
-## <a name="location-of-user-name-and-password-on-windows">ユーザ名とパスワードの記録場所 on Windows</a><a href="#location-of-user-name-and-password-on-windows">§</a>
+## <a name="location-of-user-name-and-password-on-windows">ユーザ名とパスワードの記録場所 on Windows</a><a class="heading-anchor-permalink" href="#location-of-user-name-and-password-on-windows">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2007-08-20" updated="2021-02-16" %}</div>
 当メモは2007-08-20に[投稿されたもの](https://npnl.hatenablog.jp/entry/20070820/1187575030)を加筆修正し、再掲したものです。
 

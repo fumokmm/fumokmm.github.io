@@ -5,7 +5,7 @@ created: 2021-02-20
 updated: 2021-02-21
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#introduction">はじめに</a></li>
@@ -18,7 +18,7 @@ updated: 2021-02-21
 </ul>
 
 * * *
-## <a name="introduction">はじめに</a><a href="#introduction">§</a>
+## <a name="introduction">はじめに</a><a class="heading-anchor-permalink" href="#introduction">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-21" updated="2021-02-21" %}</div>
 タイトルが大分過激ですが、こちらは{% include book/book_602.html %} {% comment %} DIE WITH ZERO　人生が豊かになりすぎる究極のルール {% endcomment %}のタイトルからのものとなります。  
 実は書籍は未読なのですが、[本要約チャンネル](https://www.youtube.com/channel/UCEixleMT76xDzoiEb9ZA7XA)の[こちら](https://www.youtube.com/watch?v=3mz46H3ul74)の動画で内容を知り、感銘を受けたのでメモしたものとなります。機会があれば書籍も読んでみたいと思います。
@@ -26,14 +26,14 @@ updated: 2021-02-21
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="the-ant-and-the-grasshopper">アリとキリギリスの教訓</a><a href="#the-ant-and-the-grasshopper">§</a>
+## <a name="the-ant-and-the-grasshopper">アリとキリギリスの教訓</a><a class="heading-anchor-permalink" href="#the-ant-and-the-grasshopper">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-20" updated="2021-02-20" %}</div>
 - キリギリスはもう少し節約するべきだったし、アリはもう今を楽しむべきだった。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="making-memories">人生でしなければならない一番大切な仕事は「思い出づくり」である</a><a href="#making-memories">§</a>
+## <a name="making-memories">人生でしなければならない一番大切な仕事は「思い出づくり」である</a><a class="heading-anchor-permalink" href="#making-memories">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-20" updated="2021-02-20" %}</div>
 ### 最後に残るのは結局「思い出」だけである
 - 最後に振り返ったときに、どれだけ充実した経験を送ったかが、人生の豊かさ測る物差しになる。
@@ -54,7 +54,7 @@ updated: 2021-02-21
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="stop-waste-of-time">時間の無駄使いはやめよう</a><a href="#stop-waste-of-time">§</a>
+## <a name="stop-waste-of-time">時間の無駄使いはやめよう</a><a class="heading-anchor-permalink" href="#stop-waste-of-time">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-20" updated="2021-02-20" %}</div>
 - 莫大な時間を費やして働いても、稼いだ金を全て使わずに死んでしまえば、人生の貴重な時間を無駄に働いて過ごしたことになる。
 - そしてその時間を取り戻す術はない。
@@ -75,7 +75,7 @@ updated: 2021-02-21
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="the-value-of-money-declines-with-age">お金の価値は加齢とともに低下する</a><a href="#the-value-of-money-declines-with-age">§</a>
+## <a name="the-value-of-money-declines-with-age">お金の価値は加齢とともに低下する</a><a class="heading-anchor-permalink" href="#the-value-of-money-declines-with-age">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-20" updated="2021-02-20" %}</div>
 - お金から価値を引き出す能力は年齢とともに低下していく。
   - 同じ10万円でも若いうちに使った方が価値がある。
@@ -88,7 +88,7 @@ updated: 2021-02-21
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="impossible-to-die-with-zero">ゼロで死ぬことは不可能</a><a href="#impossible-to-die-with-zero">§</a>
+## <a name="impossible-to-die-with-zero">ゼロで死ぬことは不可能</a><a class="heading-anchor-permalink" href="#impossible-to-die-with-zero">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-20" updated="2021-02-20" %}</div>
 - 実際には完璧にゼロで死ぬことは不可能だろう、だがそれで問題はない。
 - ゼロで死ぬという目標を持つこと自体が、あなたを正しい方向に導いてくれることになる。
@@ -102,7 +102,7 @@ updated: 2021-02-21
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-20" updated="2021-02-21" %}</div>
 ### 参照リンク
 - [(Wikipedia) フランコ・モディリアーニ](https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B3%E3%83%BB%E3%83%A2%E3%83%87%E3%82%A3%E3%83%AA%E3%82%A2%E3%83%BC%E3%83%8B)

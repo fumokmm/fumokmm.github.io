@@ -6,7 +6,7 @@ created: 2021-05-20
 updated: 2021-05-20
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#バージョン表示">バージョン表示</a></li>
@@ -14,7 +14,7 @@ updated: 2021-05-20
 </ul>
 
 * * *
-## <a name="バージョン表示">バージョン表示</a><a href="#バージョン表示">§</a>
+## <a name="バージョン表示">バージョン表示</a><a class="heading-anchor-permalink" href="#バージョン表示">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-20" updated="2021-05-20" %}</div>
 `$PSVersionTable`を参照します。結果は表形式で返ってきます。
 <div class="code-box-output no-title">
@@ -46,7 +46,7 @@ SerializationVersion           1.1.0.1
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a><a href="#参考">§</a>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-20" updated="2021-05-20" %}</div>
 - [(闘うサンデープログラマー) PowerShellのバージョンを調べる方法](https://windows-podcast.com/sundayprogrammer/archives/937#:~:text=%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E5%A0%B4%E5%90%88%E3%81%AF,%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%95%AA%E5%8F%B7%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82)
 

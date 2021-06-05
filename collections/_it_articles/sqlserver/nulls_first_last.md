@@ -6,7 +6,7 @@ created: 2021-05-26
 updated: 2021-05-26
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#NULLのソート順">NULLのソート順</a></li>
@@ -14,7 +14,7 @@ updated: 2021-05-26
 </ul>
 
 * * *
-## <a name="NULLのソート順">NULLのソート順</a><a href="#NULLのソート順">§</a>
+## <a name="NULLのソート順">NULLのソート順</a><a class="heading-anchor-permalink" href="#NULLのソート順">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-26" updated="2021-05-26" %}</div>
 SQL ServerにはOracleのような`nulls first`や`nulls last`がありません。  
 SQL ServerでNULLのソート順を指定するには、`CASE句`を使いましょう。
@@ -33,7 +33,7 @@ ORDER BY
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-26" updated="2021-05-26" %}</div>
 - [(DB & SQL 技術ブログ) NULLのソート順](https://www.dbsheetclient.jp/blog/?p=566)
 - [(stack overflow) SQL Server equivalent to Oracle's NULLS FIRST?](https://stackoverflow.com/questions/1456653/sql-server-equivalent-to-oracles-nulls-first)

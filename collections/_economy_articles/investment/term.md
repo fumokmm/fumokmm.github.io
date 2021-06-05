@@ -5,7 +5,7 @@ created: 2021-05-29
 updated: 2021-06-01
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#お">お</a></li>
@@ -16,7 +16,7 @@ updated: 2021-06-01
 </ul>
 
 * * *
-## <a name="お">お</a><a href="#お">§</a>
+## <a name="お">お</a><a class="heading-anchor-permalink" href="#お">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-01" updated="2021-06-01" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="economy" title="オプション取引" %}
@@ -39,7 +39,7 @@ updated: 2021-06-01
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="さ">さ</a><a href="#さ">§</a>
+## <a name="さ">さ</a><a class="heading-anchor-permalink" href="#さ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-06-01" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="economy" title="先物取引" %}
@@ -74,7 +74,7 @@ updated: 2021-06-01
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="な">な</a><a href="#な">§</a>
+## <a name="な">な</a><a class="heading-anchor-permalink" href="#な">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-05-29" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="economy" title="成行" %}
@@ -95,7 +95,7 @@ updated: 2021-06-01
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="ふ">ふ</a><a href="#ふ">§</a>
+## <a name="ふ">ふ</a><a class="heading-anchor-permalink" href="#ふ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-01" updated="2021-06-01" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="economy" title="ブル・ベア型ファンド" %}
@@ -117,7 +117,7 @@ updated: 2021-06-01
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-06-01" %}</div>
 - [(おてがる投資のすすめ) 株の指値、成行（成り行き）、はどっちを使えばいい？違いと使い分け方を徹底解説](https://lightningshift.com/market-limit-order/)
 - [(岡三オンライン証券) ブル・ベア型ファンドとは](https://www.okasan-online.co.jp/fund/bull_bear/

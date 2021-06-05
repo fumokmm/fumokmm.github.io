@@ -6,7 +6,7 @@ updated: 2021-04-07
 ---
 VBAでプロシージャ呼び出し時、括弧を付けなければいけなかったり、付けなくても大丈夫だったりと分かりづらいのでまとめました。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#procedure-calls">プロシージャ呼び出し</a></li>
@@ -15,7 +15,7 @@ VBAでプロシージャ呼び出し時、括弧を付けなければいけな�
 </ul>
 
 * * *
-## <a name="procedure-calls">プロシージャ呼び出し</a><a href="#procedure-calls">§</a>
+## <a name="procedure-calls">プロシージャ呼び出し</a><a class="heading-anchor-permalink" href="#procedure-calls">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-07" updated="2021-04-07" %}</div>
 まずは用語です。
 
@@ -79,7 +79,7 @@ res = func2("a", "b")
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="summary">まとめ</a><a href="#summary">§</a>
+## <a name="summary">まとめ</a><a class="heading-anchor-permalink" href="#summary">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-07" updated="2021-04-07" %}</div>
 ### 戻り値なしの時
 - 戻り値なしの時は、基本的には括弧を省略する。
@@ -99,7 +99,7 @@ res = func2("a", "b")
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-07" updated="2021-04-07" %}</div>
 - [(Microsoft \| Docs) Call ステートメント](https://docs.microsoft.com/ja-jp/office/vba/language/reference/user-interface-help/call-statement)
 - [(Microsoft \| Docs) Sub プロシージャと Function プロシージャの呼び出し](https://docs.microsoft.com/ja-jp/office/vba/language/concepts/getting-started/calling-sub-and-function-procedures)

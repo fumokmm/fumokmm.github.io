@@ -6,7 +6,7 @@ updated: 2021-05-29
 ---
 IT用語のひとこと説明です。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#C">C</a></li>
@@ -17,7 +17,7 @@ IT用語のひとこと説明です。
 </ul>
 
 * * *
-## <a name="C">C</a><a href="#C">§</a>
+## <a name="C">C</a><a class="heading-anchor-permalink" href="#C">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-25" updated="2021-05-29" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="it" title="CRUD (クラッド)" %}
@@ -37,7 +37,7 @@ IT用語のひとこと説明です。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="D">D</a><a href="#D">§</a>
+## <a name="D">D</a><a class="heading-anchor-permalink" href="#D">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-25" updated="2021-05-29" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="it" title="DCL【Data Control Language】" %}
@@ -68,7 +68,7 @@ IT用語のひとこと説明です。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="う">う</a><a href="#う">§</a>
+## <a name="う">う</a><a class="heading-anchor-permalink" href="#う">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-09" updated="2021-05-29" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="it" title="ウェビナー" %}
@@ -83,7 +83,7 @@ IT用語のひとこと説明です。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="さ">さ</a><a href="#さ">§</a>
+## <a name="さ">さ</a><a class="heading-anchor-permalink" href="#さ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-09" updated="2021-05-29" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="it" title="サブスクリプション" %}
@@ -95,7 +95,7 @@ IT用語のひとこと説明です。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-05-29" %}</div>
 - [SQLの種類(DDL、DML、DCL)](https://morizyun.github.io/database/sql-ddl-dml-dcl.html)
 - [(Wikipedia) Create, read, update and delete](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)

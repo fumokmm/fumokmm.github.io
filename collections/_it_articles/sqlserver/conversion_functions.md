@@ -8,7 +8,7 @@ updated: 2021-01-07
 SQL ServerのSQL内でよく使う変関係関数をメモしておきます。  
 ここでは、`CAST`, `CONVERT`, `FORMAT`, `PARSE`について書いています。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#differences">4つの変換系関数の違い</a></li>
@@ -20,7 +20,7 @@ SQL ServerのSQL内でよく使う変関係関数をメモしておきます。
 </ul>
 
 * * *
-## <a name="differences">4つの変換系関数の違い</a><a href="#differences">§</a>
+## <a name="differences">4つの変換系関数の違い</a><a class="heading-anchor-permalink" href="#differences">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-21" updated="2020-12-21" %}</div>
 4つは変換系関数ということで似ているんですが、違いを簡単にまとめると以下のようになります。
 
@@ -37,7 +37,7 @@ SQL ServerのSQL内でよく使う変関係関数をメモしておきます。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="cast">CAST</a><a href="#cast">§</a>
+## <a name="cast">CAST</a><a class="heading-anchor-permalink" href="#cast">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-22" updated="2020-01-04" %}</div>
 CASTが一番シンプルな形になります。  
 
@@ -78,7 +78,7 @@ CAST('2020/12/22' AS date) <em class="comment">-- 2020-12-22 (date型)</em>
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="convert">CONVERT</a><a href="#convert">§</a>
+## <a name="convert">CONVERT</a><a class="heading-anchor-permalink" href="#convert">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-20" updated="2021-01-07" %}</div>
 CONVERT関数は、任意の値を指定した型に変換する関数です。  
 [CAST](#cast)関数との違いとしては、`style`を指定して、型と同時に値の表現も変換できることろです。
@@ -245,14 +245,14 @@ Applies to: SQL Server (Starting in SQL Server 2016 (13.x)) and Azure SQL Databa
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="format">FORMAT</a><a href="#format">§</a>
+## <a name="format">FORMAT</a><a class="heading-anchor-permalink" href="#format">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-20" updated="2020-12-20" %}</div>
 FORMATは…また後で書きます。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="parse">PARSE</a><a href="#parse">§</a>
+## <a name="parse">PARSE</a><a class="heading-anchor-permalink" href="#parse">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-20" updated="2020-12-20" %}</div>
 他の3つに比べるとちょっと知名度が落ちるんじゃないかと思いますが、知っていると便利です。
 
@@ -261,7 +261,7 @@ FORMATは…また後で書きます。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="explicit-convertion-table">参考：変換表</a><a href="#explicit-convertion-table">§</a>
+## <a name="explicit-convertion-table">参考：変換表</a><a class="heading-anchor-permalink" href="#explicit-convertion-table">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-20" updated="2020-12-20" %}</div>
 ## <a name="explicit-convertion-table"></a>
 
