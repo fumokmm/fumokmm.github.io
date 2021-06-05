@@ -6,7 +6,7 @@ created: 2020-10-23
 updated: 2021-02-12
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#backup-and-restore">バックアップと復元</a></li>
@@ -14,7 +14,7 @@ updated: 2021-02-12
 </ul>
 
 * * *
-## <a name="backup-and-restore">バックアップと復元</a><a href="#backup-and-restore">§</a>
+## <a name="backup-and-restore">バックアップと復元</a><a class="heading-anchor-permalink" href="#backup-and-restore">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-23" updated="2021-02-12" %}</div>
 `SQL Server Management Studio`の`バックアップ`と`復元`を利用してデータベースを複製する手順です。  
 ここでは、復元元データベース名を`DB1`、復元先データベース名を`DB2`として説明しています。
@@ -39,7 +39,7 @@ updated: 2021-02-12
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-23" updated="2021-02-12" %}</div>
 - [(REONTOSANTA) SQLServerで同一インスタンス内にデータベースを複製する](https://knowledge.reontosanta.com/archives/786)
 

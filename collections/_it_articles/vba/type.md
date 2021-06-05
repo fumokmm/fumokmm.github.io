@@ -6,7 +6,7 @@ updated: 2021-01-04
 ---
 こちらはVBAの型についてのメモです。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#types">利用可能な型</a></li>
@@ -14,7 +14,7 @@ updated: 2021-01-04
 </ul>
 
 * * *
-## <a name="types">利用可能な型</a><a href="#types">§</a>
+## <a name="types">利用可能な型</a><a class="heading-anchor-permalink" href="#types">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-09-02" updated="2021-01-04" %}</div>
 VBAで利用可能な型は以下があります。
 
@@ -114,7 +114,7 @@ VBAで利用可能な型は以下があります。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-09-02" updated="2021-01-04" %}</div>
 - {% include book/book_449.html %} {% comment %} パーフェクト Excel VBA {% endcomment %}
 

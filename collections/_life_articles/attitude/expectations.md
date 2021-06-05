@@ -5,7 +5,7 @@ created: 2021-01-20
 updated: 2021-05-30
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#期待を捨てる">期待を捨てる</a></li>
@@ -14,7 +14,7 @@ updated: 2021-05-30
 </ul>
 
 * * *
-## <a name="期待を捨てる">期待を捨てる</a><a href="#期待を捨てる">§</a>
+## <a name="期待を捨てる">期待を捨てる</a><a class="heading-anchor-permalink" href="#期待を捨てる">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-20" updated="2021-05-30" %}</div>
 > 何も期待しないとき、あなたは今という瞬間を生きられる。 未来への不安も過去の拒絶もなくシンプルに訪れた状況を歓迎できる。  
 > そしてすべてを受け容れるとは、仕方なく妥協するという意味ではない。引き受けて責任を取るという意味だ。  
@@ -32,7 +32,7 @@ updated: 2021-05-30
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="自分の隠れた期待の見つけ方">自分の隠れた期待の見つけ方</a><a href="#自分の隠れた期待の見つけ方">§</a>
+## <a name="自分の隠れた期待の見つけ方">自分の隠れた期待の見つけ方</a><a class="heading-anchor-permalink" href="#自分の隠れた期待の見つけ方">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-12" updated="2021-05-12" %}</div>
 ### 1. まず、人生のうまくいっていない部分を思い起こして紙に書き出す
 - 期待していたことをできるかぎり詳しく書き出す。
@@ -60,7 +60,7 @@ updated: 2021-05-30
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-20" updated="2021-01-20" %}</div>
 - {% include book/book_600.html %} {% comment %} あなたはあなたが使っている言葉でできている {% endcomment %}
 

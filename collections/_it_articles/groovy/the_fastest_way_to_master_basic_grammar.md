@@ -8,7 +8,7 @@ updated: 2021-04-08
 当初の掲載からだいぶ時間が経過していますので、古い内容のものもあると思いますのでご注意下さい。  
 順次アップデートしていく予定です。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#getting-started">はじめに</a></li>
@@ -20,7 +20,7 @@ updated: 2021-04-08
 </ul>
 
 * * *
-## <a name="getting-started">はじめに</a><a href="#getting-started">§</a>
+## <a name="getting-started">はじめに</a><a class="heading-anchor-permalink" href="#getting-started">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 GroovyはJavaのシンタクスシュガーな上位互換として設計されており、  
 妥当なJavaプログラムであれば、*ほぼそのままでGroovyプログラムとして動かすことができます*([参照](https://npnl.hatenablog.jp/entry/20110212/1297522544))。  
@@ -36,7 +36,7 @@ Groovyを利用すれば*世界中に存在する有益なJava資産をすべて
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="basis">1. 基礎</a><a href="#basis">§</a>
+## <a name="basis">1. 基礎</a><a class="heading-anchor-permalink" href="#basis">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### Groovyの実行
 <table class="normal">
@@ -153,7 +153,7 @@ assert !(null <em>==</em> 1)
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="data-type">2. データ型</a><a href="#data-type">§</a>
+## <a name="data-type">2. データ型</a><a class="heading-anchor-permalink" href="#data-type">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### すべてがObject(プリミティブはない)
 `1`、 `1.0f`などのJavaでのプリミティブは  `java.lang.Integer`や、`java.lang.Float`などのラッパーでラッピングされているため、  
@@ -502,7 +502,7 @@ a $${color} car
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="grammar">3. 文法</a><a href="#grammar">§</a>
+## <a name="grammar">3. 文法</a><a class="heading-anchor-permalink" href="#grammar">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### 文
 文は1行にひとつ書きます。セミコロン`;`を付けることで、1行に複数の文を記述することができます。
@@ -803,7 +803,7 @@ assert y.to == 9
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="class">4. クラス</a><a href="#class">§</a>
+## <a name="class">4. クラス</a><a class="heading-anchor-permalink" href="#class">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### 暗黙的インポート
 Groovyでは以下のパッケージが暗黙的にインポート済みです。
@@ -873,7 +873,7 @@ assert groovyBook.title == 'No Groovy, No Life'
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参照</a><a href="#reference">§</a>
+## <a name="reference">参照</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-06-05" updated="2021-04-08" %}</div>
 ### 元記事
 - [元記事](https://npnl.hatenablog.jp/entry/20100605/1275736594)

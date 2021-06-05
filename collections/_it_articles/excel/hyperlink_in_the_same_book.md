@@ -9,7 +9,7 @@ updated: 2021-05-29
 Excelの同一ブック内でセルにハイパーリンクを張ってシート間をジャンプさせたいことがある。  
 普通だとハイパーリンクの挿入(`Ctrl + K`)とかで挿入すると思いますが、標準の`HYPERLINK関数`でも実現できます。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#HYPERLINK関数">HYPERLINK関数</a></li>
@@ -18,7 +18,7 @@ Excelの同一ブック内でセルにハイパーリンクを張ってシート
 </ul>
 
 * * *
-## <a name="HYPERLINK関数">HYPERLINK関数</a><a href="#HYPERLINK関数">§</a>
+## <a name="HYPERLINK関数">HYPERLINK関数</a><a class="heading-anchor-permalink" href="#HYPERLINK関数">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2019-11-16" updated="2021-05-29" %}</div>
 ### 形式
 <div class="code-box-syntax no-title">
@@ -66,7 +66,7 @@ HYPERLINK(リンク先, [別名])
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="解決方法">解決方法</a><a href="#解決方法">§</a>
+## <a name="解決方法">解決方法</a><a class="heading-anchor-permalink" href="#解決方法">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2019-11-16" updated="2021-05-29" %}</div>
 リンク先文字列の頭に`#`をつけるといいみたいです。こんな感じ。
 
@@ -90,7 +90,7 @@ HYPERLINK(リンク先, [別名])
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参照</a><a href="#reference">§</a>
+## <a name="reference">参照</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2019-11-16" updated="2021-05-29" %}</div>
 ### 元記事
 - [(No Programming, No Life) ExcelのHYPERLINK関数で同一ブック内の別シートにリンクしたい場合は # を付けるといいみたい](https://npnl.hatenablog.jp/entry/2019/11/16/184018)

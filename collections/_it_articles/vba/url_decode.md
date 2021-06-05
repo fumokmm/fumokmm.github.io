@@ -6,14 +6,14 @@ updated: 2021-03-29
 ---
 こちらはVBAでURLデコードを行う方法についてのメモです。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#decoding-utf-8-percent-encoded-strings">UTF-8でパーセントエンコードされた文字列をデコードする(簡易版)</a></li>
 </ul>
 
 * * *
-## <a name="decoding-utf-8-percent-encoded-strings">UTF-8でパーセントエンコードされた文字列をデコードする(簡易版)</a><a href="#decoding-utf-8-percent-encoded-strings">§</a>
+## <a name="decoding-utf-8-percent-encoded-strings">UTF-8でパーセントエンコードされた文字列をデコードする(簡易版)</a><a class="heading-anchor-permalink" href="#decoding-utf-8-percent-encoded-strings">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2019-12-16" updated="2021-03-29" %}</div>
 当メモは2019-12-16に[投稿されたもの](https://npnl.hatenablog.jp/entry/2019/12/16/193140)を加筆修正し、再掲したものです。
 

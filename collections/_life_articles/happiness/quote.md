@@ -5,7 +5,7 @@ created: 2021-03-22
 updated: 2021-03-22
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#proverb">ことわざ</a></li>
@@ -13,7 +13,7 @@ updated: 2021-03-22
 </ul>
 
 * * *
-## <a name="proverb">ことわざ</a><a href="#proverb">§</a>
+## <a name="proverb">ことわざ</a><a class="heading-anchor-permalink" href="#proverb">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-22" updated="2021-03-22" %}</div>
 > 「しあわせは、自然に生じるものではない」　※当人の行動が必要
 > 
@@ -25,7 +25,7 @@ updated: 2021-03-22
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="people">人物</a><a href="#people">§</a>
+## <a name="people">人物</a><a class="heading-anchor-permalink" href="#people">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-22" updated="2021-03-22" %}</div>
 > しあわせは いつも自分のこころがきめる
 >

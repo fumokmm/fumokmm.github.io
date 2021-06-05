@@ -7,7 +7,7 @@ updated: 2020-09-14
 ---
 PowerShellの実行ポリシーのについてメモです。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#execution-policy-list">実行ポリシー一覧</a></li>
@@ -15,7 +15,7 @@ PowerShellの実行ポリシーのについてメモです。
 </ul>
 
 * * *
-## <a name="execution-policy-list">実行ポリシー一覧</a><a href="#execution-policy-list">§</a>
+## <a name="execution-policy-list">実行ポリシー一覧</a><a class="heading-anchor-permalink" href="#execution-policy-list">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-09-14" updated="2020-09-14" %}</div>
 
 |ポリシー     |デフォルト|説明             |
@@ -33,7 +33,7 @@ PowerShellの実行ポリシーのについてメモです。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-09-14" updated="2020-09-14" %}</div>
 - [PowerShellのExecutionPolicyのスコープとかについて詳しく](https://qiita.com/kikuchi/items/59f219eae2a172880ba6)
 

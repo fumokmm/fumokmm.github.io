@@ -11,7 +11,7 @@ Accessでテーブルリンクを作成する場合、ローカルPCに設定し
 以下に示すようなVBAコードでDSNなしのテーブルリンク設定をすることができます。  
 (SQL Serverへのテーブルリンクを想定しています)
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#recreate-table-link">テーブルリンク再作成</a></li>
@@ -19,7 +19,7 @@ Accessでテーブルリンクを作成する場合、ローカルPCに設定し
 </ul>
 
 * * *
-## <a name="recreate-table-link">テーブルリンク再作成</a><a href="#recreate-table-link">§</a>
+## <a name="recreate-table-link">テーブルリンク再作成</a><a class="heading-anchor-permalink" href="#recreate-table-link">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-14" updated="2020-10-15" %}</div>
 <div class="code-box">
 <div class="title">テーブルリンク再作成</div>
@@ -68,7 +68,7 @@ Set p_td = CurrentDb.CreateTableDef( _
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-14" updated="2020-10-15" %}</div>
 - [(Microsoft Docs) Access でリンクテーブルに対して SQL Server への DSN レス接続を作成する方法](https://docs.microsoft.com/ja-jp/office/troubleshoot/access/create-dsn-less-connection-linkted-table)
 - [(「分かりそう」で「分からない」でも「分かった」気になれるIT用語辞典) DSN【DB】](https://wa3.i-3-i.info/word12383.html)

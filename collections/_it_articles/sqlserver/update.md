@@ -7,14 +7,14 @@ updated: 2021-04-06
 ---
 こちらは更新系(UPDATE)のSQLのメモになります。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#update-data-with-information-from-other-tables">他テーブルの情報でデータを更新する</a></li>
 </ul>
 
 * * *
-## <a name="update-data-with-information-from-other-tables">他テーブルの情報でデータを更新する</a><a href="#update-data-with-information-from-other-tables">§</a>
+## <a name="update-data-with-information-from-other-tables">他テーブルの情報でデータを更新する</a><a class="heading-anchor-permalink" href="#update-data-with-information-from-other-tables">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-06" updated="2021-04-06" %}</div>
 <div class="code-box">
 <div class="title">他テーブルの情報でデータを更新するSQL</div>

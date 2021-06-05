@@ -5,7 +5,7 @@ created: 2021-06-02
 updated: 2021-06-02
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#size">size</a></li>
@@ -13,7 +13,7 @@ updated: 2021-06-02
 </ul>
 
 * * *
-## <a name="size">size</a><a href="#size">§</a>
+## <a name="size">size</a><a class="heading-anchor-permalink" href="#size">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-02" updated="2021-06-02" %}</div>
 配列のサイズ(長さ)を調べたり、文字列の文字数を取得したりします。
 
@@ -51,7 +51,7 @@ updated: 2021-06-02
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a><a href="#参考">§</a>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-02" updated="2021-06-02" %}</div>
 ### 参照
 - [Liquid](https://shopify.github.io/liquid/)

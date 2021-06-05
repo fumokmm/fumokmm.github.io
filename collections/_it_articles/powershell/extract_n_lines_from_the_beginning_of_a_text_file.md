@@ -6,7 +6,7 @@ created: 2021-04-23
 updated: 2021-04-23
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#method">やり方</a></li>
@@ -14,7 +14,7 @@ updated: 2021-04-23
 </ul>
 
 * * *
-## <a name="method">やり方</a><a href="#method">§</a>
+## <a name="method">やり方</a><a class="heading-anchor-permalink" href="#method">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-23" updated="2021-04-23" %}</div>
 <div class="code-box-syntax">
 <div class="title">書式</div>
@@ -57,7 +57,7 @@ PS C:\Users\fumo&gt;
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-23" updated="2021-04-23" %}</div>
 ### 関連リンク
 - [(Microsoft Docs) Get-Content](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.1)

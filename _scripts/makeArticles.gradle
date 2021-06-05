@@ -147,7 +147,7 @@ task makeArticles() {
             // 通常の目次部分
             def doWriteIndexNormal = { writer ->
                 writer << topArticle.text << '\n'
-                writer << "## <a name=\"index\">目次</a><a href=\"#目次\">§</a>" << '\n'
+                writer << "## <a name=\"index\">目次</a><a class=\"heading-anchor-permalink\" href=\"#目次\">§</a>" << '\n'
                 writer << '\n'
                 writer << "<ul id=\"index_ul\">" << '\n'
                 chapterMap.each { chapter_no, chap ->
@@ -162,7 +162,7 @@ task makeArticles() {
                 def chapterGroups = chapterMap.groupBy{ chapter_no, chap -> chap.frontMatter.chapter_group }
 
                 writer << topArticle.text << '\n'
-                writer << "## <a name=\"index\">目次</a><a href=\"#目次\">§</a>" << '\n'
+                writer << "## <a name=\"index\">目次</a><a class=\"heading-anchor-permalink\" href=\"#目次\">§</a>" << '\n'
                 writer << '\n'
                 writer << '<div style="column-count: 2;">' << '\n'
                 writer << "    <ul id=\"index_ul\">" << '\n'
@@ -193,7 +193,7 @@ task makeArticles() {
             // 通常のBody (チャプターグループなし)
             def doWriteBodyNormal = { writer, chapter_no, chap ->
                 writer << '* * *' << '\n'
-                writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a><a href=\"#${chap.frontMatter.chapter_id}\">§</a>" << '\n'
+                writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a><a class=\"heading-anchor-permalink\" href=\"#${chap.frontMatter.chapter_id}\">§</a>" << '\n'
                 writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
                 writer << chap.body << '\n'
                 writer << "{% include goto_pagetop.html %}" << '\n'
@@ -203,10 +203,10 @@ task makeArticles() {
             // Body (チャプターグループあり)
             def doWriteBodyChapterGroup = { writer, chapter_no, chap ->
                 if (chap.frontMatter.containsKey('chapter_group_label')) {
-                    writer << "## <a name=\"${chap.frontMatter.chapter_group}\">${chap.frontMatter.chapter_group_label}</a><a href=\"#${chap.frontMatter.chapter_group}\">§</a>" << '\n'
+                    writer << "## <a name=\"${chap.frontMatter.chapter_group}\">${chap.frontMatter.chapter_group_label}</a><a class=\"heading-anchor-permalink\" href=\"#${chap.frontMatter.chapter_group}\">§</a>" << '\n'
                 } else {
                     writer << '* * *' << '\n'
-                    writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a><a href=\"#${chap.frontMatter.chapter_id}\">§</a>" << '\n'
+                    writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a><a class=\"heading-anchor-permalink\" href=\"#${chap.frontMatter.chapter_id}\">§</a>" << '\n'
                     writer << "<div class=\"chapter-updated\">{% include update_info_inline.html created=\"${chap.frontMatter.created.format('yyyy-MM-dd')}\" updated=\"${chap.frontMatter.updated.format('yyyy-MM-dd')}\" %}</div>" << '\n'
                     writer << chap.body << '\n'
                     writer << "{% include goto_pagetop.html %}" << '\n'

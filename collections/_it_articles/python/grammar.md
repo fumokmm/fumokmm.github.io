@@ -6,7 +6,7 @@ updated: 2020-12-10
 ---
 ここではPythonの文法を簡単にまとめておきます。特に記載のない場合、Python3を対象としています。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#helloworld">ハローワールド</a></li>
@@ -14,7 +14,7 @@ updated: 2020-12-10
 </ul>
 
 * * *
-## <a name="helloworld">ハローワールド</a><a href="#helloworld">§</a>
+## <a name="helloworld">ハローワールド</a><a class="heading-anchor-permalink" href="#helloworld">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-10" updated="2020-12-10" %}</div>
 `print`を使います。
 
@@ -62,7 +62,7 @@ Hello, World
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="comment">コメント</a><a href="#comment">§</a>
+## <a name="comment">コメント</a><a class="heading-anchor-permalink" href="#comment">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-10" updated="2020-12-10" %}</div>
 ### 行コメント
 

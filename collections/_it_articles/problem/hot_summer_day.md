@@ -5,7 +5,7 @@ created: 2021-01-29
 updated: 2021-01-29
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#problem">お題</a></li>
@@ -15,7 +15,7 @@ updated: 2021-01-29
 </ul>
 
 * * *
-## <a name="problem">お題</a><a href="#problem">§</a>
+## <a name="problem">お題</a><a class="heading-anchor-permalink" href="#problem">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
@@ -29,7 +29,7 @@ const temperatures = [25.7, 27.2, 26.3, 28.8, 30.5, 27.9, 29.5, 28.6, 28.5, 31.0
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="answer">答え</a><a href="#answer">§</a>
+## <a name="answer">答え</a><a class="heading-anchor-permalink" href="#answer">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 <div class="code-box-output no-title">
 <pre>
@@ -40,7 +40,7 @@ const temperatures = [25.7, 27.2, 26.3, 28.8, 30.5, 27.9, 29.5, 28.6, 28.5, 31.0
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="by_groovy">Groovyで解いてみた</a><a href="#by_groovy">§</a>
+## <a name="by_groovy">Groovyで解いてみた</a><a class="heading-anchor-permalink" href="#by_groovy">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 Groovyでマニアックに解いてみました。
 
@@ -60,7 +60,7 @@ println temperatures.collect{ it >= 30.0 ? '1' : ' ' }.join().findAll(/(1+)/).co
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">出典</a><a href="#reference">§</a>
+## <a name="reference">出典</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 - 堀江 良さんの、[このツイート](https://twitter.com/ryohorie3/status/1354738737662418944)
 - 堀江 良さんの、[(note) 毎日コーディング勉強会コミュニティ](https://note.com/ryohorie3/n/ne8eaf7ed6ac5)

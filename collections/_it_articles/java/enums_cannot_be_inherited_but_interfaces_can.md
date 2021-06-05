@@ -6,7 +6,7 @@ updated: 2021-02-23
 ---
 当メモは2012-05-03に[投稿されたもの](https://npnl.hatenablog.jp/entry/2012/05/03/103145)を加筆修正し、再掲したものです。
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#introduction">はじめに</a></li>
@@ -19,14 +19,14 @@ updated: 2021-02-23
 </ul>
 
 * * *
-## <a name="introduction">はじめに</a><a href="#introduction">§</a>
+## <a name="introduction">はじめに</a><a class="heading-anchor-permalink" href="#introduction">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2012-05-03" updated="2021-01-14" %}</div>
 Javaのenumって便利ですよね。enumを使い続けていくとグルーピングしたくなってくる事があると思いますが、継承はできないので、そんな場合はインタフェースを実装してやるといいようです。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="interfaceoduction">インタフェース</a><a href="#interfaceoduction">§</a>
+## <a name="interfaceoduction">インタフェース</a><a class="heading-anchor-permalink" href="#interfaceoduction">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2012-05-03" updated="2021-01-14" %}</div>
 <div class="code-box">
 <div class="title">インタフェース</div>
@@ -42,7 +42,7 @@ interface Colored {
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="enum-definition">enum定義</a><a href="#enum-definition">§</a>
+## <a name="enum-definition">enum定義</a><a class="heading-anchor-permalink" href="#enum-definition">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2012-05-03" updated="2021-01-14" %}</div>
 <div class="code-box">
 <div class="title">enum定義</div>
@@ -78,7 +78,7 @@ enum Animal <em>implements Colored</em> {
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="use-it">使ってみる</a><a href="#use-it">§</a>
+## <a name="use-it">使ってみる</a><a class="heading-anchor-permalink" href="#use-it">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2012-05-03" updated="2021-01-14" %}</div>
 <div class="code-box">
 <div class="title">Colored型で取得</div>
@@ -93,7 +93,7 @@ Colored colored2 = Food.rice;
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="supplement">補足</a><a href="#supplement">§</a>
+## <a name="supplement">補足</a><a class="heading-anchor-permalink" href="#supplement">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2012-05-03" updated="2021-01-14" %}</div>
 今回作ったインタフェースのColoredは`#getColor()`メソッドしか定義していませんので、enumにもとからあるメソッド(`#name()`とか)は当然の事ながら使えません。なので、必要に応じてinterfaceの方に加えておくとよいでしょう。
 
@@ -112,7 +112,7 @@ interface Colored {
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="test-source">テストを書いた</a><a href="#test-source">§</a>
+## <a name="test-source">テストを書いた</a><a class="heading-anchor-permalink" href="#test-source">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2012-05-03" updated="2021-01-14" %}</div>
 <div class="code-box">
 <div class="title">EnumTest.java</div>
@@ -204,7 +204,7 @@ enum Food implements Colored {
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2012-05-03" updated="2021-01-14" %}</div>
 ### 関連記事
 

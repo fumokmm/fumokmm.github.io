@@ -5,7 +5,7 @@ created: 2021-03-04
 updated: 2021-03-04
 ---
 
-## <a name="index">目次</a><a href="#目次">§</a>
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#does-not-occur">心配ごとの96%は実際には起こらない</a></li>
@@ -14,7 +14,7 @@ updated: 2021-03-04
 </ul>
 
 * * *
-## <a name="does-not-occur">心配ごとの96%は実際には起こらない</a><a href="#does-not-occur">§</a>
+## <a name="does-not-occur">心配ごとの96%は実際には起こらない</a><a class="heading-anchor-permalink" href="#does-not-occur">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-04" updated="2021-03-04" %}</div>
 - ミシガン大学研究チームによる調査
   - 80%は実際には起こらない
@@ -29,7 +29,7 @@ updated: 2021-03-04
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="you-are-worried-because-you-have-not-failed-yet">失敗していないから不安</a><a href="#you-are-worried-because-you-have-not-failed-yet">§</a>
+## <a name="you-are-worried-because-you-have-not-failed-yet">失敗していないから不安</a><a class="heading-anchor-permalink" href="#you-are-worried-because-you-have-not-failed-yet">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-04" updated="2021-03-04" %}</div>
 - 人は新しいことに挑戦するときに不安を抱く生き物だ
 - 失敗するかも？という不安で動けないなら、さっさと失敗してしまえばいい
@@ -46,7 +46,7 @@ updated: 2021-03-04
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a href="#reference">§</a>
+## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-04" updated="2021-03-04" %}</div>
 ### 参考動画
 - [(YouTube) 【漫画】不安を簡単に取り除く方法【マンガ動画】](https://www.youtube.com/watch?v=9vOKx2250QE)
