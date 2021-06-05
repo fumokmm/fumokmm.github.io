@@ -51,10 +51,18 @@ defaults:
       path: "_it_articles/git"
     values:
       sub_category_id: "git"
+
   - scope:
       path: "_it_articles/java"
     values:
       sub_category_id: "java"
+
+  # Julia
+  - scope:
+      path: "_it_articles/julia"
+    values:
+      sub_category_id: "julia"
+
   - scope:
       path: "_it_articles/linux"
     values:
