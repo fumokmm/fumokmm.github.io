@@ -74,13 +74,16 @@ updated: 2021-06-05
 </pre>
 </div>
 - 終了させるには`exit`ではなくて、`exit()`のようです。関数呼び出し的な何か？
+> To exit the interactive session, type CTRL-D (press the Control/^ key together with the d key), or type exit(). 
+> <cite>[Getting Started](https://docs.julialang.org/en/v1/manual/getting-started/)</cite>
 
 {% include goto_pagetop.html %}
 
 * * *
 ## <a name="参考">参考</a><a href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-05" updated="2021-06-05" %}</div>
-- [Julia 公式サイト](https://julialang.org/)
+- [(Julia) 公式サイト](https://julialang.org/)
+- [(Julia) Getting Started](https://docs.julialang.org/en/v1/manual/getting-started/)
 - [(Julia メモ) 2 REPL (julia コマンド) の使い方](http://nalab.mind.meiji.ac.jp/~mk/labo/text/julia-memo/node6.html)
 
 {% include goto_pagetop.html %}
