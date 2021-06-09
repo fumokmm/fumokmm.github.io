@@ -10,13 +10,13 @@ updated: 2021-03-19
 
 <div style="column-count: 2;">
     <ul id="index_ul">
-        <li><a href="#basic">基礎文法</a>
+        <li><a href="#基礎文法">基礎文法</a>
             <ul>
                 <li><a href="#if">条件分岐 - If文</a></li>
                 <li><a href="#truthy">Truthy</a></li>
             </ul>
         </li>
-        <li><a href="#external-library">外部ライブラリの読み込み</a>
+        <li><a href="#外部ライブラリの読み込み">外部ライブラリの読み込み</a>
             <ul>
                 <li><a href="#require">require</a></li>
                 <li><a href="#load">load</a></li>
@@ -25,7 +25,7 @@ updated: 2021-03-19
                 <li><a href="#extend">extend</a></li>
             </ul>
         </li>
-        <li><a href="#reference-group">参照・参考</a>
+        <li><a href="#参照・参考">参照・参考</a>
             <ul>
                 <li><a href="#reference">参考</a></li>
             </ul>
@@ -33,7 +33,7 @@ updated: 2021-03-19
     </ul>
 </div>
 
-## <a name="basic">基礎文法</a><a class="heading-anchor-permalink" href="#basic">§</a>
+## <a name="基礎文法">基礎文法</a><a class="heading-anchor-permalink" href="#基礎文法">§</a>
 * * *
 ## <a name="if">条件分岐 - If文</a><a class="heading-anchor-permalink" href="#if">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-03-09" %}</div>
@@ -69,7 +69,7 @@ Rubyでは、条件式などで偽とみなされる値(falsey value)を`nil`と
 
 {% include goto_pagetop.html %}
 
-## <a name="external-library">外部ライブラリの読み込み</a><a class="heading-anchor-permalink" href="#external-library">§</a>
+## <a name="外部ライブラリの読み込み">外部ライブラリの読み込み</a><a class="heading-anchor-permalink" href="#外部ライブラリの読み込み">§</a>
 * * *
 ## <a name="require">require</a><a class="heading-anchor-permalink" href="#require">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-10" updated="2021-03-19" %}</div>
@@ -187,7 +187,7 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 
 {% include goto_pagetop.html %}
 
-## <a name="reference-group">参照・参考</a><a class="heading-anchor-permalink" href="#reference-group">§</a>
+## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-03" updated="2021-03-18" %}</div>

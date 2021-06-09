@@ -68,7 +68,6 @@ task makeArticles() {
                                 frontMatter['chapter_group'] = line.split(':')[1].trim()
                                 hasChapterGroup = true
                                 break
-                            case ~/^chapter_group_label:.*/ : frontMatter['chapter_group_label'] = line.split(':')[1].trim(); break
                         }
                         line = reader.readLine()
                     }
@@ -144,6 +143,10 @@ task makeArticles() {
                                                       body: body.toString()]
             }
 
+            // チャプターグループ定義である条件
+            def isChapGroupDef = { it.frontMatter.containsKey('chapter_group') &&
+                                   it.frontMatter.size() == 2 }
+
             // 通常の目次部分
             def doWriteIndexNormal = { writer ->
                 writer << topArticle.text << '\n'
@@ -160,7 +163,6 @@ task makeArticles() {
             // 目次部分 (チャプターグループあり)
             def doWriteIndexChapterGroup = { writer ->
                 def chapterGroups = chapterMap.groupBy{ chapter_no, chap -> chap.frontMatter.chapter_group }
-
                 writer << topArticle.text << '\n'
                 writer << "## <a name=\"index\">目次</a><a class=\"heading-anchor-permalink\" href=\"#目次\">§</a>" << '\n'
                 writer << '\n'
@@ -168,13 +170,16 @@ task makeArticles() {
                 writer << "    <ul id=\"index_ul\">" << '\n'
 
                 chapterGroups.each{ chapterGroup, chapterGroupItems ->
-                    def groupLabelItem = chapterGroupItems.values().findAll{ it.frontMatter.containsKey('chapter_group_label') }.first()
-                    def groupLabel = groupLabelItem.frontMatter.chapter_group_label
-                    def chapterItems = chapterGroupItems.values().findAll{ !it.frontMatter.containsKey('chapter_group_label') }.sort{ it.frontMatter.chapter_no }
+                    def (groupLabelItem, chapterItems) =
+                        chapterGroupItems.values().groupBy{ isChapGroupDef(it) }.with {
+                            [ it[true].first(),
+                              it[false].sort{ it.frontMatter.chapter_no } ]
+                        }
 
-                    writer << "        <li><a href=\"#${chapterGroup}\">${groupLabel}</a>" << '\n'
+                    writer << "        <li><a href=\"#${chapterGroup}\">${chapterGroup}</a>" << '\n'
                     writer << '            <ul>' << '\n'
                     chapterItems.each { chapterItem ->
+                        println "★${chapterItem}★"
                     writer << "                <li><a href=\"#${ chapterItem.frontMatter.chapter_id }\">${ chapterItem.frontMatter.chapter_title }</a></li>" << '\n'
                     }
                     writer << '            </ul>' << '\n'
@@ -202,8 +207,8 @@ task makeArticles() {
 
             // Body (チャプターグループあり)
             def doWriteBodyChapterGroup = { writer, chapter_no, chap ->
-                if (chap.frontMatter.containsKey('chapter_group_label')) {
-                    writer << "## <a name=\"${chap.frontMatter.chapter_group}\">${chap.frontMatter.chapter_group_label}</a><a class=\"heading-anchor-permalink\" href=\"#${chap.frontMatter.chapter_group}\">§</a>" << '\n'
+                if ( isChapGroupDef(chap)) {
+                    writer << "## <a name=\"${chap.frontMatter.chapter_group}\">${chap.frontMatter.chapter_group}</a><a class=\"heading-anchor-permalink\" href=\"#${chap.frontMatter.chapter_group}\">§</a>" << '\n'
                 } else {
                     writer << '* * *' << '\n'
                     writer << "## <a name=\"${chap.frontMatter.chapter_id}\">${chap.frontMatter.chapter_title}</a><a class=\"heading-anchor-permalink\" href=\"#${chap.frontMatter.chapter_id}\">§</a>" << '\n'
@@ -230,9 +235,7 @@ task makeArticles() {
 
                 chapterMap.each { chapter_no, chap ->
                     toPath.withWriterAppend { writer ->
-                        doWriteBodyChapterGroup ?
-                            doWriteBodyChapterGroup(writer, chapter_no, chap) :
-                            doWriteBodyNormal(writer, chapter_no, chap)
+                        doWriteBodyChapterGroup(writer, chapter_no, chap)
                     }
                 }
 
