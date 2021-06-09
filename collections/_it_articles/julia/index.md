@@ -1,7 +1,7 @@
 ---
 title: Juliaのメモ
 created: 2021-06-05
-updated: 2021-06-05
+updated: 2021-06-09
 ---
 こちらはJuliaのメモになります。
 
