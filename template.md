@@ -11,6 +11,7 @@ updated: 2021-05-20
 
 - [見出し](#header)
 - [コードPRE](#code-box)
+- [コードPRE(makeArticle記法)](#code-box-make-article)
 - [引用](#cite)
 - [書籍参照](#book-reference)
 - [テーブル](#table)
@@ -56,12 +57,8 @@ updated: 2021-05-20
 - - -
 ## <a name="code-box">コードPRE</a>
 
-### 強調
-
-- 強調するには`<em></em>`を用います
-- 青強調するには`<em class="blue"></em>`を用います
-- コメント強調するには`<em class="comment"></em>`を用います
-- コマンド強調するには`<em class="command"></em>`を用います
+- makeArticleを利用したメモ作成時は、[makeArticle記法](#code-box-make-article)が利用できます
+- makeArticle記法は変換結果として[コードPRE](#code-box)が出力されます
 
 ### 書式
 
@@ -173,6 +170,13 @@ updated: 2021-05-20
 </pre>
 </div>
 
+### 強調
+
+- 強調するには`<em></em>`を用います
+- 青強調するには`<em class="blue"></em>`を用います
+- コメント強調するには`<em class="comment"></em>`を用います
+- コマンド強調するには`<em class="command"></em>`を用います
+
 ### デモ
 
 #### 1.通常用
@@ -264,6 +268,118 @@ updated: 2021-05-20
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
+</pre>
+</div>
+
+{% include goto_pagetop.html %}
+
+## <a name="code-box-make-article">コードPRE(makeArticle記法)</a>
+
+- makeArticleを利用したメモ作成時は、[makeArticle記法](#code-box-make-article)が利用できます
+- makeArticle記法は変換結果として[コードPRE](#code-box)が出力されます
+
+### 書式
+
+#### 1.通常用
+
+<div class="code-box">
+<div class="title">コードPRE(通常用)</div>
+<pre>
+```
+<em class="comment">ここにコード...
+ここにコード...</em>
+```
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">コードPRE(通常用) - タイトル付き</div>
+<pre>
+```<em>:</em><em class="comment">ここにタイトル</em>
+<em class="comment">ここにコード...
+ここにコード...</em>
+```
+</pre>
+</div>
+
+#### 2.構文、定義用
+
+<div class="code-box-syntax">
+<div class="title">コードPRE(構文、定義用)</div>
+<pre>
+```<em>syntax</em>
+<em class="comment">ここにコード...
+ここにコード...</em>
+```
+</pre>
+</div>
+
+<div class="code-box-syntax">
+<div class="title">コードPRE(構文、定義用) - タイトル付き</div>
+<pre>
+```<em>syntax:</em><em class="comment">ここにタイトル</em>
+<em class="comment">ここにコード...
+ここにコード...</em>
+```
+</pre>
+</div>
+
+#### 3.入力用
+
+<div class="code-box-input">
+<div class="title">コードPRE(入力用)</div>
+<pre>
+```<em>input</em>
+<em class="comment">ここにコード...
+ここにコード...</em>
+```
+</pre>
+</div>
+
+<div class="code-box-input">
+<div class="title">コードPRE(入力用) - タイトル付き</div>
+<pre>
+```<em>input:</em><em class="comment">ここにタイトル</em>
+<em class="comment">ここにコード...
+ここにコード...</em>
+```
+</pre>
+</div>
+
+#### 4.出力用
+
+<div class="code-box-output">
+<div class="title">コードPRE(出力用)</div>
+<pre>
+```<em>output</em>
+<em class="comment">ここにコード...
+ここにコード...</em>
+```
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">コードPRE(出力用) - タイトル付き</div>
+<pre>
+```<em>output:</em><em class="comment">ここにタイトル</em>
+<em class="comment">ここにコード...
+ここにコード...</em>
+```
+</pre>
+</div>
+
+### 強調
+
+- makeArticle記法中で強調を利用するには、`{em{`で開始し、`}em}`で終了するように囲みます
+- makeArticle記法中で通常の強調以外を利用するには、`{em:<種類>{`で開始し、`}em}`で終了するように囲みます
+- `<種類>`には`blue`、`comment`、`command`が入ります
+
+<div class="code-box no-title">
+<pre>
+文字列を<em>強調</em>するには{em{強調}em}を利用します。
+文字列を<em class="blue">青強調</em>するには{em:blue{青強調}em}を利用します。
+文字列を<em class="comment">コメント強調</em>するには{em:comment{コメント強調}em}を利用します。
+文字列を<em class="command">コマンド</em>にするには{em:command{コマンド}em}を利用します。
 </pre>
 </div>
 
