@@ -1,8 +1,8 @@
 ---
 chapter_no: 54
+chapter_group: 外部ライブラリの読み込み
 chapter_id: prepend
 chapter_title: prepend
-chapter_group: external-library
 created: 2021-03-18
 updated: 2021-03-19
 ---

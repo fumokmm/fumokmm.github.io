@@ -10,12 +10,12 @@ updated: 2021-06-09
 
 <div style="column-count: 2;">
     <ul id="index_ul">
-        <li><a href="#run">実行方法</a>
+        <li><a href="#実行方法">実行方法</a>
             <ul>
                 <li><a href="#スクリプトファイル">スクリプトファイル</a></li>
             </ul>
         </li>
-        <li><a href="#reference-group">参照・参考</a>
+        <li><a href="#参照・参考">参照・参考</a>
             <ul>
                 <li><a href="#参考">参考</a></li>
             </ul>
@@ -23,7 +23,7 @@ updated: 2021-06-09
     </ul>
 </div>
 
-## <a name="run">実行方法</a><a class="heading-anchor-permalink" href="#run">§</a>
+## <a name="実行方法">実行方法</a><a class="heading-anchor-permalink" href="#実行方法">§</a>
 * * *
 ## <a name="スクリプトファイル">スクリプトファイル</a><a class="heading-anchor-permalink" href="#スクリプトファイル">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-09" updated="2021-06-09" %}</div>
@@ -57,7 +57,7 @@ A
 
 {% include goto_pagetop.html %}
 
-## <a name="reference-group">参照・参考</a><a class="heading-anchor-permalink" href="#reference-group">§</a>
+## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-09" updated="2021-06-09" %}</div>

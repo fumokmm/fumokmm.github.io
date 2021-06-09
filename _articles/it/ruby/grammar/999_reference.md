@@ -1,8 +1,8 @@
 ---
 chapter_no: 999
+chapter_group: 参照・参考
 chapter_id: reference
 chapter_title: 参考
-chapter_group: reference-group
 created: 2020-12-03
 updated: 2021-03-18
 ---

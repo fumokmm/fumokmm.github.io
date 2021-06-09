@@ -1,8 +1,7 @@
 ---
 chapter_no: 51
-chapter_id: require
+chapter_group: 外部ライブラリの読み込み
 chapter_title: require
-chapter_group: external-library
 created: 2021-03-10
 updated: 2021-03-19
 ---

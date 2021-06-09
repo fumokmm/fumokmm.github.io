@@ -1,8 +1,8 @@
 ---
 chapter_no: 12
+chapter_group: 基礎文法
 chapter_id: truthy
 chapter_title: Truthy
-chapter_group: basic
 created: 2020-12-03
 updated: 2020-12-03
 ---
