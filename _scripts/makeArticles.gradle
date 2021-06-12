@@ -179,7 +179,6 @@ task makeArticles() {
                     writer << "        <li><a href=\"#${chapterGroup}\">${chapterGroup}</a>" << '\n'
                     writer << '            <ul>' << '\n'
                     chapterItems.each { chapterItem ->
-                        println "★${chapterItem}★"
                     writer << "                <li><a href=\"#${ chapterItem.frontMatter.chapter_id }\">${ chapterItem.frontMatter.chapter_title }</a></li>" << '\n'
                     }
                     writer << '            </ul>' << '\n'
