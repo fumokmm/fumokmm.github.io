@@ -1,6 +1,6 @@
 ---
-chapter_no: 2
-chapter_title: フルパスを解決
+chapter_no: 1
+chapter_title: Resolve-Pathを利用する
 created: 2021-06-13
 updated: 2021-06-13
 ---
