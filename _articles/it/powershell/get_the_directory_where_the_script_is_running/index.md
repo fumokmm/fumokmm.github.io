@@ -1,6 +1,6 @@
 ---
 title: PowerShellで実行中のスクリプトのあるディレクトリを取得
-article_group_id: tips-group
+article_group_id: reverse-lookup
 display_order: 50
 created: 2020-09-18
 updated: 2020-10-15

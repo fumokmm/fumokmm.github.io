@@ -1,6 +1,6 @@
 ---
 title: PowerShellでファイルのタイムスタンプを更新する
-article_group_id: tips-group
+article_group_id: reverse-lookup
 display_order: 70
 created: 2020-11-13
 updated: 2020-11-13
