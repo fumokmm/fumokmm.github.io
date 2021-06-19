@@ -3,7 +3,7 @@ chapter_no: 999
 chapter_id: reference
 chapter_title: 参照
 created: 2010-11-07
-updated: 2021-05-20
+updated: 2021-06-20
 ---
 ### 元記事
 - [(No Programming, No Life) Gitコマンドリファレンス](https://npnl.hatenablog.jp/entry/20101107/1289121576)
@@ -27,3 +27,6 @@ updated: 2021-05-20
 - [(Qiita) マージコミットとFast-forwardマージ](https://qiita.com/shyamahira/items/59ff8aa1cf7b893aab60)
 - [(まくまくGitノート) git diff や git status での日本語の文字化けを防ぐ (core.page, core.quotepath)](https://maku77.github.io/git/settings/garbling.html)
 - [(Hack Your Design!) 美しき git log --graph のエイリアス](https://blog.toshimaru.net/git-log-graph/)
+- [Git - git-stash Documentation](https://git-scm.com/docs/git-stash)
+- [(Qiita) 【git stash】コミットはせずに変更を退避したいとき](https://qiita.com/chihiro/items/f373873d5c2dfbd03250)
+- [(サル先生のGit入門) Stash](https://backlog.com/ja/git-tutorial/reference/stash/)
