@@ -102,7 +102,8 @@ task makeArticles() {
                                     if (it == '') [:]
                                     else {
                                         it.contains(':') ?
-                                            it.split(':').with { [type: it[0].trim(), title: it[-1].trim()] } :
+                                            it.split(':').with { [type: it.head().trim(),
+                                                                  title: it.tail().join(':').trim()] } :
                                             [type: it]
                                     }
                                 }
