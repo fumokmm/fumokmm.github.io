@@ -2,7 +2,7 @@
 title: Gitコマンドのメモ
 display_order: 10
 created: 2010-11-07
-updated: 2021-05-20
+updated: 2021-06-20
 ---
 当メモは2010-11-07に[投稿されたもの](https://npnl.hatenablog.jp/entry/20101107/1289121576)を加筆修正し、再掲したものです。
 基本的に当時の内容そのままとなっておりますので、8割りくらいは今でも通用すると思いますが、  
@@ -18,6 +18,7 @@ updated: 2021-05-20
 <li><a href="#config-and-initialization">設定と初期化(config)</a></li>
 <li><a href="#repository-initialization">リポジトリの初期化(init, clone)</a></li>
 <li><a href="#routine-work">日常の作業(add, commit, checkout, reset)</a></li>
+<li><a href="#変更の退避(stash)">変更の退避(stash)</a></li>
 <li><a href="#branch">ブランチ(branch, merge, cherry-pick)</a></li>
 <li><a href="#tag">タグ(tag)</a></li>
 <li><a href="#log">履歴(log, diff)</a></li>
@@ -208,6 +209,111 @@ $ git <em class="blue">commit</em> <em class="command">-m</em> <em>"&lt;メッ�
 $ git <em class="blue">commit</em> <em class="command">-C</em> <em>HEAD</em> <em class="command">--amend</em>
 </pre>
 </div>
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="変更の退避(stash)">変更の退避(stash)</a><a class="heading-anchor-permalink" href="#変更の退避(stash)">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-06-20" updated="2021-06-20" %}</div>
+<div class="code-box">
+<div class="title">変更を退避する</div>
+<pre>
+git <em class="blue">stash push</em>
+または
+git <em class="blue">stash</em>
+</pre>
+</div>
+- コミットされていない変更が退避されます。(`add`したものとしていないものが含まれる)
+
+<div class="code-box">
+<div class="title">変更を退避するとき、addしたものは退避しない</div>
+<pre>
+git <em class="blue">stash push</em> <em class="command">-k</em>
+または
+git <em class="blue">stash</em> push <em class="command">--keep-index</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">変更を退避するとき、新規作成されたファイルも一緒に退避する</div>
+<pre>
+git <em class="blue">stash push</em> <em class="command">-u</em>
+または
+git <em class="blue">stash push</em> <em class="command">--include-untracked</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">変更を退避するときにメッセージも付けて退避する</div>
+<pre>
+git <em class="blue">stash push</em> <em class="command">-m</em> <em>"メッセージ"</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">退避した作業の一覧を見る</div>
+<pre>
+git <em class="blue">stash list</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">退避した作業を戻す</div>
+<pre>
+git <em class="blue">stash apply</em> <em>&lt;スタッシュ名&gt;</em>
+</pre>
+</div>
+- `<stash名>`は`git stash list`で見た時に出てくる`stash@{0}`のようなものです。
+- `apply`すると、`add`していた変更も`add`されていない状態で戻ります。
+
+<div class="code-box">
+<div class="title">退避した作業をaddした状態のまま戻す</div>
+<pre>
+git <em class="blue">stash apply</em> <em>&lt;スタッシュ名&gt;</em> <em class="command">--index</em>
+</pre>
+</div>
+- `add`した状態のまま戻したい場合は、`apply`するときに`--index`を付けます。
+
+<div class="code-box">
+<div class="title">退避した作業を消す</div>
+<pre>
+git <em class="blue">stash drop</em> <em>&lt;スタッシュ名&gt;</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">退避した作業をすべて消す</div>
+<pre>
+git <em class="blue">stash clear</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">退避した作業を元に戻すと同時に、stashのリストからも消す</div>
+<pre>
+git <em class="blue">stash pop</em> <em>&lt;スタッシュ名&gt;</em>
+</pre>
+</div>
+- `apply`してから`drop`するのと同じです。
+
+<div class="code-box">
+<div class="title">退避した変更のファイル一覧を見る</div>
+<pre>
+git <em class="blue">stash show</em> <em>&lt;スタッシュ名&gt;</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">退避した変更の詳細を見る</div>
+<pre>
+git <em class="blue">stash show</em> <em>&lt;スタッシュ名&gt;</em> <em class="command">-P</em>
+</pre>
+</div>
+
+### 参考
+- [Git - git-stash Documentation](https://git-scm.com/docs/git-stash)
+- [(Qiita) 【git stash】コミットはせずに変更を退避したいとき](https://qiita.com/chihiro/items/f373873d5c2dfbd03250)
+- [(サル先生のGit入門) Stash](https://backlog.com/ja/git-tutorial/reference/stash/)
 
 {% include goto_pagetop.html %}
 
@@ -859,7 +965,7 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 
 * * *
 ## <a name="reference">参照</a><a class="heading-anchor-permalink" href="#reference">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-05-20" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-06-20" %}</div>
 ### 元記事
 - [(No Programming, No Life) Gitコマンドリファレンス](https://npnl.hatenablog.jp/entry/20101107/1289121576)
 
@@ -882,6 +988,9 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 - [(Qiita) マージコミットとFast-forwardマージ](https://qiita.com/shyamahira/items/59ff8aa1cf7b893aab60)
 - [(まくまくGitノート) git diff や git status での日本語の文字化けを防ぐ (core.page, core.quotepath)](https://maku77.github.io/git/settings/garbling.html)
 - [(Hack Your Design!) 美しき git log --graph のエイリアス](https://blog.toshimaru.net/git-log-graph/)
+- [Git - git-stash Documentation](https://git-scm.com/docs/git-stash)
+- [(Qiita) 【git stash】コミットはせずに変更を退避したいとき](https://qiita.com/chihiro/items/f373873d5c2dfbd03250)
+- [(サル先生のGit入門) Stash](https://backlog.com/ja/git-tutorial/reference/stash/)
 
 {% include goto_pagetop.html %}
 

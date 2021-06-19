@@ -1,5 +1,5 @@
 ---
-chapter_no: 6
+chapter_no: 7
 chapter_id: log
 chapter_title: 履歴(log, diff)
 created: 2010-11-07
