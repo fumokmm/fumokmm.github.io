@@ -68,4 +68,48 @@ assert groovyBook.title == 'No Groovy, No Life'
 </pre>
 </div>
 
-まだまだ紹介しきれないので、ちょこちょこ追加していく予定です
+まだまだ紹介しきれないので、ちょこちょこ追加していく予定です。
+
+{% comment %}
+<!--
+**5. GDK (([GinA] P235))
+GroovyではGDKと呼ばれる、Javaクラスに対しての独自拡張を行っています。GDKを利用することでJavaクラスをより便利に利用することができます。
+
+***java.lang.Objectに対して追加されたメソッド
+>|groovy|
+Boolean any { closure }
+||<
+
+**6.ビルダー (([GinA] P194))
+**AntBuilder (([GinA] P205, P400))
+**CliBuilder (([GinA] P416))
+**SwingBuilder (([GinA] P209))
+**MarkupBuilder (([GinA] P202))
+-->
+
+**おすすめリンク
+[http://groovy.codehaus.org/groovy-jdk/:title:bookmark] Groovy JDK
+
+**参考書籍 [GinA]
+ISBN:4839927278:detail
+
+**参考サイト
+[http://www.okisoft.co.jp/esc/groovy/index.html:title:bookmark]
+[http://d.hatena.ne.jp/uehaj/:title:bookmark]
+
+**関連記事
+[http://d.hatena.ne.jp/fumokmm/20081224/1230124652:title:bookmark]
+[http://d.hatena.ne.jp/fumokmm/20100518/1274196024:title:bookmark]
+[http://d.hatena.ne.jp/fumokmm/20080830/1220063759:title:bookmark]
+
+**関連リンク
+[http://groovy.codehaus.org/:title:bookmark] (本家)
+[http://groovy.codehaus.org/Japanese+Home:title:bookmark] (本家の日本語版)
+[http://en.wikipedia.org/wiki/Groovy_%28programming_language%29:title:bookmark]
+[http://ja.wikipedia.org/wiki/Groovy:title:bookmark]
+[http://groovy.codehaus.org/The+groovydoc+Ant+task:title:bookmark]
+
+**更新履歴
+- 2011-07-22 「doはない」の注釈に[http://d.hatena.ne.jp/fumokmm/20110630/1309446463:title:bookmark]を追加。
+-->
+{% endcomment %}
