@@ -1,7 +1,7 @@
 ---
 title: Javaのメモ
 created: 2020-09-02
-updated: 2021-06-20
+updated: 2021-06-21
 ---
 こちらはJavaのメモになります。
 
