@@ -15,6 +15,7 @@ updated: 2021-05-20
 - [引用](#cite)
 - [書籍参照](#book-reference)
 - [テーブル](#table)
+- [注釈](#footnotes)
 
 - - -
 ## <a name="header">見出し</a>
@@ -502,5 +503,35 @@ BOOK# <input type="text" id="BookReferenceBookNumber" value="588">
 |Undefined   |          |現在のスコープから現在割り当てられている実行ポリシーを削除する。このパラメーターは、グループポリシースコープ内で設定された実行ポリシーは削除しない。|
 
 ※改行はできないので注意
+
+{% include goto_pagetop.html %}
+
+## <a name="footnotes">注釈</a>
+
+- 注釈を書きたい場所に`[^＜注釈のID＞]`のように記述し、
+- 注釈の内容はそのページ内の任意の場所へ、`[^＜注釈のID＞]: ＜注釈の説明＞`のように記載する。
+- サンプルとしては、Groovy基礎文法最速マスター
+
+<div class="code-box">
+<div class="title">例1</div>
+<pre>
+#### 複数行文字列
+上記４つの文字列の複数行文字列<em>[^here-document]</em>もリテラルレベルでサポートされています。  
+シングルクォートとダブルクォートはそれぞれ3つにすることで複数行文字列として利用可能です。  
+スラッシュ文字列とドルスラッシュ文字列は最初から複数行文字列として利用可能です。
+
+<em>[^here-document]: いわゆるヒアドキュメント</em>
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">例2</div>
+<pre>
+#### do
+Groovyにdoはありません。<em>[^no-do]</em>
+
+<em>[^no-do]: [こちら](https://npnl.hatenablog.jp/entry/20110630/1309446463)で無理やりdo-whileを実装する実験をしました。</em>
+</pre>
+</div>
 
 {% include goto_pagetop.html %}

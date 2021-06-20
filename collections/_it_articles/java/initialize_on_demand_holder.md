@@ -2,11 +2,10 @@
 title: Javaでシングルトンを実現するならInitialize-On-Demand Holderイディオムを使うといいらしい
 display_order: 30
 created: 2008-04-10
-updated: 2021-06-20
+updated: 2008-04-10
 ---
 当メモは2008-04-10に[投稿されたもの](https://npnl.hatenablog.jp/entry/20080410/1207837279)を加筆修正し、再掲したものです。
 
-忘れないようにメモ。
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
@@ -16,7 +15,9 @@ updated: 2021-06-20
 
 * * *
 ## <a name="Initialize-On-Demand Holder">Initialize-On-Demand Holder</a><a class="heading-anchor-permalink" href="#Initialize-On-Demand Holder">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2008-04-10" updated="2021-06-20" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-10" updated="2008-04-10" %}</div>
+忘れないようにメモ。  
+
 Javaでシングルトンを実現しようとする際のクラス生成イディオム。  
 `double-checked locking問題`をすっぱりと解決したもので、スレッドセーフな上に高速であり、混乱も少ないのが特徴。
 簡単！安全！すっきりキレイ！
@@ -48,7 +49,7 @@ class Singleton {
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2008-04-10" updated="2021-06-20" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-10" updated="2008-04-10" %}</div>
 ### 元記事
 - [(No Programming, No Life) シングルトンにInitialize-On-Demand Holder](https://npnl.hatenablog.jp/entry/20080410/1207837279)
 

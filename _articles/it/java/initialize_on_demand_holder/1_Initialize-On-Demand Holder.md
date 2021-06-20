@@ -2,8 +2,10 @@
 chapter_no: 1
 chapter_title: Initialize-On-Demand Holder
 created: 2008-04-10
-updated: 2021-06-20
+updated: 2008-04-10
 ---
+忘れないようにメモ。  
+
 Javaでシングルトンを実現しようとする際のクラス生成イディオム。  
 `double-checked locking問題`をすっぱりと解決したもので、スレッドセーフな上に高速であり、混乱も少ないのが特徴。
 簡単！安全！すっきりキレイ！
