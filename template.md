@@ -384,6 +384,17 @@ updated: 2021-05-20
 </pre>
 </div>
 
+### リンク
+
+- makeArticle記法中でリンクを利用するには、`{link:<URL>{`で開始し、`}link}`で終了するように囲みます
+
+<div class="code-box no-title">
+<pre>
+例えば、<a href="https://www.yahoo.co.jp/">Yahoo</a>へのリンクを付けるには、
+{link:https://www.yahoo.co.jp/{Yahoo}link}とします。
+</pre>
+</div>
+
 {% include goto_pagetop.html %}
 
 ## <a name="cite">引用</a>

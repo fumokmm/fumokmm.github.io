@@ -85,6 +85,12 @@ task makeArticles() {
                             "<em${type ? " class=\"${type}\"": ''}>${value}</em>"
                         }
                     }
+                    def convertToATag = { innerBody ->
+                        // {link:<URL>{ で開始して、 }link} で終わる部分を <a href="<URL>">リンクテキスト</a>に変換
+                        innerBody.replaceAll(/(?s)\{link:([^{]+)\{(.*?)\}link\}/) { match, href, linkText ->
+                            "<a href=\"${href}\">${linkText}</a>"
+                        }
+                    }
                     while(true) {
                         line = reader.readLine()
                         if (line == null) break
@@ -121,8 +127,8 @@ task makeArticles() {
 
                             } else {
                                 isInnerTable = false
-                                // 関数合成でescapeHtmlTagしてから、convertToEmTagする
-                                body << (escapeHtmlTag >> convertToEmTag)(innerTableBody.toString())
+                                // 関数合成でescapeHtmlTagしてから、convertToEmTagして、convertToATagする
+                                body << (escapeHtmlTag >> convertToEmTag >> convertToATag)(innerTableBody.toString())
                                 body << '''|</pre>
                                            |</div>'''.stripMargin() << '\n'
                             }
