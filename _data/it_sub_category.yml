@@ -175,6 +175,13 @@
 - sub_category_id: vba
   sub_category_label: VBA
   link: /it/vba/
+  article_group:
+    - id: basis-group
+      label: 基本事項
+    - id: reverse-lookup
+      label: 逆引き
+    - id: reference-group
+      label: 参照・参考
   sub_category_group: programming_language
   sub_category_order: 20
   description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ

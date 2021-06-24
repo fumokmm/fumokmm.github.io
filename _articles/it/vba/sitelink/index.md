@@ -1,5 +1,6 @@
 ---
 title: VBA関連サイト
+article_group_id: reference-group
 display_order: 910
 created: 2020-09-28
 updated: 2021-01-04
