@@ -1,5 +1,6 @@
 ---
 title: VBAプロジェクトの全ソースを一括エクスポートする
+article_group_id: reverse-lookup
 display_order: 70
 created: 2020-05-04
 updated: 2021-05-19
