@@ -169,7 +169,8 @@ document.getElementById('SnakeCaseConvertBtn').addEventListener('click', () => {
     let lines = before.value.split(/\r?\n/);
     after.value = '';
     for (let i = 0; i < lines.length; i++) {
-        after.value += lines[i].toLowerCase().replace(/[\s_-]+/g, '_');
+        after.value += lines[i].toLowerCase().replace(/[\s_-]+/g, '_')
+                                             .replace(/'/, '');
         after.value += '\n';
     }
 }, false);
@@ -185,7 +186,8 @@ document.getElementById('KebabCaseConvertBtn').addEventListener('click', () => {
     let lines = before.value.split(/\r?\n/);
     after.value = '';
     for (let i = 0; i < lines.length; i++) {
-        after.value += lines[i].toLowerCase().replace(/[\s_-]+/g, '-');
+        after.value += lines[i].toLowerCase().replace(/[\s_-]+/g, '-')
+                                             .replace(/'/, '');
         after.value += '\n';
     }
 }, false);
