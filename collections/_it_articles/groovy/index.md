@@ -1,7 +1,7 @@
 ---
 title: Groovyのメモ
 created: 2021-04-08
-updated: 2021-04-08
+updated: 2021-06-29
 ---
 こちらはGroovyのメモになります。
 
