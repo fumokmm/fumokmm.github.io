@@ -2,7 +2,7 @@
 title: 期待について
 display_order: 10
 created: 2021-01-20
-updated: 2021-05-30
+updated: 2021-07-04
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -10,7 +10,7 @@ updated: 2021-05-30
 <ul id="index_ul">
 <li><a href="#期待を捨てる">期待を捨てる</a></li>
 <li><a href="#自分の隠れた期待の見つけ方">自分の隠れた期待の見つけ方</a></li>
-<li><a href="#reference">参考</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 
 * * *
@@ -60,9 +60,13 @@ updated: 2021-05-30
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-01-20" updated="2021-01-20" %}</div>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-01-20" updated="2021-07-04" %}</div>
+### 参考書籍
 - {% include book/book_600.html %} {% comment %} あなたはあなたが使っている言葉でできている {% endcomment %}
+
+### 関連メモ
+- [人間関係を楽にする方法]({% link _life_articles/human_relations/how_to_make_relationships_easier.md %})
 
 {% include goto_pagetop.html %}
 
