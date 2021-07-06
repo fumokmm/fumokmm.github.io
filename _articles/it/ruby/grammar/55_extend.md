@@ -1,7 +1,6 @@
 ---
 chapter_no: 55
 chapter_group: 外部ライブラリの読み込み
-chapter_id: extend
 chapter_title: extend
 created: 2021-03-18
 updated: 2021-03-19
@@ -13,6 +12,3 @@ updated: 2021-03-19
 - [load](#load)
 - [include](#include)
 - [prepend](#prepend)
-
-### 参考
-- [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)

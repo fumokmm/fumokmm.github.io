@@ -28,7 +28,3 @@ require <em>'./path/to/file'</em>
 - [include](#include)
 - [prepend](#prepend)
 - [extend](#extend)
-
-### 参考
-- [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)
-- [(Tech Academy) Rubyの外部ファイル読み込みとrequireの使い方を現役エンジニアが解説【初心者向け】](https://techacademy.jp/magazine/21359)
