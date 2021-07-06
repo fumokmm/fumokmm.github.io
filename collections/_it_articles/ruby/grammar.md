@@ -2,7 +2,7 @@
 title: Rubyの文法
 display_order: 10
 created: 2020-12-03
-updated: 2021-03-19
+updated: 2021-07-06
 ---
 ここではRubyの文法を簡単にまとめておきます。
 
@@ -10,6 +10,19 @@ updated: 2021-03-19
 
 <div style="column-count: 2;">
     <ul id="index_ul">
+        <li><a href="#はじめに">はじめに</a>
+            <ul>
+                <li><a href="#Hello World">Hello World</a></li>
+                <li><a href="#コメント">コメント</a></li>
+            </ul>
+        </li>
+        <li><a href="#型">型</a>
+            <ul>
+                <li><a href="#数値型">数値型</a></li>
+                <li><a href="#論理型">論理型</a></li>
+                <li><a href="#文字列型">文字列型</a></li>
+            </ul>
+        </li>
         <li><a href="#基礎文法">基礎文法</a>
             <ul>
                 <li><a href="#条件分岐 - If文">条件分岐 - If文</a></li>
@@ -27,11 +40,123 @@ updated: 2021-03-19
         </li>
         <li><a href="#参照・参考">参照・参考</a>
             <ul>
-                <li><a href="#参考">参考</a></li>
+                <li><a href="#参考書籍">参考書籍</a></li>
+                <li><a href="#参考サイト">参考サイト</a></li>
+                <li><a href="#ソース">ソース</a></li>
             </ul>
         </li>
     </ul>
 </div>
+
+## <a name="はじめに">はじめに</a><a class="heading-anchor-permalink" href="#はじめに">§</a>
+* * *
+## <a name="Hello World">Hello World</a><a class="heading-anchor-permalink" href="#Hello World">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
+<div class="code-box no-title">
+<pre>
+puts "Hello World"
+puts 'こんにちは'
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+<em class="command">$ ruby 0001_hello_world.rb</em>
+Hello World
+こんにちは
+</pre>
+</div>
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="コメント">コメント</a><a class="heading-anchor-permalink" href="#コメント">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
+<div class="code-box no-title">
+<pre>
+<em class="comment"># ここがコメント</em>
+<em class="comment"># puts "コメント部分は処理されない"</em>
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+</pre>
+</div>
+
+{% include goto_pagetop.html %}
+
+## <a name="型">型</a><a class="heading-anchor-permalink" href="#型">§</a>
+* * *
+## <a name="数値型">数値型</a><a class="heading-anchor-permalink" href="#数値型">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
+### 整数(Integer)
+<div class="code-box no-title">
+<pre>
+num1 = <em>1234</em> <em class="comment"># 正の整数</em>
+num2 = <em>-1234</em> <em class="comment"># 負の整数</em>
+<em class="comment"># 数値の途中のアンダーバー(_)は無視される</em>
+num3 = <em>1_234_000</em>
+
+puts num1
+puts num2
+puts num3
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+<em class="command">$ ruby 0003_types_integer.rb</em>
+1234
+-1234
+1234000
+</pre>
+</div>
+
+### 10進数、16進数、8進数、2進数
+<div class="code-box no-title">
+<pre>
+num1 = <em>0d9999</em>      <em class="comment"># 10進数 (0dで始まる数値は10進数とみなされる)</em>
+num2 = <em>0xffff</em>      <em class="comment"># 16進数 (0xで始まる数値は16進数とみなされる)</em>
+num3 = <em>0o777</em>       <em class="comment"># 8進数 (0oで始まる数値は 8進数とみなされる)</em>
+num4 = <em>0b11000100</em>  <em class="comment"># 2進数 (0bで始まる数値は 2進数とみなされる)</em>
+
+puts num1
+puts num2
+puts num3
+puts num4
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+<em class="command">$ ruby 0004_types_integer2.rb</em>
+9999
+65535
+511
+196
+</pre>
+</div>
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="論理型">論理型</a><a class="heading-anchor-permalink" href="#論理型">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
+そのうち書きます。
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="文字列型">文字列型</a><a class="heading-anchor-permalink" href="#文字列型">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
+そのうち書きます。
+
+{% include goto_pagetop.html %}
 
 ## <a name="基礎文法">基礎文法</a><a class="heading-anchor-permalink" href="#基礎文法">§</a>
 * * *
@@ -56,9 +181,6 @@ updated: 2021-03-19
 <em>end</em>
 </pre>
 </div>
-
-### 参考
-- [(Let'sプログラミング) if文](https://www.javadrive.jp/ruby/if/index1.html)
 
 {% include goto_pagetop.html %}
 
@@ -97,10 +219,6 @@ require <em>'./path/to/file'</em>
 - [prepend](#prepend)
 - [extend](#extend)
 
-### 参考
-- [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)
-- [(Tech Academy) Rubyの外部ファイル読み込みとrequireの使い方を現役エンジニアが解説【初心者向け】](https://techacademy.jp/magazine/21359)
-
 {% include goto_pagetop.html %}
 
 * * *
@@ -131,10 +249,6 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 - [prepend](#prepend)
 - [extend](#extend)
 
-### 参考
-- [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)
-- [(Tech Academy) Rubyのloadの使い方を現役エンジニアが解説【初心者向け】](https://techacademy.jp/magazine/20141)
-
 {% include goto_pagetop.html %}
 
 * * *
@@ -147,10 +261,6 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 - [load](#load)
 - [prepend](#prepend)
 - [extend](#extend)
-
-### 参考
-- [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)
-- [(圧倒亭グランパのブログ) 【ruby】 メソッド探索から見る、モジュール・特異メソッド・特異クラス](https://at-grandpa.hatenablog.jp/entry/2016/02/14/090544)
 
 {% include goto_pagetop.html %}
 
@@ -165,10 +275,6 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 - [include](#include)
 - [extend](#extend)
 
-### 参考
-- [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)
-- [(圧倒亭グランパのブログ) 【ruby】 メソッド探索から見る、モジュール・特異メソッド・特異クラス](https://at-grandpa.hatenablog.jp/entry/2016/02/14/090544)
-
 {% include goto_pagetop.html %}
 
 * * *
@@ -182,19 +288,33 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 - [include](#include)
 - [prepend](#prepend)
 
-### 参考
-- [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)
-
 {% include goto_pagetop.html %}
 
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
-## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-12-03" updated="2021-03-18" %}</div>
+## <a name="参考書籍">参考書籍</a><a class="heading-anchor-permalink" href="#参考書籍">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-12-03" updated="2020-12-03" %}</div>
 - {% include book/book_373.html %} {% comment %} Ruby on Rails 5.0 初級①: 経路、アクション、テンプレート {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="参考サイト">参考サイト</a><a class="heading-anchor-permalink" href="#参考サイト">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-03-18" updated="2021-07-06" %}</div>
 - [(Let'sプログラミング) if文](https://www.javadrive.jp/ruby/if/index1.html)
 - [(Qiita) Ruby基礎 \| requireとincludeとextendの違いを確認（includeとextendはメソッド探索で確認）](https://qiita.com/suzukiry/items/db936ff7312ba7d97315)
 - [(圧倒亭グランパのブログ) 【ruby】 メソッド探索から見る、モジュール・特異メソッド・特異クラス](https://at-grandpa.hatenablog.jp/entry/2016/02/14/090544)
+- [(Tech Academy) Rubyのloadの使い方を現役エンジニアが解説【初心者向け】](https://techacademy.jp/magazine/20141)
+- [(Progate) Ruby I](https://prog-8.com/lessons/ruby/study/1)
+- [とほほのRuby入門](https://www.tohoho-web.com/ruby/index.html)
+  - [(とほほのRuby入門) Ruby入門 - 数値・文字列・型](https://www.tohoho-web.com/ruby/types.html)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="ソース">ソース</a><a class="heading-anchor-permalink" href="#ソース">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
+- [language-examples](https://github.com/fumokmm/language-examples/tree/main/Ruby)
 
 {% include goto_pagetop.html %}
 

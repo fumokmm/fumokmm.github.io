@@ -1,5 +1,5 @@
 ---
-chapter_no: 12
+chapter_no: 32
 chapter_group: 基礎文法
 chapter_title: Truthy
 created: 2020-12-03
