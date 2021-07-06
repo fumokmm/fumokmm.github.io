@@ -11,7 +11,6 @@ puts 'こんにちは'
 ```
 
 ```output:出力結果
-{em:command{$ ruby 0001_hello_world.rb}em}
 Hello World
 こんにちは
 ```

@@ -62,7 +62,6 @@ puts 'こんにちは'
 <div class="code-box-output">
 <div class="title">出力結果</div>
 <pre>
-<em class="command">$ ruby 0001_hello_world.rb</em>
 Hello World
 こんにちは
 </pre>
@@ -77,12 +76,6 @@ Hello World
 <pre>
 <em class="comment"># ここがコメント</em>
 <em class="comment"># puts "コメント部分は処理されない"</em>
-</pre>
-</div>
-
-<div class="code-box-output">
-<div class="title">出力結果</div>
-<pre>
 </pre>
 </div>
 
@@ -134,7 +127,6 @@ puts num4
 <div class="code-box-output">
 <div class="title">出力結果</div>
 <pre>
-<em class="command">$ ruby 0004_types_integer2.rb</em>
 9999
 65535
 511
