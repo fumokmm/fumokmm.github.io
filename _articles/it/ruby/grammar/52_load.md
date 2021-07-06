@@ -1,7 +1,6 @@
 ---
 chapter_no: 52
 chapter_group: 外部ライブラリの読み込み
-chapter_id: load
 chapter_title: load
 created: 2021-03-18
 updated: 2021-03-19

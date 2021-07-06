@@ -12,8 +12,8 @@ updated: 2021-03-19
     <ul id="index_ul">
         <li><a href="#基礎文法">基礎文法</a>
             <ul>
-                <li><a href="#if">条件分岐 - If文</a></li>
-                <li><a href="#truthy">Truthy</a></li>
+                <li><a href="#条件分岐 - If文">条件分岐 - If文</a></li>
+                <li><a href="#Truthy">Truthy</a></li>
             </ul>
         </li>
         <li><a href="#外部ライブラリの読み込み">外部ライブラリの読み込み</a>
@@ -27,7 +27,7 @@ updated: 2021-03-19
         </li>
         <li><a href="#参照・参考">参照・参考</a>
             <ul>
-                <li><a href="#reference">参考</a></li>
+                <li><a href="#参考">参考</a></li>
             </ul>
         </li>
     </ul>
@@ -35,7 +35,7 @@ updated: 2021-03-19
 
 ## <a name="基礎文法">基礎文法</a><a class="heading-anchor-permalink" href="#基礎文法">§</a>
 * * *
-## <a name="if">条件分岐 - If文</a><a class="heading-anchor-permalink" href="#if">§</a>
+## <a name="条件分岐 - If文">条件分岐 - If文</a><a class="heading-anchor-permalink" href="#条件分岐 - If文">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-03-09" %}</div>
 <div class="code-box-syntax">
 <div class="title">If文</div>
@@ -63,7 +63,7 @@ updated: 2021-03-19
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="truthy">Truthy</a><a class="heading-anchor-permalink" href="#truthy">§</a>
+## <a name="Truthy">Truthy</a><a class="heading-anchor-permalink" href="#Truthy">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-03" updated="2020-12-03" %}</div>
 Rubyでは、条件式などで偽とみなされる値(falsey value)を`nil`と`false`のみと定めていて、それ以外のオブジェクトはすべて真とみなされる値(truthy value)となります。
 
@@ -189,7 +189,7 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
-## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-03" updated="2021-03-18" %}</div>
 - {% include book/book_373.html %} {% comment %} Ruby on Rails 5.0 初級①: 経路、アクション、テンプレート {% endcomment %}
 - [(Let'sプログラミング) if文](https://www.javadrive.jp/ruby/if/index1.html)
