@@ -22,15 +22,23 @@
 		"scope": "markdown",
 		"prefix": "em",
 		"body": [
-			"<em>$TM_SELECTED_TEXT</em>"
+			"{em{$TM_SELECTED_TEXT}em}"
 		],
 		"description": "output em tag."
+	},
+	"em_blue": {
+		"scope": "markdown",
+		"prefix": "em_blue",
+		"body": [
+			"{em:blue{$TM_SELECTED_TEXT}em}"
+		],
+		"description": "output em tag with class blue."
 	},
 	"em_comment": {
 		"scope": "markdown",
 		"prefix": "em_comment",
 		"body": [
-			"<em class=\"comment\">$TM_SELECTED_TEXT</em>"
+			"{em:comment{$TM_SELECTED_TEXT}em}"
 		],
 		"description": "output em tag with class comment."
 	},
@@ -38,16 +46,8 @@
 		"scope": "markdown",
 		"prefix": "em_command",
 		"body": [
-			"<em class=\"command\">$TM_SELECTED_TEXT</em>"
+			"{em:command{$TM_SELECTED_TEXT}em}"
 		],
 		"description": "output em tag with class command."
-	},
-	"em_blue": {
-		"scope": "markdown",
-		"prefix": "em_blue",
-		"body": [
-			"<em class=\"blue\">$TM_SELECTED_TEXT</em>"
-		],
-		"description": "output em tag with class blue."
 	}
 }

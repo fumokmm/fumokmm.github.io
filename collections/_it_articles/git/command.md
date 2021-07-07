@@ -230,7 +230,7 @@ git <em class="blue">stash</em>
 <pre>
 git <em class="blue">stash push</em> <em class="command">-k</em>
 または
-git <em class="blue">stash</em> push <em class="command">--keep-index</em>
+git <em class="blue">stash push</em> <em class="command">--keep-index</em>
 </pre>
 </div>
 

@@ -14,7 +14,7 @@ git {em:blue{stash}em}
 ```:変更を退避するとき、addしたものは退避しない
 git {em:blue{stash push}em} {em:command{-k}em}
 または
-git {em:blue{stash}em} push {em:command{--keep-index}em}
+git {em:blue{stash push}em} {em:command{--keep-index}em}
 ```
 
 ```:変更を退避するとき、新規作成されたファイルも一緒に退避する
