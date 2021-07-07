@@ -102,7 +102,6 @@ puts num3
 <div class="code-box-output">
 <div class="title">出力結果</div>
 <pre>
-<em class="command">$ ruby 0003_types_integer.rb</em>
 1234
 -1234
 1234000
@@ -131,6 +130,26 @@ puts num4
 65535
 511
 196
+</pre>
+</div>
+
+### 浮動小数点(Float)
+
+<div class="code-box no-title">
+<pre>
+num1 = <em>1.234</em>
+num2 = <em>1.2e3</em>  <em class="comment"># 指数表記 (1.2 × 10^3)</em>
+
+puts num1
+puts num2
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+1.234
+1200.0
 </pre>
 </div>
 
