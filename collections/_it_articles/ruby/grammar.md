@@ -2,7 +2,7 @@
 title: Rubyの文法
 display_order: 10
 created: 2020-12-03
-updated: 2021-07-06
+updated: 2021-07-07
 ---
 ここではRubyの文法を簡単にまとめておきます。
 
@@ -84,7 +84,7 @@ Hello World
 ## <a name="型">型</a><a class="heading-anchor-permalink" href="#型">§</a>
 * * *
 ## <a name="数値型">数値型</a><a class="heading-anchor-permalink" href="#数値型">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-07" %}</div>
 ### 整数(Integer)
 <div class="code-box no-title">
 <pre>
@@ -157,8 +157,29 @@ puts num2
 
 * * *
 ## <a name="論理型">論理型</a><a class="heading-anchor-permalink" href="#論理型">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
-そのうち書きます。
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-07" %}</div>
+### 論理型(Boolean)
+<div class="code-box no-title">
+<pre>
+bool1 = <em>true</em>   <em class="comment"># TrueClassの唯一のインスタンス</em>
+bool2 = <em>false</em>  <em class="comment"># FalseClassの唯一のインスタンス</em>
+
+puts bool1
+puts bool2
+puts bool1.class == TrueClass
+puts bool2.class == FalseClass
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+true
+false
+true
+true
+</pre>
+</div>
 
 {% include goto_pagetop.html %}
 
