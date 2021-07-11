@@ -96,6 +96,16 @@
   sub_category_order: database04
   description: Oracle社が作成しているデータベースOracleについてのメモ
 
+- sub_category_id: outlook
+  sub_category_label: Outlook
+  link: /it/outlook/
+  article_group:
+    - id: tips-group
+      label: Tips
+  sub_category_group: mail_client
+  sub_category_order: 10
+  description: Microsoft社が開発しているOfficeツールのメールクライアント。
+
 # P
 - sub_category_id: problem
   sub_category_label: プログラミングお題
