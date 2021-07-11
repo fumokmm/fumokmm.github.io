@@ -2,7 +2,7 @@
 layout: default_layout
 title: IT技術メモ
 created: 2020-09-02
-updated: 2021-07-08
+updated: 2021-07-12
 ---
 ## こちらはプログラミング関連のメモになります
 
@@ -148,6 +148,24 @@ updated: 2021-07-08
     {% endfor %}
 </table>
 
+## こちらはメールクライアントメモになります
+
+<table>
+    {% assign mail_clients = site.data.it_sub_category | where: 'sub_category_group', 'mail_client'
+                                                       | sort: 'sub_category_order' %}
+    {% for mail_client in mail_clients %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', mail_client.sub_category_id %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ mail_client.link }}">{{ mail_client.sub_category_label }}</a></td>
+        <td markdown="span">{{ mail_client.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+
 ## こちらはアプリケーション関連のメモになります
 
 <table>
@@ -201,8 +219,6 @@ updated: 2021-07-08
     </tr>
     {% endfor %}
 </table>
-
-
 
 ## こちらはその他のメモになります
 

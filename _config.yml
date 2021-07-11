@@ -82,6 +82,13 @@ defaults:
       path: "_it_articles/other"
     values:
       sub_category_id: "other"
+
+  # Outlook
+  - scope:
+      path: "_it_articles/outlook"
+    values:
+      sub_category_id: "outlook"
+
   - scope:
       path: "_it_articles/structured_text_data_format"
     values:
