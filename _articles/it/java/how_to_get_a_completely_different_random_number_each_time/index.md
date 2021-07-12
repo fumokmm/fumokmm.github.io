@@ -1,5 +1,6 @@
 ---
 title: Javaで毎回完全に異なる乱数を取得する方法
+article_group_id: tips-group
 display_order: 40
 created: 2009-01-16
 updated: 2021-06-21

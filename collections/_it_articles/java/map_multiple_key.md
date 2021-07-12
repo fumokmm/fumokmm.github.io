@@ -1,5 +1,6 @@
 ---
 title: JavaでMapに複数のキーを指定する方法
+article_group_id: tips-group
 display_order: 20
 created: 2009-01-16
 updated: 2021-02-16
