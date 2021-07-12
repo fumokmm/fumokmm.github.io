@@ -68,6 +68,12 @@ defaults:
     values:
       sub_category_id: linux
 
+  # Kotlin
+  - scope:
+      path: "_it_articles/kotlin"
+    values:
+      sub_category_id: kotlin
+
   # Liquid
   - scope:
       path: "_it_articles/liquid"

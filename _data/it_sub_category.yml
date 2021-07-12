@@ -77,6 +77,17 @@
   sub_category_order: 70
   description: Juliaは、数値解析や計算科学に適している高レベルで高性能な動的プログラミング言語です。
 
+# K
+- sub_category_id: kotlin
+  sub_category_label: Kotlin
+  link: /it/kotlin/
+  article_group:
+    - id: howto-group
+      label: How To
+  sub_category_group: programming_language
+  sub_category_order: 15
+  description: "JetBrains社が開発している[プログラミング言語Kotlin](https://kotlinlang.org/)についてのメモです。"
+
 # L
 - sub_category_id: linux
   sub_category_label: Linux
