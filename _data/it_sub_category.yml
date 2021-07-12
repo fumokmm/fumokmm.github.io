@@ -61,11 +61,15 @@
 - sub_category_id: java
   sub_category_label: Java
   link: /it/java/
+  article_group:
+    - id: basis-group
+      label: 基本事項
+    - id: tips-group
+      label: Tips
   sub_category_group: programming_language
   sub_category_order: 10
   description: プログラミング言語Javaについてのメモ
 
-# J
 - sub_category_id: julia
   sub_category_label: Julia
   link: /it/julia/

@@ -1,5 +1,6 @@
 ---
 title: Javaのenumは継承できないけどインタフェースが継承できる
+article_group_id: tips-group
 display_order: 10
 created: 2012-05-03
 updated: 2021-02-23
