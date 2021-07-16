@@ -165,6 +165,16 @@
   description: "[まつもとゆきひろ氏](https://ja.wikipedia.org/wiki/%E3%81%BE%E3%81%A4%E3%82%82%E3%81%A8%E3%82%86%E3%81%8D%E3%81%B2%E3%82%8D)（通称:Matz）により開発されたオブジェクト指向スクリプト言語についてのメモ"
 
 # S
+- sub_category_id: sakuraeditor
+  sub_category_label: サクラエディタ
+  link: /it/sakuraeditor/
+  article_group:
+    - id: macro-group
+      label: マクロ
+  sub_category_group: editor
+  sub_category_order: 20
+  description: "[サクラエディタ](https://sakura-editor.github.io/)はWindowsで定番のテキストエディタ"
+
 - sub_category_id: sqlserver
   sub_category_label: SQL Server
   link: /it/sqlserver/
@@ -215,7 +225,7 @@
   sub_category_label: Visual Studio Code
   link: /it/vscode/
   sub_category_group: editor
-  sub_category_order: editor01
+  sub_category_order: 10
   description: Microsoft社が開発したエディターVisual Studio Codeについてのメモ
 
 # W
