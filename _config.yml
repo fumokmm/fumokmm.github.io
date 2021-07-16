@@ -123,6 +123,13 @@ defaults:
       path: "_it_articles/subversion"
     values:
       sub_category_id: "subversion"
+
+  # サクラエディタ
+  - scope:
+      path: "_it_articles/sakuraeditor"
+    values:
+      sub_category_id: "sakuraeditor"
+
   - scope:
       path: "_it_articles/teams"
     values:
