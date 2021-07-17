@@ -10,8 +10,11 @@
 - sub_category_id: chrome
   sub_category_label: Chrome
   link: /it/chrome/
+  article_group:
+    - id: setting-group
+      label: 設定
   sub_category_group: browser
-  sub_category_order: browser01
+  sub_category_order: 10
   description: Google社が開発しているブラウザ
 
 # D

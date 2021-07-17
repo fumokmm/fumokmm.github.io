@@ -11,7 +11,13 @@ collections_dir = Dir.new(File.join(base_dir, 'collections'))
 def read_updated(path_name)
   File.foreach(path_name) do |line|
     if line.start_with? 'updated: '
-      return Date.parse(line.chomp[/\d{4}-\d{2}-\d{2}/, 0])
+      begin
+        date_str = line.chomp[/\d{4}-\d{2}-\d{2}/, 0]
+        return Date.parse(date_str)
+      rescue => error
+        puts "#{path_name} -- updatedに不正な日付が含まれていました(#{error}): #{date_str}"
+        exit(-1)
+      end
     end
   end
 end
