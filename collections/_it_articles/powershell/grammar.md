@@ -135,21 +135,24 @@ PowerShellでは変数は頭に`$`を付けて宣言します。
 ### 関数宣言
 - 関数は`function`キーワードを使って宣言します。  
 - 引数を書く位置は、変数名の後の`()`の中か、本体の先頭部分の`Param()`の中のどちらかです[^arguments-position]。
-
+- 戻り値は`return`キーワードのを使って書きます。
 <div class="code-box-syntax no-title">
 <pre>
 <em class="comment"># 引数なし</em>
 function <em>関数名</em> {
     <em class="comment"># 処理本体</em>
+    return <em class="blue">戻り値</em>
 }
 
 function <em>関数名</em>() {
     <em class="comment"># 処理本体</em>
+    return <em class="blue">戻り値</em>
 }
 
 <em class="comment"># 引数あり</em>
 function <em>関数名</em>(<em class="blue">引数1, 引数2, …</em>) {
     <em class="comment"># 処理本体</em>
+    return <em class="blue">戻り値</em>
 }
 
 function <em>関数名</em> {
@@ -159,6 +162,7 @@ function <em>関数名</em> {
         …
     )</em>
     <em class="comment"># 処理本体</em>
+    return <em class="blue">戻り値</em>
 }
 </pre>
 </div>
@@ -223,7 +227,7 @@ c
   - ただ、明示的に`[ref]`を付けておいたほうが、参照渡しであることが分かりやすいので、付けておいたほうがいいかもしれません。
 
 <div class="code-box">
-<div class="title">function_args_byval_byref</div>
+<div class="title">function_args_byval_byref.ps1</div>
 <pre>
 <em class="comment"># 値渡し</em>
 function byVal($arg) {
@@ -267,6 +271,39 @@ Good bye!!!
 </pre>
 </div>
 
+### 引数のデフォルト値
+- 引数のデフォルト値を設定できます。
+- 関数呼び出しの時に省略すると、その値が設定されます。
+- 明示的に指定して上書きすることもできます。
+<div class="code-box">
+<div class="title">function_args_default_value.ps1</div>
+<pre>
+function foo($arg <em>= 10</em>) {
+    Write-Host "値は$($arg)です。"
+}
+function bar($arg1, $arg2 <em>= 10</em>) {
+    Write-Host "値は$($arg1)と$($arg2)です。"
+}
+
+foo       <em class="comment"># =&gt; 省略しているので、デフォルト値の10が出力される</em>
+foo 20    <em class="comment"># =&gt; 上書きして、20が出力される</em>
+
+bar 15    <em class="comment"># =&gt; $arg1に15が入って、$arg2はデフォルト値の10が入る</em>
+bar 15 25 <em class="comment"># =&gt; $arg1に15が入って、$arg2は上書きして25が入る</em>
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+<em class="command">PS C:\temp&gt;</em> .\function_args_default_value.ps1       
+値は10です。
+値は20です。
+値は15と10です。
+値は15と25です。
+</pre>
+</div>
+
 {% include goto_pagetop.html %}
 
 * * *
@@ -278,6 +315,7 @@ Good bye!!!
 - [(バヤシタ) ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
 - [(hakeの日記) PowerShell - 関数（可変長引数）](https://hake.hatenablog.com/entry/20161227/p1)
 - [(hakeの日記) PowerShell - 関数（値渡しと参照渡し）](https://hake.hatenablog.com/entry/20161230/p1)
+- [(HIRO's.NET) 06.値渡しと参照渡し](https://hiros-dot.net/PowerShell/function/func06.htm)
 - [(HIRO's.NET) 03.引数を省略可能にするには](https://hiros-dot.net/PowerShell/function/func03.htm)
 
 ### ソース
