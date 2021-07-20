@@ -18,7 +18,7 @@ updated: 2021-05-28
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-28" updated="2021-05-28" %}</div>
 ### 式の途中で改行する
 式の途中で改行するには`サーカムフレックス(^)`を使用します。
-ちなみに[PowerShellの方]({% link _it_articles/powershell/grammar.md %}#basis)では、<code>バッククォート(`)</code>を利用していましたね。
+ちなみに[PowerShellの方]({% link _it_articles/powershell/grammar.md %}#式の途中で改行する)では、<code>バッククォート(`)</code>を利用していましたね。
 <div class="code-box">
 <div class="title">test.bat</div>
 <pre>

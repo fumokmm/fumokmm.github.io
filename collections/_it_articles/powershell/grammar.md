@@ -12,8 +12,19 @@ updated: 2021-07-20
     <ul id="index_ul">
         <li><a href="#基礎文法">基礎文法</a>
             <ul>
-                <li><a href="#基礎">基礎</a></li>
-                <li><a href="#関数">関数</a></li>
+                <li><a href="#Hello World">Hello World</a></li>
+                <li><a href="#コメント">コメント</a></li>
+                <li><a href="#式の途中で改行する">式の途中で改行する</a></li>
+                <li><a href="#変数宣言">変数宣言</a></li>
+                <li><a href="#スコープ">スコープ</a></li>
+            </ul>
+        </li>
+        <li><a href="#関数">関数</a>
+            <ul>
+                <li><a href="#関数宣言">関数宣言</a></li>
+                <li><a href="#可変長引数">可変長引数</a></li>
+                <li><a href="#値渡し、参照渡し">値渡し、参照渡し</a></li>
+                <li><a href="#引数のデフォルト値">引数のデフォルト値</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -26,35 +37,43 @@ updated: 2021-07-20
 
 ## <a name="基礎文法">基礎文法</a><a class="heading-anchor-permalink" href="#基礎文法">§</a>
 * * *
-## <a name="基礎">基礎</a><a class="heading-anchor-permalink" href="#基礎">§</a>
+## <a name="Hello World">Hello World</a><a class="heading-anchor-permalink" href="#Hello World">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
 ### コンソールに文字表示
-`Write-Host`コマンドレットを使用します。
+- `Write-Host`コマンドレットを使用します。
 <div class="code-box no-title">
 <pre>
 <em>Write-Host</em> <em class="blue">"Hello world"</em>
 </pre>
 </div>
 
-### コメント
-コメントには`#`を使用します。
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="コメント">コメント</a><a class="heading-anchor-permalink" href="#コメント">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
+- コメントには`#`を使用します。
 <div class="code-box no-title">
 <pre>
 <em class="comment"># ここはコメント</em>
 </pre>
 </div>
 
-複数行コメントには`<#`と`#>`を使用します。
+- 複数行コメントには`<#`と`#>`を使用します。
 <div class="code-box no-title">
 <pre>
 <em class="comment">&lt;#
 ここは複数行
 コメントです。
-#&gt;</em>
+&gt;</em>
 </pre>
 </div>
 
-### 式の途中で改行する
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="式の途中で改行する">式の途中で改行する</a><a class="heading-anchor-permalink" href="#式の途中で改行する">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
 式の途中で改行するには<code>バッククォート(`)</code>を使用します。
 ちなみに[Windows Batchの方]({% link _it_articles/windows_batch/grammar.md %}#basis)では`サーカムフレックス(^)`を利用していましたね。
 <div class="code-box no-title">
@@ -65,7 +84,7 @@ New-Item "c:\temp\myfile.txt" <em>`</em>
 </pre>
 </div>
 
-パイプ`(|)`を後ろに置く場合は<code>バッククォート(`)</code>無しで改行できます。
+- パイプ`(|)`を後ろに置く場合は<code>バッククォート(`)</code>無しで改行できます。
 <div class="code-box no-title">
 <pre>
 Get-Process <em>|</em>
@@ -74,26 +93,28 @@ Get-Process <em>|</em>
 </pre>
 </div>
 
-- 参考：[ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
+{% include goto_pagetop.html %}
 
-### 変数宣言
-PowerShellでは変数は頭に`$`を付けて宣言します。
-変数宣言をしていなくても使用可能で、どのような型でも代入が可能です。
+* * *
+## <a name="変数宣言">変数宣言</a><a class="heading-anchor-permalink" href="#変数宣言">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
+- PowerShellでは変数は頭に`$`を付けて宣言します。
+- 変数宣言をしていなくても使用可能で、どのような型でも代入が可能です。
 <div class="code-box no-title">
 <pre>
 <em>$a</em> = 1
-<em>$items</em> = Get-ChildItem # コマンドレットの戻り値を格納
+<em>$items</em> = Get-ChildItem <em class="comment"># コマンドレットの戻り値を格納</em>
 </pre>
 </div>
 
-型を明示的に指定することも可能です。型は`[型]`という形式で`$`の前に付けます。
+- 型を明示的に指定することも可能です。型は`[型]`という形式で`$`の前に付けます。
 <div class="code-box no-title">
 <pre>
 <em>[int]</em>$i = 10
 </pre>
 </div>
 
-明示的に型を指定した場合、その型以外を代入しようとするとエラーとなります。
+- 明示的に型を指定した場合、その型以外を代入しようとするとエラーとなります。
 <div class="code-box-output">
 <div class="title">違う方を代入しようとするとエラーになる</div>
 <pre>
@@ -108,7 +129,11 @@ PowerShellでは変数は頭に`$`を付けて宣言します。
 </pre>
 </div>
 
-### スコープ
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="スコープ">スコープ</a><a class="heading-anchor-permalink" href="#スコープ">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
 - PowerShellはダイナミックスコープを採用しています。
 - スコープを生成するものは、以下の3種類。
   - 関数の実行
@@ -118,8 +143,6 @@ PowerShellでは変数は頭に`$`を付けて宣言します。
   - `if` や `for` といった制御構文
   - `try` - `catch` - `finally`
   - `begin` - `process` - `end`
-
-スコープについては詳しくは[こちら](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)がとても参考になります。
 
 ### 明示的なスコープの読み取り
 - スコープの種類は、`global`、`script`、`local`、`private`の4種類あります。
@@ -136,14 +159,14 @@ PowerShellでは変数は頭に`$`を付けて宣言します。
 - `local`はスコープのところで書いた*スコープが生成される範囲内`でのスコープです。
 - `private`だけちょっと毛色が違っていて、宣言したスコープよりも子のスコープから見えなくなるものです。
 
-スコープについては詳しくは[こちら](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)がとても参考になります。
+- スコープについては詳しくは[こちら](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)がとても参考になります。
 
 {% include goto_pagetop.html %}
 
-* * *
 ## <a name="関数">関数</a><a class="heading-anchor-permalink" href="#関数">§</a>
+* * *
+## <a name="関数宣言">関数宣言</a><a class="heading-anchor-permalink" href="#関数宣言">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-07-20" updated="2021-07-20" %}</div>
-### 関数宣言
 - 関数は`function`キーワードを使って宣言します。  
 - 引数を書く位置は、変数名の後の`()`の中か、本体の先頭部分の`Param()`の中のどちらかです[^arguments-position]。
 - 戻り値は`return`キーワードのを使って書きます。
@@ -179,7 +202,11 @@ function <em>関数名</em> {
 </div>
 [^arguments-position]: 両方に書くと「function の宣言に引数が指定されている場合、param ステートメントを使用できません。」というエラーになります。
 
-### 可変長引数
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="可変長引数">可変長引数</a><a class="heading-anchor-permalink" href="#可変長引数">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-20" updated="2021-07-20" %}</div>
 - 可変長引数は変数`$args`という配列に渡されます。  
 - 普通に引数を渡した関数内でも`$args`で配列は参照できます。
   - その際、普通の引数に指定した方に先に値が割り当てられていき、*残った部分が`$args`に割り当てられます*。
@@ -231,7 +258,11 @@ c
 </pre>
 </div>
 
-### 値渡し、参照渡し
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="値渡し、参照渡し">値渡し、参照渡し</a><a class="heading-anchor-permalink" href="#値渡し、参照渡し">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-20" updated="2021-07-20" %}</div>
 - 値渡しは通常の操作です。関数の中で書き換えても呼び出し元の方の変数へは影響が及びません。
 - 参照渡しをするには、変数にを`ref型`に変換(`[ref]`を付ける)して渡します。
   - 以下の例では、受け取る引数の方も`[ref]`を付けていますが、これは必須ではありません(省略可)。
@@ -282,7 +313,11 @@ Good bye!!!
 </pre>
 </div>
 
-### 引数のデフォルト値
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="引数のデフォルト値">引数のデフォルト値</a><a class="heading-anchor-permalink" href="#引数のデフォルト値">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-20" updated="2021-07-20" %}</div>
 - 引数のデフォルト値を設定できます。
 - 関数呼び出しの時に省略すると、その値が設定されます。
 - 明示的に指定して上書きすることもできます。
