@@ -8,14 +8,25 @@ updated: 2021-07-20
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
-<ul id="index_ul">
-<li><a href="#basis">基礎</a></li>
-<li><a href="#関数">関数</a></li>
-<li><a href="#参考">参考</a></li>
-</ul>
+<div style="column-count: 2;">
+    <ul id="index_ul">
+        <li><a href="#基礎文法">基礎文法</a>
+            <ul>
+                <li><a href="#基礎">基礎</a></li>
+                <li><a href="#関数">関数</a></li>
+            </ul>
+        </li>
+        <li><a href="#参照・参考">参照・参考</a>
+            <ul>
+                <li><a href="#参考">参考</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
+## <a name="基礎文法">基礎文法</a><a class="heading-anchor-permalink" href="#基礎文法">§</a>
 * * *
-## <a name="basis">基礎</a><a class="heading-anchor-permalink" href="#basis">§</a>
+## <a name="基礎">基礎</a><a class="heading-anchor-permalink" href="#基礎">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
 ### コンソールに文字表示
 `Write-Host`コマンドレットを使用します。
@@ -306,6 +317,7 @@ bar 15 25 <em class="comment"># =&gt; $arg1に15が入って、$arg2は上書き
 
 {% include goto_pagetop.html %}
 
+## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-07-20" %}</div>
