@@ -3,18 +3,19 @@ title: PowerShellの文法
 article_group_id: basis-group
 display_order: 10
 created: 2021-05-16
-updated: 2021-05-28
+updated: 2021-07-20
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
-<li><a href="#basis">1. 基礎</a></li>
-<li><a href="#reference">参考</a></li>
+<li><a href="#basis">基礎</a></li>
+<li><a href="#関数">関数</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 
 * * *
-## <a name="basis">1. 基礎</a><a class="heading-anchor-permalink" href="#basis">§</a>
+## <a name="basis">基礎</a><a class="heading-anchor-permalink" href="#basis">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
 ### コンソールに文字表示
 `Write-Host`コマンドレットを使用します。
@@ -129,11 +130,158 @@ PowerShellでは変数は頭に`$`を付けて宣言します。
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-16" %}</div>
+## <a name="関数">関数</a><a class="heading-anchor-permalink" href="#関数">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-20" updated="2021-07-20" %}</div>
+### 関数宣言
+- 関数は`function`キーワードを使って宣言します。  
+- 引数を書く位置は、変数名の後の`()`の中か、本体の先頭部分の`Param()`の中のどちらかです[^arguments-position]。
+
+<div class="code-box-syntax no-title">
+<pre>
+<em class="comment"># 引数なし</em>
+function <em>関数名</em> {
+    <em class="comment"># 処理本体</em>
+}
+
+function <em>関数名</em>() {
+    <em class="comment"># 処理本体</em>
+}
+
+<em class="comment"># 引数あり</em>
+function <em>関数名</em>(<em class="blue">引数1, 引数2, …</em>) {
+    <em class="comment"># 処理本体</em>
+}
+
+function <em>関数名</em> {
+    <em class="blue">Param(
+        引数1,
+        引数2,
+        …
+    )</em>
+    <em class="comment"># 処理本体</em>
+}
+</pre>
+</div>
+[^arguments-position]: 両方に書くと「function の宣言に引数が指定されている場合、param ステートメントを使用できません。」というエラーになります。
+
+### 可変長引数
+- 可変長引数は変数`$args`という配列に渡されます。  
+- 普通に引数を渡した関数内でも`$args`で配列は参照できます。
+  - その際、普通の引数に指定した方に先に値が割り当てられていき、*残った部分が`$args`に割り当てられます*。
+
+<div class="code-box">
+<div class="title">function_variable_length_parameter.ps1</div>
+<pre>
+function foo {
+    Write-Host <em>$args</em>.Count
+    foreach($i in $args) {
+        Write-Host $i
+    }
+}
+
+function bar(<em class="blue">$a, $b</em>) {
+    Write-Host "$(<em>$args</em>.Count) a=<em class="blue">$a</em> b=<em class="blue">$b</em>"
+    foreach($i in $args) {
+        Write-Host $i
+    }
+}
+
+# 呼び出し
+Write-Host '--- call foo'
+foo a b あいう
+Write-Host '--- call bar 1'
+bar 10 20 a b c あいう  <em class="comment"># $a, $bに10, 20が割り当てられ、それ以降が$argsに割り当てられる</em>
+Write-Host '--- call bar 2'
+bar 10 20  <em class="comment"># $a, $bに10, 20が割り当てられ、$argsには何も割り当てられず空リストになる</em>
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+<em class="command">PS C:\temp&gt;</em> .\function_variable_length_parameter.ps1
+--- call foo
+3
+a
+b
+あいう
+--- call bar 1
+4 a=10 b=20
+a
+b
+c
+あいう
+--- call bar 2
+0 a=10 b=20
+</pre>
+</div>
+
+### 値渡し、参照渡し
+- 値渡しは通常の操作です。関数の中で書き換えても呼び出し元の方の変数へは影響が及びません。
+- 参照渡しをするには、変数にを`ref型`に変換(`[ref]`を付ける)して渡します。
+  - 以下の例では、受け取る引数の方も`[ref]`を付けていますが、これは必須ではありません(省略可)。
+  - ただ、明示的に`[ref]`を付けておいたほうが、参照渡しであることが分かりやすいので、付けておいたほうがいいかもしれません。
+
+<div class="code-box">
+<div class="title">function_args_byval_byref</div>
+<pre>
+<em class="comment"># 値渡し</em>
+function byVal($arg) {
+    $arg = 'Good bye!'
+    Write-Host "in function(byVal): $arg"
+}
+
+<em class="comment"># 参照渡し</em>
+function byRef(<em class="blue">[ref]</em>$arg) {
+    $arg<em>.Value</em> = 'Good bye!'
+    Write-Host "in function(byRef): $($arg.Value)"
+}
+function byRef2($arg) {
+    $arg<em>.Value</em> += '!!'
+    Write-Host "in function(byRef2): $($arg.Value)"
+}
+
+$str = 'Hello'
+$str
+byVal $str  <em class="comment"># 値渡し</em>
+$str  <em class="comment"># =&gt; Hello のまま</em>
+
+byRef(<em class="blue">[ref]</em>$str)　<em class="comment"># 参照渡し</em>
+$str  <em class="comment"># =&gt; Good bye! に書き換わっている</em>
+byRef2(<em class="blue">[ref]</em>$str)　<em class="comment"># 参照渡し</em>
+$str  <em class="comment"># =&gt; Good bye!!! に書き換わっている</em>
+</pre>
+</div>
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+<em class="command">PS C:\temp&gt;</em> .\function_args_byval_byref.ps1
+Hello
+in function(byVal): Good bye!
+Hello
+in function(byRef): Good bye!
+Good bye!
+in function(byRef2): Good bye!!!
+Good bye!!!
+</pre>
+</div>
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-07-20" %}</div>
+### 参考
 - [(PowerShell Scripting Weblog) PowerShell基礎文法最速マスター](http://winscript.jp/powershell/202)
 - [(鷲ノ巣) PowerShell のスコープ完全に理解した](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)
 - [(バヤシタ) ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
+- [(hakeの日記) PowerShell - 関数（可変長引数）](https://hake.hatenablog.com/entry/20161227/p1)
+- [(hakeの日記) PowerShell - 関数（値渡しと参照渡し）](https://hake.hatenablog.com/entry/20161230/p1)
+- [(HIRO's.NET) 03.引数を省略可能にするには](https://hiros-dot.net/PowerShell/function/func03.htm)
+
+### ソース
+- [language-examples](https://github.com/fumokmm/language-examples/tree/main/PowerShell)
 
 {% include goto_pagetop.html %}
 

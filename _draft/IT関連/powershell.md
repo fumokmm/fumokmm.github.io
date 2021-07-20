@@ -54,3 +54,17 @@ https://docs.microsoft.com/ja-jp/dotnet/standard/base-types/custom-date-and-time
 
 ヒアドキュメントを使って複数行を 1 つの文字列にする
 https://bayashita.com/p/entry/show/50
+
+PowerShell - 関数（可変長引数）
+https://hake.hatenablog.com/entry/20161227/p1
+PowerShell - 関数（値渡しと参照渡し）
+https://hake.hatenablog.com/entry/20161230/p1
+
+引数のデフォルト値
+https://hiros-dot.net/PowerShell/function/func03.htm
+
+繰り返し
+https://mk-55.hatenablog.com/entry/2016/12/17/115632
+
+演算子
+https://www.vwnet.jp/Windows/PowerShell/Ope/OpeListg.htm
