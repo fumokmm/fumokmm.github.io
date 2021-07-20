@@ -28,7 +28,7 @@ List&lt;String&gt; numList = IntStream.range(1, 10)
 </div>
 
 こんな感じで。 numListには
-<div class="code-box no-title">
+<div class="code-box-output no-title">
 <pre>
 ["000", "001", ... "009"]
 </pre>
