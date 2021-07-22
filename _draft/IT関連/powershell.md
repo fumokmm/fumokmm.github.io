@@ -68,3 +68,20 @@ https://mk-55.hatenablog.com/entry/2016/12/17/115632
 
 演算子
 https://www.vwnet.jp/Windows/PowerShell/Ope/OpeListg.htm
+
+
+PowerShellでのOut-Fileコマンドの使い方｜各オプションもご紹介
+https://www.fenet.jp/infla/column/engineer/powershell%E3%81%A7%E3%81%AEout-file%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9%EF%BD%9C%E5%90%84%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%82%E3%81%94%E7%B4%B9/
+
+PowerShell の演算子やエスケープ文字など
+https://konoyonohana.blog.fc2.com/blog-entry-33.html
+
+HOME > PowerShell Tips > ファイル操作 Tips メニュー
+20.ファイル内の文字列を置換する
+http://hiros-dot.net/PowerShell/file/file20.htm
+
+PowerShellで文字列を結合する方法 5選
+https://www.tekizai.net/entry/powershell_string_concat_1
+
+Test-Pathコマンドレットを使用してファイル・フォルダの存在確認を行う方法 †
+https://win.just4fun.biz/?PowerShell/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%BB%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%81%AE%E5%AD%98%E5%9C%A8%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%BBTest-Path

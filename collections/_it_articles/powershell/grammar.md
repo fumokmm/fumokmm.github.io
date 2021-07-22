@@ -75,7 +75,7 @@ updated: 2021-07-20
 ## <a name="式の途中で改行する">式の途中で改行する</a><a class="heading-anchor-permalink" href="#式の途中で改行する">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
 式の途中で改行するには<code>バッククォート(`)</code>を使用します。
-ちなみに[Windows Batchの方]({% link _it_articles/windows_batch/grammar.md %}#basis)では`サーカムフレックス(^)`を利用していましたね。
+ちなみに[Windows Batchの方]({% link _it_articles/windows_batch/grammar.md %}#式の途中で改行する)では`サーカムフレックス(^)`を利用していましたね。
 <div class="code-box no-title">
 <pre>
 New-Item "c:\temp\myfile.txt" <em>`</em>
@@ -92,6 +92,9 @@ Get-Process <em>|</em>
    Select-Object -first 3 
 </pre>
 </div>
+
+### 参考
+- [(バヤシタ) ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
 
 {% include goto_pagetop.html %}
 
