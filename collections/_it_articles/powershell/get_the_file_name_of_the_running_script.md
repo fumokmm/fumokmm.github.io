@@ -10,7 +10,7 @@ updated: 2021-07-25
 
 <ul id="index_ul">
 <li><a href="#$PSCommandPathを利用する">$PSCommandPathを利用する</a></li>
-<li><a href="#$ScriptMyInvocation.MyCommandを利用する">$ScriptMyInvocation.MyCommandを利用する</a></li>
+<li><a href="#$Script:MyInvocation.MyCommandを利用する">$Script:MyInvocation.MyCommandを利用する</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
 
@@ -35,7 +35,7 @@ Write-Host $scriptName1
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="$ScriptMyInvocation.MyCommandを利用する">$ScriptMyInvocation.MyCommandを利用する</a><a class="heading-anchor-permalink" href="#$ScriptMyInvocation.MyCommandを利用する">§</a>
+## <a name="$Script:MyInvocation.MyCommandを利用する">$Script:MyInvocation.MyCommandを利用する</a><a class="heading-anchor-permalink" href="#$Script:MyInvocation.MyCommandを利用する">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-07-25" updated="2021-07-25" %}</div>
 PowerShell v2以前向け。  
 `$Script:MyInvocation.MyCommand.Path`にはスクリプトファイルのフルパスが、  
