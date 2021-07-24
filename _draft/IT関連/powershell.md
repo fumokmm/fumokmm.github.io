@@ -82,6 +82,3 @@ http://hiros-dot.net/PowerShell/file/file20.htm
 
 PowerShellで文字列を結合する方法 5選
 https://www.tekizai.net/entry/powershell_string_concat_1
-
-Test-Pathコマンドレットを使用してファイル・フォルダの存在確認を行う方法 †
-https://win.just4fun.biz/?PowerShell/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%BB%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%81%AE%E5%AD%98%E5%9C%A8%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%BBTest-Path
