@@ -62,11 +62,15 @@ Write-Host $scriptName3
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-09-18" updated="2021-07-25" %}</div>
+### 参考サイト
 - [(バヤシタ) 実行中のスクリプトのファイル名を取得する方法](https://bayashita.com/p/entry/show/207)
 - [(Windows にまつわる e.t.c.) スクリプトフォルダーの取得](https://www.vwnet.jp/Windows/PowerShell/pwd.htm)
 
 ### ソース
-- [language-examples](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0014_script_filename.ps1)
+- [language-examples](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0014_script_filename_and_directory.ps1)
+
+### 関連メモ
+- [PowerShellで実行中のスクリプトのあるディレクトリを取得する]({% link _it_articles/powershell/get_the_directory_where_the_script_is_running.md %})
 
 {% include goto_pagetop.html %}
 
