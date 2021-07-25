@@ -8,7 +8,7 @@ PowerShell v3以降向け。
 `$PSScriptRoot`という`自動変数`にスクリプトファイル(.ps1)がどこに置かれているかが格納されているようです。
 
 ```:スクリプトファイル(.ps1)がどこに置かれているか
-Write-Host $PSScriptRoot
+Write-Host {em{$PSScriptRoot}em}
 ```
 
 ### 参考

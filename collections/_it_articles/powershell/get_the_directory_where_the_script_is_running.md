@@ -22,7 +22,7 @@ PowerShell v3以降向け。
 <div class="code-box">
 <div class="title">スクリプトファイル(.ps1)がどこに置かれているか</div>
 <pre>
-Write-Host $PSScriptRoot
+Write-Host <em>$PSScriptRoot</em>
 </pre>
 </div>
 
