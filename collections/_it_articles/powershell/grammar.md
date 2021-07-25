@@ -3,7 +3,7 @@ title: PowerShellの文法
 article_group_id: basis-group
 display_order: 10
 created: 2021-05-16
-updated: 2021-07-20
+updated: 2021-07-25
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -169,7 +169,7 @@ Get-Process <em>|</em>
 ## <a name="関数">関数</a><a class="heading-anchor-permalink" href="#関数">§</a>
 * * *
 ## <a name="関数宣言">関数宣言</a><a class="heading-anchor-permalink" href="#関数宣言">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-07-20" updated="2021-07-20" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-20" updated="2021-07-25" %}</div>
 - 関数は`function`キーワードを使って宣言します。  
 - 引数を書く位置は、変数名の後の`()`の中か、本体の先頭部分の`Param()`の中のどちらかです[^arguments-position]。
 - 戻り値は`return`キーワードのを使って書きます。
@@ -183,13 +183,13 @@ function <em>関数名</em> {
 
 function <em>関数名</em>() {
     <em class="comment"># 処理本体</em>
-    return <em class="blue">戻り値</em>
+    return <em class="orange">戻り値</em>
 }
 
 <em class="comment"># 引数あり</em>
 function <em>関数名</em>(<em class="blue">引数1, 引数2, …</em>) {
     <em class="comment"># 処理本体</em>
-    return <em class="blue">戻り値</em>
+    return <em class="orange">戻り値</em>
 }
 
 function <em>関数名</em> {
@@ -199,7 +199,7 @@ function <em>関数名</em> {
         …
     )</em>
     <em class="comment"># 処理本体</em>
-    return <em class="blue">戻り値</em>
+    return <em class="orange">戻り値</em>
 }
 </pre>
 </div>
