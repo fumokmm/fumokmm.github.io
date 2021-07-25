@@ -3,7 +3,7 @@ title: PowerShellの文法
 article_group_id: basis-group
 display_order: 10
 created: 2021-05-16
-updated: 2021-07-25
+updated: 2021-07-26
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -17,6 +17,8 @@ updated: 2021-07-25
                 <li><a href="#式の途中で改行する">式の途中で改行する</a></li>
                 <li><a href="#変数宣言">変数宣言</a></li>
                 <li><a href="#スコープ">スコープ</a></li>
+                <li><a href="#型">型</a></li>
+                <li><a href="#演算子">演算子</a></li>
             </ul>
         </li>
         <li><a href="#関数">関数</a>
@@ -100,7 +102,7 @@ Get-Process <em>|</em>
 
 * * *
 ## <a name="変数宣言">変数宣言</a><a class="heading-anchor-permalink" href="#変数宣言">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-07-26" %}</div>
 - PowerShellでは変数は頭に`$`を付けて宣言します。
 - 変数宣言をしていなくても使用可能で、どのような型でも代入が可能です。
 <div class="code-box no-title">
@@ -111,6 +113,7 @@ Get-Process <em>|</em>
 </div>
 
 - 型を明示的に指定することも可能です。型は`[型]`という形式で`$`の前に付けます。
+  - 指定できる型については[型]({% link _it_articles/powershell/grammar.md %}#型)を参照。
 <div class="code-box no-title">
 <pre>
 <em>[int]</em>$i = 10
@@ -163,6 +166,305 @@ Get-Process <em>|</em>
 - `private`だけちょっと毛色が違っていて、宣言したスコープよりも子のスコープから見えなくなるものです。
 
 - スコープについては詳しくは[こちら](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)がとても参考になります。
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="型">型</a><a class="heading-anchor-permalink" href="#型">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-26" updated="2021-07-26" %}</div>
+- PowerShellの型とそのエイリアスです。
+
+<table class="normal">
+	<tr>
+		<th markdown="span">エリアス</th>
+		<th markdown="span">.NET Framework</th>
+	</tr>
+	<tr>
+		<td markdown="span">byte</td>
+		<td markdown="span">System.Byte</td>
+	</tr>
+	<tr>
+		<td markdown="span">int</td>
+		<td markdown="span">System.Int32</td>
+	</tr>
+	<tr>
+		<td markdown="span">long</td>
+		<td markdown="span">System.Int64</td>
+	</tr>
+	<tr>
+		<td markdown="span">double</td>
+		<td markdown="span">System.Double</td>
+	</tr>
+	<tr>
+		<td markdown="span">decimal</td>
+		<td markdown="span">System.Decimal</td>
+	</tr>
+	<tr>
+		<td markdown="span">char</td>
+		<td markdown="span">System.Char</td>
+	</tr>
+	<tr>
+		<td markdown="span">bool</td>
+		<td markdown="span">System.Boolean</td>
+	</tr>
+	<tr>
+		<td markdown="span">string</td>
+		<td markdown="span">System.String</td>
+	</tr>
+	<tr>
+		<td markdown="span">array</td>
+		<td markdown="span">System.Array</td>
+	</tr>
+	<tr>
+		<td markdown="span">xml</td>
+		<td markdown="span">System.Xml.XmlDocument</td>
+	</tr>
+	<tr>
+		<td markdown="span">type</td>
+		<td markdown="span">System.Type</td>
+	</tr>
+	<tr>
+		<td markdown="span">DateTime</td>
+		<td markdown="span">System.DateTime</td>
+	</tr>
+</table>
+
+### 参考
+- [(Windows にまつわる e.t.c.)  PowerShellの演算子](https://www.vwnet.jp/Windows/PowerShell/Ope/OpeListg.htm)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="演算子">演算子</a><a class="heading-anchor-permalink" href="#演算子">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-26" updated="2021-07-26" %}</div>
+### 比較演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">PowerShell</th>
+		<th markdown="span">C系言語</th>
+		<th markdown="span">説明</th>
+	</tr>
+	<tr>
+		<td markdown="span">-eq</td>
+		<td markdown="span">==</td>
+		<td markdown="span">等しい</td>
+	</tr>
+	<tr>
+		<td markdown="span">-ne</td>
+		<td markdown="span">!=</td>
+		<td markdown="span">等しくない</td>
+	</tr>
+	<tr>
+		<td markdown="span">-gt</td>
+		<td markdown="span">></td>
+		<td markdown="span">より大きい</td>
+	</tr>
+	<tr>
+		<td markdown="span">-ge</td>
+		<td markdown="span">>=</td>
+		<td markdown="span">以上</td>
+	</tr>
+	<tr>
+		<td markdown="span">-lt</td>
+		<td markdown="span"><</td>
+		<td markdown="span">より小さい</td>
+	</tr>
+	<tr>
+		<td markdown="span">-le</td>
+		<td markdown="span"><=</td>
+		<td markdown="span">以下</td>
+	</tr>
+	<tr>
+		<td markdown="span">-like</td>
+		<td markdown="span">なし</td>
+		<td markdown="span">ワイルドカードと等しい</td>
+	</tr>
+	<tr>
+		<td markdown="span">-notlike</td>
+		<td markdown="span">なし</td>
+		<td markdown="span">ワイルドカードと等しくない</td>
+	</tr>
+	<tr>
+		<td markdown="span">-match</td>
+		<td markdown="span">なし</td>
+		<td markdown="span">正規表現と等しい</td>
+	</tr>
+	<tr>
+		<td markdown="span">-notmatch</td>
+		<td markdown="span">なし</td>
+		<td markdown="span">正規表現と等しくない</td>
+	</tr>
+</table>
+
+### 算術演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">PowerShell</th>
+		<th markdown="span">C系言語</th>
+		<th markdown="span">説明</th>
+	</tr>
+	<tr>
+		<td markdown="span">+</td>
+		<td markdown="span">+</td>
+		<td markdown="span">加算</td>
+	</tr>
+	<tr>
+		<td markdown="span">-</td>
+		<td markdown="span">-</td>
+		<td markdown="span">減算/符号反転</td>
+	</tr>
+	<tr>
+		<td markdown="span">*</td>
+		<td markdown="span">*</td>
+		<td markdown="span">乗算</td>
+	</tr>
+	<tr>
+		<td markdown="span">/</td>
+		<td markdown="span">/</td>
+		<td markdown="span">除算</td>
+	</tr>
+	<tr>
+		<td markdown="span">%</td>
+		<td markdown="span">%</td>
+		<td markdown="span">余剰</td>
+	</tr>
+	<tr>
+		<td markdown="span">[Math]::Pow(x,y)</td>
+		<td markdown="span">pow(x,y)</td>
+		<td markdown="span">べき乗(xのy乗)</td>
+	</tr>
+	<tr>
+		<td markdown="span">=</td>
+		<td markdown="span">=</td>
+		<td markdown="span">代入</td>
+	</tr>
+	<tr>
+		<td markdown="span">+=</td>
+		<td markdown="span">+=</td>
+		<td markdown="span">加算代入</td>
+	</tr>
+	<tr>
+		<td markdown="span">-=</td>
+		<td markdown="span">-=</td>
+		<td markdown="span">減算代入</td>
+	</tr>
+	<tr>
+		<td markdown="span">*=</td>
+		<td markdown="span">*=</td>
+		<td markdown="span">乗算代入</td>
+	</tr>
+	<tr>
+		<td markdown="span">/=</td>
+		<td markdown="span">/=</td>
+		<td markdown="span">除算代入</td>
+	</tr>
+	<tr>
+		<td markdown="span">%=</td>
+		<td markdown="span">%=</td>
+		<td markdown="span">剰余代入</td>
+	</tr>
+	<tr>
+		<td markdown="span">++</td>
+		<td markdown="span">++</td>
+		<td markdown="span">インクリメント</td>
+	</tr>
+	<tr>
+		<td markdown="span">--</td>
+		<td markdown="span">--</td>
+		<td markdown="span">デクリメント</td>
+	</tr>
+</table>
+
+### 論理演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">PowerShell</th>
+		<th markdown="span">C系言語</th>
+		<th markdown="span">説明</th>
+	</tr>
+	<tr>
+		<td markdown="span">-and</td>
+		<td markdown="span">&&</td>
+		<td markdown="span">AND</td>
+	</tr>
+	<tr>
+		<td markdown="span">-or</td>
+		<td markdown="span">||</td>
+		<td markdown="span">OR</td>
+	</tr>
+	<tr>
+		<td markdown="span">-not または !</td>
+		<td markdown="span">!</td>
+		<td markdown="span">NOT</td>
+	</tr>
+</table>
+
+### ビット演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">PowerShell</th>
+		<th markdown="span">C系言語</th>
+		<th markdown="span">説明</th>
+	</tr>
+	<tr>
+		<td markdown="span">-band</td>
+		<td markdown="span">&</td>
+		<td markdown="span">AND</td>
+	</tr>
+	<tr>
+		<td markdown="span">-bor</td>
+		<td markdown="span">|</td>
+		<td markdown="span">OR</td>
+	</tr>
+	<tr>
+		<td markdown="span">-bnot</td>
+		<td markdown="span">!</td>
+		<td markdown="span">NOT</td>
+	</tr>
+	<tr>
+		<td markdown="span">-bxor</td>
+		<td markdown="span">^</td>
+		<td markdown="span">XOR</td>
+	</tr>
+	<tr>
+		<td markdown="span">-shl</td>
+		<td markdown="span">&lt;&lt;</td>
+		<td markdown="span">左シフト</td>
+	</tr>
+	<tr>
+		<td markdown="span">-shr</td>
+		<td markdown="span">&gt;&gt;</td>
+		<td markdown="span">右シフト</td>
+	</tr>
+</table>
+
+### 型演算
+<table class="normal">
+	<tr>
+		<th markdown="span">PowerShell</th>
+		<th markdown="span">説明</th>
+	</tr>
+	<tr>
+		<td markdown="span">$a -is [型]</td>
+		<td markdown="span">型と等しい</td>
+	</tr>
+	<tr>
+		<td markdown="span">$a -isnot [型]</td>
+		<td markdown="span">型と等しくない</td>
+	</tr>
+	<tr>
+		<td markdown="span">$a -as [型]</td>
+		<td markdown="span">型へキャスティング、失敗時は $null</td>
+	</tr>
+	<tr>
+		<td markdown="span">[型]$a</td>
+		<td markdown="span">型へキャスティング(失敗時はエラー)</td>
+	</tr>
+</table>
+- 指定できる型については[型]({% link _it_articles/powershell/grammar.md %}#型)を参照。
+
+### 参考
+- [(Windows にまつわる e.t.c.)  PowerShellの演算子](https://www.vwnet.jp/Windows/PowerShell/Ope/OpeListg.htm)
 
 {% include goto_pagetop.html %}
 
@@ -358,18 +660,19 @@ bar 15 25 <em class="comment"># =&gt; $arg1に15が入って、$arg2は上書き
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-07-20" %}</div>
-### 参考
-- [(PowerShell Scripting Weblog) PowerShell基礎文法最速マスター](http://winscript.jp/powershell/202)
-- [(鷲ノ巣) PowerShell のスコープ完全に理解した](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)
-- [(バヤシタ) ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-07-26" %}</div>
+### 参考サイト
 - [(hakeの日記) PowerShell - 関数（可変長引数）](https://hake.hatenablog.com/entry/20161227/p1)
 - [(hakeの日記) PowerShell - 関数（値渡しと参照渡し）](https://hake.hatenablog.com/entry/20161230/p1)
-- [(HIRO's.NET) 06.値渡しと参照渡し](https://hiros-dot.net/PowerShell/function/func06.htm)
 - [(HIRO's.NET) 03.引数を省略可能にするには](https://hiros-dot.net/PowerShell/function/func03.htm)
+- [(HIRO's.NET) 06.値渡しと参照渡し](https://hiros-dot.net/PowerShell/function/func06.htm)
+- [(PowerShell Scripting Weblog) PowerShell基礎文法最速マスター](http://winscript.jp/powershell/202)
+- [(Windows にまつわる e.t.c.)  PowerShellの演算子](https://www.vwnet.jp/Windows/PowerShell/Ope/OpeListg.htm)
+- [(バヤシタ) ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
+- [(鷲ノ巣) PowerShell のスコープ完全に理解した](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)
 
 ### ソース
-- [language-examples](https://github.com/fumokmm/language-examples/tree/main/PowerShell)
+- [(language-examples) 0015_operator.ps1](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0015_operator.ps1)
 
 {% include goto_pagetop.html %}
 
