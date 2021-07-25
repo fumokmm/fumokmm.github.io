@@ -221,7 +221,7 @@ code {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-@mixin make-code-pre($preColor, $preBackgroundColor, $emColor, $emColorBlue, $emColorComment, $emColorCommand) {
+@mixin make-code-pre($preColor, $preBackgroundColor, $emColor, $emColorBlue, $emColorOrange, $emColorComment, $emColorCommand) {
     pre {
         margin: 0; 
         padding: 0;
@@ -238,6 +238,10 @@ code {
             &.blue {
                 font-style: normal;
                 color: $emColorBlue;
+            }
+            &.orange {
+                font-style: normal;
+                color: $emColorOrange;
             }
             &.comment {
                 font-style: normal;
@@ -282,6 +286,7 @@ code {
         $preBackgroundColor: #f6f6f6,
         $emColor:#ff0078,
         $emColorBlue: #4c43da,
+        $emColorOrange: #ff7a00,
         $emColorComment: #00bc42,
         $emColorCommand: #909090
     )
@@ -318,6 +323,7 @@ code {
         $preBackgroundColor: #edffff,
         $emColor: #ff0b0b,
         $emColorBlue: #0084dc,
+        $emColorOrange: #ff7a00,
         $emColorComment: #4abd4f,
         $emColorCommand: #909090
     )
@@ -354,6 +360,7 @@ code {
         $preBackgroundColor: #fff4ca,
         $emColor: #ff0b0b,
         $emColorBlue: #0084dc,
+        $emColorOrange: #ff7a00,
         $emColorComment: #4caf50,
         $emColorCommand: #909090
     )
@@ -390,6 +397,7 @@ code {
         $preBackgroundColor: #777,
         $emColor: rgb(255, 177, 177),
         $emColorBlue: #adf,
+        $emColorOrange: #ffb500,
         $emColorComment: #ad7,
         $emColorCommand: #c0c0c0
     )

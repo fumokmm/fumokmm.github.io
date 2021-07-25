@@ -82,7 +82,7 @@ task makeArticles() {
                     }
                     def convertToEmTag = { innerBody ->
                         // {em:<種類>{ で開始して、 }em} で終わる部分を <em class="<種類>">値</em>に変換
-                        innerBody.replaceAll(/(?s)\{em:?(blue|comment|command)?\{(.*?)\}em\}/) { match, type, value ->
+                        innerBody.replaceAll(/(?s)\{em:?(blue|orange|comment|command)?\{(.*?)\}em\}/) { match, type, value ->
                             "<em${type ? " class=\"${type}\"": ''}>${value}</em>"
                         }
                     }

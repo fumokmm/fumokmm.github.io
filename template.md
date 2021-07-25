@@ -175,6 +175,7 @@ updated: 2021-05-20
 
 - 強調するには`<em></em>`を用います
 - 青強調するには`<em class="blue"></em>`を用います
+- オレンジ強調するには`<em class="orange"></em>`を用います
 - コメント強調するには`<em class="comment"></em>`を用います
 - コマンド強調するには`<em class="command"></em>`を用います
 
@@ -187,6 +188,7 @@ updated: 2021-05-20
 タイトル無しのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="orange">オレンジ強調</em>するには&lt;em class="orange"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
@@ -198,6 +200,7 @@ updated: 2021-05-20
 タイトル付きのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="orange">オレンジ強調</em>するには&lt;em class="orange"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
@@ -210,6 +213,7 @@ updated: 2021-05-20
 タイトル無しのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="orange">オレンジ強調</em>するには&lt;em class="orange"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
@@ -221,6 +225,7 @@ updated: 2021-05-20
 タイトル付きのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="orange">オレンジ強調</em>するには&lt;em class="orange"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
@@ -233,6 +238,7 @@ updated: 2021-05-20
 タイトル無しのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="orange">オレンジ強調</em>するには&lt;em class="orange"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
@@ -244,6 +250,7 @@ updated: 2021-05-20
 タイトル付きのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="orange">オレンジ強調</em>するには&lt;em class="orange"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
@@ -256,6 +263,7 @@ updated: 2021-05-20
 タイトル無しのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="orange">オレンジ強調</em>するには&lt;em class="orange"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
@@ -267,6 +275,7 @@ updated: 2021-05-20
 タイトル付きのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
 文字列を<em class="blue">青強調</em>するには&lt;em class="blue"&gt;を利用します。
+文字列を<em class="orange">オレンジ強調</em>するには&lt;em class="orange"&gt;を利用します。
 文字列を<em class="comment">コメント強調</em>するには&lt;em class="comment"&gt;を利用します。
 文字列を<em class="command">コマンド</em>にするには&lt;em class="command"&gt;を利用します。
 </pre>
@@ -379,6 +388,7 @@ updated: 2021-05-20
 <pre>
 文字列を<em>強調</em>するには{em{強調}em}を利用します。
 文字列を<em class="blue">青強調</em>するには{em:blue{青強調}em}を利用します。
+文字列を<em class="orange">オレンジ強調</em>するには{em:orange{オレンジ強調}em}を利用します。
 文字列を<em class="comment">コメント強調</em>するには{em:comment{コメント強調}em}を利用します。
 文字列を<em class="command">コマンド</em>にするには{em:command{コマンド}em}を利用します。
 </pre>
