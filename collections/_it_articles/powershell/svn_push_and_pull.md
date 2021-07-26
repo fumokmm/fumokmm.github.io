@@ -3,7 +3,7 @@ title: PowerShellでSVNリポジトリをpushしたりpullしたりするツー�
 article_group_id: tool
 display_order: 10
 created: 2021-06-19
-updated: 2021-06-19
+updated: 2021-07-26
 ---
 {% capture link_to_it_git %}{% link _it_articles/git/index.md %}{% endcapture %}
 {% assign link_to_it_git = link_to_it_git | remove: 'index' %}
@@ -370,10 +370,10 @@ if ($remoteRevision -eq $syncRevision) {
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-06-19" updated="2021-06-19" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-06-19" updated="2021-07-26" %}</div>
 ### ソース
-- [(language-examples) 0006_svn_push.ps1](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0006_svn_push.ps1)
-- [(language-examples) 0007_svn_pull.ps1](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0007_svn_pull.ps1)
+- [(language-examples) 0006_svnrepossync_push.ps1](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0006_svnrepossync_push.ps1)
+- [(language-examples) 0007_svnrepossync_fetch.ps1](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0007_svnrepossync_fetch.ps1)
 
 {% include goto_pagetop.html %}
 
