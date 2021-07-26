@@ -20,7 +20,7 @@ case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 if [[ -n "$(git branch --format="%(refname:short)" | grep -e ^$branch_name$)" ]]
 then
     # 現在のブランチ名を保持(=元居たブランチ)
-    orig_branch=`git status | head -1`
+    orig_branch=`git rev-parse --abbrev-ref HEAD`
     echo orig_branch is $orig_branch
 
     # ブランチにスイッチ
