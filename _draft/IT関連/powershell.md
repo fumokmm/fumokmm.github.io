@@ -88,3 +88,16 @@ https://twitter.com/PanonCotta/status/1419632379707105281
 
 https://www.itlab51.com/?p=5503
 → :はドライブ、スコープと変数の区切り、ラベルを表すらしいが…
+
+https://or1ko.hatenablog.com/entry/20100125/1264425759
+https://www.vwnet.jp/Windows/PowerShell/2017060701/PowerShellHashTable.htm
+https://mseeeen.msen.jp/powershell-export-csv-commandlet/
+https://www.fenet.jp/infla/column/server/powershell%E3%81%AEforeach%E3%81%A8%E3%81%AF%EF%BC%9Fforeach-object%E3%82%84%E6%96%87%E5%AD%97%E5%88%97%E6%A4%9C%E7%B4%A2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A7%A3%E8%AA%AC%EF%BC%81/
+https://it-engineer-info.com/language/powershell/24/
+https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_split?view=powershell-7.1
+https://win.just4fun.biz/?PowerShell/%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%86%85%E3%81%AE%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E7%BD%AE%E6%8F%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%83%BBreplace%2C+creplace#oe4c2f33
+https://yomon.hatenablog.com/entry/2014/05/28/PowerShell_%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E4%B8%80%E6%9C%AC%E3%81%A7%E6%96%87%E5%AD%97%E5%88%97%E6%8A%BD%E5%87%BA
+http://winscript.jp/powershell/?s=Group-Object%83R%83%7D%83%93%83h%83%8C%83b%83g
+http://winscript.jp/powershell/
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_hash_tables?view=powershell-7.1
+https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18
