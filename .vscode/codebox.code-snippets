@@ -34,6 +34,14 @@
 		],
 		"description": "output em tag with class blue."
 	},
+	"em_orange": {
+		"scope": "markdown",
+		"prefix": "em_orange",
+		"body": [
+			"{em:orange{$TM_SELECTED_TEXT}em}"
+		],
+		"description": "output em tag with class orange."
+	},
 	"em_comment": {
 		"scope": "markdown",
 		"prefix": "em_comment",
