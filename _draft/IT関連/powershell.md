@@ -82,3 +82,9 @@ http://hiros-dot.net/PowerShell/file/file20.htm
 
 PowerShellで文字列を結合する方法 5選
 https://www.tekizai.net/entry/powershell_string_concat_1
+
+$ENV:Path の謎
+https://twitter.com/PanonCotta/status/1419632379707105281
+
+https://www.itlab51.com/?p=5503
+→ :はドライブ、スコープと変数の区切り、ラベルを表すらしいが…

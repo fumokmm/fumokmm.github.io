@@ -1,7 +1,7 @@
 ---
 title: PowerShellのメモ
 created: 2020-09-14
-updated: 2021-07-26
+updated: 2021-07-28
 ---
 こちらはPowerShellのメモになります。
 
