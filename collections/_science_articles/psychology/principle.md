@@ -2,7 +2,7 @@
 title: 世界を支配している法則について
 display_order: 30
 created: 2021-08-01
-updated: 2021-08-01
+updated: 2021-08-04
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -13,6 +13,8 @@ updated: 2021-08-01
 <li><a href="#原因と結果の法則">原因と結果の法則</a></li>
 <li><a href="#ボッサードの法則">ボッサードの法則</a></li>
 <li><a href="#働きアリの法則">働きアリの法則</a></li>
+<li><a href="#3・3・3の法則">3・3・3の法則</a></li>
+<li><a href="#引き寄せの法則">引き寄せの法則</a></li>
 <li><a href="#reference">参考</a></li>
 </ul>
 
@@ -32,7 +34,7 @@ updated: 2021-08-01
 ### 関連法則
 - この法則の数値を簡略化したものとして、[パレートの法則](#パレートの法則)が有名。
 
-### 参考
+### 参考サイト
 - [(YouTube)【ゆっくり解説】知らないと損をする１６の法則](https://www.youtube.com/watch?v=FOP3u6sBH-I)
 
 {% include goto_pagetop.html %}
@@ -55,7 +57,7 @@ updated: 2021-08-01
 - パレートの法則は[78対22の法則](#78対22の法則)を簡略化したもの。
   - この世界は80対20のバランスで成り立っている。
 
-### 参考
+### 参考サイト
 - [(YouTube)【ゆっくり解説】知らないと損をする１６の法則](https://www.youtube.com/watch?v=FOP3u6sBH-I)
 - [(リクナビNEXTジャーナル) 思わず納得！ビジネスパーソンなら知っておくべき「ビジネスの法則」15選](https://next.rikunabi.com/journal/20161004_m1/)
 
@@ -67,7 +69,7 @@ updated: 2021-08-01
 - あらゆる結果には必ず原因があり、良い結果も悪い結果もすべてはその人の行動次第であるというもの。
 - 自分の身の周りに起こる出来事や、育まれた人間関係といった環境は自分の想いこそが生み出したもの、引き寄せたものであり、決してその逆ではない。
 
-### 参考
+### 参考サイト
 - [(YouTube)【ゆっくり解説】知らないと損をする１６の法則](https://www.youtube.com/watch?v=FOP3u6sBH-I)
 
 {% include goto_pagetop.html %}
@@ -80,7 +82,7 @@ updated: 2021-08-01
 - いかに近い距離に居るか
 - 大切な人のそばにいることが大切
 
-### 参考
+### 参考サイト
 - [(YouTube)【ゆっくり解説】知らないと損をする１６の法則](https://www.youtube.com/watch?v=FOP3u6sBH-I)
 
 {% include goto_pagetop.html %}
@@ -97,17 +99,54 @@ updated: 2021-08-01
 ### 関連法則
 - 全体の2割が残り8割分を支えているという意味で、[パレートの法則](#パレートの法則)とも関連している。
 
-### 参考
+### 参考サイト
 - [(YouTube)【ゆっくり解説】知らないと損をする１６の法則](https://www.youtube.com/watch?v=FOP3u6sBH-I)
 - [(リクナビNEXTジャーナル) 思わず納得！ビジネスパーソンなら知っておくべき「ビジネスの法則」15選](https://next.rikunabi.com/journal/20161004_m1/)
 
 {% include goto_pagetop.html %}
 
 * * *
+## <a name="3・3・3の法則">3・3・3の法則</a><a class="heading-anchor-permalink" href="#3・3・3の法則">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-08-04" updated="2021-08-04" %}</div>
+- サバイバルの世界に存在する法則。
+- 生きるのに必要な基本条件は「呼吸・水分・食料」。
+  - 空気がなければ人は「3分」しか生きられない。
+  - 水がなければ人は「3日」しか生きられない。
+
+### 参考サイト
+- [(YouTube)【ゆっくり解説】知らないと損をする１６の法則](https://www.youtube.com/watch?v=FOP3u6sBH-I)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="引き寄せの法則">引き寄せの法則</a><a class="heading-anchor-permalink" href="#引き寄せの法則">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-08-04" updated="2021-08-04" %}</div>
+- 心から願ったことは引き寄せられ、やがて現実になる。
+- 元は有名な自己啓発書{% include book/book_220.html %} {% comment %} 思考は現実化する {% endcomment %}から派生した成功法則の一つ。
+
+- 注意と意識とエネルギーを向けるものは、良いことであれ悪いことであれ現実のものとなる。
+- 波動は共鳴し、同じ波動を持つもの出来事を引き寄せる。
+- 夢や希望や目標を実現させるためには、そもそも自分がそれを望まないと何もスタートしない。
+- ポジティブなものに意識を向け、自分自身もポジティブであれば、自然とポジティブな出来事が引き寄せられてくる。
+- 量子力学やスピリチュアルとも関係している。
+
+### 参考サイト
+- [(YouTube)【ゆっくり解説】知らないと損をする１６の法則](https://www.youtube.com/watch?v=FOP3u6sBH-I)
+
+### 参考書籍
+- {% include book/book_220.html %} {% comment %} 思考は現実化する {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+* * *
 ## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-08-01" updated="2021-08-01" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-08-01" updated="2021-08-04" %}</div>
+### 参考サイト
 - [(YouTube)【ゆっくり解説】知らないと損をする１６の法則](https://www.youtube.com/watch?v=FOP3u6sBH-I)
 - [(リクナビNEXTジャーナル) 思わず納得！ビジネスパーソンなら知っておくべき「ビジネスの法則」15選](https://next.rikunabi.com/journal/20161004_m1/)
+
+### 参考書籍
+- {% include book/book_220.html %} {% comment %} 思考は現実化する {% endcomment %}
 
 {% include goto_pagetop.html %}
 
