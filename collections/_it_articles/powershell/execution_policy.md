@@ -3,7 +3,7 @@ title: PowerShellの実行ポリシーのについて
 article_group_id: basis-group
 display_order: 100
 created: 2020-09-14
-updated: 2020-09-14
+updated: 2021-08-10
 ---
 PowerShellの実行ポリシーのについてメモです。
 
@@ -34,8 +34,12 @@ PowerShellの実行ポリシーのについてメモです。
 
 * * *
 ## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-09-14" updated="2020-09-14" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-09-14" updated="2021-08-10" %}</div>
+### 参考サイト
 - [PowerShellのExecutionPolicyのスコープとかについて詳しく](https://qiita.com/kikuchi/items/59f219eae2a172880ba6)
+
+### 関連メモ
+- [PowerShell.exeでPowerShellを実行する]({% link _it_articles/powershell/powershell_exe.md %})
 
 {% include goto_pagetop.html %}
 
