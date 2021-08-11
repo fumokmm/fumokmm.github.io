@@ -529,6 +529,7 @@ $filesize = 2MB
 </div>
 - この例の場合、`$filesize`が2MB以上のため、`else`に入り、`2MB以上`と出力されます。
 - `-lt`は`比較演算子`です。利用可能な比較演算子は[演算子](#演算子)を参照ください。
+- (寄り道) PowerShellではメガバイト`MB`のような[サイズ単位の定数]({% link _it_articles/powershell/size_units_constants.md %})が利用できます。
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
