@@ -3,7 +3,7 @@ title: PowerShellの文法
 article_group_id: basis-group
 display_order: 10
 created: 2021-05-16
-updated: 2021-07-30
+updated: 2021-08-11
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -19,6 +19,7 @@ updated: 2021-07-30
                 <li><a href="#スコープ">スコープ</a></li>
                 <li><a href="#型">型</a></li>
                 <li><a href="#演算子">演算子</a></li>
+                <li><a href="#条件分岐">条件分岐</a></li>
             </ul>
         </li>
         <li><a href="#文字列">文字列</a>
@@ -473,6 +474,74 @@ Get-Process <em>|</em>
 
 {% include goto_pagetop.html %}
 
+* * *
+## <a name="条件分岐">条件分岐</a><a class="heading-anchor-permalink" href="#条件分岐">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-08-11" updated="2021-08-11" %}</div>
+### if-elseif-else
+<div class="code-box-syntax">
+<div class="title">if</div>
+<pre>
+<em>if</em> (Boolean_expression) {
+   // Executes when the Boolean expression is true
+}
+</pre>
+</div>
+
+<div class="code-box-syntax">
+<div class="title">if-else</div>
+<pre>
+<em>if</em> (Boolean_expression) {
+   // Executes when the Boolean expression is true
+} <em>else</em> {
+   // Executes when the Boolean expression is false
+}
+</pre>
+</div>
+
+<div class="code-box-syntax">
+<div class="title">if-elseif-else</div>
+<pre>
+<em>if</em> (Boolean_expression 1) {
+   // Executes when the Boolean expression 1 is true
+} <em>elseif</em> (Boolean_expression 2) {
+   // Executes when the Boolean expression 2 is true
+} <em>elseif</em> (Boolean_expression 3) {
+   // Executes when the Boolean expression 3 is true
+} <em>else</em> {
+   // Executes when the none of the above condition is true.
+}
+</pre>
+</div>
+
+### 例
+<div class="code-box no-title">
+<pre>
+$filesize = 2MB
+
+<em>if</em> ($filesize -lt 1MB) {
+    Write-Host "1MBより小さい"
+} <em>elseif</em> ($filesize -lt 2MB) {
+    Write-Host "2MBより小さい"
+} <em>else</em> {
+    Write-Host "2MB以上"
+}
+</pre>
+</div>
+- この例の場合、`$filesize`が2MB以上のため、`else`に入り、`2MB以上`と出力されます。
+- `-lt`は`比較演算子`です。利用可能な比較演算子は[演算子](#演算子)を参照ください。
+
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+2MB以上
+</pre>
+</div>
+
+### 参考
+- [(tutorialspoint) Powershell - If Else Statement](https://www.tutorialspoint.com/powershell/if_else_statement_in_powershell.htm)
+
+{% include goto_pagetop.html %}
+
 ## <a name="文字列">文字列</a><a class="heading-anchor-permalink" href="#文字列">§</a>
 * * *
 ## <a name="複数行文字列">複数行文字列</a><a class="heading-anchor-permalink" href="#複数行文字列">§</a>
@@ -717,19 +786,21 @@ bar 15 25 <em class="comment"># =&gt; $arg1に15が入って、$arg2は上書き
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-07-30" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-08-11" %}</div>
 ### 参考サイト
 - [(hakeの日記) PowerShell - 関数（可変長引数）](https://hake.hatenablog.com/entry/20161227/p1)
 - [(hakeの日記) PowerShell - 関数（値渡しと参照渡し）](https://hake.hatenablog.com/entry/20161230/p1)
 - [(HIRO's.NET) 03.引数を省略可能にするには](https://hiros-dot.net/PowerShell/function/func03.htm)
 - [(HIRO's.NET) 06.値渡しと参照渡し](https://hiros-dot.net/PowerShell/function/func06.htm)
 - [(PowerShell Scripting Weblog) PowerShell基礎文法最速マスター](http://winscript.jp/powershell/202)
+- [(tutorialspoint) Powershell - If Else Statement](https://www.tutorialspoint.com/powershell/if_else_statement_in_powershell.htm)
 - [(Windows にまつわる e.t.c.)  PowerShellの演算子](https://www.vwnet.jp/Windows/PowerShell/Ope/OpeListg.htm)
 - [(バヤシタ) ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
 - [(バヤシタ) ヒアドキュメントを使って複数行を 1 つの文字列にする](https://bayashita.com/p/entry/show/50)
 - [(鷲ノ巣) PowerShell のスコープ完全に理解した](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)
 
 ### ソース
+- [(language-examples) 0005_if.ps1](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0005_if.ps1)
 - [(language-examples) 0015_operator.ps1](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0015_operator.ps1)
 - [(language-examples) 0017_string.ps1](https://github.com/fumokmm/language-examples/blob/main/PowerShell/0017_string.ps1)
 
