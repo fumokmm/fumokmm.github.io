@@ -149,7 +149,7 @@
     - id: reference-group
       label: 参照・参考
   sub_category_group: shellscript
-  sub_category_order: shellscript01
+  sub_category_order: 2
   description: Microsoft社が開発したシェルPowerShellについてのメモ
 
 - sub_category_id: python
@@ -242,8 +242,13 @@
 - sub_category_id: windows_batch
   sub_category_label: Windows Batch
   link: /it/windows_batch/
+  article_group:
+    - id: basis-group
+      label: 基本事項
+    - id: reverse-lookup
+      label: 逆引き
   sub_category_group: shellscript
-  sub_category_order: shellscript02
+  sub_category_order: 1
   description: Microsoft社が開発したWindows用のシェルについてのメモ
 
 - sub_category_id: structured_text_data_format
