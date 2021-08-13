@@ -11,7 +11,7 @@ updated: 2021-08-13
 <ul id="index_ul">
 <li><a href="#typeコマンドを使う">typeコマンドを使う</a></li>
 <li><a href="#copyコマンドを使う">copyコマンドを使う</a></li>
-<li><a href="#NULとは何？">NULとは何？</a></li>
+<li><a href="#nulとは何？">nulとは何？</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
 
@@ -20,7 +20,7 @@ updated: 2021-08-13
 <div class="chapter-updated">{% include update_info_inline.html created="2021-08-13" updated="2021-08-13" %}</div>
 <div class="code-box no-title">
 <pre>
-type nul &gt; empty.txt
+<em>type nul</em> &gt; <em class="blue">empty.txt</em>
 </pre>
 </div>
 - ファイルは上書きされます。
@@ -32,7 +32,7 @@ type nul &gt; empty.txt
 <div class="chapter-updated">{% include update_info_inline.html created="2021-08-13" updated="2021-08-13" %}</div>
 <div class="code-box no-title">
 <pre>
-copy nul empty.txt
+<em>copy nul</em> <em class="blue">empty.txt</em>
 </pre>
 </div>
 - ファイルは上書きされます。
@@ -40,10 +40,10 @@ copy nul empty.txt
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="NULとは何？">NULとは何？</a><a class="heading-anchor-permalink" href="#NULとは何？">§</a>
+## <a name="nulとは何？">nulとは何？</a><a class="heading-anchor-permalink" href="#nulとは何？">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-08-13" updated="2021-08-13" %}</div>
-- `NUL`はヌルデバイスと言います。
-- Linuxでいう、`/dev/null`がWindowsでは`NUL`に相当するようです。
+- `nul`はヌルデバイスと言います。
+- Linuxでいう、`/dev/null`がWindowsでは`nul`に相当するようです。
 
 {% include goto_pagetop.html %}
 
