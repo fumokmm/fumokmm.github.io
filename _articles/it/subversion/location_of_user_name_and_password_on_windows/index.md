@@ -1,5 +1,5 @@
 ---
-title: ユーザ名とパスワードの記録場所 on Windows
+title: Subversionのユーザ名とパスワードの記録場所 on Windows
 article_group_id: tips-group
 display_order: 900
 created: 2007-08-20
