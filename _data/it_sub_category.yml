@@ -43,7 +43,7 @@
   sub_category_label: Git
   link: /it/git/
   sub_category_group: version_control_system
-  sub_category_order: version_control_system01
+  sub_category_order: 1
   description: Google社が開発したプログラミング言語Goについてのメモ
 
 - sub_category_id: gradle
@@ -197,8 +197,11 @@
 - sub_category_id: subversion
   sub_category_label: Subversion
   link: /it/subversion/
+  article_group:
+    - id: tips-group
+      label: Tips
   sub_category_group: version_control_system
-  sub_category_order: version_control_system02
+  sub_category_order: 2
   description: Apacheソフトウェア財団が開発している集中型バージョン管理システムSubversion(SVN)についてのメモ
 
 # T
