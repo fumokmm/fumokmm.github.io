@@ -1,6 +1,6 @@
 ---
 title: PowerShellでSVNリポジトリをpushしたりpullしたりするツール
-article_group_id: tool
+article_group_id: tool-group
 display_order: 10
 created: 2021-06-19
 updated: 2021-07-26
