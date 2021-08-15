@@ -138,13 +138,13 @@
   article_group:
     - id: basis-group
       label: 基本事項
-    - id: reverse-lookup
+    - id: reverse-lookup-group
       label: 逆引き
     - id: tips-group
       label: Tips
     - id: trouble-shooting-group
       label: トラブルシューティング
-    - id: tool
+    - id: tool-group
       label: ツール
     - id: reference-group
       label: 参照・参考
@@ -219,7 +219,7 @@
   article_group:
     - id: basis-group
       label: 基本事項
-    - id: reverse-lookup
+    - id: reverse-lookup-group
       label: 逆引き
     - id: reference-group
       label: 参照・参考
@@ -248,7 +248,7 @@
   article_group:
     - id: basis-group
       label: 基本事項
-    - id: reverse-lookup
+    - id: reverse-lookup-group
       label: 逆引き
   sub_category_group: shellscript
   sub_category_order: 1
