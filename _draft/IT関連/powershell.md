@@ -101,3 +101,13 @@ http://winscript.jp/powershell/?s=Group-Object%83R%83%7D%83%93%83h%83%8C%83b%83g
 http://winscript.jp/powershell/
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_hash_tables?view=powershell-7.1
 https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18
+
+奥が深い
+https://tech.guitarrapc.com/entry/2015/09/05/012733
+https://qiita.com/nimzo6689/items/166ad623d95f80d9c53b
+https://docs.microsoft.com/ja-jp/powershell/scripting/learn/deep-dives/everything-about-arrays?view=powershell-7.1
+https://www.fenet.jp/dotnet/column/tool/6740/
+
+環境変数
+https://qiita.com/mmorita/items/4c44363faf74a7105199
+https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setenvironmentvariable
