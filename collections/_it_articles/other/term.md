@@ -2,7 +2,7 @@
 title: IT用語
 display_order: 30
 created: 2020-10-09
-updated: 2021-05-29
+updated: 2021-08-27
 ---
 IT用語のひとこと説明です。
 
@@ -13,7 +13,6 @@ IT用語のひとこと説明です。
 <li><a href="#D">D</a></li>
 <li><a href="#う">う</a></li>
 <li><a href="#さ">さ</a></li>
-<li><a href="#reference">参考</a></li>
 </ul>
 
 * * *
@@ -38,13 +37,16 @@ IT用語のひとこと説明です。
 
 * * *
 ## <a name="D">D</a><a class="heading-anchor-permalink" href="#D">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-02-25" updated="2021-05-29" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-02-25" updated="2021-08-27" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="it" title="DCL【Data Control Language】" %}
   <dd markdown="span">BEGIN、COMMIT、ROLLBACKなどトランザクションの制御を行うためのコマンド。
   {% include update_info_inline.html created="2021-02-25" updated="2021-02-25" %}
   </dd>
 </dl>
+
+### 参考
+- [SQLの種類(DDL、DML、DCL)](https://morizyun.github.io/database/sql-ddl-dml-dcl.html)
 
 <dl>
   {% include article_parts/term_dt.html type="it" title="DDL【Data Definition Language】" %}
@@ -53,17 +55,31 @@ IT用語のひとこと説明です。
   </dd>
 </dl>
 
+### 参考
+- [SQLの種類(DDL、DML、DCL)](https://morizyun.github.io/database/sql-ddl-dml-dcl.html)
+
 <dl>
   {% include article_parts/term_dt.html type="it" title="DML【Data Manipulation Language】" %}
   <dd markdown="span">SELECT、INSERT、UPDATE、DELETEなどテーブルに対するデータの取得、追加、更新、削除を行うコマンド。いわゆる[CRUD]({% link _it_articles/other/term.md %}#CRUD (クラッド))に対応。
   {% include update_info_inline.html created="2021-02-25" updated="2021-02-25" %}</dd>
 </dl>
 
+### 参考
+- [SQLの種類(DDL、DML、DCL)](https://morizyun.github.io/database/sql-ddl-dml-dcl.html)
+
 ### 関連用語
 - [CRUD (クラッド)]({% link _it_articles/other/term.md %}#CRUD (クラッド))
 
+<dl>
+  {% include article_parts/term_dt.html type="it" title="DX【Digital Transformation】" %}
+  <dd markdown="span">デジタルトランスフォーメーション）の略語。  
+  企業がデジタル技術を活用し、ビジネスモデルや企業そのものを変革していくことを意味する。
+  {% include update_info_inline.html created="2021-08-27" updated="2021-08-27" %}</dd>
+</dl>
+
 ### 参考
-- [SQLの種類(DDL、DML、DCL)](https://morizyun.github.io/database/sql-ddl-dml-dcl.html)
+- [(まもりの種) IT化とDXの違いは？DXの前提となる電子化の重要性とは？](https://www.mamoru-kun.com/tips/it-dx/)
+
 
 {% include goto_pagetop.html %}
 
@@ -84,7 +100,7 @@ IT用語のひとこと説明です。
 
 * * *
 ## <a name="さ">さ</a><a class="heading-anchor-permalink" href="#さ">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-10-09" updated="2021-05-29" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-10-09" updated="2021-08-27" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="it" title="サブスクリプション" %}
   <dd markdown="span">定期購読のこと。
@@ -92,15 +108,17 @@ IT用語のひとこと説明です。
   </dd>
 </dl>
 
-{% include goto_pagetop.html %}
+<dl>
+  {% include article_parts/term_dt.html type="it" title="サーバーレス" %}
+  <dd markdown="span">サーバーを意識せずにシステムを構築・運用すること。  
+  サーバーが不要になるという意味ではない。  
+  システムの実行時間での課金されたりする。
+  {% include update_info_inline.html created="2021-08-27" updated="2021-08-27" %}
+  </dd>
+</dl>
 
-* * *
-## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-05-29" %}</div>
-- [SQLの種類(DDL、DML、DCL)](https://morizyun.github.io/database/sql-ddl-dml-dcl.html)
-- [(Wikipedia) Create, read, update and delete](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
-- [(「分かりそう」で「分からない」でも「分かった」気になれるIT用語辞典)  クラッド (CRUD)](https://wa3.i-3-i.info/word123.html)
-- [ウェビナー（Webセミナー）とは？オンラインセミナーのメリットと豊富なツールの事例](https://www.liveon.ne.jp/cafe/guide/WebSeminar.html)
+### 参考
+- [(IDCFrontia) 用語集｜サーバーレス](https://www.idcf.jp/words/serverless.html)
 
 {% include goto_pagetop.html %}
 
