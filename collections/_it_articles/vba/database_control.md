@@ -3,7 +3,7 @@ title: VBAでデータベース操作
 article_group_id: basis-group
 display_order: 40
 created: 2021-02-08
-updated: 2021-02-09
+updated: 2021-08-31
 ---
 こちらはVBAでデータベース操作を行う方法のメモです。  
 
@@ -11,7 +11,7 @@ updated: 2021-02-09
 
 <ul id="index_ul">
 <li><a href="#read">データの読み取り</a></li>
-<li><a href="#related">関連メモ</a></li>
+<li><a href="#関連メモ">関連メモ</a></li>
 </ul>
 
 * * *
@@ -70,8 +70,12 @@ p_conn.Close
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="related">関連メモ</a><a class="heading-anchor-permalink" href="#related">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-02-09" updated="2021-02-09" %}</div>
+## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-02-09" updated="2021-08-31" %}</div>
+### Accessでデータベース操作
+- [AccessでDAOを使ってデータの読み取り]({% link _it_articles/access/using_dao_to_read_data.md %})
+- [AccessでADOを使ってデータの読み取り]({% link _it_articles/access/using_ado_to_read_data.md %})
+
 ### 他言語でのデータベース操作
 - [Javaでデータベース操作]({% link _it_articles/java/database_control.md %})
 

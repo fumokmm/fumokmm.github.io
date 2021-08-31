@@ -21,7 +21,8 @@ IT用語のひとこと説明です。
 <dl>
   {% include article_parts/term_dt.html type="it" title="CRUD (クラッド)" %}
   <dd markdown="span">システムに必要な4つの主要機能である「Create(生成)」「Read(読み取り)」「Update(更新)」「Delete(削除)」の頭文字を並べた用語。  
-  データベースでは、[DML]({% link _it_articles/other/term.md %}#DML【Data Manipulation Language】)のCREATE, SELECT, UPDATE, DELETEに、HTTPではPUT, GET, PUT, DELETEに対応する。各機能ごとのCRUDを一覧化した、CRUD図などがある。
+  データベースでは、[DML]({% link _it_articles/other/term.md %}#DML【Data Manipulation Language】)のCREATE, SELECT, UPDATE, DELETEに、HTTPではPUT, GET, PUT, DELETEに対応する。  
+  各機能ごとのCRUDを一覧化した、CRUD図などがある。
   {% include update_info_inline.html created="2021-02-25" updated="2021-02-25" %}
   </dd>
 </dl>
@@ -60,7 +61,8 @@ IT用語のひとこと説明です。
 
 <dl>
   {% include article_parts/term_dt.html type="it" title="DML【Data Manipulation Language】" %}
-  <dd markdown="span">SELECT、INSERT、UPDATE、DELETEなどテーブルに対するデータの取得、追加、更新、削除を行うコマンド。いわゆる[CRUD]({% link _it_articles/other/term.md %}#CRUD (クラッド))に対応。
+  <dd markdown="span">SELECT、INSERT、UPDATE、DELETEなどテーブルに対するデータの取得、追加、更新、削除を行うコマンド。  
+  いわゆる[CRUD]({% link _it_articles/other/term.md %}#CRUD (クラッド))に対応。
   {% include update_info_inline.html created="2021-02-25" updated="2021-02-25" %}</dd>
 </dl>
 
@@ -88,7 +90,8 @@ IT用語のひとこと説明です。
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-09" updated="2021-05-29" %}</div>
 <dl>
   {% include article_parts/term_dt.html type="it" title="ウェビナー" %}
-  <dd markdown="span">Webセミナーとは、インターネット上で実施するセミナーや講演会・講義、研修のこと。「Web」と「Seminar」を合わせたウェビナー（Webinar）と呼ばれたり、オンラインセミナー、E-ラーニングなどと呼ばれたりする。
+  <dd markdown="span">Webセミナーとは、インターネット上で実施するセミナーや講演会・講義、研修のこと。  
+  「Web」と「Seminar」を合わせたウェビナー（Webinar）と呼ばれたり、オンラインセミナー、E-ラーニングなどと呼ばれたりする。
   {% include update_info_inline.html created="2020-12-05" updated="2020-12-05" %}
   </dd>
 </dl>
