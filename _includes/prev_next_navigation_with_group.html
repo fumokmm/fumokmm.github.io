@@ -1,0 +1,66 @@
+{% assign filename = page.url | split: '/' | reverse | first %}
+{% if filename != 'index' %}
+    {% assign article_index = -1 %}
+    {% assign article_prev_index = -1 %}
+    {% assign article_next_index = -1 %}
+
+    {% comment %} ----- グループを取得 ----- {% endcomment %}
+
+    {% comment %}
+    {% assign sub_category = site.data.it_sub_category | where: "sub_category_id", page.sub_category_id | first %}
+    {% assign article_groups = sub_category.article_group %}
+    {% endcomment %}
+
+    {% assign article_groups = include.sub_category.article_group %}
+    {% comment %} ----- 記事リストを取得 ----- {% endcomment %}
+    {% assign list = site.it_articles  | where: 'category_id', 'it'
+                                    | where: 'sub_category_id', page.sub_category_id
+                                    | sort: 'display_order' %}
+
+    {% assign idx = 0 %}
+    {% for group in article_groups %}
+    {% assign item_in_group = list | where: "article_group_id", group.id %}
+    {% for item in item_in_group %}
+        {% if page.url == item.url %}
+            {% assign article_index = idx %}
+        {% endif %}
+        {% assign idx = idx | plus: 1 %}
+    {% endfor %}
+    {% endfor %}
+
+    {% assign article_last_index = idx | minus: 1  %}
+    {% if article_index != 0 %}
+        {% assign article_prev_index = article_index | minus: 1 %}
+    {% endif %}
+    {% if article_index != article_last_index %}
+        {% assign article_next_index = article_index | plus: 1 %}
+    {% endif %}
+
+    {% assign idx = 0 %}
+    {% for group in article_groups %}
+    {% assign item_in_group = list | where: "article_group_id", group.id %}
+    {% for item in item_in_group %}
+        {% if article_prev_index >= 0 and article_prev_index == idx %}
+            {% assign article_prev = item %}
+        {% endif %}
+        {% if article_next_index >= 0 and article_next_index == idx %}
+            {% assign article_next = item %}
+        {% endif %}
+        {% assign idx = idx | plus: 1 %}
+    {% endfor %}
+    {% endfor %}
+
+    {% comment %}
+    ===========================
+    以下出力
+    ===========================
+    {% endcomment %}
+
+    {% if article_prev != nil %}
+        <a href="{{ article_prev.url }}">前:{{ article_prev.title }}</a>
+    {% endif %}
+    {% if article_next != nil %}
+        <a href="{{ article_next.url }}">次:{{ article_next.title }}</a>
+    {% endif %}
+
+{% endif %}
