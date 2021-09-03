@@ -12,9 +12,17 @@ layout: base_layout
     {% endif %}
 </div>
 
-{% include prev_next_navigation_with_group.html
-    articles = site.it_articles
-    sub_category = sub_category %}
+{% comment %} --- 記事グループありなしで切り分け --- {% endcomment %}
+{% assign article_group_size = sub_category.article_group | size %}
+{% if article_group_size == 0 %}
+    {% include prev_next_navigation.html
+        articles = site.it_articles
+        sub_category = sub_category %}
+{% else %}
+    {% include prev_next_navigation_with_group.html
+        articles = site.it_articles
+        sub_category = sub_category %}
+{% endif %}
 
 {% include updated.html %}
 {% include tools/ninja_share_button.html %}
