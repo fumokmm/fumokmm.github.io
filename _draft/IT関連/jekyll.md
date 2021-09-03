@@ -6,3 +6,6 @@
         group_by:
         group_by_exp:
         などが便利
+
+Variables
+https://jekyllrb.com/docs/variables/

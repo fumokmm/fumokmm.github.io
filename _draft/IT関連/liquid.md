@@ -18,3 +18,20 @@ https://shopify.github.io/liquid/
 ↓
 
 4
+
+
+Liquid
+https://shopify.github.io/liquid/
+Types
+Iteration
+Variable
+のあたり
+
+
+index表記[]使えるのか使えないのかよくわからん
+(Liquid) Getting product by index of collection
+https://community.shopify.com/c/Shopify-Design/Liquid-Getting-product-by-index-of-collection/td-p/203987
+
+
+Jekyll/Liquid assign boolean issues
+http://dfolio.free.fr/articles/2018/12/liquid-assign-boolean/
