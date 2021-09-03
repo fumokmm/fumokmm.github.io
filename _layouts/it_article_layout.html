@@ -12,7 +12,9 @@ layout: base_layout
     {% endif %}
 </div>
 
-{% include prev_next_navigation_with_group.html sub_category = sub_category %}
+{% include prev_next_navigation_with_group.html
+    articles = site.it_articles
+    sub_category = sub_category %}
 
 {% include updated.html %}
 {% include tools/ninja_share_button.html %}

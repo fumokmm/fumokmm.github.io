@@ -1,33 +1,31 @@
 {% assign filename = page.url | split: '/' | reverse | first %}
 {% if filename != 'index' %}
+    {% comment %} ----- グループを取得 ----- {% endcomment %}
+    {% assign article_groups = include.sub_category.article_group %}
+
+    {% comment %} ----- 記事リストを取得 ----- {% endcomment %}
+    {% assign list = include.articles | where: 'category_id', page.category_id
+                                      | where: 'sub_category_id', page.sub_category_id
+                                      | sort: 'display_order' %}
+
+    {% comment %} ----- インデックスを初期化 ----- {% endcomment %}
     {% assign article_index = -1 %}
     {% assign article_prev_index = -1 %}
     {% assign article_next_index = -1 %}
 
-    {% comment %} ----- グループを取得 ----- {% endcomment %}
-
-    {% comment %}
-    {% assign sub_category = site.data.it_sub_category | where: "sub_category_id", page.sub_category_id | first %}
-    {% assign article_groups = sub_category.article_group %}
-    {% endcomment %}
-
-    {% assign article_groups = include.sub_category.article_group %}
-    {% comment %} ----- 記事リストを取得 ----- {% endcomment %}
-    {% assign list = site.it_articles  | where: 'category_id', 'it'
-                                    | where: 'sub_category_id', page.sub_category_id
-                                    | sort: 'display_order' %}
-
+    {% comment %} ----- グループ単位に記事をループ ----- {% endcomment %}
     {% assign idx = 0 %}
     {% for group in article_groups %}
-    {% assign item_in_group = list | where: "article_group_id", group.id %}
-    {% for item in item_in_group %}
-        {% if page.url == item.url %}
-            {% assign article_index = idx %}
-        {% endif %}
-        {% assign idx = idx | plus: 1 %}
-    {% endfor %}
+        {% assign item_in_group = list | where: "article_group_id", group.id %}
+        {% for item in item_in_group %}
+            {% if page.url == item.url %}
+                {% assign article_index = idx %}
+            {% endif %}
+            {% assign idx = idx | plus: 1 %}
+        {% endfor %}
     {% endfor %}
 
+    {% comment %} ----- 取得した記事のインデックスを基に前記事、次記事のインデックスを計算 ----- {% endcomment %}
     {% assign article_last_index = idx | minus: 1  %}
     {% if article_index != 0 %}
         {% assign article_prev_index = article_index | minus: 1 %}
@@ -36,6 +34,7 @@
         {% assign article_next_index = article_index | plus: 1 %}
     {% endif %}
 
+    {% comment %} ----- 再度グループ単位にループし、前記事、次記事を取得 ----- {% endcomment %}
     {% assign idx = 0 %}
     {% for group in article_groups %}
     {% assign item_in_group = list | where: "article_group_id", group.id %}
@@ -56,6 +55,7 @@
     ===========================
     {% endcomment %}
 
+    {% comment %} ----- 前記事、後記事がある場合、リンクを出力 ----- {% endcomment %}
     {% if article_prev != nil %}
         <a href="{{ article_prev.url }}">前:{{ article_prev.title }}</a>
     {% endif %}
