@@ -164,6 +164,15 @@ article.main {
         }
     }
 }
+.prev-next-navigation {
+    // FlexBox指定
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #eff7e8;
+    margin: 2px;
+    padding: 2px;
+}
 
 // Markdownの注釈
 .footnotes {

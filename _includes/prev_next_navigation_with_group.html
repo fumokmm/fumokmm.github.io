@@ -56,11 +56,19 @@
     {% endcomment %}
 
     {% comment %} ----- 前記事、後記事がある場合、リンクを出力 ----- {% endcomment %}
-    {% if article_prev != nil %}
-        <a href="{{ article_prev.url }}">前:{{ article_prev.title }}</a>
-    {% endif %}
-    {% if article_next != nil %}
-        <a href="{{ article_next.url }}">次:{{ article_next.title }}</a>
+    {% if article_prev != nil or article_next != nil %}
+        <div class="prev-next-navigation">
+                {% if article_prev != nil %}
+                    <div class="prev"><a href="{{ article_prev.url }}">« 前のメモ</a></div>
+                {% else %}
+                    <div></div>
+                {% endif %}
+                {% if article_next != nil %}
+                    <div class="next"><a href="{{ article_next.url }}">次のメモ »</a></div>
+                {% else %}
+                    <div></div>
+                {% endif %}
+        </div>
     {% endif %}
 
 {% endif %}
