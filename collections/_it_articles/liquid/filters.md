@@ -1,6 +1,6 @@
 ---
 title: Liquidのフィルター
-display_order: 10
+display_order: 20
 created: 2021-06-02
 updated: 2021-06-02
 ---
@@ -15,9 +15,9 @@ updated: 2021-06-02
 * * *
 ## <a name="size">size</a><a class="heading-anchor-permalink" href="#size">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-02" updated="2021-06-02" %}</div>
+{% raw %}
 配列のサイズ(長さ)を調べたり、文字列の文字数を取得したりします。
 
-{% raw %}
 <div class="code-box-syntax">
 <div class="title">配列の長さ(サイズ)を取得</div>
 <pre>
@@ -25,7 +25,6 @@ updated: 2021-06-02
 {{ my_array.size }}
 </pre>
 </div>
-{% endraw %}
 <div class="code-box-output">
 <div class="title">結果</div>
 <pre>
@@ -33,20 +32,19 @@ updated: 2021-06-02
 </pre>
 </div>
 
-{% raw %}
 <div class="code-box-syntax">
 <div class="title">文字列の長さ(文字数)を取得</div>
 <pre>
 {{ "abcde" | size }}
 </pre>
 </div>
-{% endraw %}
 <div class="code-box-output">
 <div class="title">結果</div>
 <pre>
 5
 </pre>
 </div>
+{% endraw %}
 
 {% include goto_pagetop.html %}
 

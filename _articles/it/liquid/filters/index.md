@@ -1,6 +1,6 @@
 ---
 title: Liquidのフィルター
-display_order: 10
+display_order: 20
 created: 2021-06-02
 updated: 2021-06-02
 ---
