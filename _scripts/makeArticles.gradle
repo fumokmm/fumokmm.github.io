@@ -7,7 +7,7 @@
 task makeArticles() {
     group = '記事管理'
     description = '_articles配下の記事を結合して、.workに記事を作成します。(オプション: -Ptarget=xxx)'
-    dependsOn 'checkUpdated' // 記事生成前に更新日付が更新されていること
+    mustRunAfter 'clean' // cleanが同時指定されている場合、先にcleanを実行すること
 
     doFirst {
         def dirs = []
