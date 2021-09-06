@@ -301,7 +301,7 @@ def get_main_categories_last_updated(base_dir, col_dir)
   .map { |f| read_updated(f) }.max
 end
 top_index_file_path = File.join(base_dir, 'index.md')
-new_top_updated = get_history_last_updated(collections_dir)
+new_top_updated = get_main_categories_last_updated(base_dir, collections_dir)
 old_top_updated = read_updated(top_index_file_path)
 if old_top_updated < new_top_updated
   ReplaceUpdated.new(top_index_file_path, old_top_updated, new_top_updated).exec
