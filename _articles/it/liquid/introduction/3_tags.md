@@ -18,12 +18,12 @@ updated: 2021-09-05
 ```output:Output
   Hello fumo!
 ```
+{% endraw %}
 
 タグは色々なタイプに分類されます。
-- 制御フロー
+- [制御フロー]({% link _it_articles/liquid/control_flow.md %})
 - 繰り返し
 - テンプレート
 - 変数設定
 
 詳細はまたあとで書きます。
-{% endraw %}
