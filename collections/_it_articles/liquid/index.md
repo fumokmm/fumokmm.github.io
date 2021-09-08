@@ -1,7 +1,7 @@
 ---
 title: Liquidのメモ
 created: 2021-06-02
-updated: 2021-09-07
+updated: 2021-09-08
 ---
 こちらはLiquidのメモになります。
 
