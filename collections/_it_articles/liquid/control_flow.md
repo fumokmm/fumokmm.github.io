@@ -81,7 +81,7 @@ updated: 2021-09-08
 </pre>
 </div>
 
-- `unless`は以下と同じ動きをします。
+`unless`は以下と同じ動きをします。
 <div class="code-box">
 <div class="title">Input (product.titleの値が "すごくない靴" の場合)</div>
 <pre>
