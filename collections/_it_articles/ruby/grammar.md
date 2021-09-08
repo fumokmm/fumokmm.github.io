@@ -217,7 +217,7 @@ true
 </div>
 
 条件式が偽の場合に別の条件を指定するには`elsif`を使います。  
-`else-if`ではないのでご注意下さい。
+`else if`ではないのでご注意下さい。
 <div class="code-box-syntax">
 <div class="title">if-elsif文</div>
 <pre>
