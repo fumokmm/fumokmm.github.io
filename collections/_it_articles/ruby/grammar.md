@@ -270,6 +270,7 @@ if 条件式
 * * *
 ## <a name="条件分岐 - unless文">条件分岐 - unless文</a><a class="heading-anchor-permalink" href="#条件分岐 - unless文">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-08" updated="2021-09-08" %}</div>
+あとで書きます。お待ちください。
 
 {% include goto_pagetop.html %}
 
