@@ -2,7 +2,7 @@
 title: Rubyの文法
 display_order: 10
 created: 2020-12-03
-updated: 2021-07-07
+updated: 2021-09-08
 ---
 ここではRubyの文法を簡単にまとめておきます。
 
@@ -25,7 +25,8 @@ updated: 2021-07-07
         </li>
         <li><a href="#基礎文法">基礎文法</a>
             <ul>
-                <li><a href="#条件分岐 - If文">条件分岐 - If文</a></li>
+                <li><a href="#条件分岐 - if文">条件分岐 - if文</a></li>
+                <li><a href="#条件分岐 - unless文">条件分岐 - unless文</a></li>
                 <li><a href="#Truthy">Truthy</a></li>
             </ul>
         </li>
@@ -192,10 +193,10 @@ true
 
 ## <a name="基礎文法">基礎文法</a><a class="heading-anchor-permalink" href="#基礎文法">§</a>
 * * *
-## <a name="条件分岐 - If文">条件分岐 - If文</a><a class="heading-anchor-permalink" href="#条件分岐 - If文">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-03-09" %}</div>
+## <a name="条件分岐 - if文">条件分岐 - if文</a><a class="heading-anchor-permalink" href="#条件分岐 - if文">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-09-08" %}</div>
 <div class="code-box-syntax">
-<div class="title">If文</div>
+<div class="title">if文</div>
 <pre>
 <em>if</em> <em class="blue">条件式</em> <em>then</em>
   <em class="comment"># 条件式が真の時に実行する処理1</em>
@@ -204,8 +205,9 @@ true
 </pre>
 </div>
 
+条件式に後ろが改行の場合は`then`を省略できます。
 <div class="code-box-syntax">
-<div class="title">If文 - 条件式に後ろが改行の場合はthenを省略できる</div>
+<div class="title">if文 (then省略)</div>
 <pre>
 <em>if</em> <em class="blue">条件式</em>
   <em class="comment"># 条件式が真の時に実行する処理1</em>
@@ -214,12 +216,68 @@ true
 </pre>
 </div>
 
+条件式が偽の場合に別の条件を指定するには`elsif`を使います。  
+`else-if`ではないのでご注意下さい。
+<div class="code-box-syntax">
+<div class="title">if-elsif文</div>
+<pre>
+if <em class="blue">条件式1</em>
+  <em class="comment"># 条件式1が真の時に実行する処理1</em>
+  <em class="comment"># 条件式1が真の時に実行する処理2</em>
+<em>elsif</em> <em class="blue">条件式2</em>
+  <em class="comment"># 条件式2が偽の時に実行する処理1</em>
+  <em class="comment"># 条件式2が偽の時に実行する処理2</em>
+<em>end</em>
+</pre>
+</div>
+
+条件式が偽の場合に実行する節ブロックを指定するには`else`を使います。
+<div class="code-box-syntax">
+<div class="title">if-else文</div>
+<pre>
+if 条件式
+  <em class="comment"># 条件式が真の時に実行する処理1</em>
+  <em class="comment"># 条件式が真の時に実行する処理2</em>
+<em>else</em>
+  <em class="comment"># 条件式が偽の時に実行する処理1</em>
+  <em class="comment"># 条件式が偽の時に実行する処理2</em>
+<em>end</em>
+</pre>
+</div>
+
+`elsif`と`else`は組み合わせられます。
+<div class="code-box-syntax">
+<div class="title">if-elsif-else文</div>
+<pre>
+<em>if</em> <em class="blue">条件式1</em>
+  <em class="comment"># 条件式1が真の時に実行する処理1</em>
+  <em class="comment"># 条件式1が真の時に実行する処理2</em>
+<em>elsif</em> <em class="blue">条件式2</em>
+  <em class="comment"># 条件式2が偽の時に実行する処理1</em>
+  <em class="comment"># 条件式2が偽の時に実行する処理2</em>
+<em>else</em>
+  <em class="comment"># 条件式1,条件式2がともに偽の時に実行する処理1</em>
+  <em class="comment"># 条件式1,条件式2がともに偽の時に実行する処理2</em>
+<em>end</em>
+</pre>
+</div>
+
+### ソース
+- [(language-examples) 0008_if_unless_elsif_else.rb](https://github.com/fumokmm/language-examples/blob/main/Ruby/0008_if_unless_elsif_else.rb)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="条件分岐 - unless文">条件分岐 - unless文</a><a class="heading-anchor-permalink" href="#条件分岐 - unless文">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-08" updated="2021-09-08" %}</div>
+
 {% include goto_pagetop.html %}
 
 * * *
 ## <a name="Truthy">Truthy</a><a class="heading-anchor-permalink" href="#Truthy">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-03" updated="2020-12-03" %}</div>
-Rubyでは、条件式などで偽とみなされる値(falsey value)を`nil`と`false`のみと定めていて、それ以外のオブジェクトはすべて真とみなされる値(truthy value)となります。
+Rubyでは、条件式などで偽とみなされる値(falsey value)を`nil`と`false`のみと定めていて、  
+それ以外のオブジェクトはすべて真とみなされる値(truthy value)となります。
 
 {% include goto_pagetop.html %}
 
@@ -345,8 +403,8 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 
 * * *
 ## <a name="ソース">ソース</a><a class="heading-anchor-permalink" href="#ソース">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
-- [language-examples](https://github.com/fumokmm/language-examples/tree/main/Ruby)
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-09-08" %}</div>
+- [(language-examples) Ruby](https://github.com/fumokmm/language-examples/tree/main/Ruby)
 
 {% include goto_pagetop.html %}
 

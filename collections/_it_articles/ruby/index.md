@@ -1,7 +1,7 @@
 ---
 title: Rubyのメモ
 created: 2020-12-03
-updated: 2021-07-07
+updated: 2021-09-08
 ---
 こちらはRubyのメモになります。
 
