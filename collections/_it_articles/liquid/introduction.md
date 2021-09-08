@@ -51,7 +51,7 @@ Liquidの紹介
 
 * * *
 ## <a name="タグ">タグ</a><a class="heading-anchor-permalink" href="#タグ">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-09-05" updated="2021-09-05" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-05" updated="2021-09-08" %}</div>
 {% raw %}
 タグはテンプレート内でロジックは制御フローを生成します。  
 波括弧とパーセント(`{%` と `%}`)で囲んだ内容は最終的には何も出力されません。  
@@ -78,7 +78,7 @@ Liquidの紹介
 - [制御フロー]({% link _it_articles/liquid/control_flow.md %})
 - 繰り返し
 - テンプレート
-- 変数設定
+- [変数設定]({% link _it_articles/liquid/variable.md %})
 
 詳細はまたあとで書きます。
 

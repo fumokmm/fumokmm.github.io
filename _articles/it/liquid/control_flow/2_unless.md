@@ -5,8 +5,8 @@ created: 2021-09-07
 updated: 2021-09-07
 ---
 {% raw %}
-- `unless`は[if](#if)の反対で、`条件`が`true`に*ならない*ときのみ、ブロックを実行します。
-- `{% unless %}`で開始して、`{% endunless %}`で閉じます。
+`unless`は[if](#if)の反対で、`条件`が`true`に*ならない*ときのみ、ブロックを実行します。  
+`{% unless %}`で開始して、`{% endunless %}`で閉じます。
 
 ```syntax
 {% {em{unless}em} {em:blue{<条件>}em} %}
@@ -23,7 +23,7 @@ updated: 2021-09-07
 こりゃすごい靴じゃないぞ！
 ```
 
-- `unless`は以下と同じ動きをします。
+`unless`は以下と同じ動きをします。
 ```:Input (product.titleの値が "すごくない靴" の場合)
 {% if product.title {em{!=}em} "すごい靴" %}
   こりゃすごい靴じゃないぞ！

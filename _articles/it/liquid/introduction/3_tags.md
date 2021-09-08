@@ -2,7 +2,7 @@
 chapter_no: 3
 chapter_title: タグ
 created: 2021-09-05
-updated: 2021-09-05
+updated: 2021-09-08
 ---
 {% raw %}
 タグはテンプレート内でロジックは制御フローを生成します。  
@@ -24,6 +24,6 @@ updated: 2021-09-05
 - [制御フロー]({% link _it_articles/liquid/control_flow.md %})
 - 繰り返し
 - テンプレート
-- 変数設定
+- [変数設定]({% link _it_articles/liquid/variable.md %})
 
 詳細はまたあとで書きます。
