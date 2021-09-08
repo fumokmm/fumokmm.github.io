@@ -225,8 +225,8 @@ if <em class="blue">条件式1</em>
   <em class="comment"># 条件式1が真の時に実行する処理1</em>
   <em class="comment"># 条件式1が真の時に実行する処理2</em>
 <em>elsif</em> <em class="blue">条件式2</em>
-  <em class="comment"># 条件式2が偽の時に実行する処理1</em>
-  <em class="comment"># 条件式2が偽の時に実行する処理2</em>
+  <em class="comment"># 条件式2が真の時に実行する処理1</em>
+  <em class="comment"># 条件式2が真の時に実行する処理2</em>
 <em>end</em>
 </pre>
 </div>
@@ -253,8 +253,8 @@ if 条件式
   <em class="comment"># 条件式1が真の時に実行する処理1</em>
   <em class="comment"># 条件式1が真の時に実行する処理2</em>
 <em>elsif</em> <em class="blue">条件式2</em>
-  <em class="comment"># 条件式2が偽の時に実行する処理1</em>
-  <em class="comment"># 条件式2が偽の時に実行する処理2</em>
+  <em class="comment"># 条件式2が真の時に実行する処理1</em>
+  <em class="comment"># 条件式2が真の時に実行する処理2</em>
 <em>else</em>
   <em class="comment"># 条件式1,条件式2がともに偽の時に実行する処理1</em>
   <em class="comment"># 条件式1,条件式2がともに偽の時に実行する処理2</em>
