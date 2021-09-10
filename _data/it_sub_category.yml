@@ -188,6 +188,8 @@
   article_group:
     - id: sql-group
       label: SQL
+    - id: t-sql-group
+      label: T-SQL
     - id: control-group
       label: データベース管理
     - id: tips-group
