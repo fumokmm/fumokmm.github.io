@@ -9,5 +9,15 @@
   sub_category_label: 心理学
   link: /science/psychology/
   sub_category_group: psychology
-  sub_category_order: 20
+  sub_category_order: 10
   description: 心理学のメモ
+
+- sub_category_id: paradox
+  sub_category_label: パラドックス
+  link: /science/paradox/
+  article_group:
+    - id: decision-theory-probability-theory-group
+      label: 決定理論・確率論
+  sub_category_group: paradox
+  sub_category_order: 10
+  description: パラドックスのメモ
