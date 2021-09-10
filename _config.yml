@@ -258,6 +258,12 @@ defaults:
     values:
       sub_category_id: "psychology"
 
+  # パラドックスのメモ
+  - scope:
+      path: "_science_articles/paradox"
+    values:
+      sub_category_id: "paradox"
+
 ################################## 経済
   - scope:
       path: "_economy_articles"
