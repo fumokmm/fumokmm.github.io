@@ -7,6 +7,17 @@
   description: Microsoft社が開発したOfficeツールの一つ。簡易データベース機能を備える
 
 # C
+- sub_category_id: c
+  sub_category_label: C言語
+  link: /it/c/
+  article_group:
+    - id: getting-started-group
+      label: 導入
+  sub_category_group: programming_language
+  sub_category_order: 5
+  description: 汎用プログラミング言語
+
+# C
 - sub_category_id: chrome
   sub_category_label: Chrome
   link: /it/chrome/

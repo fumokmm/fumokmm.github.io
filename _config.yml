@@ -18,6 +18,13 @@ defaults:
       path: "_it_articles/access"
     values:
       sub_category_id: "access"
+
+  # C言語
+  - scope:
+      path: "_it_articles/c"
+    values:
+      sub_category_id: "c"
+
   - scope:
       path: "_it_articles/chrome"
     values:
