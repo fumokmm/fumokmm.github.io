@@ -52,11 +52,11 @@ task checkUpdated(type: CrossPlatformExec) {
     commandLine 'ruby', "${projectDir}/_scripts/check_updated.rb"
 }
 
-task update(dependsOn: ['makeArticles', 'copyArticles', 'checkUpdated']) {
-     group = '記事管理(クリーンなし)'
-     description = 'makeArticles -> copyArticles -> checkUpdate の順に実行'
+task update(dependsOn: ['makeArticles', 'copyArticles']) {
+     group = '記事管理'
+     description = 'makeArticles -> copyArticles の順に実行'
 }
-task updateAll(dependsOn: ['clean', 'makeArticles', 'copyArticles', 'checkUpdated']) {
-     group = '記事管理(クリーンあり)'
-     description = 'clean -> makeArticles -> copyArticles -> checkUpdate の順に実行'
+task updateAll(dependsOn: ['makeArticles', 'copyArticles', 'checkUpdated']) {
+     group = '記事管理'
+     description = 'makeArticles -> copyArticles -> checkUpdate の順に実行'
 }
