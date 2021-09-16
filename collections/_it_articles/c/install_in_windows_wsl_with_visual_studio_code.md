@@ -1,34 +1,28 @@
 ---
-title: C言語をインストール
+title: Windows環境(WSL)にVisual Studio CodeでC言語をインストール
 article_group_id: getting-started-group
-display_order: 10
+display_order: 20
 created: 2021-09-14
-updated: 2021-09-14
+updated: 2021-09-16
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
-<div style="column-count: 2;">
-    <ul id="index_ul">
-        <li><a href="#導入">導入</a>
-            <ul>
-                <li><a href="#Windows環境(WSL)にVisual Studio CodeでC言語をインストール">Windows環境(WSL)にVisual Studio CodeでC言語をインストール</a></li>
-            </ul>
-        </li>
-        <li><a href="#参照・参考">参照・参考</a>
-            <ul>
-                <li><a href="#参考">参考</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
+<ul id="index_ul">
+<li><a href="#コンパイラ(gcc)">コンパイラ(gcc)</a></li>
+<li><a href="#VSCodeに拡張機能を導入">VSCodeに拡張機能を導入</a></li>
+<li><a href="#動作確認">動作確認</a></li>
+<li><a href="#参考">参考</a></li>
+</ul>
 
-## <a name="導入">導入</a><a class="heading-anchor-permalink" href="#導入">§</a>
 * * *
-## <a name="Windows環境(WSL)にVisual Studio CodeでC言語をインストール">Windows環境(WSL)にVisual Studio CodeでC言語をインストール</a><a class="heading-anchor-permalink" href="#Windows環境(WSL)にVisual Studio CodeでC言語をインストール">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-09-14" updated="2021-09-14" %}</div>
-### コンパイラ(gcc)
+## <a name="コンパイラ(gcc)">コンパイラ(gcc)</a><a class="heading-anchor-permalink" href="#コンパイラ(gcc)">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-14" updated="2021-09-16" %}</div>
+### コンパイラ(gcc)のインストール
 インストール済み。  
+
+### 動作確認
+ターミナルで`gcc -v`を実行。
 <div class="code-box-output">
 <div class="title">gcc -vを実行</div>
 <pre>
@@ -44,17 +38,29 @@ Thread model: posix
 gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04) 
 </pre>
 </div>
-- ターミナルで`gcc -v`を実行し、こんなのが出ればOK。
+- こんなのが出ればOK。
 
-### VSCodeに「C/C++機能拡張」を導入
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="VSCodeに拡張機能を導入">VSCodeに拡張機能を導入</a><a class="heading-anchor-permalink" href="#VSCodeに拡張機能を導入">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-14" updated="2021-09-16" %}</div>
+### C/C++機能拡張
 - 拡張機能(Ctrl + Shift + X)で、`C`と入力して検索し、Microsoft制の`C/C++`をインストールする
 
-### VSCodeに「Code Runner」を導入する
+### Code Runner
 - 拡張機能(Ctrl + Shift + X)で、`Code Runner`と入力して検索し、`Jun Han`さんの制の`Code Runner`をインストールする。
+{% comment %}
+この設定、なくても動く
 - `Code Runner`の設定を開き、`Code-runner: Executor Map`を`settings.jsonで編集`をクリックする。
+{% endcomment %}
 - `Code-runner: Run in Terminal`の`Whether to run code in integrated Terminal.`にチェックを付ける。
 
-### 動作確認
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="動作確認">動作確認</a><a class="heading-anchor-permalink" href="#動作確認">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-14" updated="2021-09-16" %}</div>
 ソースを作成し右上の`再生ボタン`で実行。
 <div class="code-box">
 <div class="title">hello.c</div>
@@ -76,15 +82,11 @@ $ cd "/mnt/c/workspace/gcc/" &amp;&amp; gcc tempCodeRunnerFile.c -o tempCodeRunn
 </pre>
 </div>
 
-### 参考サイト
-- [(電脳産物) Visual Studio CodeでC言語プログラミングを始める（Windows編）](https://dianxnao.com/visual-studio-code%E3%81%A7c%E8%A8%80%E8%AA%9E%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%92%E5%A7%8B%E3%82%81%E3%82%8B%EF%BC%88windows%E7%B7%A8%EF%BC%89/)
-
 {% include goto_pagetop.html %}
 
-## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-09-14" updated="2021-09-14" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-14" updated="2021-09-16" %}</div>
 ### 参考サイト
 - [(電脳産物) Visual Studio CodeでC言語プログラミングを始める（Windows編）](https://dianxnao.com/visual-studio-code%E3%81%A7c%E8%A8%80%E8%AA%9E%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%92%E5%A7%8B%E3%82%81%E3%82%8B%EF%BC%88windows%E7%B7%A8%EF%BC%89/)
 
