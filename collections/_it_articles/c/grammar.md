@@ -2,8 +2,8 @@
 title: C言語の文法
 article_group_id: basis-group
 display_order: 10
-created: 2021-09-17
-updated: 2021-09-17
+created: 2021-09-20
+updated: 2021-09-20
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
