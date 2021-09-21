@@ -1,5 +1,6 @@
 ---
 title: WindowsのTips
+article_group_id: tips-group
 display_order: 900
 created: 2020-12-29
 updated: 2020-12-29
@@ -9,11 +10,11 @@ updated: 2020-12-29
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
-<li><a href="#make-repeated-character-string">手っ取り早く繰り返し文字を作る方法</a></li>
+<li><a href="#手っ取り早く繰り返し文字を作る方法">手っ取り早く繰り返し文字を作る方法</a></li>
 </ul>
 
 * * *
-## <a name="make-repeated-character-string">手っ取り早く繰り返し文字を作る方法</a><a class="heading-anchor-permalink" href="#make-repeated-character-string">§</a>
+## <a name="手っ取り早く繰り返し文字を作る方法">手っ取り早く繰り返し文字を作る方法</a><a class="heading-anchor-permalink" href="#手っ取り早く繰り返し文字を作る方法">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-12-29" updated="2020-12-29" %}</div>
 {% capture link_to_powershell %}{% link _it_articles/powershell/index.md %}{% endcapture %}
 
