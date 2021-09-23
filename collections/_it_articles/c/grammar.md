@@ -3,7 +3,7 @@ title: C言語の文法
 article_group_id: basis-group
 display_order: 10
 created: 2021-09-20
-updated: 2021-09-20
+updated: 2021-09-22
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -12,7 +12,9 @@ updated: 2021-09-20
     <ul id="index_ul">
         <li><a href="#基礎文法">基礎文法</a>
             <ul>
+                <li><a href="#HelloWorld">HelloWorld</a></li>
                 <li><a href="#エスケープシーケンス文字">エスケープシーケンス文字</a></li>
+                <li><a href="#for文">for文</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -24,6 +26,22 @@ updated: 2021-09-20
 </div>
 
 ## <a name="基礎文法">基礎文法</a><a class="heading-anchor-permalink" href="#基礎文法">§</a>
+* * *
+## <a name="HelloWorld">HelloWorld</a><a class="heading-anchor-permalink" href="#HelloWorld">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-22" updated="2021-09-22" %}</div>
+<div class="code-box no-title">
+<pre>
+#include &lt;stdio.h&gt;
+
+int main(void) {
+    printf("Hello, World\n");
+    return 0;
+}
+</pre>
+</div>
+
+{% include goto_pagetop.html %}
+
 * * *
 ## <a name="エスケープシーケンス文字">エスケープシーケンス文字</a><a class="heading-anchor-permalink" href="#エスケープシーケンス文字">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-20" updated="2021-09-20" %}</div>
@@ -124,6 +142,25 @@ updated: 2021-09-20
 - [(電脳産物) C初級：エスケープシーケンス文字](http://wisdom.sakura.ne.jp/programming/c/Cdata1.html)
 - [(覚え書き.com) C言語：エスケープシーケンス一覧](http://write-remember.com/program/c/escape/)
 - [(若葉プログラミング塾) ASCIIコード表](https://www.k-cube.co.jp/wakaba/server/ascii_code.html)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="for文">for文</a><a class="heading-anchor-permalink" href="#for文">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-22" updated="2021-09-22" %}</div>
+### 例
+<div class="code-box no-title">
+<pre>
+#include &lt;stdio.h&gt;
+
+int main(void) {
+    <em>for (</em>int i = 0; i &lt; 10; i++<em>) {</em>
+        printf("%d", i);
+    <em>}</em>
+    return 0;
+}
+</pre>
+</div>
 
 {% include goto_pagetop.html %}
 
