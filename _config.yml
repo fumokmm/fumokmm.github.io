@@ -190,6 +190,12 @@ defaults:
     values:
       sub_category_id: "failure"
 
+  # 成功
+  - scope:
+      path: "_life_articles/success"
+    values:
+      sub_category_id: "success"
+
   # 時間管理
   - scope:
       path: "_life_articles/time_management"
