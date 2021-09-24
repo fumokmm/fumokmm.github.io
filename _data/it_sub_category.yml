@@ -52,6 +52,11 @@
 - sub_category_id: go
   sub_category_label: Go
   link: /it/go/
+  article_group:
+    - id: getting-started-group
+      label: 導入
+    - id: basis-group
+      label: 基本事項
   sub_category_group: programming_language
   sub_category_order: 50
   description: Google社が開発したプログラミング言語Goについてのメモ
