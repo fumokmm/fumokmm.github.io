@@ -26,6 +26,13 @@
   sub_category_order: failure01
   description: 失敗についてのメモ
 
+- sub_category_id: success
+  sub_category_label: 成功について
+  link: /life/success/
+  sub_category_group: success
+  sub_category_order: success01
+  description: 成功についてのメモ
+
 - sub_category_id: time_management
   sub_category_label: 時間管理について
   link: /life/time_management/
