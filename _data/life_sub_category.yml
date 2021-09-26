@@ -2,75 +2,75 @@
   sub_category_label: 断捨離について
   link: /life/minimalism/
   sub_category_group: minimalism
-  sub_category_order: minimalism01
+  sub_category_order: 10
   description: 断捨離についてのメモ
 
 - sub_category_id: attitude
   sub_category_label: 態度について
   link: /life/attitude/
   sub_category_group: attitude
-  sub_category_order: attitude01
+  sub_category_order: 10
   description: 態度についてのメモ
 
 - sub_category_id: purpose
   sub_category_label: 目的について
   link: /life/purpose/
   sub_category_group: purpose
-  sub_category_order: purpose01
+  sub_category_order: 10
   description: 目的についてのメモ
 
 - sub_category_id: failure
   sub_category_label: 失敗について
   link: /life/failure/
   sub_category_group: failure
-  sub_category_order: failure01
+  sub_category_order: 10
   description: 失敗についてのメモ
 
 - sub_category_id: success
   sub_category_label: 成功について
   link: /life/success/
   sub_category_group: success
-  sub_category_order: success01
+  sub_category_order: 10
   description: 成功についてのメモ
 
 - sub_category_id: time_management
   sub_category_label: 時間管理について
   link: /life/time_management/
   sub_category_group: time_management
-  sub_category_order: time_management01
+  sub_category_order: 10
   description: 時間管理についてのメモ
 
 - sub_category_id: eat
   sub_category_label: 食事について
   link: /life/eat/
   sub_category_group: health
-  sub_category_order: 1
+  sub_category_order: 10
   description: 食事についてのメモ
 
 - sub_category_id: happiness
   sub_category_label: 幸せについて
   link: /life/happiness/
   sub_category_group: happiness
-  sub_category_order: 1
+  sub_category_order: 10
   description: 幸せについてのメモ
 
 - sub_category_id: luck
   sub_category_label: 運について
   link: /life/luck/
   sub_category_group: luck
-  sub_category_order: 1
+  sub_category_order: 10
   description: 運についてのメモ
 
 - sub_category_id: human_relations
   sub_category_label: 人間関係について
   link: /life/human_relations/
   sub_category_group: human_relations
-  sub_category_order: 1
+  sub_category_order: 10
   description: 人間関係についてのメモ
 
 - sub_category_id: consciousness_and_unconsciousness
   sub_category_label: 意識と無意識について
   link: /life/consciousness_and_unconsciousness/
   sub_category_group: mind
-  sub_category_order: 1
+  sub_category_order: 10
   description: 意識と無意識についてのメモ

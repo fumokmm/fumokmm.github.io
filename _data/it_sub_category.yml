@@ -3,7 +3,7 @@
   sub_category_label: Access
   link: /it/access/
   sub_category_group: database
-  sub_category_order: database03
+  sub_category_order: 30
   description: Microsoft社が開発したOfficeツールの一つ。簡易データベース機能を備える
 
 # C
@@ -35,6 +35,7 @@
   sub_category_label: Database
   link: /it/database/
   sub_category_group: database
+  sub_category_order: 10
   description: データベース全般について
 
 # E
@@ -118,7 +119,7 @@
   sub_category_label: Linux
   link: /it/linux/
   sub_category_group: operating_system
-  sub_category_order: operating_system01
+  sub_category_order: 10
   description: "[リーナス・ベネディクト・トーバルズ氏](https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%BC%E3%83%8A%E3%82%B9%E3%83%BB%E3%83%88%E3%83%BC%E3%83%90%E3%83%AB%E3%82%BA)（Linus Benedict Torvalds)によって開発されたOS、Linuxついてのメモ"
 
 - sub_category_id: liquid
@@ -133,7 +134,7 @@
   sub_category_label: Oracle
   link: /it/oracle/
   sub_category_group: database
-  sub_category_order: database04
+  sub_category_order: 40
   description: Oracle社が作成しているデータベースOracleについてのメモ
 
 - sub_category_id: outlook
@@ -215,7 +216,7 @@
     - id: reference-group
       label: 参照・参考
   sub_category_group: database
-  sub_category_order: database02
+  sub_category_order: 20
   description: Microsoft社が作成しているデータベースSQL Serverについてのメモ
 
 - sub_category_id: subversion
@@ -233,7 +234,7 @@
   sub_category_label: Teams
   link: /it/teams/
   sub_category_group: instant_messenger
-  sub_category_order: instant_messenger01
+  sub_category_order: 10
   description: Microsoft社が作成しているリモートワークのためのコラボレーションツール
 
 # V
@@ -266,7 +267,7 @@
     - id: tips-group
       label: Tips
   sub_category_group: operating_system
-  sub_category_order: operating_system02
+  sub_category_order: 20
   description: Microsoft社が開発したオペレーティングシステムについてのメモ
 
 - sub_category_id: windows_batch
@@ -295,3 +296,14 @@
   sub_category_group: other
   sub_category_order: 2
   description: IT関係のその他のメモ
+
+# テスト
+- sub_category_id: test
+  sub_category_label: テスト
+  link: /it/test/
+  article_group:
+    - id: iron-rule-group
+      label: 鉄則
+  sub_category_group: test
+  sub_category_order: 10
+  description: テストについてのメモ
