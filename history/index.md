@@ -1,7 +1,7 @@
 ---
 title: 更新履歴
 created: 2020-09-09
-updated: 2021-09-26
+updated: 2021-09-27
 ---
 {% assign rev_history = site.history | reverse %}
 {% for item in rev_history %}
