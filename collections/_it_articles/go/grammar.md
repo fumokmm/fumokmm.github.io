@@ -14,6 +14,7 @@ updated: 2021-09-24
             <ul>
                 <li><a href="#Goの特徴">Goの特徴</a></li>
                 <li><a href="#HelloWorld">HelloWorld</a></li>
+                <li><a href="#パッケージ">パッケージ</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -38,17 +39,20 @@ updated: 2021-09-24
 - 大文字と小文字は区別される。
 - 識別子に使えるのは文字、数値、アンダースコアで数値以外から始める(2バイト文字も使用可)。
 - 単行コメントは「`// ～～`」、複数行コメントは「`/* ～～ */`」。
-- 変数宣言は「var」。
-- 関数定義は「func 関数名(引数...)」、戻り値の指定は「return 式」。
+- 変数宣言は「`var`」。
+- 関数定義は「`func` 関数名(引数...)」、戻り値の指定は「`return` 式」。
 
 ### 類似の言語
 - CやJavaの文法に近い。
+
+### 参考書籍
+- {% include book/book_270.html %} {% comment %} プログラミング経験者がGo言語を本格的に勉強する前に読むための本 {% endcomment %}
 
 {% include goto_pagetop.html %}
 
 * * *
 ## <a name="HelloWorld">HelloWorld</a><a class="heading-anchor-permalink" href="#HelloWorld">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-09-24" updated="2021-09-24" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-24" updated="2021-09-27" %}</div>
 <div class="code-box no-title">
 <pre>
 package main
@@ -61,8 +65,100 @@ func main() {
 </pre>
 </div>
 
+### サンプルソース
+- [(0001_hello-world) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0001_hello-world)
+
 ### 参考サイト
 - [(Qiita) ひさしぶりのHello world ~ Go編 ~](https://qiita.com/kouyaf77@github/items/806394a9885dc2eae091)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="パッケージ">パッケージ</a><a class="heading-anchor-permalink" href="#パッケージ">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-27" updated="2021-09-27" %}</div>
+### パッケージとは
+- Go言語のプログラムは一つ以上のパッケージで構成されます。
+- パッケージは一つ以上のソースファイルで構成されます。
+- パッケージの宣言には`package文`を使用します。
+- 同じパッケージに属するソースファイルは全て同一のディレクトリに格納します。
+- 一つのディレクトリに複数のパッケージをまとめることはできません。
+- プログラムはmainパッケージのmain関数から開始されます(エントリポイント)。
+- mainパッケージを除き、パッケージ名と格納ディレクトリは同じにする慣例(必須ではない)。
+
+#### 例：同一パッケージのソースファイル
+<div class="code-box">
+<div class="title">s1.go</div>
+<pre>
+<em class="comment">// p1パッケージ</em>
+<em>package p1</em>
+
+func fnc1() {
+    <em class="comment">// 略</em>
+}
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">s2.go</div>
+<pre>
+<em class="comment">// p1パッケージ</em>
+<em>package p2</em>
+
+func fnc2() {
+    <em class="blue">fnc1()</em> <em class="comment">// 同一パッケージ内の関数を呼び出す</em>
+}
+</pre>
+</div>
+
+### インポート
+- 他のパッケージをインポートするには`import文`を使用します。
+- 複数のパッケージをインポートする場合は、括弧を使ってまとめることｇできます。
+
+#### 例：インポート
+<div class="code-box no-title">
+<pre>
+<em class="comment">// 単一のインポート</em>
+import "p1"
+</pre>
+</div>
+<div class="code-box no-title">
+<pre>
+<em class="comment">// 複数のインポート</em>
+import (
+    "p2"
+    "p3"
+    "p4"
+)
+</pre>
+</div>
+
+### エクスポート
+- 名前の先頭を小文字にするか大文字にするかでメンバーの公開範囲(エクスポート)を決めることができます。
+- 小文字から始まるメンバーは異なるパッケージに属するソースからは参照できなくなります。
+- 大文字から始まるメンバーは異なるパッケージに属するソースからも参照できます。
+
+#### 例：エクスポート
+<div class="code-box no-title">
+<pre>
+package p1
+
+<em class="comment">// この関数はp1パッケージ以外からは使用できない</em>
+func <em>f</em>nc1() {
+    <em class="comment">// 略</em>
+}
+
+<em class="comment">// この関数はp1パッケージ以外から使用可能</em>
+func <em>F</em>nc2() {
+    <em class="comment">// 略</em>
+}
+</pre>
+</div>
+
+### サンプルソース
+- [(0002_package) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0002_package)
+
+### 参考書籍
+- {% include book/book_270.html %} {% comment %} プログラミング経験者がGo言語を本格的に勉強する前に読むための本 {% endcomment %}
 
 {% include goto_pagetop.html %}
 
