@@ -1,6 +1,5 @@
 ---
 chapter_no: 9
-chapter_id: sub-module
 chapter_title: サブモジュール(submodule)
 created: 2010-11-07
 updated: 2010-11-07

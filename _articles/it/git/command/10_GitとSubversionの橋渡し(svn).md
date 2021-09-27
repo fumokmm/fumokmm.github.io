@@ -1,6 +1,5 @@
 ---
 chapter_no: 10
-chapter_id: svn-bridge
 chapter_title: GitとSubversionの橋渡し(svn)
 created: 2010-11-07
 updated: 2010-11-07

@@ -1,9 +1,8 @@
 ---
 chapter_no: 1
-chapter_id: config-and-initialization
 chapter_title: 設定と初期化(config)
 created: 2010-11-07
-updated: 2021-05-19
+updated: 2021-09-27
 ---
 <div class="code-box">
 <div class="title">グローバルなユーザ名とメールアドレスを設定する</div>
@@ -12,6 +11,9 @@ $ git <em class="blue">config</em> <em class="command">--global</em> <em>user.na
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>user.email "hoge@hoge.com"</em>
 </pre>
 </div>
+```:グローバルなコミットやタグのメッセージ編集用のエディタを設定する
+$ git {em:blue{config}em} {em:command{--global}em} {em{core.editor emacs}em}
+```
 
 <div class="code-box">
 <div class="title">特定のリポジトリ用のユーザ名とメールアドレスを設定する</div>
@@ -21,6 +23,10 @@ $ git <em class="blue">config</em> <em>user.name "hoge"</em>
 $ git <em class="blue">config</em> <em>user.email "hoge@hoge.com"</em>
 </pre>
 </div>
+```:特定のリポジトリ用のコミットやタグのメッセージ編集用のエディタを設定する
+$ git {em:blue{config}em} {em{core.editor emacs}em}
+```
+
 - グローバルとの違いは`--global`オプションの有無です。
 
 <div class="code-box">

@@ -1,6 +1,5 @@
 ---
 chapter_no: 5
-chapter_id: branch
 chapter_title: ブランチ(branch, merge, cherry-pick)
 created: 2010-11-07
 updated: 2021-03-23

@@ -2,7 +2,7 @@
 title: Gitコマンドのメモ
 display_order: 10
 created: 2010-11-07
-updated: 2021-06-20
+updated: 2021-09-27
 ---
 当メモは2010-11-07に[投稿されたもの](https://npnl.hatenablog.jp/entry/20101107/1289121576)を加筆修正し、再掲したものです。
 基本的に当時の内容そのままとなっておりますので、8割りくらいは今でも通用すると思いますが、  
@@ -15,27 +15,33 @@ updated: 2021-06-20
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
-<li><a href="#config-and-initialization">設定と初期化(config)</a></li>
-<li><a href="#repository-initialization">リポジトリの初期化(init, clone)</a></li>
-<li><a href="#routine-work">日常の作業(add, commit, checkout, reset)</a></li>
+<li><a href="#設定と初期化(config)">設定と初期化(config)</a></li>
+<li><a href="#リポジトリの初期化(init, clone)">リポジトリの初期化(init, clone)</a></li>
+<li><a href="#日常の作業(add, commit, checkout, reset)">日常の作業(add, commit, checkout, reset)</a></li>
 <li><a href="#変更の退避(stash)">変更の退避(stash)</a></li>
-<li><a href="#branch">ブランチ(branch, merge, cherry-pick)</a></li>
-<li><a href="#tag">タグ(tag)</a></li>
-<li><a href="#log">履歴(log, diff)</a></li>
-<li><a href="#remote-repository">リモートリポジトリ(remote)</a></li>
-<li><a href="#sub-module">サブモジュール(submodule)</a></li>
-<li><a href="#svn-bridge">GitとSubversionの橋渡し(svn)</a></li>
-<li><a href="#reference">参照</a></li>
+<li><a href="#ブランチ(branch, merge, cherry-pick)">ブランチ(branch, merge, cherry-pick)</a></li>
+<li><a href="#タグ(tag)">タグ(tag)</a></li>
+<li><a href="#履歴(log, diff)">履歴(log, diff)</a></li>
+<li><a href="#リモートリポジトリ(remote)">リモートリポジトリ(remote)</a></li>
+<li><a href="#サブモジュール(submodule)">サブモジュール(submodule)</a></li>
+<li><a href="#GitとSubversionの橋渡し(svn)">GitとSubversionの橋渡し(svn)</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 
 * * *
-## <a name="config-and-initialization">設定と初期化(config)</a><a class="heading-anchor-permalink" href="#config-and-initialization">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-05-19" %}</div>
+## <a name="設定と初期化(config)">設定と初期化(config)</a><a class="heading-anchor-permalink" href="#設定と初期化(config)">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-09-27" %}</div>
 <div class="code-box">
 <div class="title">グローバルなユーザ名とメールアドレスを設定する</div>
 <pre>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>user.name "hoge"</em>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>user.email "hoge@hoge.com"</em>
+</pre>
+</div>
+<div class="code-box">
+<div class="title">グローバルなコミットやタグのメッセージ編集用のエディタを設定する</div>
+<pre>
+$ git <em class="blue">config</em> <em class="command">--global</em> <em>core.editor emacs</em>
 </pre>
 </div>
 
@@ -47,6 +53,13 @@ $ git <em class="blue">config</em> <em>user.name "hoge"</em>
 $ git <em class="blue">config</em> <em>user.email "hoge@hoge.com"</em>
 </pre>
 </div>
+<div class="code-box">
+<div class="title">特定のリポジトリ用のコミットやタグのメッセージ編集用のエディタを設定する</div>
+<pre>
+$ git <em class="blue">config</em> <em>core.editor emacs</em>
+</pre>
+</div>
+
 - グローバルとの違いは`--global`オプションの有無です。
 
 <div class="code-box">
@@ -87,7 +100,7 @@ $ git <em class="blue">config</em> <em class="command">--global</em> <em>alias.b
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="repository-initialization">リポジトリの初期化(init, clone)</a><a class="heading-anchor-permalink" href="#repository-initialization">§</a>
+## <a name="リポジトリの初期化(init, clone)">リポジトリの初期化(init, clone)</a><a class="heading-anchor-permalink" href="#リポジトリの初期化(init, clone)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2010-11-07" %}</div>
 <div class="code-box">
 <div class="title">新しいリポジトリの初期化する</div>
@@ -133,7 +146,7 @@ $ git <em class="blue">remote add</em> <em>&lt;リモートリポジトリ名&gt
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="routine-work">日常の作業(add, commit, checkout, reset)</a><a class="heading-anchor-permalink" href="#routine-work">§</a>
+## <a name="日常の作業(add, commit, checkout, reset)">日常の作業(add, commit, checkout, reset)</a><a class="heading-anchor-permalink" href="#日常の作業(add, commit, checkout, reset)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2010-11-07" %}</div>
 <div class="code-box">
 <div class="title">新しいファイルの追加や既存のファイルのステージをしてコミットする</div>
@@ -318,7 +331,7 @@ git <em class="blue">stash show</em> <em>&lt;スタッシュ名&gt;</em> <em cla
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="branch">ブランチ(branch, merge, cherry-pick)</a><a class="heading-anchor-permalink" href="#branch">§</a>
+## <a name="ブランチ(branch, merge, cherry-pick)">ブランチ(branch, merge, cherry-pick)</a><a class="heading-anchor-permalink" href="#ブランチ(branch, merge, cherry-pick)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-03-23" %}</div>
 <div class="code-box">
 <div class="title">ローカルのブランチを表示する</div>
@@ -476,7 +489,7 @@ $ git <em class="blue">branch</em> <em class="command">-D</em> <em>&lt;削除す
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="tag">タグ(tag)</a><a class="heading-anchor-permalink" href="#tag">§</a>
+## <a name="タグ(tag)">タグ(tag)</a><a class="heading-anchor-permalink" href="#タグ(tag)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-03-08" %}</div>
 <div class="code-box">
 <div class="title">タグを表示する</div>
@@ -538,7 +551,7 @@ $ git <em class="blue">push</em> <em class="command">--delete</em> <em class="bl
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="log">履歴(log, diff)</a><a class="heading-anchor-permalink" href="#log">§</a>
+## <a name="履歴(log, diff)">履歴(log, diff)</a><a class="heading-anchor-permalink" href="#履歴(log, diff)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-05-20" %}</div>
 <div class="code-box">
 <div class="title">履歴をすべて表示する</div>
@@ -724,7 +737,7 @@ $ git <em class="blue">log</em> <em class="command">-C</em> <em class="command">
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="remote-repository">リモートリポジトリ(remote)</a><a class="heading-anchor-permalink" href="#remote-repository">§</a>
+## <a name="リモートリポジトリ(remote)">リモートリポジトリ(remote)</a><a class="heading-anchor-permalink" href="#リモートリポジトリ(remote)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2010-11-07" %}</div>
 <div class="code-box">
 <div class="title">リポジトリのクローンを作る</div>
@@ -840,7 +853,7 @@ $ git <em class="blue">remote rm</em> <em>&lt;リモートリポジトリ名&gt;
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="sub-module">サブモジュール(submodule)</a><a class="heading-anchor-permalink" href="#sub-module">§</a>
+## <a name="サブモジュール(submodule)">サブモジュール(submodule)</a><a class="heading-anchor-permalink" href="#サブモジュール(submodule)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2010-11-07" %}</div>
 ※以下コマンドはワーキングツリーのトップレベル(`.git`のあるディレクトリ)で実行する必要があります。
 
@@ -884,7 +897,7 @@ $ git <em class="blue">submodule update</em> <em>&lt;サブモジュールのパ
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="svn-bridge">GitとSubversionの橋渡し(svn)</a><a class="heading-anchor-permalink" href="#svn-bridge">§</a>
+## <a name="GitとSubversionの橋渡し(svn)">GitとSubversionの橋渡し(svn)</a><a class="heading-anchor-permalink" href="#GitとSubversionの橋渡し(svn)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2010-11-07" %}</div>
 <div class="code-box">
 <div class="title">Subversionリポジトリ全体のクローンを作る</div>
@@ -964,33 +977,34 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参照</a><a class="heading-anchor-permalink" href="#reference">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-06-20" %}</div>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-09-27" %}</div>
 ### 元記事
 - [(No Programming, No Life) Gitコマンドリファレンス](https://npnl.hatenablog.jp/entry/20101107/1289121576)
 
 ### 参照
 - [Gitマニュアルのリファレンス](https://git-scm.com/docs)
 - [Git ユーザマニュアル (バージョン 1.5.3 以降用)](https://img.atwikiimg.com/www8.atwiki.jp/git_jp/pub/Documentation.ja/user-manual.html)
+- [8.1 Git のカスタマイズ - Git の設定](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A)
+
+### 参考記事
+- [(dackdive's blog) \[git\]複数のcommitをまとめてcherry-pickする)](https://dackdive.hateblo.jp/entry/2016/06/06/203542)
+- [(Hack Your Design!) 美しき git log --graph のエイリアス](https://blog.toshimaru.net/git-log-graph/)
+- [(Qiita) 【git stash】コミットはせずに変更を退避したいとき](https://qiita.com/chihiro/items/f373873d5c2dfbd03250)
+- [(Qiita) git で branch を push しただけじゃ tag は push されない話](https://qiita.com/aki_55p/items/530754ac6e861122f29b)
+- [(Qiita) マージコミットとFast-forwardマージ](https://qiita.com/shyamahira/items/59ff8aa1cf7b893aab60)
+- [(Stack Overflow) How to delete a remote tag?](https://stackoverflow.com/questions/5480258/how-to-delete-a-remote-tag)
+- [(サル先生のGit入門) 7. merge --squash](https://backlog.com/ja/git-tutorial/stepup/34/)
+- [(サル先生のGit入門) Stash](https://backlog.com/ja/git-tutorial/reference/stash/)
+- [(まくまくGitノート) git diff や git status での日本語の文字化けを防ぐ (core.page, core.quotepath)](https://maku77.github.io/git/settings/garbling.html)
+- [(侍エンジニアブログ) git cherry-pickを完全マスター!特定コミットのみを取り込む方法](https://www.sejuku.net/blog/71544)
+- [\[Git\] Git コマンドメモ - それはBlog](http://hamasyou.com/blog/2010/11/11/git/)
+- [Git - git-stash Documentation](https://git-scm.com/docs/git-stash)
+- [git submodule - みずぴー日記](https://mzp.hatenadiary.org/entry/20080508/git)
+- [慣れてきたらコミットをまとめてPull Requestしよう（git merge --squash）](https://www.granfairs.com/blog/cto/git-merge-squash)
 
 ### 参考書籍
 - {% include book/book_604.html %} {% comment %} 入門git {% endcomment %}
-
-### 参考記事
-- [git submodule - みずぴー日記](https://mzp.hatenadiary.org/entry/20080508/git)
-- [\[Git\] Git コマンドメモ - それはBlog](http://hamasyou.com/blog/2010/11/11/git/)
-- [(Qiita) git で branch を push しただけじゃ tag は push されない話](https://qiita.com/aki_55p/items/530754ac6e861122f29b)
-- [(サル先生のGit入門) 7. merge --squash](https://backlog.com/ja/git-tutorial/stepup/34/)
-- [慣れてきたらコミットをまとめてPull Requestしよう（git merge --squash）](https://www.granfairs.com/blog/cto/git-merge-squash)
-- [(Stack Overflow) How to delete a remote tag?](https://stackoverflow.com/questions/5480258/how-to-delete-a-remote-tag)
-- [(侍エンジニアブログ) git cherry-pickを完全マスター!特定コミットのみを取り込む方法](https://www.sejuku.net/blog/71544)
-- [(dackdive's blog) \[git\]複数のcommitをまとめてcherry-pickする)](https://dackdive.hateblo.jp/entry/2016/06/06/203542)
-- [(Qiita) マージコミットとFast-forwardマージ](https://qiita.com/shyamahira/items/59ff8aa1cf7b893aab60)
-- [(まくまくGitノート) git diff や git status での日本語の文字化けを防ぐ (core.page, core.quotepath)](https://maku77.github.io/git/settings/garbling.html)
-- [(Hack Your Design!) 美しき git log --graph のエイリアス](https://blog.toshimaru.net/git-log-graph/)
-- [Git - git-stash Documentation](https://git-scm.com/docs/git-stash)
-- [(Qiita) 【git stash】コミットはせずに変更を退避したいとき](https://qiita.com/chihiro/items/f373873d5c2dfbd03250)
-- [(サル先生のGit入門) Stash](https://backlog.com/ja/git-tutorial/reference/stash/)
 
 {% include goto_pagetop.html %}
 
