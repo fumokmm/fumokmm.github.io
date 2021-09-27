@@ -1,6 +1,5 @@
 ---
 chapter_no: 7
-chapter_id: log
 chapter_title: 履歴(log, diff)
 created: 2010-11-07
 updated: 2021-05-20

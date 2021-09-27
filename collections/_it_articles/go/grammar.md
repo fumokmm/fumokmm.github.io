@@ -158,10 +158,12 @@ func <em>F</em>nc2() {
 - [(0002_package) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0002_package)
 
 ### 参考サイト
-- [(teratail) Go言語のcannot find module for pathの解消法](https://teratail.com/questions/345476)
+- [(Qiita) golang パッケージについてざっくり理解する。](https://qiita.com/pei0804/items/5f28b42d01fcadb3f765)
 - [(Qiita) GOMODULE--Goのパッケージ管理](https://qiita.com/Syoitu/items/f221b52231703cebe8ff)
-- [(Zenn) Go のモジュール管理【バージョン 1.17 改訂版】](https://zenn.dev/spiegel/articles/20210223-go-module-aware-mode)
 - [(Qiita) 他言語から来た人がGoを使い始めてすぐハマったこととその答え](https://qiita.com/mumoshu/items/0d2f2a13c6e9fc8da2a4)
+- [(teratail) Go言語のcannot find module for pathの解消法](https://teratail.com/questions/345476)
+- [(Zenn) Go のモジュール管理【バージョン 1.17 改訂版】](https://zenn.dev/spiegel/articles/20210223-go-module-aware-mode)
+- [(天才まくまくノート) Go のワークスペースの考え方 (GOPATH)](https://maku77.github.io/hugo/go/workspace.html)
 
 ### 参考書籍
 - {% include book/book_270.html %} {% comment %} プログラミング経験者がGo言語を本格的に勉強する前に読むための本 {% endcomment %}
@@ -177,11 +179,13 @@ func <em>F</em>nc2() {
 - [(0002_package) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0002_package)
 
 ### 参考サイト
+- [(Qiita) golang パッケージについてざっくり理解する。](https://qiita.com/pei0804/items/5f28b42d01fcadb3f765)
 - [(Qiita) GOMODULE--Goのパッケージ管理](https://qiita.com/Syoitu/items/f221b52231703cebe8ff)
 - [(Qiita) ひさしぶりのHello world ~ Go編 ~](https://qiita.com/kouyaf77@github/items/806394a9885dc2eae091)
 - [(Qiita) 他言語から来た人がGoを使い始めてすぐハマったこととその答え](https://qiita.com/mumoshu/items/0d2f2a13c6e9fc8da2a4)
 - [(teratail) Go言語のcannot find module for pathの解消法](https://teratail.com/questions/345476)
 - [(Zenn) Go のモジュール管理【バージョン 1.17 改訂版】](https://zenn.dev/spiegel/articles/20210223-go-module-aware-mode)
+- [(天才まくまくノート) Go のワークスペースの考え方 (GOPATH)](https://maku77.github.io/hugo/go/workspace.html)
 
 ### 参考書籍
 - {% include book/book_270.html %} {% comment %} プログラミング経験者がGo言語を本格的に勉強する前に読むための本 {% endcomment %}

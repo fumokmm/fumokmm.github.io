@@ -1,6 +1,5 @@
 ---
 chapter_no: 6
-chapter_id: tag
 chapter_title: タグ(tag)
 created: 2010-11-07
 updated: 2021-03-08

@@ -1,6 +1,5 @@
 ---
 chapter_no: 8
-chapter_id: remote-repository
 chapter_title: リモートリポジトリ(remote)
 created: 2010-11-07
 updated: 2010-11-07
