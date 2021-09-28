@@ -66,6 +66,11 @@
 - sub_category_id: git
   sub_category_label: Git
   link: /it/git/
+  article_group:
+    - id: tips-group
+      label: Tips
+    - id: reference-group
+      label: 参照・参考
   sub_category_group: version_control_system
   sub_category_order: 1
   description: Google社が開発したプログラミング言語Goについてのメモ

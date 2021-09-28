@@ -1,5 +1,6 @@
 ---
 title: Gitコマンドのメモ
+article_group_id: reference-group
 display_order: 10
 created: 2010-11-07
 updated: 2021-09-27

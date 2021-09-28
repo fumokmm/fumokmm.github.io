@@ -3,7 +3,7 @@ title: Goの文法
 article_group_id: basis-group
 display_order: 10
 created: 2021-09-24
-updated: 2021-09-27
+updated: 2021-09-28
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
