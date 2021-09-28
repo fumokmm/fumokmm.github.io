@@ -987,7 +987,7 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 - [Git ユーザマニュアル (バージョン 1.5.3 以降用)](https://img.atwikiimg.com/www8.atwiki.jp/git_jp/pub/Documentation.ja/user-manual.html)
 - [8.1 Git のカスタマイズ - Git の設定](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA-Git-%E3%81%AE%E8%A8%AD%E5%AE%9A)
 
-### 参考記事
+### 参考サイト
 - [(dackdive's blog) \[git\]複数のcommitをまとめてcherry-pickする)](https://dackdive.hateblo.jp/entry/2016/06/06/203542)
 - [(Hack Your Design!) 美しき git log --graph のエイリアス](https://blog.toshimaru.net/git-log-graph/)
 - [(Qiita) 【git stash】コミットはせずに変更を退避したいとき](https://qiita.com/chihiro/items/f373873d5c2dfbd03250)
