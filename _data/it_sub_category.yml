@@ -19,7 +19,6 @@
   sub_category_order: 5
   description: 汎用プログラミング言語
 
-# C
 - sub_category_id: chrome
   sub_category_label: Chrome
   link: /it/chrome/
@@ -58,6 +57,8 @@
       label: 導入
     - id: basis-group
       label: 基本事項
+    - id: reverse-lookup-group
+      label: 逆引き
   sub_category_group: programming_language
   sub_category_order: 50
   description: Google社が開発したプログラミング言語Goについてのメモ
