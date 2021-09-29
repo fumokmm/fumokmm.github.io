@@ -17,6 +17,7 @@ updated: 2021-09-28
                 <li><a href="#パッケージ">パッケージ</a></li>
                 <li><a href="#変数">変数</a></li>
                 <li><a href="#定数">定数</a></li>
+                <li><a href="#演算子">演算子</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -318,6 +319,176 @@ var i1 int = b
 ### 参考サイト
 - [(天才まくまくノート) 定数を定義する (const)](https://maku77.github.io/hugo/go/const.html)
 - [(Qiita) Goの定数の型宣言](https://qiita.com/Hiraku/items/9edcb355b21f760dcee0)
+
+### 参考書籍
+- {% include book/book_270.html %} {% comment %} プログラミング経験者がGo言語を本格的に勉強する前に読むための本 {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="演算子">演算子</a><a class="heading-anchor-permalink" href="#演算子">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-09-30" updated="2021-09-30" %}</div>
+- 演算子は大きく[算術](#算術演算子)、[比較](#比較演算子)、[論理](#論理演算子)、[単項](#単項演算子)の4つに分かれます。
+- Goの演算子は`C++`や`Java`に似ています。
+- なお、Goには`三項演算子`はありません。
+
+### 算術演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">演算子</th>
+		<th markdown="span">説明</th>
+	</tr>
+	<tr>
+		<td markdown="span">+</td>
+		<td markdown="span">加算</td>
+	</tr>
+	<tr>
+		<td markdown="span">-</td>
+		<td markdown="span">減算</td>
+	</tr>
+	<tr>
+		<td markdown="span">*</td>
+		<td markdown="span">乗算</td>
+	</tr>
+	<tr>
+		<td markdown="span">/</td>
+		<td markdown="span">除算</td>
+	</tr>
+	<tr>
+		<td markdown="span">%</td>
+		<td markdown="span">剰余(あまり)</td>
+	</tr>
+	<tr>
+		<td markdown="span">&amp;</td>
+		<td markdown="span">ビットAND</td>
+	</tr>
+	<tr>
+		<td markdown="span">|</td>
+		<td markdown="span">ビットOR</td>
+	</tr>
+	<tr>
+		<td markdown="span">^</td>
+		<td markdown="span">ビットXOR</td>
+	</tr>
+	<tr>
+		<td markdown="span">&amp;^</td>
+		<td markdown="span">ビットAND NOT</td>
+	</tr>
+	<tr>
+		<td markdown="span">&lt;&lt;</td>
+		<td markdown="span">左シフト</td>
+	</tr>
+	<tr>
+		<td markdown="span">&gt;&gt;</td>
+		<td markdown="span">右シフト</td>
+	</tr>
+</table>
+
+- `+=`や`&=`のように代入を伴う表記も可能です。
+
+### 比較演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">演算子</th>
+		<th markdown="span">説明</th>
+	</tr>
+	<tr>
+		<td markdown="span">==</td>
+		<td markdown="span">等しい</td>
+	</tr>
+	<tr>
+		<td markdown="span">!=</td>
+		<td markdown="span">等しくない</td>
+	</tr>
+	<tr>
+		<td markdown="span">&lt;</td>
+		<td markdown="span">未満</td>
+	</tr>
+	<tr>
+		<td markdown="span">&lt;=</td>
+		<td markdown="span">以下</td>
+	</tr>
+	<tr>
+		<td markdown="span">&gt;</td>
+		<td markdown="span">より大きい</td>
+	</tr>
+	<tr>
+		<td markdown="span">&gt;=</td>
+		<td markdown="span">以上</td>
+	</tr>
+</table>
+
+### 論理演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">演算子</th>
+		<th markdown="span">説明</th>
+	</tr>
+	<tr>
+		<td markdown="span">&amp;&amp;</td>
+		<td markdown="span">AND</td>
+	</tr>
+	<tr>
+		<td markdown="span">||</td>
+		<td markdown="span">OR</td>
+	</tr>
+</table>
+
+### 単項演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">演算子</th>
+		<th markdown="span">説明</th>
+	</tr>
+	<tr>
+		<td markdown="span">++</td>
+		<td markdown="span">インクリメント</td>
+	</tr>
+	<tr>
+		<td markdown="span">--</td>
+		<td markdown="span">デクリメント</td>
+	</tr>
+	<tr>
+		<td markdown="span">-</td>
+		<td markdown="span">マイナス</td>
+	</tr>
+	<tr>
+		<td markdown="span">^</td>
+		<td markdown="span">ビットNOT</td>
+	</tr>
+	<tr>
+		<td markdown="span">!</td>
+		<td markdown="span">論理NOT</td>
+	</tr>
+</table>
+
+### 演算子の優先順位
+<table class="normal">
+	<tr>
+		<th markdown="span">優先度</th>
+		<th markdown="span">演算子</th>
+	</tr>
+	<tr>
+		<td markdown="span">高</td>
+		<td markdown="span">* / % &lt;&lt; &gt;&gt; &amp; &amp;^</td>
+	</tr>
+	<tr>
+		<td markdown="span">↑</td>
+		<td markdown="span">+ - | ^</td>
+	</tr>
+	<tr>
+		<td markdown="span"></td>
+		<td markdown="span">== != &lt; &lt;= &gt; &gt;=</td>
+	</tr>
+	<tr>
+		<td markdown="span">↓</td>
+		<td markdown="span">&amp;&amp;</td>
+	</tr>
+	<tr>
+		<td markdown="span">低</td>
+		<td markdown="span">||</td>
+	</tr>
+</table>
 
 ### 参考書籍
 - {% include book/book_270.html %} {% comment %} プログラミング経験者がGo言語を本格的に勉強する前に読むための本 {% endcomment %}
