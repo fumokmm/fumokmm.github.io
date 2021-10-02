@@ -16,7 +16,7 @@ func main() {
 ```
 
 ### サンプルソース
-- [(0001_hello-world) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0001_hello-world)
+- [(language-examples) 0001_hello-world](https://github.com/fumokmm/language-examples/tree/main/Go/0001_hello-world)
 
 ### 参考サイト
 - [(Qiita) ひさしぶりのHello world ~ Go編 ~](https://qiita.com/kouyaf77@github/items/806394a9885dc2eae091)
