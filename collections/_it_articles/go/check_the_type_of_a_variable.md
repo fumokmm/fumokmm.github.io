@@ -51,7 +51,7 @@ func main() {
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-28" updated="2021-09-28" %}</div>
 ### サンプルソース
-- [(0005_reflect-TypeOf) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0005_reflect-TypeOf)
+- [(language-examples) 0005_reflect-TypeOf](https://github.com/fumokmm/language-examples/tree/main/Go/0005_reflect-TypeOf)
 
 ### 参考動画
 - [(YouTube) 【たった1時間で学べる】Go言語のプログラミング初心者向けの超入門講座【文字書き起こし、ソースコードも完全無料！】](https://www.youtube.com/watch?v=kPXfMFJ0oIE)

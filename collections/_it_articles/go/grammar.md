@@ -69,7 +69,7 @@ func main() {
 </div>
 
 ### サンプルソース
-- [(0001_hello-world) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0001_hello-world)
+- [(language-examples) 0001_hello-world](https://github.com/fumokmm/language-examples/tree/main/Go/0001_hello-world)
 
 ### 参考サイト
 - [(Qiita) ひさしぶりのHello world ~ Go編 ~](https://qiita.com/kouyaf77@github/items/806394a9885dc2eae091)
@@ -158,7 +158,7 @@ func <em>F</em>nc2() {
 </div>
 
 ### サンプルソース
-- [(0002_package) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0002_package)
+- [(language-examples) 0002_package](https://github.com/fumokmm/language-examples/tree/main/Go/0002_package)
 
 ### 参考サイト
 - [(Qiita) golang パッケージについてざっくり理解する。](https://qiita.com/pei0804/items/5f28b42d01fcadb3f765)
@@ -264,7 +264,7 @@ func main() {
 </div>
 
 ### サンプルソース
-- [(0003_variable) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0003_variable)
+- [(language-examples) 0003_variable](https://github.com/fumokmm/language-examples/tree/main/Go/0003_variable)
 
 ### 参考動画
 - [(YouTube) 【たった1時間で学べる】Go言語のプログラミング初心者向けの超入門講座【文字書き起こし、ソースコードも完全無料！】](https://www.youtube.com/watch?v=kPXfMFJ0oIE)
@@ -314,7 +314,7 @@ var i1 int = b
 </div>
 
 ### サンプルソース
-- [(0004_const) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0004_const)
+- [(language-examples) 0004_const](https://github.com/fumokmm/language-examples/tree/main/Go/0004_const)
 
 ### 参考サイト
 - [(天才まくまくノート) 定数を定義する (const)](https://maku77.github.io/hugo/go/const.html)
@@ -500,10 +500,10 @@ var i1 int = b
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-24" updated="2021-09-28" %}</div>
 ### サンプルソース
-- [(0001_hello-world) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0001_hello-world)
-- [(0002_package) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0002_package)
-- [(0003_variable) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0003_variable)
-- [(0004_const) language-examples](https://github.com/fumokmm/language-examples/tree/main/Go/0004_const)
+- [(language-examples) 0001_hello-world](https://github.com/fumokmm/language-examples/tree/main/Go/0001_hello-world)
+- [(language-examples) 0002_package](https://github.com/fumokmm/language-examples/tree/main/Go/0002_package)
+- [(language-examples) 0003_variable](https://github.com/fumokmm/language-examples/tree/main/Go/0003_variable)
+- [(language-examples) 0004_const](https://github.com/fumokmm/language-examples/tree/main/Go/0004_const)
 
 ### 参考サイト
 - [(Qiita) golang パッケージについてざっくり理解する。](https://qiita.com/pei0804/items/5f28b42d01fcadb3f765)
