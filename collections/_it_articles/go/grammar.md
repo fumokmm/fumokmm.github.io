@@ -3,7 +3,7 @@ title: Goの文法
 article_group_id: basis-group
 display_order: 10
 created: 2021-09-24
-updated: 2021-09-30
+updated: 2021-10-04
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -18,6 +18,7 @@ updated: 2021-09-30
                 <li><a href="#変数">変数</a></li>
                 <li><a href="#定数">定数</a></li>
                 <li><a href="#演算子">演算子</a></li>
+                <li><a href="#基本型と複合型">基本型と複合型</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -489,6 +490,21 @@ var i1 int = b
 		<td markdown="span">||</td>
 	</tr>
 </table>
+
+### 参考書籍
+- {% include book/book_270.html %} {% comment %} プログラミング経験者がGo言語を本格的に勉強する前に読むための本 {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+## <a name="基礎文法">基礎文法</a><a class="heading-anchor-permalink" href="#基礎文法">§</a>
+* * *
+## <a name="基本型と複合型">基本型と複合型</a><a class="heading-anchor-permalink" href="#基本型と複合型">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-10-04" updated="2021-10-04" %}</div>
+- データ型は`基本型`と`複合型`の2つに分かれます。
+- `基本型`は単体で意味を成すデータを扱います。
+  - `基本型`には`数値型`と`文字列型`と`真偽値型`があります。
+- `複合型`は他の型と組み合わせて使用するようなデータを扱います。
+  - `基本型`以外が``複合型`です。
 
 ### 参考書籍
 - {% include book/book_270.html %} {% comment %} プログラミング経験者がGo言語を本格的に勉強する前に読むための本 {% endcomment %}
