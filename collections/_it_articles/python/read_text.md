@@ -87,8 +87,8 @@ f = open('sample.txt', 'r')
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-13" updated="2021-10-13" %}</div>
 ### 参照
-- [組み込み関数 open()](https://docs.python.org/ja/3/library/functions.html#open)
-- [file object](https://docs.python.org/ja/3/glossary.html#term-file-object)
+- [(Python Documentation) 組み込み関数 open()](https://docs.python.org/ja/3/library/functions.html#open)
+- [(Python Documentation) file object](https://docs.python.org/ja/3/glossary.html#term-file-object)
 
 ### 参考サイト
 - [(Let'sプログラミング) ファイルを開く/ファイルを閉じる](https://www.javadrive.jp/python/file/index1.html)
