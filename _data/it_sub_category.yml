@@ -184,6 +184,13 @@
 - sub_category_id: python
   sub_category_label: Python
   link: /it/python/
+  article_group:
+    - id: basis-group
+      label: 基本事項
+    - id: reverse-lookup-group
+      label: 逆引き
+    - id: tips-group
+      label: Tips
   sub_category_group: programming_language
   sub_category_order: 40
   description: プログラミング言語Pythonについてのメモ
