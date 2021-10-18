@@ -152,8 +152,8 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2021-10-17" %}</div>
 ### 参考サイト
-- [(てきとーなブログ) python3で改行なしprintをする。](http://azoay.hatenablog.com/entry/2015/06/10/203134)
 - [(UX MILK) Pythonでのコメントアウトの書き方](https://uxmilk.jp/8847)
+- [(てきとーなブログ) python3で改行なしprintをする。](http://azoay.hatenablog.com/entry/2015/06/10/203134)
 
 ### 参考書籍
 - {% include book/book_493.html %} {% comment %} 独学プログラマー {% endcomment %}
