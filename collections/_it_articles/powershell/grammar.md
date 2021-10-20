@@ -3,7 +3,7 @@ title: PowerShellの文法
 article_group_id: basis-group
 display_order: 10
 created: 2021-05-16
-updated: 2021-08-11
+updated: 2021-10-20
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -33,6 +33,11 @@ updated: 2021-08-11
                 <li><a href="#可変長引数">可変長引数</a></li>
                 <li><a href="#値渡し、参照渡し">値渡し、参照渡し</a></li>
                 <li><a href="#引数のデフォルト値">引数のデフォルト値</a></li>
+            </ul>
+        </li>
+        <li><a href="#コレクション">コレクション</a>
+            <ul>
+                <li><a href="#ハッシュテーブル">ハッシュテーブル</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -784,18 +789,49 @@ bar 15 25 <em class="comment"># =&gt; $arg1に15が入って、$arg2は上書き
 
 {% include goto_pagetop.html %}
 
+## <a name="コレクション">コレクション</a><a class="heading-anchor-permalink" href="#コレクション">§</a>
+* * *
+## <a name="ハッシュテーブル">ハッシュテーブル</a><a class="heading-anchor-permalink" href="#ハッシュテーブル">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-10-20" updated="2021-10-20" %}</div>
+ハッシュテーブルに初期値とともに宣言する場合は、`@{}`の中に`名前=値`の形式で記述します。  
+`改行`か`;`で区切ると複数名前を値の組を指定できます。
+<div class="code-box-syntax no-title">
+<pre>
+@{ &lt;名前1&gt; = &lt;値1&gt;; [&lt;名前2&gt; = &lt;値2&gt; ] ...}
+</pre>
+</div>
+<div class="code-box-syntax no-title">
+<pre>
+@{
+    &lt;名前1&gt; = &lt;値1&gt;
+    [&lt;名前2&gt; = &lt;値2&gt;]
+          :
+          :
+}
+</pre>
+</div>
+- なお、空のハッシュテーブルを宣言するには、`@{}`のみとします。
+
+### 参考
+- [(Windows にまつわる e.t.c.) PowerShell のハッシュテーブルの使い方](https://www.vwnet.jp/Windows/PowerShell/2017060701/PowerShellHashTable.htm)
+- [(Microsoft Ignite) about_Hash_Tables](https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_hash_tables?view=powershell-7.1)
+
+{% include goto_pagetop.html %}
+
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-08-11" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-10-20" %}</div>
 ### 参考サイト
 - [(hakeの日記) PowerShell - 関数（可変長引数）](https://hake.hatenablog.com/entry/20161227/p1)
 - [(hakeの日記) PowerShell - 関数（値渡しと参照渡し）](https://hake.hatenablog.com/entry/20161230/p1)
 - [(HIRO's.NET) 03.引数を省略可能にするには](https://hiros-dot.net/PowerShell/function/func03.htm)
 - [(HIRO's.NET) 06.値渡しと参照渡し](https://hiros-dot.net/PowerShell/function/func06.htm)
+- [(Microsoft Ignite) about_Hash_Tables](https://docs.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_hash_tables?view=powershell-7.1)
 - [(PowerShell Scripting Weblog) PowerShell基礎文法最速マスター](http://winscript.jp/powershell/202)
 - [(tutorialspoint) Powershell - If Else Statement](https://www.tutorialspoint.com/powershell/if_else_statement_in_powershell.htm)
 - [(Windows にまつわる e.t.c.)  PowerShellの演算子](https://www.vwnet.jp/Windows/PowerShell/Ope/OpeListg.htm)
+- [(Windows にまつわる e.t.c.) PowerShell のハッシュテーブルの使い方](https://www.vwnet.jp/Windows/PowerShell/2017060701/PowerShellHashTable.htm)
 - [(バヤシタ) ソースコードの式の途中で改行する方法](https://bayashita.com/p/entry/show/87)
 - [(バヤシタ) ヒアドキュメントを使って複数行を 1 つの文字列にする](https://bayashita.com/p/entry/show/50)
 - [(鷲ノ巣) PowerShell のスコープ完全に理解した](https://tech.blog.aerie.jp/entry/powershell-advent-calendar-2018-18)
