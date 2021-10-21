@@ -23,6 +23,8 @@
   sub_category_label: Chrome
   link: /it/chrome/
   article_group:
+    - id: extension-group
+      label: 拡張機能
     - id: setting-group
       label: 設定
   sub_category_group: browser
