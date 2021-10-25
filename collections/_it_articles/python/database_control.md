@@ -243,7 +243,7 @@ cnxn.commit()
 </pre>
 </div>
 
-パラメータも使えます
+パラメータも使えます。
 <div class="code-box no-title">
 <pre>
 cursor.execute("insert into products(id, name) values (<em>?</em>, <em>?</em>)"<em class="blue">, 'pyodbc', 'awesome library'</em>)
