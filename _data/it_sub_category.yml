@@ -270,6 +270,9 @@
 - sub_category_id: vscode
   sub_category_label: Visual Studio Code
   link: /it/vscode/
+  article_group:
+    - id: tips-group
+      label: Tips
   sub_category_group: editor
   sub_category_order: 10
   description: Microsoft社が開発したエディターVisual Studio Codeについてのメモ
