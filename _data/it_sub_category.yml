@@ -191,6 +191,8 @@
       label: 基本事項
     - id: reverse-lookup-group
       label: 逆引き
+    - id: library-group
+      label: ライブラリ
     - id: tips-group
       label: Tips
   sub_category_group: programming_language
