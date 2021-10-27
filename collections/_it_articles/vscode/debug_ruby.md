@@ -1,5 +1,6 @@
 ---
 title: Visual Studio CodeでRubyをデバッグする
+article_group_id: tips-group
 display_order: 10
 created: 2021-03-16
 updated: 2021-03-16
@@ -15,7 +16,7 @@ updated: 2021-03-16
 <li><a href="#isntall-gem-for-debugging">デバッグ用Gemを導入する</a></li>
 <li><a href="#configuration-file">Visual Studio Code用の設定ファイルを作成する</a></li>
 <li><a href="#try-it">動かしてみる</a></li>
-<li><a href="#reference">参考</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 
 * * *
@@ -98,8 +99,9 @@ $ bundle install
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-16" updated="2021-03-16" %}</div>
+### 参考サイト
 - [(DevelopersIO) Visual Studio CodeによるRubyのデバッグ](https://dev.classmethod.jp/articles/visual-studio-code-ruby-debug/)
 
 {% include goto_pagetop.html %}
