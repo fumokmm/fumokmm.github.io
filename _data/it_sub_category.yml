@@ -277,7 +277,7 @@
       label: Tips
   sub_category_group: editor
   sub_category_order: 10
-  description: Microsoft社が開発したエディターVisual Studio Codeについてのメモ
+  description: Microsoft社が開発したエディターVisual Studio Code(VSCode)についてのメモ
 
 # W
 - sub_category_id: windows
