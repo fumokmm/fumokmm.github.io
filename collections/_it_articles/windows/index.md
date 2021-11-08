@@ -1,7 +1,7 @@
 ---
 title: Windowsのメモ
 created: 2020-12-28
-updated: 2021-09-21
+updated: 2021-11-08
 ---
 こちらはWindowsのメモになります。
 
