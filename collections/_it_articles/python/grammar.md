@@ -93,7 +93,7 @@ Pythonはインデントでブロックを表現する言語なので、複数�
 同じブロックにいないとエラーになります。
 
 <div class="code-box">
-<div class="title">comment2.py</div>
+<div class="title">comment3.py</div>
 <pre>
 for x in {1, 2, 3}:
   print("text")
@@ -111,7 +111,6 @@ for x in {1, 2, 3}:
 </div>
 
 ### 参考
-
 - [(UX MILK) Pythonでのコメントアウトの書き方](https://uxmilk.jp/8847)
 
 {% include goto_pagetop.html %}
@@ -159,7 +158,6 @@ Hello, World
 </div>
 
 ### 参考
-
 - [(てきとーなブログ) python3で改行なしprintをする。](http://azoay.hatenablog.com/entry/2015/06/10/203134)
 
 {% include goto_pagetop.html %}
