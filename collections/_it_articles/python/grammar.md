@@ -3,7 +3,7 @@ title: Pythonの文法
 article_group_id: basis-group
 display_order: 10
 created: 2020-12-10
-updated: 2021-11-10
+updated: 2021-11-12
 ---
 ここではPythonの文法を簡単にまとめておきます。特に記載のない場合、Python3を対象としています。
 
@@ -17,6 +17,7 @@ updated: 2021-11-10
                 <li><a href="#コメント">コメント</a></li>
                 <li><a href="#ハローワールド">ハローワールド</a></li>
                 <li><a href="#文">文</a></li>
+                <li><a href="#条件分岐 - if文">条件分岐 - if文</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -24,6 +25,7 @@ updated: 2021-11-10
                 <li><a href="#参照">参照</a></li>
                 <li><a href="#参考サイト">参考サイト</a></li>
                 <li><a href="#参考書籍">参考書籍</a></li>
+                <li><a href="#ソース">ソース</a></li>
             </ul>
         </li>
     </ul>
@@ -190,6 +192,94 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
 
 {% include goto_pagetop.html %}
 
+* * *
+## <a name="条件分岐 - if文">条件分岐 - if文</a><a class="heading-anchor-permalink" href="#条件分岐 - if文">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-12" updated="2021-11-12" %}</div>
+- 条件分岐には`if`、`elif`、`else`を使います。
+
+<div class="code-box-syntax">
+<div class="title">if文</div>
+<pre>
+<em>if</em> <em class="blue">条件式</em>:
+    <em class="comment"># 条件式が真の時に実行する処理1</em>
+    <em class="comment"># 条件式が真の時に実行する処理2</em>
+</pre>
+</div>
+
+条件式が偽の場合に別の条件を指定するには`elif`を使います。  
+`else if`ではないのでご注意下さい。
+<div class="code-box-syntax">
+<div class="title">if-elif文</div>
+<pre>
+if <em class="blue">条件式1</em>:
+    <em class="comment"># 条件式1が真の時に実行する処理1</em>
+    <em class="comment"># 条件式1が真の時に実行する処理2</em>
+<em>elif</em> <em class="blue">条件式2}:
+    {em:comment{# 条件式2が真の時に実行する処理1</em>
+    <em class="comment"># 条件式2が真の時に実行する処理2</em>
+</pre>
+</div>
+
+条件式が偽の場合に実行するブロックを指定するには`else`を使います。
+<div class="code-box-syntax">
+<div class="title">if-else文</div>
+<pre>
+if 条件式:
+    <em class="comment"># 条件式が真の時に実行する処理1</em>
+    <em class="comment"># 条件式が真の時に実行する処理2</em>
+<em>else</em>:
+    <em class="comment"># 条件式が偽の時に実行する処理1</em>
+    <em class="comment"># 条件式が偽の時に実行する処理2</em>
+</pre>
+</div>
+
+`elif`と`else`は組み合わせられます。
+<div class="code-box-syntax">
+<div class="title">if-elif-else文</div>
+<pre>
+<em>if</em> <em class="blue">条件式1</em>:
+    <em class="comment"># 条件式1が真の時に実行する処理1</em>
+    <em class="comment"># 条件式1が真の時に実行する処理2</em>
+<em>elif</em> <em class="blue">条件式2</em>:
+    <em class="comment"># 条件式2が真の時に実行する処理1</em>
+    <em class="comment"># 条件式2が真の時に実行する処理2</em>
+<em>else</em>:
+    <em class="comment"># 条件式1,条件式2がともに偽の時に実行する処理1</em>
+    <em class="comment"># 条件式1,条件式2がともに偽の時に実行する処理2</em>
+</pre>
+</div>
+
+### 例
+<div class="code-box no-title">
+<pre>
+home = "日本"
+if home == "日本":
+    print("Hello, Japan!")
+elif home == "タイ":
+    print("Hello, Thailad!")
+elif home == "インド":
+    print("Hello, India!")
+elif home == "中国":
+    print("Hello, China!")
+else:
+    print("Hello, World!")
+</pre>
+</div>
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+Hello, Japan!
+</pre>
+</div>
+
+### ソース
+- [(language-examples) 0001_if.py](https://github.com/fumokmm/language-examples/blob/main/Python/0001_if.py)
+
+### 参考
+- {% include book/book_493.html %} {% comment %} 独学プログラマー {% endcomment %}
+
+{% include goto_pagetop.html %}
+
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参照">参照</a><a class="heading-anchor-permalink" href="#参照">§</a>
@@ -213,6 +303,13 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
 ## <a name="参考書籍">参考書籍</a><a class="heading-anchor-permalink" href="#参考書籍">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2021-10-17" %}</div>
 - {% include book/book_493.html %} {% comment %} 独学プログラマー {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="ソース">ソース</a><a class="heading-anchor-permalink" href="#ソース">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-12" updated="2021-11-12" %}</div>
+- [(language-examples) 0001_if.py](https://github.com/fumokmm/language-examples/blob/main/Python/0001_if.py)
 
 {% include goto_pagetop.html %}
 
