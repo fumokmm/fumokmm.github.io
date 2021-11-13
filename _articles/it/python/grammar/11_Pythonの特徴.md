@@ -3,8 +3,9 @@ chapter_no: 11
 chapter_group: 基礎文法
 chapter_title: Pythonの特徴
 created: 2021-11-10
-updated: 2021-11-10
+updated: 2021-11-13
 ---
+- 拡張子は`.py`。
 - 文末のセミコロンを付ける必要はない(付けてもOK)。
 - 値の代入はイコール(`=`)。
 - セミコロンで文を区切れば1行に複数の処理を記載できる。

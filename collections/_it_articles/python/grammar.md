@@ -34,7 +34,8 @@ updated: 2021-11-12
 ## <a name="基礎文法">基礎文法</a><a class="heading-anchor-permalink" href="#基礎文法">§</a>
 * * *
 ## <a name="Pythonの特徴">Pythonの特徴</a><a class="heading-anchor-permalink" href="#Pythonの特徴">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-11-10" updated="2021-11-10" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-10" updated="2021-11-13" %}</div>
+- 拡張子は`.py`。
 - 文末のセミコロンを付ける必要はない(付けてもOK)。
 - 値の代入はイコール(`=`)。
 - セミコロンで文を区切れば1行に複数の処理を記載できる。
