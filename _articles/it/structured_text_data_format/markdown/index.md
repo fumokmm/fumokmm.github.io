@@ -7,5 +7,3 @@ updated: 2021-04-20
 ---
 Markdownのメモです。
 そのうち書きます。
-
-{% include footnotes_link.html %}
