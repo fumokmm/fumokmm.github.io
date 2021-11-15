@@ -1,11 +1,9 @@
 ---
-title: Markdownのメモ
+title: XMLのメモ
 article_group_id: format-group
-display_order: 50
+display_order: 30
 created: 2021-04-20
 updated: 2021-04-20
 ---
-Markdownのメモです。
+YAMLのメモです。
 そのうち書きます。
-
-{% include footnotes_link.html %}

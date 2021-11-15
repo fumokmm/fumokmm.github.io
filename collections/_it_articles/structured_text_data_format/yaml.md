@@ -1,28 +1,41 @@
 ---
 title: YAMLのメモ
+article_group_id: format-group
 display_order: 70
 created: 2021-04-20
-updated: 2021-04-20
+updated: 2021-11-15
 ---
-{% assign chapter_list = site.it_structured_text_data_format_csv_chapters %}
+YAMLのメモです。
 
-そのうち書きます。
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
-## <a name="index">目次</a>
-
-<ul>
-{% for chapter_item in chapter_list %}
-<li><a href="#{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a></li>
-{% endfor %}
+<ul id="index_ul">
+<li><a href="#nullの扱い">nullの扱い</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 
-{% comment %} 以下、記事 {% endcomment %}
+* * *
+## <a name="nullの扱い">nullの扱い</a><a class="heading-anchor-permalink" href="#nullの扱い">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-15" updated="2021-11-15" %}</div>
+YAMLではnullは`null`または、チルダ(`~`)で表現します。
+<div class="code-box no-title">
+<pre>
+a: <em>null</em>
+b: <em>~</em>
+</pre>
+</div>
 
-{% for chapter_item in chapter_list %}
-## <a name="{{ chapter_item.chapter_id }}">{{ chapter_item.chapter_title }}</a>
-{% comment %}
-<div class="chapter-updated">{% include update_info_inline.html created=chapter_item.created updated=chapter_item.updated %}</div>
-{% endcomment %}
-{{ chapter_item.content | markdownify }}
+### 参考サイト
+- [(Symfony) YAMLフォーマット](https://symfony.com/legacy/doc/reference/1_2/ja/02-yaml)
+
 {% include goto_pagetop.html %}
-{% endfor %}
+
+* * *
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-15" updated="2021-11-15" %}</div>
+### 参考サイト
+- [(Symfony) YAMLフォーマット](https://symfony.com/legacy/doc/reference/1_2/ja/02-yaml)
+
+{% include goto_pagetop.html %}
+
+{% include footnotes_link.html %}

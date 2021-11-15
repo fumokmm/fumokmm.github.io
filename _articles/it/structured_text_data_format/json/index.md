@@ -1,11 +1,9 @@
 ---
-title: Markdownのメモ
+title: JSONのメモ
 article_group_id: format-group
-display_order: 50
+display_order: 60
 created: 2021-04-20
 updated: 2021-04-20
 ---
-Markdownのメモです。
+JSONのメモです。
 そのうち書きます。
-
-{% include footnotes_link.html %}
