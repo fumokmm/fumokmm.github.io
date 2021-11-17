@@ -1,6 +1,5 @@
 ---
 chapter_no: 3
-chapter_id: by_groovy
 chapter_title: Groovyで解いてみた
 created: 2021-01-29
 updated: 2021-01-29

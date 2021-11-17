@@ -3,7 +3,7 @@ title: Pythonでカンマ区切りの文字列を作る
 article_group_id: reverse-lookup-group
 display_order: 50
 created: 2021-11-15
-updated: 2021-11-16
+updated: 2021-11-18
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -92,7 +92,10 @@ print(params)
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-11-15" updated="2021-11-15" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-15" updated="2021-11-18" %}</div>
+### 関連メモ
+- [\[お題\] カンマ区切りの文字列を作る]({% link _it_articles/problem/creating_a_comma_separated_string.md %})
+
 ### 参考サイト
 - [(Let'sプログラミング) 文字列の連結と繰り返し(乗算)](https://www.javadrive.jp/python/string/index6.html)
 

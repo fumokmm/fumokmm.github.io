@@ -1,5 +1,5 @@
 ---
-title: 全て足してnになるm個の整数を求める
+title: "[お題] 全て足してnになるm個の整数を求める"
 display_order: 20
 created: 2021-04-20
 updated: 2021-04-20
@@ -8,12 +8,12 @@ updated: 2021-04-20
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
-<li><a href="#problem">お題</a></li>
-<li><a href="#by_groovy">Groovyで解いてみた</a></li>
+<li><a href="#お題">お題</a></li>
+<li><a href="#Groovyで解いてみた">Groovyで解いてみた</a></li>
 </ul>
 
 * * *
-## <a name="problem">お題</a><a class="heading-anchor-permalink" href="#problem">§</a>
+## <a name="お題">お題</a><a class="heading-anchor-permalink" href="#お題">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-20" updated="2021-04-20" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
@@ -30,7 +30,7 @@ updated: 2021-04-20
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="by_groovy">Groovyで解いてみた</a><a class="heading-anchor-permalink" href="#by_groovy">§</a>
+## <a name="Groovyで解いてみた">Groovyで解いてみた</a><a class="heading-anchor-permalink" href="#Groovyで解いてみた">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-20" updated="2021-04-20" %}</div>
 再帰呼び出しで実装してみました。副作用起こしてるのであまりきれいではないですね。
 
