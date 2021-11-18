@@ -1,16 +1,22 @@
+{% if include.title != nil %}
 <dl>
     <dt>{{ include.title }}</dt>
     <dd>
-        {% if include.key1 != nil %}[{{ include.key1 }}]{% endif %}
-        {% if include.key2 != nil %}[{{ include.key2 }}]{% endif %}
-        {% if include.key3 != nil %}[{{ include.key3 }}]{% endif %}
-        {% if include.key4 != nil %}[{{ include.key4 }}]{% endif %}
-        {% if include.key5 != nil %}[{{ include.key5 }}]{% endif %}
-        {% if include.key6 != nil %}[{{ include.key6 }}]{% endif %}
-        {% if include.key7 != nil %}[{{ include.key7 }}]{% endif %}
-        {% if include.key8 != nil %}[{{ include.key8 }}]{% endif %}
-        {% if include.key9 != nil %}[{{ include.key9 }}]{% endif %}
-        {% if include.key10 != nil %}[{{ include.key10 }}]{% endif %}
-        {% if include.additional != nil %}（{{ include.additional }}）{% endif %}
+{% endif %}
+        <p>
+            {% if include.key1 != nil %}[{{ include.key1 }}]{% endif %}
+            {% if include.key2 != nil %}[{{ include.key2 }}]{% endif %}
+            {% if include.key3 != nil %}[{{ include.key3 }}]{% endif %}
+            {% if include.key4 != nil %}[{{ include.key4 }}]{% endif %}
+            {% if include.key5 != nil %}[{{ include.key5 }}]{% endif %}
+            {% if include.key6 != nil %}[{{ include.key6 }}]{% endif %}
+            {% if include.key7 != nil %}[{{ include.key7 }}]{% endif %}
+            {% if include.key8 != nil %}[{{ include.key8 }}]{% endif %}
+            {% if include.key9 != nil %}[{{ include.key9 }}]{% endif %}
+            {% if include.key10 != nil %}[{{ include.key10 }}]{% endif %}
+            {% if include.additional != nil %}（{{ include.additional }}）{% endif %}
+        </p>
+{% if include.title != nil %}
     </dd>
 </dl>
+{% endif %}
