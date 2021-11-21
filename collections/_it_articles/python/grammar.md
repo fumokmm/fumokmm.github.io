@@ -3,7 +3,7 @@ title: Pythonの文法
 article_group_id: basis-group
 display_order: 10
 created: 2020-12-10
-updated: 2021-11-13
+updated: 2021-11-21
 ---
 ここではPythonの文法を簡単にまとめておきます。特に記載のない場合、Python3を対象としています。
 
@@ -17,6 +17,7 @@ updated: 2021-11-13
                 <li><a href="#コメント">コメント</a></li>
                 <li><a href="#ハローワールド">ハローワールド</a></li>
                 <li><a href="#文">文</a></li>
+                <li><a href="#演算子">演算子</a></li>
                 <li><a href="#条件分岐 - if文">条件分岐 - if文</a></li>
             </ul>
         </li>
@@ -189,6 +190,142 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
 </div>
 
 ### 参考
+- {% include book/book_493.html %} {% comment %} 独学プログラマー {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="演算子">演算子</a><a class="heading-anchor-permalink" href="#演算子">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-21" updated="2021-11-21" %}</div>
+### 算術演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">演算子</th>
+		<th markdown="span">説明</th>
+		<th markdown="span">例</th>
+		<th markdown="span">評価結果</th>
+	</tr>
+	<tr>
+		<td markdown="span">+</td>
+		<td markdown="span">足し算(加算)</td>
+		<td markdown="span">2 + 2</td>
+		<td markdown="span">4</td>
+	</tr>
+	<tr>
+		<td markdown="span">-</td>
+		<td markdown="span">引き算(減算)</td>
+		<td markdown="span">7 - 1</td>
+		<td markdown="span">6</td>
+	</tr>
+	<tr>
+		<td markdown="span">*</td>
+		<td markdown="span">掛け算(積算)</td>
+		<td markdown="span">8 * 2</td>
+		<td markdown="span">16</td>
+	</tr>
+	<tr>
+		<td markdown="span">/</td>
+		<td markdown="span">割り算(除算)</td>
+		<td markdown="span">13 / 8</td>
+		<td markdown="span">1.625</td>
+	</tr>
+	<tr>
+		<td markdown="span">//</td>
+		<td markdown="span">整数の割り算(切り捨て)</td>
+		<td markdown="span">13 // 8</td>
+		<td markdown="span">1</td>
+	</tr>
+	<tr>
+		<td markdown="span">%</td>
+		<td markdown="span">割り算の余り(剰余)</td>
+		<td markdown="span">14 % 4</td>
+		<td markdown="span">2</td>
+	</tr>
+	<tr>
+		<td markdown="span">**</td>
+		<td markdown="span">累乗</td>
+		<td markdown="span">2 ** 3</td>
+		<td markdown="span">8</td>
+	</tr>
+</table>
+
+### 比較演算子
+- 比較演算子を使った式は`True`か`False`のどちらかしか返しません。
+<table class="normal">
+	<tr>
+		<th markdown="span">演算子</th>
+		<th markdown="span">説明</th>
+		<th markdown="span">例</th>
+		<th markdown="span">評価結果</th>
+	</tr>
+	<tr>
+		<td markdown="span">&gt;</td>
+		<td markdown="span">より大きい</td>
+		<td markdown="span">100 &gt; 10</td>
+		<td markdown="span">True</td>
+	</tr>
+	<tr>
+		<td markdown="span">&lt;</td>
+		<td markdown="span">より小さい</td>
+		<td markdown="span">100 &lt; 10</td>
+		<td markdown="span">False</td>
+	</tr>
+	<tr>
+		<td markdown="span">&gt;=</td>
+		<td markdown="span">以上</td>
+		<td markdown="span">2 &gt;= 2</td>
+		<td markdown="span">True</td>
+	</tr>
+	<tr>
+		<td markdown="span">&lt;=</td>
+		<td markdown="span">以下</td>
+		<td markdown="span">1 &lt;= 4</td>
+		<td markdown="span">True</td>
+	</tr>
+	<tr>
+		<td markdown="span">==</td>
+		<td markdown="span">等価(同じ値か)</td>
+		<td markdown="span">6 == 9</td>
+		<td markdown="span">False</td>
+	</tr>
+	<tr>
+		<td markdown="span">!=</td>
+		<td markdown="span">非等価(違う値か)</td>
+		<td markdown="span">3 != 2</td>
+		<td markdown="span">True</td>
+	</tr>
+</table>
+
+### 論理演算子
+- 論理演算子も`True`か`False`のどちらかしか返しません。
+<table class="normal">
+	<tr>
+		<th markdown="span">演算子</th>
+		<th markdown="span">説明</th>
+		<th markdown="span">例</th>
+		<th markdown="span">評価結果</th>
+	</tr>
+	<tr>
+		<td markdown="span">and</td>
+		<td markdown="span">かつ</td>
+		<td markdown="span">True and True</td>
+		<td markdown="span">True</td>
+	</tr>
+	<tr>
+		<td markdown="span">or</td>
+		<td markdown="span">あるいは</td>
+		<td markdown="span">True or False</td>
+		<td markdown="span">True</td>
+	</tr>
+	<tr>
+		<td markdown="span">not</td>
+		<td markdown="span">否定</td>
+		<td markdown="span">not True</td>
+		<td markdown="span">False</td>
+	</tr>
+</table>
+
+### 参考書籍
 - {% include book/book_493.html %} {% comment %} 独学プログラマー {% endcomment %}
 
 {% include goto_pagetop.html %}
