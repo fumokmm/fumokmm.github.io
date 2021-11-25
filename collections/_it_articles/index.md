@@ -2,7 +2,7 @@
 layout: default_layout
 title: IT技術メモ
 created: 2020-09-02
-updated: 2021-11-24
+updated: 2021-11-25
 ---
 ## こちらはプログラミング関連のメモになります
 

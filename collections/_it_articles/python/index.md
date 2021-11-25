@@ -1,7 +1,7 @@
 ---
 title: Pythonのメモ
 created: 2020-12-10
-updated: 2021-11-24
+updated: 2021-11-25
 ---
 こちらはPythonのメモになります。
 

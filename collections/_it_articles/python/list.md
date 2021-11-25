@@ -3,7 +3,7 @@ title: Pythonでリスト操作
 article_group_id: basis-group
 display_order: 10
 created: 2021-10-31
-updated: 2021-11-16
+updated: 2021-11-25
 ---
 Pythonのリストは組み込み型のひとつです。  
 便利なメソッドが多数用意されていますので、よく使いそうなメソッドをメモしておきます。
@@ -20,9 +20,15 @@ Pythonのリストは組み込み型のひとつです。
                 <li><a href="#*演算子">*演算子</a></li>
             </ul>
         </li>
+        <li><a href="#チェック系メソッド">チェック系メソッド</a>
+            <ul>
+                <li><a href="#リストに要素が含まれているか">リストに要素が含まれているか</a></li>
+            </ul>
+        </li>
         <li><a href="#参照・参考">参照・参考</a>
             <ul>
                 <li><a href="#参考サイト">参考サイト</a></li>
+                <li><a href="#サンプルソース">サンプルソース</a></li>
             </ul>
         </li>
     </ul>
@@ -182,13 +188,50 @@ print(list3)
 
 {% include goto_pagetop.html %}
 
+## <a name="チェック系メソッド">チェック系メソッド</a><a class="heading-anchor-permalink" href="#チェック系メソッド">§</a>
+* * *
+## <a name="リストに要素が含まれているか">リストに要素が含まれているか</a><a class="heading-anchor-permalink" href="#リストに要素が含まれているか">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-25" updated="2021-11-25" %}</div>
+リストに要素が含まれているかをチェックするには、`in演算子`を利用します。
+
+<div class="code-box-syntax no-title">
+<pre>
+&lt;要素&gt; in &lt;リスト&gt;
+</pre>
+</div>
+- `<要素>`が`<リスト>`に含まれている場合、`True`が、含まれない場合`False`が返却されます。
+
+### 例
+<div class="code-box no-title">
+<pre>
+list = ["A", "B", <em>"C"</em>, "D", "E"]
+assert ("C" <em>in</em> list) == <em class="blue">True</em>
+</pre>
+</div>
+
+### 参考
+- [(Let'sプログラミング) リストに指定した値と同じ要素が含まれているか確認する](https://www.javadrive.jp/python/list/index10.html)
+
+### サンプルソース
+- [(language-examples) 0003_list_include.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list_include.py)
+
+{% include goto_pagetop.html %}
+
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参考サイト">参考サイト</a><a class="heading-anchor-permalink" href="#参考サイト">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-10-31" updated="2021-11-16" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-10-31" updated="2021-11-25" %}</div>
 - [(@IT) ［解決！Python］リスト（配列）に要素を追加するには（+演算子／+=演算子／append／extend／insertメソッド）](https://atmarkit.itmedia.co.jp/ait/articles/2012/11/news015.html)
+- [(Let'sプログラミング) リストに指定した値と同じ要素が含まれているか確認する](https://www.javadrive.jp/python/list/index10.html)
 - [(Let'sプログラミング) リストへの要素の追加と別のリストとの結合](https://www.javadrive.jp/python/list/index6.html)
 - [(Python Carnival) 【Python3入門】*(アスタリスク)1個の機能まとめ](https://pycarnival.com/one_asterisk/)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="サンプルソース">サンプルソース</a><a class="heading-anchor-permalink" href="#サンプルソース">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-25" updated="2021-11-25" %}</div>
+- [(language-examples) 0003_list_include.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list_include.py)
 
 {% include goto_pagetop.html %}
 

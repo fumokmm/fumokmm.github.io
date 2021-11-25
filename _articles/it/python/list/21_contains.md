@@ -1,0 +1,25 @@
+---
+chapter_no: 21
+chapter_group: チェック系メソッド
+chapter_title: リストに要素が含まれているか
+created: 2021-11-25
+updated: 2021-11-25
+---
+リストに要素が含まれているかをチェックするには、`in演算子`を利用します。
+
+```syntax
+<要素> in <リスト>
+```
+- `<要素>`が`<リスト>`に含まれている場合、`True`が、含まれない場合`False`が返却されます。
+
+### 例
+```
+list = ["A", "B", {em{"C"}em}, "D", "E"]
+assert ("C" {em{in}em} list) == {em:blue{True}em}
+```
+
+### 参考
+- [(Let'sプログラミング) リストに指定した値と同じ要素が含まれているか確認する](https://www.javadrive.jp/python/list/index10.html)
+
+### サンプルソース
+- [(language-examples) 0003_list_include.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list_include.py)
