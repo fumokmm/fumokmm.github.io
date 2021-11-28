@@ -3,7 +3,7 @@ title: Pythonでリスト操作
 article_group_id: basis-group
 display_order: 10
 created: 2021-10-31
-updated: 2021-11-25
+updated: 2021-11-28
 ---
 Pythonのリストは組み込み型のひとつです。  
 便利なメソッドが多数用意されていますので、よく使いそうなメソッドをメモしておきます。
@@ -22,7 +22,14 @@ Pythonのリストは組み込み型のひとつです。
         </li>
         <li><a href="#チェック系メソッド">チェック系メソッド</a>
             <ul>
+                <li><a href="#長さチェック">長さチェック</a></li>
                 <li><a href="#リストに要素が含まれているか">リストに要素が含まれているか</a></li>
+            </ul>
+        </li>
+        <li><a href="#ソート系メソッド">ソート系メソッド</a>
+            <ul>
+                <li><a href="#sort">sort</a></li>
+                <li><a href="#sorted">sorted</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -190,6 +197,33 @@ print(list3)
 
 ## <a name="チェック系メソッド">チェック系メソッド</a><a class="heading-anchor-permalink" href="#チェック系メソッド">§</a>
 * * *
+## <a name="長さチェック">長さチェック</a><a class="heading-anchor-permalink" href="#長さチェック">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-28" updated="2021-11-28" %}</div>
+リストの長さチェックには`len関数`を利用します。
+
+<div class="code-box-syntax no-title">
+<pre>
+len(&lt;リスト&gt;)
+</pre>
+</div>
+
+### 例
+<div class="code-box no-title">
+<pre>
+list = ["A", "B", "C", "D", "E"]
+assert <em>len(</em>list<em>)</em> == 5
+</pre>
+</div>
+
+### 参考
+- [(Let'sプログラミング) リストの長さ(要素数)を取得する](https://www.javadrive.jp/python/list/index5.html)
+
+### サンプルソース
+- [(language-examples) 0003_list.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list.py)
+
+{% include goto_pagetop.html %}
+
+* * *
 ## <a name="リストに要素が含まれているか">リストに要素が含まれているか</a><a class="heading-anchor-permalink" href="#リストに要素が含まれているか">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-11-25" updated="2021-11-25" %}</div>
 リストに要素が含まれているかをチェックするには、`in演算子`を利用します。
@@ -213,7 +247,103 @@ assert ("C" <em>in</em> list) == <em class="blue">True</em>
 - [(Let'sプログラミング) リストに指定した値と同じ要素が含まれているか確認する](https://www.javadrive.jp/python/list/index10.html)
 
 ### サンプルソース
-- [(language-examples) 0003_list_include.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list_include.py)
+- [(language-examples) 0003_list.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list.py)
+
+{% include goto_pagetop.html %}
+
+## <a name="ソート系メソッド">ソート系メソッド</a><a class="heading-anchor-permalink" href="#ソート系メソッド">§</a>
+* * *
+## <a name="sort">sort</a><a class="heading-anchor-permalink" href="#sort">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-28" updated="2021-11-28" %}</div>
+リストの要素を破壊的にソートするには、リストのメソッドである`sort`を利用します。
+
+<div class="code-box-syntax no-title">
+<pre>
+list.sort()
+</pre>
+</div>
+- 引数 `reverse=True`を指定すると、逆順ソートになります。
+- 引数 `key`を指定すると、様々なキーでソートできます。
+
+### 例
+<div class="code-box">
+<div class="title">元のリストのソート（破壊的）</div>
+<pre>
+list = [3, 10, 2, 1, 5]
+list.<em>sort</em>()
+assert list == [1, 2, 3, 5, 10]
+</pre>
+</div>
+<div class="code-box">
+<div class="title">逆順</div>
+<pre>
+list.<em>sort</em>(<em class="blue">reverse=True</em>)
+assert list == [10, 5, 3, 2, 1]
+</pre>
+</div>
+<div class="code-box">
+<div class="title">キーを指定してソート</div>
+<pre>
+list = ["BB", "CCC", "A"]
+list.<em>sort</em>(<em class="blue">key=lambda x: -len(x)</em>) <em class="comment"># 文字数が多い順</em>
+assert list == ["CCC", "BB", "A"]
+</pre>
+</div>
+
+### 参考
+- [(note.nkmk.me) Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)
+
+### サンプルソース
+- [(language-examples) 0003_list.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list.py)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="sorted">sorted</a><a class="heading-anchor-permalink" href="#sorted">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-28" updated="2021-11-28" %}</div>
+リストをソートした新たなリストを返却するには`sorted`関数を利用します。
+
+<div class="code-box-syntax no-title">
+<pre>
+new_list = sorted(&lt;リスト&gt;)
+</pre>
+</div>
+- 引数 `reverse=True`を指定すると、逆順ソートになります。
+- 引数 `key`を指定すると、様々なキーでソートできます。
+
+### 例
+<div class="code-box">
+<div class="title">ソートされた新しいリストを返却</div>
+<pre>
+list = [3, 10, 2, 1, 5]
+list2 = <em>sorted</em>(list)
+assert list2 == [1, 2, 3, 5, 10]
+assert list == [3, 10, 2, 1, 5] <em class="comment"># 元のリストは変化なし</em>
+</pre>
+</div>
+<div class="code-box">
+<div class="title">逆順</div>
+<pre>
+list3 = <em>sorted</em>(list, <em class="blue">reverse=True</em>)
+assert list3 == [10, 5, 3, 2, 1]
+assert list == [3, 10, 2, 1, 5] <em class="comment"># 元のリストは変化なし</em>
+</pre>
+</div>
+<div class="code-box">
+<div class="title">キーを指定してソート</div>
+<pre>
+list = ["BB", "CCC", "A"]
+list4 = <em>sorted</em>(list, <em class="blue">key=lambda x: -len(x)</em>) <em class="comment"># 文字数が多い順</em>
+assert list4 == ["CCC", "BB", "A"]
+assert list == ["BB", "CCC", "A"] <em class="comment"># 元のリストは変化なし</em>
+</pre>
+</div>
+
+### 参考
+- [(note.nkmk.me) Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)
+
+### サンプルソース
+- [(language-examples) 0003_list.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list.py)
 
 {% include goto_pagetop.html %}
 
@@ -223,7 +353,9 @@ assert ("C" <em>in</em> list) == <em class="blue">True</em>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-31" updated="2021-11-25" %}</div>
 - [(@IT) ［解決！Python］リスト（配列）に要素を追加するには（+演算子／+=演算子／append／extend／insertメソッド）](https://atmarkit.itmedia.co.jp/ait/articles/2012/11/news015.html)
 - [(Let'sプログラミング) リストに指定した値と同じ要素が含まれているか確認する](https://www.javadrive.jp/python/list/index10.html)
+- [(Let'sプログラミング) リストの長さ(要素数)を取得する](https://www.javadrive.jp/python/list/index5.html)
 - [(Let'sプログラミング) リストへの要素の追加と別のリストとの結合](https://www.javadrive.jp/python/list/index6.html)
+- [(note.nkmk.me) Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)
 - [(Python Carnival) 【Python3入門】*(アスタリスク)1個の機能まとめ](https://pycarnival.com/one_asterisk/)
 
 {% include goto_pagetop.html %}
@@ -231,7 +363,7 @@ assert ("C" <em>in</em> list) == <em class="blue">True</em>
 * * *
 ## <a name="サンプルソース">サンプルソース</a><a class="heading-anchor-permalink" href="#サンプルソース">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-11-25" updated="2021-11-25" %}</div>
-- [(language-examples) 0003_list_include.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list_include.py)
+- [(language-examples) 0003_list.py](https://github.com/fumokmm/language-examples/blob/main/Python/0003_list.py)
 
 {% include goto_pagetop.html %}
 
