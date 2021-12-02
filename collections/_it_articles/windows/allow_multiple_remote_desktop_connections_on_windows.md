@@ -3,7 +3,7 @@ title: Windowsでリモートデスクトップの接続許可数(セッショ�
 article_group_id: tips-group
 display_order: 20
 created: 2021-11-08
-updated: 2021-11-08
+updated: 2021-12-02
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -34,9 +34,10 @@ updated: 2021-11-08
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-11-08" updated="2021-11-08" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-08" updated="2021-12-02" %}</div>
 ### 参考サイト
 - [(Shima System Academy) 【図解】Windows Server 2019：リモートデスクトップ 複数セッション許可設定](https://inab818.site/microsoft-windows-server-2019/multiple-people-remote-desktop/)
+- [(Tech Blog) リモートデスクトップ 複数セッションを許可する](https://blogs.osdn.jp/2017/10/01/multi-rdp.html)
 
 {% include goto_pagetop.html %}
 
