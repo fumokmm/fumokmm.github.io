@@ -10,3 +10,5 @@ VBAでFunctionとProperty Getを使い分ける理由
 https://www.excel-chunchun.com/entry/20210307-vba-function-propertyget
 
 
+Excel VBA Wordを操作する主なプロパティとメソッド
+https://kosapi.com/post-3986/
