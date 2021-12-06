@@ -2,8 +2,12 @@
 chapter_no: 1
 chapter_title: 設定と初期化(config)
 created: 2010-11-07
-updated: 2021-09-27
+updated: 2021-12-06
 ---
+```:現在の設定のリストを出力する
+$ git {em:blue{config}em} {em:command{--global}em} {em{-l}em}
+```
+
 <div class="code-box">
 <div class="title">グローバルなユーザ名とメールアドレスを設定する</div>
 <pre>
