@@ -263,6 +263,8 @@
       label: 基本事項
     - id: reverse-lookup-group
       label: 逆引き
+    - id: tips-group
+      label: Tips
     - id: reference-group
       label: 参照・参考
   sub_category_group: programming_language
