@@ -2,9 +2,9 @@
 chapter_no: 10
 chapter_title: FileSystemObject
 created: 2021-12-01
-updated: 2021-12-01
+updated: 2021-12-09
 ---
-みんな大好き`FileSystemObject`です。  
+みんな大好き`FileSystemObject`です。ファイルやディレクトリ操作のモジュールです。
 
 ### 必要となる参照設定
 ```syntax
