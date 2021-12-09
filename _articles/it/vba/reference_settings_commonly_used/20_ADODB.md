@@ -4,6 +4,8 @@ chapter_title: ADODB
 created: 2021-12-09
 updated: 2021-12-09
 ---
+DB操作したり、テキスト操作したりするモジュールです。
+
 ### 必要となる参照設定
 ```syntax
 Microsoft ActiveX Data Objects x.x Library
