@@ -2,17 +2,19 @@
 title: 勉強の目的
 display_order: 30
 created: 2021-03-26
-updated: 2021-03-26
+updated: 2021-12-13
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
-<li><a href="#why-studying-just-for-the-sake-of-being-given-is-boring">与えられただけの勉強がなぜつまらないか</a></li>
+<li><a href="#与えられただけの勉強がなぜつまらないか">与えられただけの勉強がなぜつまらないか</a></li>
+<li><a href="#勉強とは人類の英知を継承することである">勉強とは人類の英知を継承することである</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 
 * * *
-## <a name="why-studying-just-for-the-sake-of-being-given-is-boring">与えられただけの勉強がなぜつまらないか</a><a class="heading-anchor-permalink" href="#why-studying-just-for-the-sake-of-being-given-is-boring">§</a>
+## <a name="与えられただけの勉強がなぜつまらないか">与えられただけの勉強がなぜつまらないか</a><a class="heading-anchor-permalink" href="#与えられただけの勉強がなぜつまらないか">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-26" updated="2021-03-26" %}</div>
 こちらの内容は、アメリカの哲学者、デューイ（1859年-1952年）の思想によるものです。  
 デューイは20世紀における代表的哲学者の一人で「プラグマティズム」の代表的人物とのこと。
@@ -51,6 +53,40 @@ updated: 2021-03-26
 
 - 知識や思考の価値は、実用性によって測られるべきという考え方です。
 - 「プラグマティズム」という哲学の代表的人物と捉えられるようになったとのこと。
+
+### 参考動画
+- [(YouTube) 歴史的偉人が現代人を論破するアニメ【第22弾】](https://www.youtube.com/watch?v=PPVot07goTw)
+
+### 参照
+- [(Wikipedia) ジョン・デューイ](https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BB%E3%83%87%E3%83%A5%E3%83%BC%E3%82%A4)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="勉強とは人類の英知を継承することである">勉強とは人類の英知を継承することである</a><a class="heading-anchor-permalink" href="#勉強とは人類の英知を継承することである">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-12-13" updated="2021-12-13" %}</div>
+### 勉強とは人類の英知を継承することである
+> 私たち人間は原始の時代から、それまでにだれかが経験したこと、発見したことを受け継ぎ、  
+> 学びつづけてきました。つまり、「勉強する」ことによって先人の知恵を学び、自分を磨き、  
+> 昨日までの自分とは違う自分になるという変化をくり返してきたのです。  
+> そうやって文明を築いてきたからこそ、ほかの生物とは一線を画しているのではないでしょうか。  
+> この、ほかの動物にはできない英知の継承を「勉強」と呼んでいるわけです。
+> <cite>{% include book/book_761.html %} {% comment %} 手紙屋　蛍雪篇 {% endcomment %}より</cite>
+
+- 何かを学ぼうとするとき、いずれはそこで学んだ知識を次の世代へ引き継いでいくことが重要だ。
+- そうやって人類はこれまでずっと知識を連綿とつないできた。
+- あなたの勉強も、その大いなるつながりの一つである。
+
+### 参考書籍
+- {% include book/book_761.html %} {% comment %} 手紙屋　蛍雪篇 {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-03-26" updated="2021-12-13" %}</div>
+### 参考書籍
+- {% include book/book_761.html %} {% comment %} 手紙屋　蛍雪篇 {% endcomment %}
 
 ### 参考動画
 - [(YouTube) 歴史的偉人が現代人を論破するアニメ【第22弾】](https://www.youtube.com/watch?v=PPVot07goTw)
