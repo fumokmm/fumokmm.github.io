@@ -3,7 +3,7 @@ title: Pythonの文法
 article_group_id: basis-group
 display_order: 10
 created: 2020-12-10
-updated: 2021-11-21
+updated: 2021-12-14
 ---
 ここではPythonの文法を簡単にまとめておきます。特に記載のない場合、Python3を対象としています。
 
@@ -16,6 +16,7 @@ updated: 2021-11-21
                 <li><a href="#Pythonの特徴">Pythonの特徴</a></li>
                 <li><a href="#コメント">コメント</a></li>
                 <li><a href="#ハローワールド">ハローワールド</a></li>
+                <li><a href="#コマンドライン引数">コマンドライン引数</a></li>
                 <li><a href="#文">文</a></li>
                 <li><a href="#演算子">演算子</a></li>
                 <li><a href="#条件分岐 - if文">条件分岐 - if文</a></li>
@@ -163,6 +164,39 @@ Hello, World
 
 ### 参考
 - [(てきとーなブログ) python3で改行なしprintをする。](http://azoay.hatenablog.com/entry/2015/06/10/203134)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="コマンドライン引数">コマンドライン引数</a><a class="heading-anchor-permalink" href="#コマンドライン引数">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-12-14" updated="2021-12-14" %}</div>
+### コマンドライン引数を渡す
+<div class="code-box-syntax no-title">
+<pre>
+$ python ファイル名.py 引数1 引数2 引数3 …
+</pre>
+</div>
+
+### コマンドライン引数を受け取る
+プログラム内でコマンドライン引数を受け取るには`sys.argv`モジュールを使います。
+<div class="code-box no-title">
+<pre>
+import sys
+print(sys.argv[0]) # ファイル名
+print(sys.argv[1]) # 引数1
+print(sys.argv[2]) # 引数2
+print(sys.argv[3]) # 引数3
+</pre>
+</div>
+- `argv[0]`はファイル名固定です。
+- `argv[1]`以降が引数となります。
+- 渡した引数の数より大きなインデックスを指定すると`IndexError`が発生します。利用する際は長さチェックをしてください。
+
+### サンプルソース
+- [(language-examples) 0010_argv.py](https://github.com/fumokmm/language-examples/tree/main/Python/0010_argv.py)
+
+### 参考
+- [(Tech Teacher Blog) Pythonのコマンドライン引数がわかる！渡し方・取得方法を分かりやすく解説](https://www.tech-teacher.jp/blog/python-commandline/)
 
 {% include goto_pagetop.html %}
 
@@ -428,10 +462,11 @@ Hello, Japan!
 
 * * *
 ## <a name="参考サイト">参考サイト</a><a class="heading-anchor-permalink" href="#参考サイト">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2021-11-10" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2021-12-14" %}</div>
 - [(note.nkmk.me) Pythonで識別子（変数名など）として有効・無効な名前、命名規則](https://note.nkmk.me/python-identifier-naming-rule/)
 - [(Python学習講座) プライベートメンバ](https://www.python.ambitious-engineer.com/archives/323)
 - [(Qiita) Pythonのselfとかinitを理解する](https://qiita.com/ishigen/items/2d8b6e6398743f2c8110)
+- [(Tech Teacher Blog) Pythonのコマンドライン引数がわかる！渡し方・取得方法を分かりやすく解説](https://www.tech-teacher.jp/blog/python-commandline/)
 - [(UX MILK) Pythonでのコメントアウトの書き方](https://uxmilk.jp/8847)
 - [(てきとーなブログ) python3で改行なしprintをする。](http://azoay.hatenablog.com/entry/2015/06/10/203134)
 
@@ -446,8 +481,9 @@ Hello, Japan!
 
 * * *
 ## <a name="ソース">ソース</a><a class="heading-anchor-permalink" href="#ソース">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-11-12" updated="2021-11-12" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-12" updated="2021-12-14" %}</div>
 - [(language-examples) 0001_if.py](https://github.com/fumokmm/language-examples/blob/main/Python/0001_if.py)
+- [(language-examples) 0010_argv.py](https://github.com/fumokmm/language-examples/tree/main/Python/0010_argv.py)
 
 {% include goto_pagetop.html %}
 
