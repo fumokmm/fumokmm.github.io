@@ -35,6 +35,11 @@
 - sub_category_id: database
   sub_category_label: Database
   link: /it/database/
+  article_group:
+    - id: summary-group
+      label: まとめ
+    - id: tips-group
+      label: Tips
   sub_category_group: database
   sub_category_order: 10
   description: データベース全般について
