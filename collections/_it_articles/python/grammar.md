@@ -173,7 +173,7 @@ Hello, World
 ### コマンドライン引数を渡す
 <div class="code-box-syntax no-title">
 <pre>
-$ python ファイル名.py 引数1 引数2 引数3 …
+$ python ファイル名.py <em>引数1 引数2 引数3 …</em>
 </pre>
 </div>
 
@@ -182,10 +182,10 @@ $ python ファイル名.py 引数1 引数2 引数3 …
 <div class="code-box no-title">
 <pre>
 import sys
-print(sys.argv[0]) # ファイル名
-print(sys.argv[1]) # 引数1
-print(sys.argv[2]) # 引数2
-print(sys.argv[3]) # 引数3
+print(<em>sys.argv[0]</em>) <em class="comment"># ファイル名</em>
+print(<em>sys.argv[1]</em>) <em class="comment"># 引数1</em>
+print(<em>sys.argv[2]</em>) <em class="comment"># 引数2</em>
+print(<em>sys.argv[3]</em>) <em class="comment"># 引数3</em>
 </pre>
 </div>
 - `argv[0]`はファイル名固定です。
