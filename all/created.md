@@ -1,7 +1,7 @@
 ---
 title: 全メモのリスト
 created: 2021-01-17
-updated: 2021-12-14
+updated: 2021-12-17
 ---
 {% assign all_articles = site.it_articles %}
 {% assign all_articles = all_articles | concat: site.life_articles %}

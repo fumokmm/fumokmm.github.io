@@ -3,8 +3,11 @@ title: VBAの文法
 article_group_id: basis-group
 display_order: 10
 created: 2020-09-08
-updated: 2021-09-14
+updated: 2021-12-17
 ---
+{% capture link_to_it_c %}{% link _it_articles/c/index.md %}{% endcapture %}
+{% assign link_to_it_c = link_to_it_c | remove: 'index' %}
+
 ここではVBAの文法を簡単にまとめておきます。
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -17,11 +20,13 @@ updated: 2021-09-14
                 <li><a href="#リテラル">リテラル</a></li>
                 <li><a href="#変数">変数</a></li>
                 <li><a href="#条件分岐 - If-Then-Elseステートメント">条件分岐 - If-Then-Elseステートメント</a></li>
+                <li><a href="#条件分岐 - Select-Caseステートメント">条件分岐 - Select-Caseステートメント</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
             <ul>
-                <li><a href="#参考">参考</a></li>
+                <li><a href="#参考サイト">参考サイト</a></li>
+                <li><a href="#参考書籍">参考書籍</a></li>
             </ul>
         </li>
     </ul>
@@ -91,9 +96,145 @@ VBAには様々な式が存在します。`数式`, `条件式`, `オブジェ�
 
 {% include goto_pagetop.html %}
 
+* * *
+## <a name="条件分岐 - Select-Caseステートメント">条件分岐 - Select-Caseステートメント</a><a class="heading-anchor-permalink" href="#条件分岐 - Select-Caseステートメント">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-12-17" updated="2021-12-17" %}</div>
+Select Case文は複数の条件分岐をすっきり書くための構文です。  
+基本的には[条件分岐 - If-Then-Elseステートメント](#条件分岐 - If-Then-Elseステートメント)で書けるものです。
+
+### Select-Case
+<div class="code-box-syntax no-title">
+<pre>
+<em>Select Case</em> <em class="blue">&lt;比較する値&gt;</em>
+    <em>Case</em> <em class="blue">&lt;条件1&gt;</em>
+        <em class="comment">' 条件1を満たしたときの処理</em>
+    <em>Case</em> <em class="blue">&lt;条件2&gt;</em>
+        <em class="comment">' 条件2を満たしたときの処理</em>
+    <em>Case Else</em>
+        <em class="comment">' いずれの条件も満たさなかったときの処理</em>
+<em>End Select</em>
+</pre>
+</div>
+- [C言語]({{link_to_it_c}})と違って[フォールスルー](https://ja.wikipedia.org/wiki/Switch%E6%96%87#%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AB%E3%82%B9%E3%83%AB%E3%83%BC)はしない。
+- `<条件>`の書き方に以下パターンがあります。
+  - 値とマッチするか。(完全一致)
+  - 複数のどれかにマッチするか。(カンマ区切りる)
+  - 範囲内に含まれる。(xx To yy)
+  - 大小比較 (Is >= xx, Is <= xx)
+- 上に記述した`<条件>`とマッチするか評価されてゆき、どれか一つでもマッチすると、以降の処理は実行されません。
+- どの`<条件>`にもマッチしなかった場合、`Case Else`で指定した処理が実行されます。
+  - `Case Else`を省略した場合で、かつどの`<条件>`にもマッチしなかった場合は、何も処理されません。
+
+### 例：値とマッチ
+<div class="code-box no-title">
+<pre>
+Dim p_time As String
+p_time = "朝"
+Select Case p_time
+    Case <em>"朝"</em>
+        Debug.Print "おはようございます！"
+    Case <em>"昼"</em>
+        Debug.Print "こんにちは！"
+    Case <em>"夜"</em>
+        Debug.Print "こんばんは！"
+    Case Else
+        Debug.Print "Zzz..."
+End Select
+</pre>
+</div>
+<div class="code-box-output no-title">
+<pre>
+おはようございます！
+</pre>
+</div>
+
+### 例：複数のどれかにマッチ
+<div class="code-box no-title">
+<pre>
+Dim p_num As Integer
+p_num = 5
+Select Case p_num
+    Case <em>1, 3, 5, 7, 9</em>
+        Debug.Print p_num &amp; "は奇数です。"
+    Case <em>2, 4, 6, 8</em>
+        Debug.Print p_num &amp; "は偶数です。"
+    Case Else
+        Debug.Print "1から9までの値を指定してください。"
+End Select
+</pre>
+</div>
+<div class="code-box-output no-title">
+<pre>
+5は奇数です。
+</pre>
+</div>
+
+### 例：範囲内に含まれる
+<div class="code-box no-title">
+<pre>
+Dim p_age As Integer
+p_age = 40
+Select Case p_age
+    Case <em>0 To 18</em>
+        Debug.Print p_age &amp; "歳はこどもです。"
+    Case <em>19 To 65</em>
+        Debug.Print p_age &amp; "歳は大人です。"
+    Case <em>66 To 99</em>
+        Debug.Print p_age &amp; "歳はシニアです。"
+    Case Else
+        Debug.Print p_age &amp; "歳以上の人はセンテナリアンと呼びます。"
+End Select
+</pre>
+</div>
+<div class="code-box-output no-title">
+<pre>
+40歳は大人です。
+</pre>
+</div>
+- センテナリアンって言葉をこのサンプルをメモしていて初めて知りました。
+
+### 例：大小比較
+<div class="code-box no-title">
+<pre>
+Dim p_temperature As Integer
+p_temperature = 105
+Select Case p_temperature
+    Case <em>Is &lt;= 0</em>
+        Debug.Print p_temperature &amp; "度で水は固体です。"
+    Case <em>Is &gt;= 100</em>
+        Debug.Print p_temperature &amp; "度で水は気体です。"
+    Case Else
+        Debug.Print p_temperature &amp; "度で水は液体です。"
+End Select
+</pre>
+</div>
+<div class="code-box-output no-title">
+<pre>
+105度で水は気体です。
+</pre>
+</div>
+- `Is`の部分に`<比較する値>`が入っていると思ってCase句を書いてください。
+
+### 参考
+- [(Wikipedia) switch文](https://ja.wikipedia.org/wiki/Switch%E6%96%87)
+- [(Valmore) 【Excel VBA入門】Select Case文の使い方。複数条件をスッキリ書く！](https://valmore.work/excel-vba-case/)
+
+{% include goto_pagetop.html %}
+
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
-## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+## <a name="参考サイト">参考サイト</a><a class="heading-anchor-permalink" href="#参考サイト">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-12-17" updated="2021-12-17" %}</div>
+### 参照
+- [(Wikipedia) switch文](https://ja.wikipedia.org/wiki/Switch%E6%96%87)
+
+### 参考サイト
+- [(Valmore) 【Excel VBA入門】Select Case文の使い方。複数条件をスッキリ書く！](https://valmore.work/excel-vba-case/)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="参考書籍">参考書籍</a><a class="heading-anchor-permalink" href="#参考書籍">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-09-08" updated="2020-09-09" %}</div>
 - {% include book/book_449.html %} {% comment %} パーフェクト Excel VBA {% endcomment %}
 
