@@ -32,11 +32,17 @@ UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID
 以下のようにして新規登録します。
 
 <table class="normal">
-    <tr><td>ユーザID</td><td>admin' --</td></tr>
-    <tr><td>パスワード</td><td>passwd</td></tr>
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin' --</span></td>
+		<td><span class="code-font">passwd</span></td>
+	</tr>
 </table>
 
-すると、*シングルクォートを正しくエスケープした*以下のようなINSERT文によりユーザが登録されます。
+すると、<b>シングルクォートを正しくエスケープした</b>以下のようなINSERT文によりユーザが登録されます。
 
 ```:SQL1
 INSERT INTO ユーザマスタ VALUES ( 'admin{em{''}em} --', 'passwd' )
@@ -44,14 +50,32 @@ INSERT INTO ユーザマスタ VALUES ( 'admin{em{''}em} --', 'passwd' )
 
 結果、ユーザID「`admin' --`」としてユーザ登録されます。
 
+<b>テーブル名：ユーザマスタ(登録後)</b>
 <table class="normal">
-    <caption>テーブル名：ユーザマスタ(登録後)</caption>
-    <tr><th>ユーザID</th><th>パスワード</th></tr>
-    <tr><td>admin</td><td>admin</td></tr>
-    <tr><td>fumo</td><td>hoge</td></tr>
-    <tr><td>cynthia</td><td>piyo</td></tr>
-    <tr><td>rose</td><td>fuga</td></tr>
-    <tr><td><strong>admin' --</strong></td><td><strong>passwd</strong></td></tr>
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin</span></td>
+		<td><span class="code-font">admin</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">fumo</span></td>
+		<td><span class="code-font">hoge</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">cynthia</span></td>
+		<td><span class="code-font">piyo</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">rose</span></td>
+		<td><span class="code-font">fuga</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font"><b>admin' --</b></span></td>
+		<td><span class="code-font"><b>passwd</b></span></td>
+	</tr>
 </table>
 
 ### (2)パスワード更新
@@ -62,7 +86,7 @@ INSERT INTO ユーザマスタ VALUES ( 'admin{em{''}em} --', 'passwd' )
 SELECT * FROM ユーザマスタ WHERE ユーザID = 'admin'' --' AND パスワード = 'passwd'
 ```
 
-外部から受け取る値は*新パスワードだけなので、新パスワードのみエスケープ処理されます*。  
+外部から受け取る値は<b>新パスワードだけなので、新パスワードのみエスケープ処理されます</b>。  
 ユーザIDはエスケープされずにデータベースに格納された値「`admin' --`」がそのまま用いられます。
 
 ```:SQL2

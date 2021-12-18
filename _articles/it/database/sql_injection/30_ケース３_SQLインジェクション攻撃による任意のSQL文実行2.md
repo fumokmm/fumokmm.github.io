@@ -9,12 +9,20 @@ updated: 2021-04-01
 ### 攻撃手法
 利用するテーブルは[ケース１](#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜)と同じものとして、以下のようにパラメータを入力してみます。
 
-<dl>
-  <dt>$userId</dt>
-  <dd>'; DELETE FROM ユーザマスタ WHERE 'A' = 'A' --</dd>
-  <dt>$passwd</dt>
-  <dd> (何も入力しない) </dd>
-</dl>
+<table class="normal">
+	<tr>
+		<th markdown="span">パラメータ</th>
+		<th markdown="span">入力する値</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">$userId</span></td>
+		<td><span class="code-font">'; DELETE FROM ユーザマスタ WHERE 'A' = 'A' --</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">$passwd</span></td>
+		<td><span class="code-font">(何も入力しない)</span></td>
+	</tr>
+</table>
 
 これで、以下のようなSQL文が実行される。
 

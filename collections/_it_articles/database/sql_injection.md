@@ -32,13 +32,28 @@ updated: 2021-04-01
 ### 攻撃手法
 以下のようなテーブルがあるとします。
 
+<b>テーブル名：ユーザマスタ</b>
 <table class="normal">
-    <caption>テーブル名：ユーザマスタ</caption>
-    <tr><th>ユーザID</th><th>パスワード</th></tr>
-    <tr><td>admin</td><td>admin</td></tr>
-    <tr><td>fumo</td><td>hoge</td></tr>
-    <tr><td>cynthia</td><td>piyo</td></tr>
-    <tr><td>rose</td><td>fuga</td></tr>
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin</span></td>
+		<td><span class="code-font">admin</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">fumo</span></td>
+		<td><span class="code-font">hoge</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">cynthia</span></td>
+		<td><span class="code-font">piyo</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">rose</span></td>
+		<td><span class="code-font">fuga</span></td>
+	</tr>
 </table>
 
 <div class="code-box">
@@ -51,12 +66,20 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = '$userId' AND パスワー�
 ユーザによって入力されたユーザID、パスワードをそれぞれ`$userId`、`$passwd`に代入し、上記SQLにてその存在が確認できればログインできるWEBページがあります。
 悪意あるユーザがユーザID「`fumo`」としてパスワードを入力せずにログインを試みる際に入力するパラメータは、以下のようになります。
 
-<dl>
-  <dt>$userId</dt>
-  <dd>fumo</dd>
-  <dt>$passwd</dt>
-  <dd>' OR 'A' = 'A</dd>
-</dl>
+<table class="normal">
+	<tr>
+		<th markdown="span">パラメータ</th>
+		<th markdown="span">入力する値</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">$userId</span></td>
+		<td><span class="code-font">fumo</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">$passwd</span></td>
+		<td><span class="code-font">' OR 'A' = 'A</span></td>
+	</tr>
+</table>
 
 結果、生成されるSQL文は以下のようなものになります。
 
@@ -84,15 +107,22 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = 'fumo' AND <em>パスワー
 SQL文におけるセミコロン「`;`」は、ステートメントを分割するデリミタです。この「`;`」を使って複数のSQL文を連結させることができます。  
 利用するテーブルは[ケース１](#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜)と同じものとして、今回は以下のようにパラメータを入力してみます。
 
-<dl>
-  <dt>$userId</dt>
-  <dd> (何も入力しない) </dd>
-  <dt>$passwd</dt>
-  <dd>'; DELETE FROM ユーザマスタ WHERE 'A' = 'A</dd>
-</dl>
+<table class="normal">
+	<tr>
+		<th markdown="span">パラメータ</th>
+		<th markdown="span">入力する値</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">$userId</span></td>
+		<td><span class="code-font">(何も入力しない)</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">$passwd</span></td>
+		<td><span class="code-font">'; DELETE FROM ユーザマスタ WHERE 'A' = 'A</span></td>
+	</tr>
+</table>
 
 さて、どんなSQLが生成されるでしょうか。
-
 
 <div class="code-box">
 <div class="title">SQL</div>
@@ -126,12 +156,20 @@ DELETE FROM ユーザマスタ WHERE 'A' = 'A'
 ### 攻撃手法
 利用するテーブルは[ケース１](#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜)と同じものとして、以下のようにパラメータを入力してみます。
 
-<dl>
-  <dt>$userId</dt>
-  <dd>'; DELETE FROM ユーザマスタ WHERE 'A' = 'A' --</dd>
-  <dt>$passwd</dt>
-  <dd> (何も入力しない) </dd>
-</dl>
+<table class="normal">
+	<tr>
+		<th markdown="span">パラメータ</th>
+		<th markdown="span">入力する値</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">$userId</span></td>
+		<td><span class="code-font">'; DELETE FROM ユーザマスタ WHERE 'A' = 'A' --</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">$passwd</span></td>
+		<td><span class="code-font">(何も入力しない)</span></td>
+	</tr>
+</table>
 
 これで、以下のようなSQL文が実行される。
 
@@ -165,14 +203,24 @@ UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID
 ユーザによって入力されたユーザID、旧パスワード、新パスワードをそれぞれ`${userId}`、`${oldPasswd}`、`${newPasswd}`に代入し、上記SQLにてその存在が確認し、合致すればパスワードの変更が完了します。  
 悪意あるユーザ「`rose`」が、自身のパスワード「`fuga`」とユーザ「`admin`」のパスワードを「`malice`」に書き換えを試みる際に入力するパラメータは、以下のようになります。
 
-<dl>
-  <dt>$userId</dt>
-  <dd>rose</dd>
-  <dt>$oldPasswd</dt>
-  <dd>fuga' OR ユーザID = 'admin</dd>
-  <dt>$newPasswd</dt>
-  <dd>malice</dd>
-</dl>
+<table class="normal">
+	<tr>
+		<th markdown="span">パラメータ</th>
+		<th markdown="span">入力する値</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">$userId</span></td>
+		<td><span class="code-font">rose</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">$oldPasswd</span></td>
+		<td><span class="code-font">fuga' OR ユーザID = 'admin</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">$newPasswd</span></td>
+		<td><span class="code-font">malice</span></td>
+	</tr>
+</table>
 
 結果、生成されるSQL文は以下のようなものになります。
 
@@ -187,13 +235,28 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = 'ro
 つまり、「`admin`」のパスワードが分からなくても「`admin`」のパスワードを変更することが可能となるわけです。  
 更新後のテーブルの様子は以下のようになります。
 
+<b>テーブル名：ユーザマスタ(更新後)</b>
 <table class="normal">
-    <caption>テーブル名：ユーザマスタ(更新後)</caption>
-    <tr><th>ユーザID</th><th>パスワード</th></tr>
-    <tr><td>admin</td><td><strong>malice</strong></td></tr>
-    <tr><td>fumo</td><td>hoge</td></tr>
-    <tr><td>cynthia</td><td>piyo</td></tr>
-    <tr><td>rose</td><td><strong>malice</strong></td></tr>
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin</span></td>
+		<td><span class="code-font"><b>malice</b></span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">fumo</span></td>
+		<td><span class="code-font">hoge</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">cynthia</span></td>
+		<td><span class="code-font">piyo</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">rose</span></td>
+		<td><span class="code-font"><b>malice</b></span></td>
+	</tr>
 </table>
 
 {% include goto_pagetop.html %}
@@ -206,14 +269,24 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = 'ro
 ### 攻撃手法
 利用するテーブル、条件は[ケース４](#ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜)と同様とし、悪意あるユーザが全ユーザのパスワードを「`malice`」への書き換えを試みる際に入力するパラメータは以下のようになります。
 
-<dl>
-  <dt>$userId</dt>
-  <dd>' OR 'A' = 'A' --</dd>
-  <dt>$oldPasswd</dt>
-  <dd> (何も入力しない) </dd>
-  <dt>$newPasswd</dt>
-  <dd>malice</dd>
-</dl>
+<table class="normal">
+	<tr>
+		<th markdown="span">パラメータ</th>
+		<th markdown="span">入力する値</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">$userId</span></td>
+		<td><span class="code-font">' OR 'A' = 'A' --</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">$oldPasswd</span></td>
+		<td><span class="code-font">(何も入力しない)</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">$newPasswd</span></td>
+		<td><span class="code-font">malice</span></td>
+	</tr>
+</table>
 
 結果、生成されるSQL文は以下のようなものになります。
 
@@ -227,13 +300,28 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = '' 
 [ケース３](#ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜)と同様に「`'A' = 'A'`」の恒真式にしつつ、それ以降をコメントアウトしてWHERE句を無効化しています。結果、全員のパスワードが「`malice`」に変更されてしまいます。  
 更新後のテーブルの様子は以下のようになります。
 
+<b>テーブル名：ユーザマスタ(更新後)</b>
 <table class="normal">
-    <caption>テーブル名：ユーザマスタ(更新後)</caption>
-    <tr><th>ユーザID</th><th>パスワード</th></tr>
-    <tr><td>admin</td><td><strong>malice</strong></td></tr>
-    <tr><td>fumo</td><td><strong>malice</strong></td></tr>
-    <tr><td>cynthia</td><td><strong>malice</strong></td></tr>
-    <tr><td>rose</td><td><strong>malice</strong></td></tr>
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin</span></td>
+		<td><span class="code-font"><b>malice</b></span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">fumo</span></td>
+		<td><span class="code-font"><b>malice</b></span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">cynthia</span></td>
+		<td><span class="code-font"><b>malice</b></span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">rose</span></td>
+		<td><span class="code-font"><b>malice</b></span></td>
+	</tr>
 </table>
 
 {% include goto_pagetop.html %}
@@ -248,10 +336,22 @@ SQL文に含まれたパラメータに対して、危険な文字列を検出�
 エスケープ対象は処理系によって異なりますが、一般的には次の通りです。
 
 <table class="normal">
-    <tr><th>特殊文字</th><th>エスケープ処理</th></tr>
-    <tr><td>'</td><td>''</td></tr>
-    <tr><td>;</td><td>受理しない</td></tr>
-    <tr><td>その他の特殊文字</td><td>エスケープ文字(\)を前に付加する</td></tr>
+	<tr>
+		<th markdown="span">特殊文字</th>
+		<th markdown="span">エスケープ処理</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">'</span></td>
+		<td><span class="code-font">''</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">;</span></td>
+		<td markdown="span">受理しない</td>
+	</tr>
+	<tr>
+		<td markdown="span">その他の特殊文字</td>
+		<td markdown="span">エスケープ文字(\\)を前に付加する</td>
+	</tr>
 </table>
 
 「`'`」→「`''`」とシングルクォートを二つ重ねてエスケープすることで、文字列を囲むシングルクォートでなはく、シングルクォート文字列定数として扱うようにします。
@@ -269,7 +369,7 @@ SQL文に含まれたパラメータに対して、危険な文字列を検出�
 
 これにより、入力データは数値定数や文字列定数として組み込まれるため、シングルクォートなどの特殊文字はエスケープ処理せずとも強制的にただのパラメータ文字として認識され、SQL文の意味も改変される危険性がなくなります。  
 また、入力前にコンパイルされているので、SQLインジェクションによってSQL文を変更することが不可能になります。  
-特殊文字のエスケープよりも有効な手法であり、*SQLインジェクション対策の最も有効的な方法*です。
+特殊文字のエスケープよりも有効な手法であり、<b>SQLインジェクション対策の最も有効的な方法</b>です。
 
 {% include goto_pagetop.html %}
 
@@ -310,11 +410,17 @@ UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID
 以下のようにして新規登録します。
 
 <table class="normal">
-    <tr><td>ユーザID</td><td>admin' --</td></tr>
-    <tr><td>パスワード</td><td>passwd</td></tr>
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin' --</span></td>
+		<td><span class="code-font">passwd</span></td>
+	</tr>
 </table>
 
-すると、*シングルクォートを正しくエスケープした*以下のようなINSERT文によりユーザが登録されます。
+すると、<b>シングルクォートを正しくエスケープした</b>以下のようなINSERT文によりユーザが登録されます。
 
 <div class="code-box">
 <div class="title">SQL1</div>
@@ -325,14 +431,32 @@ INSERT INTO ユーザマスタ VALUES ( 'admin<em>''</em> --', 'passwd' )
 
 結果、ユーザID「`admin' --`」としてユーザ登録されます。
 
+<b>テーブル名：ユーザマスタ(登録後)</b>
 <table class="normal">
-    <caption>テーブル名：ユーザマスタ(登録後)</caption>
-    <tr><th>ユーザID</th><th>パスワード</th></tr>
-    <tr><td>admin</td><td>admin</td></tr>
-    <tr><td>fumo</td><td>hoge</td></tr>
-    <tr><td>cynthia</td><td>piyo</td></tr>
-    <tr><td>rose</td><td>fuga</td></tr>
-    <tr><td><strong>admin' --</strong></td><td><strong>passwd</strong></td></tr>
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin</span></td>
+		<td><span class="code-font">admin</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">fumo</span></td>
+		<td><span class="code-font">hoge</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">cynthia</span></td>
+		<td><span class="code-font">piyo</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">rose</span></td>
+		<td><span class="code-font">fuga</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font"><b>admin' --</b></span></td>
+		<td><span class="code-font"><b>passwd</b></span></td>
+	</tr>
 </table>
 
 ### (2)パスワード更新
@@ -346,7 +470,7 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = 'admin'' --' AND パスワ�
 </pre>
 </div>
 
-外部から受け取る値は*新パスワードだけなので、新パスワードのみエスケープ処理されます*。  
+外部から受け取る値は<b>新パスワードだけなので、新パスワードのみエスケープ処理されます</b>。  
 ユーザIDはエスケープされずにデータベースに格納された値「`admin' --`」がそのまま用いられます。
 
 <div class="code-box">
@@ -372,10 +496,10 @@ UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'a
 * * *
 ## <a name="ケース６の回避方法・対策">ケース６の回避方法・対策</a><a class="heading-anchor-permalink" href="#ケース６の回避方法・対策">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2008-04-12" updated="2021-04-01" %}</div>
-一般のSQLインジェクション対策としては、バインド機構＋サニタイジングの組み合わせが採用されているが、*セカンドオーダSQLインジェクションはこれらの対策を潜り抜けて*実行されてしまいます。これは、SQLインジェクションを防ぐのに、*外部から受け取るパラメータのみエスケープしているとき*に発生します。
+一般のSQLインジェクション対策としては、バインド機構＋サニタイジングの組み合わせが採用されているが、<b>セカンドオーダSQLインジェクションはこれらの対策を潜り抜けて</b>実行されてしまいます。これは、SQLインジェクションを防ぐのに、<b>外部から受け取るパラメータのみエスケープしているとき</b>に発生します。
 
-この攻撃も踏まえた正しいSQLインジェクション対策としては、*文字列連結でSQL文を構築しようとするすべての箇所でエスケープ処理を適切に行う*必要があります。  
-*データベースに格納済みの値ももれなく行う必要がある*のです。
+この攻撃も踏まえた正しいSQLインジェクション対策としては、<b>文字列連結でSQL文を構築しようとするすべての箇所でエスケープ処理を適切に行う</b>必要があります。  
+<b>データベースに格納済みの値ももれなく行う必要がある</b>のです。
 
 {% include goto_pagetop.html %}
 

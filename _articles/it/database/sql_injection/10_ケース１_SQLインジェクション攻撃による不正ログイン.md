@@ -9,13 +9,28 @@ updated: 2021-04-01
 ### 攻撃手法
 以下のようなテーブルがあるとします。
 
+<b>テーブル名：ユーザマスタ</b>
 <table class="normal">
-    <caption>テーブル名：ユーザマスタ</caption>
-    <tr><th>ユーザID</th><th>パスワード</th></tr>
-    <tr><td>admin</td><td>admin</td></tr>
-    <tr><td>fumo</td><td>hoge</td></tr>
-    <tr><td>cynthia</td><td>piyo</td></tr>
-    <tr><td>rose</td><td>fuga</td></tr>
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin</span></td>
+		<td><span class="code-font">admin</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">fumo</span></td>
+		<td><span class="code-font">hoge</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">cynthia</span></td>
+		<td><span class="code-font">piyo</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">rose</span></td>
+		<td><span class="code-font">fuga</span></td>
+	</tr>
 </table>
 
 ```:SQL
@@ -25,12 +40,20 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = '$userId' AND パスワー�
 ユーザによって入力されたユーザID、パスワードをそれぞれ`$userId`、`$passwd`に代入し、上記SQLにてその存在が確認できればログインできるWEBページがあります。
 悪意あるユーザがユーザID「`fumo`」としてパスワードを入力せずにログインを試みる際に入力するパラメータは、以下のようになります。
 
-<dl>
-  <dt>$userId</dt>
-  <dd>fumo</dd>
-  <dt>$passwd</dt>
-  <dd>' OR 'A' = 'A</dd>
-</dl>
+<table class="normal">
+	<tr>
+		<th markdown="span">パラメータ</th>
+		<th markdown="span">入力する値</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">$userId</span></td>
+		<td><span class="code-font">fumo</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">$passwd</span></td>
+		<td><span class="code-font">' OR 'A' = 'A</span></td>
+	</tr>
+</table>
 
 結果、生成されるSQL文は以下のようなものになります。
 
