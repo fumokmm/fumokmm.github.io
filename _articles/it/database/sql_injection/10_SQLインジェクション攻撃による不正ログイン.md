@@ -18,12 +18,9 @@ updated: 2021-04-01
     <tr><td>rose</td><td>fuga</td></tr>
 </table>
 
-<div class="code-box">
-<div class="title">SQL</div>
-<pre>
+```:SQL
 SELECT * FROM ユーザマスタ WHERE ユーザID = '$userId' AND パスワード = '$passwd'
-</pre>
-</div>
+```
 
 ユーザによって入力されたユーザID、パスワードをそれぞれ`$userId`、`$passwd`に代入し、上記SQLにてその存在が確認できればログインできるWEBページがあります。
 悪意あるユーザがユーザID「`fumo`」としてパスワードを入力せずにログインを試みる際に入力するパラメータは、以下のようになります。
@@ -37,12 +34,9 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = '$userId' AND パスワー�
 
 結果、生成されるSQL文は以下のようなものになります。
 
-<div class="code-box">
-<div class="title">SQL</div>
-<pre>
-SELECT * FROM ユーザマスタ WHERE ユーザID = 'fumo' AND <em>パスワード = '' OR 'A' = 'A'</em>
-</pre>
-</div>
+```:SQL
+SELECT * FROM ユーザマスタ WHERE ユーザID = 'fumo' AND {em{パスワード = '' OR 'A' = 'A'}em}
+```
 
 パラメータとして入力値「`'`」を含ませることで、パスワードに関するWHERE句の条件式を一旦終端させ、次にORを含ませると、「`'A' = 'A'`」という恒真式がORの対象になります。  
 よって、WHERE句全体が常に真となり、パスワードを入力せずにユーザID「`fumo`」としてログインすることが可能となります。

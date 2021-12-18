@@ -14,19 +14,13 @@ updated: 2021-04-01
 
 この、「パスワード変更機能」は以下のように二つのSQL文によって実行されるものとします。
 
-<div class="code-box">
-<div class="title">SQL1</div>
-<pre>
+```:SQL1
 SELECT * FROM ユーザマスタ WHERE ユーザID = '${userId}' AND パスワード = '${oldPasswd}'
-</pre>
-</div>
+```
 
-<div class="code-box">
-<div class="title">SQL2</div>
-<pre>
-UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID = <em>'取得したユーザID'</em>
-</pre>
-</div>
+```:SQL2
+UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID = {em{'取得したユーザID'}em}
+```
 
 二つ目のUPDATE文で指定するユーザIDは、一つ目のSQL文で取得したユーザIDを用います。  
 なお、適切にサニタイジング処理が行われているものとします。
@@ -44,12 +38,9 @@ UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID
 
 すると、*シングルクォートを正しくエスケープした*以下のようなINSERT文によりユーザが登録されます。
 
-<div class="code-box">
-<div class="title">SQL1</div>
-<pre>
-INSERT INTO ユーザマスタ VALUES ( 'admin<em>''</em> --', 'passwd' )
-</pre>
-</div>
+```:SQL1
+INSERT INTO ユーザマスタ VALUES ( 'admin{em{''}em} --', 'passwd' )
+```
 
 結果、ユーザID「`admin' --`」としてユーザ登録されます。
 
@@ -67,30 +58,21 @@ INSERT INTO ユーザマスタ VALUES ( 'admin<em>''</em> --', 'passwd' )
 次に「`admin' --`」のパスワードを変更するために、例えば旧パスワード「`passwd`」と、新パスワード「`passwd2`」を入力します。  
 この入力により、以下SELECT文となり、ユーザIDを引き当てます。
 
-<div class="code-box">
-<div class="title">SQL1</div>
-<pre>
+```:SQL1
 SELECT * FROM ユーザマスタ WHERE ユーザID = 'admin'' --' AND パスワード = 'passwd'
-</pre>
-</div>
+```
 
 外部から受け取る値は*新パスワードだけなので、新パスワードのみエスケープ処理されます*。  
 ユーザIDはエスケープされずにデータベースに格納された値「`admin' --`」がそのまま用いられます。
 
-<div class="code-box">
-<div class="title">SQL2</div>
-<pre>
+```:SQL2
 UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'admin' --''
-</pre>
-</div>
+```
 
 このSQL文の末尾の「`--''`」の部分は無視されるため、以下の「`admin`」のパスワードを「`passwd2`」に変更するSQL文が実行されることとなります。
 
-<div class="code-box">
-<div class="title">SQL2 (実行される部分)</div>
-<pre>
+```:SQL2 (実行される部分)
 UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'admin'
-</pre>
-</div>
+```
 
 悪意ある攻撃者はこの手法により、管理者「`admin`」のパスワードを自由に書き換えてしまうことが可能となります。

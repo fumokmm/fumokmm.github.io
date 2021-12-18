@@ -21,12 +21,9 @@ SQL文におけるセミコロン「`;`」は、ステートメントを分割�
 さて、どんなSQLが生成されるでしょうか。
 
 
-<div class="code-box">
-<div class="title">SQL</div>
-<pre>
-SELECT * FROM ユーザマスタ WHERE ユーザID = '' AND パスワード = ''<em>; DELETE FROM ユーザマスタ WHERE 'A' = 'A'</em>
-</pre>
-</div>
+```:SQL
+SELECT * FROM ユーザマスタ WHERE ユーザID = '' AND パスワード = ''{em{; DELETE FROM ユーザマスタ WHERE 'A' = 'A'}em}
+```
 
 このようになります。  
 これは以下のように二つのSQL文が続けて実行されることを意味します。

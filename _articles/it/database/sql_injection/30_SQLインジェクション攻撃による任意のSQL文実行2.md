@@ -18,12 +18,9 @@ updated: 2021-04-01
 
 これで、以下のようなSQL文が実行される。
 
-<div class="code-box">
-<div class="title">SQL</div>
-<pre>
+```:SQL
 SELECT * FROM ユーザマスタ WHERE ユーザID = '';
-DELETE FROM ユーザマスタ WHERE 'A' = 'A' <em>--' AND パスワード = ''</em>
-</pre>
-</div>
+DELETE FROM ユーザマスタ WHERE 'A' = 'A' {em{--' AND パスワード = ''}em}
+```
 
 「`--`」以下の「`' AND パスワード = ''`」の部分はコメントアウトされるので無効となり、結果として[ケース２](#ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜)と同様に全件削除のSQL文として機能します。
