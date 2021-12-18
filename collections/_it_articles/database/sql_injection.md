@@ -1,5 +1,6 @@
 ---
 title: SQLインジェクションのまとめ
+article_group_id: summary-group
 display_order: 10
 created: 2008-04-12
 updated: 2021-04-01
@@ -8,20 +9,24 @@ updated: 2021-04-01
 
 こちらはSQLインジェクションについてまとめたものになります。
 
-## 目次
+## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
-- [ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜](#case1)
-- [ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜](#case2)
-- [ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜](#case3)
-- [ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜](#case4)
-- [ケース５ SQLインジェクション攻撃によるパスワード変更 〜コメントアウトで無効化〜](#case5)
-- [ケース１〜５の回避方法・対策](#workaround-methods-and-countermeasures-for-case1to5)
-- [ケース６ セカンドオーダSQLインジェクション](#case6)
-- [ケース６の回避方法・対策](#workaround-methods-and-countermeasures-for-case6)
-- [補足](#supplement)
-- [参考](#reference)
+<ul id="index_ul">
+<li><a href="#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜">ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜</a></li>
+<li><a href="#ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜">ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜</a></li>
+<li><a href="#ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜">ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜</a></li>
+<li><a href="#ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜">ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜</a></li>
+<li><a href="#ケース５ SQLインジェクション攻撃によるパスワード変更 〜コメントアウトで無効化〜">ケース５ SQLインジェクション攻撃によるパスワード変更 〜コメントアウトで無効化〜</a></li>
+<li><a href="#ケース１〜５の回避方法・対策">ケース１〜５の回避方法・対策</a></li>
+<li><a href="#ケース６ セカンドオーダSQLインジェクション">ケース６ セカンドオーダSQLインジェクション</a></li>
+<li><a href="#ケース６の回避方法・対策">ケース６の回避方法・対策</a></li>
+<li><a href="#補足">補足</a></li>
+<li><a href="#参考">参考</a></li>
+</ul>
 
-## <a name="case1">ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜</a>
+* * *
+## <a name="ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜">ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜</a><a class="heading-anchor-permalink" href="#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-12" updated="2021-04-01" %}</div>
 まずは、SQLインジェクションの最も基本的な攻撃パターンであるシングルクォート「`'`」を使った手法をご紹介しましょう。
 
 ### 攻撃手法
@@ -67,15 +72,17 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = 'fumo' AND <em>パスワー
 
 ちなみに、「`'A' = 'A`」の部分は「`'1' = '1`」でも「`'' = '`」でも大丈夫です。OR以降が常に真となるような恒真式が記述されることが重要です。
 
+{% include goto_pagetop.html %}
 
-## <a name="case2">ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜</a>
-
-さて次は、[ケース１](#case1)の応用例として任意のSQL文を実行させる手法をご紹介しましょう。  
+* * *
+## <a name="ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜">ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜</a><a class="heading-anchor-permalink" href="#ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-12" updated="2021-04-01" %}</div>
+さて次は、[ケース１](#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜)の応用例として任意のSQL文を実行させる手法をご紹介しましょう。  
 ここではレコードの全件削除を例にとって説明します。
 
 ### 攻撃手法
 SQL文におけるセミコロン「`;`」は、ステートメントを分割するデリミタです。この「`;`」を使って複数のSQL文を連結させることができます。  
-利用するテーブルは[ケース１](#case1)と同じものとして、今回は以下のようにパラメータを入力してみます。
+利用するテーブルは[ケース１](#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜)と同じものとして、今回は以下のようにパラメータを入力してみます。
 
 <dl>
   <dt>$userId</dt>
@@ -109,11 +116,15 @@ DELETE FROM ユーザマスタ WHERE 'A' = 'A'
 このようにパラメータに「`;`」を含ませることで、WHERE句を一旦終端させ、全件削除のDELETE文をさせることができます。  
 なお、「`'`」の数をあわせるために、ケース１と同様に「`'A' = 'A'`」という恒真式にして、DELETE文のWHERE句を無効化しています。
 
-## <a name="case3">ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜</a>
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜">ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜</a><a class="heading-anchor-permalink" href="#ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-12" updated="2021-04-01" %}</div>
 更に応用例として、コメントアウト「`--`」を使用してパスワード入力部分のSQLを無効化する手法をご紹介しましょう。
 
 ### 攻撃手法
-利用するテーブルは[ケース１](#case1)と同じものとして、以下のようにパラメータを入力してみます。
+利用するテーブルは[ケース１](#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜)と同じものとして、以下のようにパラメータを入力してみます。
 
 <dl>
   <dt>$userId</dt>
@@ -132,13 +143,17 @@ DELETE FROM ユーザマスタ WHERE 'A' = 'A' <em>--' AND パスワード = ''<
 </pre>
 </div>
 
-「`--`」以下の「`' AND パスワード = ''`」の部分はコメントアウトされるので無効となり、結果として[ケース２](#case2)と同様に全件削除のSQL文として機能します。
+「`--`」以下の「`' AND パスワード = ''`」の部分はコメントアウトされるので無効となり、結果として[ケース２](#ケース２ SQLインジェクション攻撃による任意のSQL文実行 〜セミコロンで分割〜)と同様に全件削除のSQL文として機能します。
 
-## <a name="case4">ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜</a>
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜">ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜</a><a class="heading-anchor-permalink" href="#ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-12" updated="2021-04-01" %}</div>
 さて、今度はデータを変更するパターンの攻撃についてご紹介しましょう。
 
 ### 攻撃手法
-利用するテーブルは[ケース１](#case1)と同じものとして、ユーザIDと現在のパスワードおよび新しいパスワードを受け取り、データベースの更新が行われる例で考えてみましょう。
+利用するテーブルは[ケース１](#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜)と同じものとして、ユーザIDと現在のパスワードおよび新しいパスワードを受け取り、データベースの更新が行われる例で考えてみましょう。
 
 <div class="code-box">
 <div class="title">SQL</div>
@@ -181,11 +196,15 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = 'ro
     <tr><td>rose</td><td><strong>malice</strong></td></tr>
 </table>
 
-## <a name="case5">ケース５ SQLインジェクション攻撃によるパスワード変更 〜コメントアウトで無効化〜</a>
-さて、今度は[ケース４](#case4)の応用で全データを変更するパターンの攻撃についてご紹介しましょう。
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="ケース５ SQLインジェクション攻撃によるパスワード変更 〜コメントアウトで無効化〜">ケース５ SQLインジェクション攻撃によるパスワード変更 〜コメントアウトで無効化〜</a><a class="heading-anchor-permalink" href="#ケース５ SQLインジェクション攻撃によるパスワード変更 〜コメントアウトで無効化〜">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-12" updated="2021-04-01" %}</div>
+さて、今度は[ケース４](#ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜)の応用で全データを変更するパターンの攻撃についてご紹介しましょう。
 
 ### 攻撃手法
-利用するテーブル、条件は[ケース４](#case4)と同様とし、悪意あるユーザが全ユーザのパスワードを「`malice`」への書き換えを試みる際に入力するパラメータは以下のようになります。
+利用するテーブル、条件は[ケース４](#ケース４ SQLインジェクション攻撃によるパスワード変更 〜シングルクォート挿入〜)と同様とし、悪意あるユーザが全ユーザのパスワードを「`malice`」への書き換えを試みる際に入力するパラメータは以下のようになります。
 
 <dl>
   <dt>$userId</dt>
@@ -205,7 +224,7 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = '' 
 </pre>
 </div>
 
-[ケース３](#case3)と同様に「`'A' = 'A'`」の恒真式にしつつ、それ以降をコメントアウトしてWHERE句を無効化しています。結果、全員のパスワードが「`malice`」に変更されてしまいます。  
+[ケース３](#ケース３ SQLインジェクション攻撃による任意のSQL文実行 〜コメントアウトで無効化〜)と同様に「`'A' = 'A'`」の恒真式にしつつ、それ以降をコメントアウトしてWHERE句を無効化しています。結果、全員のパスワードが「`malice`」に変更されてしまいます。  
 更新後のテーブルの様子は以下のようになります。
 
 <table class="normal">
@@ -217,7 +236,11 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = '' 
     <tr><td>rose</td><td><strong>malice</strong></td></tr>
 </table>
 
-## <a name="workaround-methods-and-countermeasures-for-case1to5">ケース１〜５の回避方法・対策</a>
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="ケース１〜５の回避方法・対策">ケース１〜５の回避方法・対策</a><a class="heading-anchor-permalink" href="#ケース１〜５の回避方法・対策">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-12" updated="2021-04-01" %}</div>
 今まで見てきたSQLインジェクションの攻撃に対する回避方法・対策についてご紹介しましょう。
 
 ### 特殊文字のエスケープ(サニタイジング)
@@ -248,11 +271,15 @@ SQL文に含まれたパラメータに対して、危険な文字列を検出�
 また、入力前にコンパイルされているので、SQLインジェクションによってSQL文を変更することが不可能になります。  
 特殊文字のエスケープよりも有効な手法であり、*SQLインジェクション対策の最も有効的な方法*です。
 
-## <a name="case6">ケース６ セカンドオーダSQLインジェクション</a>
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="ケース６ セカンドオーダSQLインジェクション">ケース６ セカンドオーダSQLインジェクション</a><a class="heading-anchor-permalink" href="#ケース６ セカンドオーダSQLインジェクション">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-12" updated="2021-04-01" %}</div>
 最後に入力データに適切にサニタイジング処理を施している場合でも攻撃が可能となる、セカンドオーダSQLインジェクションについてご紹介しましょう。
 
 ### 攻撃手法
-例によって[ケース１](#case1)と同じテーブルを利用し、「(1)ユーザ登録機能」 と「(2)パスワード変更機能」があるWebシステムを考えます。  
+例によって[ケース１](#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜)と同じテーブルを利用し、「(1)ユーザ登録機能」 と「(2)パスワード変更機能」があるWebシステムを考えます。  
 
 - 「(1)ユーザ登録機能」では「ユーザID」と「パスワード」を入力して新たにユーザを登録します。
 - 「(2)パスワード変更機能」ではログイン後に、ログインしているユーザのパスワードを変更するもので、「旧パスワード」および「新パスワード」を入力してパスワードの変更を行います。
@@ -340,15 +367,21 @@ UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'a
 
 悪意ある攻撃者はこの手法により、管理者「`admin`」のパスワードを自由に書き換えてしまうことが可能となります。
 
-## <a name="workaround-methods-and-countermeasures-for-case6">ケース６の回避方法・対策</a>
+{% include goto_pagetop.html %}
 
+* * *
+## <a name="ケース６の回避方法・対策">ケース６の回避方法・対策</a><a class="heading-anchor-permalink" href="#ケース６の回避方法・対策">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-12" updated="2021-04-01" %}</div>
 一般のSQLインジェクション対策としては、バインド機構＋サニタイジングの組み合わせが採用されているが、*セカンドオーダSQLインジェクションはこれらの対策を潜り抜けて*実行されてしまいます。これは、SQLインジェクションを防ぐのに、*外部から受け取るパラメータのみエスケープしているとき*に発生します。
 
 この攻撃も踏まえた正しいSQLインジェクション対策としては、*文字列連結でSQL文を構築しようとするすべての箇所でエスケープ処理を適切に行う*必要があります。  
 *データベースに格納済みの値ももれなく行う必要がある*のです。
 
-## <a name="supplement">補足</a>
+{% include goto_pagetop.html %}
 
+* * *
+## <a name="補足">補足</a><a class="heading-anchor-permalink" href="#補足">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-15" updated="2020-11-15" %}</div>
 ### 2020-11-15追記
 こちらの[元記事](https://npnl.hatenablog.jp/entry/20080412/1207965105)の方へはてなブックマークコメントをいただいていたものの中に、間違いを指摘して下さっているものありました。以下のような内容です。
 
@@ -357,9 +390,11 @@ UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'a
 
 とのことです。私の方で確認が取れていない事項ですので、記事の方にはまだそのまま残してあります。内容につきましてはご自身でご判断の程よろしくお願いします。
 
-## <a name="reference">参考</a>
-{% include update_info.html created="2009-01-24" updated="2020-11-15" %}
+{% include goto_pagetop.html %}
 
+* * *
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2009-01-24" updated="2020-11-15" %}</div>
 ### 参考記事
 - [元記事](https://npnl.hatenablog.jp/entry/20080412/1207965105)
 - [(Wikipedia) SQLインジェクション](http://ja.wikipedia.org/wiki/SQL%E3%82%A4%E3%83%B3%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3)
@@ -367,3 +402,7 @@ UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'a
 
 ### 参考書籍
 - {% include book/book_593.html %} {% comment %} テクニカルエンジニア 情報セキュリティ［午後］オリジナル問題集 2008年度版 {% endcomment %}
+
+{% include goto_pagetop.html %}
+
+{% include footnotes_link.html %}
