@@ -227,7 +227,11 @@ code {
     //font-size: large;
     padding: 0.1em 0.4em;
     border-radius: 0.5em;
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: Consolas, 'Meiryo UI', 'Courier New', Monaco, monospace;
+}
+
+.code-font {
+    font-family: Consolas, 'Meiryo UI', 'Courier New', Monaco, monospace;
 }
 
 @mixin make-code-pre($preColor, $preBackgroundColor, $emColor, $emColorBlue, $emColorOrange, $emColorComment, $emColorCommand) {

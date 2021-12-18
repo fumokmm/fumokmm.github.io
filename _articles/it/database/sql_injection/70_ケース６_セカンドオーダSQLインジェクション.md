@@ -1,0 +1,102 @@
+---
+chapter_no: 70
+chapter_title: ケース６ セカンドオーダSQLインジェクション
+created: 2008-04-12
+updated: 2021-04-01
+---
+最後に入力データに適切にサニタイジング処理を施している場合でも攻撃が可能となる、セカンドオーダSQLインジェクションについてご紹介しましょう。
+
+### 攻撃手法
+例によって[ケース１](#ケース１ SQLインジェクション攻撃による不正ログイン 〜シングルクォート挿入〜)と同じテーブルを利用し、「(1)ユーザ登録機能」 と「(2)パスワード変更機能」があるWebシステムを考えます。  
+
+- 「(1)ユーザ登録機能」では「ユーザID」と「パスワード」を入力して新たにユーザを登録します。
+- 「(2)パスワード変更機能」ではログイン後に、ログインしているユーザのパスワードを変更するもので、「旧パスワード」および「新パスワード」を入力してパスワードの変更を行います。
+
+この、「パスワード変更機能」は以下のように二つのSQL文によって実行されるものとします。
+
+```:SQL1
+SELECT * FROM ユーザマスタ WHERE ユーザID = '${userId}' AND パスワード = '${oldPasswd}'
+```
+
+```:SQL2
+UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID = {em{'取得したユーザID'}em}
+```
+
+二つ目のUPDATE文で指定するユーザIDは、一つ目のSQL文で取得したユーザIDを用います。  
+なお、適切にサニタイジング処理が行われているものとします。
+
+セカンドオーダSQLインジェクションは、このように一度挿入されたデータが再利用されるような機能を利用して、間接的に攻撃を行う手法です。具体的には以下のようにパラメータを入力します。
+
+### (1)ユーザ登録
+
+以下のようにして新規登録します。
+
+<table class="normal">
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin' --</span></td>
+		<td><span class="code-font">passwd</span></td>
+	</tr>
+</table>
+
+すると、<b>シングルクォートを正しくエスケープした</b>以下のようなINSERT文によりユーザが登録されます。
+
+```:SQL1
+INSERT INTO ユーザマスタ VALUES ( 'admin{em{''}em} --', 'passwd' )
+```
+
+結果、ユーザID「`admin' --`」としてユーザ登録されます。
+
+<b>テーブル名：ユーザマスタ(登録後)</b>
+<table class="normal">
+	<tr>
+		<th markdown="span">ユーザID</th>
+		<th markdown="span">パスワード</th>
+	</tr>
+	<tr>
+		<td><span class="code-font">admin</span></td>
+		<td><span class="code-font">admin</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">fumo</span></td>
+		<td><span class="code-font">hoge</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">cynthia</span></td>
+		<td><span class="code-font">piyo</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font">rose</span></td>
+		<td><span class="code-font">fuga</span></td>
+	</tr>
+	<tr>
+		<td><span class="code-font"><b>admin' --</b></span></td>
+		<td><span class="code-font"><b>passwd</b></span></td>
+	</tr>
+</table>
+
+### (2)パスワード更新
+次に「`admin' --`」のパスワードを変更するために、例えば旧パスワード「`passwd`」と、新パスワード「`passwd2`」を入力します。  
+この入力により、以下SELECT文となり、ユーザIDを引き当てます。
+
+```:SQL1
+SELECT * FROM ユーザマスタ WHERE ユーザID = 'admin'' --' AND パスワード = 'passwd'
+```
+
+外部から受け取る値は<b>新パスワードだけなので、新パスワードのみエスケープ処理されます</b>。  
+ユーザIDはエスケープされずにデータベースに格納された値「`admin' --`」がそのまま用いられます。
+
+```:SQL2
+UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'admin' --''
+```
+
+このSQL文の末尾の「`--''`」の部分は無視されるため、以下の「`admin`」のパスワードを「`passwd2`」に変更するSQL文が実行されることとなります。
+
+```:SQL2 (実行される部分)
+UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'admin'
+```
+
+悪意ある攻撃者はこの手法により、管理者「`admin`」のパスワードを自由に書き換えてしまうことが可能となります。
