@@ -3,7 +3,7 @@ title: Pythonの文法
 article_group_id: basis-group
 display_order: 10
 created: 2020-12-10
-updated: 2021-12-14
+updated: 2021-12-20
 ---
 ここではPythonの文法を簡単にまとめておきます。特に記載のない場合、Python3を対象としています。
 
@@ -20,6 +20,7 @@ updated: 2021-12-14
                 <li><a href="#文">文</a></li>
                 <li><a href="#演算子">演算子</a></li>
                 <li><a href="#条件分岐 - if文">条件分岐 - if文</a></li>
+                <li><a href="#関数">関数</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -452,6 +453,65 @@ Hello, Japan!
 
 {% include goto_pagetop.html %}
 
+* * *
+## <a name="関数">関数</a><a class="heading-anchor-permalink" href="#関数">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-12-20" updated="2021-12-20" %}</div>
+### リストの展開・辞書の展開
+- 関数の引数にリストや辞書の内容を展開して渡すことができます。
+- リストを展開して渡す場合、リストの前に`*`を付けます。
+- 辞書を展開して渡す場合、リストの前に`**`を付けます。
+<div class="code-box">
+<div class="title">リストの展開</div>
+<pre>
+def func_list(arg1, arg2, arg3):
+    print("arg1 =" + str(arg1))
+    print("arg2 =" + str(arg2))
+    print("arg3 =" + str(arg3))
+
+lst = [10, "aaa", True]
+func_list(<em>*lst</em>)
+</pre>
+</div>
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+arg1 =10
+arg2 =aaa
+arg3 =True
+</pre>
+</div>
+- リストの数が引数の数より多かったり少なかったりすると`TypeError`が発生します。
+
+<div class="code-box">
+<div class="title">辞書の展開</div>
+<pre>
+def func_dict(key1, key2, key3):
+    print("key1 =" + str(key1))
+    print("key2 =" + str(key2))
+    print("key3 =" + str(key3))
+
+dic = {"key3": 10, "key2": "aaa", "key1": True}
+func_dict(<em>**dic</em>)
+</pre>
+</div>
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+key1 =True
+key2 =aaa
+key3 =10
+</pre>
+</div>
+- 引数名と一致するキーが無かったり、一致しないキーがあったりすると`TypeError`になります。
+
+### ソース
+- [(language-examples) 0013_argument_expand.py](https://github.com/fumokmm/language-examples/blob/main/Python/0013_argument_expand.py)
+
+### 参考
+- [(note.nkmk.me) Pythonで関数の引数にリスト、タプル、辞書を展開して渡す](https://note.nkmk.me/python-argument-expand/)
+
+{% include goto_pagetop.html %}
+
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参照">参照</a><a class="heading-anchor-permalink" href="#参照">§</a>
@@ -462,7 +522,8 @@ Hello, Japan!
 
 * * *
 ## <a name="参考サイト">参考サイト</a><a class="heading-anchor-permalink" href="#参考サイト">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2021-12-14" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2021-12-20" %}</div>
+- [(note.nkmk.me) Pythonで関数の引数にリスト、タプル、辞書を展開して渡す](https://note.nkmk.me/python-argument-expand/)
 - [(note.nkmk.me) Pythonで識別子（変数名など）として有効・無効な名前、命名規則](https://note.nkmk.me/python-identifier-naming-rule/)
 - [(Python学習講座) プライベートメンバ](https://www.python.ambitious-engineer.com/archives/323)
 - [(Qiita) Pythonのselfとかinitを理解する](https://qiita.com/ishigen/items/2d8b6e6398743f2c8110)
@@ -481,9 +542,10 @@ Hello, Japan!
 
 * * *
 ## <a name="ソース">ソース</a><a class="heading-anchor-permalink" href="#ソース">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-11-12" updated="2021-12-14" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-12" updated="2021-12-20" %}</div>
 - [(language-examples) 0001_if.py](https://github.com/fumokmm/language-examples/blob/main/Python/0001_if.py)
 - [(language-examples) 0010_argv.py](https://github.com/fumokmm/language-examples/tree/main/Python/0010_argv.py)
+- [(language-examples) 0013_argument_expand.py](https://github.com/fumokmm/language-examples/blob/main/Python/0013_argument_expand.py)
 
 {% include goto_pagetop.html %}
 
