@@ -387,8 +387,8 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
 if <em class="blue">条件式1</em>:
     <em class="comment"># 条件式1が真の時に実行する処理1</em>
     <em class="comment"># 条件式1が真の時に実行する処理2</em>
-<em>elif</em> <em class="blue">条件式2}:
-    {em:comment{# 条件式2が真の時に実行する処理1</em>
+<em>elif</em> <em class="blue">条件式2</em>:
+    <em class="comment"># 条件式2が真の時に実行する処理1</em>
     <em class="comment"># 条件式2が真の時に実行する処理2</em>
 </pre>
 </div>
