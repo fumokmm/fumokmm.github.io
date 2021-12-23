@@ -289,6 +289,8 @@
   sub_category_label: Windows
   link: /it/windows/
   article_group:
+    - id: server-management-group
+      label: サーバ管理
     - id: tips-group
       label: Tips
   sub_category_group: operating_system
