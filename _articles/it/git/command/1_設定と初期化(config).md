@@ -2,35 +2,37 @@
 chapter_no: 1
 chapter_title: 設定と初期化(config)
 created: 2010-11-07
-updated: 2021-12-06
+updated: 2021-12-24
 ---
 ```:現在の設定のリストを出力する
 $ git {em:blue{config}em} {em:command{--global}em} {em{-l}em}
 ```
-
-<div class="code-box">
-<div class="title">グローバルなユーザ名とメールアドレスを設定する</div>
-<pre>
-$ git <em class="blue">config</em> <em class="command">--global</em> <em>user.name "hoge"</em>
-$ git <em class="blue">config</em> <em class="command">--global</em> <em>user.email "hoge@hoge.com"</em>
-</pre>
-</div>
+```:グローバルなユーザ名とメールアドレスを設定する
+$ git {em:blue{config}em} {em:command{--global}em} {em{user.name "hoge"}em}
+$ git {em:blue{config}em} {em:command{--global}em} {em{user.email "hoge@hoge.com"}em}
+```
+```:グローバルなユーザ名とメールアドレス設定を削除する
+$ git {em:blue{config}em} {em:command{--global}em} {em:command{--unset}em} {em{user.name}em}
+$ git {em:blue{config}em} {em:command{--global}em} {em:command{--unset}em} {em{user.email}em}
+```
 ```:グローバルなコミットやタグのメッセージ編集用のエディタを設定する
 $ git {em:blue{config}em} {em:command{--global}em} {em{core.editor emacs}em}
 ```
 
-<div class="code-box">
-<div class="title">特定のリポジトリ用のユーザ名とメールアドレスを設定する</div>
-<pre>
+```:特定のリポジトリ用のユーザ名とメールアドレスを設定する
 $ cd /path/to/repo
-$ git <em class="blue">config</em> <em>user.name "hoge"</em>
-$ git <em class="blue">config</em> <em>user.email "hoge@hoge.com"</em>
-</pre>
-</div>
+$ git {em:blue{config}em} {em{user.name "hoge"}em}
+$ git {em:blue{config}em} {em{user.email "hoge@hoge.com"}em}
+```
+```:特定のリポジトリ用のユーザ名とメールアドレス設定を削除する
+$ cd /path/to/repo
+$ git {em:blue{config}em} {em:command{--unset}em} {em{user.name}em}
+$ git {em:blue{config}em} {em:command{--unset}em} {em{user.email}em}
+```
 ```:特定のリポジトリ用のコミットやタグのメッセージ編集用のエディタを設定する
+$ cd /path/to/repo
 $ git {em:blue{config}em} {em{core.editor emacs}em}
 ```
-
 - グローバルとの違いは`--global`オプションの有無です。
 
 <div class="code-box">
