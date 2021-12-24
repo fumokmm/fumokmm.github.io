@@ -3,7 +3,7 @@ title: Gitコマンドのメモ
 article_group_id: reference-group
 display_order: 10
 created: 2010-11-07
-updated: 2021-12-06
+updated: 2021-12-24
 ---
 当メモは2010-11-07に[投稿されたもの](https://npnl.hatenablog.jp/entry/20101107/1289121576)を加筆修正し、再掲したものです。
 基本的に当時の内容そのままとなっておりますので、8割りくらいは今でも通用すると思いますが、  
@@ -31,19 +31,25 @@ updated: 2021-12-06
 
 * * *
 ## <a name="設定と初期化(config)">設定と初期化(config)</a><a class="heading-anchor-permalink" href="#設定と初期化(config)">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-12-06" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-12-24" %}</div>
 <div class="code-box">
 <div class="title">現在の設定のリストを出力する</div>
 <pre>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>-l</em>
 </pre>
 </div>
-
 <div class="code-box">
 <div class="title">グローバルなユーザ名とメールアドレスを設定する</div>
 <pre>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>user.name "hoge"</em>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>user.email "hoge@hoge.com"</em>
+</pre>
+</div>
+<div class="code-box">
+<div class="title">グローバルなユーザ名とメールアドレス設定を削除する</div>
+<pre>
+$ git <em class="blue">config</em> <em class="command">--global</em> <em class="command">--unset</em> <em>user.name</em>
+$ git <em class="blue">config</em> <em class="command">--global</em> <em class="command">--unset</em> <em>user.email</em>
 </pre>
 </div>
 <div class="code-box">
@@ -62,12 +68,20 @@ $ git <em class="blue">config</em> <em>user.email "hoge@hoge.com"</em>
 </pre>
 </div>
 <div class="code-box">
+<div class="title">特定のリポジトリ用のユーザ名とメールアドレス設定を削除する</div>
+<pre>
+$ cd /path/to/repo
+$ git <em class="blue">config</em> <em class="command">--unset</em> <em>user.name</em>
+$ git <em class="blue">config</em> <em class="command">--unset</em> <em>user.email</em>
+</pre>
+</div>
+<div class="code-box">
 <div class="title">特定のリポジトリ用のコミットやタグのメッセージ編集用のエディタを設定する</div>
 <pre>
+$ cd /path/to/repo
 $ git <em class="blue">config</em> <em>core.editor emacs</em>
 </pre>
 </div>
-
 - グローバルとの違いは`--global`オプションの有無です。
 
 <div class="code-box">
