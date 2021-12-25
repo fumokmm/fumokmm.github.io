@@ -8,7 +8,7 @@ defaultTasks "updateAll"
 
 ext {
     // カテゴリ
-    categoryList = ['it', 'life', 'reading', 'science', 'economy']
+    categoryList = ['it', 'life', 'reading', 'science', 'economy', 'trivia']
 }
 
 task clean(type: Delete) {

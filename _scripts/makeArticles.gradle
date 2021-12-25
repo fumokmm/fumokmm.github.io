@@ -2,7 +2,7 @@
  * 引数 -Ptargetにカンマ区切りで、_articlesのパスをカンマ区切りで指定した場合、
  * その全てが含まれる場合のみ、対象makeArticlesの対象となります。
  * targetの値に "all" のみ指定されている場合に限り、全てのファイルを対象とします。
- * 例: $ ./gradlew makeArticles -Ptarget=/groovy,/git
+ * 例: $ ./gradlew makeArticles -Ptarget=/it/groovy/,/it/git/
  */
 task makeArticles() {
     group = '記事管理'
@@ -11,8 +11,7 @@ task makeArticles() {
 
     doFirst {
         def dirs = []
-        categoryList
-        .each { category ->
+        categoryList.each { category ->
             def fileTree = fileTree("${projectDir}/_articles/${category}/")
             fileTree.include "*/*"
             fileTree.visit { vis ->

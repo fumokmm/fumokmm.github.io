@@ -267,7 +267,8 @@ def get_all_last_updated(col_dir)
     File.join(col_dir, '_life_articles/index.md'),
     File.join(col_dir, '_reading_articles/index.md'),
     File.join(col_dir, '_science_articles/index.md'),
-    File.join(col_dir, '_economy_articles/index.md')
+    File.join(col_dir, '_economy_articles/index.md'),
+    File.join(col_dir, '_trivia_articles/index.md')
   ]
   .map { |f| read_updated(f) }.max
 end
@@ -294,6 +295,7 @@ def get_main_categories_last_updated(base_dir, col_dir)
     File.join(col_dir, '_reading_articles/index.md'),
     File.join(col_dir, '_science_articles/index.md'),
     File.join(col_dir, '_economy_articles/index.md'),
+    File.join(col_dir, '_trivia_articles/index.md'),
     File.join(base_dir, 'history/index.md'),
     File.join(base_dir, 'all/index.md'),
     File.join(base_dir, 'about/index.md')
