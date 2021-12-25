@@ -1,0 +1,6 @@
+- sub_category_id: japanese
+  sub_category_label: 日本語について
+  link: /trivia/japanese/
+  sub_category_group: language
+  sub_category_order: 10
+  description: 日本語についてのメモ

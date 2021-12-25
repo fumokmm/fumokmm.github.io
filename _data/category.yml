@@ -28,6 +28,11 @@
   link: /economy/
   description: 経済についてのメモ
 
+- category_id: trivia
+  category_label: Trivia
+  link: /trivia/
+  description: 雑学についてのメモ
+
 - category_id: all
   category_label: All
   link: /all/

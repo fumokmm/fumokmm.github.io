@@ -1,7 +1,7 @@
 ---
 title: Home
 created: 2020-09-02
-updated: 2021-12-24
+updated: 2021-12-26
 ---
 # これは何？
 Think Twiceにお越しいただき、ありがとうございます。このサイトは[@fumokmm](https://twitter.com/fumokmm)のメモサイトです。  
@@ -24,11 +24,15 @@ Think Twiceにお越しいただき、ありがとうございます。このサ
 {% capture link_to_economy %}{% link _economy_articles/index.md %}{% endcapture %}
 {% assign link_to_economy = link_to_economy | remove: 'index' %}
 {% assign last_updated_economy_articles = site.economy_articles | sort: 'updated' | last %}
+{% capture link_to_trivia %}{% link _trivia_articles/index.md %}{% endcapture %}
+{% assign link_to_trivia = link_to_trivia | remove: 'index' %}
+{% assign last_updated_trivia_articles = site.trivia_articles | sort: 'updated' | last %}
 - [IT技術メモ]({{ link_to_it }}) ({{ last_updated_it_articles.updated }}更新)
 - [人生についてのメモ]({{ link_to_life }}) ({{ last_updated_life_articles.updated }}更新)
 - [読書についてのメモ]({{ link_to_reading }}) ({{ last_updated_reading_articles.updated }}更新)
 - [科学のメモ]({{ link_to_science }}) ({{ last_updated_science_articles.updated }}更新)
 - [経済についてのメモ]({{ link_to_economy }}) ({{ last_updated_economy_articles.updated }}更新)
+- [雑学についてのメモ]({{ link_to_trivia }}) ({{ last_updated_trivia_articles.updated }}更新)
 
 ## その他のページ
 {% capture link_to_all %}{% link all/index.md %}{% endcapture %}

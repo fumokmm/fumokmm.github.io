@@ -299,6 +299,20 @@ defaults:
     values:
       sub_category_id: "investment"
 
+################################## 雑学
+  - scope:
+      path: "_trivia_articles"
+    values:
+      layout: "trivia_article_layout"
+      category_id: "trivia"
+
+# 雑学についてのメモのサブカテゴリ
+  # 日本語についてのメモ
+  - scope:
+      path: "_trivia_articles/japanese"
+    values:
+      sub_category_id: "japanese"
+
 ################################## 全メモのリスト
   - scope:
       path: "all"
@@ -337,6 +351,11 @@ collections:
   economy_articles:
     output: true
     permalink: /economy/:path
+
+  # 雑学の記事
+  trivia_articles:
+    output: true
+    permalink: /trivia/:path
 
 # 除外ファイル/ディレクトリ
 exclude:
