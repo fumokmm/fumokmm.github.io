@@ -32,6 +32,9 @@ then
     # マージを実行
     git merge $orig_branch --no-ff
 
+    # 元居たブランチを削除
+    git branch -d $orig_branch
+
 else
     echo ブランチ\($branch_name\)が存在しません。
     exit 1
