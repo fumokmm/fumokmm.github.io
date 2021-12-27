@@ -1,7 +1,7 @@
 ---
 title: SQL Serverのメモ
 created: 2020-09-05
-updated: 2021-12-06
+updated: 2021-12-27
 ---
 こちらはSQL Serverのメモになります。
 
