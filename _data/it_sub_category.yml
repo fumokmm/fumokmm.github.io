@@ -16,7 +16,7 @@
     - id: basis-group
       label: 基本事項
   sub_category_group: programming_language
-  sub_category_order: 5
+  sub_category_order: 10
   description: 汎用プログラミング言語
 
 - sub_category_id: chrome
@@ -67,7 +67,7 @@
     - id: reverse-lookup-group
       label: 逆引き
   sub_category_group: programming_language
-  sub_category_order: 50
+  sub_category_order: 80
   description: Google社が開発したプログラミング言語Goについてのメモ
 
 - sub_category_id: git
@@ -93,7 +93,7 @@
   sub_category_label: Groovy
   link: /it/groovy/
   sub_category_group: programming_language
-  sub_category_order: 60
+  sub_category_order: 90
   description: Javaから派生した動的型付けのプログラミング言語についてのメモ
 
 # J
@@ -106,14 +106,14 @@
     - id: tips-group
       label: Tips
   sub_category_group: programming_language
-  sub_category_order: 10
+  sub_category_order: 20
   description: プログラミング言語Javaについてのメモ
 
 - sub_category_id: julia
   sub_category_label: Julia
   link: /it/julia/
   sub_category_group: programming_language
-  sub_category_order: 70
+  sub_category_order: 100
   description: Juliaは、数値解析や計算科学に適している高レベルで高性能な動的プログラミング言語です。
 
 # K
@@ -124,7 +124,7 @@
     - id: howto-group
       label: How To
   sub_category_group: programming_language
-  sub_category_order: 15
+  sub_category_order: 30
   description: "JetBrains社が開発している[プログラミング言語Kotlin](https://kotlinlang.org/)についてのメモです。"
 
 # L
@@ -201,7 +201,7 @@
     - id: tips-group
       label: Tips
   sub_category_group: programming_language
-  sub_category_order: 40
+  sub_category_order: 70
   description: プログラミング言語Pythonについてのメモ
 
 # R
@@ -209,7 +209,7 @@
   sub_category_label: Ruby
   link: /it/ruby/
   sub_category_group: programming_language
-  sub_category_order: 30
+  sub_category_order: 60
   description: "[まつもとゆきひろ氏](https://ja.wikipedia.org/wiki/%E3%81%BE%E3%81%A4%E3%82%82%E3%81%A8%E3%82%86%E3%81%8D%E3%81%B2%E3%82%8D)（通称:Matz）により開発されたオブジェクト指向スクリプト言語についてのメモ"
 
 # S
@@ -271,7 +271,7 @@
     - id: reference-group
       label: 参照・参考
   sub_category_group: programming_language
-  sub_category_order: 20
+  sub_category_order: 40
   description: Microsoft Officeで利用できるVisual Basic for Applicationsについてのメモ
 
 - sub_category_id: vscode
