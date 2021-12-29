@@ -131,6 +131,10 @@ defaults:
     values:
       sub_category_id: ruby
   - scope:
+      path: "_it_articles/reverse_resolution"
+    values:
+      sub_category_id: "reverse_resolution"
+  - scope:
       path: "_it_articles/sqlserver"
     values:
       sub_category_id: "sqlserver"

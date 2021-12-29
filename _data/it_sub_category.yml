@@ -164,8 +164,8 @@
 - sub_category_id: problem
   sub_category_label: プログラミングお題
   link: /it/problem/
-  sub_category_group: programming_language
-  sub_category_order: 900
+  sub_category_group: programming_in_general
+  sub_category_order: 10
   description: プログラミングお題についてのメモ
 
 - sub_category_id: powershell
@@ -205,6 +205,16 @@
   description: プログラミング言語Pythonについてのメモ
 
 # R
+- sub_category_id: reverse_resolution
+  sub_category_label: プログラミング逆引き
+  link: /it/reverse_resolution/
+  article_group:
+    - id: string-group
+      label: 文字列
+  sub_category_group: programming_in_general
+  sub_category_order: 20
+  description: プログラミング関連の逆引きメモ
+
 - sub_category_id: ruby
   sub_category_label: Ruby
   link: /it/ruby/

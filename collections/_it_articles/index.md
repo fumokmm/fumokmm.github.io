@@ -2,10 +2,9 @@
 layout: default_layout
 title: IT技術メモ
 created: 2020-09-02
-updated: 2021-12-27
+updated: 2021-12-29
 ---
 ## こちらはプログラミング関連のメモになります
-
 <table>
     {% assign programming_languages = site.data.it_sub_category | where: 'sub_category_group', 'programming_language'
                                                                 | sort: 'sub_category_order' %}
@@ -22,8 +21,41 @@ updated: 2021-12-27
     {% endfor %}
 </table>
 
-## こちらはデータベース関連のメモになります
+## こちらはシェルスクリプト関連のメモになります
+<table>
+    {% assign shell_scripts = site.data.it_sub_category | where: 'sub_category_group', 'shellscript'
+                                                        | sort: 'sub_category_order' %}
+    {% for shell_script in shell_scripts %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', shell_script.sub_category_id %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
 
+        <td><a href="{{ shell_script.link }}">{{ shell_script.sub_category_label }}</a></td>
+        <td markdown="span">{{ shell_script.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+
+## こちらはプログラミング全般のメモになります
+<table>
+    {% assign programming_in_generals = site.data.it_sub_category | where: 'sub_category_group', 'programming_in_general'
+                                                        | sort: 'sub_category_order' %}
+    {% for programming_in_general in programming_in_generals %}
+    <tr>
+        {% assign articles = site.it_articles  | where: 'category_id', 'it'
+                                               | where: 'sub_category_id', programming_in_general.sub_category_id %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ programming_in_general.link }}">{{ programming_in_general.sub_category_label }}</a></td>
+        <td markdown="span">{{ programming_in_general.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+
+## こちらはデータベース関連のメモになります
 <table>
     {% assign databases = site.data.it_sub_category | where: 'sub_category_group', 'database'
                                                     | sort: 'sub_category_order' %}
@@ -41,7 +73,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはOS関連のメモになります
-
 <table>
     {% assign operating_systems = site.data.it_sub_category | where: 'sub_category_group', 'operating_system'
                                                             | sort: 'sub_category_order' %}
@@ -58,26 +89,7 @@ updated: 2021-12-27
     {% endfor %}
 </table>
 
-## こちらはシェルスクリプト関連のメモになります
-
-<table>
-    {% assign shell_scripts = site.data.it_sub_category | where: 'sub_category_group', 'shellscript'
-                                                        | sort: 'sub_category_order' %}
-    {% for shell_script in shell_scripts %}
-    <tr>
-        {% assign articles = site.it_articles  | where: 'category_id', 'it'
-                                               | where: 'sub_category_id', shell_script.sub_category_id %}
-        {% assign last_updated_article = articles | sort: 'updated' | last %}
-
-        <td><a href="{{ shell_script.link }}">{{ shell_script.sub_category_label }}</a></td>
-        <td markdown="span">{{ shell_script.description }}</td>
-        <td>{{ last_updated_article.updated }}更新</td>
-    </tr>
-    {% endfor %}
-</table>
-
 ## こちらはエディタ関連のメモになります
-
 <table>
     {% assign editors = site.data.it_sub_category | where: 'sub_category_group', 'editor'
                                                   | sort: 'sub_category_order' %}
@@ -95,7 +107,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはブラウザ関連のメモになります
-
 <table>
     {% assign browsers = site.data.it_sub_category | where: 'sub_category_group', 'browser'
                                                    | sort: 'sub_category_order' %}
@@ -113,7 +124,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはバージョン管理システム関連のメモになります
-
 <table>
     {% assign sub_categories = site.data.it_sub_category | where: 'sub_category_group', 'version_control_system'
                                                          | sort: 'sub_category_order' %}
@@ -131,7 +141,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはインスタントメッセンジャー関連のメモになります
-
 <table>
     {% assign sub_categories = site.data.it_sub_category | where: 'sub_category_group', 'instant_messenger'
                                                          | sort: 'sub_category_order' %}
@@ -149,7 +158,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはメールクライアントメモになります
-
 <table>
     {% assign mail_clients = site.data.it_sub_category | where: 'sub_category_group', 'mail_client'
                                                        | sort: 'sub_category_order' %}
@@ -167,7 +175,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはアプリケーション関連のメモになります
-
 <table>
     {% assign applications = site.data.it_sub_category | where: 'sub_category_group', 'application'
                                                        | sort: 'sub_category_order' %}
@@ -185,7 +192,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはビルドツール関連のメモになります
-
 <table>
     {% assign build_tools = site.data.it_sub_category | where: 'sub_category_group', 'build_tool'
                                                        | sort: 'sub_category_order' %}
@@ -203,7 +209,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはテンプレート言語関連のメモになります
-
 <table>
     {% assign template_languages = site.data.it_sub_category | where: 'sub_category_group', 'template_language'
                                                              | sort: 'sub_category_order' %}
@@ -221,7 +226,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはテスト関連のメモになります
-
 <table>
     {% assign tests = site.data.it_sub_category | where: 'sub_category_group', 'test'
                                                 | sort: 'sub_category_order' %}
@@ -239,7 +243,6 @@ updated: 2021-12-27
 </table>
 
 ## こちらはその他のメモになります
-
 <table>
     {% assign others = site.data.it_sub_category | where: 'sub_category_group', 'other'
                                                  | sort: 'sub_category_order' %}
