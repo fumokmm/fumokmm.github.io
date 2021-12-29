@@ -1,6 +1,6 @@
 ---
 chapter_no: 10
-chapter_title: SQL(SQL Server)
+chapter_title: SQL(SQL Server)で文字列中の指定した文字の開始位置を取得する
 created: 2021-12-29
 updated: 2021-12-29
 ---
