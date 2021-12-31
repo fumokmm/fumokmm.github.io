@@ -22,6 +22,11 @@
 {% endfor %}
 
 {% comment %} 逆引きを取得 {% endcomment %}
+{% comment %}
+  ※注意※
+  site.data.xxxx[変数] のようにして取得したリスト内のデータは "| sort: 'yyy'" すると
+  なぜか失敗するので、ここではソートしないようにしている(dataに記載した順になる)。
+{% endcomment %}
 {% assign reverse_resolution_list = site.data.it_reverse_resolution[include.sub_category_id] %}
 {% assign reverse_resolution_list_size = reverse_resolution_list | size %}
 {% unless reverse_resolution_list_size == 0 %}
