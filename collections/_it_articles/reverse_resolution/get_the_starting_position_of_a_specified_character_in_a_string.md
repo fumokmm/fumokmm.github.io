@@ -3,9 +3,10 @@ title: 文字列中の指定した文字の開始位置を取得する
 article_group_id: string-group
 display_order: 10
 created: 2021-12-29
-updated: 2021-12-29
+updated: 2022-01-01
 ---
-
+{% capture link_to_it_sqlserver %}{% link _it_articles/sqlserver/index.md %}{% endcapture %}
+{% assign link_to_it_sqlserver = link_to_it_sqlserver | remove: 'index' %}
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
@@ -59,7 +60,10 @@ SELECT CHARINDEX('<em>は</em>', 'うらにわにはにわにわには<em class=
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-12-29" updated="2021-12-29" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-12-29" updated="2022-01-01" %}</div>
+### 関連メモ
+- [SQL Serverのメモ]({{link_to_it_sqlserver}})
+
 ### 参照
 - [(Microsoft \|Docs) CHARINDEX (Transact-SQL)](https://docs.microsoft.com/ja-jp/sql/t-sql/functions/charindex-transact-sql?redirectedfrom=MSDN&view=sql-server-ver15)
 
