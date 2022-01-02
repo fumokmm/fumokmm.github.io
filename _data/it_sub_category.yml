@@ -211,6 +211,8 @@
   article_group:
     - id: string-group
       label: 文字列
+    - id: path-control-group
+      label: パス操作
   sub_category_group: programming_in_general
   sub_category_order: 20
   description: プログラミング関連の逆引きメモ
@@ -218,6 +220,9 @@
 - sub_category_id: ruby
   sub_category_label: Ruby
   link: /it/ruby/
+  article_group:
+    - id: basis-group
+      label: 基本事項
   sub_category_group: programming_language
   sub_category_order: 60
   description: "[まつもとゆきひろ氏](https://ja.wikipedia.org/wiki/%E3%81%BE%E3%81%A4%E3%82%82%E3%81%A8%E3%82%86%E3%81%8D%E3%81%B2%E3%82%8D)（通称:Matz）により開発されたオブジェクト指向スクリプト言語についてのメモ"
