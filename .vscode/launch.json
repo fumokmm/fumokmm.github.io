@@ -9,6 +9,12 @@
             "type": "Ruby",
             "request": "launch",
             "program": "${workspaceRoot}/_scripts/check_updated.rb"
+        },
+        {
+            "name": "update_reverse_resolution_date",
+            "type": "Ruby",
+            "request": "launch",
+            "program": "${workspaceRoot}/_scripts/update_reverse_resolution_date.rb"
         }
     ]
 }
