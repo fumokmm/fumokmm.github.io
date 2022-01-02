@@ -44,19 +44,27 @@ task copyArticles(type: Copy) {
     into "${projectDir}/collections"
 }
 
+task updateReverseResolutionDate(type: CrossPlatformExec) {
+    group = '記事管理'
+    description = 'update_reverse_resolution_date.rbを実行して、逆引き情報を更新します。'
+    mustRunAfter 'copyArticles'
+
+    commandLine 'ruby', "${projectDir}/_scripts/update_reverse_resolution_date.rb"
+}
+
 task checkUpdated(type: CrossPlatformExec) {
     group = '記事管理'
     description = 'check_update.rbを実行して、更新日付を調整します。'
-    mustRunAfter 'copyArticles'
+    mustRunAfter 'updateReverseResolutionDate'
 
     commandLine 'ruby', "${projectDir}/_scripts/check_updated.rb"
 }
 
-task update(dependsOn: ['makeArticles', 'copyArticles']) {
+task update(dependsOn: ['makeArticles', 'copyArticles', 'updateReverseResolutionDate']) {
      group = '記事管理'
-     description = 'makeArticles -> copyArticles の順に実行'
+     description = 'makeArticles -> copyArticles -> updateReverseResolutionDate の順に実行'
 }
-task updateAll(dependsOn: ['makeArticles', 'copyArticles', 'checkUpdated']) {
+task updateAll(dependsOn: ['makeArticles', 'copyArticles', 'updateReverseResolutionDate', 'checkUpdated']) {
      group = '記事管理'
-     description = 'makeArticles -> copyArticles -> checkUpdate の順に実行'
+     description = 'makeArticles -> copyArticles -> updateReverseResolutionDate -> checkUpdate の順に実行'
 }
