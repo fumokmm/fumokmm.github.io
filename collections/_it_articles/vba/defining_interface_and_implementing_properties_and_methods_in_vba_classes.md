@@ -187,12 +187,7 @@ End Sub
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-07-02" updated="2021-07-02" %}</div>
-### 参考
-- [(Analyst Cave) VBA Implements Tutorial – Defining a Class Interface in VBA](https://analystcave.com/vba-implements-tutorial/)
-
-### ソース
-- [(language-examples) VBA](https://github.com/fumokmm/language-examples/tree/main/VBA)
+<div class="chapter-updated">{% include update_info_inline.html created="2022-01-05" updated="2022-01-05" %}</div>
 
 {% include goto_pagetop.html %}
 

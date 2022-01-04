@@ -311,6 +311,10 @@
   article_group:
     - id: basis-group
       label: 基本事項
+    # - id: excel-group
+    #   label: Excel
+    - id: word-group
+      label: Word
     - id: reverse-lookup-group
       label: 逆引き
     - id: reference-group
