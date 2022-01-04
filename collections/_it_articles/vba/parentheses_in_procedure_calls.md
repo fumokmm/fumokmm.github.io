@@ -10,13 +10,13 @@ VBAでプロシージャ呼び出し時、括弧を付けなければいけな�
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
-<li><a href="#procedure-calls">プロシージャ呼び出し</a></li>
-<li><a href="#summary">まとめ</a></li>
-<li><a href="#reference">参考</a></li>
+<li><a href="#プロシージャ呼び出し">プロシージャ呼び出し</a></li>
+<li><a href="#まとめ">まとめ</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 
 * * *
-## <a name="procedure-calls">プロシージャ呼び出し</a><a class="heading-anchor-permalink" href="#procedure-calls">§</a>
+## <a name="プロシージャ呼び出し">プロシージャ呼び出し</a><a class="heading-anchor-permalink" href="#プロシージャ呼び出し">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-07" updated="2021-04-07" %}</div>
 まずは用語です。
 
@@ -47,7 +47,6 @@ Function func1(s1 As String) As String
 Function func2(s1 As String, s2 As String) As String
 
 <em class="comment">' 呼び出し</em>
-
 sub0
 sub1 "a"
 sub2 "a", "b"
@@ -80,7 +79,7 @@ res = func2("a", "b")
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="summary">まとめ</a><a class="heading-anchor-permalink" href="#summary">§</a>
+## <a name="まとめ">まとめ</a><a class="heading-anchor-permalink" href="#まとめ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-07" updated="2021-04-07" %}</div>
 ### 戻り値なしの時
 - 戻り値なしの時は、基本的には括弧を省略する。
@@ -100,7 +99,7 @@ res = func2("a", "b")
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-07" updated="2021-04-07" %}</div>
 - [(Microsoft \| Docs) Call ステートメント](https://docs.microsoft.com/ja-jp/office/vba/language/reference/user-interface-help/call-statement)
 - [(Microsoft \| Docs) Sub プロシージャと Function プロシージャの呼び出し](https://docs.microsoft.com/ja-jp/office/vba/language/concepts/getting-started/calling-sub-and-function-procedures)
