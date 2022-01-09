@@ -3,7 +3,7 @@ title: SQL Serverで取得結果行を1列に連結するSQL(FOR XML PATH)
 article_group_id: sql-group
 display_order: 30
 created: 2020-11-07
-updated: 2020-11-07
+updated: 2022-01-09
 ---
 複数取得される結果を結合して1列で取得したい場合があります。SQL Serverでそれを行うSQLについてメモしておきます。
 
@@ -12,16 +12,16 @@ updated: 2020-11-07
 <ul id="index_ul">
 <li><a href="#下準備">下準備</a></li>
 <li><a href="#さっそくやってみよう">さっそくやってみよう</a></li>
-<li><a href="#stuff">補足1 STUFF関数</a></li>
+<li><a href="#補足1 STUFF関数">補足1 STUFF関数</a></li>
 <li><a href="#補足2 SUBSTRING関数でもよい">補足2 SUBSTRING関数でもよい</a></li>
 <li><a href="#補足3 FOR XML PATH">補足3 FOR XML PATH</a></li>
 <li><a href="#補足4 他のデータベースでは">補足4 他のデータベースでは</a></li>
-<li><a href="#reference">参考</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 
 * * *
 ## <a name="下準備">下準備</a><a class="heading-anchor-permalink" href="#下準備">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-01-09" %}</div>
 こんなテーブルとデータがあったとします。
 
 <div class="code-box">
@@ -44,19 +44,19 @@ SELECT * FROM Table1 ORDER BY NO
 
 そしてこのテーブルから、こんな感じに*チームごとのメンバーリスト*を*CSV形式*で出力したいとします。
 
-### 取得結果（希望・・・）
+### 取得結果（こんな感じを希望・・・）
 
 |TEAM|MEMBER|
 |----|------|
 |紅組|佐藤,鈴木,高橋|
 |青組|田中|
-|黄組|伊藤,黄組|
+|黄組|伊藤,渡辺|
 
 {% include goto_pagetop.html %}
 
 * * *
 ## <a name="さっそくやってみよう">さっそくやってみよう</a><a class="heading-anchor-permalink" href="#さっそくやってみよう">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-01-09" %}</div>
 さっそくやって行きましょう。SQL Serverでは、`FOR XML PATH`を使うことで実現することができます。
 
 <div class="code-box">
@@ -109,12 +109,38 @@ FROM
 |黄組|伊藤,渡辺|
 |黄組|伊藤,渡辺|
 
-これで完成！ちょっとごちゃごちゃしますが、わりと簡単にできるみたいですね。
+あともう一歩ですね。重複して出てきてしまっているデータをまとめてみましょう。
+
+<div class="code-box">
+<div class="title">SQL</div>
+<pre>
+SELECT
+    a.TEAM AS TEAM,
+    STUFF(
+        (SELECT ',' + MEMBER FROM Table1 b WHERE b.TEAM = a.TEAM ORDER BY b.NO FOR XML PATH(''))
+        , 1, 1, ''
+    ) AS MEMBER
+FROM
+    <em>(SELECT DISTINCT TEAM FROM Table1)</em> a
+<em>ORDER BY
+	a.TEAM</em>
+</pre>
+</div>
+
+### 取得結果
+
+|TEAM|MEMBER|
+|----|------|
+|黄組|伊藤,渡辺|
+|紅組|佐藤,鈴木,高橋|
+|青組|田中|
+
+これで完成です。SQLはちょっとごちゃごちゃしますが、わりと簡単にできるみたいですね。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="stuff">補足1 STUFF関数</a><a class="heading-anchor-permalink" href="#stuff">§</a>
+## <a name="補足1 STUFF関数">補足1 STUFF関数</a><a class="heading-anchor-permalink" href="#補足1 STUFF関数">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 `STUFF関数`は、引数を4つ取る関数で、指定した文字列(第1引数)の、指定した位置(第2引数)から、指定した文字数(第3引数)分を、置換文字列(第4引数)に置き換える関数です。以下のような感じになります。
 
@@ -334,7 +360,7 @@ FOR XML PATH('')
 
 さきほど、注意として書きましたが、XML型ではなく文字列型に変換する正式なやり方は、  
 `TYPEディレクティブ`で受け取って、`valueメソッド`で`NVARCHAR`に変換してあげるといいみたいです。  
-詳細は、以下の[参考](#reference)を参考にして下さい。
+詳細は、以下の[参考](#参考)を参考にして下さい。
 
 <div class="code-box">
 <div class="title">SQL</div>
@@ -372,7 +398,7 @@ SELECT
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
 - [[SQL Server] 縦に並んだデータを横にカンマ区切りの列データで取得する方法](https://webbibouroku.com/Blog/Article/forxmlpath)
 - [(Microsoft Docs) FOR XML での PATH モードの使用](https://docs.microsoft.com/ja-jp/sql/relational-databases/xml/use-path-mode-with-for-xml?view=sql-server-ver15)
