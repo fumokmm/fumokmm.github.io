@@ -10,33 +10,10 @@ updated: 2020-12-16
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
-<li><a href="#sql-for-backing-up-table">テーブルをバックアップするSQL</a></li>
 <li><a href="#identity-insert">IDENTITY指定された列に明示的な値をINSERTする</a></li>
 <li><a href="#collation">照合順序設定を確認するSQL</a></li>
 <li><a href="#insert-select">SELECT結果をINSERTするSQL</a></li>
 </ul>
-
-* * *
-## <a name="sql-for-backing-up-table">テーブルをバックアップするSQL</a><a class="heading-anchor-permalink" href="#sql-for-backing-up-table">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-07-15" updated="2020-10-15" %}</div>
-テーブルをサクっとバックアップしたい場合に使えるSQLです。
-
-<div class="code-box">
-<div class="title">テーブルをバックアップするSQL</div>
-<pre>
-SELECT * INTO <em>&lt;新しいテーブル名&gt;</em> FROM <em>&lt;テーブル名&gt;</em>;
-</pre>
-</div>
-
-### 例
-以下SQLを実行すると、`M_USER`と同じレイアウトの`M_USER_20201015`という名前のテーブルが作成されます。
-<div class="code-box no-title">
-<pre>
-SELECT * INTO <em>M_USER_20201015</em> FROM <em>M_USER</em>;
-</pre>
-</div>
-
-{% include goto_pagetop.html %}
 
 * * *
 ## <a name="identity-insert">IDENTITY指定された列に明示的な値をINSERTする</a><a class="heading-anchor-permalink" href="#identity-insert">§</a>
