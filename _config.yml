@@ -29,6 +29,12 @@ defaults:
       path: "_it_articles/chrome"
     values:
       sub_category_id: "chrome"
+
+  - scope:
+      path: "_it_articles/csharp"
+    values:
+      sub_category_id: "csharp"
+
   - scope:
       path: "_it_articles/database"
     values:
