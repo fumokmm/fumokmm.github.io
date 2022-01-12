@@ -3,5 +3,5 @@ title: Windowsでリモートデスクトップの接続許可数(セッショ�
 article_group_id: tips-group
 display_order: 20
 created: 2021-11-08
-updated: 2021-12-02
+updated: 2022-01-12
 ---
