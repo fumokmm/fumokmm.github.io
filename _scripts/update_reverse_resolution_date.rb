@@ -47,26 +47,35 @@ articles_reverse_resolution_dir.children.filter { |name|
   rr_article_dir = Dir.new(File.join(articles_reverse_resolution_dir, rr_article_id))
   rr_article_dir.children.each do |article_file_name|
     chapter_title, sub_category_id, updated = read_front_matter(File.join(rr_article_dir, article_file_name))
+    upd_flg = false
     # sub_category_idを持っている場合
     if sub_category_id != nil
       # data(yaml)更新
       if !data_yml.has_key? sub_category_id
         data_yml[sub_category_id] = []
+        upd_flg = true
       end
       sub_category_entry = data_yml[sub_category_id]
 
       target = sub_category_entry.filter{ |item| item['article_id'] == rr_article_id }
       if target.size == 1
-        target.first['chapter_id'] = chapter_title
-        target.first['updated'] = updated
+        if (target.first['chapter_id'] != chapter_title) ||
+           (target.first['updated'] != updated)
+          target.first['chapter_id'] = chapter_title
+          target.first['updated'] = updated
+          upd_flg = true
+        end
       else
         sub_category_entry << {
           'article_id' => rr_article_id,
           'chapter_id' => chapter_title,
           'updated' => updated
         }
+        upd_flg = true
       end
-      puts "逆引き情報更新: #{rr_article_id} => updated at #{updated} from #{File.join(rr_article_dir, article_file_name)}"
+      if upd_flg
+        puts "逆引き情報更新: #{rr_article_id} => updated at #{updated} from #{File.join(rr_article_dir, article_file_name)}"
+      end
     end
   end
 end
