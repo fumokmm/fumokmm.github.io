@@ -3,7 +3,7 @@ title: Windowsでリモートデスクトップの接続許可数(セッショ�
 article_group_id: tips-group
 display_order: 20
 created: 2021-11-08
-updated: 2021-12-02
+updated: 2022-01-12
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -15,16 +15,16 @@ updated: 2021-12-02
 
 * * *
 ## <a name="設定方法">設定方法</a><a class="heading-anchor-permalink" href="#設定方法">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-11-08" updated="2021-11-08" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-08" updated="2022-01-12" %}</div>
 1. 「Win + X」 -> 「ファイル名を指定して実行」。
 1. 「gpedit.msc」-> 「OK」。
 1. 「コンピューターの構成」   
-    -> 「管理用テンプレート」  
-    -> 「Windows コンポーネント」  
-    -> 「リモート デスクトップ サービス」  
-    -> 「リモート デスクトップ セッション ホスト」  
-    -> 「接続」を選択し、  
-   「リモート デスクトップ サービス ユーザーに対してリモート デスクトップ サービス セッションを 1つに制限する」 をダブルクリック。
+    - 「管理用テンプレート」  
+      - 「Windows コンポーネント」  
+        - 「リモート デスクトップ サービス」  
+          - 「リモート デスクトップ セッション ホスト」  
+            - 「接続」を選択し、  
+    - 「リモート デスクトップ サービス ユーザーに対してリモート デスクトップ サービス セッションを 1つに制限する」 をダブルクリック。
 1. 「無効」を選択。
 
 これで、2ユーザまで同時にアクセスできます。  
