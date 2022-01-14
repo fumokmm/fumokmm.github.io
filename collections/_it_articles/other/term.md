@@ -40,7 +40,7 @@ IT用語のひとこと説明です。
 ## <a name="D">D</a><a class="heading-anchor-permalink" href="#D">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-02-25" updated="2021-08-27" %}</div>
 <dl>
-  {% include article_parts/term_dt.html type="it" title="DCL【Data Control Language】" %}
+  {% include article_parts/term_dt.html category_id="it" title="DCL【Data Control Language】" %}
   <dd markdown="span">BEGIN、COMMIT、ROLLBACKなどトランザクションの制御を行うためのコマンド。
   {% include update_info_inline.html created="2021-02-25" updated="2021-02-25" %}
   </dd>
@@ -50,7 +50,7 @@ IT用語のひとこと説明です。
 - [SQLの種類(DDL、DML、DCL)](https://morizyun.github.io/database/sql-ddl-dml-dcl.html)
 
 <dl>
-  {% include article_parts/term_dt.html type="it" title="DDL【Data Definition Language】" %}
+  {% include article_parts/term_dt.html category_id="it" title="DDL【Data Definition Language】" %}
   <dd markdown="span">CREATE、DROP、ALTERなどデータベースオブジェクトの生成や削除や変更を行うコマンド。
   {% include update_info_inline.html created="2021-02-25" updated="2021-02-25" %}
   </dd>
@@ -60,7 +60,7 @@ IT用語のひとこと説明です。
 - [SQLの種類(DDL、DML、DCL)](https://morizyun.github.io/database/sql-ddl-dml-dcl.html)
 
 <dl>
-  {% include article_parts/term_dt.html type="it" title="DML【Data Manipulation Language】" %}
+  {% include article_parts/term_dt.html category_id="it" title="DML【Data Manipulation Language】" %}
   <dd markdown="span">SELECT、INSERT、UPDATE、DELETEなどテーブルに対するデータの取得、追加、更新、削除を行うコマンド。  
   いわゆる[CRUD]({% link _it_articles/other/term.md %}#CRUD (クラッド))に対応。
   {% include update_info_inline.html created="2021-02-25" updated="2021-02-25" %}</dd>
@@ -73,7 +73,7 @@ IT用語のひとこと説明です。
 - [CRUD (クラッド)]({% link _it_articles/other/term.md %}#CRUD (クラッド))
 
 <dl>
-  {% include article_parts/term_dt.html type="it" title="DX【Digital Transformation】" %}
+  {% include article_parts/term_dt.html category_id="it" title="DX【Digital Transformation】" %}
   <dd markdown="span">デジタルトランスフォーメーション）の略語。  
   企業がデジタル技術を活用し、ビジネスモデルや企業そのものを変革していくことを意味する。
   {% include update_info_inline.html created="2021-08-27" updated="2021-08-27" %}</dd>
@@ -89,7 +89,7 @@ IT用語のひとこと説明です。
 ## <a name="う">う</a><a class="heading-anchor-permalink" href="#う">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-09" updated="2021-05-29" %}</div>
 <dl>
-  {% include article_parts/term_dt.html type="it" title="ウェビナー" %}
+  {% include article_parts/term_dt.html category_id="it" title="ウェビナー" %}
   <dd markdown="span">Webセミナーとは、インターネット上で実施するセミナーや講演会・講義、研修のこと。  
   「Web」と「Seminar」を合わせたウェビナー（Webinar）と呼ばれたり、オンラインセミナー、E-ラーニングなどと呼ばれたりする。
   {% include update_info_inline.html created="2020-12-05" updated="2020-12-05" %}
@@ -105,14 +105,14 @@ IT用語のひとこと説明です。
 ## <a name="さ">さ</a><a class="heading-anchor-permalink" href="#さ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2020-10-09" updated="2021-08-27" %}</div>
 <dl>
-  {% include article_parts/term_dt.html type="it" title="サブスクリプション" %}
+  {% include article_parts/term_dt.html category_id="it" title="サブスクリプション" %}
   <dd markdown="span">定期購読のこと。
   {% include update_info_inline.html created="2020-10-09" updated="2020-10-09" %}
   </dd>
 </dl>
 
 <dl>
-  {% include article_parts/term_dt.html type="it" title="サーバーレス" %}
+  {% include article_parts/term_dt.html category_id="it" title="サーバーレス" %}
   <dd markdown="span">サーバーを意識せずにシステムを構築・運用すること。  
   サーバーが不要になるという意味ではない。  
   システムの実行時間での課金されたりする。
