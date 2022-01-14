@@ -17,7 +17,7 @@ updated: 2022-01-14
 ## <a name="け">け</a><a class="heading-anchor-permalink" href="#け">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-01-14" updated="2022-01-14" %}</div>
 <dl>
-  {% include article_parts/term_dt.html type="economy" sub_category_id="accounting" title="減損会計（げんそんかいけい）" %}
+  {% include article_parts/term_dt.html category_id="economy" sub_category_id="accounting" title="減損会計（げんそんかいけい）" %}
   <dd markdown="span">
   価値が低下している固定資産の[帳簿価額]({% link _economy_articles/accounting/term.md %}#簿価（ぼか）)を、実態に合わせて減額する会計処理。
   {% include update_info_inline.html created="2021-01-14" updated="2021-01-14" %}
@@ -36,7 +36,7 @@ updated: 2022-01-14
 ## <a name="ほ">ほ</a><a class="heading-anchor-permalink" href="#ほ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-01-14" updated="2022-01-14" %}</div>
 <dl>
-  {% include article_parts/term_dt.html type="economy" sub_category_id="accounting" title="簿価（ぼか）" %}
+  {% include article_parts/term_dt.html category_id="economy" sub_category_id="accounting" title="簿価（ぼか）" %}
   <dd markdown="span">
   「帳簿価額」の略語。会計帳簿に記録された資産・負債の評価額のこと。
   {% include update_info_inline.html created="2021-01-14" updated="2021-01-14" %}
