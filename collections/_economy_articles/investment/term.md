@@ -19,7 +19,7 @@ updated: 2021-06-01
 ## <a name="お">お</a><a class="heading-anchor-permalink" href="#お">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-01" updated="2021-06-01" %}</div>
 <dl>
-  {% include article_parts/term_dt.html category_id="economy" title="オプション取引" %}
+  {% include article_parts/term_dt.html category_id="economy" sub_category_id="investment" title="オプション取引" %}
   <dd markdown="span">
   オプションとは「権利」のことです。  
   オプション取引は、将来の決められた日にち(満期日)にあらかじめ決められた価格で買う（売る）「権利」を売買する取引です。  
@@ -42,7 +42,7 @@ updated: 2021-06-01
 ## <a name="さ">さ</a><a class="heading-anchor-permalink" href="#さ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-06-01" %}</div>
 <dl>
-  {% include article_parts/term_dt.html category_id="economy" title="先物取引" %}
+  {% include article_parts/term_dt.html category_id="economy" sub_category_id="investment" title="先物取引" %}
   <dd markdown="span">
   先物取引とは、あらかじめ決められた日（期日）に、日経平均株価などの指数を決められた価格で売買する取引です。  
   例えば日経225先物は、日経平均株価という株価指数を売買することで収益を狙う商品で、  
@@ -58,7 +58,7 @@ updated: 2021-06-01
 - [(au カブコム証券)　これを知らなきゃはじまらない 先物・オプション取引9つの基礎知識](https://kabu.com/first/fop.html)
 
 <dl>
-  {% include article_parts/term_dt.html category_id="economy" title="指値" %}
+  {% include article_parts/term_dt.html category_id="economy" sub_category_id="investment" title="指値" %}
   <dd markdown="span">希望価格を指定する注文のこと。  
   指値注文は希望価格を「100円」というようにセットするので、希望した価格に売買相手がいた場合に売買が成立します。
   {% include update_info_inline.html created="2021-05-29" updated="2021-05-29" %}
@@ -77,7 +77,7 @@ updated: 2021-06-01
 ## <a name="な">な</a><a class="heading-anchor-permalink" href="#な">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-29" updated="2021-05-29" %}</div>
 <dl>
-  {% include article_parts/term_dt.html category_id="economy" title="成行" %}
+  {% include article_parts/term_dt.html category_id="economy" sub_category_id="investment" title="成行" %}
   <dd markdown="span">希望価格を指定しない注文のこと。  
   成行注文は、いくらでもいいから買いたい！売りたい！という注文です。  
   成行注文は指値注文よりも優先して成立するので、  
@@ -98,7 +98,7 @@ updated: 2021-06-01
 ## <a name="ふ">ふ</a><a class="heading-anchor-permalink" href="#ふ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-01" updated="2021-06-01" %}</div>
 <dl>
-  {% include article_parts/term_dt.html category_id="economy" title="ブル・ベア型ファンド" %}
+  {% include article_parts/term_dt.html category_id="economy" sub_category_id="investment" title="ブル・ベア型ファンド" %}
   <dd markdown="span">
   [先物]({% link _economy_articles/investment/term.md %}#先物取引)や[オプション]({% link _economy_articles/investment/term.md %}#オプション取引)などを利用して、あらかじめ定めた基準となる指数の値動きに対して、同じ方向または逆の方向に概ね連動したパフォーマンスとなるように運用するファンド。  
   レバレッジの倍率を掛けることにより、基準となる指数を上回るリターンを得ることが期待できる一方で、市場動向等によっては大きく損をする可能性がある。  
