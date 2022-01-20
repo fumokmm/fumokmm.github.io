@@ -178,6 +178,16 @@
   sub_category_order: 10
   description: プログラミングお題についてのメモ
 
+- sub_category_id: programming
+  sub_category_label: プログラミング全般
+  link: /it/programming/
+  article_group:
+    - id: regular-expression-group
+      label: 正規表現
+  sub_category_group: programming_in_general
+  sub_category_order: 5
+  description: プログラミング全般についてのメモ
+
 - sub_category_id: powershell
   sub_category_label: PowerShell
   link: /it/powershell/
