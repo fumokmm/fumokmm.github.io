@@ -120,10 +120,18 @@ defaults:
       path: "_it_articles/structured_text_data_format"
     values:
       sub_category_id: "structured_text_data_format"
+
   - scope:
       path: "_it_articles/problem"
     values:
       sub_category_id: "problem"
+
+  # プログラミング全般
+  - scope:
+      path: "_it_articles/programming"
+    values:
+      sub_category_id: "programming"
+
   - scope:
       path: "_it_articles/powershell"
     values:
