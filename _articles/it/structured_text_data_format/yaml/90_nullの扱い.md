@@ -10,5 +10,5 @@ a: {em{null}em}
 b: {em{~}em}
 ```
 
-### 参考サイト
+### 参考
 - [(Symfony) YAMLフォーマット](https://symfony.com/legacy/doc/reference/1_2/ja/02-yaml)
