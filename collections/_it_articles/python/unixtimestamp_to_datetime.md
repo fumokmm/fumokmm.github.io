@@ -47,6 +47,9 @@ print(d) <em class="comment"># =&gt; "2022-01-26 09:10:01"</em>
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-01-26" updated="2022-01-26" %}</div>
+### ソース
+- [(language-examples) 0014_unixtimestamp_to_datetime.py](https://github.com/fumokmm/language-examples/blob/main/Python/0014_unixtimestamp_to_datetime.py)
+
 ### 参照
 - [(Wikipedia) UNIX時間](https://ja.wikipedia.org/wiki/UNIX%E6%99%82%E9%96%93)
 
