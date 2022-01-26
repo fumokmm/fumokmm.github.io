@@ -67,7 +67,7 @@ print(datetime<em>.utcnow</em>().isoformat(sep=" ", <em class="blue">timespec="m
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-22" updated="2021-12-22" %}</div>
 ### ソース
-- [(language-examples) 0011.timestamp_str.py](https://github.com/fumokmm/language-examples/blob/main/Python/0011.timestamp_str.py)
+- [(language-examples) 0011_timestamp_str.py](https://github.com/fumokmm/language-examples/blob/main/Python/0011_timestamp_str.py)
 
 ### 参照
 - [(Python) time.strftime](https://docs.python.org/ja/3/library/time.html#time.strftime)
