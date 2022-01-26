@@ -9,16 +9,16 @@ updated: 2021-01-29
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
-<li><a href="#add">追加(sys.sp_addextendedproperty)</a></li>
-<li><a href="#update">修正(sys.sp_updateextendedproperty)</a></li>
-<li><a href="#drop">削除(sys.sp_dropextendedproperty)</a></li>
-<li><a href="#confirmation">確認方法</a></li>
-<li><a href="#supplement">補足</a></li>
-<li><a href="#reference">参考</a></li>
+<li><a href="#追加(sys.sp_addextendedproperty)">追加(sys.sp_addextendedproperty)</a></li>
+<li><a href="#修正(sys.sp_updateextendedproperty)">修正(sys.sp_updateextendedproperty)</a></li>
+<li><a href="#削除(sys.sp_dropextendedproperty)">削除(sys.sp_dropextendedproperty)</a></li>
+<li><a href="#確認方法">確認方法</a></li>
+<li><a href="#補足">補足</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 
 * * *
-## <a name="add">追加(sys.sp_addextendedproperty)</a><a class="heading-anchor-permalink" href="#add">§</a>
+## <a name="追加(sys.sp_addextendedproperty)">追加(sys.sp_addextendedproperty)</a><a class="heading-anchor-permalink" href="#追加(sys.sp_addextendedproperty)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 テーブルや列に論理名を追加するには、sys.sp_addextendedpropertyを使います。
 
@@ -85,13 +85,12 @@ EXEC sys.sp_<em>add</em>extendedproperty @name=N'MS_Description'
                               , @level2name=N'<em class="blue">BillingAmount</em>'
 </pre>
 </div>
-
 - 上記例は、`dbo`というスキーマの、`User`というテーブルに「ユーザマスタ」という論理名を、さらにそのユーザマスタの`BillingAmount`という項目に、論理名として「課金額」を指定しているものです。
 
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="update">修正(sys.sp_updateextendedproperty)</a><a class="heading-anchor-permalink" href="#update">§</a>
+## <a name="修正(sys.sp_updateextendedproperty)">修正(sys.sp_updateextendedproperty)</a><a class="heading-anchor-permalink" href="#修正(sys.sp_updateextendedproperty)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 テーブルや列に論理名を修正するには、sys.sp_updateextendedpropertyを使います。
 
@@ -140,7 +139,7 @@ EXEC sys.sp_<em>update</em>extendedproperty @name=N'MS_Description' <em class="c
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="drop">削除(sys.sp_dropextendedproperty)</a><a class="heading-anchor-permalink" href="#drop">§</a>
+## <a name="削除(sys.sp_dropextendedproperty)">削除(sys.sp_dropextendedproperty)</a><a class="heading-anchor-permalink" href="#削除(sys.sp_dropextendedproperty)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 テーブルや列に論理名を削除するには、sys.sp_dropextendedpropertyを使います。  
 追加、修正と違うのは、`@value`が指定できないことくらいです。
@@ -186,7 +185,7 @@ EXEC sys.sp_<em>drop</em>extendedproperty @name=N'MS_Description' <em class="com
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="confirmation">確認方法</a><a class="heading-anchor-permalink" href="#confirmation">§</a>
+## <a name="確認方法">確認方法</a><a class="heading-anchor-permalink" href="#確認方法">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 ### SQLで確認する場合
 
@@ -233,7 +232,7 @@ order by
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="supplement">補足</a><a class="heading-anchor-permalink" href="#supplement">§</a>
+## <a name="補足">補足</a><a class="heading-anchor-permalink" href="#補足">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 今回ご紹介したSQL内に出てくる文字列部分の `N'xxx'` となっているのはUnicode文字列ですよという意味です。  
 古い内容ですが、[ここ](https://oshiete.goo.ne.jp/qa/280266.html)などの話が参考になります。
@@ -241,7 +240,7 @@ order by
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
+## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 - [(PROJECT GROUP) テーブルの列にコメントを追加・修正・削除・取得する](https://www.projectgroup.info/tips/SQLServer/SQL/SQL000035.html)
 - [(SQL Docs) sp_addextendedproperty (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-addextendedproperty-transact-sql?view=sql-server-ver15)
