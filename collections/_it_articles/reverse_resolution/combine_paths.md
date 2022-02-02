@@ -52,9 +52,6 @@ File.<em>join</em>                                 <em class="comment"># =&gt; "
 ### 関連メモ
 - [Rubyのメモ]({{link_to_it_ruby}})
 
-### 参照
-- [File.join](https://docs.ruby-lang.org/ja/latest/class/File.html#S_JOIN)
-
 {% include goto_pagetop.html %}
 
 {% include footnotes_link.html %}
