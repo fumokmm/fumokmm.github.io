@@ -231,6 +231,8 @@
   article_group:
     - id: string-group
       label: 文字列
+    - id: file-control-group
+      label: ファイル操作
     - id: path-control-group
       label: パス操作
   sub_category_group: programming_in_general

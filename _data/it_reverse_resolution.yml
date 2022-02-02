@@ -7,3 +7,7 @@ ruby:
 - article_id: combine_paths
   chapter_id: Rubyでパスを結合する
   updated: 2022-01-02
+python:
+- article_id: get_the_size_of_a_file
+  chapter_id: Pythonでファイルのサイズを取得する
+  updated: 2022-02-02
