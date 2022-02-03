@@ -11,3 +11,6 @@ python:
 - article_id: get_the_size_of_a_file
   chapter_id: Pythonでファイルのサイズを取得する
   updated: 2022-02-02
+- article_id: check_for_file_existence
+  chapter_id: Pythonでファイルの存在チェック
+  updated: 2022-02-03
