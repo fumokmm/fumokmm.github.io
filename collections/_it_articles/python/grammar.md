@@ -3,8 +3,11 @@ title: Pythonの文法
 article_group_id: basis-group
 display_order: 10
 created: 2020-12-10
-updated: 2021-12-20
+updated: 2022-02-04
 ---
+{% capture link_to_it_c %}{% link _it_articles/c/index.md %}{% endcapture %}
+{% assign link_to_it_c = link_to_it_c | remove: 'index' %}
+
 ここではPythonの文法を簡単にまとめておきます。特に記載のない場合、Python3を対象としています。
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -19,6 +22,8 @@ updated: 2021-12-20
                 <li><a href="#コマンドライン引数">コマンドライン引数</a></li>
                 <li><a href="#文">文</a></li>
                 <li><a href="#演算子">演算子</a></li>
+                <li><a href="#インクリメントとデクリメント">インクリメントとデクリメント</a></li>
+                <li><a href="#代入式">代入式</a></li>
                 <li><a href="#条件分岐 - if文">条件分岐 - if文</a></li>
                 <li><a href="#関数">関数</a></li>
             </ul>
@@ -231,7 +236,7 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
 
 * * *
 ## <a name="演算子">演算子</a><a class="heading-anchor-permalink" href="#演算子">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-11-21" updated="2021-11-21" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-11-21" updated="2022-02-04" %}</div>
 ### 算術演算子
 <table class="normal">
 	<tr>
@@ -281,6 +286,46 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
 		<td markdown="span">累乗</td>
 		<td markdown="span">2 ** 3</td>
 		<td markdown="span">8</td>
+	</tr>
+</table>
+
+### 累算代入演算子
+<table class="normal">
+	<tr>
+		<th markdown="span">演算子</th>
+		<th markdown="span">説明</th>
+		<th markdown="span">例</th>
+		<th markdown="span">iの評価結果</th>
+	</tr>
+	<tr>
+		<td markdown="span">+=</td>
+		<td markdown="span">足し算</td>
+		<td markdown="span">i += 2</td>
+		<td markdown="span">7 (iが5の場合)</td>
+	</tr>
+	<tr>
+		<td markdown="span">-=</td>
+		<td markdown="span">引き算</td>
+		<td markdown="span">i -= 2</td>
+		<td markdown="span">3 (iが5の場合)</td>
+	</tr>
+	<tr>
+		<td markdown="span">*=</td>
+		<td markdown="span">掛け算</td>
+		<td markdown="span">i *= 2</td>
+		<td markdown="span">10 (iが5の場合)</td>
+	</tr>
+	<tr>
+		<td markdown="span">/=</td>
+		<td markdown="span">割り算</td>
+		<td markdown="span">i /= 2</td>
+		<td markdown="span">2.5 (iが5の場合)</td>
+	</tr>
+	<tr>
+		<td markdown="span">**=</td>
+		<td markdown="span">累乗</td>
+		<td markdown="span">i **= 2</td>
+		<td markdown="span">25 (iが5の場合)</td>
 	</tr>
 </table>
 
@@ -362,6 +407,73 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
 
 ### 参考書籍
 - {% include book/book_493.html %} {% comment %} 独学プログラマー {% endcomment %}
+
+### 参考サイト
+- [(Deep Rain) 【python】数値をインクリメントする](https://www.deep-rain.com/programming/python/1772)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="インクリメントとデクリメント">インクリメントとデクリメント</a><a class="heading-anchor-permalink" href="#インクリメントとデクリメント">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-02-04" updated="2022-02-04" %}</div>
+### インクリメント
+- [C言語]({{link_to_it_c}})のような`++`はありません。
+- 代わりに`累算代入演算子`の`+=`を使います。
+<div class="code-box-syntax no-title">
+<pre>
+a = 10
+a += 1
+print(a) <em class="comment"># =&gt; 11</em>
+</pre>
+</div>
+
+### デクリメント
+- [C言語]({{link_to_it_c}})のような`--`はありません。
+- 代わりに`累算代入演算子`の`-=`を使います。
+<div class="code-box-syntax no-title">
+<pre>
+b = 10
+b <em>-=</em> 1
+print(b) <em class="comment"># =&gt; 9</em>
+</pre>
+</div>
+
+### 参考サイト
+- [(Deep Rain) 【python】数値をインクリメントする](https://www.deep-rain.com/programming/python/1772)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="代入式">代入式</a><a class="heading-anchor-permalink" href="#代入式">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-02-04" updated="2022-02-04" %}</div>
+- python3.8以降で利用できます。
+- 代入するときに`=`ではなく`:=`を使って代入します。
+  - 形がセイウチの目と牙(:=)に似ていることから、「セイウチ演算子」と呼ばれているそうです。
+- 代入した結果を値として評価したい場合に利用します。
+<div class="code-box">
+<div class="title">例</div>
+<pre>
+i = 5
+while (i <em>:=</em> i - 1):
+    print(i)
+</pre>
+</div>
+<div class="code-box">
+<div class="title">出力結果</div>
+<pre>
+4
+3
+2
+1
+</pre>
+</div>
+- [C言語]({{link_to_it_c}})とかではよく使ってたイディオムですね。
+
+### 参考サイト
+- [(Deep Rain) 【python】数値をインクリメントする](https://www.deep-rain.com/programming/python/1772)
+
+### 参照
+- [代入式](https://docs.python.org/ja/3/whatsnew/3.8.html#assignment-expressions)
 
 {% include goto_pagetop.html %}
 
