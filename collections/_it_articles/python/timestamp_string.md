@@ -3,7 +3,7 @@ title: Pythonでタイムスタンプ文字列を作成する
 article_group_id: reverse-lookup-group
 display_order: 70
 created: 2000-01-01
-updated: 2021-12-22
+updated: 2022-02-07
 ---
 
 
@@ -16,7 +16,7 @@ updated: 2021-12-22
 
 * * *
 ## <a name="年月日時分秒ミリ秒">年月日時分秒ミリ秒</a><a class="heading-anchor-permalink" href="#年月日時分秒ミリ秒">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-12-22" updated="2021-12-22" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-12-22" updated="2022-02-07" %}</div>
 ### datetime.strftimeを使う
 <div class="code-box no-title">
 <pre>
@@ -61,13 +61,19 @@ print(datetime<em>.utcnow</em>().isoformat(sep=" ", <em class="blue">timespec="m
 </div>
 `timespec`に`milliseconds`と与えることでミリ秒までの出力にすることができます。
 
+### 補足
+- 日付時刻のフォーマット文字列については、[こちら]({% link _it_articles/python/datetime_format_string.md %})を参照。
+
 {% include goto_pagetop.html %}
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-12-22" updated="2021-12-22" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-12-22" updated="2022-02-07" %}</div>
 ### ソース
 - [(language-examples) 0011_timestamp_str.py](https://github.com/fumokmm/language-examples/blob/main/Python/0011_timestamp_str.py)
+
+### 関連メモ
+- [Pythonの日付時刻フォーマット文字列]({% link _it_articles/python/datetime_format_string.md %})
 
 ### 参照
 - [(Python) time.strftime](https://docs.python.org/ja/3/library/time.html#time.strftime)
