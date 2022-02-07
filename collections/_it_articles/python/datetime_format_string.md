@@ -225,6 +225,9 @@ print(<em class="blue">"{:%x %X}"</em>.format(<em>now</em>))  <em class="comment
 ### ソース
 - [(language-examples) 0015_datetime_format_string.py](https://github.com/fumokmm/language-examples/blob/main/Python/0015_datetime_format_string.py)
 
+### 関連メモ
+- [Pythonでタイムスタンプ文字列を作成する]({% link _it_articles/python/timestamp_string.md %})
+
 ### 参照
 - [strftime() と strptime() の書式コード](https://docs.python.org/ja/3/library/datetime.html#strftime-and-strptime-format-codes)
 
