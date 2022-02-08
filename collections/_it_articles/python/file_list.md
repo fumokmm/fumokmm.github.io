@@ -71,7 +71,7 @@ for file in files:
 <pre>
 import glob
 
-files = glob.glob("/tmp/**/*")
+files = glob.glob("/tmp<em>/**/*</em>")
 for file in files:
     print(file)
 </pre>

@@ -1,5 +1,5 @@
 ---
-chapter_no: 1
+chapter_no: 10
 chapter_title: glob関数
 created: 2021-10-13
 updated: 2021-10-13
@@ -46,7 +46,7 @@ for file in files:
 ```
 import glob
 
-files = glob.glob("/tmp/**/*")
+files = glob.glob("/tmp{em{/**/*}em}")
 for file in files:
     print(file)
 ```
