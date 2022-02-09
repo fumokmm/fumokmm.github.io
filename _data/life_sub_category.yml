@@ -74,3 +74,10 @@
   sub_category_group: mind
   sub_category_order: 10
   description: 意識と無意識についてのメモ
+
+- sub_category_id: habituation
+  sub_category_label: 習慣化について
+  link: /life/habituation/
+  sub_category_group: habituation
+  sub_category_order: 10
+  description: 習慣化についてのメモ

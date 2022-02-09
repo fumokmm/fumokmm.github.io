@@ -2,7 +2,7 @@
 layout: default_layout
 title: 人生についてのメモ
 created: 2021-01-20
-updated: 2021-12-13
+updated: 2022-02-09
 ---
 ## こちらは断捨離についてのメモになります
 <table>
@@ -177,6 +177,23 @@ updated: 2021-12-13
 ## こちらは精神や心についてのメモになります
 <table>
     {% assign sub_categories = site.data.life_sub_category | where: 'sub_category_group', 'mind'
+                                                           | sort: 'sub_category_order' %}
+    {% for sub_cat in sub_categories %}
+    <tr>
+        {% assign articles = site.life_articles  | where: 'category_id', 'life'
+                                                 | where: 'sub_category_id', sub_cat.sub_category_id %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ sub_cat.link }}">{{ sub_cat.sub_category_label }}</a></td>
+        <td markdown="span">{{ sub_cat.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
+
+## こちらは習慣化についてのメモになります
+<table>
+    {% assign sub_categories = site.data.life_sub_category | where: 'sub_category_group', 'habituation'
                                                            | sort: 'sub_category_order' %}
     {% for sub_cat in sub_categories %}
     <tr>
