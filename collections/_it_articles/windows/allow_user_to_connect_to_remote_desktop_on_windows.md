@@ -1,6 +1,6 @@
 ---
 title: Windowsでユーザーにリモートデスクトップの接続を許可する
-article_group_id: tips-group
+article_group_id: server-management-group
 display_order: 30
 created: 2022-01-12
 updated: 2022-01-12
