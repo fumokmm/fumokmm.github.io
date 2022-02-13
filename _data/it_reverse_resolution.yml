@@ -17,3 +17,10 @@ python:
 - article_id: check_for_file_existence
   chapter_id: Pythonでファイルの存在チェック
   updated: 2022-02-03
+- article_id: absolute_path_full_path
+  chapter_id: Pythonで絶対パス・フルパスを取得する
+  updated: 2022-02-13
+powershell:
+- article_id: absolute_path_full_path
+  chapter_id: PowerShellで絶対パス・フルパスを取得する
+  updated: 2022-02-13

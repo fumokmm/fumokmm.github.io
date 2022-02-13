@@ -1,10 +1,11 @@
 ---
-chapter_no: 1
-chapter_title: Resolve-Pathを利用する
+chapter_no: 30
+chapter_title: PowerShellで絶対パス・フルパスを取得する
+sub_category_id: powershell
 created: 2021-06-13
-updated: 2021-06-13
+updated: 2022-02-13
 ---
-`Resolve-Path`を使います。
+- PowerShellの場合、`Resolve-Path`で取得できます。
 
 ```output
 {em:command{PS C:\temp\java-currentver>}em} ls
@@ -32,3 +33,6 @@ Path
 ----
 C:\temp\java-currentver\bin
 ```
+
+### 参照
+- [(Microsoft \| Docs) Resolve-Path](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/resolve-path?view=powershell-7.1)
