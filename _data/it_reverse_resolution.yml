@@ -7,6 +7,9 @@ ruby:
 - article_id: combine_paths
   chapter_id: Rubyでパスを結合する
   updated: 2022-01-02
+- article_id: absolute_path_full_path
+  chapter_id: Rubyで絶対パス・フルパスを取得する
+  updated: 2022-02-13
 python:
 - article_id: get_the_size_of_a_file
   chapter_id: Pythonでファイルのサイズを取得する
