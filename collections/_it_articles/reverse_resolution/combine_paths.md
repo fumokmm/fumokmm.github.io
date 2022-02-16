@@ -11,7 +11,7 @@ updated: 2022-01-02
 
 <ul id="index_ul">
 <li><a href="#Rubyでパスを結合する">Rubyでパスを結合する</a></li>
-<li><a href="#参考">参考</a></li>
+<li><a href="#関連メモ">関連メモ</a></li>
 </ul>
 
 * * *
@@ -47,9 +47,8 @@ File.<em>join</em>                                 <em class="comment"># =&gt; "
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-01-02" updated="2022-01-02" %}</div>
-### 関連メモ
 - [Rubyのメモ]({{link_to_it_ruby}})
 
 {% include goto_pagetop.html %}

@@ -11,7 +11,7 @@ updated: 2022-02-03
 
 <ul id="index_ul">
 <li><a href="#Pythonでファイルの存在チェック">Pythonでファイルの存在チェック</a></li>
-<li><a href="#参考">参考</a></li>
+<li><a href="#関連メモ">関連メモ</a></li>
 </ul>
 
 * * *
@@ -55,9 +55,8 @@ False
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-03" updated="2022-02-03" %}</div>
-### 関連メモ
 - [Pythonのメモ]({{link_to_it_python}})
 
 {% include goto_pagetop.html %}

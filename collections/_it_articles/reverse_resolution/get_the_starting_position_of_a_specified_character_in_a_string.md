@@ -11,7 +11,7 @@ updated: 2022-01-01
 
 <ul id="index_ul">
 <li><a href="#SQL(SQL Server)で文字列中の指定した文字の開始位置を取得する">SQL(SQL Server)で文字列中の指定した文字の開始位置を取得する</a></li>
-<li><a href="#参考">参考</a></li>
+<li><a href="#関連メモ">関連メモ</a></li>
 </ul>
 
 * * *
@@ -59,9 +59,8 @@ SELECT CHARINDEX('<em>は</em>', 'うらにわにはにわにわには<em class=
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-29" updated="2022-01-01" %}</div>
-### 関連メモ
 - [SQL Serverのメモ]({{link_to_it_sqlserver}})
 
 {% include goto_pagetop.html %}

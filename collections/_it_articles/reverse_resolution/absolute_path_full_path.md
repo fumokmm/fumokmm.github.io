@@ -14,7 +14,7 @@ updated: 2022-02-13
 <li><a href="#Rubyで絶対パス・フルパスを取得する">Rubyで絶対パス・フルパスを取得する</a></li>
 <li><a href="#Pythonで絶対パス・フルパスを取得する">Pythonで絶対パス・フルパスを取得する</a></li>
 <li><a href="#PowerShellで絶対パス・フルパスを取得する">PowerShellで絶対パス・フルパスを取得する</a></li>
-<li><a href="#参考">参考</a></li>
+<li><a href="#関連メモ">関連メモ</a></li>
 </ul>
 
 * * *
@@ -131,9 +131,8 @@ C:\temp\java-currentver\bin
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
+## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-13" updated="2022-02-13" %}</div>
-### 関連メモ
 - [Rubyのメモ]({{link_to_it_ruby}})
 - [Pythonのメモ]({{link_to_it_python}})
 - [PowerShellのメモ]({{link_to_it_powershell}})
