@@ -51,7 +51,7 @@ WHERE host_name = <em class="blue">'&lt;自分のホスト名&gt;'</em>
 * * *
 ## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-22" updated="2022-02-22" %}</div>
-- [SQL Serverでセッションを強制終了(kill)する]({% link _it_articles/sqlserver/kill_a_session.md %})
+- [SQL Serverでセッションを強制終了(KILL)する]({% link _it_articles/sqlserver/kill_a_session.md %})
 
 {% include goto_pagetop.html %}
 
