@@ -233,6 +233,8 @@
   article_group:
     - id: string-group
       label: 文字列
+    - id: file-io-group
+      label: ファイル入出力
     - id: file-control-group
       label: ファイル操作
     - id: path-control-group
