@@ -334,6 +334,8 @@
       label: サーバ管理
     - id: tips-group
       label: Tips
+    - id: trouble-shooting-group
+      label: トラブルシューティング
   sub_category_group: operating_system
   sub_category_order: 20
   description: Microsoft社が開発したオペレーティングシステムについてのメモ
