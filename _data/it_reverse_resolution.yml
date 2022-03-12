@@ -13,6 +13,9 @@ ruby:
 - article_id: read_text_file
   chapter_id: Rubyでテキストファイルから入力する(読み込み)
   updated: 2022-03-02
+- article_id: write_text_file
+  chapter_id: Rubyでテキストファイルへ出力する(書き込み)
+  updated: 2022-03-13
 python:
 - article_id: get_the_size_of_a_file
   chapter_id: Pythonでファイルのサイズを取得する

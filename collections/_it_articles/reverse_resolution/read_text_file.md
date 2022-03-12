@@ -3,7 +3,7 @@ title: テキストファイルから入力する(読み込み)
 article_group_id: file-io-group
 display_order: 10
 created: 2022-03-02
-updated: 2022-03-02
+updated: 2022-03-13
 ---
 {% capture link_to_it_ruby %}{% link _it_articles/ruby/index.md %}{% endcapture %}{% assign link_to_it_ruby = link_to_it_ruby | remove: 'index' %}
 
@@ -11,6 +11,7 @@ updated: 2022-03-02
 
 <ul id="index_ul">
 <li><a href="#Rubyでテキストファイルから入力する(読み込み)">Rubyでテキストファイルから入力する(読み込み)</a></li>
+<li><a href="#関連逆引きメモ">関連逆引きメモ</a></li>
 <li><a href="#関連メモ">関連メモ</a></li>
 </ul>
 
@@ -45,6 +46,13 @@ ccc
 
 ### サンプルソース
 - [(language-examples) 0009_read_text](https://github.com/fumokmm/language-examples/tree/main/Ruby/0009_read_text.rb)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="関連逆引きメモ">関連逆引きメモ</a><a class="heading-anchor-permalink" href="#関連逆引きメモ">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-03-13" updated="2022-03-13" %}</div>
+- [テキストファイルへ出力する(書き込み)]({% link _it_articles/reverse_resolution/write_text_file.md %})
 
 {% include goto_pagetop.html %}
 

@@ -1,7 +1,7 @@
 ---
 title: プログラミング逆引きのメモ
 created: 2021-12-29
-updated: 2022-03-02
+updated: 2022-03-13
 ---
 {% include sub_category_index/it_sub_category_index_with_groups.html
     category_id="it"
