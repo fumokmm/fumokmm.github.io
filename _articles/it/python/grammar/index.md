@@ -3,7 +3,7 @@ title: Pythonの文法
 article_group_id: basis-group
 display_order: 10
 created: 2020-12-10
-updated: 2022-02-04
+updated: 2022-03-16
 ---
 {% capture link_to_it_c %}{% link _it_articles/c/index.md %}{% endcapture %}
 {% assign link_to_it_c = link_to_it_c | remove: 'index' %}
