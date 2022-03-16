@@ -3,7 +3,7 @@ title: Pythonの文法
 article_group_id: basis-group
 display_order: 10
 created: 2020-12-10
-updated: 2022-02-04
+updated: 2022-03-16
 ---
 {% capture link_to_it_c %}{% link _it_articles/c/index.md %}{% endcapture %}
 {% assign link_to_it_c = link_to_it_c | remove: 'index' %}
@@ -26,6 +26,12 @@ updated: 2022-02-04
                 <li><a href="#代入式">代入式</a></li>
                 <li><a href="#条件分岐 - if文">条件分岐 - if文</a></li>
                 <li><a href="#関数">関数</a></li>
+            </ul>
+        </li>
+        <li><a href="#クラス">クラス</a>
+            <ul>
+                <li><a href="#クラスの定義">クラスの定義</a></li>
+                <li><a href="#クラスの継承">クラスの継承</a></li>
             </ul>
         </li>
         <li><a href="#参照・参考">参照・参考</a>
@@ -624,6 +630,146 @@ key3 =10
 
 {% include goto_pagetop.html %}
 
+## <a name="クラス">クラス</a><a class="heading-anchor-permalink" href="#クラス">§</a>
+* * *
+## <a name="クラスの定義">クラスの定義</a><a class="heading-anchor-permalink" href="#クラスの定義">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-03-16" updated="2022-03-16" %}</div>
+### 通常のクラス定義
+<div class="code-box-syntax no-title">
+<pre>
+class クラス名(継承元クラス名):
+    """クラスのドキュメンテーション"""
+    def method1(self, ...):
+       処理
+       　：
+       　：
+
+    def method2(self, ...):
+       処理
+       　：
+       　：
+</pre>
+</div>
+
+### 空クラス
+<div class="code-box-syntax no-title">
+<pre>
+class クラス名:
+    pass
+</pre>
+</div>
+
+### 参考サイト
+- [(Python学習講座) クラスの基本](https://www.python.ambitious-engineer.com/archives/295)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="クラスの継承">クラスの継承</a><a class="heading-anchor-permalink" href="#クラスの継承">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-03-16" updated="2022-03-16" %}</div>
+### クラスの継承
+- `Sub`クラスが`Base`クラスを継承
+<div class="code-box-syntax no-title">
+<pre>
+class <em>Base</em>:
+    """ 親クラス """
+ 
+    def func1(self):
+        print('func1')
+ 
+class Sub(<em>Base</em>):
+    """ 子クラス """
+ 
+    def func2(self):
+        print('func2')
+ 
+obj = Sub()  # 子クラスをインスタンス化
+obj.func1()  # 親クラスのメソッドも実行可能
+obj.func2()  
+</pre>
+</div>
+
+### 子クラス内から親クラスのメソッド呼び出し
+- 親クラスのメソッド呼び出しには`super()`を使います。
+<div class="code-box no-title">
+<pre>
+class <em>Base</em>:
+    """ 親クラス """
+ 
+    def func1(self):
+        print('func1')
+ 
+class Sub(<em>Base</em>):
+    """ 子クラス """
+ 
+    def func2(self):
+        <em>super().func1()</em> # 親クラスのメソッドを呼び出し
+        print('func2')
+</pre>
+</div>
+
+### 親クラスのコンストラクタ呼び出し
+<div class="code-box no-title">
+<pre>
+class <em>User</em>:
+    def __init__(self, name="", age=0):
+        self.name = name
+        self.age = age
+
+class Employee(<em>User</em>):
+    def __init__(self, name, age, department):
+        <em>super().__init__(name, age)</em>
+        self.department = department
+</pre>
+</div>
+
+### オーバーライド
+<div class="code-box no-title">
+<pre>
+class <em>User</em>:
+    def __init__(self, name="", age=0):
+        self.name = name
+        self.age = age
+
+    def say_name(self):
+        print("私の名前は" + self.name + "です。")
+
+class Employee(<em>User</em>):
+    def __init__(self, name, age, department):
+        <em>super().__init__(name, age)</em>
+        self.department = department
+
+    <em class="blue">def say_name(self):
+        print("名前は" + self.name + "、所属部署は" + self.department + "です。")</em>
+</pre>
+</div>
+
+### 多重継承
+<div class="code-box no-title">
+<pre>
+class <em>Base1</em>:
+    def func1(self):
+        print('func1')
+ 
+class <em class="blue">Base2</em>:
+    def func2(self):
+        print('func2')
+     
+class Sub(<em>Base1</em>, <em class="blue">Base2</em>):
+    def func(self):
+        <em>super().func1()</em>
+        <em class="blue">super().func2()</em>
+ 
+obj = Sub()
+obj.func()
+</pre>
+</div>
+
+### 参考サイト
+- [(Python学習講座) クラスの継承](https://www.python.ambitious-engineer.com/archives/312)
+
+{% include goto_pagetop.html %}
+
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参照">参照</a><a class="heading-anchor-permalink" href="#参照">§</a>
@@ -634,9 +780,11 @@ key3 =10
 
 * * *
 ## <a name="参考サイト">参考サイト</a><a class="heading-anchor-permalink" href="#参考サイト">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2021-12-20" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2022-03-16" %}</div>
 - [(note.nkmk.me) Pythonで関数の引数にリスト、タプル、辞書を展開して渡す](https://note.nkmk.me/python-argument-expand/)
 - [(note.nkmk.me) Pythonで識別子（変数名など）として有効・無効な名前、命名規則](https://note.nkmk.me/python-identifier-naming-rule/)
+- [(Python学習講座) クラスの基本](https://www.python.ambitious-engineer.com/archives/295)
+- [(Python学習講座) クラスの継承](https://www.python.ambitious-engineer.com/archives/312)
 - [(Python学習講座) プライベートメンバ](https://www.python.ambitious-engineer.com/archives/323)
 - [(Qiita) Pythonのselfとかinitを理解する](https://qiita.com/ishigen/items/2d8b6e6398743f2c8110)
 - [(Tech Teacher Blog) Pythonのコマンドライン引数がわかる！渡し方・取得方法を分かりやすく解説](https://www.tech-teacher.jp/blog/python-commandline/)
