@@ -62,11 +62,48 @@ aaa
 100
 </pre>
 </div>
-- 引数の型を宣言したり、初期値をセットしたり、必須パラメータにしたりといろいろ指定できますが割愛します。
+
+### スイッチ
+- オプション指定したかどうかを`bool型`で受け取る引数を作成できます(Paramを使います)。
+- 引数に`switch`という型を指定します。
+<div class="code-box">
+<div class="title">test3.ps1</div>
+<pre>
+Param(
+    <em>[switch]</em> $dev,
+    <em>[switch]</em> $stg,
+    <em>[switch]</em> $prd
+)
+Write-Host $dev
+Write-Host $stg
+Write-Host $prd
+</pre>
+</div>
+- `-dev`, `-stg`などの環境を表すようなスイッチを想定しています。
+- 例えば、`-stg`と指定してスクリプトを実行すると、$stgの値が`$true`となります。
+<div class="code-box-output">
+<div class="title">実行結果</div>
+<pre>
+<em class="command">PS C:\temp&gt;</em> .\test3.ps1
+False
+False
+False
+<em class="command">PS C:\temp&gt;</em> .\test3.ps1 <em>-stg</em>
+False
+<em>True</em>
+False
+<em class="command">PS C:\temp&gt;</em> .\test3.ps1 <em>-dev -stg -prd</em>
+<em>True
+True
+True</em>
+</pre>
+</div>
+- その他、引数の型を宣言したり、初期値をセットしたり、必須パラメータにしたりといろいろ指定できますが割愛します。
 - 詳細は参考サイトをご覧ください。
 
 ### 参考サイト
 - [(マイクロソフ党ブログ) Powershellで引数を受け取る](https://microsoftou.com/ps-arguments/)
+- [(Windows にまつわる e.t.c.) PowerShell スクリプト引数(Param)の Tips](http://www.vwnet.jp/windows/PowerShell/Param.htm)
 
 {% include goto_pagetop.html %}
 
