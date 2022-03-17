@@ -33,3 +33,6 @@ powershell:
 - article_id: absolute_path_full_path
   chapter_id: PowerShellで絶対パス・フルパスを取得する
   updated: 2022-02-13
+- article_id: script_arguments
+  chapter_id: PowerShellのスクリプトの引数
+  updated: 2022-03-17
