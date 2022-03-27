@@ -241,6 +241,8 @@
       label: パス操作
     - id: invoke-program-group
       label: プログラム起動
+    - id: data-format-io-group
+      label: データフォーマット
   sub_category_group: programming_in_general
   sub_category_order: 20
   description: プログラミング関連の逆引きメモ

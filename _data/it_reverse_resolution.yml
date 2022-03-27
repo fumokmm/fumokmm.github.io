@@ -29,6 +29,9 @@ python:
 - article_id: move_file
   chapter_id: Pythonでファイルを移動する
   updated: 2022-02-21
+- article_id: read_json
+  chapter_id: PythonでJSONの読み込み
+  updated: 2022-03-27
 powershell:
 - article_id: absolute_path_full_path
   chapter_id: PowerShellで絶対パス・フルパスを取得する
