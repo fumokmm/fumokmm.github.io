@@ -32,6 +32,9 @@ python:
 - article_id: read_json
   chapter_id: PythonでJSONの読み込み
   updated: 2022-03-27
+- article_id: check_the_string_whether_starts_with_specified_string
+  chapter_id: Pythonで文字列が指定した文字列で始まっているか調べる
+  updated: 2022-03-29
 powershell:
 - article_id: absolute_path_full_path
   chapter_id: PowerShellで絶対パス・フルパスを取得する
