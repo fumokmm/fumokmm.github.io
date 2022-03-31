@@ -42,3 +42,7 @@ powershell:
 - article_id: script_arguments
   chapter_id: PowerShellのスクリプトの引数
   updated: 2022-03-17
+excel:
+- article_id: convert_snake_case_to_camelcase
+  chapter_id: Excelでスネークケースをキャメルケースに変換する
+  updated: 2022-03-31
