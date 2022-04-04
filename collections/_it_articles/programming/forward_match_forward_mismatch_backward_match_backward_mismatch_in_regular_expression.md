@@ -9,17 +9,18 @@ updated: 2022-04-04
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
-<li><a href="#前方一致">前方一致</a></li>
-<li><a href="#前方不一致">前方不一致</a></li>
-<li><a href="#後方一致">後方一致</a></li>
-<li><a href="#後方不一致">後方不一致</a></li>
+<li><a href="#前方一致 (?<=expression)">前方一致 (?<=expression)</a></li>
+<li><a href="#前方不一致 (?<!expression)">前方不一致 (?<!expression)</a></li>
+<li><a href="#後方一致 (?=expression)">後方一致 (?=expression)</a></li>
+<li><a href="#後方不一致 (?!expression)">後方不一致 (?!expression)</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
 
 * * *
-## <a name="前方一致">前方一致</a><a class="heading-anchor-permalink" href="#前方一致">§</a>
+## <a name="前方一致 (?<=expression)">前方一致 (?<=expression)</a><a class="heading-anchor-permalink" href="#前方一致 (?<=expression)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-04" updated="2022-04-04" %}</div>
-<div class="code-box-syntax no-title">
+<div class="code-box-syntax">
+<div class="title">正規表現</div>
 <pre>
 (?&lt;=expression)
 </pre>
@@ -43,9 +44,10 @@ abcxy9
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="前方不一致">前方不一致</a><a class="heading-anchor-permalink" href="#前方不一致">§</a>
+## <a name="前方不一致 (?<!expression)">前方不一致 (?<!expression)</a><a class="heading-anchor-permalink" href="#前方不一致 (?<!expression)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-04" updated="2022-04-04" %}</div>
-<div class="code-box-syntax no-title">
+<div class="code-box-syntax">
+<div class="title">正規表現</div>
 <pre>
 (?&lt;!expression)
 </pre>
@@ -69,9 +71,10 @@ abcxy9
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="後方一致">後方一致</a><a class="heading-anchor-permalink" href="#後方一致">§</a>
+## <a name="後方一致 (?=expression)">後方一致 (?=expression)</a><a class="heading-anchor-permalink" href="#後方一致 (?=expression)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-04" updated="2022-04-04" %}</div>
-<div class="code-box-syntax no-title">
+<div class="code-box-syntax">
+<div class="title">正規表現</div>
 <pre>
 (?=expression)
 </pre>
@@ -95,9 +98,10 @@ abcxy9
 {% include goto_pagetop.html %}
 
 * * *
-## <a name="後方不一致">後方不一致</a><a class="heading-anchor-permalink" href="#後方不一致">§</a>
+## <a name="後方不一致 (?!expression)">後方不一致 (?!expression)</a><a class="heading-anchor-permalink" href="#後方不一致 (?!expression)">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-04" updated="2022-04-04" %}</div>
-<div class="code-box-syntax no-title">
+<div class="code-box-syntax">
+<div class="title">正規表現</div>
 <pre>
 (?!expression)
 </pre>
