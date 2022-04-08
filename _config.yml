@@ -43,10 +43,17 @@ defaults:
       path: "_it_articles/excel"
     values:
       sub_category_id: "excel"
+
   - scope:
       path: "_it_articles/go"
     values:
       sub_category_id: "go"
+
+  # Googleスプレッドシート
+  - scope:
+      path: "_it_articles/google_spreadsheet"
+    values:
+      sub_category_id: "google_spreadsheet"
 
   # Gradle
   - scope:
