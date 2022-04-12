@@ -22,9 +22,9 @@ updated: 2022-04-12
 <div class="code-box no-title">
 <pre>
 <em>Get-Content</em> `
-aaa.txt, `
-bbb.txt `
-| <em>Set-Content</em> ccc.txt
+<em class="blue">aaa.txt</em>, `
+<em class="blue">bbb.txt</em> `
+| <em>Set-Content</em> <em class="blue">ccc.txt</em>
 </pre>
 </div>
 <div class="code-box-input">

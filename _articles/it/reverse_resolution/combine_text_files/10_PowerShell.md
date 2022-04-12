@@ -9,9 +9,9 @@ updated: 2022-04-12
 
 ```
 {em{Get-Content}em} `
-aaa.txt, `
-bbb.txt `
-| {em{Set-Content}em} ccc.txt
+{em:blue{aaa.txt}em}, `
+{em:blue{bbb.txt}em} `
+| {em{Set-Content}em} {em:blue{ccc.txt}em}
 ```
 ```input:aaa.txt
 aaa
