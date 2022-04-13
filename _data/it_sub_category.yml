@@ -56,6 +56,16 @@
   sub_category_order: 10
   description: データベース全般について
 
+- sub_category_id: dotnet
+  sub_category_label: .NET
+  link: /it/dotnet/
+  article_group:
+    - id: tips-group
+      label: Tips
+  sub_category_group: programming_language
+  sub_category_order: 200
+  description: "マイクロソフトの作ったプログラミング言語のプログラミング言語のプラットフォーム。"
+
 # E
 - sub_category_id: excel
   sub_category_label: Excel
