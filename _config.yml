@@ -39,6 +39,13 @@ defaults:
       path: "_it_articles/database"
     values:
       sub_category_id: "database"
+
+  # .NET
+  - scope:
+      path: "_it_articles/dotnet"
+    values:
+      sub_category_id: "dotnet"
+
   - scope:
       path: "_it_articles/excel"
     values:
