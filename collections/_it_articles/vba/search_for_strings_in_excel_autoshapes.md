@@ -3,13 +3,14 @@ title: VBAでExcelオートシェイプ内の文字列を検索する
 article_group_id: excel-group
 display_order: 10
 created: 2022-04-12
-updated: 2022-04-12
+updated: 2022-04-19
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
 <li><a href="#コード">コード</a></li>
+<li><a href="#関連メモ">関連メモ</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
 
@@ -71,6 +72,13 @@ End Sub
 - テキストを持っていたら、`TextFrame`の`.TextRange`プロパティで`TextRange`を取得してきます。
 - `TextRange`の`.Text`プロパティから取得できるのが、そのオートシェイプ中の文字列です。
 - 上の例では、オートシェイプ内に`"たちつてと"`という文字列があったら、そのオートシェイプを選択しています。
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-04-19" updated="2022-04-19" %}</div>
+- [VBAを使ってWordで一括置換を行う]({% link _it_articles/vba/bulk_replace_in_word.md %})
 
 {% include goto_pagetop.html %}
 

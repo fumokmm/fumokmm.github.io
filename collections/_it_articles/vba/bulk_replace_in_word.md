@@ -12,6 +12,7 @@ updated: 2022-04-19
 <li><a href="#概要">概要</a></li>
 <li><a href="#ドキュメント内の文字列を一括置換">ドキュメント内の文字列を一括置換</a></li>
 <li><a href="#オートシェイプ内の文字列を一括置換">オートシェイプ内の文字列を一括置換</a></li>
+<li><a href="#関連メモ">関連メモ</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
 
@@ -130,8 +131,19 @@ End Sub
 {% include goto_pagetop.html %}
 
 * * *
+## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-04-19" updated="2022-04-19" %}</div>
+- [VBAでExcelオートシェイプ内の文字列を検索する]({% link _it_articles/vba/search_for_strings_in_excel_autoshapes.md %})
+
+{% include goto_pagetop.html %}
+
+* * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-19" updated="2022-04-19" %}</div>
+### サンプルソース
+- [(language-examples) 0005_bulk_replace_in_word](https://github.com/fumokmm/language-examples/tree/main/VBA/0005_bulk_replace_in_word)
+
+### 参考サイト
 - [(いつも隣にITのお仕事) Word VBAで文字列を置換する方法！いくつかの基本パターンを徹底解説](https://tonari-it.com/word-vba-replace-replacement/)
 
 {% include goto_pagetop.html %}
