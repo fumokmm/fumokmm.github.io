@@ -1,7 +1,7 @@
 ---
 title: VBAのメモ
 created: 2020-09-02
-updated: 2022-01-05
+updated: 2022-04-19
 ---
 こちらはVBAのメモになります。
 
