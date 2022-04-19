@@ -169,9 +169,10 @@ updated: 2022-04-13
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-04-13" updated="2022-04-13" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-04-13" updated="2022-04-19" %}</div>
 ### 参照
 - [(Microsoft \|Docs) カスタム日時形式文字列](https://docs.microsoft.com/ja-jp/dotnet/standard/base-types/custom-date-and-time-format-strings)
+- [(SQLServer逆引きノート) [SQLServer] 日付型をフォーマット指定して表示する（FORMAT）](https://sqlserver.programmer-reference.com/sqlserver-date-format/)
 
 {% include goto_pagetop.html %}
 
