@@ -2,13 +2,14 @@
 layout: default_layout
 title: テンプレートのページ
 created: 2020-11-21
-updated: 2021-05-20
+updated: 2022-04-19
 ---
 こちらはテンプレートのページです。ツールのページは[こちら]({% link tool.md %})です。
 
 - - -
 ## <a name="index">目次</a>
 
+- [ビルド・起動用コマンド](#build_invoke)
 - [見出し](#header)
 - [コードPRE](#code-box)
 - [コードPRE(makeArticle記法)](#code-box-make-article)
@@ -18,6 +19,33 @@ updated: 2021-05-20
 - [注釈](#footnotes)
 
 - - -
+## <a name="build_invoke">ビルド・起動用コマンド</a>
+
+### Jekyll起動のみ
+<div class="code-box no-title">
+<pre>
+bundle exec jekyll server
+</pre>
+</div>
+
+### updateAllのみ
+<div class="code-box no-title">
+<pre>
+./gradlew updateAll -Ptarget=/it/
+./gradlew updateAll -Ptarget=/it/python/
+./gradlew updateAll -Ptarget=/it/ clean
+</pre>
+</div>
+
+### updateAllしてから、Jekyll起動もする
+<div class="code-box no-title">
+<pre>
+./gradlew updateAll -Ptarget=/it/ && bundle exec jekyll server
+./gradlew updateAll -Ptarget=/it/python/ && bundle exec jekyll server
+./gradlew updateAll -Ptarget=/it/ clean && bundle exec jekyll server
+</pre>
+</div>
+
 ## <a name="header">見出し</a>
 
 ### 書式
