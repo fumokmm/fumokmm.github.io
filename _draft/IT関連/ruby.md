@@ -41,3 +41,7 @@ https://qiita.com/hkengo/items/3c894f408931d0d0c9d5
     https://docs.ruby-lang.org/ja/latest/class/Date.html
     https://blog.tokoyax.com/entry/ruby/increment インクリメントがない
     http://blog.tavi-travelog.net/2012/10/25/increment-of-ruby
+
+
+https://docs.ruby-lang.org/ja/latest/method/String/i/rpartition.html
+https://docs.ruby-lang.org/ja/latest/method/Enumerable/i/minmax.html
