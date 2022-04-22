@@ -123,6 +123,10 @@ WHEN NOT MATCHED BY SOURCE THEN
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-22" updated="2022-04-22" %}</div>
+### 参照
+- [(Microsoft \| Docs) MERGE (Transact-SQL)](https://docs.microsoft.com/ja-jp/sql/t-sql/statements/merge-transact-sql?view=sql-server-ver15)
+
+### 参考サイト
 - [(JOHOBASE) SQLServerのMERGEでINSERT/UPDATE/DELETEを1回のSQLで実行する](https://johobase.com/sqlserver-merge-insert-update-delete/)
 
 {% include goto_pagetop.html %}
