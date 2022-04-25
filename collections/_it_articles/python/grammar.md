@@ -3,7 +3,7 @@ title: Pythonの文法
 article_group_id: basis-group
 display_order: 10
 created: 2020-12-10
-updated: 2022-03-16
+updated: 2022-04-25
 ---
 {% capture link_to_it_c %}{% link _it_articles/c/index.md %}{% endcapture %}
 {% assign link_to_it_c = link_to_it_c | remove: 'index' %}
@@ -214,7 +214,7 @@ print(<em>sys.argv[3]</em>) <em class="comment"># 引数3</em>
 
 * * *
 ## <a name="文">文</a><a class="heading-anchor-permalink" href="#文">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2021-10-17" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-10-17" updated="2022-04-25" %}</div>
 - Pythonには2種類の文があります。`単純文`と`複合文`です。
   - `単純文`は1行のコードで表現されます。
   - `複合文`は通常複数の行で表現されます。
@@ -234,6 +234,27 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
     print("Hello, World!")  <em class="comment"># ←スイート：インデントされている、ヘッダーに制御される</em>
 </pre>
 </div>
+
+### 文を複数行に分けて書く
+- 文を複数行に分けて書きたい場合は、末尾にバックスラッシュを付けます。
+<div class="code-box no-title">
+<pre>
+total = 123 <em>\</em>
+      + 456 <em>\</em>
+      + 789
+</pre>
+</div>
+
+- `(...)`、`[...]`、`{...}`中のカンマの後ろのバックスラッシュは省略できます。
+<div class="code-box no-title">
+<pre>
+months = ["Jan", "Feb", "Mar", "Apr",
+          "May", "Jun", "Jul", "Aug"
+          "Seq", "Oct", "Nov", "Dec"] 
+</pre>
+</div>
+
+
 
 ### 参考
 - {% include book/book_493.html %} {% comment %} 独学プログラマー {% endcomment %}
