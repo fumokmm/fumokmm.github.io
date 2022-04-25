@@ -1,7 +1,7 @@
 ---
 title: Chromeのメモ
 created: 2020-09-25
-updated: 2021-10-21
+updated: 2022-04-25
 ---
 こちらはChromeのメモになります。
 
