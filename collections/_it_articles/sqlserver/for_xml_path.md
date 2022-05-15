@@ -3,7 +3,7 @@ title: SQL Serverで取得結果行を1列に連結するSQL(FOR XML PATH)
 article_group_id: sql-group
 display_order: 30
 created: 2020-11-07
-updated: 2022-01-09
+updated: 2022-05-15
 ---
 複数取得される結果を結合して1列で取得したい場合があります。SQL Serverでそれを行うSQLについてメモしておきます。
 
@@ -56,7 +56,7 @@ SELECT * FROM Table1 ORDER BY NO
 
 * * *
 ## <a name="さっそくやってみよう">さっそくやってみよう</a><a class="heading-anchor-permalink" href="#さっそくやってみよう">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-01-09" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-05-15" %}</div>
 さっそくやって行きましょう。SQL Serverでは、`FOR XML PATH`を使うことで実現することができます。
 
 <div class="code-box">
@@ -81,8 +81,8 @@ FROM
 |黄組|,伊藤,渡辺|
 |黄組|,伊藤,渡辺|
 
-いい感じになってきましたが、先頭の `,` が邪魔なので[STUFF関数](#stuff)を使って除去してみましょう。  
-[STUFF関数](#stuff)を組み込んでみるとこうなります。取得する先頭に`,`が付くので、それを除去しています。
+いい感じになってきましたが、先頭の `,` が邪魔なので[STUFF関数](#補足1 STUFF関数)を使って除去してみましょう。  
+[STUFF関数](#補足1 STUFF関数)を組み込んでみるとこうなります。取得する先頭に`,`が付くので、それを除去しています。
 
 <div class="code-box">
 <div class="title">SQL</div>
@@ -122,8 +122,8 @@ SELECT
     ) AS MEMBER
 FROM
     <em>(SELECT DISTINCT TEAM FROM Table1)</em> a
-<em>ORDER BY
-	a.TEAM</em>
+ORDER BY
+    a.TEAM
 </pre>
 </div>
 
