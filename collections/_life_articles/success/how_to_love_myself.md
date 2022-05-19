@@ -27,7 +27,7 @@ updated: 2022-05-18
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-05-18" updated="2022-05-18" %}</div>
 ### 参考書籍
-- {% include book/book_677.html %} {% comment %} うまくいっている人の考え方 {% endcomment %}
+- {% include book/book_677.html %} {% comment %} うまくいっている人の考え方 (1 自分を許す){% endcomment %}
 
 {% include goto_pagetop.html %}
 
