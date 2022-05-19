@@ -2,7 +2,7 @@
 title: 自分を好きになる方法
 display_order: 20
 created: 2022-05-18
-updated: 2022-05-18
+updated: 2022-05-19
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -38,7 +38,11 @@ updated: 2022-05-18
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-05-18" updated="2022-05-19" %}</div>
 ### 参考書籍
-- {% include book/book_677.html %} {% comment %} うまくいっている人の考え方 (1 自分を許す){% endcomment %}
+- {% include book/book_677.html %} {% comment %}
+うまくいっている人の考え方
+1 自分を許す
+2 自分の長所にだけ 意識を向ける
+{% endcomment %}
 
 {% include goto_pagetop.html %}
 
