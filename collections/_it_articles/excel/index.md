@@ -1,7 +1,7 @@
 ---
 title: Excelのメモ
 created: 2020-12-17
-updated: 2022-05-18
+updated: 2022-05-29
 ---
 {% include sub_category_index/it_sub_category_index_with_groups.html
     category_id="it"

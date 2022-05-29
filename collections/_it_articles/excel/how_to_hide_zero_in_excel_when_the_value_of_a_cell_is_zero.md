@@ -3,7 +3,7 @@ title: Excelでセルの値が0の時に0を非表示にする方法
 article_group_id: tips-group
 display_order: 30
 created: 2022-05-18
-updated: 2022-05-18
+updated: 2022-05-29
 ---
 Excelで他のセルの値を参照してくるとき、セルの値が空白だったりすると「0」と表示されてしまう場合があります。そんなときにその「0」の値を消す方法をメモしておきます。
 
@@ -15,6 +15,7 @@ Excelで他のセルの値を参照してくるとき、セルの値が空白だ
 <li><a href="#IF関数を使う">IF関数を使う</a></li>
 <li><a href="#セルの書式設定使う">セルの書式設定使う</a></li>
 <li><a href="#Excelのオプションで指定する">Excelのオプションで指定する</a></li>
+<li><a href="#関連メモ">関連メモ</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
 
@@ -36,14 +37,14 @@ Excelで他のセルの値を参照してくるとき、セルの値が空白だ
 
 * * *
 ## <a name="IF関数を使う">IF関数を使う</a><a class="heading-anchor-permalink" href="#IF関数を使う">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-05-18" updated="2022-05-18" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-05-18" updated="2022-05-29" %}</div>
 - 以下のような感じでIF関数を使って「0」の時は空文字に置き換えます。
 <div class="code-box no-title">
 <pre>
 =IF(<em>A1=0</em>, <em class="blue">""</em>, A1)
 </pre>
 </div>
-- LET関数が使える環境では以下のような数式の方が効率的です。
+- [LET関数]({% link _it_articles/excel/formula_let.md %})が使える環境では以下のような数式の方が効率的です。
 <div class="code-box no-title">
 <pre>
 =LET(<em class="orange">val</em>, A1, IF(<em>val=0</em>, <em class="blue">""</em>, <em class="orange">val</em>))
@@ -67,6 +68,13 @@ Excelで他のセルの値を参照してくるとき、セルの値が空白だ
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumokmm/20220518/20220518234859.png)
 </p>
 - ※影響範囲はシート単位です。
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-05-29" updated="2022-05-29" %}</div>
+- [ExcelのLET関数]({% link _it_articles/excel/formula_let.md %})
 
 {% include goto_pagetop.html %}
 
