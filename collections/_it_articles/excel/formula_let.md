@@ -12,6 +12,7 @@ LET関数を使うと関数の中で一時的に計算結果やセル値など�
 <ul id="index_ul">
 <li><a href="#構文">構文</a></li>
 <li><a href="#使用例">使用例</a></li>
+<li><a href="#関連メモ">関連メモ</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
 
@@ -35,6 +36,13 @@ LET関数を使うと関数の中で一時的に計算結果やセル値など�
 ## <a name="使用例">使用例</a><a class="heading-anchor-permalink" href="#使用例">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-05-29" updated="2022-05-29" %}</div>
 書き途中
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="関連メモ">関連メモ</a><a class="heading-anchor-permalink" href="#関連メモ">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-05-29" updated="2022-05-29" %}</div>
+- [Excelでセルの値が0の時に0を非表示にする方法]({% link _it_articles/excel/how_to_hide_zero_in_excel_when_the_value_of_a_cell_is_zero.md %})
 
 {% include goto_pagetop.html %}
 
