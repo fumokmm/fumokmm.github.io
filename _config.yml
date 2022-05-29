@@ -46,6 +46,7 @@ defaults:
     values:
       sub_category_id: "dotnet"
 
+  # Excel
   - scope:
       path: "_it_articles/excel"
     values:

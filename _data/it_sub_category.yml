@@ -73,6 +73,8 @@
   article_group:
     - id: tips-group
       label: Tips
+    - id: formula-group
+      label: 関数
   sub_category_group: application
   sub_category_order: 1
   description: Microsoft Excelについて
