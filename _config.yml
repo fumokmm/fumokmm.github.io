@@ -324,6 +324,12 @@ defaults:
     values:
       sub_category_id: "paradox"
 
+  # 未来予測のメモ
+  - scope:
+      path: "_science_articles/future_prediction"
+    values:
+      sub_category_id: "future_prediction"
+
 ################################## 経済
   - scope:
       path: "_economy_articles"

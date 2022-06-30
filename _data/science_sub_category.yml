@@ -21,3 +21,10 @@
   sub_category_group: paradox
   sub_category_order: 10
   description: パラドックスのメモ
+
+- sub_category_id: future_prediction
+  sub_category_label: 未来予測
+  link: /science/future_prediction/
+  sub_category_group: future_prediction
+  sub_category_order: 10
+  description: 未来予測のメモ
