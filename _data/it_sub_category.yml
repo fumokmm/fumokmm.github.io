@@ -319,6 +319,16 @@
   sub_category_order: 2
   description: Apacheソフトウェア財団が開発している集中型バージョン管理システムSubversion(SVN)についてのメモ
 
+- sub_category_id: scheme
+  sub_category_label: Scheme
+  link: /it/scheme/
+  article_group:
+    - id: getting-started-group
+      label: 導入
+  sub_category_group: programming_language
+  sub_category_order: 75
+  description: Lispの方言の一つ、Schemeについてのメモ
+
 # T
 - sub_category_id: teams
   sub_category_label: Teams
