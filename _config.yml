@@ -178,6 +178,12 @@ defaults:
     values:
       sub_category_id: "sakuraeditor"
 
+  # Scheme
+  - scope:
+      path: "_it_articles/scheme"
+    values:
+      sub_category_id: "scheme"
+
   - scope:
       path: "_it_articles/teams"
     values:
