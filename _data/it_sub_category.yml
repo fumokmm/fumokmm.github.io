@@ -94,7 +94,6 @@
   sub_category_order: 80
   description: Google社が開発したプログラミング言語Goについてのメモ
 
-# G
 - sub_category_id: google_spreadsheet
   sub_category_label: Googleスプレッドシート
   link: /it/google_spreadsheet/
