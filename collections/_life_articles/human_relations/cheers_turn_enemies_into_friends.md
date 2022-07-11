@@ -39,7 +39,7 @@ updated: 2022-06-28
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-06-28" updated="2022-06-28" %}</div>
 ### 参考書籍
-- {% include book/book_677.html %} {% comment %} うまくいっている人の考え方 {% endcomment %}
+- {% include book/book_461.html %} {% comment %} 「会社行きたくない」と泣いていた僕が無敵になった理由 {% endcomment %}
 
 {% include goto_pagetop.html %}
 
