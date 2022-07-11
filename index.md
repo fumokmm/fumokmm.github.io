@@ -1,7 +1,7 @@
 ---
 title: Home
 created: 2020-09-02
-updated: 2022-07-10
+updated: 2022-07-11
 ---
 # これは何？
 Think Twiceにお越しいただき、ありがとうございます。このサイトは[@fumokmm](https://twitter.com/fumokmm)のメモサイトです。  
