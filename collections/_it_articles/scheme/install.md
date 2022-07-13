@@ -32,7 +32,7 @@ $ sudo apt-get install gauche
 
 <div class="code-box-output no-title">
 <pre>
-$ <em class="command">gosh</em>
+$ gosh
 gosh&gt; (+ 1 2)
 3
 gosh&gt; (exit)
@@ -54,7 +54,7 @@ $
 <div class="code-box-output">
 <div class="title">実行</div>
 <pre>
-$ <em class="command">gosh</em> hello.scm 
+$ gosh hello.scm 
 Hello, World
 こんにちは、世界
 3

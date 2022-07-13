@@ -2,7 +2,7 @@
 chapter_no: 50
 chapter_title: 補足3 FOR XML PATH
 created: 2020-11-07
-updated: 2020-11-07
+updated: 2022-07-13
 ---
 FOR XML PATHはSQLの後ろに付与して、XMLとして結果を取得するものです。  
 例えば以下のように全データを取得してみると…
@@ -86,7 +86,7 @@ SELECT * FROM Table1 FOR XML PATH({em{'hoge'}em})
 {em{</hoge>}em}
 ```
 
-そして、空文字を渡すことで、要素そのものをなくすこともできます。
+そして、空文字を渡すことで、要素そのものをなくすこともできます。（構造崩壊）
 
 ```:SQL
 SELECT * FROM Table1 FOR XML PATH({em{''}em})
@@ -113,7 +113,7 @@ SELECT * FROM Table1 FOR XML PATH({em{''}em})
 <MEMBER>渡辺</MEMBER>
 ```
 
-さらに、取得する列名を失くすと、要素のタグを消失させることができます。
+さらに、取得する列名を失くすと、要素のタグを消失させることができます。（もはやXMLですらない）
 
 ```:SQL
 SELECT

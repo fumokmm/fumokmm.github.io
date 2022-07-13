@@ -3,8 +3,10 @@ title: SQL Serverで取得結果行を1列に連結するSQL(FOR XML PATH)
 article_group_id: sql-group
 display_order: 30
 created: 2020-11-07
-updated: 2022-05-15
+updated: 2022-07-13
 ---
+{% capture link_to_it_oracle %}{% link _it_articles/oracle/index.md %}{% endcapture %}{% assign link_to_it_oracle = link_to_it_oracle | remove: 'index' %}
+
 複数取得される結果を結合して1列で取得したい場合があります。SQL Serverでそれを行うSQLについてメモしておきます。
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -205,7 +207,7 @@ FROM
 
 * * *
 ## <a name="補足3 FOR XML PATH">補足3 FOR XML PATH</a><a class="heading-anchor-permalink" href="#補足3 FOR XML PATH">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-07-13" %}</div>
 FOR XML PATHはSQLの後ろに付与して、XMLとして結果を取得するものです。  
 例えば以下のように全データを取得してみると…
 
@@ -300,7 +302,7 @@ SELECT * FROM Table1 FOR XML PATH(<em>'hoge'</em>)
 </pre>
 </div>
 
-そして、空文字を渡すことで、要素そのものをなくすこともできます。
+そして、空文字を渡すことで、要素そのものをなくすこともできます。（構造崩壊）
 
 <div class="code-box">
 <div class="title">SQL</div>
@@ -333,7 +335,7 @@ SELECT * FROM Table1 FOR XML PATH(<em>''</em>)
 </pre>
 </div>
 
-さらに、取得する列名を失くすと、要素のタグを消失させることができます。
+さらに、取得する列名を失くすと、要素のタグを消失させることができます。（もはやXMLですらない）
 
 <div class="code-box">
 <div class="title">SQL</div>
@@ -392,8 +394,8 @@ SELECT
 
 * * *
 ## <a name="補足4 他のデータベースでは">補足4 他のデータベースでは</a><a class="heading-anchor-permalink" href="#補足4 他のデータベースでは">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
-なお、MySQL(MariaDB) では、`GROUP_CONCAT関数`、Oracleでは`LISTAGG関数`をで同様の処理が可能とのことです。
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-07-13" %}</div>
+なお、MySQL(MariaDB) では`GROUP_CONCAT関数`、[Oracle]({{link_to_it_oracle}})では`LISTAGG関数`で同様の処理が可能とのことです。
 
 {% include goto_pagetop.html %}
 
