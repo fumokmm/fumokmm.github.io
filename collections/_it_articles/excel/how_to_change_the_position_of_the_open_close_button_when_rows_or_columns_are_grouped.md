@@ -17,7 +17,7 @@ updated: 2022-07-13
 * * *
 ## <a name="はじめに">はじめに</a><a class="heading-anchor-permalink" href="#はじめに">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-07-13" updated="2022-07-13" %}</div>
-Excelで行や列をグループ化したとき、開閉ボタンの位置はデフォルトだと「右」や「上」になっており、  
+Excelで行や列をグループ化したとき、開閉ボタンの位置はデフォルトだと「右」や「下」になっており、  
 これが直感と合っていないような気がします。  
 直感的には列なら「左」に、行なら「上」になっていて欲しいです。
 
