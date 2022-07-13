@@ -84,6 +84,58 @@ article.main {
         // margin-right: auto;
     }
 
+    // 記事内の画像のサイズ（横幅）
+    p.size-1 {
+        img {
+            width: 100px;
+        }
+    }
+    p.size-2 {
+        img {
+            width: 200px;
+        }
+    }
+    p.size-3 {
+        img {
+            width: 300px;
+        }
+    }
+    p.size-4 {
+        img {
+            width: 400px;
+        }
+    }
+    p.size-5 {
+        img {
+            width: 500px;
+        }
+    }
+    p.size-6 {
+        img {
+            width: 600px;
+        }
+    }
+    p.size-7 {
+        img {
+            width: 700px;
+        }
+    }
+    p.size-8 {
+        img {
+            width: 800px;
+        }
+    }
+    p.size-9 {
+        img {
+            width: 900px;
+        }
+    }
+    p.size-10 {
+        img {
+            width: 1000px;
+        }
+    }
+
     // 定義の説明
     dl {
         // 用語
