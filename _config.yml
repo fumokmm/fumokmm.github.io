@@ -205,6 +205,12 @@ defaults:
     values:
       sub_category_id: windows_batch
 
+  # Zig
+  - scope:
+      path: "_it_articles/zig"
+    values:
+      sub_category_id: "zig"
+
 ################################## 人生
   - scope:
       path: "_life_articles"
