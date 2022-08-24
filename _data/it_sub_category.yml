@@ -404,6 +404,16 @@
   sub_category_order: 1
   description: 構造化テキストデータフォーマットのメモ
 
+- sub_category_id: zig
+  sub_category_label: Zig
+  link: /it/zig/
+  article_group:
+    - id: getting-started-group
+      label: 導入
+  sub_category_group: programming_language
+  sub_category_order: 210
+  description: CやGoやRustなどと同じコンパイル言語、Zigについてのメモ
+
 # そ
 - sub_category_id: other
   sub_category_label: その他
