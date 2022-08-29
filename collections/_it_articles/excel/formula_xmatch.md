@@ -3,7 +3,7 @@ title: ExcelのXMATCH関数
 article_group_id: formula-group
 display_order: 50
 created: 2022-07-14
-updated: 2022-07-14
+updated: 2022-08-29
 ---
 XMATCH関数はMATCH関数の上位互換です。使える環境の人は使わない手はないです。
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -33,8 +33,13 @@ XMATCH関数はMATCH関数の上位互換です。使える環境の人は使わ
 
 * * *
 ## <a name="使用例">使用例</a><a class="heading-anchor-permalink" href="#使用例">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-07-14" updated="2022-07-14" %}</div>
-書き途中
+<div class="chapter-updated">{% include update_info_inline.html created="2022-07-14" updated="2022-08-29" %}</div>
+<p class="center size-6" markdown="span">
+![](https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumokmm/20220829/20220829233438.png)
+</p>
+<p class="center size-6" markdown="span">
+![](https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumokmm/20220829/20220829233444.png)
+</p>
 
 {% include goto_pagetop.html %}
 
