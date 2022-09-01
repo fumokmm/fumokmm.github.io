@@ -49,8 +49,8 @@ XMATCH(検索値, 検索範囲, 一致モード)
 <pre>
 XMATCH("b", ["a", "b", "e", "f", "c"], 0) <em class="comment">=&gt; 2</em>
 XMATCH("d", ["a", "b", "e", "f", "c"], 0) <em class="comment">=&gt; "#N/A"</em>
-XMATCH("d", ["a", "b", "e", "f", "c"], -1) <em class="comment">=&gt; 5  # dを探すがdがないので、dの次に小さい項目(=c)のインデックスが返る</em>
-XMATCH("d", ["a", "b", "g", "f", "c"], 1) <em class="comment">=&gt; 4  # dを探すがdがないので、dの次に大きな項目(=f)のインデックスが返る</em>
+XMATCH("d", ["a", "b", "e", "f", "c"], -1) <em class="comment">=&gt; 5 # dを探すがdがないので、この中にある内でdの次に小さい項目(=c)のインデックスが返る</em>
+XMATCH("d", ["a", "b", "g", "f", "c"], 1) <em class="comment">=&gt; 4 # dを探すがdがないので、この中にある内でdの次に大きな項目(=f)のインデックスが返る</em>
 </pre>
 </div>
 
