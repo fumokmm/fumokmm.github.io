@@ -291,6 +291,12 @@ defaults:
     values:
       sub_category_id: "habituation"
 
+  # 過ごし方について
+  - scope:
+      path: "_life_articles/ways_to_spend_time"
+    values:
+      sub_category_id: "ways_to_spend_time"
+
 ################################## 読書
   - scope:
       path: "_reading_articles"
