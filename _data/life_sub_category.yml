@@ -81,3 +81,10 @@
   sub_category_group: habituation
   sub_category_order: 10
   description: 習慣化についてのメモ
+
+- sub_category_id: ways_to_spend_time
+  sub_category_label: 過ごし方について
+  link: /life/ways_to_spend_time/
+  sub_category_group: spend
+  sub_category_order: 10
+  description: 過ごし方についてのメモ
