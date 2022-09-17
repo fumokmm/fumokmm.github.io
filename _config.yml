@@ -297,6 +297,12 @@ defaults:
     values:
       sub_category_id: "ways_to_spend_time"
 
+  # 実践ワークについて
+  - scope:
+      path: "_life_articles/practice"
+    values:
+      sub_category_id: "practice"
+
 ################################## 読書
   - scope:
       path: "_reading_articles"
