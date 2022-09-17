@@ -1,20 +1,9 @@
 ---
-title: 断捨離について
+title: ミニマリズムについて
 created: 2021-01-20
 updated: 2021-06-26
 ---
-こちらは断捨離についてのメモになります。
-
-<ul>
-    {% assign list = site.life_articles | where: 'category_id', 'life'
-                                        | where: 'sub_category_id', 'minimalism'
-                                        | sort: 'display_order' %}
-    {% for item in list %}
-        {% assign filename = item.url | split: '/' | reverse | first %}
-        {% if filename != 'index' %}
-            <li>
-            <a href="{{ item.url }}">{{ item.title }}</a> ({{ item.updated }}更新)
-            </li>
-        {% endif %}
-    {% endfor %}
-</ul>
+{% include sub_category_index/life_sub_category_index.html
+    category_id="life"
+    sub_category_id="minimalism"
+    description="こちらはミニマリズムについてのメモになります。" %}

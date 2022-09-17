@@ -219,7 +219,7 @@ defaults:
       category_id: "life"
 
 # 人生のサブカテゴリ
-  # 断捨離
+  # ミニマリズム
   - scope:
       path: "_life_articles/minimalism"
     values:

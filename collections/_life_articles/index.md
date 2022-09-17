@@ -4,7 +4,7 @@ title: 人生についてのメモ
 created: 2021-01-20
 updated: 2022-09-15
 ---
-## こちらは断捨離についてのメモになります
+## こちらはミニマリズムについてのメモになります
 <table>
     {% assign sub_categories = site.data.life_sub_category | where: 'sub_category_group', 'minimalism'
                                                            | sort: 'sub_category_order' %}
