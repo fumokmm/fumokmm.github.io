@@ -88,3 +88,10 @@
   sub_category_group: spend
   sub_category_order: 10
   description: 過ごし方についてのメモ
+
+- sub_category_id: practice
+  sub_category_label: 実践ワークについて
+  link: /life/practice/
+  sub_category_group: self_improvement
+  sub_category_order: 10
+  description: 実践ワークについてのメモ
