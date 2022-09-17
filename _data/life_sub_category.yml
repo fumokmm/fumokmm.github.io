@@ -1,9 +1,9 @@
 - sub_category_id: minimalism
-  sub_category_label: 断捨離について
+  sub_category_label: ミニマリズムについて
   link: /life/minimalism/
   sub_category_group: minimalism
   sub_category_order: 10
-  description: 断捨離についてのメモ
+  description: ミニマリズムについてのメモ
 
 - sub_category_id: attitude
   sub_category_label: 態度について
