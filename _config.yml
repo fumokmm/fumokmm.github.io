@@ -297,6 +297,12 @@ defaults:
     values:
       sub_category_id: "ways_to_spend_time"
 
+  # 情報整理について
+  - scope:
+      path: "_life_articles/information_arrangement"
+    values:
+      sub_category_id: "information_arrangement"
+
   # 実践ワークについて
   - scope:
       path: "_life_articles/practice"

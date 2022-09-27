@@ -89,6 +89,13 @@
   sub_category_order: 10
   description: 過ごし方についてのメモ
 
+- sub_category_id: information_arrangement
+  sub_category_label: 情報整理について
+  link: /life/information_arrangement/
+  sub_category_group: self_improvement
+  sub_category_order: 10
+  description: 情報整理についてのメモ
+
 - sub_category_id: practice
   sub_category_label: 実践ワークについて
   link: /life/practice/
