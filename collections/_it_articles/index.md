@@ -157,7 +157,7 @@ updated: 2022-09-01
     {% endfor %}
 </table>
 
-## こちらはメールクライアントメモになります
+## こちらはメールクライアント関連のメモになります
 <table>
     {% assign mail_clients = site.data.it_sub_category | where: 'sub_category_group', 'mail_client'
                                                        | sort: 'sub_category_order' %}
