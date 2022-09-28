@@ -249,6 +249,16 @@
   description: プログラミング言語Pythonについてのメモ
 
 # R
+- sub_category_id: rust
+  sub_category_label: Rust
+  link: /it/rust/
+  article_group:
+    - id: getting-started-group
+      label: 導入
+  sub_category_group: programming_language
+  sub_category_order: 85
+  description: 効率的で信頼できるソフトウェアを誰もがつくれる言語
+
 - sub_category_id: reverse_resolution
   sub_category_label: プログラミング逆引き
   link: /it/reverse_resolution/
