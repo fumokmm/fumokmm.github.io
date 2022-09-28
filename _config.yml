@@ -57,6 +57,12 @@ defaults:
     values:
       sub_category_id: "go"
 
+  # Rust
+  - scope:
+      path: "_it_articles/rust"
+    values:
+      sub_category_id: "rust"
+
   # Googleスプレッドシート
   - scope:
       path: "_it_articles/google_spreadsheet"
