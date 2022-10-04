@@ -262,6 +262,8 @@
   article_group:
     - id: getting-started-group
       label: 導入
+    - id: basis-group
+      label: 基本事項
   sub_category_group: programming_language
   sub_category_order: 85
   description: 効率的で信頼できるソフトウェアを誰もがつくれる言語
