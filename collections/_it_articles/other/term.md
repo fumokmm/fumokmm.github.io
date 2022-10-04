@@ -2,18 +2,35 @@
 title: IT用語
 display_order: 30
 created: 2020-10-09
-updated: 2021-08-27
+updated: 2022-10-04
 ---
 IT用語のひとこと説明です。
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
+<li><a href="#A">A</a></li>
 <li><a href="#C">C</a></li>
 <li><a href="#D">D</a></li>
 <li><a href="#う">う</a></li>
 <li><a href="#さ">さ</a></li>
 </ul>
+
+* * *
+## <a name="A">A</a><a class="heading-anchor-permalink" href="#A">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-10-04" updated="2022-10-04" %}</div>
+<dl>
+  {% include article_parts/term_dt.html type="it" title="ARM64 (アームろくよん)" %}
+  <dd markdown="span">英アーム（Arm）社が開発したマイクロプロセッサ（MPU/CPU）の基本設計（アーキテクチャ）の一つで、プログラムやデータを64ビット単位で処理するためのもの。  
+  ARMv8以降に採用されている。
+  {% include update_info_inline.html created="2022-10-04" updated="2022-10-04" %}
+  </dd>
+</dl>
+
+### 参考
+- [(e-Words) ARM64 【AArch64】 A64](https://e-words.jp/w/ARM64.html)
+
+{% include goto_pagetop.html %}
 
 * * *
 ## <a name="C">C</a><a class="heading-anchor-permalink" href="#C">§</a>
