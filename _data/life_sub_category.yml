@@ -102,3 +102,10 @@
   sub_category_group: self_improvement
   sub_category_order: 20
   description: 実践ワークについてのメモ
+
+- sub_category_id: self_improvement_quiz
+  sub_category_label: 自己啓発クイズ
+  link: /life/self_improvement_quiz/
+  sub_category_group: self_improvement
+  sub_category_order: 30
+  description: 自己啓発クイズのメモ
