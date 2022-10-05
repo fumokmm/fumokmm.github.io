@@ -321,6 +321,12 @@ defaults:
     values:
       sub_category_id: "practice"
 
+  # 自己啓発クイズ
+  - scope:
+      path: "_life_articles/self_improvement_quiz"
+    values:
+      sub_category_id: "self_improvement_quiz"
+
 ################################## 読書
   - scope:
       path: "_reading_articles"

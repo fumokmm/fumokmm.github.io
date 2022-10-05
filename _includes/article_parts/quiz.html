@@ -1,0 +1,17 @@
+<div class="code-box">
+<div class="title">問</div>
+<pre>
+{% if include.question %}{{ include.question }}{% endif %}
+
+{% if include.ans1 %}{{ include.label1 }}：{{ include.ans1 }}{% endif %}{% if include.ans2 %}　　{{ include.label2 }}：{{ include.ans2 }}{% endif %}{% if include.ans3 %}　　{{ include.label3 }}：{{ include.ans3 }}{% endif %}{% if include.ans4 %}　　{{ include.label4 }}：{{ include.ans4 }}{% endif %}
+</pre>
+</div>
+    
+<div class="code-box-output">
+<div class="title">答え</div>
+<pre>
+{% if include.ans == "ans1" %}{{ include.label1 }}：{{ include.ans1 }}{% endif %}{% if include.ans == "ans2" %}{{ include.label2 }}：{{ include.ans2 }}{% endif %}{% if include.ans == "ans3" %}{{ include.label3 }}：{{ include.ans3 }}{% endif %}{% if include.ans == "ans4" %}{{ include.label4 }}：{{ include.ans4 }}{% endif %}{% if include.description != "" %}
+
+{{ include.description }}{% endif %}
+</pre>
+</div>
