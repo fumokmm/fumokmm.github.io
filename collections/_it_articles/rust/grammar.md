@@ -91,7 +91,7 @@ updated: 2022-10-05
 <pre>
 fn main() {
     let name = "fumo";
-    let age = 40;
+    let age = 41;
 }
 </pre>
 </div>
@@ -101,7 +101,7 @@ fn main() {
 <pre>
 fn main() {
     let name <em>: &amp;str</em> = "fumo";
-    let age <em>: i32</em> = 40;
+    let age <em>: i32</em> = 41;
 }
 </pre>
 </div>
