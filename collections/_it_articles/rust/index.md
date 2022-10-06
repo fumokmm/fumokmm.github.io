@@ -1,7 +1,7 @@
 ---
 title: Rustのメモ
 created: 2022-09-28
-updated: 2022-10-05
+updated: 2022-10-06
 ---
 {% include sub_category_index/it_sub_category_index_with_groups.html
     category_id="it"
