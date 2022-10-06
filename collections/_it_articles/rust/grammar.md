@@ -3,7 +3,7 @@ title: Rustの文法
 article_group_id: basis-group
 display_order: 10
 created: 2022-10-05
-updated: 2022-10-05
+updated: 2022-10-06
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -83,7 +83,7 @@ updated: 2022-10-05
 
 * * *
 ## <a name="型">型</a><a class="heading-anchor-permalink" href="#型">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-10-05" updated="2022-10-05" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-10-05" updated="2022-10-06" %}</div>
 ### 型推論
 - Rustの場合は型推論させるのが一般的です。
 <div class="code-box">
@@ -196,6 +196,67 @@ fn add(x: <em>i32</em>, y: <em>i32</em>) -&gt; <em class="blue">i64</em> {
 		<td markdown="span">b'A'</td>
 	</tr>
 </table>
+
+### 浮動小数点数
+<table class="normal">
+	<tr>
+		<th markdown="span">ビット長</th>
+		<th markdown="span">浮動小数点数</th>
+		<th markdown="span">備考</th>
+	</tr>
+	<tr>
+		<td markdown="span">32ビット</td>
+		<td markdown="span">f32</td>
+		<td markdown="span">単精度浮動小数点数</td>
+	</tr>
+	<tr>
+		<td markdown="span">64ビット</td>
+		<td markdown="span">f64</td>
+		<td markdown="span">倍精度浮動小数点数</td>
+	</tr>
+</table>
+<div class="code-box no-title">
+<pre>
+fn main() {
+    let x = 100.234;
+    println!("x is {}", x);
+    let y : f64 = 100.234;
+    println!("y is {}", y);
+}
+</pre>
+</div>
+
+### 論理値
+`true`と`false`の2つのみ値を持つ。`bool型`。
+<div class="code-box no-title">
+<pre>
+fn main() {
+    let b = true;
+    println!("b is {}", b);
+}
+</pre>
+</div>
+
+### 文字型
+- `char型`を使います。
+- アルファベットやひらがななどをシングルクォート(`'`)で囲みます。
+<div class="code-box no-title">
+<pre>
+fn main() {
+    let c = 'A';
+    println!("c is {}", c);
+    let c = 'あ';
+    println!("c is {}", c);
+    let dog = '🐶';
+    println!("dog is {}", dog);
+    let cat : char = '😸';
+    println!("cat is {}", cat);
+}
+</pre>
+</div>
+
+### 文字列型
+あとで書きます。
 
 ### 参考書籍
 - {% include book/book_945.html %} {% comment %} プログラミング言語Rust入門 {% endcomment %}
