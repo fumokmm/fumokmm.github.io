@@ -211,6 +211,12 @@ defaults:
     values:
       sub_category_id: windows_batch
 
+  # Velocity
+  - scope:
+      path: "_it_articles/velocity"
+    values:
+      sub_category_id: velocity
+
   # Zig
   - scope:
       path: "_it_articles/zig"
