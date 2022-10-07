@@ -379,6 +379,18 @@
   sub_category_order: 10
   description: Microsoft社が開発したエディターVisual Studio Code(VSCode)についてのメモ
 
+- sub_category_id: velocity
+  sub_category_label: Velocity
+  link: /it/velocity/
+  article_group:
+    - id: getting-started-group
+      label: 導入
+    - id: basis-group
+      label: 基本事項
+  sub_category_group: template_language
+  sub_category_order: 20
+  description: VelocityはJavaのテンプレートエンジンです。Apacheのプロジェクトの一つです。
+
 # W
 - sub_category_id: windows
   sub_category_label: Windows
