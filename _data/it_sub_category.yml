@@ -66,13 +66,6 @@
   sub_category_order: 200
   description: "マイクロソフトの作ったプログラミング言語のプログラミング言語のプラットフォーム。"
 
-- sub_category_id: draft
-  sub_category_label: 下書き
-  link: /it/draft/
-  sub_category_group: other
-  sub_category_order: 3
-  description: IT関係の下書きのメモ
-
 # E
 - sub_category_id: excel
   sub_category_label: Excel

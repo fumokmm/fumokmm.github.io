@@ -217,12 +217,6 @@ defaults:
     values:
       sub_category_id: "zig"
 
-  # 下書き
-  - scope:
-      path: "_it_articles/draft"
-    values:
-      sub_category_id: "draft"
-
 ################################## 人生
   - scope:
       path: "_life_articles"
