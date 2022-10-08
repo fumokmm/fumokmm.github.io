@@ -25,16 +25,19 @@ defaults:
     values:
       sub_category_id: "c"
 
+  # Chrome
   - scope:
       path: "_it_articles/chrome"
     values:
       sub_category_id: "chrome"
 
+  # C#
   - scope:
       path: "_it_articles/csharp"
     values:
       sub_category_id: "csharp"
 
+  # データベース
   - scope:
       path: "_it_articles/database"
     values:
@@ -52,6 +55,7 @@ defaults:
     values:
       sub_category_id: "excel"
 
+  # Go言語
   - scope:
       path: "_it_articles/go"
     values:
@@ -81,11 +85,13 @@ defaults:
     values:
       sub_category_id: "groovy"
 
+  # Git
   - scope:
       path: "_it_articles/git"
     values:
       sub_category_id: "git"
 
+  # Java
   - scope:
       path: "_it_articles/java"
     values:
@@ -97,6 +103,7 @@ defaults:
     values:
       sub_category_id: "julia"
 
+  # Linux
   - scope:
       path: "_it_articles/linux"
     values:
@@ -114,6 +121,7 @@ defaults:
     values:
       sub_category_id: liquid
 
+  # Oracle
   - scope:
       path: "_it_articles/oracle"
     values:
@@ -137,11 +145,13 @@ defaults:
     values:
       sub_category_id: "outlook"
 
+  # 構造化テキストデータフォーマット
   - scope:
       path: "_it_articles/structured_text_data_format"
     values:
       sub_category_id: "structured_text_data_format"
 
+  # プログラミングお題
   - scope:
       path: "_it_articles/problem"
     values:
@@ -153,26 +163,37 @@ defaults:
     values:
       sub_category_id: "programming"
 
+  # PowerShell
   - scope:
       path: "_it_articles/powershell"
     values:
       sub_category_id: powershell
+  
+  # Python
   - scope:
       path: "_it_articles/python"
     values:
       sub_category_id: python
+
+  # Ruby
   - scope:
       path: "_it_articles/ruby"
     values:
       sub_category_id: ruby
+
+  # プログラミング逆引き
   - scope:
       path: "_it_articles/reverse_resolution"
     values:
       sub_category_id: "reverse_resolution"
+
+  # SQL Server
   - scope:
       path: "_it_articles/sqlserver"
     values:
       sub_category_id: "sqlserver"
+  
+  # Subversion(SVN)
   - scope:
       path: "_it_articles/subversion"
     values:
@@ -190,22 +211,31 @@ defaults:
     values:
       sub_category_id: "scheme"
 
+  # Teams
   - scope:
       path: "_it_articles/teams"
     values:
       sub_category_id: "teams"
+
+  # VBA
   - scope:
       path: "_it_articles/vba"
     values:
       sub_category_id: "vba"
+
+  # Visual Studio Code(VSCode)
   - scope:
       path: "_it_articles/vscode"
     values:
       sub_category_id: "vscode"
+
+  # Windows
   - scope:
       path: "_it_articles/windows"
     values:
       sub_category_id: "windows"
+  
+  # Windows Batch
   - scope:
       path: "_it_articles/windows_batch"
     values:
@@ -459,7 +489,6 @@ collections:
 # 除外ファイル/ディレクトリ
 exclude:
   - _articles
-  - _draft
   - _scripts
   - .work
   - build.gradle
