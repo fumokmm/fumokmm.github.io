@@ -201,9 +201,9 @@ defaults:
 
   # サクラエディタ
   - scope:
-      path: "_it_articles/sakuraeditor"
+      path: "_it_articles/sakura_editor"
     values:
-      sub_category_id: "sakuraeditor"
+      sub_category_id: "sakura_editor"
 
   # Scheme
   - scope:
