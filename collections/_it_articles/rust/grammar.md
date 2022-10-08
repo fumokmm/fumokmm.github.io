@@ -3,7 +3,7 @@ title: Rustの文法
 article_group_id: basis-group
 display_order: 10
 created: 2022-10-05
-updated: 2022-10-06
+updated: 2022-10-08
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -83,7 +83,7 @@ updated: 2022-10-06
 
 * * *
 ## <a name="型">型</a><a class="heading-anchor-permalink" href="#型">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-10-05" updated="2022-10-06" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-10-05" updated="2022-10-08" %}</div>
 ### 型推論
 - Rustの場合は型推論させるのが一般的です。
 <div class="code-box">
@@ -256,7 +256,117 @@ fn main() {
 </div>
 
 ### 文字列型
-あとで書きます。
+
+#### &str型とString型
+- Rustの文字列には`&str型`と`String型`があります。
+- 文字列の扱いは*所有権(ownership)*や*借用(borrow)*を特に気をつける必要があります。
+- `println!マクロ`を使ってコンソールに表示するだけなら、以下サンプルで十分です。
+
+<div class="code-box">
+<div class="title">ステークホルダー{}を指定したprintln!の使用例</div>
+<pre>
+fn main() {
+    let dog = "DOG";
+    let cat = "CAT";
+    println!("{} and {}", dog, cat);
+}
+</pre>
+</div>
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+DOG and CAT
+</pre>
+</div>
+- ここで使われる方は`&str型`です。
+- `let`を使って変数を使う限りは特に気にする必要はありません。
+
+#### Rustの標準ライブラリString型を使う方法
+<div class="code-box">
+<div class="title">String::from関数</div>
+<pre>
+fn main() {
+    let s = <em>String::from("Hello Rust!");</em>
+    println!("{}", s);
+}
+</pre>
+</div>
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+Hello Rust!
+</pre>
+</div>
+- `String型`の`from関数`を使って文字列の初期化ができます。
+  - やっていることは`&str`と同じです。
+- `String型`にしておく理由は受け取った文字列を更新したいときに便利だからです。
+
+<div class="code-box">
+<div class="title">更新の例「＋」演算子</div>
+<pre>
+fn main() {
+    let s1 = String::from("Hello");
+    let s2 = String::from("Rust");
+    let s3 = String::from("World.");
+    <em>let s = s1 + " " + </em><em class="blue">&amp;s2</em><em> + " " + </em><em class="blue">&amp;s3</em><em>;</em>
+    println!("{}", s);
+}
+</pre>
+</div>
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+Hello Rust World.
+</pre>
+</div>
+- `s2`と`s3`に`&(アンパサンド)`がついているのは*借用*の印です。
+
+#### 実際はformat!マクロを使うと便利
+<div class="code-box">
+<div class="title">format!マクロ</div>
+<pre>
+fn main() {
+    let s1 = String::from("Hello");
+    let s2 = String::from("Rust");
+    let s3 = String::from("World.");
+    let s = <em>format!("{} {} {}", s1, s2, s3);</em>
+    println!("{}", s);
+}
+</pre>
+</div>
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+Hello Rust World.
+</pre>
+</div>
+- `format!マクロ`では数値や文字列を連結して1つの文字列にして返してくれます。
+
+
+`String::from関数`でなくて`"(ダブルクォート)`を使って直接文字列を代入する方法でも`format!マクロ`は使えます。
+<div class="code-box">
+<div class="title">直接文字列を代入する方法</div>
+<pre>
+fn main() {
+    <em>let s1 = "Hello";
+    let s2 = "Rust";
+    let s3 = "World.";</em>
+    let s = <em>format!("{} {} {}", s1, s2, s3);</em>
+    println!("{}", s);
+}
+</pre>
+</div>
+<div class="code-box-output">
+<div class="title">出力結果</div>
+<pre>
+Hello Rust World.
+</pre>
+</div>
+- Rustの文字列の扱いはUTF-8と配列がややこしく絡み合っているので結構注意が必要です。
+- あまりややこしいことをしなければ、`String::from関数`と`format!マクロ`でそこそこまでいけます。
+
+### サンプルソース
+- [(language-examples) n0002_string](https://github.com/fumokmm/language-examples/tree/main/Rust/n0002_string)
 
 ### 参考書籍
 - {% include book/book_945.html %} {% comment %} プログラミング言語Rust入門 {% endcomment %}
@@ -266,7 +376,10 @@ fn main() {
 ## <a name="参照・参考">参照・参考</a><a class="heading-anchor-permalink" href="#参照・参考">§</a>
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-10-05" updated="2022-10-05" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-10-05" updated="2022-10-08" %}</div>
+### サンプルソース
+- [(language-examples) n0002_string](https://github.com/fumokmm/language-examples/tree/main/Rust/n0002_string)
+
 ### 参考書籍
 - {% include book/book_945.html %} {% comment %} プログラミング言語Rust入門 {% endcomment %}
 
