@@ -253,6 +253,12 @@ defaults:
     values:
       sub_category_id: "zig"
 
+  # システム開発
+  - scope:
+      path: "_it_articles/system_development"
+    values:
+      sub_category_id: "system_development"
+
 ################################## 人生
   - scope:
       path: "_life_articles"

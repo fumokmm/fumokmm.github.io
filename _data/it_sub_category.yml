@@ -456,3 +456,14 @@
   sub_category_group: test
   sub_category_order: 10
   description: テストについてのメモ
+
+# し
+- sub_category_id: system_development
+  sub_category_label: システム開発
+  link: /it/system_development/
+  article_group:
+    - id: documentation-group
+      label: ドキュメンテーション
+  sub_category_group: system_development
+  sub_category_order: 10
+  description: システム開発関係のメモ
