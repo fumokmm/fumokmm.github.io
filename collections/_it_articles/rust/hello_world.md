@@ -3,7 +3,7 @@ title: RustでHello World
 article_group_id: getting-started-group
 display_order: 20
 created: 2022-09-29
-updated: 2022-09-29
+updated: 2022-10-12
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -70,7 +70,7 @@ fn main() {
 
 * * *
 ## <a name="ビルド">ビルド</a><a class="heading-anchor-permalink" href="#ビルド">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-09-29" updated="2022-09-29" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-09-29" updated="2022-10-12" %}</div>
 ビルドには`cargo build`を使います。  
 `hello`ディレクトリにいる状態で実行します。
 
@@ -118,6 +118,20 @@ fn main() {
 
 いろいろなファイルができますが、実行ファイルは `target/debug/hello` です。  
 実行ファイルなどを削除して最初の状態に戻したいときは `cargo clean` を使います。
+
+<div class="code-box-output">
+<div class="title">clean後</div>
+<pre>
+<em class="command">$ cargo clean</em>
+<em class="command">$ tree .</em>
+.
+├── Cargo.lock
+├── Cargo.toml
+└── src
+    ├── main
+    └── main.rs
+</pre>
+</div>
 
 {% include goto_pagetop.html %}
 
