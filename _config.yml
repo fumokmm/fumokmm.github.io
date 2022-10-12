@@ -127,12 +127,6 @@ defaults:
     values:
       sub_category_id: "oracle"
 
-  # テスト
-  - scope:
-      path: "_it_articles/test"
-    values:
-      sub_category_id: "test"
-
   # その他
   - scope:
       path: "_it_articles/other"

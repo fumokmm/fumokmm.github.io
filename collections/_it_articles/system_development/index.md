@@ -1,6 +1,6 @@
 ---
 title: システム開発のメモ
-created: 2022-10-12
+created: 2021-09-26
 updated: 2022-10-12
 ---
 {% include sub_category_index/it_sub_category_index_with_groups.html

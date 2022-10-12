@@ -225,23 +225,6 @@ updated: 2022-10-12
     {% endfor %}
 </table>
 
-## こちらはテスト関連のメモになります
-<table>
-    {% assign tests = site.data.it_sub_category | where: 'sub_category_group', 'test'
-                                                | sort: 'sub_category_order' %}
-    {% for test in tests %}
-    <tr>
-        {% assign articles = site.it_articles | where: 'category_id', 'it'
-                                              | where: 'sub_category_id', test.sub_category_id %}
-        {% assign last_updated_article = articles | sort: 'updated' | last %}
-
-        <td><a href="{{ test.link }}">{{ test.sub_category_label }}</a></td>
-        <td markdown="span">{{ test.description }}</td>
-        <td>{{ last_updated_article.updated }}更新</td>
-    </tr>
-    {% endfor %}
-</table>
-
 ## こちらはシステム開発のメモになります
 <table>
     {% assign sub_categories = site.data.it_sub_category | where: 'sub_category_group', 'system_development'
