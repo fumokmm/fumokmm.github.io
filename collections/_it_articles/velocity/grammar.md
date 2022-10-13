@@ -3,7 +3,7 @@ title: Velocityの文法
 article_group_id: basis-group
 display_order: 20
 created: 2022-10-07
-updated: 2022-10-07
+updated: 2022-10-13
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -14,6 +14,7 @@ updated: 2022-10-07
 <li><a href="#変数">変数</a></li>
 <li><a href="#代入">代入</a></li>
 <li><a href="#制御フロー">制御フロー</a></li>
+<li><a href="#インポート">インポート</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
 
@@ -188,6 +189,45 @@ try {
   やせ気味です。
 </pre>
 </div>
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="インポート">インポート</a><a class="heading-anchor-permalink" href="#インポート">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-10-13" updated="2022-10-13" %}</div>
+### #parse, #include
+- `#parse`、`#include`はテンプレート尾中にローカルファイルをインポートするための指示子です。
+- 両者の違いは、
+  - `#parse`は読み込んだファイルの`VTL`を解析します。
+  - `#include`は読み込んだファイルの`VTL`を解析しません。テキストファイルとして利用するのみです。
+
+<div class="code-box-syntax no-title">
+<pre>
+<em>#parse(</em> <em class="blue">&lt;ファイル名または変数名&gt;</em> <em>)</em>
+または
+<em>#{parse}(</em> <em class="blue">&lt;ファイル名または変数名&gt;</em> <em>)</em>
+  
+<em>#include(</em> <em class="blue">&lt;ファイル名または変数名&gt;</em> <em>)</em>
+または
+<em>#{include}(</em> <em class="blue">&lt;ファイル名または変数名&gt;</em> <em>)</em> 
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">sample1.vm</div>
+<pre>
+#set($num = 10)
+<em>#parse(</em><em class="blue">"sample2.vm"</em><em>)</em>
+sample1.vmの処理が終了
+</pre>
+</div>
+
+### 再帰的なパース
+- `#parse`でインポートしたファイルの中でさらに`#parse`によるインポートが可能です。
+- どれだけ深い階層までインポートできるかは、設定ファイルである`velocity.properties`の中の`parse_directive.maxdepth`によって指定します。デフォルトは`10`です。
+
+### 参考サイト
+- [(TECHSCORE) 5.VTL・#parse,#includeなど](https://www.techscore.com/tech/Java/ApacheJakarta/Velocity/5/)
 
 {% include goto_pagetop.html %}
 
