@@ -145,6 +145,12 @@ defaults:
     values:
       sub_category_id: "structured_text_data_format"
 
+  # PostgreSQL
+  - scope:
+      path: "_it_articles/postgresql"
+    values:
+      sub_category_id: "postgresql"
+
   # プログラミングお題
   - scope:
       path: "_it_articles/problem"
