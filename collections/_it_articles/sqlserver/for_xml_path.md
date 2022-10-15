@@ -3,9 +3,10 @@ title: SQL Serverで取得結果行を1列に連結するSQL(FOR XML PATH)
 article_group_id: sql-group
 display_order: 30
 created: 2020-11-07
-updated: 2022-07-13
+updated: 2022-10-15
 ---
 {% capture link_to_it_oracle %}{% link _it_articles/oracle/index.md %}{% endcapture %}{% assign link_to_it_oracle = link_to_it_oracle | remove: 'index' %}
+{% capture link_to_it_postgresql %}{% link _it_articles/postgresql/index.md %}{% endcapture %}{% assign link_to_it_postgresql = link_to_it_postgresql | remove: 'index' %}
 
 複数取得される結果を結合して1列で取得したい場合があります。SQL Serverでそれを行うSQLについてメモしておきます。
 
@@ -394,14 +395,19 @@ SELECT
 
 * * *
 ## <a name="補足4 他のデータベースでは">補足4 他のデータベースでは</a><a class="heading-anchor-permalink" href="#補足4 他のデータベースでは">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-07-13" %}</div>
-なお、MySQL(MariaDB) では`GROUP_CONCAT関数`、[Oracle]({{link_to_it_oracle}})では`LISTAGG関数`で同様の処理が可能とのことです。
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-10-15" %}</div>
+なお、MySQL(MariaDB) では`GROUP_CONCAT関数`、[Oracle]({{link_to_it_oracle}})では`LISTAGG関数`、[PostgreSQL]({{link_to_it_postgresql}})では`string_agg関数`で同様の処理が可能とのことです。
+
 
 {% include goto_pagetop.html %}
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2020-11-07" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-10-15" %}</div>
+### 関連メモ
+- [PostgreSQLで取得結果行を1列に連結するSQL(string_agg)]({% link _it_articles/postgresql/string_agg.md %})
+
+### 参考サイト
 - [[SQL Server] 縦に並んだデータを横にカンマ区切りの列データで取得する方法](https://webbibouroku.com/Blog/Article/forxmlpath)
 - [(Microsoft Docs) FOR XML での PATH モードの使用](https://docs.microsoft.com/ja-jp/sql/relational-databases/xml/use-path-mode-with-for-xml?view=sql-server-ver15)
 - [(Microsoft Docs) value() メソッド (xml データ型)](https://docs.microsoft.com/ja-jp/sql/t-sql/xml/value-method-xml-data-type?view=sql-server-ver15)

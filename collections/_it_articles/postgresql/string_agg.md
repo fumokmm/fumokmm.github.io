@@ -103,6 +103,9 @@ c/b/a
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-10-15" updated="2022-10-15" %}</div>
+### 関連メモ
+- [SQL Serverで取得結果行を1列に連結するSQL(FOR XML PATH)]({% link _it_articles/sqlserver/for_xml_path.md %})
+
 ### 参考サイト
 - [(Let's POSTGRES) PostgreSQL 9.0 のその他の新機能](https://workmemo.techblog.jp/archives/33958716.html)
 - [(仕事メモとか) postgresqlでlistaggみたいなことを探してみた](https://lets.postgresql.jp/documents/technical/9.0/1)
