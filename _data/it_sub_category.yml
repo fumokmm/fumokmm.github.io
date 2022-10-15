@@ -195,6 +195,16 @@
   description: Microsoft社が開発しているOfficeツールのメールクライアント。
 
 # P
+- sub_category_id: postgresql
+  sub_category_label: PostgreSQL
+  link: /it/postgresql/
+  article_group:
+    - id: sql-group
+      label: SQL
+  sub_category_group: database
+  sub_category_order: 30
+  description: PostgreSQLについてのメモ
+
 - sub_category_id: problem
   sub_category_label: プログラミングお題
   link: /it/problem/
