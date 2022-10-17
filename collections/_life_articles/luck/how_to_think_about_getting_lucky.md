@@ -15,7 +15,9 @@ updated: 2022-10-17
 <li><a href="#運のいい人は他人を思いやる">運のいい人は他人を思いやる</a></li>
 <li><a href="#運のいい人は目標や夢を明確にする">運のいい人は目標や夢を明確にする</a></li>
 <li><a href="#運のいい人は自分から人に話しかける">運のいい人は自分から人に話しかける</a></li>
+<li><a href="#運のいい人は自分から人に話しかける">運のいい人は自分から人に話しかける</a></li>
 <li><a href="#運のいい人は一つの物事ではなく全体像を見ている">運のいい人は一つの物事ではなく全体像を見ている</a></li>
+<li><a href="#運の良い人は一つの物事ではなく全体像を見ている">運の良い人は一つの物事ではなく全体像を見ている</a></li>
 <li><a href="#運のいい人は自分の将来に期待している">運のいい人は自分の将来に期待している</a></li>
 <li><a href="#運のいい人は不運を幸運に変える">運のいい人は不運を幸運に変える</a></li>
 <li><a href="#参考">参考</a></li>
@@ -107,6 +109,17 @@ updated: 2022-10-17
 * * *
 ## <a name="運のいい人は自分から人に話しかける">運のいい人は自分から人に話しかける</a><a class="heading-anchor-permalink" href="#運のいい人は自分から人に話しかける">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-10-17" updated="2022-10-17" %}</div>
+- 運がいい人は自分から越えをかけて人脈を広げている
+- 運を掴みたければ、多くのと関わるほうがいい
+
+### 参考動画
+- [(YouTube)【要約】運のいい人の法則【リチャード・ワイズマン】](https://www.youtube.com/watch?v=pJXWvY9zDYk)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="運のいい人は自分から人に話しかける">運のいい人は自分から人に話しかける</a><a class="heading-anchor-permalink" href="#運のいい人は自分から人に話しかける">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-10-17" updated="2022-10-17" %}</div>
 - 人は新しいものをバカにしたりするが、チャンスは新しいものの中にある。
 - 運をよくしたければ、失敗してもいいから積極的に新しいものに挑戦するべき。
 - サイコロをふって、偶数なら新しい方を選ぶ、奇数なら今まで通りの方を選ぶ。
@@ -122,6 +135,17 @@ updated: 2022-10-17
 <div class="chapter-updated">{% include update_info_inline.html created="2022-10-17" updated="2022-10-17" %}</div>
 - 運のいい人は肩の力を抜いて周りを見ている。
 - チャンスを見つけたければ、一つの物事だけに集中するのではなく、顔をあげてたくさんのものを見ておく必要がある。
+
+### 参考動画
+- [(YouTube)【要約】運のいい人の法則【リチャード・ワイズマン】](https://www.youtube.com/watch?v=pJXWvY9zDYk)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="運の良い人は一つの物事ではなく全体像を見ている">運の良い人は一つの物事ではなく全体像を見ている</a><a class="heading-anchor-permalink" href="#運の良い人は一つの物事ではなく全体像を見ている">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-10-17" updated="2022-10-17" %}</div>
+- 運がいい人は直感を働かせる。
+- 運の悪い人は直感を無視する。
 
 ### 参考動画
 - [(YouTube)【要約】運のいい人の法則【リチャード・ワイズマン】](https://www.youtube.com/watch?v=pJXWvY9zDYk)
