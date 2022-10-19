@@ -35,8 +35,8 @@ updated: 2022-10-19
 <div class="code-box">
 <div class="title">例</div>
 <pre>
-select 'abc' <em>||</em> 'あいう';
-select 'abc' <em>||</em> 'あいう' <em>||</em> '123';
+select 'abc' <em>||</em> 'あいう'; <em class="comment">-- 'abcあいう'</em>
+select 'abc' <em>||</em> 'あいう' <em>||</em> '123'; <em class="comment">-- 'abcあいう123'</em>
 </pre>
 </div>
 
@@ -44,7 +44,7 @@ select 'abc' <em>||</em> 'あいう' <em>||</em> '123';
 <div class="code-box">
 <div class="title">例</div>
 <pre>
-select 'abc' || 'あいう' || null;
+select 'abc' || 'あいう' || null; <em class="comment">-- null</em>
 </pre>
 </div>
 <div class="code-box">
@@ -64,7 +64,7 @@ concat(&lt;文字列&gt; [, &lt;文字列&gt; ...])
 <div class="code-box">
 <div class="title">例</div>
 <pre>
-select concat('abc', 'あいう', null);
+select concat('abc', 'あいう', null); <em class="comment">-- 'abcあいう'</em>
 </pre>
 </div>
 - `null`部分は単純に無視されます(空文字で結合されると考えてもよいです)。
