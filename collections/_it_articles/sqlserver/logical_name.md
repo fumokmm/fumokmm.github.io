@@ -3,7 +3,7 @@ title: SQL Serverでテーブル論理名とか列論理名を指定する方法
 article_group_id: control-group
 display_order: 50
 created: 2021-01-29
-updated: 2021-01-29
+updated: 2022-10-19
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -241,7 +241,11 @@ order by
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2022-10-19" %}</div>
+### 関連メモ
+- [PostgreSQLでデータベース論理名とかテーブル論理名とか列論理名を指定する方法]({% link _it_articles/postgresql/logical_name.md %})
+
+### 参考サイト
 - [(PROJECT GROUP) テーブルの列にコメントを追加・修正・削除・取得する](https://www.projectgroup.info/tips/SQLServer/SQL/SQL000035.html)
 - [(SQL Docs) sp_addextendedproperty (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-addextendedproperty-transact-sql?view=sql-server-ver15)
 - [(SQL Docs) sp_updateextendedproperty (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-updateextendedproperty-transact-sql?view=sql-server-ver15)
