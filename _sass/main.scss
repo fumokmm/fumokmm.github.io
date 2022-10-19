@@ -346,6 +346,20 @@ code {
         background-color: #777;
         border: 1px solid #ccc;
     }
+    .copy {
+        position: absolute;
+        display: inline-block;
+        top: -2px;
+        right: -2px;
+        padding: 0 9px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #ffffff;
+        background-color: #777;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
     @include make-code-pre(
         $preColor: inherit,
         $preBackgroundColor: #f6f6f6,
