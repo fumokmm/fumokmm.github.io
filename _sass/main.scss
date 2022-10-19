@@ -355,10 +355,11 @@ code {
         height: 20px;
         line-height: 20px;
         font-size: 12px;
+        cursor: pointer;
+        visibility: hidden;
         color: #ffffff;
         background-color: #777;
         border: 1px solid #ccc;
-        cursor: pointer;
     }
     @include make-code-pre(
         $preColor: inherit,
@@ -369,6 +370,11 @@ code {
         $emColorComment: #00bc42,
         $emColorCommand: #909090
     )
+}
+.code-box:hover {
+    .copy {
+        visibility: visible;
+    }
 }
 
 // コードPRE(構文、定義用)
@@ -397,6 +403,21 @@ code {
         background-color: #c5ffff;
         border: 1px solid #ccc;
     }
+    .copy {
+        position: absolute;
+        display: inline-block;
+        top: -2px;
+        right: -2px;
+        padding: 0 9px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        cursor: pointer;
+        visibility: hidden;
+        color: #333333;
+        background-color: #c5ffff;
+        border: 1px solid #ccc;
+    }
     @include make-code-pre(
         $preColor: inherit,
         $preBackgroundColor: #edffff,
@@ -406,6 +427,11 @@ code {
         $emColorComment: #4abd4f,
         $emColorCommand: #909090
     )
+}
+.code-box-syntax:hover {
+    .copy {
+        visibility: visible;
+    }
 }
 
 // コードPRE(入力用)
@@ -434,6 +460,21 @@ code {
         background-color: #ffe77e;
         border: 1px solid rgb(231, 231, 231);
     }
+    .copy {
+        position: absolute;
+        display: inline-block;
+        top: -2px;
+        right: -2px;
+        padding: 0 9px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        cursor: pointer;
+        visibility: hidden;
+        color: #777;
+        background-color: #ffe77e;
+        border: 1px solid rgb(231, 231, 231);
+    }
     @include make-code-pre(
         $preColor: inherit,
         $preBackgroundColor: #fff4ca,
@@ -443,6 +484,11 @@ code {
         $emColorComment: #4caf50,
         $emColorCommand: #909090
     )
+}
+.code-box-input:hover {
+    .copy {
+        visibility: visible;
+    }
 }
 
 // コードPRE(出力用)
@@ -471,6 +517,21 @@ code {
         background-color: #777;
         border: 1px solid rgb(231, 231, 231);
     }
+    .copy {
+        position: absolute;
+        display: inline-block;
+        top: -2px;
+        right: -2px;
+        padding: 0 9px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        cursor: pointer;
+        visibility: hidden;
+        color: #ffffff;
+        background-color: #777;
+        border: 1px solid rgb(231, 231, 231);
+    }
     @include make-code-pre(
         $preColor: #f6f6f6,
         $preBackgroundColor: #777,
@@ -480,6 +541,11 @@ code {
         $emColorComment: #ad7,
         $emColorCommand: #c0c0c0
     )
+}
+.code-box-output:hover {
+    .copy {
+        visibility: visible;
+    }
 }
 
 .copyright {
