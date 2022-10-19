@@ -199,6 +199,8 @@
   sub_category_label: PostgreSQL
   link: /it/postgresql/
   article_group:
+    - id: basis-group
+      label: 基本事項
     - id: sql-group
       label: SQL
     - id: tips-group
