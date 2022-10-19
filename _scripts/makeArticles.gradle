@@ -130,6 +130,7 @@ task makeArticles() {
                                 // 関数合成でescapeHtmlTagしてから、convertToEmTagして、convertToATagする
                                 body << (escapeHtmlTag >> convertToEmTag >> convertToATag)(innerTableBody.toString())
                                 body << '''|</pre>
+                                           |★
                                            |</div>'''.stripMargin() << '\n'
                             }
                         }
