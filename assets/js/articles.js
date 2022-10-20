@@ -1,8 +1,8 @@
 "use strict";
 
-function addFootnotesLink() {
-    // DOMの読み込みが完了したら
-    document.addEventListener("DOMContentLoaded", () => {
+function initializeArticlesCommonScript() {
+    // 注釈部の初期化
+    document.addEventListener("DOMContentLoaded", () => { // DOMの読み込みが完了したら
         // 注釈部を取得
         let footnotes = document.querySelector('div.footnotes');
         // 注釈部が存在する場合、注釈部へのアンカーを追加
@@ -21,7 +21,8 @@ function addFootnotesLink() {
         }
     });
 
-    document.addEventListener("DOMContentLoaded", () => {
+    // コピーボタンの初期化
+    document.addEventListener("DOMContentLoaded", () => { // DOMの読み込みが完了したら
         let body = document.querySelector("body");
         let active = [];
         body.addEventListener("click", (e) => {
