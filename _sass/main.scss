@@ -346,21 +346,6 @@ code {
         background-color: #777;
         border: 1px solid #ccc;
     }
-    .copy-button {
-        position: absolute;
-        display: inline-block;
-        top: -2px;
-        right: -2px;
-        padding: 0 9px;
-        height: 20px;
-        line-height: 20px;
-        font-size: 12px;
-        cursor: pointer;
-        visibility: hidden;
-        color: #ffffff;
-        background-color: #777;
-        border: 1px solid #ccc;
-    }
     @include make-code-pre(
         $preColor: inherit,
         $preBackgroundColor: #f6f6f6,
@@ -370,11 +355,6 @@ code {
         $emColorComment: #00bc42,
         $emColorCommand: #909090
     )
-}
-.code-box:hover {
-    .copy-button {
-        visibility: visible;
-    }
 }
 
 // コードPRE(構文、定義用)
@@ -403,21 +383,6 @@ code {
         background-color: #c5ffff;
         border: 1px solid #ccc;
     }
-    .copy-button {
-        position: absolute;
-        display: inline-block;
-        top: -2px;
-        right: -2px;
-        padding: 0 9px;
-        height: 20px;
-        line-height: 20px;
-        font-size: 12px;
-        cursor: pointer;
-        visibility: hidden;
-        color: #333333;
-        background-color: #c5ffff;
-        border: 1px solid #ccc;
-    }
     @include make-code-pre(
         $preColor: inherit,
         $preBackgroundColor: #edffff,
@@ -427,11 +392,6 @@ code {
         $emColorComment: #4abd4f,
         $emColorCommand: #909090
     )
-}
-.code-box-syntax:hover {
-    .copy-button {
-        visibility: visible;
-    }
 }
 
 // コードPRE(入力用)
@@ -460,21 +420,6 @@ code {
         background-color: #ffe77e;
         border: 1px solid rgb(231, 231, 231);
     }
-    .copy-button {
-        position: absolute;
-        display: inline-block;
-        top: -2px;
-        right: -2px;
-        padding: 0 9px;
-        height: 20px;
-        line-height: 20px;
-        font-size: 12px;
-        cursor: pointer;
-        visibility: hidden;
-        color: #777;
-        background-color: #ffe77e;
-        border: 1px solid rgb(231, 231, 231);
-    }
     @include make-code-pre(
         $preColor: inherit,
         $preBackgroundColor: #fff4ca,
@@ -484,11 +429,6 @@ code {
         $emColorComment: #4caf50,
         $emColorCommand: #909090
     )
-}
-.code-box-input:hover {
-    .copy-button {
-        visibility: visible;
-    }
 }
 
 // コードPRE(出力用)
@@ -517,21 +457,6 @@ code {
         background-color: #777;
         border: 1px solid rgb(231, 231, 231);
     }
-    .copy-button {
-        position: absolute;
-        display: inline-block;
-        top: -2px;
-        right: -2px;
-        padding: 0 9px;
-        height: 20px;
-        line-height: 20px;
-        font-size: 12px;
-        cursor: pointer;
-        visibility: hidden;
-        color: #ffffff;
-        background-color: #777;
-        border: 1px solid rgb(231, 231, 231);
-    }
     @include make-code-pre(
         $preColor: #f6f6f6,
         $preBackgroundColor: #777,
@@ -542,7 +467,34 @@ code {
         $emColorCommand: #c0c0c0
     )
 }
-.code-box-output:hover {
+// コードのコピーボタンの定義
+.code-box, .code-box-syntax, .code-box-input, .code-box-output {
+    .copy-button {
+        position: absolute;
+        display: inline-block;
+        top: 2px;
+        right: 2px;
+        padding: 0 9px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        cursor: pointer;
+        visibility: hidden;
+        color: #ffffff;
+        background-color: #669966;
+        border: 1px solid rgb(231, 231, 231);
+
+        &.success {
+            visibility: visible;
+            background-color: #86A697;
+        }
+        &.failed {
+            visibility: visible;
+            background-color: #86A697;
+        }
+    }
+}
+.code-box:hover, .code-box-syntax:hover, .code-box-input:hover, .code-box-output:hover {
     .copy-button {
         visibility: visible;
     }

@@ -29,7 +29,10 @@ function addFootnotesLink() {
                 const target = e.target;
                 if (! target.classList.contains('copy-button')) return;
 
-                const pre = target.nextElementSibling;
+                const pre = (() => {
+                    let pres = target.parentElement.getElementsByTagName('pre')
+                    return (pres && pres[0]) ? pres[0] : undefined;
+                })();
                 let result = false;
                 if (active.indexOf(target) !== -1) return;
                 if (pre) {
@@ -42,7 +45,7 @@ function addFootnotesLink() {
                         target.className = "copy-button";
                         target.innerText = "Copy";
                         if (index !== -1) active.splice(index, 1);
-                    }, 2000);
+                    }, 1000);
                 }
             } catch (e) {
                 //error 
