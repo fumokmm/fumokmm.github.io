@@ -21,6 +21,7 @@ updated: 2021-07-28
 - 移動元のファイルを`-Path`で、移動先のファイルを`-Destination`で指定します。
 - 移動先のファイルが既に存在していた場合、エラーとなります。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Move-Item -Path <em>&lt;移動元パス&gt;</em> -Destination <em class="blue">&lt;移動先パス&gt;</em>
 </pre>
@@ -30,6 +31,7 @@ Move-Item -Path <em>&lt;移動元パス&gt;</em> -Destination <em class="blue">&
 - 上書きで移動する場合は`-Force`オプションを付けます。
 - 移動先のファイルが既に存在していた場合でもエラーとなりません。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Move-Item -Path <em>&lt;移動元パス&gt;</em> -Destination <em class="blue">&lt;移動先パス&gt;</em> <em class="orange">-Force</em>
 </pre>
@@ -42,6 +44,7 @@ Move-Item -Path <em>&lt;移動元パス&gt;</em> -Destination <em class="blue">&
 <div class="chapter-updated">{% include update_info_inline.html created="2021-07-28" updated="2021-07-28" %}</div>
 ### 同ファイル名で別フォルダへ移動
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\bk\test.txt</em>
 </pre>
@@ -50,6 +53,7 @@ Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\
 
 ### 同ファイル名で別フォルダへ移動(上書き)
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\bk\test.txt</em> <em class="orange">-Force</em>
 </pre>
@@ -58,6 +62,7 @@ Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\
 
 ### リネームする
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\test2.txt</em>
 </pre>
@@ -66,6 +71,7 @@ Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\
 
 ### リネームしつつ移動
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\bk\test2.txt</em>
 </pre>
@@ -74,6 +80,7 @@ Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\
 
 ### ファイルを別のフォルダに移動
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\bk</em>
 </pre>
@@ -96,4 +103,4 @@ Move-Item -Path <em>C:\temp\test.txt</em> -Destination <em class="blue">C:\temp\
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

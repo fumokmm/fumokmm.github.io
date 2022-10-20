@@ -23,6 +23,7 @@ Javaで乱数を利用する場合、`java.util.Random`あたりを使うと思�
 `java.util.Random`は乱数ジェネレータですので、乱数の種(long seed)を与えて、それぞれ違った順序で乱数を発生させるジェネレータを生成することができます。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Random r = new Random(seed);
 </pre>
@@ -31,6 +32,7 @@ Random r = new Random(seed);
 ということなんですが、この種に同じ値を指定してしまうと、毎回同じ順番で同じ値が取得できてしまい、あまり嬉しくありません。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 long seed = 1L;
 Random r = new Random(seed);
@@ -57,6 +59,7 @@ assert r.nextDouble() == 0.20771484130971707;
 よく使われるものに、*現在時刻のミリ秒*を使うものがある。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 long seed = System.currentTimeMillis(); <em class="comment">// 現在時刻のミリ秒</em>
 Random r = new Random(seed);
@@ -69,6 +72,7 @@ Random r = new Random(seed);
 そこで、環境に依存する値として、*空きメモリ量*[^空きメモリ量]を指定する方法は以下のようになる。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 long seed = Runtime.getRuntime().freeMemory(); <em class="comment">// 空きメモリ量</em>
 Random r = new Random(seed);
@@ -79,6 +83,7 @@ Random r = new Random(seed);
 さらに追い討ちで、*現在時刻のミリ秒＋空きメモリ量*なんていう種(seed)を利用するのもありかもしれない。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 long seed = System.currentTimeMillis() + Runtime.runtime.freeMemory();
 Random r = new Random(seed);
@@ -97,6 +102,7 @@ Random r = new Random(seed);
 ### java.lang.Math#random()
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Math.random()
 </pre>
@@ -108,6 +114,7 @@ Math.random()
 
 <div class="code-box">
 <div class="title">java/lang/Math.java より抜粋</div>
+<div class="copy-button">Copy</div>
 <pre>
 public static double random() {
     return RandomNumberGeneratorHolder.randomNumberGenerator<em>.nextDouble();</em>
@@ -139,4 +146,4 @@ private static final class RandomNumberGeneratorHolder {
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

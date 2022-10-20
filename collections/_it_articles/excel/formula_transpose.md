@@ -60,4 +60,4 @@ TRANSPOSE関数を使うと行列を入れ替えた値を簡単に参照でき�
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

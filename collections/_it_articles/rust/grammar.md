@@ -88,6 +88,7 @@ updated: 2022-10-12
 - Rustの場合は型推論させるのが一般的です。
 <div class="code-box">
 <div class="title">型推論させた変数の使用例</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let name = "fumo";
@@ -98,6 +99,7 @@ fn main() {
 - 型を宣言しておきたいときは `:` の後に変数の型を書きます。
 <div class="code-box">
 <div class="title">型を宣言</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let name <em>: &amp;str</em> = "fumo";
@@ -113,6 +115,7 @@ fn main() {
 
 <div class="code-box">
 <div class="title">関数を作成する場合は型の指定が必須になる</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn add(x: <em>i32</em>, y: <em>i32</em>) -&gt; <em>i32</em> {
     x + y
@@ -126,6 +129,7 @@ fn add(x: <em>i32</em>, y: <em>i32</em>) -&gt; <em>i32</em> {
 - 戻り値の型は関数の中で使われている計算結果の型と一致させなくてはならない。
 <div class="code-box">
 <div class="title">コンパイルエラー</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn add(x: <em>i32</em>, y: <em>i32</em>) -&gt; <em class="blue">i64</em> {
     x + y
@@ -216,6 +220,7 @@ fn add(x: <em>i32</em>, y: <em>i32</em>) -&gt; <em class="blue">i64</em> {
 	</tr>
 </table>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let x = 100.234;
@@ -229,6 +234,7 @@ fn main() {
 ### 論理値
 `true`と`false`の2つのみ値を持つ。`bool型`。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let b = true;
@@ -241,6 +247,7 @@ fn main() {
 - `char型`を使います。
 - アルファベットやひらがななどをシングルクォート(`'`)で囲みます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let c = 'A';
@@ -264,6 +271,7 @@ fn main() {
 
 <div class="code-box">
 <div class="title">ステークホルダー{}を指定したprintln!の使用例</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let dog = "DOG";
@@ -274,6 +282,7 @@ fn main() {
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 DOG and CAT
 </pre>
@@ -284,6 +293,7 @@ DOG and CAT
 #### Rustの標準ライブラリString型を使う方法
 <div class="code-box">
 <div class="title">String::from関数</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let s = <em>String::from("Hello Rust!");</em>
@@ -293,6 +303,7 @@ fn main() {
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 Hello Rust!
 </pre>
@@ -303,6 +314,7 @@ Hello Rust!
 
 <div class="code-box">
 <div class="title">更新の例「＋」演算子</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let s1 = String::from("Hello");
@@ -315,6 +327,7 @@ fn main() {
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 Hello Rust World.
 </pre>
@@ -324,6 +337,7 @@ Hello Rust World.
 #### 実際はformat!マクロを使うと便利
 <div class="code-box">
 <div class="title">format!マクロ</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let s1 = String::from("Hello");
@@ -336,6 +350,7 @@ fn main() {
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 Hello Rust World.
 </pre>
@@ -346,6 +361,7 @@ Hello Rust World.
 `String::from関数`でなくて`"(ダブルクォート)`を使って直接文字列を代入する方法でも`format!マクロ`は使えます。
 <div class="code-box">
 <div class="title">直接文字列を代入する方法</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     <em>let s1 = "Hello";
@@ -358,6 +374,7 @@ fn main() {
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 Hello Rust World.
 </pre>
@@ -377,6 +394,7 @@ Hello Rust World.
 - タプルの要素にアクセスするには`.`(ドット)に続いて添字(0始まり)を指定します。
 <div class="code-box">
 <div class="title">タプルの例</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let name = "fumo";
@@ -388,6 +406,7 @@ fn main() {
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 名前はfumoで、年齢は40です。
 </pre>
@@ -402,6 +421,7 @@ fn main() {
 - 要素数を超えてアクセスしようとするとビルド時にエラーとなります。
 <div class="code-box">
 <div class="title">配列の例</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     let array = <em>["春", "夏", "秋", "冬"]</em>;
@@ -412,6 +432,7 @@ fn main() {
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 最初の季節 春
 最後の季節 冬
@@ -440,4 +461,4 @@ fn main() {
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

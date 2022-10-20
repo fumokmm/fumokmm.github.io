@@ -55,6 +55,7 @@ updated: 2021-09-08
 ## <a name="Hello World">Hello World</a><a class="heading-anchor-permalink" href="#Hello World">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 puts "Hello World"
 puts 'こんにちは'
@@ -63,6 +64,7 @@ puts 'こんにちは'
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 Hello World
 こんにちは
@@ -75,6 +77,7 @@ Hello World
 ## <a name="コメント">コメント</a><a class="heading-anchor-permalink" href="#コメント">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-06" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment"># ここがコメント</em>
 <em class="comment"># puts "コメント部分は処理されない"</em>
@@ -89,6 +92,7 @@ Hello World
 <div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-07" %}</div>
 ### 整数(Integer)
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 num1 = <em>1234</em> <em class="comment"># 正の整数</em>
 num2 = <em>-1234</em> <em class="comment"># 負の整数</em>
@@ -103,6 +107,7 @@ puts num3
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 1234
 -1234
@@ -112,6 +117,7 @@ puts num3
 
 ### 10進数、16進数、8進数、2進数
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 num1 = <em>0d9999</em>      <em class="comment"># 10進数 (0dで始まる数値は10進数とみなされる)</em>
 num2 = <em>0xffff</em>      <em class="comment"># 16進数 (0xで始まる数値は16進数とみなされる)</em>
@@ -127,6 +133,7 @@ puts num4
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 9999
 65535
@@ -138,6 +145,7 @@ puts num4
 ### 浮動小数点(Float)
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 num1 = <em>1.234</em>
 num2 = <em>1.2e3</em>  <em class="comment"># 指数表記 (1.2 × 10^3)</em>
@@ -149,6 +157,7 @@ puts num2
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 1.234
 1200.0
@@ -162,6 +171,7 @@ puts num2
 <div class="chapter-updated">{% include update_info_inline.html created="2021-07-06" updated="2021-07-07" %}</div>
 ### 論理型(Boolean)
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 bool1 = <em>true</em>   <em class="comment"># TrueClassの唯一のインスタンス</em>
 bool2 = <em>false</em>  <em class="comment"># FalseClassの唯一のインスタンス</em>
@@ -175,6 +185,7 @@ puts bool2.class == FalseClass
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 true
 false
@@ -198,6 +209,7 @@ true
 <div class="chapter-updated">{% include update_info_inline.html created="2021-03-09" updated="2021-09-08" %}</div>
 <div class="code-box-syntax">
 <div class="title">if文</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>if</em> <em class="blue">条件式</em> <em>then</em>
   <em class="comment"># 条件式が真の時に実行する処理1</em>
@@ -209,6 +221,7 @@ true
 条件式に後ろが改行の場合は`then`を省略できます。
 <div class="code-box-syntax">
 <div class="title">if文 (then省略)</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>if</em> <em class="blue">条件式</em>
   <em class="comment"># 条件式が真の時に実行する処理1</em>
@@ -221,6 +234,7 @@ true
 `else if`ではないのでご注意下さい。
 <div class="code-box-syntax">
 <div class="title">if-elsif文</div>
+<div class="copy-button">Copy</div>
 <pre>
 if <em class="blue">条件式1</em>
   <em class="comment"># 条件式1が真の時に実行する処理1</em>
@@ -235,6 +249,7 @@ if <em class="blue">条件式1</em>
 条件式が偽の場合に実行する節ブロックを指定するには`else`を使います。
 <div class="code-box-syntax">
 <div class="title">if-else文</div>
+<div class="copy-button">Copy</div>
 <pre>
 if 条件式
   <em class="comment"># 条件式が真の時に実行する処理1</em>
@@ -249,6 +264,7 @@ if 条件式
 `elsif`と`else`は組み合わせられます。
 <div class="code-box-syntax">
 <div class="title">if-elsif-else文</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>if</em> <em class="blue">条件式1</em>
   <em class="comment"># 条件式1が真の時に実行する処理1</em>
@@ -410,4 +426,4 @@ load <em>'./path/to/file</em><em class="blue">.rb</em><em>'</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

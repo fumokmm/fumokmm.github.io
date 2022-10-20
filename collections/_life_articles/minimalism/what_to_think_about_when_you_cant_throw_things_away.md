@@ -102,4 +102,4 @@ updated: 2021-06-26
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

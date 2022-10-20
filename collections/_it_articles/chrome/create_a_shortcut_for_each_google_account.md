@@ -32,6 +32,7 @@ updated: 2022-04-25
 たまに作成したショートカットを使っても、前に起動したユーザプロファイルのChromeが立ち上がってしまう場合があります。  
 そんな時はショートカットの末尾に`--profile-directory`が付与されているか確認して下さい。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 --profile-directory="Profile X"
 </pre>
@@ -42,6 +43,7 @@ updated: 2022-04-25
 
 <div class="code-box">
 <div class="title">ショートカット例</div>
+<div class="copy-button">Copy</div>
 <pre>
 リンク先: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory=<em>"Profile 4"</em>
 </pre>
@@ -52,6 +54,7 @@ updated: 2022-04-25
 - 人ごとに違いますので、ご自分の環境で確認してください。
 - なお、最初にログインしたときのユーザは`Profile X`ではなく`Default`というプロファイル名になります。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 C:\Users\{Windowsユーザ名}\AppData\Local\Google\Chrome\User Data\<em>Profile X</em>
    or
@@ -69,4 +72,4 @@ C:\Users\{Windowsユーザ名}\AppData\Local\Google\Chrome\User Data\<em>Default
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

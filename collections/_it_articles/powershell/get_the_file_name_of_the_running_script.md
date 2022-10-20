@@ -22,6 +22,7 @@ PowerShell v3以降向け。
 これを`\`で分割して最後の要素を取得すれば実行中のスクリプトのファイル名が取得できます。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 # スクリプトファイル(.ps1)のパス
 $scriptName1 = Split-Path -Leaf <em>$PSCommandPath</em>
@@ -43,6 +44,7 @@ PowerShell v2以前向け。
 以下のようにすればファイル名が取得できます。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 # スクリプトファイル(.ps1)のパス
 $scriptName2 = Split-Path -Leaf <em>$Script:MyInvocation.MyCommand</em><em class="blue">.Path</em>
@@ -74,4 +76,4 @@ Write-Host $scriptName3
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

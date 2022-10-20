@@ -19,6 +19,7 @@ updated: 2021-06-14
 `Set-Content`を使います。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $str = @'
 aaaaa
@@ -50,4 +51,4 @@ Get-ChildItem C:\temp | <em>Set-Content</em> -Path C:\temp\out3.txt
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

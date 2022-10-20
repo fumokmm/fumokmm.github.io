@@ -55,6 +55,7 @@ updated: 2021-10-20
 ### コンソールに文字表示
 - `Write-Host`コマンドレットを使用します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>Write-Host</em> <em class="blue">"Hello world"</em>
 </pre>
@@ -67,6 +68,7 @@ updated: 2021-10-20
 <div class="chapter-updated">{% include update_info_inline.html created="2021-05-16" updated="2021-05-28" %}</div>
 - コメントには`#`を使用します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment"># ここはコメント</em>
 </pre>
@@ -74,6 +76,7 @@ updated: 2021-10-20
 
 - 複数行コメントには`<#`と`#>`を使用します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">&lt;#
 ここは複数行
@@ -90,6 +93,7 @@ updated: 2021-10-20
 式の途中で改行するには<code>バッククォート(`)</code>を使用します。
 ちなみに[Windows Batchの方]({% link _it_articles/windows_batch/grammar.md %}#式の途中で改行する)では`サーカムフレックス(^)`を利用していましたね。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 New-Item "c:\temp\myfile.txt" <em>`</em>
     -type file <em>`</em>
@@ -99,6 +103,7 @@ New-Item "c:\temp\myfile.txt" <em>`</em>
 
 - パイプ`(|)`を後ろに置く場合は<code>バッククォート(`)</code>無しで改行できます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Get-Process <em>|</em>
    Where-Object {$_.CPU -gt 500} <em>|</em>
@@ -117,6 +122,7 @@ Get-Process <em>|</em>
 - PowerShellでは変数は頭に`$`を付けて宣言します。
 - 変数宣言をしていなくても使用可能で、どのような型でも代入が可能です。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>$a</em> = 1
 <em>$items</em> = Get-ChildItem <em class="comment"># コマンドレットの戻り値を格納</em>
@@ -126,6 +132,7 @@ Get-Process <em>|</em>
 - 型を明示的に指定することも可能です。型は`[型]`という形式で`$`の前に付けます。
   - 指定できる型については[型]({% link _it_articles/powershell/grammar.md %}#型)を参照。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>[int]</em>$i = 10
 </pre>
@@ -134,6 +141,7 @@ Get-Process <em>|</em>
 - 明示的に型を指定した場合、その型以外を代入しようとするとエラーとなります。
 <div class="code-box-output">
 <div class="title">違う方を代入しようとするとエラーになる</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\Users\fumo&gt;</em> [int]$i = 10
 <em class="command">PS C:\Users\fumo&gt;</em> $i = 'a'
@@ -165,6 +173,7 @@ Get-Process <em>|</em>
 - スコープの種類は、`global`、`script`、`local`、`private`の4種類あります。
 - スコープ修飾子を指定しなかった場合は`local`となります。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>$global</em>:x = 10
 <em>$script</em>:x = 20
@@ -485,6 +494,7 @@ Get-Process <em>|</em>
 ### if-elseif-else
 <div class="code-box-syntax">
 <div class="title">if</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>if</em> (Boolean_expression) {
    // Executes when the Boolean expression is true
@@ -494,6 +504,7 @@ Get-Process <em>|</em>
 
 <div class="code-box-syntax">
 <div class="title">if-else</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>if</em> (Boolean_expression) {
    // Executes when the Boolean expression is true
@@ -505,6 +516,7 @@ Get-Process <em>|</em>
 
 <div class="code-box-syntax">
 <div class="title">if-elseif-else</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>if</em> (Boolean_expression 1) {
    // Executes when the Boolean expression 1 is true
@@ -520,6 +532,7 @@ Get-Process <em>|</em>
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $filesize = 2MB
 
@@ -538,6 +551,7 @@ $filesize = 2MB
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 2MB以上
 </pre>
@@ -558,6 +572,7 @@ $filesize = 2MB
 
 <div class="code-box">
 <div class="title">0017_string.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 $a = 'あいう'
 
@@ -583,6 +598,7 @@ Write-Host $str2
 
 ### 出力結果
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp&gt;</em> .\0017_string.ps1
 ヒアドキュメントでは複数行のテキストを
@@ -608,6 +624,7 @@ Write-Host $str2
 - 引数を書く位置は、変数名の後の`()`の中か、本体の先頭部分の`Param()`の中のどちらかです[^arguments-position]。
 - 戻り値は`return`キーワードのを使って書きます。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment"># 引数なし</em>
 function <em>関数名</em> {
@@ -650,6 +667,7 @@ function <em>関数名</em> {
 
 <div class="code-box">
 <div class="title">function_variable_length_parameter.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 function foo {
     Write-Host <em>$args</em>.Count
@@ -677,6 +695,7 @@ bar 10 20  <em class="comment"># $a, $bに10, 20が割り当てられ、$argsに
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp&gt;</em> .\function_variable_length_parameter.ps1
 --- call foo
@@ -707,6 +726,7 @@ c
 
 <div class="code-box">
 <div class="title">function_args_byval_byref.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment"># 値渡し</em>
 function byVal($arg) {
@@ -738,6 +758,7 @@ $str  <em class="comment"># =&gt; Good bye!!! に書き換わっている</em>
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp&gt;</em> .\function_args_byval_byref.ps1
 Hello
@@ -760,6 +781,7 @@ Good bye!!!
 - 明示的に指定して上書きすることもできます。
 <div class="code-box">
 <div class="title">function_args_default_value.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 function foo($arg <em>= 10</em>) {
     Write-Host "値は$($arg)です。"
@@ -778,6 +800,7 @@ bar 15 25 <em class="comment"># =&gt; $arg1に15が入って、$arg2は上書き
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp&gt;</em> .\function_args_default_value.ps1       
 値は10です。
@@ -796,11 +819,13 @@ bar 15 25 <em class="comment"># =&gt; $arg1に15が入って、$arg2は上書き
 ハッシュテーブルに初期値とともに宣言する場合は、`@{}`の中に`名前=値`の形式で記述します。  
 `改行`か`;`で区切ると複数名前を値の組を指定できます。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 @{ &lt;名前1&gt; = &lt;値1&gt;; [&lt;名前2&gt; = &lt;値2&gt; ] ...}
 </pre>
 </div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 @{
     &lt;名前1&gt; = &lt;値1&gt;
@@ -843,4 +868,4 @@ bar 15 25 <em class="comment"># =&gt; $arg1に15が入って、$arg2は上書き
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

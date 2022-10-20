@@ -26,6 +26,7 @@ updated: 2022-02-08
 ## <a name="日付の足し算、引き算">日付の足し算、引き算</a><a class="heading-anchor-permalink" href="#日付の足し算、引き算">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-08" updated="2022-02-08" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import datetime
 
@@ -50,6 +51,7 @@ print(yesterday)        <em class="comment"># =&gt; 2022-02-07 21:46:45.976739</
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;class 'datetime.datetime'&gt;
 2022-02-08 21:46:45.976739
@@ -82,4 +84,4 @@ print(yesterday)        <em class="comment"># =&gt; 2022-02-07 21:46:45.976739</
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

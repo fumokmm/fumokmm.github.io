@@ -58,6 +58,7 @@ updated: 2021-04-01
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM ユーザマスタ WHERE ユーザID = '$userId' AND パスワード = '$passwd'
 </pre>
@@ -85,6 +86,7 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = '$userId' AND パスワー�
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM ユーザマスタ WHERE ユーザID = 'fumo' AND <em>パスワード = '' OR 'A' = 'A'</em>
 </pre>
@@ -126,6 +128,7 @@ SQL文におけるセミコロン「`;`」は、ステートメントを分割�
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM ユーザマスタ WHERE ユーザID = '' AND パスワード = ''<em>; DELETE FROM ユーザマスタ WHERE 'A' = 'A'</em>
 </pre>
@@ -136,6 +139,7 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = '' AND パスワード = ''
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM ユーザマスタ WHERE ユーザID = '' AND パスワード = '';
 DELETE FROM ユーザマスタ WHERE 'A' = 'A'
@@ -175,6 +179,7 @@ DELETE FROM ユーザマスタ WHERE 'A' = 'A'
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM ユーザマスタ WHERE ユーザID = '';
 DELETE FROM ユーザマスタ WHERE 'A' = 'A' <em>--' AND パスワード = ''</em>
@@ -195,6 +200,7 @@ DELETE FROM ユーザマスタ WHERE 'A' = 'A' <em>--' AND パスワード = ''<
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID = '${userId}' AND パスワード = '${oldPasswd}'
 </pre>
@@ -226,6 +232,7 @@ UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = 'rose' AND パスワード = 'fuga' <em>OR ユーザID = 'admin'</em>
 </pre>
@@ -292,6 +299,7 @@ UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = 'ro
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 UPDATE ユーザマスタ SET パスワード = 'malice' WHERE ユーザID = '' <em>OR 'A' = 'A' --' AND パスワード = ''</em>
 </pre>
@@ -388,6 +396,7 @@ SQL文に含まれたパラメータに対して、危険な文字列を検出�
 
 <div class="code-box">
 <div class="title">SQL1</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM ユーザマスタ WHERE ユーザID = '${userId}' AND パスワード = '${oldPasswd}'
 </pre>
@@ -395,6 +404,7 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = '${userId}' AND パスワ�
 
 <div class="code-box">
 <div class="title">SQL2</div>
+<div class="copy-button">Copy</div>
 <pre>
 UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID = <em>'取得したユーザID'</em>
 </pre>
@@ -424,6 +434,7 @@ UPDATE ユーザマスタ SET パスワード = '${newPasswd}' WHERE ユーザID
 
 <div class="code-box">
 <div class="title">SQL1</div>
+<div class="copy-button">Copy</div>
 <pre>
 INSERT INTO ユーザマスタ VALUES ( 'admin<em>''</em> --', 'passwd' )
 </pre>
@@ -465,6 +476,7 @@ INSERT INTO ユーザマスタ VALUES ( 'admin<em>''</em> --', 'passwd' )
 
 <div class="code-box">
 <div class="title">SQL1</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM ユーザマスタ WHERE ユーザID = 'admin'' --' AND パスワード = 'passwd'
 </pre>
@@ -475,6 +487,7 @@ SELECT * FROM ユーザマスタ WHERE ユーザID = 'admin'' --' AND パスワ�
 
 <div class="code-box">
 <div class="title">SQL2</div>
+<div class="copy-button">Copy</div>
 <pre>
 UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'admin' --''
 </pre>
@@ -484,6 +497,7 @@ UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'a
 
 <div class="code-box">
 <div class="title">SQL2 (実行される部分)</div>
+<div class="copy-button">Copy</div>
 <pre>
 UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'admin'
 </pre>
@@ -529,4 +543,4 @@ UPDATE ユーザマスタ SET パスワード = 'passwd2' WHERE ユーザID = 'a
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

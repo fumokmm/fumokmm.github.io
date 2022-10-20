@@ -24,6 +24,7 @@ Javaでシングルトンを実現しようとする際のクラス生成イデ�
 簡単！安全！すっきりキレイ！
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 class Singleton {
     <em class="comment">/** インスタンスホルダー */</em>
@@ -62,4 +63,4 @@ class Singleton {
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

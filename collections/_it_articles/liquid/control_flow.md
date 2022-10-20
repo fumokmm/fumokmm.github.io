@@ -26,6 +26,7 @@ updated: 2021-09-08
 `{% if %}`で開始して、`{% endif %}`で閉じます。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 {% <em>if</em> <em class="blue">&lt;条件&gt;</em> %}
   <em class="orange">&lt;ブロック&gt;</em>
@@ -35,6 +36,7 @@ updated: 2021-09-08
 ### 例
 <div class="code-box">
 <div class="title">Input (product.titleの値が "すごい靴" の場合)</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% <em>if</em> product.title == "すごい靴" %}
   こりゃすごい靴だ！
@@ -43,6 +45,7 @@ updated: 2021-09-08
 </div>
 <div class="code-box-output">
 <div class="title">Output</div>
+<div class="copy-button">Copy</div>
 <pre>
 こりゃすごい靴だ！
 </pre>
@@ -59,6 +62,7 @@ updated: 2021-09-08
 `{% unless %}`で開始して、`{% endunless %}`で閉じます。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 {% <em>unless</em> <em class="blue">&lt;条件&gt;</em> %}
   <em class="orange">&lt;ブロック&gt;</em>
@@ -68,6 +72,7 @@ updated: 2021-09-08
 ### 例
 <div class="code-box">
 <div class="title">Input (product.titleの値が "すごくない靴" の場合)</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% <em>unless</em> product.title == "すごい靴" %}
   こりゃすごい靴じゃないぞ！
@@ -76,6 +81,7 @@ updated: 2021-09-08
 </div>
 <div class="code-box-output">
 <div class="title">Output</div>
+<div class="copy-button">Copy</div>
 <pre>
 こりゃすごい靴じゃないぞ！
 </pre>
@@ -84,6 +90,7 @@ updated: 2021-09-08
 `unless`は以下と同じ動きをします。
 <div class="code-box">
 <div class="title">Input (product.titleの値が "すごくない靴" の場合)</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% if product.title <em>!=</em> "すごい靴" %}
   こりゃすごい靴じゃないぞ！
@@ -103,6 +110,7 @@ updated: 2021-09-08
 {% raw %}
 <div class="code-box-syntax">
 <div class="title">if-else</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% <em>if</em> <em class="blue">&lt;条件1&gt;</em> %}
   <em class="orange">&lt;ブロック1&gt;</em>
@@ -113,6 +121,7 @@ updated: 2021-09-08
 </div>
 <div class="code-box-syntax">
 <div class="title">if-elsif-else</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% <em>if</em> <em class="blue">&lt;条件1&gt;</em> %}
   <em class="orange">&lt;ブロック1&gt;</em>
@@ -125,6 +134,7 @@ updated: 2021-09-08
 </div>
 <div class="code-box-syntax">
 <div class="title">unless-else</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% <em>unless</em> <em class="blue">&lt;条件1&gt;</em> %}
   <em class="orange">&lt;ブロック1&gt;</em>
@@ -140,6 +150,7 @@ updated: 2021-09-08
 {% raw %}
 <div class="code-box">
 <div class="title">Input</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% assign name = "anonymous" %}
 {% if name == "kevin" %}
@@ -153,6 +164,7 @@ updated: 2021-09-08
 </div>
 <div class="code-box-output">
 <div class="title">Output</div>
+<div class="copy-button">Copy</div>
 <pre>
 こんにちは、匿名さん！
 </pre>
@@ -175,4 +187,4 @@ updated: 2021-09-08
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

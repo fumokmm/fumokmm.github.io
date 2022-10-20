@@ -136,4 +136,4 @@ updated: 2022-09-17
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

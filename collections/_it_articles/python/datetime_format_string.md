@@ -37,6 +37,7 @@ updated: 2022-02-07
 
 ### datetime.datetime.strftimeメソッド
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import datetime
 
@@ -49,6 +50,7 @@ print(now.<em>strftime</em>(<em class="blue">"%x %X"</em>))   <em class="comment
 
 ### datetime.date.strftimeメソッド
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import datetime
 
@@ -62,6 +64,7 @@ print(d.<em>strftime</em>(<em class="blue">"%x %X"</em>))     <em class="comment
 
 ### datetime.time.strftimeメソッド
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import datetime
 
@@ -75,6 +78,7 @@ print(t.<em>strftime</em>(<em class="blue">"%x %X"</em>))     <em class="comment
 
 ### time.strftime関数
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import time
 
@@ -89,6 +93,7 @@ print(time.<em>strftime</em>(<em class="blue">"%x %X"</em>, <em>nowt</em>))  <em
 - デフォルト以外を使いたい場合はフルでフォーマット文字列を指定していきます。
 - 日本でよく使うのは`YYYY/MM/DD hh:mm:ss`なので、`%Y/%m/%d %H:%M:%S`とするとよいようです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(<em>now</em>.strftime(<em class="blue">"%Y/%m/%d %H:%M:%S"</em>))  <em class="comment"># =&gt; 2022/02/07 20:23:28</em>
 </pre>
@@ -103,6 +108,7 @@ print(<em>now</em>.strftime(<em class="blue">"%Y/%m/%d %H:%M:%S"</em>))  <em cla
 
 ### f文字列
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(f"{<em>now</em>:<em class="blue">%x %X</em>}")          <em class="comment"># =&gt; 02/07/22 20:23:28</em>
 </pre>
@@ -110,6 +116,7 @@ print(f"{<em>now</em>:<em class="blue">%x %X</em>}")          <em class="comment
 
 ### format関数
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(format(<em>now</em>, <em class="blue">"%x %X"</em>))    <em class="comment"># =&gt; 02/07/22 20:23:28</em>
 </pre>
@@ -117,6 +124,7 @@ print(format(<em>now</em>, <em class="blue">"%x %X"</em>))    <em class="comment
 
 ### 文字列のformatメソッド
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(<em class="blue">"{:%x %X}"</em>.format(<em>now</em>))  <em class="comment"># =&gt; 02/07/22 20:23:28</em>
 </pre>
@@ -236,4 +244,4 @@ print(<em class="blue">"{:%x %X}"</em>.format(<em>now</em>))  <em class="comment
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

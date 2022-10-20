@@ -27,6 +27,7 @@ Excelで表を作る時に、行番号を自動で作りたいことがよくあ
 
 ### 数式
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 = &lt;一つ上のセルの値&gt; + 1
 </pre>
@@ -54,6 +55,7 @@ Excelで表を作る時に、行番号を自動で作りたいことがよくあ
 
 ### 数式
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 = ROW() - ROW(&lt;ヘッダのセル(行固定)&gt;)
 </pre>
@@ -79,6 +81,7 @@ Excelで表を作る時に、行番号を自動で作りたいことがよくあ
 
 ### 数式
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 = COUNTA(&lt;先頭(ヘッダ行)(行固定)&gt;:&lt;そのセルの一つ上のセル&gt;)
 </pre>
@@ -107,4 +110,4 @@ Excelで表を作る時に、行番号を自動で作りたいことがよくあ
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

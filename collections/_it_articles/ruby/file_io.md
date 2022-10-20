@@ -20,4 +20,4 @@ updated: 2022-02-13
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

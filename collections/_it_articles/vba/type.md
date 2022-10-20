@@ -121,4 +121,4 @@ VBAで利用可能な型は以下があります。
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

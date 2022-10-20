@@ -20,6 +20,7 @@ YAMLのメモです。
 <div class="chapter-updated">{% include update_info_inline.html created="2021-11-15" updated="2021-11-15" %}</div>
 YAMLではnullは`null`または、チルダ(`~`)で表現します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 a: <em>null</em>
 b: <em>~</em>
@@ -36,12 +37,14 @@ b: <em>~</em>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-01-24" updated="2022-01-24" %}</div>
 YAMLでは空配列は`[]`で表現します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 a: <em>[]</em>
 </pre>
 </div>
 なお、何も書かないと`null`になってしまうようです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 a:
 </pre>
@@ -61,4 +64,4 @@ a:
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -22,6 +22,7 @@ updated: 2021-08-10
 - `-NoLogo`と`-NoProfile`を付けると余分な出力が出ません。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 PowerShell -NoLogo -NoProfile -ExecutionPolicy Unrestricted -File <em>&lt;PowerShellスクリプトのパス&gt;</em> <em class="blue">&lt;パラメータ1&gt; &lt;パラメータ2&gt; ...</em>
 </pre>
@@ -30,6 +31,7 @@ PowerShell -NoLogo -NoProfile -ExecutionPolicy Unrestricted -File <em>&lt;PowerS
 ### 例
 <div class="code-box">
 <div class="title">hello.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 Write-Host "hello! $($args[0])"
 </pre>
@@ -37,6 +39,7 @@ Write-Host "hello! $($args[0])"
 
 <div class="code-box-output">
 <div class="title">コマンドプロンプト</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">C:\temp&gt;</em>PowerShell -NoLogo -NoProfile -ExecutionPolicy Unrestricted -File <em>.\hello.ps1</em>
 hello!
@@ -59,4 +62,4 @@ hello! world
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -29,6 +29,7 @@ updated: 2022-10-19
 単純に`select句`に取得したいものを指定します。  
 `from句`以降は省略してOKです。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 select <em>&lt;取得したいもの&gt;</em>;
 </pre>
@@ -36,6 +37,7 @@ select <em>&lt;取得したいもの&gt;</em>;
 
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 select <em>'1';</em>
 select <em>'aa' as col1, 'BB' as col2, '123' as col3;</em>
@@ -49,6 +51,7 @@ select <em>cast(1234.56 as integer);</em>
 関数や定数などは`from句`に指定でも取得できます。
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 select * <em class="blue">from</em> <em>now();</em>
 select * <em class="blue">from</em> <em>current_date;</em>
@@ -67,4 +70,4 @@ select * <em class="blue">from</em> <em>cast(1234.56 as integer);</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

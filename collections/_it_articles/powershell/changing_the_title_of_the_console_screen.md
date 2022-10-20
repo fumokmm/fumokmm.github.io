@@ -25,6 +25,7 @@ updated: 2022-02-17
 ## <a name="コマンド">コマンド</a><a class="heading-anchor-permalink" href="#コマンド">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-17" updated="2022-02-17" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>$Host.UI.RawUI.WindowTitle</em> = <em class="blue">&lt;タイトル&gt;</em>
 </pre>
@@ -32,6 +33,7 @@ updated: 2022-02-17
 
 ### 例：コンソール画面のタイトルを Think Twice に変更
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $Host.UI.RawUI.WindowTitle = <em>"Think Twice"</em>
 </pre>
@@ -49,4 +51,4 @@ $Host.UI.RawUI.WindowTitle = <em>"Think Twice"</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

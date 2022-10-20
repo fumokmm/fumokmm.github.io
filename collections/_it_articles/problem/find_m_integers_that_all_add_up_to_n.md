@@ -17,6 +17,7 @@ updated: 2021-04-20
 <div class="chapter-updated">{% include update_info_inline.html created="2021-04-20" updated="2021-04-20" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
+<div class="copy-button">Copy</div>
 <pre>
 全て足してnになるm個の整数を求める関数を作成せよ。
 
@@ -75,4 +76,4 @@ assert result == [[0, 0, 0, 2], [0, 0, 1, 1], [0, 0, 2, 0], [0, 1, 0, 1], [0, 1,
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

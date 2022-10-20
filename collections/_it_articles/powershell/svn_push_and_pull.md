@@ -42,6 +42,7 @@ updated: 2021-07-26
 ### ローカル側
 <div class="code-box">
 <div class="title">C:\temp\testrepos</div>
+<div class="copy-button">Copy</div>
 <pre>
 │
 ├─.svnrepos
@@ -60,6 +61,7 @@ updated: 2021-07-26
 ### リモート側
 <div class="code-box">
 <div class="title">N:\repos\svn</div>
+<div class="copy-button">Copy</div>
 <pre>
 │
 ├─testrepos.svnrepos
@@ -78,6 +80,7 @@ updated: 2021-07-26
 
 <div class="code-box">
 <div class="title">push.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 $reposName = 'testrepos'
 $remoteBaseDir = 'N:\repos\svn\'
@@ -195,6 +198,7 @@ if ($localRevision -eq $syncRevision) {
 
 <div class="code-box">
 <div class="title">pull.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 $reposName = 'testrepos'
 $remoteBaseDir = 'N:\repos\svn\'
@@ -314,6 +318,7 @@ if ($remoteRevision -eq $syncRevision) {
 
 <div class="code-box">
 <div class="title">C:\temp\testrepos</div>
+<div class="copy-button">Copy</div>
 <pre>
 │
 ├─.svnrepos
@@ -339,6 +344,7 @@ if ($remoteRevision -eq $syncRevision) {
 
 <div class="code-box">
 <div class="title">C:\temp\testrepos</div>
+<div class="copy-button">Copy</div>
 <pre>
 │
 ├─.svnrepos
@@ -377,4 +383,4 @@ if ($remoteRevision -eq $syncRevision) {
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

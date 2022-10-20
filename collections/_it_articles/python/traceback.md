@@ -27,6 +27,7 @@ JavaであるようなスタックトレースをPythonでも出力する方法�
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-29" updated="2021-10-29" %}</div>
 ゼロ割で例外を発生させるサンプルです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import <em>traceback</em>
 
@@ -40,6 +41,7 @@ except Exception as e:
 </div>
 <div class="code-box">
 <div class="title">output</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">&gt; python .\0006_traceback.py</em>
 エラー情報
@@ -67,4 +69,4 @@ ZeroDivisionError: division by zero
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

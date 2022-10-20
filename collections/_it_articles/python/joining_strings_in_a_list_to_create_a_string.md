@@ -18,6 +18,7 @@ updated: 2021-10-18
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-18" updated="2021-10-18" %}</div>
 `str`の`joinメソッド`を使います。  
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 &gt;&gt;&gt; list = ["a", "b", "c"]
 &gt;&gt;&gt; <em>"/"</em>.<em class="blue">join(</em>list<em class="blue">)</em>
@@ -29,6 +30,7 @@ updated: 2021-10-18
 ただし、リストの中身が文字列じゃないとエラーになるので注意して下さい。
 <div class="code-box-output">
 <div class="title">TypeError</div>
+<div class="copy-button">Copy</div>
 <pre>
 &gt;&gt;&gt; list2 = [100, 200, 300]
 &gt;&gt;&gt; "/".join(list2)
@@ -51,4 +53,4 @@ Traceback (most recent call last):
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

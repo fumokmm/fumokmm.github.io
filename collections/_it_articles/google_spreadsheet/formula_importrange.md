@@ -18,6 +18,7 @@ updated: 2022-04-08
 ## <a name="形式">形式</a><a class="heading-anchor-permalink" href="#形式">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-08" updated="2022-04-08" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 IMPORTRANGE(&lt;spreadsheet_url&gt;, range_string)
 </pre>
@@ -26,6 +27,7 @@ IMPORTRANGE(&lt;spreadsheet_url&gt;, range_string)
 
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 IMPORTRANGE("https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXXXXXXXXXX/edit#gid=999999999", "シート1!A1:C10")
 </pre>
@@ -50,4 +52,4 @@ IMPORTRANGE("https://docs.google.com/spreadsheets/d/XXXXXXXXXXXXXXXXXXXXXXXX/edi
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

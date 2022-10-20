@@ -20,6 +20,7 @@ updated: 2022-04-12
 - PowerShellの場合、`Get-Content`と`Set-Content`を組み合わせると簡単です。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>Get-Content</em> `
 <em class="blue">aaa.txt</em>, `
@@ -29,6 +30,7 @@ updated: 2022-04-12
 </div>
 <div class="code-box-input">
 <div class="title">aaa.txt</div>
+<div class="copy-button">Copy</div>
 <pre>
 aaa
 aaa
@@ -37,6 +39,7 @@ aaa
 </div>
 <div class="code-box-input">
 <div class="title">bbb.txt</div>
+<div class="copy-button">Copy</div>
 <pre>
 bbb
 bbb
@@ -45,6 +48,7 @@ bbb
 </div>
 <div class="code-box-output">
 <div class="title">ccc.txt</div>
+<div class="copy-button">Copy</div>
 <pre>
 aaa
 aaa
@@ -71,4 +75,4 @@ bbb
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

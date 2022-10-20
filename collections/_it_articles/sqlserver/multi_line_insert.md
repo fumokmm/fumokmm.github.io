@@ -17,6 +17,7 @@ updated: 2021-09-02
 ## <a name="複数行INSERT">複数行INSERT</a><a class="heading-anchor-permalink" href="#複数行INSERT">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-02" updated="2021-09-02" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 INSERT INTO TABLE1
   (COL1, COL2, COL3)
@@ -48,4 +49,4 @@ VALUES
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

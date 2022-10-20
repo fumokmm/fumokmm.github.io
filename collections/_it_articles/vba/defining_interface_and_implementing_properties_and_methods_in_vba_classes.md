@@ -23,6 +23,7 @@ VBAのクラスでもインターフェイスが使えるみたいです。
 
 <div class="code-box">
 <div class="title">(クラスモジュール) clsHuman</div>
+<div class="copy-button">Copy</div>
 <pre>
 Option Explicit
 
@@ -45,6 +46,7 @@ Public Function GetInfo() As String: End Function
 
 <div class="code-box">
 <div class="title">(クラスモジュール) clsMan</div>
+<div class="copy-button">Copy</div>
 <pre>
 Option Explicit
 
@@ -88,6 +90,7 @@ End Function
 
 <div class="code-box">
 <div class="title">(クラスモジュール) clsWoman</div>
+<div class="copy-button">Copy</div>
 <pre>
 Option Explicit
 
@@ -139,6 +142,7 @@ End Function
 <div class="chapter-updated">{% include update_info_inline.html created="2021-07-02" updated="2021-07-02" %}</div>
 <div class="code-box">
 <div class="title">(モジュール) VBA_Interface</div>
+<div class="copy-button">Copy</div>
 <pre>
 Option Explicit
 
@@ -170,6 +174,7 @@ End Sub
 ### 出力結果
 <div class="code-box-output">
 <div class="title">(イミディエイトウィンドウ)</div>
+<div class="copy-button">Copy</div>
 <pre>
 やぁ！僕の名前は 太郎 だよ。
 {"man": {"name":"太郎", "age":"40"}}
@@ -191,4 +196,4 @@ End Sub
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

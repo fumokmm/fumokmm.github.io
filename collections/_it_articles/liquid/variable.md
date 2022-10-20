@@ -20,6 +20,7 @@ updated: 2021-09-08
 
 {% raw %}
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 {% <em>assign</em> <em class="blue">&lt;変数名&gt;</em> = <em class="orange">&lt;値&gt;</em> %}
 </pre>
@@ -30,6 +31,7 @@ updated: 2021-09-08
 {% raw %}
 <div class="code-box">
 <div class="title">Input</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% assign my_variable = false %}
 {% if my_variable != true %}
@@ -39,6 +41,7 @@ updated: 2021-09-08
 </div>
 <div class="code-box-output">
 <div class="title">Output</div>
+<div class="copy-button">Copy</div>
 <pre>
   This statement is valid.
 </pre>
@@ -52,6 +55,7 @@ updated: 2021-09-08
 {% raw %}
 <div class="code-box">
 <div class="title">Input</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% assign foo = <em>"bar"</em> %}
 {{ foo }}
@@ -59,6 +63,7 @@ updated: 2021-09-08
 </div>
 <div class="code-box-output">
 <div class="title">Output</div>
+<div class="copy-button">Copy</div>
 <pre>
 bar
 </pre>
@@ -75,4 +80,4 @@ bar
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

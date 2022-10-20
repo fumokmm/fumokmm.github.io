@@ -21,6 +21,7 @@ SQL ServerのSQLでは、`CHARINDEX`関数を使います。
 
 ### 構文
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 CHARINDEX(&lt;探す文字&gt;, &lt;探される文字列&gt; [, &lt;開始位置&gt;])   
 </pre>
@@ -32,6 +33,7 @@ CHARINDEX(&lt;探す文字&gt;, &lt;探される文字列&gt; [, &lt;開始位�
 ### 例
 <div class="code-box">
 <div class="title">通常利用</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT CHARINDEX(<em>'C'</em>, 'AB<em>C</em>DEFG');  <em class="comment">-- =&gt; 3</em>
 SELECT CHARINDEX(<em>'DE'</em>, 'ABC<em>DE</em>FG');  <em class="comment">-- =&gt; 4</em>
@@ -43,6 +45,7 @@ SELECT CHARINDEX(<em>'H'</em>, 'ABCDEFG');  <em class="comment">-- =&gt; 0</em>
 
 <div class="code-box">
 <div class="title">開始位置を指定</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT CHARINDEX('<em>は</em>', '<em class="orange">うらにわに</em><em>は</em><em class="orange">にわにわに</em><em>は</em><em class="orange">にわにわとりがいる</em>');  <em class="comment">-- =&gt; 6</em>
 SELECT CHARINDEX('<em>は</em>', 'うらにわには<em class="orange">にわにわに</em><em>は</em><em class="orange">にわにわとりがいる</em>', <em class="blue">7</em>);  <em class="comment">-- =&gt; 12</em>
@@ -65,4 +68,4 @@ SELECT CHARINDEX('<em>は</em>', 'うらにわにはにわにわには<em class=
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

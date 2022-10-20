@@ -25,6 +25,7 @@ updated: 2021-09-21
 
 <div class="code-box-output">
 <div class="title">PowerShell</div>
+<div class="copy-button">Copy</div>
 <pre>
 PS&gt; 'A'*255
 </pre>
@@ -37,4 +38,4 @@ PS&gt; 'A'*255
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

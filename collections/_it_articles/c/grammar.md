@@ -30,6 +30,7 @@ updated: 2021-09-22
 ## <a name="HelloWorld">HelloWorld</a><a class="heading-anchor-permalink" href="#HelloWorld">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-22" updated="2021-09-22" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 #include &lt;stdio.h&gt;
 
@@ -150,6 +151,7 @@ int main(void) {
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-22" updated="2021-09-22" %}</div>
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 #include &lt;stdio.h&gt;
 
@@ -175,4 +177,4 @@ int main(void) {
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

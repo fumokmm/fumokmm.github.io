@@ -37,6 +37,7 @@ updated: 2022-02-02
 - `__enter__`メソッドで`return`している`self`が、`withブロック`で`as`として受け取った変数となります。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 class MyContextManager:
     <em>def __enter__(self):
@@ -58,6 +59,7 @@ with MyContextManager() <em class="blue">as cm</em>:
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>1 ENTER!</em>
 2 ** hello **
@@ -76,4 +78,4 @@ with MyContextManager() <em class="blue">as cm</em>:
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

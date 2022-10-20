@@ -41,4 +41,4 @@ updated: 2022-01-12
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

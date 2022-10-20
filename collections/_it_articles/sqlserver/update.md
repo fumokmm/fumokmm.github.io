@@ -37,4 +37,4 @@ AND <em>&lt;更新したいテーブル&gt;</em>.id3 = <em class="blue">a</em>.i
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

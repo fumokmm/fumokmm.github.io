@@ -21,6 +21,7 @@ updated: 2022-02-02
 
 ### 構文
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 os.path.getsize(<em>&lt;パス&gt;</em>)
 </pre>
@@ -28,6 +29,7 @@ os.path.getsize(<em>&lt;パス&gt;</em>)
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import os
 
@@ -36,6 +38,7 @@ print(<em>os.path.getsize(</em>"aaa.txt"<em>)</em>)
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 12345
 </pre>
@@ -54,4 +57,4 @@ print(<em>os.path.getsize(</em>"aaa.txt"<em>)</em>)
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -52,4 +52,4 @@ task writeProp {
 - [(Gradle User Manual) Command-Line Interface](https://docs.gradle.org/current/userguide/command_line_interface.html)
 - [(Gradle User Manual) Project properties](https://docs.gradle.org/current/userguide/build_environment.html#sec:project_properties)
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

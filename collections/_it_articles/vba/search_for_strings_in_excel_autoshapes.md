@@ -20,6 +20,7 @@ updated: 2022-04-19
 以下のような関数(サブプロシージャ)を準備する。
 <div class="code-box">
 <div class="title">標準モジュール(Module1)</div>
+<div class="copy-button">Copy</div>
 <pre>
 Option Explicit
 
@@ -54,6 +55,7 @@ End Sub
 呼び出し側
 <div class="code-box">
 <div class="title">Sheet1</div>
+<div class="copy-button">Copy</div>
 <pre>
 Option Explicit
 
@@ -90,4 +92,4 @@ End Sub
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

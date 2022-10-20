@@ -34,6 +34,7 @@ updated: 2021-09-28
 - giboをダウンロードしてきて、`gibo update`すると使えるようになります。
 - 以下コマンドにて一気に実行できます。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ curl -L https://raw.github.com/simonwhitaker/gibo/master/gibo -so ~/bin/gibo &amp;&amp; chmod +x ~/bin/gibo &amp;&amp; gibo update
 </pre>
@@ -49,6 +50,7 @@ $ curl -L https://raw.github.com/simonwhitaker/gibo/master/gibo -so ~/bin/gibo &
 ### 動作確認
 - まずは`gibo`だけで実行すると、使えるコマンドを教えてくれます。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ <em>gibo</em>
 gibo 2.2.4 by Simon Whitaker &lt;sw@netcetera.org&gt;
@@ -76,6 +78,7 @@ Commands:
 ### 対応言語
 - 対応している言語は`list`で調べられます。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ gibo <em>list</em>
 Actionscript            ForceDotCom             IGORPro
@@ -99,6 +102,7 @@ Finale                  Idris                   Zephir
 ### 例：Goの.gitignore
 - 対応している言語の中から好きなものを組み合わせて`.gitignore`にリダイレクトすれば`.gitignore`が完成です。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ gibo dump <em>Go</em> &gt;&gt; <em class="blue">.gitignore</em>
 $ cat <em class="blue">.gitignore</em>
@@ -136,4 +140,4 @@ $ cat <em class="blue">.gitignore</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

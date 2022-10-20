@@ -18,6 +18,7 @@ updated: 2022-03-31
 <div class="chapter-updated">{% include update_info_inline.html created="2022-03-31" updated="2022-03-31" %}</div>
 <div class="code-box">
 <div class="title">ローワーキャメルケース</div>
+<div class="copy-button">Copy</div>
 <pre>
 =
 SUBSTITUTE(
@@ -98,12 +99,14 @@ LOWER(A1)
 例)
 <div class="code-box-input">
 <div class="title">A1セル</div>
+<div class="copy-button">Copy</div>
 <pre>
 AAA_BBB_CCC
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">B2セル(上記の数式の結果)</div>
+<div class="copy-button">Copy</div>
 <pre>
 aaaBbbCcc
 </pre>
@@ -111,6 +114,7 @@ aaaBbbCcc
 
 <div class="code-box">
 <div class="title">アッパーキャメルケース</div>
+<div class="copy-button">Copy</div>
 <pre>
 =UPPER(LEFT(A1, 1))&amp;
 SUBSTITUTE(
@@ -190,12 +194,14 @@ LOWER(MID(A1, 2, LEN(A1)))
 </div>
 <div class="code-box-input">
 <div class="title">A1セル</div>
+<div class="copy-button">Copy</div>
 <pre>
 AAA_BBB_CCC
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">B2セル(上記の数式の結果)</div>
+<div class="copy-button">Copy</div>
 <pre>
 AaaBbbCcc
 </pre>
@@ -210,4 +216,4 @@ AaaBbbCcc
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

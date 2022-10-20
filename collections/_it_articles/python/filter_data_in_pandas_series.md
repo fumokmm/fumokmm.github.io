@@ -32,6 +32,7 @@ updated: 2021-11-07
 ここでは例として以下のような`Series`を利用します。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import pandas as pd
 
@@ -40,6 +41,7 @@ print(ser)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 0         晴れ
 1          雨
@@ -53,11 +55,13 @@ dtype: object
 ### 完全一致
 完全一致する場合`True`を返却するようにする場合は`==`を利用します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(ser <em>==</em> "雨")
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 0    False
 <em>1     True</em>
@@ -70,11 +74,13 @@ dtype: bool
 
 ### 含まれる文字列(str.contains)
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(ser<em>.str.contains</em>("時々"))
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 0    False
 1    False
@@ -87,11 +93,13 @@ dtype: bool
 
 ### 指定文字で終わる(str.endswith)
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(ser<em>.str.endswith</em>("くもり"))
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 0    False
 1    False
@@ -104,11 +112,13 @@ dtype: bool
 
 # 指定文字で始まる(str.startswith)
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(ser<em>.str.startswith</em>("晴れ"))
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>0     True</em>
 1    False
@@ -125,11 +135,13 @@ dtype: bool
 ## <a name="絞り込み">絞り込み</a><a class="heading-anchor-permalink" href="#絞り込み">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-11-07" updated="2021-11-07" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(ser[<em>ser == "雨"</em>])
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 1    雨
 4    雨
@@ -141,11 +153,13 @@ dtype: object
 ### リスト内包表記にて
 `boolのリスト`であれば良いので、以下のような`リスト内包表記`でも同じ結果が得られます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(ser[<em>[x == "雨" for x in ser]</em>])
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 1    雨
 4    雨
@@ -168,4 +182,4 @@ dtype: object
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

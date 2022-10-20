@@ -18,6 +18,7 @@ updated: 2021-10-13
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-13" updated="2021-10-13" %}</div>
 `globモジュール`の`glob関数`を使います。  
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import glob
 
@@ -29,6 +30,7 @@ files = <em>glob.glob</em>(<em class="blue">"&lt;パスのパターン&gt;"</em>
 
 ### 例1: /tmpフォルダ配下の全ファイル
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import glob
 
@@ -39,6 +41,7 @@ for file in files:
 </div>
 <div class="code-box-output">
 <div class="title">出力</div>
+<div class="copy-button">Copy</div>
 <pre>
 /tmp/aaa.txt
 /tmp/bbb.txt
@@ -50,6 +53,7 @@ for file in files:
 
 ### 例2: /tmpフォルダ配下のhtmlファイル
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import glob
 
@@ -60,6 +64,7 @@ for file in files:
 </div>
 <div class="code-box-output">
 <div class="title">出力</div>
+<div class="copy-button">Copy</div>
 <pre>
 /tmp/ddd.html
 /tmp/eee.html
@@ -68,6 +73,7 @@ for file in files:
 
 ### 例3: /tmpフォルダの全サブディレクトリ配下のファイル
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import glob
 
@@ -78,6 +84,7 @@ for file in files:
 </div>
 <div class="code-box-output">
 <div class="title">出力</div>
+<div class="copy-button">Copy</div>
 <pre>
 /tmp/aaa.txt
 /tmp/bbb.txt
@@ -104,4 +111,4 @@ for file in files:
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

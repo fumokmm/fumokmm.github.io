@@ -24,6 +24,7 @@ T-SQLでは`テーブル変数`というものが使えます。
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-10" updated="2021-09-10" %}</div>
 以下のような構文で宣言します。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>DECLARE</em> <em class="blue">@変数名</em>m <em>TABLE</em> (
     &lt;テーブル定義&gt;
@@ -36,6 +37,7 @@ T-SQLでは`テーブル変数`というものが使えます。
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>DECLARE</em> <em class="blue">@id_tables</em> <em>TABLE</em> (id nvarchar(16))
 </pre>
@@ -51,6 +53,7 @@ T-SQLでは`テーブル変数`というものが使えます。
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 INSERT INTO <em>@id_tables</em> VALUES
   ('A001'),
@@ -69,6 +72,7 @@ INSERT INTO <em>@id_tables</em> VALUES
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM <em>@id_tables</em>
 </pre>
@@ -95,6 +99,7 @@ SELECT * FROM <em>@id_tables</em>
 ### 例
 <div class="code-box">
 <div class="title">INNER JOINして使う</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT
     b.*
@@ -116,6 +121,7 @@ ORDER BY
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 DELETE FROM <em>@id_tables</em> WHERE id = 'A001'
 </pre>
@@ -146,6 +152,7 @@ DELETE FROM <em>@id_tables</em> WHERE id = 'A001'
 取得するSQLは`WHERE句`や`TOP(x)`で絞ったりして、データを一意にする必要があります。[^error-msg]
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 SET <em>@変数名</em> = (<em class="blue">&lt;取得結果が一意になるSQL&gt;</em>)
 </pre>
@@ -153,6 +160,7 @@ SET <em>@変数名</em> = (<em class="blue">&lt;取得結果が一意になるSQ
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 SET <em>@last_id</em> = (<em class="blue">SELECT TOP 1 id FROM @id_tables ORDER BY id DESC</em>);
 </pre>
@@ -172,4 +180,4 @@ SET <em>@last_id</em> = (<em class="blue">SELECT TOP 1 id FROM @id_tables ORDER 
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -19,12 +19,14 @@ updated: 2021-11-18
 <div class="chapter-updated">{% include update_info_inline.html created="2021-11-15" updated="2021-11-16" %}</div>
 例として、`?`が10個をカンマ区切り(カンマの後に半角スペースが1つある)にした文字列を作成します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 params = ", ".join(list("?" * 10))
 print(params)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
 </pre>
@@ -32,6 +34,7 @@ print(params)
 
 ### 文字列 * 回数
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 文字列 * n
 </pre>
@@ -41,6 +44,7 @@ print(params)
 
 ### list()
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list(文字列)
 </pre>
@@ -50,6 +54,7 @@ list(文字列)
 
 ### join
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 文字列.join(リスト)
 </pre>
@@ -64,12 +69,14 @@ list(文字列)
 <div class="chapter-updated">{% include update_info_inline.html created="2021-11-16" updated="2021-11-16" %}</div>
 ただし、[方法1](#方法1)の方法だと文字列が2文字以上の繰り返しのときにうまく行かないので、以下のようにリストに`*`するほうが`list()`も省略できてスマートです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 params = ", ".join(["?"] * 10)
 print(params)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
 </pre>
@@ -77,6 +84,7 @@ print(params)
 
 ### リスト * 回数
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 リスト * n
 </pre>
@@ -101,4 +109,4 @@ print(params)
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

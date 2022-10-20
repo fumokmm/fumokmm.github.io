@@ -23,6 +23,7 @@ updated: 2022-03-17
 - 第1引数は`$Args[0]`、第2引数は`$Args[1]`という形式で取得できます。
 <div class="code-box">
 <div class="title">test1.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 Write-Host <em>$Args[0]</em>
 Write-Host <em class="blue">$Args[1]</em>
@@ -30,6 +31,7 @@ Write-Host <em class="blue">$Args[1]</em>
 </div>
 <div class="code-box-output">
 <div class="title">実行結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp&gt;</em> .\test1.ps1 <em>aaa</em> <em class="blue">100</em>
 aaa
@@ -41,6 +43,7 @@ aaa
 - Paramを使ってあらかじめ引数を宣言しておくことができます。
 <div class="code-box">
 <div class="title">test2.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 Param(<em>$Arg1</em>, <em class="blue">$Arg2</em>) <em class="comment">#第一引数を$Arg1, 第二引数を$Arg2に格納する</em>
 Write-Host <em>$Arg1</em>
@@ -50,6 +53,7 @@ Write-Host <em class="blue">$Arg2</em>
 - 通常に呼び出したり、明示的に名前を指定して呼び出したりできます。
 <div class="code-box-output">
 <div class="title">実行結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp&gt;</em> .\test2.ps1 <em>aaa</em> <em class="blue">100</em>
 aaa
@@ -68,6 +72,7 @@ aaa
 - 引数に`switch`という型を指定します。
 <div class="code-box">
 <div class="title">test3.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 Param(
     <em>[switch]</em> $dev,
@@ -83,6 +88,7 @@ Write-Host $prd
 - 例えば、`-stg`と指定してスクリプトを実行すると、$stgの値が`$true`となります。
 <div class="code-box-output">
 <div class="title">実行結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp&gt;</em> .\test3.ps1
 False
@@ -114,4 +120,4 @@ True</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -22,6 +22,7 @@ updated: 2022-03-27
 ### テキストから読み込み
 {% raw %}
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import json
 
@@ -42,6 +43,7 @@ print(type(json_data))
 {% endraw %}
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 {'a': '100', 'b': {'c': 'def'}}
 &lt;class 'dict'&gt;
@@ -63,4 +65,4 @@ print(type(json_data))
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

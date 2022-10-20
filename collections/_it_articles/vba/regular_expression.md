@@ -19,6 +19,7 @@ updated: 2021-07-08
 <div class="chapter-updated">{% include update_info_inline.html created="2021-07-08" updated="2021-07-08" %}</div>
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">' [参照設定] Microsoft VBScript Regular Expressions 5.5</em>
 
@@ -69,4 +70,4 @@ End Function
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

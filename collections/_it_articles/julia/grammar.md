@@ -29,6 +29,7 @@ updated: 2021-06-09
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-09" updated="2021-06-09" %}</div>
 <div class="code-box">
 <div class="title">0001_julia.jl</div>
+<div class="copy-button">Copy</div>
 <pre>
 println(<em>PROGRAM_FILE</em>)
 for x in <em class="blue">ARGS</em>
@@ -39,6 +40,7 @@ end
 - スクリプトファイルの拡張子は`.jl`。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$</em> julia <em>.\0001_julia.jl</em> <em class="blue">1 2 A</em>
 
@@ -65,4 +67,4 @@ A
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

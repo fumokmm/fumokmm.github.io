@@ -52,6 +52,7 @@ updated: 2021-06-05
 - 先ほどのコンソールでも良いですが、[PowerShell]({{link_to_it_powershell}})を立ち上げて試してみました。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\Users\fumo&gt;</em> julia
                _
@@ -88,4 +89,4 @@ updated: 2021-06-05
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

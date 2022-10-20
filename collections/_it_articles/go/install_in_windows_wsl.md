@@ -31,6 +31,7 @@ updated: 2021-09-24
 
 ### クローンしてくる
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ git clone https://github.com/syndbg/goenv.git ~/.goenv
 </pre>
@@ -41,6 +42,7 @@ $ git clone https://github.com/syndbg/goenv.git ~/.goenv
   - 私の環境はUbuntuだったので、例は`~/.bashrc`となっています。
 <div class="code-box">
 <div class="title">~/.bashrcに追記</div>
+<div class="copy-button">Copy</div>
 <pre>
 export GOENV_ROOT=$HOME/.goenv
 export PATH=$GOENV_ROOT/bin:$PATH
@@ -50,6 +52,7 @@ eval "$(goenv init -)"
 
 ### 設定を反映
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ source ~/.bashrc
 </pre>
@@ -57,6 +60,7 @@ $ source ~/.bashrc
 
 ### インストール可能なバージョンを確認
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ goenv install -l
 Available versions:
@@ -77,6 +81,7 @@ Available versions:
 
 今回は、`1.17.1`をインストールします。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ goenv install 1.17.1
 </pre>
@@ -85,6 +90,7 @@ $ goenv install 1.17.1
 ### Goのバージョンを設定と確認
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ goenv global 1.17.1
 $ goenv rehash
@@ -99,6 +105,7 @@ $ goenv version
 ## <a name="動作確認">動作確認</a><a class="heading-anchor-permalink" href="#動作確認">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-24" updated="2021-09-24" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ go
 Go is a tool for managing Go source code.
@@ -169,4 +176,4 @@ Use "go help &lt;topic&gt;" for more information about that topic.
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

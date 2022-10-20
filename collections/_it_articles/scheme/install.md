@@ -20,6 +20,7 @@ updated: 2022-07-04
 
 ### apt-get
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ sudo apt-get install gauche
 </pre>
@@ -31,6 +32,7 @@ $ sudo apt-get install gauche
 - 終了は`(exit)`。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ gosh
 gosh&gt; (+ 1 2)
@@ -43,6 +45,7 @@ $
 ### ファイルから実行
 <div class="code-box">
 <div class="title">hello.scm</div>
+<div class="copy-button">Copy</div>
 <pre>
 (print "Hello, World")
 (print "こんにちは、世界")
@@ -53,6 +56,7 @@ $
 
 <div class="code-box-output">
 <div class="title">実行</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ gosh hello.scm 
 Hello, World
@@ -74,4 +78,4 @@ $
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

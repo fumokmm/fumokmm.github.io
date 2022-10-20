@@ -31,6 +31,7 @@ updated: 2021-10-27
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-27" updated="2021-10-27" %}</div>
 <div class="code-box">
 <div class="title">辞書(ハッシュ)で作成</div>
+<div class="copy-button">Copy</div>
 <pre>
 import pandas as pd
 
@@ -46,6 +47,7 @@ print(df1)
 
 <div class="code-box-output">
 <div class="title">出力</div>
+<div class="copy-button">Copy</div>
 <pre>
    A   B   C
 0  1   6  11
@@ -63,6 +65,7 @@ print(df1)
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-27" updated="2021-10-27" %}</div>
 <div class="code-box">
 <div class="title">2次元リストで作成</div>
+<div class="copy-button">Copy</div>
 <pre>
 import pandas as pd
 
@@ -79,6 +82,7 @@ print(df2)
 
 <div class="code-box-output">
 <div class="title">出力</div>
+<div class="copy-button">Copy</div>
 <pre>
     A   B   C   D   E
 0   1   2   3   4   5
@@ -100,4 +104,4 @@ print(df2)
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

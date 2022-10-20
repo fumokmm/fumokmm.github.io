@@ -20,6 +20,7 @@ updated: 2021-09-28
 
 <div class="code-box">
 <div class="title">main.go</div>
+<div class="copy-button">Copy</div>
 <pre>
 package main
 
@@ -39,6 +40,7 @@ func main() {
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 10 int
 10 int16
@@ -61,4 +63,4 @@ func main() {
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

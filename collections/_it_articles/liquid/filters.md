@@ -20,6 +20,7 @@ updated: 2021-06-02
 
 <div class="code-box-syntax">
 <div class="title">配列の長さ(サイズ)を取得</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% assign my_array = "リンゴ, みかん, もも, 梅" | split: ", " %}
 {{ my_array.size }}
@@ -27,6 +28,7 @@ updated: 2021-06-02
 </div>
 <div class="code-box-output">
 <div class="title">結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 4
 </pre>
@@ -34,12 +36,14 @@ updated: 2021-06-02
 
 <div class="code-box-syntax">
 <div class="title">文字列の長さ(文字数)を取得</div>
+<div class="copy-button">Copy</div>
 <pre>
 {{ "abcde" | size }}
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 5
 </pre>
@@ -56,4 +60,4 @@ updated: 2021-06-02
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -27,6 +27,7 @@ updated: 2022-02-16
 ## <a name="プロセス名で強制終了させる">プロセス名で強制終了させる</a><a class="heading-anchor-permalink" href="#プロセス名で強制終了させる">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-16" updated="2022-02-16" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>Stop-Process</em> <em class="command">-Name</em> <em class="blue">&lt;プロセス名&gt;</em>
 </pre>
@@ -36,6 +37,7 @@ updated: 2022-02-16
 
 ### 例：メモ帳のプロセスを停止
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Stop-Process -Name <em>notepad</em>
 </pre>
@@ -47,6 +49,7 @@ Stop-Process -Name <em>notepad</em>
 ## <a name="プロセスIDで強制終了させる">プロセスIDで強制終了させる</a><a class="heading-anchor-permalink" href="#プロセスIDで強制終了させる">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-16" updated="2022-02-16" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>Stop-Process</em> <em class="command">-ID</em> <em class="blue">&lt;プロセスID&gt;</em>
 </pre>
@@ -56,6 +59,7 @@ Stop-Process -Name <em>notepad</em>
 
 ### 例：プロセスIDが9999のプロセスを停止
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Stop-Process -ID <em>9999</em>
 </pre>
@@ -70,12 +74,14 @@ Stop-Process -ID <em>9999</em>
 
 <div class="code-box">
 <div class="title">例：winで始まる名前のプロセスを表示</div>
+<div class="copy-button">Copy</div>
 <pre>
 Get-Process -Name <em>win*</em>
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 -------  ------    -----      -----     ------     --  -- -----------
@@ -98,4 +104,4 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

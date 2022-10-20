@@ -44,4 +44,4 @@ Get-ItemProperty aaa.txt | Get-Member
 
 - [(Qiita) ファイルのタイムスタンプを変更する](https://qiita.com/kmr_hryk/items/882b4851e23cec607e70)
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

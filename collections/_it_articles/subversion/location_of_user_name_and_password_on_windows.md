@@ -21,6 +21,7 @@ updated: 2021-08-14
 
 <div class="code-box">
 <div class="title">設定ファイルの保存場所</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>%APPDATE%</em>\Subversion\auth\svn.simple
 </pre>
@@ -29,6 +30,7 @@ updated: 2021-08-14
 ちなみにWindows 10だと、`%APPDATA%`は環境変数で設定されているフォルダ以下となっています。
 <div class="code-box">
 <div class="title">Windows10で%APPDATA%に設定されているフォルダ</div>
+<div class="copy-button">Copy</div>
 <pre>
 C:\Users\<em class="blue">&lt;Windowsユーザ名&gt;</em>\AppData\Roaming
 </pre>
@@ -38,6 +40,7 @@ C:\Users\<em class="blue">&lt;Windowsユーザ名&gt;</em>\AppData\Roaming
 フルパスは以下となります。
 <div class="code-box">
 <div class="title">フルパス</div>
+<div class="copy-button">Copy</div>
 <pre>
 C:\Users\<em class="blue">&lt;Windowsユーザ名&gt;</em>\AppData\Roaming\AppData\Roaming\Subversion\auth\svn.simple
 </pre>
@@ -58,4 +61,4 @@ C:\Users\<em class="blue">&lt;Windowsユーザ名&gt;</em>\AppData\Roaming\AppDa
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

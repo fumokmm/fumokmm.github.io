@@ -20,6 +20,7 @@ updated: 2021-07-28
 - コピー元のファイルを`-Path`で、コピー先のファイルを`-Destination`で指定します。
 - コピー先のファイルが読み取り専用だった場合、エラーとなります。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Copy-Item -Path <em>&lt;コピー元パス&gt;</em> -Destination <em>&lt;コピー先パス&gt;</em>
 </pre>
@@ -29,6 +30,7 @@ Copy-Item -Path <em>&lt;コピー元パス&gt;</em> -Destination <em>&lt;コピ�
 - 上書きコピーする場合は`-Force`オプションを付けます。
 - コピー先のファイルが読み取り専用だった場合でもエラーとなりません。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Copy-Item -Path <em>&lt;コピー元パス&gt;</em> -Destination <em>&lt;コピー先パス&gt;</em> <em class="orange">-Force</em>
 </pre>
@@ -53,4 +55,4 @@ Copy-Item -Path <em>&lt;コピー元パス&gt;</em> -Destination <em>&lt;コピ�
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

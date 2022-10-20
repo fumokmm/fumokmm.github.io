@@ -113,4 +113,4 @@ updated: 2021-02-21
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

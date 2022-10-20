@@ -35,6 +35,7 @@ updated: 2022-02-22
 
 ### KILLを実行
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>KILL</em> <em class="blue">'&lt;セッションID&gt;'</em>
 </pre>
@@ -42,6 +43,7 @@ updated: 2022-02-22
 
 <div class="code-box">
 <div class="title">例:セッションID 64 を強制終了する場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>KILL</em> <em class="blue">64</em>
 </pre>
@@ -63,4 +65,4 @@ updated: 2022-02-22
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

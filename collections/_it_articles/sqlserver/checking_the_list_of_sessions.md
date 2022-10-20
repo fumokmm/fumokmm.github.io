@@ -27,6 +27,7 @@ updated: 2022-02-22
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-22" updated="2022-02-22" %}</div>
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 select * from <em>sys.dm_exec_sessions</em> where host_name is not NULL
 </pre>
@@ -35,6 +36,7 @@ select * from <em>sys.dm_exec_sessions</em> where host_name is not NULL
 ### ちょっと加工して取得
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT conn.session_id, host_name, program_name,
     nt_domain, login_name, connect_time, last_request_end_time 
@@ -62,4 +64,4 @@ WHERE host_name = <em class="blue">'&lt;自分のホスト名&gt;'</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

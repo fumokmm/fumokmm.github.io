@@ -21,6 +21,7 @@ updated: 2022-03-13
 - Rubyの場合、`File.open`を利用します。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 f = <em>File.open</em>(<em class="blue">"data/aaa.txt"</em>)
 lines = f.readlines
@@ -30,6 +31,7 @@ f.close
 </div>
 <div class="code-box-input">
 <div class="title">data/aaa.txt</div>
+<div class="copy-button">Copy</div>
 <pre>
 aaa
 bbb
@@ -63,4 +65,4 @@ ccc
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

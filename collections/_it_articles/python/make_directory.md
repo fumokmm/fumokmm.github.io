@@ -54,6 +54,7 @@ Pythonで新しくフォルダを作成するには、標準モジュール`os`�
 
 <div class="code-box">
 <div class="title">C:\temp2ディレクトリを作成</div>
+<div class="copy-button">Copy</div>
 <pre>
 import os
 os<em>.mkdir</em>("C:\\temp2")
@@ -73,6 +74,7 @@ os<em>.mkdir</em>("C:\\temp2")
 
 <div class="code-box">
 <div class="title">C:\temp2\temp3\temp4\temp5 ディレクトリを作成</div>
+<div class="copy-button">Copy</div>
 <pre>
 import os
 os<em>.makedirs</em>("C:\\temp2\\temp3\\temp4\\temp5")
@@ -85,6 +87,7 @@ os<em>.makedirs</em>("C:\\temp2\\temp3\\temp4\\temp5")
 
 <div class="code-box">
 <div class="title">exist_ok=Trueを指定</div>
+<div class="copy-button">Copy</div>
 <pre>
 import os
 os<em>.makedirs</em>("C:\\temp2\\temp3\\temp4\\temp5", <em class="blue">exist_ok=True</em>)
@@ -105,6 +108,7 @@ os<em>.makedirs</em>("C:\\temp2\\temp3\\temp4\\temp5", <em class="blue">exist_ok
 
 <div class="code-box">
 <div class="title">C:\temp2\temp3\temp4\temp5 ディレクトリを作成</div>
+<div class="copy-button">Copy</div>
 <pre>
 import pathlib
 p = pathlib.Path("C:\\temp2\\temp3\\temp4\\temp5")
@@ -118,6 +122,7 @@ p<em>.mkdir</em>()
 
 <div class="code-box">
 <div class="title">parents=Trueを指定</div>
+<div class="copy-button">Copy</div>
 <pre>
 import pathlib
 p = pathlib.Path("C:\\temp3\\aaa\\bbb")
@@ -130,6 +135,7 @@ p<em>.mkdir</em>(<em class="blue">parents=True</em>)
 
 <div class="code-box">
 <div class="title">exist_ok=Trueを指定</div>
+<div class="copy-button">Copy</div>
 <pre>
 import pathlib
 p = pathlib.Path("C:\\temp3\\aaa\\bbb")
@@ -155,4 +161,4 @@ p<em>.mkdir</em>(<em class="blue">exist_ok=True</em>)
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

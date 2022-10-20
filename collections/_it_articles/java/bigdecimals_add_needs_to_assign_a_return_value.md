@@ -21,6 +21,7 @@ updated: 2021-07-12
 もちろん`#subtract`、`#multiply`、`#divide`なんかも同様です。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 BigDecimal bd1 = new BigDecimal("1");
 BigDecimal bd2 = new BigDecimal("2");
@@ -31,6 +32,7 @@ BigDecimal bd2 = new BigDecimal("2");
 
 仮に
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 bd1.add(bd2);
 </pre>
@@ -51,4 +53,4 @@ bd1.add(bd2);
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

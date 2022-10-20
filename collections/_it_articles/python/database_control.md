@@ -35,6 +35,7 @@ updated: 2021-10-24
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-24" updated="2021-10-24" %}</div>
 インストールは[pip]({% link _it_articles/python/pip.md %})にて行うのが簡単です。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 pip install pyodbc
 </pre>
@@ -48,6 +49,7 @@ pip install pyodbc
 コネクションは`pyodbc.connect()`で取得します。  
 ここでは参考に`SQL Server`を使った例を紹介します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import pyodbc
 
@@ -67,6 +69,7 @@ cursor = cnxn.cursor()
 ### SQLクエリの実行
 SQLクエリを実行するには、カーソルの`execute()`を使います。  
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor.execute(<em>"&lt;SQLクエリ&gt;"</em>)
 </pre>
@@ -80,6 +83,7 @@ cursor.execute(<em>"&lt;SQLクエリ&gt;"</em>)
 ### SELECTの実行
 カーソルの`execute()`にてSELECT文を実行します。  
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor.execute("select * from M_USER")
 </pre>
@@ -120,6 +124,7 @@ fetch系メソッドには以下の種類があります。
 `fetchone()`は全件取得すると`None`を返すので、以下のように書くと1件ずつ全件処理できます。
 <div class="code-box">
 <div class="title">1件ずつ処理</div>
+<div class="copy-button">Copy</div>
 <pre>
 while True:
     row = cursor<em>.fetchone()</em>
@@ -133,6 +138,7 @@ while True:
 `fetchall()`で取得結果を全件処理します。
 <div class="code-box">
 <div class="title">全件処理</div>
+<div class="copy-button">Copy</div>
 <pre>
 cursor.execute("select user_id, user_name from users")
 rows = cursor<em>.fetchall()</em>
@@ -145,6 +151,7 @@ cursor.close()
 rowのデータを取得するには、インデックスを使う方法とカラム名を使う方法があります。
 <div class="code-box">
 <div class="title">データの取り出し</div>
+<div class="copy-button">Copy</div>
 <pre>
 print('name:', row<em>[1]</em>)         <em class="comment"># インデックスで結果を取得(0始まり)</em>
 print('name:', row<em>.user_name</em>)  <em class="comment"># 名前で結果を取得</em>
@@ -154,6 +161,7 @@ print('name:', row<em>.user_name</em>)  <em class="comment"># 名前で結果を
 もし、取得結果を使いまわす予定がないなら、カーソルがイテレータになっているため、そのまま以下のようにすることもできます。
 <div class="code-box">
 <div class="title">イテレータで回す</div>
+<div class="copy-button">Copy</div>
 <pre>
 cursor.execute("select user_id, user_name from users"):
 for row in <em>cursor</em>:
@@ -163,6 +171,7 @@ for row in <em>cursor</em>:
 `execute`はカーソルを返すので、さらに短く書けます。
 <div class="code-box">
 <div class="title">イテレータで回す(もっと短く)</div>
+<div class="copy-button">Copy</div>
 <pre>
 for row in cursor.execute("select user_id, user_name from users"):
     print(row.user_id, row.user_name)
@@ -173,6 +182,7 @@ for row in cursor.execute("select user_id, user_name from users"):
 `fetchall()`だと件数が多いとメモリを大量に消費してしまうので、`fetchmany()`で件数を絞って取得することでメモリを節約できます。
 <div class="code-box">
 <div class="title">1000件ずつ取得し処理</div>
+<div class="copy-button">Copy</div>
 <pre>
 cursor.execute("select user_id, user_name from users")
 
@@ -191,6 +201,7 @@ cursor.close()
 ### パラメータ
 `?`を使います。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor.execute("""
     select user_id, user_name
@@ -202,6 +213,7 @@ cursor.execute("""
 </div>
 パラメータを渡す部分はこういう書き方もできます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor.execute("""
     select user_id, user_name
@@ -222,6 +234,7 @@ cursor.execute("""
 処理結果の件数は、カーソルの`.rowcount`で取得できます。  
 実行後は、コネクションの`commit()`もしくは`rollback()`を実行して、処理結果をDBへ確定させます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor.execute("insert into products(id, name) values ('pyodbc', 'awesome library')")
 cnxn.commit()
@@ -230,6 +243,7 @@ cnxn.commit()
 
 INSERT時は通常処理件数は1件ですが、複数件INSERTした場合などはその件数が`.rowcount`で取得できます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor = cnxn.cursor()
 cursor.execute("""
@@ -245,6 +259,7 @@ cnxn.commit()
 
 パラメータも使えます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor.execute("insert into products(id, name) values (<em>?</em>, <em>?</em>)"<em class="blue">, 'pyodbc', 'awesome library'</em>)
 cnxn.commit()
@@ -260,6 +275,7 @@ cnxn.commit()
 処理結果の件数は、カーソルの`.rowcount`で取得できます。  
 実行後は、コネクションの`commit()`もしくは`rollback()`を実行して、処理結果をDBへ確定させます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor = cnxn.cursor()
 cursor.execute("""
@@ -274,6 +290,7 @@ cnxn.commit()
 
 `execute()`はcursor自身を返すので、以下のように`.rowcount`で終わるような書き方もできます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor = cnxn.cursor()
 <em class="blue">upd_count</em> = cursor.execute("""
@@ -295,6 +312,7 @@ cnxn.commit()
 処理結果の件数は、カーソルの`.rowcount`で取得できます。  
 実行後は、コネクションの`commit()`もしくは`rollback()`を実行して、処理結果をDBへ確定させます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cursor = cnxn.cursor()
 cursor.execute("delete from products where id &lt;&gt; ?", 'pyodbc')
@@ -316,12 +334,14 @@ pyodbcではデフォルトでオートコミットは`False`となっていま�
 もし明示的に`True`にする場合、以下のようにします。
 <div class="code-box">
 <div class="title">取得時にTrueにする</div>
+<div class="copy-button">Copy</div>
 <pre>
 cnxn = pyodbc.connect(conn_str, autocommit=True)
 </pre>
 </div>
 <div class="code-box">
 <div class="title">取得後にTrueにする</div>
+<div class="copy-button">Copy</div>
 <pre>
 cnxn.autocommit = False  # enable transactions
 </pre>
@@ -378,6 +398,7 @@ ODBCでは、以下4つの分離レベルがサポートされています。
 
 トランザクションの分離を設定するには、コネクションの`.set_attr`を使って`pyodbc.SQL_ATTR_TXN_ISOLATION`に設定します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 cnxn = pyodbc.connect(conn_str, autocommit=True)
 cnxn<em>.set_attr(</em><em class="blue">pyodbc.SQL_ATTR_TXN_ISOLATION, pyodbc.SQL_TXN_SERIALIZABLE</em><em>)</em>
@@ -394,6 +415,7 @@ cnxn.autocommit = False  <em class="comment"># enable transactions</em>
 SQLではシングルクォート(`'`)が文字列の括りに使われるので、SQL文を括るにはダブルクォート(`"`)を使うとよいです。  
 <div class="code-box">
 <div class="title">ダブルクォートで括る</div>
+<div class="copy-button">Copy</div>
 <pre>
 deleted = cursor.execute(<em>"</em>delete from products where id &lt;&gt; 'pyodbc'<em>"</em>).rowcount
 </pre>
@@ -403,6 +425,7 @@ deleted = cursor.execute(<em>"</em>delete from products where id &lt;&gt; 'pyodb
 `as`で名前を付けると、`row`からプロパティのようにアクセス可能です。
 <div class="code-box">
 <div class="title">asで名前を付けて取得</div>
+<div class="copy-button">Copy</div>
 <pre>
 row = cursor.execute("select count(*) <em>as user_count</em> from users").fetchone()
 print('%s users' % row<em>.user_count</em>)
@@ -412,6 +435,7 @@ print('%s users' % row<em>.user_count</em>)
 ### dedent
 `textwrap`の`dedent`を使うと、SQLの前後の余分なスペースを除去してくれます。お好みで。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import textwrap
 sql = <em>textwrap.dedent(</em>"""
@@ -446,4 +470,4 @@ rows = cursor.execute(sql, 'John Smith').fetchall()
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

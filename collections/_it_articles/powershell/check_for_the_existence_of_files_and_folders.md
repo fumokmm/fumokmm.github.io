@@ -20,6 +20,7 @@ updated: 2021-07-24
 - ファイルやフォルダが存在する場合`True`が、存在しない場合`False`が返ってきます。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\Users\fumo&gt;</em> ls c:\temp
 
@@ -64,4 +65,4 @@ False
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

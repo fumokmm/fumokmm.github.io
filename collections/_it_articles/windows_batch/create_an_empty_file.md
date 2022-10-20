@@ -19,6 +19,7 @@ updated: 2021-08-13
 ## <a name="typeコマンドを使う">typeコマンドを使う</a><a class="heading-anchor-permalink" href="#typeコマンドを使う">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-08-13" updated="2021-08-13" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>type nul</em> &gt; <em class="blue">empty.txt</em>
 </pre>
@@ -31,6 +32,7 @@ updated: 2021-08-13
 ## <a name="copyコマンドを使う">copyコマンドを使う</a><a class="heading-anchor-permalink" href="#copyコマンドを使う">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-08-13" updated="2021-08-13" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>copy nul</em> <em class="blue">empty.txt</em>
 </pre>
@@ -62,4 +64,4 @@ updated: 2021-08-13
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -142,4 +142,4 @@ IT用語のひとこと説明です。
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -67,6 +67,7 @@ VBAには様々な式が存在します。`数式`, `条件式`, `オブジェ�
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-14" updated="2021-09-14" %}</div>
 ### If-Then-Else
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>If</em> <em class="blue">&lt;条件式&gt;</em> <em>Then</em>
     <em class="orange">処理1</em>
@@ -85,6 +86,7 @@ VBAには様々な式が存在します。`数式`, `条件式`, `オブジェ�
 
 以下のように一行に記述することもできます。  
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>If</em> <em class="blue">&lt;条件&gt;</em> <em>Then</em> <em class="orange">処理1</em> <em>Else</em> <em class="orange">&lt;処理2&gt;</em>
 </pre>
@@ -104,6 +106,7 @@ Select Case文は複数の条件分岐をすっきり書くための構文です
 
 ### Select-Case
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>Select Case</em> <em class="blue">&lt;比較する値&gt;</em>
     <em>Case</em> <em class="blue">&lt;条件1&gt;</em>
@@ -127,6 +130,7 @@ Select Case文は複数の条件分岐をすっきり書くための構文です
 
 ### 例：値とマッチ
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_time As String
 p_time = "朝"
@@ -143,6 +147,7 @@ End Select
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 おはようございます！
 </pre>
@@ -150,6 +155,7 @@ End Select
 
 ### 例：複数のどれかにマッチ
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_num As Integer
 p_num = 5
@@ -164,6 +170,7 @@ End Select
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 5は奇数です。
 </pre>
@@ -171,6 +178,7 @@ End Select
 
 ### 例：範囲内に含まれる
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_age As Integer
 p_age = 40
@@ -187,6 +195,7 @@ End Select
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 40歳は大人です。
 </pre>
@@ -195,6 +204,7 @@ End Select
 
 ### 例：大小比較
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_temperature As Integer
 p_temperature = 105
@@ -209,6 +219,7 @@ End Select
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 105度で水は気体です。
 </pre>
@@ -240,4 +251,4 @@ End Select
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

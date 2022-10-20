@@ -34,12 +34,14 @@ updated: 2021-12-24
 <div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-12-24" %}</div>
 <div class="code-box">
 <div class="title">現在の設定のリストを出力する</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>-l</em>
 </pre>
 </div>
 <div class="code-box">
 <div class="title">グローバルなユーザ名とメールアドレスを設定する</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>user.name "hoge"</em>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>user.email "hoge@hoge.com"</em>
@@ -47,6 +49,7 @@ $ git <em class="blue">config</em> <em class="command">--global</em> <em>user.em
 </div>
 <div class="code-box">
 <div class="title">グローバルなユーザ名とメールアドレス設定を削除する</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em class="command">--unset</em> <em>user.name</em>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em class="command">--unset</em> <em>user.email</em>
@@ -54,6 +57,7 @@ $ git <em class="blue">config</em> <em class="command">--global</em> <em class="
 </div>
 <div class="code-box">
 <div class="title">グローバルなコミットやタグのメッセージ編集用のエディタを設定する</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ git <em class="blue">config</em> <em class="command">--global</em> <em>core.editor emacs</em>
 </pre>
@@ -61,6 +65,7 @@ $ git <em class="blue">config</em> <em class="command">--global</em> <em>core.ed
 
 <div class="code-box">
 <div class="title">特定のリポジトリ用のユーザ名とメールアドレスを設定する</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ cd /path/to/repo
 $ git <em class="blue">config</em> <em>user.name "hoge"</em>
@@ -69,6 +74,7 @@ $ git <em class="blue">config</em> <em>user.email "hoge@hoge.com"</em>
 </div>
 <div class="code-box">
 <div class="title">特定のリポジトリ用のユーザ名とメールアドレス設定を削除する</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ cd /path/to/repo
 $ git <em class="blue">config</em> <em class="command">--unset</em> <em>user.name</em>
@@ -77,6 +83,7 @@ $ git <em class="blue">config</em> <em class="command">--unset</em> <em>user.ema
 </div>
 <div class="code-box">
 <div class="title">特定のリポジトリ用のコミットやタグのメッセージ編集用のエディタを設定する</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ cd /path/to/repo
 $ git <em class="blue">config</em> <em>core.editor emacs</em>
@@ -252,6 +259,7 @@ $ git <em class="blue">commit</em> <em class="command">-C</em> <em>HEAD</em> <em
 <div class="chapter-updated">{% include update_info_inline.html created="2021-06-20" updated="2021-06-20" %}</div>
 <div class="code-box">
 <div class="title">変更を退避する</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash push</em>
 または
@@ -262,6 +270,7 @@ git <em class="blue">stash</em>
 
 <div class="code-box">
 <div class="title">変更を退避するとき、addしたものは退避しない</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash push</em> <em class="command">-k</em>
 または
@@ -271,6 +280,7 @@ git <em class="blue">stash push</em> <em class="command">--keep-index</em>
 
 <div class="code-box">
 <div class="title">変更を退避するとき、新規作成されたファイルも一緒に退避する</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash push</em> <em class="command">-u</em>
 または
@@ -280,6 +290,7 @@ git <em class="blue">stash push</em> <em class="command">--include-untracked</em
 
 <div class="code-box">
 <div class="title">変更を退避するときにメッセージも付けて退避する</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash push</em> <em class="command">-m</em> <em>"メッセージ"</em>
 </pre>
@@ -287,6 +298,7 @@ git <em class="blue">stash push</em> <em class="command">-m</em> <em>"メッセ�
 
 <div class="code-box">
 <div class="title">退避した作業の一覧を見る</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash list</em>
 </pre>
@@ -294,6 +306,7 @@ git <em class="blue">stash list</em>
 
 <div class="code-box">
 <div class="title">退避した作業を戻す</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash apply</em> <em>&lt;スタッシュ名&gt;</em>
 </pre>
@@ -303,6 +316,7 @@ git <em class="blue">stash apply</em> <em>&lt;スタッシュ名&gt;</em>
 
 <div class="code-box">
 <div class="title">退避した作業をaddした状態のまま戻す</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash apply</em> <em>&lt;スタッシュ名&gt;</em> <em class="command">--index</em>
 </pre>
@@ -311,6 +325,7 @@ git <em class="blue">stash apply</em> <em>&lt;スタッシュ名&gt;</em> <em cl
 
 <div class="code-box">
 <div class="title">退避した作業を消す</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash drop</em> <em>&lt;スタッシュ名&gt;</em>
 </pre>
@@ -318,6 +333,7 @@ git <em class="blue">stash drop</em> <em>&lt;スタッシュ名&gt;</em>
 
 <div class="code-box">
 <div class="title">退避した作業をすべて消す</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash clear</em>
 </pre>
@@ -325,6 +341,7 @@ git <em class="blue">stash clear</em>
 
 <div class="code-box">
 <div class="title">退避した作業を元に戻すと同時に、stashのリストからも消す</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash pop</em> <em>&lt;スタッシュ名&gt;</em>
 </pre>
@@ -333,6 +350,7 @@ git <em class="blue">stash pop</em> <em>&lt;スタッシュ名&gt;</em>
 
 <div class="code-box">
 <div class="title">退避した変更のファイル一覧を見る</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash show</em> <em>&lt;スタッシュ名&gt;</em>
 </pre>
@@ -340,6 +358,7 @@ git <em class="blue">stash show</em> <em>&lt;スタッシュ名&gt;</em>
 
 <div class="code-box">
 <div class="title">退避した変更の詳細を見る</div>
+<div class="copy-button">Copy</div>
 <pre>
 git <em class="blue">stash show</em> <em>&lt;スタッシュ名&gt;</em> <em class="command">-P</em>
 </pre>
@@ -1030,4 +1049,4 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

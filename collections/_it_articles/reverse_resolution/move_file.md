@@ -21,12 +21,14 @@ updated: 2022-02-21
 
 ### ファイル名は同じままで別ディレクトリに移動する
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 shutil.<em>move</em>(<em class="blue">&lt;コピー元ファイル&gt;</em>, <em class="blue">&lt;コピー先ディレクトリ&gt;</em>)
 </pre>
 </div>
 <div class="code-box">
 <div class="title">ディレクトリへファイル移動</div>
+<div class="copy-button">Copy</div>
 <pre>
 import shutil
 
@@ -40,12 +42,14 @@ new_path = shutil.<em>move</em>(<em class="blue">"from_dir/file.txt"</em>, <em c
 ### ファイルを移動（上書き）
 コピー先ディレクトリにファイルが存在した場合でも上書きで移動したい場合は、以下のようにコピー先をファイルまでのパスで指定します。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 shutil.<em>move</em>(<em class="blue">&lt;コピー元ファイル&gt;</em>, <em class="blue">&lt;コピー先ファイル&gt;</em>)
 </pre>
 </div>
 <div class="code-box">
 <div class="title">上書き移動</div>
+<div class="copy-button">Copy</div>
 <pre>
 import shutil
 
@@ -70,4 +74,4 @@ new_path = shutil.<em>move</em>(<em class="blue">"from_dir/file.txt"</em>, <em c
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -27,6 +27,7 @@ updated: 2021-08-10
 ## <a name="エスケープシーケンスを改行コードへ変換">エスケープシーケンスを改行コードへ変換</a><a class="heading-anchor-permalink" href="#エスケープシーケンスを改行コードへ変換">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-08-10" updated="2021-08-10" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $esc = "aaa\nbbb\nccc"
 Write-Host "1: $($esc)"
@@ -37,6 +38,7 @@ Write-Host "2: $($esc2)"
 - こちらはエスケープ文字`\n`を`改行コード(CRLF)`に変換するサンプルです。
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 1: aaa\nbbb\nccc
 2: aaa
@@ -51,6 +53,7 @@ ccc
 ## <a name="改行コードをエスケープシーケンスへ変換">改行コードをエスケープシーケンスへ変換</a><a class="heading-anchor-permalink" href="#改行コードをエスケープシーケンスへ変換">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-08-10" updated="2021-08-10" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $crlf = @"
 aaa
@@ -65,6 +68,7 @@ Write-Host "4: $($crlf2)"
 - こちらは改行コード入りの`改行コード(CRLF)`をエスケープ文字`\n`にエスケープするサンプルです。
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 3: aaa
 bbb
@@ -86,4 +90,4 @@ ccc
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

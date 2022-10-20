@@ -115,4 +115,4 @@ SELECTの方はテーブルに別名を付けたりもできる。(上記の`a`)
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

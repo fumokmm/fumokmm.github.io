@@ -21,6 +21,7 @@ updated: 2021-07-16
 ### ソース
 <div class="code-box">
 <div class="title">numIncrement.js</div>
+<div class="copy-button">Copy</div>
 <pre>
 var e = Editor;
 var selectedString = e.GetSelectedString(0);
@@ -53,6 +54,7 @@ if (e.IsTextSelected() == 1) {
 ### ソース
 <div class="code-box">
 <div class="title">numDecrement.js</div>
+<div class="copy-button">Copy</div>
 <pre>
 var e = Editor;
 var selectedString = e.GetSelectedString(0);
@@ -108,4 +110,4 @@ if (e.IsTextSelected() == 1) {
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}
