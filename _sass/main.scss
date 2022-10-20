@@ -467,6 +467,41 @@ code {
         $emColorCommand: #c0c0c0
     )
 }
+// コードのコピーボタンの定義
+.code-box, .code-box-syntax, .code-box-input, .code-box-output {
+    .copy-button {
+        position: absolute;
+        display: inline-block;
+        top: 2px;
+        right: 2px;
+        padding: 0 9px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        cursor: pointer;
+        visibility: hidden;
+        color: #ffffff;
+        background-color: #669966;
+        border: 1px solid rgb(231, 231, 231);
+
+        &.success {
+            visibility: visible;
+            background-color: #86A697;
+        }
+        &.failed {
+            visibility: visible;
+            background-color: #86A697;
+        }
+    }
+}
+.code-box:hover, .code-box-syntax:hover, .code-box-input:hover, .code-box-output:hover {
+    .copy-button {
+        visibility: visible;
+    }
+}
+.copy-button:hover {
+    background-color: #415f41;
+}
 
 .copyright {
     text-align: left;

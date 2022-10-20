@@ -2,7 +2,7 @@
 layout: default_layout
 title: テンプレートのページ
 created: 2020-11-21
-updated: 2022-04-19
+updated: 2022-10-20
 ---
 こちらはテンプレートのページです。ツールのページは[こちら]({% link tool.md %})です。
 
@@ -23,6 +23,7 @@ updated: 2022-04-19
 
 ### Jekyll起動のみ
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 bundle exec jekyll server
 </pre>
@@ -30,7 +31,9 @@ bundle exec jekyll server
 
 ### updateAllのみ
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
+./gradlew updateAll -Ptarget=all
 ./gradlew updateAll -Ptarget=/it/
 ./gradlew updateAll -Ptarget=/it/python/
 ./gradlew updateAll -Ptarget=/it/ clean
@@ -39,6 +42,7 @@ bundle exec jekyll server
 
 ### updateAllしてから、Jekyll起動もする
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 ./gradlew updateAll -Ptarget=/it/ && bundle exec jekyll server
 ./gradlew updateAll -Ptarget=/it/python/ && bundle exec jekyll server
@@ -51,6 +55,7 @@ bundle exec jekyll server
 ### 書式
 <div class="code-box">
 <div class="title">見出し</div>
+<div class="copy-button">Copy</div>
 <pre>
 # 見出し1
 ## 見出し2
@@ -95,8 +100,10 @@ bundle exec jekyll server
 
 <div class="code-box">
 <div class="title">コードPRE(通常用)</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;div class="<em class="blue">code-box</em> <em>no-title</em>"&gt;
+&lt;div class="copy-button"&gt;Copy&lt;/div&gt;
 &lt;pre&gt;
 <em class="comment">ここにコード...
 ここにコード...</em>
@@ -107,9 +114,11 @@ bundle exec jekyll server
 
 <div class="code-box">
 <div class="title">コードPRE(通常用) - タイトル付き</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;div class="<em class="blue">code-box</em>"&gt;
 <em>&lt;div class="title"&gt;</em><em class="comment">ここにタイトル</em><em>&lt;/div&gt;</em>
+&lt;div class="copy-button"&gt;Copy&lt;/div&gt;
 &lt;pre&gt;
 <em class="comment">ここにコード...
 ここにコード...</em>
@@ -122,8 +131,10 @@ bundle exec jekyll server
 
 <div class="code-box-syntax">
 <div class="title">コードPRE(構文、定義用)</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;div class="<em class="blue">code-box-syntax</em> <em>no-title</em>"&gt;
+&lt;div class="copy-button"&gt;Copy&lt;/div&gt;
 &lt;pre&gt;
 <em class="comment">ここにコード...
 ここにコード...</em>
@@ -134,9 +145,11 @@ bundle exec jekyll server
 
 <div class="code-box-syntax">
 <div class="title">コードPRE(構文、定義用) - タイトル付き</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;div class="<em class="blue">code-box-syntax</em>"&gt;
 <em>&lt;div class="title"&gt;</em><em class="comment">ここにタイトル</em><em>&lt;/div&gt;</em>
+&lt;div class="copy-button"&gt;Copy&lt;/div&gt;
 &lt;pre&gt;
 <em class="comment">ここにコード...
 ここにコード...</em>
@@ -149,8 +162,10 @@ bundle exec jekyll server
 
 <div class="code-box-input">
 <div class="title">コードPRE(入力用)</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;div class="<em class="blue">code-box-input</em> <em>no-title</em>"&gt;
+&lt;div class="copy-button"&gt;Copy&lt;/div&gt;
 &lt;pre&gt;
 <em class="comment">ここにコード...
 ここにコード...</em>
@@ -161,9 +176,11 @@ bundle exec jekyll server
 
 <div class="code-box-input">
 <div class="title">コードPRE(入力用) - タイトル付き</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;div class="<em class="blue">code-box-input</em>"&gt;
 <em>&lt;div class="title"&gt;</em><em class="comment">ここにタイトル</em><em>&lt;/div&gt;</em>
+&lt;div class="copy-button"&gt;Copy&lt;/div&gt;
 &lt;pre&gt;
 <em class="comment">ここにコード...
 ここにコード...</em>
@@ -176,8 +193,10 @@ bundle exec jekyll server
 
 <div class="code-box-output">
 <div class="title">コードPRE(出力用)</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;div class="<em class="blue">code-box-output</em> <em>no-title</em>"&gt;
+&lt;div class="copy-button"&gt;Copy&lt;/div&gt;
 &lt;pre&gt;
 <em class="comment">ここにコード...
 ここにコード...</em>
@@ -188,9 +207,11 @@ bundle exec jekyll server
 
 <div class="code-box-output">
 <div class="title">コードPRE(出力用) - タイトル付き</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;div class="<em class="blue">code-box-output</em>"&gt;
 <em>&lt;div class="title"&gt;</em><em class="comment">ここにタイトル</em><em>&lt;/div&gt;</em>
+&lt;div class="copy-button"&gt;Copy&lt;/div&gt;
 &lt;pre&gt;
 <em class="comment">ここにコード...
 ここにコード...</em>
@@ -212,6 +233,7 @@ bundle exec jekyll server
 #### 1.通常用
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 タイトル無しのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
@@ -224,6 +246,7 @@ bundle exec jekyll server
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 タイトル付きのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
@@ -237,6 +260,7 @@ bundle exec jekyll server
 #### 2.構文、定義用
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 タイトル無しのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
@@ -249,6 +273,7 @@ bundle exec jekyll server
 
 <div class="code-box-syntax">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 タイトル付きのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
@@ -262,6 +287,7 @@ bundle exec jekyll server
 #### 3.入力用
 
 <div class="code-box-input no-title">
+<div class="copy-button">Copy</div>
 <pre>
 タイトル無しのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
@@ -274,6 +300,7 @@ bundle exec jekyll server
 
 <div class="code-box-input">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 タイトル付きのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
@@ -287,6 +314,7 @@ bundle exec jekyll server
 #### 4.出力用
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 タイトル無しのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
@@ -299,6 +327,7 @@ bundle exec jekyll server
 
 <div class="code-box-output">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 タイトル付きのコードPRE
 文字列を<em>強調</em>するには&lt;em&gt;を利用します。
@@ -322,6 +351,7 @@ bundle exec jekyll server
 
 <div class="code-box">
 <div class="title">コードPRE(通常用)</div>
+<div class="copy-button">Copy</div>
 <pre>
 ```
 <em class="comment">ここにコード...
@@ -332,6 +362,7 @@ bundle exec jekyll server
 
 <div class="code-box">
 <div class="title">コードPRE(通常用) - タイトル付き</div>
+<div class="copy-button">Copy</div>
 <pre>
 ```<em>:</em><em class="comment">ここにタイトル</em>
 <em class="comment">ここにコード...
@@ -344,6 +375,7 @@ bundle exec jekyll server
 
 <div class="code-box-syntax">
 <div class="title">コードPRE(構文、定義用)</div>
+<div class="copy-button">Copy</div>
 <pre>
 ```<em>syntax</em>
 <em class="comment">ここにコード...
@@ -354,6 +386,7 @@ bundle exec jekyll server
 
 <div class="code-box-syntax">
 <div class="title">コードPRE(構文、定義用) - タイトル付き</div>
+<div class="copy-button">Copy</div>
 <pre>
 ```<em>syntax:</em><em class="comment">ここにタイトル</em>
 <em class="comment">ここにコード...
@@ -366,6 +399,7 @@ bundle exec jekyll server
 
 <div class="code-box-input">
 <div class="title">コードPRE(入力用)</div>
+<div class="copy-button">Copy</div>
 <pre>
 ```<em>input</em>
 <em class="comment">ここにコード...
@@ -376,6 +410,7 @@ bundle exec jekyll server
 
 <div class="code-box-input">
 <div class="title">コードPRE(入力用) - タイトル付き</div>
+<div class="copy-button">Copy</div>
 <pre>
 ```<em>input:</em><em class="comment">ここにタイトル</em>
 <em class="comment">ここにコード...
@@ -388,6 +423,7 @@ bundle exec jekyll server
 
 <div class="code-box-output">
 <div class="title">コードPRE(出力用)</div>
+<div class="copy-button">Copy</div>
 <pre>
 ```<em>output</em>
 <em class="comment">ここにコード...
@@ -398,6 +434,7 @@ bundle exec jekyll server
 
 <div class="code-box-output">
 <div class="title">コードPRE(出力用) - タイトル付き</div>
+<div class="copy-button">Copy</div>
 <pre>
 ```<em>output:</em><em class="comment">ここにタイトル</em>
 <em class="comment">ここにコード...
@@ -413,6 +450,7 @@ bundle exec jekyll server
 - `<種類>`には`blue`、`comment`、`command`が入ります
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 文字列を<em>強調</em>するには{em{強調}em}を利用します。
 文字列を<em class="blue">青強調</em>するには{em:blue{青強調}em}を利用します。
@@ -427,6 +465,7 @@ bundle exec jekyll server
 - makeArticle記法中でリンクを利用するには、`{link:<URL>{`で開始し、`}link}`で終了するように囲みます
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 例えば、<a href="https://www.yahoo.co.jp/">Yahoo</a>へのリンクを付けるには、
 {link:https://www.yahoo.co.jp/{Yahoo}link}とします。
@@ -441,6 +480,7 @@ bundle exec jekyll server
 
 - `>`の中でHTMLタグや、`{% raw %}{% ... %}{% endraw %}`も使えます
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 &gt; <em class="blue">&lt;b&gt;タイトルなど&lt;/b&gt;</em>
 &gt; 
@@ -470,6 +510,7 @@ BOOK# <input type="text" id="BookReferenceBookNumber" value="588">
 <input type="button" id="BookReferenceRevert" value="元に戻す">
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre id="BookReferencePre">
 {% raw %}<em>{% include</em> <em class="command">book/book_588.html</em> <em>%}</em> <em class="comment">{% comment %} 一生忘れない読書 {% endcomment %}</em>{% endraw %}
 </pre>
@@ -563,6 +604,7 @@ BOOK# <input type="text" id="BookReferenceBookNumber" value="588">
 
 <div class="code-box">
 <div class="title">例1</div>
+<div class="copy-button">Copy</div>
 <pre>
 #### 複数行文字列
 上記４つの文字列の複数行文字列<em>[^here-document]</em>もリテラルレベルでサポートされています。  
@@ -575,6 +617,7 @@ BOOK# <input type="text" id="BookReferenceBookNumber" value="588">
 
 <div class="code-box">
 <div class="title">例2</div>
+<div class="copy-button">Copy</div>
 <pre>
 #### do
 Groovyにdoはありません。<em>[^no-do]</em>
@@ -584,3 +627,5 @@ Groovyにdoはありません。<em>[^no-do]</em>
 </div>
 
 {% include goto_pagetop.html %}
+
+{% include articles_common_script.html %}
