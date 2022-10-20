@@ -18,6 +18,7 @@ updated: 2022-08-26
 <div class="chapter-updated">{% include update_info_inline.html created="2022-08-26" updated="2022-08-26" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
+<div class="copy-button">Copy</div>
 <pre>
 整数nが与えられるので1行にn回"hello"と出力してください。
 </pre>
@@ -30,6 +31,7 @@ updated: 2022-08-26
 <div class="chapter-updated">{% include update_info_inline.html created="2022-08-26" updated="2022-08-26" %}</div>
 <div class="code-box">
 <div class="title">hello_n_times.groovy</div>
+<div class="copy-button">Copy</div>
 <pre>
 def helloNTimes = { int n -&gt;
     println ('hello' * n)
@@ -40,6 +42,7 @@ helloNTimes(3)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 hello
 hellohello
@@ -59,4 +62,4 @@ hellohellohello
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

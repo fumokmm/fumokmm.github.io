@@ -20,6 +20,7 @@ updated: 2021-08-11
 - `1KB`や`100MB`のように`数値+定数`とすることで利用できます。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Write-Host "1KB = $(1<em>KB</em>.ToString('#,#'))バイト"
 Write-Host "1MB = $(1<em>MB</em>.ToString('#,#'))バイト"
@@ -31,6 +32,7 @@ Write-Host "1PB = $(1<em>PB</em>.ToString('#,#'))バイト"
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 1KB = 1,024バイト
 1MB = 1,048,576バイト
@@ -54,4 +56,4 @@ Write-Host "1PB = $(1<em>PB</em>.ToString('#,#'))バイト"
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

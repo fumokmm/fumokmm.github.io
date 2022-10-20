@@ -28,12 +28,14 @@ updated: 2022-10-19
 <div class="chapter-updated">{% include update_info_inline.html created="2022-10-19" updated="2022-10-19" %}</div>
 ### 論理名を追加
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 COMMENT ON <em class="blue">DATABASE</em> <em class="orange">&lt;データベース名&gt;</em> IS '<em>&lt;データベース論理名&gt;</em>'; 
 </pre>
 </div>
 <div class="code-box">
 <div class="title">例：データベースDATABASE_01へデータベースワンという論理名を追加</div>
+<div class="copy-button">Copy</div>
 <pre>
 COMMENT ON <em class="blue">DATABASE</em> <em class="orange">DATABASE_01</em> IS '<em>データベースワン</em>'; 
 </pre>
@@ -42,6 +44,7 @@ COMMENT ON <em class="blue">DATABASE</em> <em class="orange">DATABASE_01</em> IS
 ### 論理名を削除
 削除は`NULL`を指定するだけです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 COMMENT ON <em class="blue">DATABASE</em> <em class="orange">&lt;データベース名&gt;</em> IS <em>NULL</em>; 
 </pre>
@@ -54,12 +57,14 @@ COMMENT ON <em class="blue">DATABASE</em> <em class="orange">&lt;データベー
 <div class="chapter-updated">{% include update_info_inline.html created="2022-10-19" updated="2022-10-19" %}</div>
 ### 論理名を追加
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 COMMENT ON <em class="blue">TABLE</em> <em class="orange">&lt;テーブル名&gt;</em> IS '<em>&lt;テーブル論理名&gt;</em>'; 
 </pre>
 </div>
 <div class="code-box">
 <div class="title">例：テーブルTABLE_01へテーブル１という論理名を追加</div>
+<div class="copy-button">Copy</div>
 <pre>
 COMMENT ON <em class="blue">TABLE</em> <em class="orange">TABLE_01</em> IS '<em>テーブル１</em>'; 
 </pre>
@@ -68,6 +73,7 @@ COMMENT ON <em class="blue">TABLE</em> <em class="orange">TABLE_01</em> IS '<em>
 ### 論理名を削除
 削除は`NULL`を指定するだけです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 COMMENT ON <em class="blue">TABLE</em> <em class="orange">&lt;テーブル名&gt;</em> IS <em>NULL</em>; 
 </pre>
@@ -82,12 +88,14 @@ COMMENT ON <em class="blue">TABLE</em> <em class="orange">&lt;テーブル名&gt
 
 ### 論理名を追加
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 COMMENT ON <em class="blue">COLUMN</em> <em class="orange">&lt;テーブル名.列名&gt;</em> IS '<em>&lt;テーブル列論理名&gt;</em>'; 
 </pre>
 </div>
 <div class="code-box">
 <div class="title">例：テーブルTABLE_01のCOL_01へ列１という論理名を追加</div>
+<div class="copy-button">Copy</div>
 <pre>
 COMMENT ON <em class="blue">COLUMN</em> <em class="orange">TABLE_01.COL_01</em> IS '<em>列１</em>'; 
 </pre>
@@ -96,6 +104,7 @@ COMMENT ON <em class="blue">COLUMN</em> <em class="orange">TABLE_01.COL_01</em> 
 ### 論理名を削除
 削除は`NULL`を指定するだけです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 COMMENT ON <em class="blue">COLUMN</em> <em class="orange">&lt;テーブル名.列名&gt;</em> IS <em>NULL</em>; 
 </pre>
@@ -114,4 +123,4 @@ COMMENT ON <em class="blue">COLUMN</em> <em class="orange">&lt;テーブル名.�
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

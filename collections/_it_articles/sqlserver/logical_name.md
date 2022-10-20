@@ -25,6 +25,7 @@ updated: 2022-10-19
 ### テーブルの論理名を追加
 <div class="code-box">
 <div class="title">形式(列論理名を追加)</div>
+<div class="copy-button">Copy</div>
 <pre>
 EXEC sys.sp_<em>add</em>extendedproperty @name=N'MS_Description' <em class="comment">-- ←ここのMS_Descriptionは固定</em>
                               , @value=N'<em class="blue">&lt;テーブル論理名&gt;</em>'
@@ -45,6 +46,7 @@ EXEC sys.sp_<em>add</em>extendedproperty @name=N'MS_Description' <em class="comm
 ### 列の論理名を追加
 <div class="code-box">
 <div class="title">形式(列論理名を追加)</div>
+<div class="copy-button">Copy</div>
 <pre>
 EXEC sys.sp_<em>add</em>extendedproperty @name=N'MS_Description' <em class="comment">-- ←ここのMS_Descriptionは固定</em>
                               , @value=N'<em class="blue">&lt;列論理名&gt;</em>'
@@ -67,6 +69,7 @@ EXEC sys.sp_<em>add</em>extendedproperty @name=N'MS_Description' <em class="comm
 ### 使用例
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 EXEC sys.sp_<em>add</em>extendedproperty @name=N'MS_Description'
                               , @value=N'ユーザマスタ'
@@ -253,4 +256,4 @@ order by
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

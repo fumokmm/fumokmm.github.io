@@ -8,4 +8,4 @@ updated: 2021-04-20
 TSVのメモです。
 そのうち書きます。
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

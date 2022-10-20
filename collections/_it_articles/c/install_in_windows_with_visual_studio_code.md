@@ -31,6 +31,7 @@ updated: 2021-09-16
 - `PowerShell`や`コマンドプロンプト`を立ち上げて、`gcc -v`と入力し、バージョンが表示されればOK。
 <div class="code-box-output">
 <div class="title">gcc -vを実行</div>
+<div class="copy-button">Copy</div>
 <pre>
 PS C:\Users\fumo&gt; gcc -v
 Reading specs from c:/tools/win-builds2/bin/../lib64/gcc/x86_64-w64-mingw32/4.8.3/specs
@@ -62,12 +63,14 @@ PS C:\Users\fumo&gt;
 - `"code-runner.executorMap"`の`"c"`に`-fexec-charset=CP932`を追加する
 <div class="code-box">
 <div class="title">編集前</div>
+<div class="copy-button">Copy</div>
 <pre>
 "c": "cd $dir &amp;&amp; gcc $fileName -o $fileNameWithoutExt &amp;&amp; $dir$fileNameWithoutExt",
 </pre>
 </div>
 <div class="code-box">
 <div class="title">編集後</div>
+<div class="copy-button">Copy</div>
 <pre>
 "c": "cd $dir &amp;&amp; gcc <em>-fexec-charset=CP932</em> $fileName -o $fileNameWithoutExt &amp;&amp; $dir$fileNameWithoutExt",
 </pre>
@@ -83,6 +86,7 @@ PS C:\Users\fumo&gt;
 ソースを作成し右上の`再生ボタン`で実行。
 <div class="code-box">
 <div class="title">hello2.c (SJISにて作成)</div>
+<div class="copy-button">Copy</div>
 <pre>
 #include &lt;stdio.h&gt;
 int main(void)
@@ -95,6 +99,7 @@ int main(void)
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 PS C:\workspace\gcc&gt; cd "c:\workspace\gcc\" ; if ($?) { gcc hello2.c -o hello2 } ; if ($?) { .\hello2 }
 こんにちは！C言語
@@ -116,4 +121,4 @@ PS C:\workspace\gcc&gt; cd "c:\workspace\gcc\" ; if ($?) { gcc hello2.c -o hello
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

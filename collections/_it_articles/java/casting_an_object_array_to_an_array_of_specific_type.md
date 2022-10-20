@@ -19,6 +19,7 @@ updated: 2021-10-03
 <div class="chapter-updated">{% include update_info_inline.html created="2008-09-02" updated="2021-10-03" %}</div>
 以下を実行すると`java.lang.ClassCastException`が発生する。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Object[] objArray = new Object[]{
     "aaa",
@@ -36,6 +37,7 @@ for (String str : strArray) {
 しかたないので、いったん`Collection`にしてから戻すとうまくいく。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 String[] strArray = <em>Arrays.asList(objArray).toArray(new String[objArray.length]);</em>
 </pre>
@@ -54,4 +56,4 @@ String[] strArray = <em>Arrays.asList(objArray).toArray(new String[objArray.leng
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

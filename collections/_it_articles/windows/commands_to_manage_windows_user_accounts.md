@@ -31,6 +31,7 @@ Windowsでユーザ管理するには基本的には`net user`コマンドを使
 ## <a name="ユーザを作成する">ユーザを作成する</a><a class="heading-anchor-permalink" href="#ユーザを作成する">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-23" updated="2021-12-23" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 net user <em>&lt;ユーザ名&gt;</em> <em>&lt;パスワード&gt;</em> <em class="blue">/add</em>
 </pre>
@@ -42,6 +43,7 @@ net user <em>&lt;ユーザ名&gt;</em> <em>&lt;パスワード&gt;</em> <em clas
 ## <a name="ユーザを削除する">ユーザを削除する</a><a class="heading-anchor-permalink" href="#ユーザを削除する">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-23" updated="2021-12-23" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 net user <em>&lt;ユーザ名&gt;</em> <em class="blue">/delete</em>
 </pre>
@@ -53,6 +55,7 @@ net user <em>&lt;ユーザ名&gt;</em> <em class="blue">/delete</em>
 ## <a name="ユーザのパスワード変更する">ユーザのパスワード変更する</a><a class="heading-anchor-permalink" href="#ユーザのパスワード変更する">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-23" updated="2021-12-23" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 net user <em>&lt;ユーザ名&gt;</em> <em>&lt;新しいパスワード&gt;</em>
 </pre>
@@ -64,6 +67,7 @@ net user <em>&lt;ユーザ名&gt;</em> <em>&lt;新しいパスワード&gt;</em>
 ## <a name="ユーザのフルネームを設定する">ユーザのフルネームを設定する</a><a class="heading-anchor-permalink" href="#ユーザのフルネームを設定する">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-23" updated="2021-12-23" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 net user <em>&lt;ユーザ名&gt;</em> <em class="blue">/fullname</em>:<em class="orange">"&lt;フルネーム&gt;"</em>
 </pre>
@@ -75,6 +79,7 @@ net user <em>&lt;ユーザ名&gt;</em> <em class="blue">/fullname</em>:<em class
 ## <a name="ユーザの説明を設定する">ユーザの説明を設定する</a><a class="heading-anchor-permalink" href="#ユーザの説明を設定する">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-23" updated="2021-12-23" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 net user <em>&lt;ユーザ名&gt;</em> <em class="blue">/comment</em>:<em class="orange">"&lt;説明&gt;"</em>
 </pre>
@@ -86,6 +91,7 @@ net user <em>&lt;ユーザ名&gt;</em> <em class="blue">/comment</em>:<em class=
 ## <a name="ユーザをグループに追加する">ユーザをグループに追加する</a><a class="heading-anchor-permalink" href="#ユーザをグループに追加する">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-23" updated="2021-12-23" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 net localgroup <em>&lt;グループ名&gt;</em> <em>&lt;ユーザ名&gt;</em> <em class="blue">/add</em>
 </pre>
@@ -103,4 +109,4 @@ net localgroup <em>&lt;グループ名&gt;</em> <em>&lt;ユーザ名&gt;</em> <e
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

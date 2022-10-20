@@ -21,6 +21,7 @@ updated: 2022-03-13
 - Rubyの場合、`File.open`を利用します。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>File.open</em>(<em class="blue">"data/bbb.txt"</em>, <em class="orange">mode="w:UTF-8"</em>) do |w|
   w.write "あいう\n"
@@ -31,6 +32,7 @@ end
 </div>
 <div class="code-box-output">
 <div class="title">data/bbb.txt</div>
+<div class="copy-button">Copy</div>
 <pre>
 あいう
 abc
@@ -64,4 +66,4 @@ abc
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

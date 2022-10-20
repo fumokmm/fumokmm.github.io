@@ -29,6 +29,7 @@ Wordでドキュメント内の文字列やオートシェイプ内の文字列�
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-19" updated="2022-04-19" %}</div>
 まずはドキュメント内の文字列を一括置換するコードです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Option Explicit
 
@@ -58,6 +59,7 @@ End Sub
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-19" updated="2022-04-19" %}</div>
 今度はオートシェイプ内の文字列を一括置換するコードです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Option Explicit
 
@@ -148,4 +150,4 @@ End Sub
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

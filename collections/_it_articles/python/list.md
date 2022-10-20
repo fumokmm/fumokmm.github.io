@@ -47,6 +47,7 @@ Pythonのリストは組み込み型のひとつです。
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-31" updated="2021-10-31" %}</div>
 リストに要素を追加するには`append`メソッドを利用します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list = [100, 200, 300]
 list<em>.append(400)</em>
@@ -54,6 +55,7 @@ print(list)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [100, 200, 300, <em>400</em>]
 </pre>
@@ -69,6 +71,7 @@ print(list)
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-31" updated="2021-11-16" %}</div>
 リストにリストの要素を1階層展開してすべて追加するには`extend`メソッドを利用します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list1 = [100, 200, 300]
 list2 = ["aaa", "bbb"]
@@ -77,6 +80,7 @@ print(list1)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [100, 200, 300, <em>'aaa', 'bbb'</em>]
 </pre>
@@ -86,6 +90,7 @@ print(list1)
 
 ちなみに、`extend`の代わりに`append`でリストを追加すると、リスト毎追加されてしまいます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list1 = [100, 200, 300]
 list2 = ["aaa", "bbb"]
@@ -94,6 +99,7 @@ print(list1)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [100, 200, 300, <em>['aaa', 'bbb']</em>]
 </pre>
@@ -109,6 +115,7 @@ print(list1)
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-31" updated="2021-11-16" %}</div>
 リストにリストの要素を1階層展開してすべて追加した新しいリストを取得するには、`+`演算子を利用します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list1 = [100, 200, 300]
 list2 = ["aaa", "bbb"]
@@ -119,6 +126,7 @@ print(list2)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>[100, 200, 300, 'aaa', 'bbb']</em>
 [100, 200, 300]
@@ -129,6 +137,7 @@ print(list2)
 
 元のリストに破壊的に要素を追加するには`+=`を使います。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list4 = [400, 500]
 list4 <em>+=</em> ["ccc", "ddd"]
@@ -136,6 +145,7 @@ print(list4)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [400, 500, 'ccc', 'ddd']
 </pre>
@@ -153,23 +163,27 @@ print(list4)
 <div class="chapter-updated">{% include update_info_inline.html created="2021-10-31" updated="2021-11-16" %}</div>
 リストの要素を繰り返したリストを取得するには、`*`演算子を利用します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list1 = ["a"] <em>* 3</em>
 print(list1)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 ['a', 'a', 'a']
 </pre>
 </div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list2 = [10, 20, 30] <em>* 2</em>
 print(list2)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [10, 20, 30, 10, 20, 30]
 </pre>
@@ -178,6 +192,7 @@ print(list2)
 
 元のリストに破壊的に変更し要素を追加するには`*=`を使います。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list3 = ["a", "b", "c"]
 list3 <em>*= 2</em>
@@ -185,6 +200,7 @@ print(list3)
 </pre>
 </div>
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 ['a', 'b', 'c', 'a', 'b', 'c']
 </pre>
@@ -202,6 +218,7 @@ print(list3)
 リストの長さチェックには`len関数`を利用します。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 len(&lt;リスト&gt;)
 </pre>
@@ -209,6 +226,7 @@ len(&lt;リスト&gt;)
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list = ["A", "B", "C", "D", "E"]
 assert <em>len(</em>list<em>)</em> == 5
@@ -229,6 +247,7 @@ assert <em>len(</em>list<em>)</em> == 5
 リストに要素が含まれているかをチェックするには、`in演算子`を利用します。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 &lt;要素&gt; in &lt;リスト&gt;
 </pre>
@@ -237,6 +256,7 @@ assert <em>len(</em>list<em>)</em> == 5
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list = ["A", "B", <em>"C"</em>, "D", "E"]
 assert ("C" <em>in</em> list) == <em class="blue">True</em>
@@ -258,6 +278,7 @@ assert ("C" <em>in</em> list) == <em class="blue">True</em>
 リストの要素を破壊的にソートするには、リストのメソッドである`sort`を利用します。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list.sort()
 </pre>
@@ -268,6 +289,7 @@ list.sort()
 ### 例
 <div class="code-box">
 <div class="title">元のリストのソート（破壊的）</div>
+<div class="copy-button">Copy</div>
 <pre>
 list = [3, 10, 2, 1, 5]
 list.<em>sort</em>()
@@ -276,6 +298,7 @@ assert list == [1, 2, 3, 5, 10]
 </div>
 <div class="code-box">
 <div class="title">逆順</div>
+<div class="copy-button">Copy</div>
 <pre>
 list.<em>sort</em>(<em class="blue">reverse=True</em>)
 assert list == [10, 5, 3, 2, 1]
@@ -283,6 +306,7 @@ assert list == [10, 5, 3, 2, 1]
 </div>
 <div class="code-box">
 <div class="title">キーを指定してソート</div>
+<div class="copy-button">Copy</div>
 <pre>
 list = ["BB", "CCC", "A"]
 list.<em>sort</em>(<em class="blue">key=lambda x: -len(x)</em>) <em class="comment"># 文字数が多い順</em>
@@ -304,6 +328,7 @@ assert list == ["CCC", "BB", "A"]
 リストをソートした新たなリストを返却するには`sorted`関数を利用します。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 new_list = sorted(&lt;リスト&gt;)
 </pre>
@@ -314,6 +339,7 @@ new_list = sorted(&lt;リスト&gt;)
 ### 例
 <div class="code-box">
 <div class="title">ソートされた新しいリストを返却</div>
+<div class="copy-button">Copy</div>
 <pre>
 list = [3, 10, 2, 1, 5]
 list2 = <em>sorted</em>(list)
@@ -323,6 +349,7 @@ assert list == [3, 10, 2, 1, 5] <em class="comment"># 元のリストは変化�
 </div>
 <div class="code-box">
 <div class="title">逆順</div>
+<div class="copy-button">Copy</div>
 <pre>
 list3 = <em>sorted</em>(list, <em class="blue">reverse=True</em>)
 assert list3 == [10, 5, 3, 2, 1]
@@ -331,6 +358,7 @@ assert list == [3, 10, 2, 1, 5] <em class="comment"># 元のリストは変化�
 </div>
 <div class="code-box">
 <div class="title">キーを指定してソート</div>
+<div class="copy-button">Copy</div>
 <pre>
 list = ["BB", "CCC", "A"]
 list4 = <em>sorted</em>(list, <em class="blue">key=lambda x: -len(x)</em>) <em class="comment"># 文字数が多い順</em>
@@ -367,4 +395,4 @@ assert list == ["BB", "CCC", "A"] <em class="comment"># 元のリストは変化
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -18,6 +18,7 @@ XLOOKUP関数はVLOOKUP関数とHLOOKUP関数の上位互換です。使える�
 ## <a name="構文">構文</a><a class="heading-anchor-permalink" href="#構文">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-07-14" updated="2022-07-14" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 =XLOOKUP(<em>&lt;検索値&gt;</em>, <em>&lt;検索範囲&gt;</em>, <em>&lt;戻り範囲&gt;</em>)
 =XLOOKUP(<em>&lt;検索値&gt;</em>, <em>&lt;検索範囲&gt;</em>, <em>&lt;戻り範囲&gt;</em>, <em class="blue">[&lt;見つからない場合&gt;]</em>)
@@ -69,4 +70,4 @@ XLOOKUP関数はVLOOKUP関数とHLOOKUP関数の上位互換です。使える�
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

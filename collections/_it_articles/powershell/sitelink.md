@@ -30,4 +30,4 @@ updated: 2021-05-16
   </tbody>
 </table>
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

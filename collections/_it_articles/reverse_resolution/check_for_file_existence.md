@@ -21,6 +21,7 @@ updated: 2022-02-03
 
 ### 構文
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 os.path.exists(<em>&lt;ファイルパス&gt;</em>)
 </pre>
@@ -29,6 +30,7 @@ os.path.exists(<em>&lt;ファイルパス&gt;</em>)
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import os
 
@@ -37,12 +39,14 @@ print(<em>os.path.exists(</em>"aaa.txt"<em>)</em>)
 </div>
 <div class="code-box-output">
 <div class="title">出力結果(ファイルがある場合)</div>
+<div class="copy-button">Copy</div>
 <pre>
 True
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">出力結果(ファイルがない場合)</div>
+<div class="copy-button">Copy</div>
 <pre>
 False
 </pre>
@@ -61,4 +65,4 @@ False
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

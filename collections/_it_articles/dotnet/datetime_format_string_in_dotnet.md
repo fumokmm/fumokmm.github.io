@@ -158,6 +158,7 @@ updated: 2022-04-19
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-13" updated="2022-04-13" %}</div>
 ### PowerShell
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\&gt;</em> $datetime = Get-Date
 <em class="command">PS C:\&gt;</em> $datetime.ToString(<em>"yyyy/MM/dd HH:mm:ss.fff"</em>)
@@ -176,4 +177,4 @@ updated: 2022-04-19
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

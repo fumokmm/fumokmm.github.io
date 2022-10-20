@@ -25,6 +25,7 @@ Kotlinにはそのものズバリの`zip`というメソッドが`List`や`Array
 
 <div class="code-box">
 <div class="title">listをzip</div>
+<div class="copy-button">Copy</div>
 <pre>
 val list1 = listOf("A", "B", "C")
 val list2 = listOf(100, 200, 300)
@@ -34,6 +35,7 @@ println(list1<em>.zip</em>(list2))
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 [(A, 100), (B, 200), (C, 300)]
 </pre>
@@ -41,6 +43,7 @@ println(list1<em>.zip</em>(list2))
 
 <div class="code-box">
 <div class="title">arrayをzip</div>
+<div class="copy-button">Copy</div>
 <pre>
 val array1 = arrayOf("a", "b", "c")
 val array2 = arrayOf(400, 500, 600)
@@ -50,6 +53,7 @@ println(array1<em>.zip</em>(array2))
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 [(a, 400), (b, 500), (c, 600)]
 </pre>
@@ -63,6 +67,7 @@ println(array1<em>.zip</em>(array2))
 例えば以下のようにすれば、1番目の最初の要素`"a"`が取得できます。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 array1.zip(array2)[0].first <em class="comment">// =&gt; "a"</em>
 </pre>
@@ -78,6 +83,7 @@ array1.zip(array2)[0].first <em class="comment">// =&gt; "a"</em>
 
 <div class="code-box">
 <div class="title">associate map</div>
+<div class="copy-button">Copy</div>
 <pre>
 val list1 = listOf("A", "B", "C")
 val list2 = listOf(100, 200, 300)
@@ -86,6 +92,7 @@ println(list1.zip(list2)<em>.associate</em>{ it })
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 {A=100, B=200, C=300}
 200
@@ -100,6 +107,7 @@ println(list1.zip(list2)<em>.associate</em>{ it })
 <div class="chapter-updated">{% include update_info_inline.html created="2019-12-07" updated="2021-07-13" %}</div>
 使い心地はこんな感じです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 list1.zip(list2).associate{ it }["B"] <em class="comment">// =&gt; 200</em>
 </pre>
@@ -124,4 +132,4 @@ list1.zip(list2).associate{ it }["B"] <em class="comment">// =&gt; 200</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

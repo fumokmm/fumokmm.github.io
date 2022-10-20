@@ -21,6 +21,7 @@ updated: 2021-08-05
 - `Set-PSDebug`コマンドで`-Off`を呼び出すと、*Strictモード*が解除されます。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp&gt;</em> Set-PSDebug -Strict
 <em class="command">PS C:\temp&gt;</em> $newValue
@@ -46,4 +47,4 @@ updated: 2021-08-05
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

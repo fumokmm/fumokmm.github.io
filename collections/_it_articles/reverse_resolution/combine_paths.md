@@ -19,6 +19,7 @@ updated: 2022-01-02
 <div class="chapter-updated">{% include update_info_inline.html created="2022-01-02" updated="2022-01-02" %}</div>
 ### 構文
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 File.join(item...)
 </pre>
@@ -29,6 +30,7 @@ File.join(item...)
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 File.<em>join</em>(<em class="blue">"a","b"</em>)                        <em class="comment"># =&gt; "a/b"</em>
 File.<em>join</em>(<em class="blue">"a/","b"</em>)                       <em class="comment"># =&gt; "a/b"</em>
@@ -53,4 +55,4 @@ File.<em>join</em>                                 <em class="comment"># =&gt; "
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

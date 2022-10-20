@@ -21,6 +21,7 @@ updated: 2022-09-28
 
 ### Rustのダウンロードとインストール
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</em>
 info: downloading installer
@@ -73,6 +74,7 @@ Current installation options:
 </div>
 ここでとりあえず`1`と打って`Enter`。ちなみに、`fumo`って部分は私のユーザ名です。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 info: profile set to 'default'
 info: default host triple is x86_64-unknown-linux-gnu
@@ -118,6 +120,7 @@ source "$HOME/.cargo/env"
 
 ### rustc(Rustのコンパイラ)やcargo(Rustのツールチェーン)へ実行パスを通す
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ source "$HOME/.cargo/env"</em>
 </pre>
@@ -125,6 +128,7 @@ source "$HOME/.cargo/env"
 
 ターミナルを閉じてもパスが通るよう、`.bashrc`などに以下行を追加
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 export PATH="$HOME/.cargo/bin:$PATH"
 </pre>
@@ -138,6 +142,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 ### バージョン確認
 <div class="code-box-output">
 <div class="title">rustcとcargoコマンド</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ rustc -V</em>
 rustc 1.64.0 (a55dd71d5 2022-09-19)
@@ -160,4 +165,4 @@ cargo 1.64.0 (387270bc7 2022-09-16)
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

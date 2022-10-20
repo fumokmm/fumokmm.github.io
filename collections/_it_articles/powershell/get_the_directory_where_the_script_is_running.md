@@ -21,6 +21,7 @@ PowerShell v3以降向け。
 
 <div class="code-box">
 <div class="title">scriptdir.ps1</div>
+<div class="copy-button">Copy</div>
 <pre>
 Write-Host <em>$PSScriptRoot</em>
 </pre>
@@ -28,6 +29,7 @@ Write-Host <em>$PSScriptRoot</em>
 
 <div class="code-box-output">
 <div class="title">実行結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp&gt;</em> .\scriptdir.ps1
 C:\temp
@@ -54,4 +56,4 @@ C:\temp
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

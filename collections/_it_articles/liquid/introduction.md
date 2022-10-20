@@ -31,6 +31,7 @@ Liquidはオブジェクトとタグとフィルターを使ってテンプレ�
 
 <div class="code-box">
 <div class="title">Input</div>
+<div class="copy-button">Copy</div>
 <pre>
 {{ page.title }}
 </pre>
@@ -38,6 +39,7 @@ Liquidはオブジェクトとタグとフィルターを使ってテンプレ�
 
 <div class="code-box-output">
 <div class="title">Output</div>
+<div class="copy-button">Copy</div>
 <pre>
 Liquidの紹介
 </pre>
@@ -59,6 +61,7 @@ Liquidの紹介
 
 <div class="code-box">
 <div class="title">Input</div>
+<div class="copy-button">Copy</div>
 <pre>
 {% if user %}
   Hello {{ user.name }}!
@@ -68,6 +71,7 @@ Liquidの紹介
 
 <div class="code-box-output">
 <div class="title">Output</div>
+<div class="copy-button">Copy</div>
 <pre>
   Hello fumo!
 </pre>
@@ -93,12 +97,14 @@ Liquidの紹介
 
 <div class="code-box">
 <div class="title">Input</div>
+<div class="copy-button">Copy</div>
 <pre>
 {{ "/my/fancy/url" | append: ".html" }}
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">Output</div>
+<div class="copy-button">Copy</div>
 <pre>
 /my/fancy/url.html
 </pre>
@@ -107,12 +113,14 @@ Liquidの紹介
 一つに出力に対して複数のフィルターが使用されることもあります。適用順は左から右です。
 <div class="code-box">
 <div class="title">Input</div>
+<div class="copy-button">Copy</div>
 <pre>
 {{ "fumo!" | capitalize | prepend: "Hello " }}
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">Output</div>
+<div class="copy-button">Copy</div>
 <pre>
 Hello Fumo!
 </pre>
@@ -133,4 +141,4 @@ Hello Fumo!
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

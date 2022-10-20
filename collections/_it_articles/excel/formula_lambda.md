@@ -34,4 +34,4 @@ LAMBDA関数(ラムダ関数)を使うと簡単な一時関数を作成できま
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

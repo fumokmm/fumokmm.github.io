@@ -36,6 +36,7 @@ updated: 2021-10-14
 まずはバージョン確認ですね。  
 バージョン確認には`-V`オプションを使います。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>-V</em>
 pip 20.3.1 from /home/fumo/.local/lib/python3.8/site-packages/pip (python 3.8)
@@ -52,6 +53,7 @@ pip 20.3.1 from /home/fumo/.local/lib/python3.8/site-packages/pip (python 3.8)
 
 <div class="code-box-output">
 <div class="title">list</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>list</em>
 Package                Version
@@ -69,6 +71,7 @@ blinker                1.4
 
 <div class="code-box-output">
 <div class="title">freeze</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>freeze</em>
 astroid==2.4.2
@@ -91,6 +94,7 @@ blinker==1.4
 ここでは例として`numpy`をインストールしています。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>install</em> <em class="blue">numpy</em>
 Defaulting to user installation because normal site-packages is not writeable
@@ -104,6 +108,7 @@ Successfully installed numpy-1.21.2
 
 バージョンを指定してインストールするには以下のようにします。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>install</em> <em class="blue">'numpy==1.21.2'</em>
 </pre>
@@ -117,6 +122,7 @@ $ pip <em>install</em> <em class="blue">'numpy==1.21.2'</em>
 パッケージを更新する場合は`install`コマンドに`--upgrade`オプションを付けて使います。  
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>install --upgrade</em> <em class="blue">numpy</em>
 </pre>
@@ -130,6 +136,7 @@ $ pip <em>install --upgrade</em> <em class="blue">numpy</em>
 パッケージをアンインストールするには`uninstall`コマンドを使います。  
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>uninstall</em> <em class="blue">numpy</em>
 </pre>
@@ -137,6 +144,7 @@ $ pip <em>uninstall</em> <em class="blue">numpy</em>
 
 `-y`オプションを付けると、確認をスキップしてアンインストールできます。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>uninstall -y</em> <em class="blue">numpy</em>
 </pre>
@@ -153,6 +161,7 @@ $ pip <em>uninstall -y</em> <em class="blue">numpy</em>
 ダウンロードするには`download`コマンドを使います。  
 ここでは例として`pandas`をダウンロードしています。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>download</em> <em class="blue">pandas</em>
 Collecting pandas
@@ -178,6 +187,7 @@ Successfully downloaded pandas numpy python-dateutil pytz six
 </div>
 ダウンロードした`whl`ファイルはカレントディレクトリに置かれます。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ ls
 numpy-1.21.2-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
@@ -194,12 +204,14 @@ six-1.16.0-py2.py3-none-any.whl
 - `--no-index`：PyPIは参照しない（ローカルを参照するために設定）
 - `--find-links=<参照する場所>`：指定した場所を参照する
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 pip <em>install --no-index --find-links</em>=<em class="orange">&lt;whlファイルへのパス&gt;</em> <em class="blue">&lt;モジュール名&gt;</em>
 </pre>
 </div>
 上でダウンロードしたものを`/tmp/whl`に置いてある想定なら、以下のようなコマンドになります。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ pip <em>install --no-index --find-links</em>=<em class="orange">/tmp/whl/numpy-1.21.2-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl</em> <em class="blue">numpy</em>
 $ pip <em>install --no-index --find-links</em>=<em class="orange">/tmp/whl/pandas-1.3.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl</em> <em class="blue">pandas</em>
@@ -224,4 +236,4 @@ $ pip <em>install --no-index --find-links</em>=<em class="orange">/tmp/whl/six-1
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

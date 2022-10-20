@@ -31,6 +31,7 @@ updated: 2022-10-13
 ### 1行コメント
 - `##` 以降が1行コメントになります。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">##この一行はコメントになる。</em>
 </pre>
@@ -38,6 +39,7 @@ updated: 2022-10-13
 ### 複数行コメント
 - `#*`で始まり、`*#`で終わる範囲がコメントになります。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">#*　　コメント
 改行してもコメント　　*#</em>
@@ -93,6 +95,7 @@ updated: 2022-10-13
 `#set`は右辺の値を左辺に代入する指示子です。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 #set( $value = "$value * 3")
 #set( $name = "Yojigen")
@@ -102,6 +105,7 @@ updated: 2022-10-13
 - ダブルクォーテーションを使っている場合は評価され、シングルクォーテーションを使っている場合は評価されません。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 #set($name = "ふも")
 #set($a = "$name")
@@ -113,6 +117,7 @@ $b
 
 <div class="code-box-output">
 <div class="title">処理結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 ふも
 $name
@@ -128,6 +133,7 @@ $name
 `#if`、`#elseif`、`#else`、`#end`は条件分岐するための指示子です。  
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 #if( <em>&lt;条件&gt;</em> )
 [ <em class="blue">&lt;出力&gt;</em> ]
@@ -148,6 +154,7 @@ $name
 
 <div class="code-box">
 <div class="title">bmi.vm</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>#set($bmi = $human.weight / $human.height / $human.height)</em>
   あなたのBMI指数は $bmi です。
@@ -167,6 +174,7 @@ $name
 
 <div class="code-box">
 <div class="title">BMI.java</div>
+<div class="copy-button">Copy</div>
 <pre>
 (略)
 Human human = new Human("1.67", "50");
@@ -184,6 +192,7 @@ try {
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
   あなたのBMI指数は 17.93 です。
   やせ気味です。
@@ -202,6 +211,7 @@ try {
   - `#include`は読み込んだファイルの`VTL`を解析しません。テキストファイルとして利用するのみです。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>#parse(</em> <em class="blue">&lt;ファイル名または変数名&gt;</em> <em>)</em>
 または
@@ -215,6 +225,7 @@ try {
 
 <div class="code-box">
 <div class="title">sample1.vm</div>
+<div class="copy-button">Copy</div>
 <pre>
 #set($num = 10)
 <em>#parse(</em><em class="blue">"sample2.vm"</em><em>)</em>
@@ -239,4 +250,4 @@ sample1.vmの処理が終了
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -26,12 +26,14 @@ updated: 2022-02-17
 ## <a name="指定方法">指定方法</a><a class="heading-anchor-permalink" href="#指定方法">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-17" updated="2022-02-17" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em>Get-Content</em> <em class="command">-Path</em> <em class="blue">&lt;ファイル名&gt;</em> <em class="command">-Wait</em> <em class="command">-Encoding</em> <em class="blue">&lt;ファイルの文字コード&gt;</em> <em class="command">-Tail</em> <em class="blue">&lt;表示行数&gt;</em>
 </pre>
 </div>
 ### 例：UTF-8のログファイルを監視
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Get-Content -Path <em>"C:\temp\app.log"</em> -Wait -Encoding <em>UTF8</em> -Tail <em>20</em>
 </pre>
@@ -50,4 +52,4 @@ Get-Content -Path <em>"C:\temp\app.log"</em> -Wait -Encoding <em>UTF8</em> -Tail
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

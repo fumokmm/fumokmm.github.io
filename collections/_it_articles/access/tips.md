@@ -28,4 +28,4 @@ Accessをそのまま起動するとAutoExecマクロや起動オプションが
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

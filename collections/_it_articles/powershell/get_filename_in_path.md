@@ -21,6 +21,7 @@ updated: 2021-05-31
 
 <div class="code-box-output">
 <div class="title">拡張子あり</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\Users\fumo&gt;</em> [System.IO.Path]::<em>GetFileName</em>("C:\temp\fileA.txt")
 fileA.txt
@@ -29,6 +30,7 @@ fileA.txt
 
 <div class="code-box-output">
 <div class="title">拡張子なし</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\Users\fumo&gt;</em> [System.IO.Path]::<em>GetFileNameWithoutExtension</em>("C:\temp\fileA.txt")
 fileA
@@ -44,4 +46,4 @@ fileA
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

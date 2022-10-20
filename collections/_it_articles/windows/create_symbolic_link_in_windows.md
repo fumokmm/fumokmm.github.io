@@ -27,6 +27,7 @@ updated: 2021-12-24
 ## <a name="PowerShellで作成">PowerShellで作成</a><a class="heading-anchor-permalink" href="#PowerShellで作成">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-24" updated="2021-12-24" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 New-Item -Value <em>&lt;リンク先フォルダ&gt;</em> -Path <em>&lt;シンボリックリンクの配置先&gt;</em> -Name <em>&lt;シンボリックリンク名&gt;</em> <em class="blue">-ItemType SymbolicLink</em>
 </pre>
@@ -35,6 +36,7 @@ PowerShellの場合は、ファイル、フォルダへのシンボリックリ�
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 New-Item -Value "C:\Program Files\Java\jdk-13.0.1" -Path "C:\temp" -Name "java-currentver" -ItemType SymbolicLink
 </pre>
@@ -47,6 +49,7 @@ New-Item -Value "C:\Program Files\Java\jdk-13.0.1" -Path "C:\temp" -Name "java-c
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-24" updated="2021-12-24" %}</div>
 <div class="code-box-syntax">
 <div class="title">ファイルのシンボリックリンク</div>
+<div class="copy-button">Copy</div>
 <pre>
 mklink <em>&lt;シンボリックリンク名&gt;</em> <em>&lt;ファイルへのパス&gt;</em>
 </pre>
@@ -55,6 +58,7 @@ mklink <em>&lt;シンボリックリンク名&gt;</em> <em>&lt;ファイルへ�
 
 <div class="code-box-syntax">
 <div class="title">フォルダのシンボリックリンク</div>
+<div class="copy-button">Copy</div>
 <pre>
 mklink <em class="blue">/d</em> <em>&lt;シンボリックリンク名&gt;</em> <em>&lt;ファイルへのパス&gt;</em>
 </pre>
@@ -63,6 +67,7 @@ mklink <em class="blue">/d</em> <em>&lt;シンボリックリンク名&gt;</em> 
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 mklink /d "C:\temp\java-currentver" "C:\Program Files\Java\jdk-13.0.1"
 </pre>
@@ -79,4 +84,4 @@ mklink /d "C:\temp\java-currentver" "C:\Program Files\Java\jdk-13.0.1"
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

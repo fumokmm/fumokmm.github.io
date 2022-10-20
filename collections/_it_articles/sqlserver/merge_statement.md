@@ -57,6 +57,7 @@ updated: 2022-04-22
 ## <a name="MERGE文">MERGE文</a><a class="heading-anchor-permalink" href="#MERGE文">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-22" updated="2022-04-22" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 MERGE INTO
     &lt;対象テーブル&gt; tgt
@@ -131,4 +132,4 @@ WHEN NOT MATCHED BY SOURCE THEN
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

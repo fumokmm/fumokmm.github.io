@@ -32,6 +32,7 @@ updated: 2021-11-24
 ### 例
 <div class="code-box">
 <div class="title">isnumeric()</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment"># 半角数値</em>
 assert "1234567890".isdecimal() == <em class="blue">True</em>
@@ -68,6 +69,7 @@ assert "壱億参阡萬".isdecimal() == <em>False</em>
 ### 例
 <div class="code-box">
 <div class="title">isnumeric()</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment"># 半角数値</em>
 assert "1234567890".isdigit() == <em class="blue">True</em>
@@ -104,6 +106,7 @@ assert "壱億参阡萬".isdigit() == <em>False</em>
 ### 例
 <div class="code-box">
 <div class="title">isnumeric()</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment"># 半角数値</em>
 assert "1234567890".isnumeric() == <em class="blue">True</em>
@@ -146,4 +149,4 @@ assert "壱億参阡萬".isnumeric() == <em class="blue">True</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

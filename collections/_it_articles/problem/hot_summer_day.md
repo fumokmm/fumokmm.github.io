@@ -19,6 +19,7 @@ updated: 2021-01-29
 <div class="chapter-updated">{% include update_info_inline.html created="2021-01-29" updated="2021-01-29" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
+<div class="copy-button">Copy</div>
 <pre>
 以下の配列は2019/7/1〜9/30までの最高気温の配列です。最も長い、30度を越えた連続日数を求めるプログラムを作成せよ
 
@@ -67,4 +68,4 @@ println temperatures.collect{ it >= 30.0 ? '1' : ' ' }.join().findAll(/(1+)/).co
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -20,6 +20,7 @@ updated: 2021-11-03
 ### バージョン
 以下バージョンのメニュー情報です。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 バージョン: 1.61.2 (user setup)
 コミット: 6cba118ac49a1b88332f312a8f67186f7f3c1643
@@ -82,4 +83,4 @@ OS: Windows_NT x64 10.0.19042
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

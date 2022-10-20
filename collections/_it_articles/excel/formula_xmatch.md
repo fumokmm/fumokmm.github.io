@@ -18,6 +18,7 @@ XMATCH関数はMATCH関数の上位互換です。使える環境の人は使わ
 ## <a name="構文">構文</a><a class="heading-anchor-permalink" href="#構文">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-07-14" updated="2022-07-14" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 =XMATCH(<em>&lt;検索値&gt;</em>, <em>&lt;検索範囲&gt;</em>)
 =XMATCH(<em>&lt;検索値&gt;</em>, <em>&lt;検索範囲&gt;</em>, <em class="blue">[&lt;一致モード&gt;]</em>, <em class="blue">[&lt;検索モード&gt;]</em>)
@@ -61,4 +62,4 @@ XMATCH関数はMATCH関数の上位互換です。使える環境の人は使わ
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -54,4 +54,4 @@ updated: 2021-03-04
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

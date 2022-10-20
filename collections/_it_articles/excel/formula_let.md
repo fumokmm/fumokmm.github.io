@@ -20,6 +20,7 @@ LET関数を使うと関数の中で一時的に計算結果やセル値など�
 ## <a name="構文">構文</a><a class="heading-anchor-permalink" href="#構文">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-05-29" updated="2022-05-29" %}</div>
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 =LET(<em>&lt;名前&gt;</em>, <em class="blue">&lt;名前の値&gt;</em>, <em class="orange">&lt;計算&gt;</em>)
 =LET(<em>&lt;名前1&gt;</em>, <em class="blue">&lt;名前の値1&gt;</em>, [<em>&lt;名前2&gt;</em>, <em class="blue">&lt;名前の値2&gt;</em>, ...] <em class="orange">&lt;計算&gt;</em>)
@@ -64,4 +65,4 @@ LET関数を使うと関数の中で一時的に計算結果やセル値など�
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

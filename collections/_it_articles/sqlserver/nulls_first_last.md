@@ -40,4 +40,4 @@ ORDER BY
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

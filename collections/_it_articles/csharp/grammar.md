@@ -35,6 +35,7 @@ updated: 2022-01-11
 ### 普通の文字列
 <div class="code-box-syntax">
 <div class="title">普通の文字列</div>
+<div class="copy-button">Copy</div>
 <pre>
 string s = <em>"</em><em class="blue">C:\\path\\to\\file</em><em>"</em>;
 </pre>
@@ -45,6 +46,7 @@ string s = <em>"</em><em class="blue">C:\\path\\to\\file</em><em>"</em>;
 ### @を使った文字列
 <div class="code-box-syntax">
 <div class="title">@を利用した文字列</div>
+<div class="copy-button">Copy</div>
 <pre>
 string s = <em>@"</em><em class="blue">C:\path\to\file</em><em>"</em>;
 </pre>
@@ -56,6 +58,7 @@ string s = <em>@"</em><em class="blue">C:\path\to\file</em><em>"</em>;
 他言語のヒアドキュメント的な使い方もできます。
 <div class="code-box-syntax">
 <div class="title">@を利用した文字列（改行入り）</div>
+<div class="copy-button">Copy</div>
 <pre>
 string sql = <em>@"</em>
 <em class="blue">SELECT *
@@ -87,4 +90,4 @@ WHERE [YY]</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

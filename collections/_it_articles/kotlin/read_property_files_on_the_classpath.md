@@ -24,6 +24,7 @@ Javaクラスクラスを参照するには、`this.javaClass`とすればいい
 
 <div class="code-box">
 <div class="title">Main.kt</div>
+<div class="copy-button">Copy</div>
 <pre>
 import java.io.File
 import java.io.InputStreamReader
@@ -51,6 +52,7 @@ fun main(args: Array&lt;String&gt;) {
 
 <div class="code-box">
 <div class="title">sample.properties [UTF-8] (クラスパスの通ったディレクトリに置くこと)</div>
+<div class="copy-button">Copy</div>
 <pre>
 aaa=100
 bbb=200
@@ -60,6 +62,7 @@ bbb=200
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 ooo's value is 100
 bbb's value is 200
@@ -85,4 +88,4 @@ bbb's value is 200
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

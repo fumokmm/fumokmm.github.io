@@ -19,6 +19,7 @@ updated: 2022-02-07
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-22" updated="2022-02-07" %}</div>
 ### datetime.strftimeを使う
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import datetime
 
@@ -28,6 +29,7 @@ print(now<em>.strftime</em>(<em class="blue">"%Y-%m-%d %H:%M:%S.%f"</em>))
 </div>
 <div class="code-box-output">
 <div class="title">実行結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 2021-12-22 20:57:49.181353
 </pre>
@@ -35,12 +37,14 @@ print(now<em>.strftime</em>(<em class="blue">"%Y-%m-%d %H:%M:%S.%f"</em>))
 これだとマイクロ秒まで出力されてしまうので、  
 ミリ秒までに削りたい場合、文字列なので末尾の3桁を削れば良いようです。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 print(now.strftime("%Y-%m-%d %H:%M:%S.%f")<em>[:-3]</em>)
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">実行結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 2021-12-22 20:57:49.181
 </pre>
@@ -48,6 +52,7 @@ print(now.strftime("%Y-%m-%d %H:%M:%S.%f")<em>[:-3]</em>)
 
 ### utcnowを使う
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 from datetime import datetime
 print(datetime<em>.utcnow</em>().isoformat(sep=" ", <em class="blue">timespec="milliseconds"</em>))
@@ -55,6 +60,7 @@ print(datetime<em>.utcnow</em>().isoformat(sep=" ", <em class="blue">timespec="m
 </div>
 <div class="code-box-output">
 <div class="title">実行結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 2021-12-22 11:57:49.182
 </pre>
@@ -86,4 +92,4 @@ print(datetime<em>.utcnow</em>().isoformat(sep=" ", <em class="blue">timespec="m
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

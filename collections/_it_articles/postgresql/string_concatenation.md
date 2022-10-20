@@ -28,12 +28,14 @@ updated: 2022-10-19
 文字列結合には `||` 演算子を利用します。  
 複数続けて連続で指定可能です。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 &lt;文字列1&gt; <em>||</em> &lt;文字列2&gt; [<em>||</em> &lt;文字列x&gt; ...]
 </pre>
 </div>
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 select 'abc' <em>||</em> 'あいう'; <em class="comment">-- 'abcあいう'</em>
 select 'abc' <em>||</em> 'あいう' <em>||</em> '123'; <em class="comment">-- 'abcあいう123'</em>
@@ -43,12 +45,14 @@ select 'abc' <em>||</em> 'あいう' <em>||</em> '123'; <em class="comment">-- '
 ### nullを `||` で結合すると nullになってしまう
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 select 'abc' || 'あいう' || null; <em class="comment">-- null</em>
 </pre>
 </div>
 <div class="code-box">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 null
 </pre>
@@ -57,12 +61,14 @@ null
 ### nullが入っている場合はconcat関数を使う
 concat関数を使うと、`null`が入っていても結合することができます。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 concat(&lt;文字列&gt; [, &lt;文字列&gt; ...])
 </pre>
 </div>
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 select concat('abc', 'あいう', null); <em class="comment">-- 'abcあいう'</em>
 </pre>
@@ -79,4 +85,4 @@ select concat('abc', 'あいう', null); <em class="comment">-- 'abcあいう'</
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

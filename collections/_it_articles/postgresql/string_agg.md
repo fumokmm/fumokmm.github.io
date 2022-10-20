@@ -29,6 +29,7 @@ updated: 2022-10-15
 <div class="chapter-updated">{% include update_info_inline.html created="2022-10-15" updated="2022-10-15" %}</div>
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 select
     <em>string_agg(</em>dat, '/' order by dat desc<em>)</em>
@@ -61,6 +62,7 @@ SQL中に登場しているサブクエリ(別名として`dat_table`を付け�
 
 <div class="code-box-output">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 a/b/c
 </pre>
@@ -78,6 +80,7 @@ a/b/c
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 select
     string_agg(dat, '/' <em>order by dat desc</em>)
@@ -93,6 +96,7 @@ from (
 
 <div class="code-box">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 c/b/a
 </pre>
@@ -112,4 +116,4 @@ c/b/a
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

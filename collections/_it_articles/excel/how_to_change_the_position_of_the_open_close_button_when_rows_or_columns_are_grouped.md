@@ -74,4 +74,4 @@ Excelで行や列をグループ化したとき、開閉ボタンの位置はデ
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -19,6 +19,7 @@ updated: 2022-01-09
 
 <div class="code-box-syntax">
 <div class="title">テーブルをコピーしてバックアップするSQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * INTO <em>&lt;新しいテーブル名&gt;</em> FROM <em>&lt;テーブル名&gt;</em>;
 </pre>
@@ -27,6 +28,7 @@ SELECT * INTO <em>&lt;新しいテーブル名&gt;</em> FROM <em>&lt;テーブ�
 ### 例
 以下SQLを実行すると、`M_USER`と同じレイアウトの`M_USER_20201015`という名前のテーブルが作成されます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * INTO <em>M_USER_20201015</em> FROM <em>M_USER</em>;
 </pre>
@@ -34,4 +36,4 @@ SELECT * INTO <em>M_USER_20201015</em> FROM <em>M_USER</em>;
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -33,6 +33,7 @@ Groovyではループ処理がJavaより格段に便利になっている。と�
 <div class="chapter-updated">{% include update_info_inline.html created="2008-12-11" updated="2021-06-29" %}</div>
 ### 昔ながらの
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 def array = [0, 1, 2, 3, 4]
 for (int i = 0; i &lt; array.size(); i++) {
@@ -49,6 +50,7 @@ for (int i = 0; i &lt; array.size(); i++) {
 <div class="chapter-updated">{% include update_info_inline.html created="2008-12-11" updated="2021-06-29" %}</div>
 ### コレクションのループ
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 def array = [0, 1, 2, 3, 4]
 def nums = ''
@@ -65,6 +67,7 @@ assert nums == '01234'
 ## <a name="範囲(Range)でループ">範囲(Range)でループ</a><a class="heading-anchor-permalink" href="#範囲(Range)でループ">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2008-12-11" updated="2021-06-29" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 def nums = ''
 
@@ -105,6 +108,7 @@ assert nums == '4321'
 <div class="chapter-updated">{% include update_info_inline.html created="2008-12-11" updated="2021-06-29" %}</div>
 ### コレクションをループ
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 def array = [0, 1, 2, 3, 4]
 def nums = ''
@@ -126,6 +130,7 @@ assert nums == '43210'
 
 ### 範囲(Range)を利用して
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 def nums = ''
 <em class="comment">// 範囲を直接eachで回す</em>
@@ -153,6 +158,7 @@ assert nums == '01234'
 <div class="chapter-updated">{% include update_info_inline.html created="2008-12-11" updated="2021-06-29" %}</div>
 ### times
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 def nums = ''
 10.times { nums += it }
@@ -162,6 +168,7 @@ assert nums == '0123456789'
 
 ### upto, downto
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 def nums = ''
 0.upto(9) { nums += it }
@@ -175,6 +182,7 @@ assert nums == '9876543210'
 
 ### step
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 def nums = ''
 0.step(8, 2) { nums += it }
@@ -198,4 +206,4 @@ assert '02468'
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

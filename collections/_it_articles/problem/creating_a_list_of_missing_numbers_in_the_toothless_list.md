@@ -16,6 +16,7 @@ updated: 2021-11-21
 <div class="chapter-updated">{% include update_info_inline.html created="2021-11-21" updated="2021-11-21" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
+<div class="copy-button">Copy</div>
 <pre>
 歯抜けのある数値のリストが与えられた時、その欠番の一覧を作成せよ。
 なお、与えられたリストから最大値・最大値を仮定するものとする。
@@ -28,4 +29,4 @@ updated: 2021-11-21
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

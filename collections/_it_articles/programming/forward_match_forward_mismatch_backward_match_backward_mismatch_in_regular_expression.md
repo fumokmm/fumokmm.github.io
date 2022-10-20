@@ -21,6 +21,7 @@ updated: 2022-04-04
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-04" updated="2022-04-04" %}</div>
 <div class="code-box-syntax">
 <div class="title">正規表現</div>
+<div class="copy-button">Copy</div>
 <pre>
 (?&lt;=expression)
 </pre>
@@ -28,12 +29,14 @@ updated: 2022-04-04
 
 <div class="code-box">
 <div class="title">例) 前方が"abc"である"xyz"にヒット</div>
+<div class="copy-button">Copy</div>
 <pre>
 (?&lt;=abc)xyz
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">赤文字部分がヒット</div>
+<div class="copy-button">Copy</div>
 <pre>
 abc<em>xyz</em>
 ab9xyz
@@ -48,6 +51,7 @@ abcxy9
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-04" updated="2022-04-04" %}</div>
 <div class="code-box-syntax">
 <div class="title">正規表現</div>
+<div class="copy-button">Copy</div>
 <pre>
 (?&lt;!expression)
 </pre>
@@ -55,12 +59,14 @@ abcxy9
 
 <div class="code-box">
 <div class="title">例) 前方が"abc"でない"xyz"にヒット</div>
+<div class="copy-button">Copy</div>
 <pre>
 (?&lt;!abc)xyz
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">赤文字部分がヒット</div>
+<div class="copy-button">Copy</div>
 <pre>
 abcxyz
 ab9<em>xyz</em>
@@ -75,6 +81,7 @@ abcxy9
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-04" updated="2022-04-04" %}</div>
 <div class="code-box-syntax">
 <div class="title">正規表現</div>
+<div class="copy-button">Copy</div>
 <pre>
 (?=expression)
 </pre>
@@ -82,12 +89,14 @@ abcxy9
 
 <div class="code-box">
 <div class="title">例) 後方が"xyz"である"abc"にヒット</div>
+<div class="copy-button">Copy</div>
 <pre>
 abc(?=xyz)
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">赤文字部分がヒット</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>abc</em>xyz
 ab9xyz
@@ -102,6 +111,7 @@ abcxy9
 <div class="chapter-updated">{% include update_info_inline.html created="2022-04-04" updated="2022-04-04" %}</div>
 <div class="code-box-syntax">
 <div class="title">正規表現</div>
+<div class="copy-button">Copy</div>
 <pre>
 (?!expression)
 </pre>
@@ -109,12 +119,14 @@ abcxy9
 
 <div class="code-box">
 <div class="title">例) 後方が"xyz"でない"abc"にヒット</div>
+<div class="copy-button">Copy</div>
 <pre>
 abc(?!xyz)
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">赤文字部分がヒット</div>
+<div class="copy-button">Copy</div>
 <pre>
 abcxyz
 ab9xyz
@@ -133,4 +145,4 @@ ab9xyz
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

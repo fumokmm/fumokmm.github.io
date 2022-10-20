@@ -946,4 +946,4 @@ ISBN:4839927278:detail
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

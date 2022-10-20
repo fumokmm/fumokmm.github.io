@@ -19,6 +19,7 @@ updated: 2022-08-06
 <div class="chapter-updated">{% include update_info_inline.html created="2022-08-06" updated="2022-08-06" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
+<div class="copy-button">Copy</div>
 <pre>
 配列{"ドド","スコ"}からランダムに要素を標準出力し続け、  
 『その並びが「ドドスコスコスコ」を3回繰り返したもの』に一致したときに  
@@ -42,6 +43,7 @@ updated: 2022-08-06
 <div class="chapter-updated">{% include update_info_inline.html created="2022-08-06" updated="2022-08-06" %}</div>
 <div class="code-box">
 <div class="title">dodosuko.groovy</div>
+<div class="copy-button">Copy</div>
 <pre>
 def array = ['ドド', 'スコ']
 def getWord = {
@@ -77,4 +79,4 @@ for (int count in 1..10000) {
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -18,6 +18,7 @@ updated: 2022-01-17
 ### using
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 using System.Text.RegularExpressions;
 </pre>
@@ -25,6 +26,7 @@ using System.Text.RegularExpressions;
 
 ### 正規表現で検索するサンプル
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Regex reg = new Regex(@"&lt;正規表現文字列&gt;");
 Match m = reg.Match("&lt;検索する文字列&gt;");
@@ -37,6 +39,7 @@ Match m = reg.Match("&lt;検索する文字列&gt;");
 
 <div class="code-box">
 <div class="title">サンプル</div>
+<div class="copy-button">Copy</div>
 <pre>
 using System;
 using System.Text.RegularExpressions;
@@ -76,6 +79,7 @@ namespace ConsoleApp1
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 abcには数値が入っていません。
 abc8には数値が入っています。
@@ -84,4 +88,4 @@ abc8には数値が入っています。
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

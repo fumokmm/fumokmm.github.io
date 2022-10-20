@@ -86,6 +86,7 @@ updated: 2022-04-25
 
 <div class="code-box">
 <div class="title">comment1.py</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment"># これはコメント</em>
 print('Hello') <em class="comment"># これもコメント</em>
@@ -98,6 +99,7 @@ print('Hello') <em class="comment"># これもコメント</em>
 
 <div class="code-box">
 <div class="title">comment2.py</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">'''
 この行はコメント！
@@ -111,6 +113,7 @@ Pythonはインデントでブロックを表現する言語なので、複数�
 
 <div class="code-box">
 <div class="title">comment3.py</div>
+<div class="copy-button">Copy</div>
 <pre>
 for x in {1, 2, 3}:
   print("text")
@@ -139,6 +142,7 @@ for x in {1, 2, 3}:
 
 <div class="code-box">
 <div class="title">hello1.py</div>
+<div class="copy-button">Copy</div>
 <pre>
 print("Hello, World")
 print("Hello, ")
@@ -148,6 +152,7 @@ print("World")
 
 <div class="code-box-output">
 <div class="title">実行結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ python hello1.py</em>
 Hello, World
@@ -160,6 +165,7 @@ World
 
 <div class="code-box">
 <div class="title">hello2.py</div>
+<div class="copy-button">Copy</div>
 <pre>
 print("Hello, ", <em>end=""</em>) <em class="comment"># end="" とすると改行しない</em>
 print("World")
@@ -168,6 +174,7 @@ print("World")
 
 <div class="code-box-output">
 <div class="title">実行結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ python hello2.py</em>
 Hello, World
@@ -184,6 +191,7 @@ Hello, World
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-14" updated="2021-12-14" %}</div>
 ### コマンドライン引数を渡す
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ python ファイル名.py <em>引数1 引数2 引数3 …</em>
 </pre>
@@ -192,6 +200,7 @@ $ python ファイル名.py <em>引数1 引数2 引数3 …</em>
 ### コマンドライン引数を受け取る
 プログラム内でコマンドライン引数を受け取るには`sys.argv`モジュールを使います。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import sys
 print(<em>sys.argv[0]</em>) <em class="comment"># ファイル名</em>
@@ -228,6 +237,7 @@ print(<em>sys.argv[3]</em>) <em class="comment"># 引数3</em>
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment"># ↓節</em>
 for i in range(100):  <em class="comment"># ←ヘッダー</em>
@@ -238,6 +248,7 @@ for i in range(100):  <em class="comment"># ←ヘッダー</em>
 ### 文を複数行に分けて書く
 - 文を複数行に分けて書きたい場合は、末尾にバックスラッシュを付けます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 total = 123 <em>\</em>
       + 456 <em>\</em>
@@ -247,6 +258,7 @@ total = 123 <em>\</em>
 
 - `(...)`、`[...]`、`{...}`中のカンマの後ろのバックスラッシュは省略できます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 months = ["Jan", "Feb", "Mar", "Apr",
           "May", "Jun", "Jul", "Aug"
@@ -447,6 +459,7 @@ months = ["Jan", "Feb", "Mar", "Apr",
 - [C言語]({{link_to_it_c}})のような`++`はありません。
 - 代わりに`累算代入演算子`の`+=`を使います。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 a = 10
 a += 1
@@ -458,6 +471,7 @@ print(a) <em class="comment"># =&gt; 11</em>
 - [C言語]({{link_to_it_c}})のような`--`はありません。
 - 代わりに`累算代入演算子`の`-=`を使います。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 b = 10
 b <em>-=</em> 1
@@ -479,6 +493,7 @@ print(b) <em class="comment"># =&gt; 9</em>
 - 代入した結果を値として評価したい場合に利用します。
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 i = 5
 while (i <em>:=</em> i - 1):
@@ -487,6 +502,7 @@ while (i <em>:=</em> i - 1):
 </div>
 <div class="code-box">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 4
 3
@@ -511,6 +527,7 @@ while (i <em>:=</em> i - 1):
 
 <div class="code-box-syntax">
 <div class="title">if文</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>if</em> <em class="blue">条件式</em>:
     <em class="comment"># 条件式が真の時に実行する処理1</em>
@@ -522,6 +539,7 @@ while (i <em>:=</em> i - 1):
 `else if`ではないのでご注意下さい。
 <div class="code-box-syntax">
 <div class="title">if-elif文</div>
+<div class="copy-button">Copy</div>
 <pre>
 if <em class="blue">条件式1</em>:
     <em class="comment"># 条件式1が真の時に実行する処理1</em>
@@ -535,6 +553,7 @@ if <em class="blue">条件式1</em>:
 条件式が偽の場合に実行するブロックを指定するには`else`を使います。
 <div class="code-box-syntax">
 <div class="title">if-else文</div>
+<div class="copy-button">Copy</div>
 <pre>
 if 条件式:
     <em class="comment"># 条件式が真の時に実行する処理1</em>
@@ -548,6 +567,7 @@ if 条件式:
 `elif`と`else`は組み合わせられます。
 <div class="code-box-syntax">
 <div class="title">if-elif-else文</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>if</em> <em class="blue">条件式1</em>:
     <em class="comment"># 条件式1が真の時に実行する処理1</em>
@@ -563,6 +583,7 @@ if 条件式:
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 home = "日本"
 if home == "日本":
@@ -579,6 +600,7 @@ else:
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 Hello, Japan!
 </pre>
@@ -601,6 +623,7 @@ Hello, Japan!
 - 辞書を展開して渡す場合、リストの前に`**`を付けます。
 <div class="code-box">
 <div class="title">リストの展開</div>
+<div class="copy-button">Copy</div>
 <pre>
 def func_list(arg1, arg2, arg3):
     print("arg1 =" + str(arg1))
@@ -613,6 +636,7 @@ func_list(<em>*lst</em>)
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 arg1 =10
 arg2 =aaa
@@ -623,6 +647,7 @@ arg3 =True
 
 <div class="code-box">
 <div class="title">辞書の展開</div>
+<div class="copy-button">Copy</div>
 <pre>
 def func_dict(key1, key2, key3):
     print("key1 =" + str(key1))
@@ -635,6 +660,7 @@ func_dict(<em>**dic</em>)
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 key1 =True
 key2 =aaa
@@ -657,6 +683,7 @@ key3 =10
 <div class="chapter-updated">{% include update_info_inline.html created="2022-03-16" updated="2022-03-16" %}</div>
 ### 通常のクラス定義
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 class クラス名(継承元クラス名):
     """クラスのドキュメンテーション"""
@@ -674,6 +701,7 @@ class クラス名(継承元クラス名):
 
 ### 空クラス
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 class クラス名:
     pass
@@ -691,6 +719,7 @@ class クラス名:
 ### クラスの継承
 - `Sub`クラスが`Base`クラスを継承
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 class <em>Base</em>:
     """ 親クラス """
@@ -713,6 +742,7 @@ obj.func2()
 ### 子クラス内から親クラスのメソッド呼び出し
 - 親クラスのメソッド呼び出しには`super()`を使います。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 class <em>Base</em>:
     """ 親クラス """
@@ -731,6 +761,7 @@ class Sub(<em>Base</em>):
 
 ### 親クラスのコンストラクタ呼び出し
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 class <em>User</em>:
     def __init__(self, name="", age=0):
@@ -746,6 +777,7 @@ class Employee(<em>User</em>):
 
 ### オーバーライド
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 class <em>User</em>:
     def __init__(self, name="", age=0):
@@ -767,6 +799,7 @@ class Employee(<em>User</em>):
 
 ### 多重継承
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 class <em>Base1</em>:
     def func1(self):
@@ -830,4 +863,4 @@ obj.func()
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -25,6 +25,7 @@ updated: 2021-09-16
 ターミナルで`gcc -v`を実行。
 <div class="code-box-output">
 <div class="title">gcc -vを実行</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ gcc -v
 Using built-in specs.
@@ -64,6 +65,7 @@ gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04)
 ソースを作成し右上の`再生ボタン`で実行。
 <div class="code-box">
 <div class="title">hello.c</div>
+<div class="copy-button">Copy</div>
 <pre>
 #include &lt;stdio.h&gt;
 int main(void)
@@ -76,6 +78,7 @@ int main(void)
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ cd "/mnt/c/workspace/gcc/" &amp;&amp; gcc tempCodeRunnerFile.c -o tempCodeRunnerFile &amp;&amp; "/mnt/c/workspace/gcc/"tempCodeRunnerFile
 こんにちは！C言語
@@ -92,4 +95,4 @@ $ cd "/mnt/c/workspace/gcc/" &amp;&amp; gcc tempCodeRunnerFile.c -o tempCodeRunn
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

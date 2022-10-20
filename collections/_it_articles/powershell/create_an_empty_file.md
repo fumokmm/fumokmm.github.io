@@ -98,4 +98,4 @@ New-Item &lt;ファイルのパス&gt; <em>-ItemType</em> <em class="blue">Direc
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

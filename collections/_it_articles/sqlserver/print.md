@@ -18,6 +18,7 @@ updated: 2021-08-02
 <div class="chapter-updated">{% include update_info_inline.html created="2021-08-02" updated="2021-08-02" %}</div>
 - `@変数名`で宣言した変数に設定した文字列などを出力するには、`PRINT`を利用します。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 DECLARE <em>@nm</em> as nvarchar(40)
 SET <em>@nm</em> = 'fumo'
@@ -27,6 +28,7 @@ PRINT 'こんにちは!' + <em>@nm</em> + 'さん'
 
 ### 出力結果
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 こんにちは!fumoさん
 </pre>
@@ -45,4 +47,4 @@ PRINT 'こんにちは!' + <em>@nm</em> + 'さん'
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -25,6 +25,7 @@ updated: 2021-08-24
 
 ### 取得
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [System.Environment]::GetEnvironmentVariable(<em>&lt;変数名&gt;</em>, [System.EnvironmentVariableTarget]::<em class="orange">User</em>)
 </pre>
@@ -32,6 +33,7 @@ updated: 2021-08-24
 もしくは
 <div class="code-box">
 <div class="title">省略して書いた場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 [Environment]::GetEnvironmentVariable(<em>&lt;変数名&gt;</em>, <em class="orange">'User'</em>)
 </pre>
@@ -39,6 +41,7 @@ updated: 2021-08-24
 
 ### 設定
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [System.Environment]::SetEnvironmentVariable(<em>&lt;変数名&gt;</em>, <em class="blue">&lt;値&gt;</em>, [System.EnvironmentVariableTarget]::<em class="orange">User</em>)
 </pre>
@@ -46,6 +49,7 @@ updated: 2021-08-24
 もしくは
 <div class="code-box">
 <div class="title">省略して書いた場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 [Environment]::SetEnvironmentVariable(<em>&lt;変数名&gt;</em>, <em class="blue">&lt;値&gt;</em>, <em class="orange">'User'</em>)
 </pre>
@@ -62,6 +66,7 @@ updated: 2021-08-24
 
 ### 取得
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [System.Environment]::GetEnvironmentVariable(<em>&lt;変数名&gt;</em>, [System.EnvironmentVariableTarget]::<em class="orange">Machine</em>)
 </pre>
@@ -69,6 +74,7 @@ updated: 2021-08-24
 もしくは
 <div class="code-box">
 <div class="title">省略して書いた場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 [Environment]::GetEnvironmentVariable(<em>&lt;変数名&gt;</em>, <em class="orange">'Machine'</em>)
 </pre>
@@ -76,6 +82,7 @@ updated: 2021-08-24
 
 ### 設定
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [System.Environment]::SetEnvironmentVariable(<em>&lt;変数名&gt;</em>, <em class="blue">&lt;値&gt;</em>, [System.EnvironmentVariableTarget]::<em class="orange">Machine</em>)
 </pre>
@@ -83,6 +90,7 @@ updated: 2021-08-24
 もしくは
 <div class="code-box">
 <div class="title">省略して書いた場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 [Environment]::SetEnvironmentVariable(<em>&lt;変数名&gt;</em>, <em class="blue">&lt;値&gt;</em>, <em class="orange">'Machine'</em>)
 </pre>
@@ -99,6 +107,7 @@ updated: 2021-08-24
 
 ### GetEnvironmentVariables
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 [Environment]::<em>GetEnvironmentVariables</em>()
 </pre>
@@ -106,6 +115,7 @@ updated: 2021-08-24
 
 ### envドライブ
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Get-ChildItem <em>env:</em>
 </pre>
@@ -119,6 +129,7 @@ Get-ChildItem <em>env:</em>
 `GetEnvironmentVariable`で変数`PATH`を取得してきた後、変数に値を文字列として追加し、再度`SetEnvironmentVariable`にて設定します。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $path = [System.Environment]::GetEnvironmentVariable('PATH', [System.EnvironmentVariableTarget]::User)
 $path += ';' + 'C:\path\to\anywhere'
@@ -140,4 +151,4 @@ $path += ';' + 'C:\path\to\anywhere'
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

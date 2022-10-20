@@ -40,12 +40,14 @@ Excelで他のセルの値を参照してくるとき、セルの値が空白だ
 <div class="chapter-updated">{% include update_info_inline.html created="2022-05-18" updated="2022-05-29" %}</div>
 - 以下のような感じでIF関数を使って「0」の時は空文字に置き換えます。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 =IF(<em>A1=0</em>, <em class="blue">""</em>, A1)
 </pre>
 </div>
 - [LET関数]({% link _it_articles/excel/formula_let.md %})が使える環境では以下のような数式の方が効率的です。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 =LET(<em class="orange">val</em>, A1, IF(<em>val=0</em>, <em class="blue">""</em>, <em class="orange">val</em>))
 </pre>
@@ -88,4 +90,4 @@ Excelで他のセルの値を参照してくるとき、セルの値が空白だ
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

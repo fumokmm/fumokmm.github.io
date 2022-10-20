@@ -23,6 +23,7 @@ updated: 2021-12-09
 
 ### 必要となる参照設定
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Microsoft Scripting Runtime
 </pre>
@@ -32,6 +33,7 @@ Microsoft Scripting Runtime
 ### 使用例
 <div class="code-box">
 <div class="title">参照設定している場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_fso As <em>Scripting.FileSystemObject</em>
 Set p_fso = New <em>Scripting.FileSystemObject</em>
@@ -40,6 +42,7 @@ Set p_fso = New <em>Scripting.FileSystemObject</em>
 参照設定していない場合は、`CreateObject`を使って生成します。
 <div class="code-box">
 <div class="title">参照設定していない場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_fso As Object
 Set p_fso = CreateObject(<em>"Scripting.FileSystemObject"</em>)
@@ -58,6 +61,7 @@ DB操作したり、テキスト操作したりするモジュールです。
 
 ### 必要となる参照設定
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Microsoft ActiveX Data Objects x.x Library
 </pre>
@@ -66,6 +70,7 @@ Microsoft ActiveX Data Objects x.x Library
 ### 使用例 (ADODB.Stream)
 <div class="code-box">
 <div class="title">参照設定している場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_stream As <em>ADODB.Stream</em>
 Set p_stream = New <em>ADODB.Stream</em>
@@ -74,6 +79,7 @@ Set p_stream = New <em>ADODB.Stream</em>
 参照設定していない場合は、`CreateObject`を使って生成します。
 <div class="code-box">
 <div class="title">参照設定していない場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_stream As Object
 Set p_stream = CreateObject(<em>"ADODB.Stream"</em>)
@@ -93,6 +99,7 @@ Set p_stream = CreateObject(<em>"ADODB.Stream"</em>)
 
 ### 必要となる参照設定
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 Microsoft VBScript Regular Expressions 5.5
 </pre>
@@ -101,6 +108,7 @@ Microsoft VBScript Regular Expressions 5.5
 ### 使用例
 <div class="code-box">
 <div class="title">参照設定している場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_re As <em>VBScript_RegExp_55.RegExp</em>
 Set p_re = New <em>VBScript_RegExp_55.RegExp</em>
@@ -109,6 +117,7 @@ Set p_re = New <em>VBScript_RegExp_55.RegExp</em>
 参照設定していない場合は、`CreateObject`を使って生成します。
 <div class="code-box">
 <div class="title">参照設定していない場合</div>
+<div class="copy-button">Copy</div>
 <pre>
 Dim p_re As Object
 Set p_re = CreateObject(<em>"VBScript.RegExp"</em>)
@@ -133,4 +142,4 @@ Set p_re = CreateObject(<em>"VBScript.RegExp"</em>)
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

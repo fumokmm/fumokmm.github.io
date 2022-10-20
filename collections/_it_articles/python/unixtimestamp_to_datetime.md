@@ -26,6 +26,7 @@ UNIX時間は1970年1月1日午前0時0分0秒（UNIXエポック）から経過
 ## <a name="datetime.fromtimestamp()">datetime.fromtimestamp()</a><a class="heading-anchor-permalink" href="#datetime.fromtimestamp()">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-01-26" updated="2022-01-26" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import datetime
 
@@ -36,6 +37,7 @@ print(d) <em class="comment"># =&gt; "2022-01-26 09:10:01"</em>
 </div>
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;class 'datetime.datetime'&gt;
 2022-01-26 09:10:01
@@ -58,4 +60,4 @@ print(d) <em class="comment"># =&gt; "2022-01-26 09:10:01"</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

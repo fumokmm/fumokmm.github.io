@@ -35,4 +35,4 @@ updated: 2020-09-28
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

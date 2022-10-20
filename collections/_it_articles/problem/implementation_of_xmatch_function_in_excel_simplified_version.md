@@ -17,6 +17,7 @@ updated: 2022-09-01
 <div class="chapter-updated">{% include update_info_inline.html created="2022-09-01" updated="2022-09-01" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
+<div class="copy-button">Copy</div>
 <pre>
 ExcelのXMATCH関数を実装してください。
 
@@ -46,6 +47,7 @@ XMATCH(検索値, 検索範囲, 一致モード)
 </div>
 ### 動作イメージ
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 XMATCH("b", ["a", "b", "e", "f", "c"], 0) <em class="comment">=&gt; 2</em>
 XMATCH("d", ["a", "b", "e", "f", "c"], 0) <em class="comment">=&gt; "#N/A"</em>
@@ -67,4 +69,4 @@ XMATCH("d", ["a", "b", "g", "f", "c"], 1) <em class="comment">=&gt; 4 # dを探�
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

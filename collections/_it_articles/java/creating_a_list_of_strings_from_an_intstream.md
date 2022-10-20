@@ -20,6 +20,7 @@ updated: 2021-07-13
 `IntStream`から`String`の`List(List)`を作りたかったんですが、`#map`だと`int`にしか変換できないなと思っていたら`#mapToObj`を使えばいいようです。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 List&lt;String&gt; numList = IntStream.range(1, 10)
     <em>.mapToObj</em>(new DecimalFormat("000")::format)
@@ -29,6 +30,7 @@ List&lt;String&gt; numList = IntStream.range(1, 10)
 
 こんな感じで。 numListには
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 ["000", "001", ... "009"]
 </pre>
@@ -45,4 +47,4 @@ List&lt;String&gt; numList = IntStream.range(1, 10)
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

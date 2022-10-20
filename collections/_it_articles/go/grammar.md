@@ -58,6 +58,7 @@ updated: 2021-10-04
 ## <a name="HelloWorld">HelloWorld</a><a class="heading-anchor-permalink" href="#HelloWorld">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-09-24" updated="2021-09-27" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 package main
 
@@ -92,6 +93,7 @@ func main() {
 #### 例：同一パッケージのソースファイル
 <div class="code-box">
 <div class="title">s1.go</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">// p1パッケージ</em>
 <em>package p1</em>
@@ -104,6 +106,7 @@ func fnc1() {
 
 <div class="code-box">
 <div class="title">s2.go</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">// p1パッケージ</em>
 <em>package p2</em>
@@ -120,12 +123,14 @@ func fnc2() {
 
 #### 例：インポート
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">// 単一のインポート</em>
 import "p1"
 </pre>
 </div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">// 複数のインポート</em>
 import (
@@ -143,6 +148,7 @@ import (
 
 #### 例：エクスポート
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 package p1
 
@@ -188,24 +194,28 @@ func <em>F</em>nc2() {
 
 <div class="code-box-syntax">
 <div class="title">初期値指定なし</div>
+<div class="copy-button">Copy</div>
 <pre>
 var <em>&lt;変数名&gt;</em> <em class="blue">&lt;型名&gt;</em>
 </pre>
 </div>
 <div class="code-box-syntax">
 <div class="title">初期値指定あり</div>
+<div class="copy-button">Copy</div>
 <pre>
 var <em>&lt;変数名&gt;</em> <em class="blue">&lt;型名&gt;</em> = <em class="orange">&lt;初期値&gt;</em>
 </pre>
 </div>
 <div class="code-box-syntax">
 <div class="title">型を省略</div>
+<div class="copy-button">Copy</div>
 <pre>
 var <em>&lt;変数名&gt;</em> = <em class="orange">&lt;初期値&gt;</em>
 </pre>
 </div>
 <div class="code-box-syntax">
 <div class="title">複数の変数宣言</div>
+<div class="copy-button">Copy</div>
 <pre>
 var (
     <em>&lt;変数名&gt;</em> <em class="blue">&lt;型名&gt;</em>
@@ -217,6 +227,7 @@ var (
 
 ### 例：変数宣言
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">// 単一の変数宣言</em>
 var a int
@@ -246,6 +257,7 @@ var c1, c2 = 0, 1
 
 <div class="code-box-syntax">
 <div class="title">ローカル変数宣言</div>
+<div class="copy-button">Copy</div>
 <pre>
 func xxx() {
     <em>&lt;変数名&gt;</em> <em class="blue">:=</em> <em class="orange">&lt;式&gt;</em>
@@ -255,6 +267,7 @@ func xxx() {
 
 ### 例：ローカル変数
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 func main() {
     a <em>:=</em> 1
@@ -284,12 +297,14 @@ func main() {
 
 <div class="code-box-syntax">
 <div class="title">型指定を省略</div>
+<div class="copy-button">Copy</div>
 <pre>
 const <em>&lt;変数名&gt;</em> = <em class="orange">&lt;初期値&gt;</em>
 </pre>
 </div>
 <div class="code-box-syntax">
 <div class="title">値指定あり</div>
+<div class="copy-button">Copy</div>
 <pre>
 const <em>&lt;変数名&gt;</em> <em class="blue">&lt;型名&gt;</em> = <em class="orange">&lt;初期値&gt;</em>
 </pre>
@@ -299,6 +314,7 @@ const <em>&lt;変数名&gt;</em> <em class="blue">&lt;型名&gt;</em> = <em clas
 - 型を指定しない形式で宣言しておくと、型の範囲に入る変数に代入できるの便利です。
 <div class="code-box">
 <div class="title">aはintにもint64にも代入できる}em</div>
+<div class="copy-button">Copy</div>
 <pre>
 const a = 1
 var i1 int = a
@@ -307,6 +323,7 @@ var i2 int64 = a
 </div>
 <div class="code-box">
 <div class="title">bはint64に代入できない</div>
+<div class="copy-button">Copy</div>
 <pre>
 const b = 1
 var i1 int = b
@@ -540,4 +557,4 @@ var i1 int = b
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

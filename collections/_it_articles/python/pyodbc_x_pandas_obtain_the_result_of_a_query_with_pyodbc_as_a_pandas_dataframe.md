@@ -26,6 +26,7 @@ updated: 2022-03-23
 ## <a name="取得方法">取得方法</a><a class="heading-anchor-permalink" href="#取得方法">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2022-03-23" updated="2022-03-23" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import pyodbc
 import pandas
@@ -66,4 +67,4 @@ df.to_csv("&lt;出力先パス&gt;", sep=",", encoding="UTF-8", index=False, mod
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

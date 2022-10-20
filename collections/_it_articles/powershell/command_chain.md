@@ -20,6 +20,7 @@ updated: 2021-08-13
 - 続けて実行するコマンドの前の結果が成功か失敗かに関わりなく後のコマンドを実行する場合はセミコロン`;`を使ってコマンドを繋げます。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 &lt;コマンド1&gt;<em>;</em> &lt;コマンド2&gt;
 </pre>
@@ -36,6 +37,7 @@ PowerShell 7からはBashとかと同じようなPipeline Chain Operatorsが使�
 - `&&`は前のコマンドが*成功*した場合、後のコマンドを実行します。
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 &lt;コマンド1&gt; <em>&amp;&amp;</em> &lt;コマンド2&gt;
 </pre>
@@ -45,6 +47,7 @@ PowerShell 7からはBashとかと同じようなPipeline Chain Operatorsが使�
 - `||`は前のコマンドが*失敗*した場合、後のコマンドを実行します。(`&&`の逆)
 
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 &lt;コマンド1&gt; <em>||</em> &lt;コマンド2&gt;
 </pre>
@@ -60,4 +63,4 @@ PowerShell 7からはBashとかと同じようなPipeline Chain Operatorsが使�
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

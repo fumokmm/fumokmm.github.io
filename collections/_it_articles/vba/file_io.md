@@ -23,6 +23,7 @@ updated: 2020-11-29
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-29" updated="2020-11-29" %}</div>
 <div class="code-box">
 <div class="title">読み込みサンプル1</div>
+<div class="copy-button">Copy</div>
 <pre>
 Public Sub FileIORead1()
     <em class="comment">' [参照設定] Microsoft ActiveX Data Objects 6.1 Library</em>
@@ -47,6 +48,7 @@ End Sub
 
 <div class="code-box-input">
 <div class="title">in.txt</div>
+<div class="copy-button">Copy</div>
 <pre>
 abc
 1234
@@ -56,6 +58,7 @@ abc
 
 <div class="code-box-output">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 [abc]
 [1234]
@@ -70,6 +73,7 @@ abc
 <div class="chapter-updated">{% include update_info_inline.html created="2020-11-29" updated="2020-11-29" %}</div>
 <div class="code-box">
 <div class="title">書き込みサンプル1</div>
+<div class="copy-button">Copy</div>
 <pre>
 Public Sub FileIOWrite1()
     <em class="comment">' [参照設定] Microsoft ActiveX Data Objects 6.1 Library</em>
@@ -92,6 +96,7 @@ End Sub
 
 <div class="code-box-output">
 <div class="title">out.txt</div>
+<div class="copy-button">Copy</div>
 <pre>
 abc
 1234
@@ -114,4 +119,4 @@ abc
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

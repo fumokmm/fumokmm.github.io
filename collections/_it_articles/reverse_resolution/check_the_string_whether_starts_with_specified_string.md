@@ -20,6 +20,7 @@ updated: 2022-03-29
 Pythonでは、`str`の`startswith`メソッドを使います。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 s = "あいうえお"
 s<em>.startswith</em>("あ") <em class="comment"># =&gt; True</em>
@@ -39,4 +40,4 @@ s<em>.startswith</em>("い") <em class="comment"># =&gt; False</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

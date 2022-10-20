@@ -98,4 +98,4 @@ PowerShellで矢印などの全角文字を含むパスをドラッグ＆ドロ�
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

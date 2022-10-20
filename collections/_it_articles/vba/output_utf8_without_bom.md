@@ -22,6 +22,7 @@ updated: 2021-06-24
 
 <div class="code-box">
 <div class="title">UTF-8(BOM付き)で書き出されてしまう</div>
+<div class="copy-button">Copy</div>
 <pre>
 Sub output_utf8_1()
     <em class="comment">' [参照設定] Microsoft ActiveX Data Objects 6.1 Library</em>
@@ -64,6 +65,7 @@ End Sub
 
 <div class="code-box">
 <div class="title">UTF-8(BOMなし)で書き出す</div>
+<div class="copy-button">Copy</div>
 <pre>
 Sub output_utf8_2()
     <em class="comment">' [参照設定] Microsoft ActiveX Data Objects 6.1 Library</em>
@@ -125,4 +127,4 @@ End Sub
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

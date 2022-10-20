@@ -37,6 +37,7 @@ VBAでプロシージャ呼び出し時、括弧を付けなければいけな�
 
 <div class="code-box">
 <div class="title">サンプルコード</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="comment">' プロシージャを定義する</em>
 Sub sub0()
@@ -107,4 +108,4 @@ res = func2("a", "b")
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

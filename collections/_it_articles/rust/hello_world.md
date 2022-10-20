@@ -22,6 +22,7 @@ updated: 2022-10-12
 `cargo new <プロジェクト名>`というコマンドを利用すると`hello`ディレクトリにプロジェクトが出来上がります。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ cargo new hello</em>
      Created binary (application) `hello` package
@@ -41,6 +42,7 @@ updated: 2022-10-12
 
 <div class="code-box">
 <div class="title">Cargo.toml</div>
+<div class="copy-button">Copy</div>
 <pre>
 [package]
 name = "hello"
@@ -57,6 +59,7 @@ Rustのソースコードは、`src`ディレクトリの`main.rs`というフ�
 
 <div class="code-box">
 <div class="title">main.rs</div>
+<div class="copy-button">Copy</div>
 <pre>
 fn main() {
     println!("Hello, world!");
@@ -75,6 +78,7 @@ fn main() {
 `hello`ディレクトリにいる状態で実行します。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ cargo build</em>
    Compiling hello v0.1.0 (/mnt/c/workspace/Github/language-examples/Rust/hello)
@@ -121,6 +125,7 @@ fn main() {
 
 <div class="code-box-output">
 <div class="title">clean後</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ cargo clean</em>
 <em class="command">$ tree .</em>
@@ -142,6 +147,7 @@ fn main() {
 まずは実行ファイルを直接実行する方法。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ ./target/debug/hello</em>
 Hello, world!
@@ -153,6 +159,7 @@ Hello, world!
 `cargo run`はビルドと実行が同時に行われます。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ cargo run</em>
     Finished dev [unoptimized + debuginfo] target(s) in 0.04s
@@ -167,6 +174,7 @@ Hello, world!
 
 <div class="code-box-output">
 <div class="title">srcディレクトリ上で実行</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">$ rustc main.rs</em>
 <em class="command">$ ls -l</em>
@@ -191,4 +199,4 @@ Hello, world!
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

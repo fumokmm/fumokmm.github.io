@@ -33,6 +33,7 @@ updated: 2022-09-15
 - これらを混ぜこぜにして語るのは非常に危険。
 
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 自己有用感・・・自分は誰かの役に立っているという気持ち
 自己効力感・・・自分は何かができるという気持ち
@@ -152,4 +153,4 @@ updated: 2022-09-15
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

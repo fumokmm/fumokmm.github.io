@@ -18,6 +18,7 @@ updated: 2022-08-26
 <div class="chapter-updated">{% include update_info_inline.html created="2022-08-26" updated="2022-08-26" %}</div>
 <div class="code-box">
 <div class="title">お題</div>
+<div class="copy-button">Copy</div>
 <pre>
 あなたは水温を測る温度計のプログラムを作成しています。
 0度以下になり水が凍る場合に警告を出すことにしました。
@@ -33,6 +34,7 @@ updated: 2022-08-26
 <div class="chapter-updated">{% include update_info_inline.html created="2022-08-26" updated="2022-08-26" %}</div>
 <div class="code-box">
 <div class="title">thermometer_to_measure_water_temperature.groovy</div>
+<div class="copy-button">Copy</div>
 <pre>
 def thermometer = { n -&gt; n &lt;= 0 ? 'freeze' : n } 
 assert thermometer(-1) == 'freeze'
@@ -53,4 +55,4 @@ assert thermometer(1) == 1
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

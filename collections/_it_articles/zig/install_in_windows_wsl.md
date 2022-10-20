@@ -23,6 +23,7 @@ updated: 2022-08-24
 ### 1. バイナリをダウンロード
 [こちら](https://ziglang.org/download/)より。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 zig-linux-x86_64-0.10.0-dev.3685+dae7aeb33.tar.xz
 </pre>
@@ -34,6 +35,7 @@ Ubuntuに入れるので、上記をダウンロード。
 展開先は任意です。
 <div class="code-box">
 <div class="title">~/.bashrc</div>
+<div class="copy-button">Copy</div>
 <pre>
 # zig
 export ZIG_HOME="/mnt/c/tools/Zig/zig-linux-x86_64-0.10.0-dev.3685+dae7aeb33"
@@ -44,6 +46,7 @@ export PATH="$ZIG_HOME:$PATH"
 
 <div class="code-box-output">
 <div class="title">再読み込み</div>
+<div class="copy-button">Copy</div>
 <pre>
 $ source ~/.bashrc
 </pre>
@@ -52,6 +55,7 @@ $ source ~/.bashrc
 ### Zigを実行
 任意のディレクトリへ移動し、`zig init-exe`を実行します。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ mkdir hello-world
 $ cd hello-world
@@ -61,6 +65,7 @@ $ <em>zig init-exe</em>
 
 すると、こんな出力が行われます。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 info: Created build.zig
 info: Created src/main.zig
@@ -71,6 +76,7 @@ info: Next, try `zig build --help` or `zig build run`
 `src`ディレクトリが作成され、その中に`main.zig`というファイルが生成されます。
 <div class="code-box">
 <div class="title">main.zig</div>
+<div class="copy-button">Copy</div>
 <pre>
 const std = @import("std");
 
@@ -101,6 +107,7 @@ test "simple test" {
 
 実行するには、`zig build run`とするようです。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ zig build run
 <em>All your codebase are belong to us.
@@ -111,6 +118,7 @@ Run `zig build test` to run the tests.</em>
 
 ちなみに、`zig-out/bin`というディレクトリにバイナリファイルが出来ているので、直接実行することも可能です。
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 $ cd zig-out/bin
 $ ./hello-world
@@ -131,4 +139,4 @@ Run `zig build test` to run the tests.</em>
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

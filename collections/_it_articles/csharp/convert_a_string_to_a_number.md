@@ -28,12 +28,14 @@ C#で文字列を数値に変換するには、数値型(int、long、doubleな�
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-21" updated="2022-02-21" %}</div>
 Parseメソッドは、変換に失敗した時に、`FormatException`がスローされますので、try-catchで例外を捕捉する必要があります。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 int result = int.<em>Parse</em>(<em class="blue">&lt;変換する文字列&gt;</em>);
 </pre>
 </div>
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 string s = "10";
 try
@@ -57,12 +59,14 @@ catch(FormatException e)
 TryParseメソッドは、変換に失敗した時は例外をスローするのではなく、単純に戻り値で`false`を返却します。  
 変換した結果の受け取りは、第2引数にOUTパラメータで指定して受け取ります。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 bool result = int.<em>TryParse</em>(<em class="blue">&lt;変換する文字列&gt;</em>, <em class="blue">out &lt;変換結果&gt;</em>);
 </pre>
 </div>
 <div class="code-box">
 <div class="title">例</div>
+<div class="copy-button">Copy</div>
 <pre>
 string s = "10";
 int i = -1;
@@ -79,6 +83,7 @@ Console.WriteLine($"結果: {i}, 変換成功:{result}");
 <div class="chapter-updated">{% include update_info_inline.html created="2022-02-21" updated="2022-02-21" %}</div>
 Convertクラスの各変換メソッドを利用することもできます。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 int result = Convert.<em>ToInt32</em>(<em class="blue">&lt;変換する文字列&gt;</em>);
 </pre>
@@ -94,4 +99,4 @@ int result = Convert.<em>ToInt32</em>(<em class="blue">&lt;変換する文字列
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

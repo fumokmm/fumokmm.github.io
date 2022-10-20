@@ -29,6 +29,7 @@ updated: 2022-10-15
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM Table1 ORDER BY NO
 </pre>
@@ -64,6 +65,7 @@ SELECT * FROM Table1 ORDER BY NO
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT
     a.TEAM AS TEAM,
@@ -89,6 +91,7 @@ FROM
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT
     a.TEAM AS TEAM,
@@ -116,6 +119,7 @@ FROM
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT
     a.TEAM AS TEAM,
@@ -149,6 +153,7 @@ ORDER BY
 
 <div class="code-box">
 <div class="title">STUFF関数</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT
     <em>STUFF(</em>'abcdefg', 2, 3, '**new**'<em>)</em> AS "結果";
@@ -157,6 +162,7 @@ SELECT
 
 <div class="code-box">
 <div class="title">結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 a**new**efg
 </pre>
@@ -171,6 +177,7 @@ a**new**efg
 
 <div class="code-box">
 <div class="title">SUBSTRING関数, FROM句でサブクエリにする</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT
     TEAM,
@@ -188,6 +195,7 @@ FROM
 
 <div class="code-box">
 <div class="title">SUBSTRING関数, WITHでサブクエリにする</div>
+<div class="copy-button">Copy</div>
 <pre>
 WITH X AS (
     SELECT
@@ -214,6 +222,7 @@ FOR XML PATHはSQLの後ろに付与して、XMLとして結果を取得する�
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM Table1 <em>FOR XML PATH('row')</em>
 </pre>
@@ -221,6 +230,7 @@ SELECT * FROM Table1 <em>FOR XML PATH('row')</em>
 
 <div class="code-box">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;row&gt;
   &lt;NO&gt;1&lt;/NO&gt;
@@ -262,6 +272,7 @@ SELECT * FROM Table1 <em>FOR XML PATH('row')</em>
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM Table1 FOR XML PATH(<em>'hoge'</em>)
 </pre>
@@ -269,6 +280,7 @@ SELECT * FROM Table1 FOR XML PATH(<em>'hoge'</em>)
 
 <div class="code-box">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>&lt;hoge&gt;</em>
   &lt;NO&gt;1&lt;/NO&gt;
@@ -307,6 +319,7 @@ SELECT * FROM Table1 FOR XML PATH(<em>'hoge'</em>)
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT * FROM Table1 FOR XML PATH(<em>''</em>)
 </pre>
@@ -314,6 +327,7 @@ SELECT * FROM Table1 FOR XML PATH(<em>''</em>)
 
 <div class="code-box">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 &lt;NO&gt;1&lt;/NO&gt;
 &lt;TEAM&gt;紅組&lt;/TEAM&gt;
@@ -340,6 +354,7 @@ SELECT * FROM Table1 FOR XML PATH(<em>''</em>)
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT
     <em>NO + ''</em>,
@@ -353,6 +368,7 @@ FOR XML PATH('')
 
 <div class="code-box">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 1紅組佐藤2紅組鈴木3紅組高橋4青組田中5黄組伊藤6黄組渡辺
 </pre>
@@ -367,6 +383,7 @@ FOR XML PATH('')
 
 <div class="code-box">
 <div class="title">SQL</div>
+<div class="copy-button">Copy</div>
 <pre>
 SELECT
     (SELECT
@@ -386,6 +403,7 @@ SELECT
 
 <div class="code-box">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 1紅組佐藤2紅組鈴木3紅組高橋4青組田中5黄組伊藤6黄組渡辺
 </pre>
@@ -417,4 +435,4 @@ SELECT
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

@@ -19,6 +19,7 @@ updated: 2021-10-13
 `open関数`を使います。  
 色々オプションがあるので良く使うものをとりあえず。
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 f = open(&lt;file&gt;, &lt;mode&gt;)
 </pre>
@@ -76,6 +77,7 @@ f = open(&lt;file&gt;, &lt;mode&gt;)
 ### 例
 <div class="code-box">
 <div class="title">読み取りで開く</div>
+<div class="copy-button">Copy</div>
 <pre>
 f = open('sample.txt', 'r')
 </pre>
@@ -95,4 +97,4 @@ f = open('sample.txt', 'r')
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

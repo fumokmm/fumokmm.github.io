@@ -41,6 +41,7 @@ Pythonでファイルをコピーするには、`shutil`の`shutil.copy()`や`sh
 ## <a name="shutil.copy()">shutil.copy()</a><a class="heading-anchor-permalink" href="#shutil.copy()">§</a>
 <div class="chapter-updated">{% include update_info_inline.html created="2021-11-29" updated="2021-11-29" %}</div>
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import shutil
 import pathlib
@@ -64,6 +65,7 @@ shutil.<em>copy</em>(<em class="blue">from_path</em>, <em class="blue">to_path</
 - パーミッションに加え、メタ情報(作成日や変更日)もコピーしたい場合には`copy2`を利用します。
 - 使い方などは[copy()](#shutil.copy())と一緒です。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 import shutil
 import pathlib
@@ -88,4 +90,4 @@ shutil.<em>copy2</em>(<em class="blue">from_path</em>, <em class="blue">to_path<
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

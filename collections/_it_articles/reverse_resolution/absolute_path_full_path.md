@@ -24,6 +24,7 @@ updated: 2022-02-13
 
 <div class="code-box">
 <div class="title">Pathnameを使う</div>
+<div class="copy-button">Copy</div>
 <pre>
 require 'pathname'
 
@@ -34,6 +35,7 @@ require 'pathname'
 
 <div class="code-box">
 <div class="title">File.expand_pathを使う</div>
+<div class="copy-button">Copy</div>
 <pre>
 <em>File.expand_path</em>("~oracle/bin")           <em class="comment">#=&gt; "/home/oracle/bin"</em>
 <em>File.expand_path</em>("../../bin", "/tmp/x")   <em class="comment">#=&gt; "/bin"</em>
@@ -52,6 +54,7 @@ require 'pathname'
 
 <div class="code-box">
 <div class="title">os.path.abspathを使う</div>
+<div class="copy-button">Copy</div>
 <pre>
 import os
 
@@ -60,6 +63,7 @@ print(os.path.abspath(<em class="blue">r"C:\temp\temp2\..\test2.txt"</em>))
 </div>
 <div class="code-box">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 C:\temp\test2.txt
 </pre>
@@ -67,6 +71,7 @@ C:\temp\test2.txt
 
 <div class="code-box">
 <div class="title">pathlib.Path.resolveを使う</div>
+<div class="copy-button">Copy</div>
 <pre>
 import pathlib
 
@@ -75,6 +80,7 @@ print(pathlib.Path(<em class="blue">r"C:\temp\temp2\..\test2.txt"</em>)<em>.reso
 </div>
 <div class="code-box">
 <div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 C:\temp\test2.txt
 </pre>
@@ -97,6 +103,7 @@ C:\temp\test2.txt
 - PowerShellの場合、`Resolve-Path`で取得できます。
 
 <div class="code-box-output no-title">
+<div class="copy-button">Copy</div>
 <pre>
 <em class="command">PS C:\temp\java-currentver&gt;</em> ls
 
@@ -139,4 +146,4 @@ C:\temp\java-currentver\bin
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

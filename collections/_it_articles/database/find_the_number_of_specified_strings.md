@@ -18,6 +18,7 @@ updated: 2021-12-19
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-19" updated="2021-12-19" %}</div>
 指定文字列の個数を調べたい列を`col`とします。
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 SELECT
 	(LENGTH(col) - LENGTH(REPLACE(col, <em>'&lt;検索する文字列&gt;'</em>, '')))
@@ -43,4 +44,4 @@ FROM
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

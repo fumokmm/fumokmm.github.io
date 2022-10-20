@@ -19,6 +19,7 @@ updated: 2021-12-27
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-27" updated="2021-12-27" %}</div>
 ### ミリ秒まで取得
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 GETDATE()
 </pre>
@@ -27,12 +28,14 @@ GETDATE()
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 SELECT <em>GETDATE()</em>;
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 2021-12-27 21:17:21.800
 </pre>
@@ -43,12 +46,14 @@ SELECT <em>GETDATE()</em>;
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 SELECT <em class="blue">CAST(</em><em>GETDATE()</em> <em class="blue">AS DATE</em>);
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 2021-12-27
 </pre>
@@ -64,6 +69,7 @@ SELECT <em class="blue">CAST(</em><em>GETDATE()</em> <em class="blue">AS DATE</e
 <div class="chapter-updated">{% include update_info_inline.html created="2021-12-27" updated="2021-12-27" %}</div>
 ### マイクロ秒まで取得
 <div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
 <pre>
 SYSDATETIME()
 </pre>
@@ -72,12 +78,14 @@ SYSDATETIME()
 
 ### 例
 <div class="code-box no-title">
+<div class="copy-button">Copy</div>
 <pre>
 SELECT <em>SYSDATETIME()</em>;
 </pre>
 </div>
 <div class="code-box-output">
 <div class="title">取得結果</div>
+<div class="copy-button">Copy</div>
 <pre>
 2021-12-27 21:21:53.7943457
 </pre>
@@ -100,4 +108,4 @@ SELECT <em>SYSDATETIME()</em>;
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

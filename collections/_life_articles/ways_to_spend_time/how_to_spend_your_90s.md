@@ -5,4 +5,4 @@ created: 2022-09-05
 updated: 2022-09-05
 ---
 書き途中
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}

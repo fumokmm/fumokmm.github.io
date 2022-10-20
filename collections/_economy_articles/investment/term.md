@@ -126,4 +126,4 @@ updated: 2021-06-01
 
 {% include goto_pagetop.html %}
 
-{% include footnotes_link.html %}
+{% include articles_common_script.html %}
