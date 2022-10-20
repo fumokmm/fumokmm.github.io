@@ -20,6 +20,35 @@ function addFootnotesLink() {
             indexUl.appendChild(toFootnoteLi);
         }
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        let body = document.querySelector("body");
+        let active = [];
+        body.addEventListener("click", (e) => {
+            try {
+                const target = e.target;
+                if (! target.classList.contains('copy-button')) return;
+
+                const pre = target.nextElementSibling;
+                let result = false;
+                if (active.indexOf(target) !== -1) return;
+                if (pre) {
+                    result = copyToClipboard(pre);
+                    target.innerText = (result ? "Copied!" : "Failed!");
+                    target.classList.add((result ? "success" : "failed"));
+                    active.push(target);
+                    setTimeout(() => {
+                        let index = active.indexOf(target);
+                        target.className = "copy-button";
+                        target.innerText = "Copy";
+                        if (index !== -1) active.splice(index, 1);
+                    }, 2000);
+                }
+            } catch (e) {
+                //error 
+            }
+        });
+    });
 }
 
 // 参考) http://urbanqee.com/html/clipboard/clipboard-copybutton-on-pre-code-tag.html

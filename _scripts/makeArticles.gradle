@@ -117,6 +117,7 @@ task makeArticles() {
                                 if (opt && opt.title) {
                                     body << "<div class=\"title\">${opt.title}</div>" << '\n'
                                 }
+                                body << '<div class=\"copy-button\">Copy</div>' << '\n'
                                 body << '<pre>' << '\n'
                                 innerTableBody.length = 0
                             }
@@ -130,7 +131,6 @@ task makeArticles() {
                                 // 関数合成でescapeHtmlTagしてから、convertToEmTagして、convertToATagする
                                 body << (escapeHtmlTag >> convertToEmTag >> convertToATag)(innerTableBody.toString())
                                 body << '''|</pre>
-                                           |★
                                            |</div>'''.stripMargin() << '\n'
                             }
                         }
