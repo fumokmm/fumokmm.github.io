@@ -496,9 +496,11 @@ code {
 }
 .code-box:hover, .code-box-syntax:hover, .code-box-input:hover, .code-box-output:hover {
     .copy-button {
-        color: #4b794b;
         visibility: visible;
     }
+}
+.copy-button:hover {
+    background-color: #415f41;
 }
 
 .copyright {
