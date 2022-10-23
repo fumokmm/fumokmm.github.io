@@ -1,7 +1,7 @@
 ---
 title: PostgreSQLのメモ
 created: 2022-10-15
-updated: 2022-10-19
+updated: 2022-10-23
 ---
 {% include sub_category_index/it_sub_category_index_with_groups.html
     category_id="it"
