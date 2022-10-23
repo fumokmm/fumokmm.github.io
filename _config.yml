@@ -19,6 +19,12 @@ defaults:
     values:
       sub_category_id: "access"
 
+  # A5:SQL Mk-2
+  - scope:
+      path: "_it_articles/a5m2"
+    values:
+      sub_category_id: "a5m2"
+
   # C言語
   - scope:
       path: "_it_articles/c"

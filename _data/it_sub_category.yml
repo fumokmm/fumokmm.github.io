@@ -6,6 +6,16 @@
   sub_category_order: 30
   description: Microsoft社が開発したOfficeツールの一つ。簡易データベース機能を備える
 
+- sub_category_id: a5m2
+  sub_category_label: A5:SQL Mk-2
+  link: /it/a5m2/
+  article_group:
+    - id: tips-group
+      label: Tips
+  sub_category_group: application
+  sub_category_order: 30
+  description: 高機能かつ軽量な汎用SQLクライアント / ER図作成ソフト / フリーソフト（読み：エーファイブ・エスキューエル・マークツー）のメモ
+
 # C
 - sub_category_id: c
   sub_category_label: C言語
