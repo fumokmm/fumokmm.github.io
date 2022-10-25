@@ -190,6 +190,11 @@
 - sub_category_id: oracle
   sub_category_label: Oracle
   link: /it/oracle/
+  article_group:
+    - id: sql-group
+      label: SQL
+    - id: tips-group
+      label: Tips
   sub_category_group: database
   sub_category_order: 40
   description: Oracle社が作成しているデータベースOracleについてのメモ
