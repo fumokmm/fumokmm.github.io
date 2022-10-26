@@ -3,7 +3,7 @@ title: Velocityの文法
 article_group_id: basis-group
 display_order: 20
 created: 2022-10-07
-updated: 2022-10-13
+updated: 2022-10-26
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -15,6 +15,7 @@ updated: 2022-10-13
 <li><a href="#代入">代入</a></li>
 <li><a href="#制御フロー">制御フロー</a></li>
 <li><a href="#インポート">インポート</a></li>
+<li><a href="#マクロ(Velocimacro)">マクロ(Velocimacro)</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
 
@@ -239,6 +240,70 @@ sample1.vmの処理が終了
 
 ### 参考サイト
 - [(TECHSCORE) 5.VTL・#parse,#includeなど](https://www.techscore.com/tech/Java/ApacheJakarta/Velocity/5/)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="マクロ(Velocimacro)">マクロ(Velocimacro)</a><a class="heading-anchor-permalink" href="#マクロ(Velocimacro)">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-10-26" updated="2022-10-26" %}</div>
+### Velocimacroとは
+`Velocimacro`とは`Velocity`で定義できるマクロのことです。たぶん読み方は「べろしまくろ」。[^impacted-name]  
+関数のようなものです。  
+`#xxx`の`xxx`の部分の名前を自由に定義できます。
+
+[^impacted-name]: インパクトのある名前である。
+
+### Velocimacroの定義
+Velocimacroを定義するには、vmファイル内に#macro指示子を使って次のような形で記述します。
+<div class="code-box-syntax no-title">
+<div class="copy-button">Copy</div>
+<pre>
+<em>#macro(</em> <em class="blue">&lt;マクロ名&gt;</em> <em class="orange">$arg1, $arg2, ..</em><em>)</em> [ VTLコード.. ] <em>#end</em>
+</pre>
+</div>
+- `$arg1`, `$arg2`の部分は引数です。
+- `<マクロ名>`の部分がマクロ名になります。
+
+### Velocimacroの読み込み
+`Velocimacro`として読み込むファイルのパスを`velocity.properties`に指定します。
+<div class="code-box">
+<div class="title">例：velocity.properties</div>
+<div class="copy-button">Copy</div>
+<pre>
+velocimacro.library = /macro/webparts.vm, /macro/test.vm
+</pre>
+</div>
+- この例では、`/macro`ディレクトリにある`webparts.vm`というファイルと`test.vm`というファイルをマクロとして読み込みます。
+
+### 使用例
+<div class="code-box">
+<div class="title">マクロ(helloWorld)の定義</div>
+<div class="copy-button">Copy</div>
+<pre>
+#macro(<em>helloWorld</em> $name, $age)
+  こんにちは！私の名前は&lt;b&gt;$name&lt;/b&gt;、&lt;b&gt;$age&lt;/b&gt;歳です。仲良くしてね。
+#end
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">helloWorldの使用例</div>
+<div class="copy-button">Copy</div>
+<pre>
+<em>#helloWorld</em>("さとう", 100)
+</pre>
+</div>
+
+<div class="code-box">
+<div class="title">出力結果</div>
+<div class="copy-button">Copy</div>
+<pre>
+こんにちは！私の名前は&lt;b&gt;さとう&lt;/b&gt;、&lt;b&gt;100&lt;/b&gt;歳です。
+</pre>
+</div>
+
+### 参考サイト
+- [(TECHSCORE) 6. Velocimacro](https://www.techscore.com/tech/Java/ApacheJakarta/Velocity/6/)
 
 {% include goto_pagetop.html %}
 
