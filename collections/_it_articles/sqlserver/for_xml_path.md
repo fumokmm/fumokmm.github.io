@@ -3,7 +3,7 @@ title: SQL Serverで取得結果行を1列に連結するSQL(FOR XML PATH)
 article_group_id: sql-group
 display_order: 30
 created: 2020-11-07
-updated: 2022-10-15
+updated: 2022-10-27
 ---
 {% capture link_to_it_oracle %}{% link _it_articles/oracle/index.md %}{% endcapture %}{% assign link_to_it_oracle = link_to_it_oracle | remove: 'index' %}
 {% capture link_to_it_postgresql %}{% link _it_articles/postgresql/index.md %}{% endcapture %}{% assign link_to_it_postgresql = link_to_it_postgresql | remove: 'index' %}
@@ -413,9 +413,8 @@ SELECT
 
 * * *
 ## <a name="補足4 他のデータベースでは">補足4 他のデータベースでは</a><a class="heading-anchor-permalink" href="#補足4 他のデータベースでは">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-10-15" %}</div>
-なお、MySQL(MariaDB) では`GROUP_CONCAT関数`、[Oracle]({{link_to_it_oracle}})では`LISTAGG関数`、[PostgreSQL]({{link_to_it_postgresql}})では`string_agg関数`で同様の処理が可能とのことです。
-
+<div class="chapter-updated">{% include update_info_inline.html created="2020-11-07" updated="2022-10-27" %}</div>
+なお、MySQL(MariaDB) では`GROUP_CONCAT関数`、[Oracle]({{link_to_it_oracle}})では`LISTAGG関数`、[PostgreSQL]({{link_to_it_postgresql}})では[string_agg関数]({% link _it_articles/postgresql/string_agg.md %})で同様の処理が可能とのことです。
 
 {% include goto_pagetop.html %}
 

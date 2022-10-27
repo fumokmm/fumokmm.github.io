@@ -1,7 +1,7 @@
 ---
 title: SQL Serverのメモ
 created: 2020-09-05
-updated: 2022-10-19
+updated: 2022-10-27
 ---
 {% include sub_category_index/it_sub_category_index_with_groups.html
     category_id="it"
