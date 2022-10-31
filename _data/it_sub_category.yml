@@ -140,6 +140,24 @@
   sub_category_order: 90
   description: Javaから派生した動的型付けのプログラミング言語についてのメモ
 
+# I
+- sub_category_id: iphone
+  sub_category_label: iPhone
+  link: /it/iphone/
+  article_group:
+    - id: tips-group
+      label: Tips
+  sub_category_group: portable
+  sub_category_order: 10
+  description: iPhoneについてのメモ
+
+- sub_category_id: julia
+  sub_category_label: Julia
+  link: /it/julia/
+  sub_category_group: programming_language
+  sub_category_order: 100
+  description: Juliaは、数値解析や計算科学に適している高レベルで高性能な動的プログラミング言語です。
+
 # J
 - sub_category_id: java
   sub_category_label: Java
