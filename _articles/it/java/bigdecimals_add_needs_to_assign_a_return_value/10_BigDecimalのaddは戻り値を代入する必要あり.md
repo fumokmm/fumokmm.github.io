@@ -1,5 +1,5 @@
 ---
-chapter_no: 1
+chapter_no: 10
 chapter_title: BigDecimalのaddは戻り値を代入する必要あり
 created: 2008-01-20
 updated: 2021-07-12

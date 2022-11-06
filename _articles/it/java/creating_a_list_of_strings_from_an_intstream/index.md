@@ -1,7 +1,7 @@
 ---
 title: JavaでIntStreamからStringのListを作る
 article_group_id: tips-group
-display_order: 60
+display_order: 80
 created: 2020-08-28
 updated: 2021-07-13
 ---

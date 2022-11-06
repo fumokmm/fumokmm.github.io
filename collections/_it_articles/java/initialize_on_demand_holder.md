@@ -1,18 +1,27 @@
 ---
 title: Javaでシングルトンを実現するならInitialize-On-Demand Holderイディオムを使うといいらしい
 article_group_id: tips-group
-display_order: 30
+display_order: 40
 created: 2008-04-10
-updated: 2008-04-10
+updated: 2022-11-06
 ---
 当メモは2008-04-10に[投稿されたもの](https://npnl.hatenablog.jp/entry/20080410/1207837279)を加筆修正し、再掲したものです。
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
+<li><a href="#概要">概要</a></li>
 <li><a href="#Initialize-On-Demand Holder">Initialize-On-Demand Holder</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
+
+* * *
+## <a name="概要">概要</a><a class="heading-anchor-permalink" href="#概要">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-11-06" updated="2022-11-06" %}</div>
+こちらはシングルトンを実装するための方法についてメモしたものになりますが、古い内容となっています。  
+最近だと、[Javaでenumを使ってシングルトンを素早く実装する]({% link _it_articles/java/quickly_implement_singletons_using_enums.md %})を見てもらったほうがいいかもしれません。
+
+{% include goto_pagetop.html %}
 
 * * *
 ## <a name="Initialize-On-Demand Holder">Initialize-On-Demand Holder</a><a class="heading-anchor-permalink" href="#Initialize-On-Demand Holder">§</a>
@@ -51,14 +60,17 @@ class Singleton {
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2008-04-10" updated="2008-04-10" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2008-04-10" updated="2022-11-06" %}</div>
 ### 元記事
 - [(No Programming, No Life) シングルトンにInitialize-On-Demand Holder](https://npnl.hatenablog.jp/entry/20080410/1207837279)
+
+### 関連メモ
+- [Javaでenumを使ってシングルトンを素早く実装する]({% link _it_articles/java/quickly_implement_singletons_using_enums.md %})
 
 ### 参考記事
 - [(Github) IBM / japan-technology](https://github.com/IBM/japan-technology)
 
-### 関連
+### より学ぶために
 - [(Wikipedia) Singleton パターン](https://ja.wikipedia.org/wiki/Singleton_%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3)
 
 {% include goto_pagetop.html %}

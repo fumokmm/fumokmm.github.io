@@ -1,5 +1,5 @@
 ---
-chapter_no: 2
+chapter_no: 20
 chapter_title: 種(seed)に完全にランダムなlong値を
 created: 2009-01-16
 updated: 2009-01-16
