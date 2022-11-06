@@ -1,5 +1,5 @@
 ---
-chapter_no: 1
+chapter_no: 10
 chapter_title: Randomクラスを利用
 created: 2009-01-16
 updated: 2009-01-16

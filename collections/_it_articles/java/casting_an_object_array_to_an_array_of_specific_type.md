@@ -1,7 +1,7 @@
 ---
 title: Javaでオブジェクト配列を特定の型の配列にキャストする
 article_group_id: tips-group
-display_order: 25
+display_order: 30
 created: 2008-09-02
 updated: 2021-10-03
 ---

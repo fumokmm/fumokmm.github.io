@@ -1,7 +1,7 @@
 ---
 title: JavaのBigDecimalのaddは戻り値を代入する必要がある
 article_group_id: tips-group
-display_order: 50
+display_order: 70
 created: 2008-01-20
 updated: 2021-07-12
 ---

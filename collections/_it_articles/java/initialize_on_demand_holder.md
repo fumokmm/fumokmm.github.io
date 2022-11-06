@@ -1,7 +1,7 @@
 ---
 title: Javaでシングルトンを実現するならInitialize-On-Demand Holderイディオムを使うといいらしい
 article_group_id: tips-group
-display_order: 30
+display_order: 40
 created: 2008-04-10
 updated: 2008-04-10
 ---
