@@ -109,3 +109,10 @@
   sub_category_group: self_improvement
   sub_category_order: 30
   description: 自己啓発クイズのメモ
+
+- sub_category_id: summarize
+  sub_category_label: まとめのメモ
+  link: /life/summarize/
+  sub_category_group: summarize
+  sub_category_order: 30
+  description: まとめのメモ

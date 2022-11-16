@@ -375,6 +375,12 @@ defaults:
     values:
       sub_category_id: "self_improvement_quiz"
 
+  # まとめ
+  - scope:
+      path: "_life_articles/summarize"
+    values:
+      sub_category_id: "summarize"
+
 ################################## 読書
   - scope:
       path: "_reading_articles"
