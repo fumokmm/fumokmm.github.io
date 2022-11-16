@@ -1,0 +1,25 @@
+## {{ include.description }}
+<table>
+    {% comment %}
+    カテゴリにより取得するデータを分ける
+    {% endcomment %}
+    {% if include.category_id == 'it' %}
+        {% assign sub_categories_source = site.data.it_sub_category %}
+    {% elsif include.category_id == 'life' %}
+        {% assign sub_categories_source = site.data.life_sub_category %}
+    {% endif %}
+
+    {% assign sub_categories = sub_categories_source | where: 'sub_category_group', include.sub_category_group
+                                                     | sort: 'sub_category_order' %}
+    {% for sub_cat in sub_categories %}
+    <tr>
+        {% assign articles = site.life_articles  | where: 'category_id', 'life'
+                                                 | where: 'sub_category_id', sub_cat.sub_category_id %}
+        {% assign last_updated_article = articles | sort: 'updated' | last %}
+
+        <td><a href="{{ sub_cat.link }}">{{ sub_cat.sub_category_label }}</a></td>
+        <td markdown="span">{{ sub_cat.description }}</td>
+        <td>{{ last_updated_article.updated }}更新</td>
+    </tr>
+    {% endfor %}
+</table>
