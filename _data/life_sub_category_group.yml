@@ -1,0 +1,7 @@
+- sub_category_group: self_improvement
+  sub_category_group_order: 140
+  description: こちらは自己啓発についてのメモになります
+
+- sub_category_group: summarize
+  sub_category_group_order: 150
+  description: こちらはまとめのメモになります
