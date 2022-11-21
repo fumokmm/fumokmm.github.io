@@ -500,10 +500,12 @@
   sub_category_label: システム開発
   link: /it/system_development/
   article_group:
-    - id: test-group
-      label: テスト
+    - id: requirements-definition-group
+      label: 要件定義
     - id: documentation-group
       label: ドキュメンテーション
+    - id: test-group
+      label: テスト
   sub_category_group: system_development
   sub_category_order: 10
   description: システム開発関係のメモ
