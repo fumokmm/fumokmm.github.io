@@ -1,7 +1,7 @@
 ---
 title: Outlookのメモ
 created: 2021-07-12
-updated: 2021-07-12
+updated: 2022-11-26
 ---
 こちらはOutlookのメモになります。
 
