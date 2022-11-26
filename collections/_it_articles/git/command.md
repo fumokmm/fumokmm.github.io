@@ -3,7 +3,7 @@ title: Gitコマンドのメモ
 article_group_id: reference-group
 display_order: 10
 created: 2010-11-07
-updated: 2021-12-24
+updated: 2022-11-26
 ---
 当メモは2010-11-07に[投稿されたもの](https://npnl.hatenablog.jp/entry/20101107/1289121576)を加筆修正し、再掲したものです。
 基本的に当時の内容そのままとなっておりますので、8割りくらいは今でも通用すると思いますが、  
@@ -176,7 +176,7 @@ $ git <em class="blue">remote add</em> <em>&lt;リモートリポジトリ名&gt
 
 * * *
 ## <a name="日常の作業(add, commit, checkout, reset)">日常の作業(add, commit, checkout, reset)</a><a class="heading-anchor-permalink" href="#日常の作業(add, commit, checkout, reset)">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2010-11-07" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2022-11-26" %}</div>
 <div class="code-box">
 <div class="title">新しいファイルの追加や既存のファイルのステージをしてコミットする</div>
 <pre>
@@ -235,6 +235,32 @@ $ git <em class="blue">reset</em> <em>HEAD</em> <em>&lt;ファイル*&gt;</em>
 </div>
 - `git reset`も`git commit`と同様にHEADの指定は省略できます。
 - 単に`git reset`するとすべてのステージがリセットされます。
+
+<div class="code-box">
+<div class="title">--soft：HEADの位置のみ戻す</div>
+<div class="copy-button">Copy</div>
+<pre>
+$ git <em class="blue">reset</em> <em class="orange">--soft</em> <em>HEAD</em>
+</pre>
+</div>
+<div class="code-box">
+<div class="title">--mixed：HEADの位置とステージング状態を戻す</div>
+<div class="copy-button">Copy</div>
+<pre>
+$ git <em class="blue">reset</em> <em class="orange">--mixed</em> <em>HEAD</em>
+または
+$ git <em class="blue">reset</em> <em>HEAD</em>
+</pre>
+</div>
+<div class="code-box">
+<div class="title">--hard：HEADの位置とステージング状態と作業ディレクトリの編集内容を戻す（つまり編集内容を完全に捨てて戻す）</div>
+<div class="copy-button">Copy</div>
+<pre>
+$ git <em class="blue">reset</em> --hard <em>HEAD</em>
+</pre>
+</div>
+- よく使うのは`--hard`です。
+-　`--soft`と`--mixed`は[こちら]({% link _it_articles/git/after_a_commit_go_back_to_any_point_in_time_and_restore_the_state_from_that_point_to_the_point_of_the_commit_as_a_locally_modified_state.md %})で用例など説明しています。
 
 <div class="code-box">
 <div class="title">直近のコミットを修正する</div>
@@ -1019,9 +1045,12 @@ $ git <em class="blue">svn blame</em> <em>&lt;ファイル&gt;</em>
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2021-09-27" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2010-11-07" updated="2022-11-26" %}</div>
 ### 元記事
 - [(No Programming, No Life) Gitコマンドリファレンス](https://npnl.hatenablog.jp/entry/20101107/1289121576)
+
+### 関連メモ
+- [Gitでコミットした後に好きな時点へ戻り、その時点からコミットした時点までをローカル変更した状態として復元する]({% link _it_articles/git/after_a_commit_go_back_to_any_point_in_time_and_restore_the_state_from_that_point_to_the_point_of_the_commit_as_a_locally_modified_state.md %})
 
 ### 参照
 - [Gitマニュアルのリファレンス](https://git-scm.com/docs)

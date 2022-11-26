@@ -2,7 +2,7 @@
 chapter_no: 3
 chapter_title: 日常の作業(add, commit, checkout, reset)
 created: 2010-11-07
-updated: 2010-11-07
+updated: 2022-11-26
 ---
 <div class="code-box">
 <div class="title">新しいファイルの追加や既存のファイルのステージをしてコミットする</div>
@@ -62,6 +62,20 @@ $ git <em class="blue">reset</em> <em>HEAD</em> <em>&lt;ファイル*&gt;</em>
 </div>
 - `git reset`も`git commit`と同様にHEADの指定は省略できます。
 - 単に`git reset`するとすべてのステージがリセットされます。
+
+```:--soft：HEADの位置のみ戻す
+$ git {em:blue{reset}em} {em:orange{--soft}em} {em{HEAD}em}
+```
+```:--mixed：HEADの位置とステージング状態を戻す
+$ git {em:blue{reset}em} {em:orange{--mixed}em} {em{HEAD}em}
+または
+$ git {em:blue{reset}em} {em{HEAD}em}
+```
+```:--hard：HEADの位置とステージング状態と作業ディレクトリの編集内容を戻す（つまり編集内容を完全に捨てて戻す）
+$ git {em:blue{reset}em} --hard {em{HEAD}em}
+```
+- よく使うのは`--hard`です。
+-　`--soft`と`--mixed`は[こちら]({% link _it_articles/git/after_a_commit_go_back_to_any_point_in_time_and_restore_the_state_from_that_point_to_the_point_of_the_commit_as_a_locally_modified_state.md %})で用例など説明しています。
 
 <div class="code-box">
 <div class="title">直近のコミットを修正する</div>
