@@ -120,6 +120,8 @@
   article_group:
     - id: tips-group
       label: Tips
+    - id: case-study-group
+      label: ケーススタディ
     - id: reference-group
       label: 参照・参考
   sub_category_group: version_control_system
