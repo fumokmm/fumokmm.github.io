@@ -2,7 +2,7 @@
 title: 人生で勝つ方法
 display_order: 30
 created: 2022-12-12
-updated: 2022-12-12
+updated: 2022-12-13
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -18,6 +18,7 @@ updated: 2022-12-12
 <li><a href="#運を掴みたければ常にポジティブでいること">運を掴みたければ常にポジティブでいること</a></li>
 <li><a href="#最初の価値を掴みたければ他の人がやっていないことをやる">最初の価値を掴みたければ他の人がやっていないことをやる</a></li>
 <li><a href="#人と同じことはしない">人と同じことはしない</a></li>
+<li><a href="#好きなことしか続かない">好きなことしか続かない</a></li>
 <li><a href="#人生はどんな状況からでもひっくり返せる">人生はどんな状況からでもひっくり返せる</a></li>
 <li><a href="#参考">参考</a></li>
 </ul>
@@ -132,37 +133,47 @@ updated: 2022-12-12
 
 * * *
 ## <a name="最初の価値を掴みたければ他の人がやっていないことをやる">最初の価値を掴みたければ他の人がやっていないことをやる</a><a class="heading-anchor-permalink" href="#最初の価値を掴みたければ他の人がやっていないことをやる">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-12-12" updated="2022-12-12" %}</div>
-あとで書く
+<div class="chapter-updated">{% include update_info_inline.html created="2022-12-12" updated="2022-12-13" %}</div>
+- 最初の壁を乗り越えるのが一番キツイが、ここを乗り越えればだんだんと楽になってゆく。
+- だからまずは自分のすべてをかけて、最初の一勝をもぎ取ろう。
 
-{% comment %}
 ### 参考動画
 - [(YouTube) 【要約】心配すんな。全部上手くいく。【ヒカル】](https://www.youtube.com/watch?v=khsPp0SJgdw)
-{% endcomment %}
 
 {% include goto_pagetop.html %}
 
 * * *
 ## <a name="人と同じことはしない">人と同じことはしない</a><a class="heading-anchor-permalink" href="#人と同じことはしない">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-12-12" updated="2022-12-12" %}</div>
-あとで書く
+<div class="chapter-updated">{% include update_info_inline.html created="2022-12-12" updated="2022-12-13" %}</div>
+- 多くの人はライバルと同じことをやってしまうというミスをしてしまう。
+- 同じことをやっている人は多いから目立たない。
+- 頭を使って、他の人がやっていないことをやる。
+- 多少無理してでも、他との違いを作らなければならない。
 
-{% comment %}
 ### 参考動画
 - [(YouTube) 【要約】心配すんな。全部上手くいく。【ヒカル】](https://www.youtube.com/watch?v=khsPp0SJgdw)
-{% endcomment %}
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="好きなことしか続かない">好きなことしか続かない</a><a class="heading-anchor-permalink" href="#好きなことしか続かない">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-12-13" updated="2022-12-13" %}</div>
+- どんなにすばらしい戦略も続けられなければ意味がない。
+- 自分が好きなことしか続かないが結論。
+
+### 参考動画
+- [(YouTube) 【要約】心配すんな。全部上手くいく。【ヒカル】](https://www.youtube.com/watch?v=khsPp0SJgdw)
 
 {% include goto_pagetop.html %}
 
 * * *
 ## <a name="人生はどんな状況からでもひっくり返せる">人生はどんな状況からでもひっくり返せる</a><a class="heading-anchor-permalink" href="#人生はどんな状況からでもひっくり返せる">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2022-12-12" updated="2022-12-12" %}</div>
-あとで書く
+<div class="chapter-updated">{% include update_info_inline.html created="2022-12-12" updated="2022-12-13" %}</div>
+- どんな状況からでも人生はひっくり返せる。
+- やるか、やらないか、それだけだ。
 
-{% comment %}
 ### 参考動画
 - [(YouTube) 【要約】心配すんな。全部上手くいく。【ヒカル】](https://www.youtube.com/watch?v=khsPp0SJgdw)
-{% endcomment %}
 
 {% include goto_pagetop.html %}
 
