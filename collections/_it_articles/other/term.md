@@ -2,7 +2,7 @@
 title: IT用語
 display_order: 30
 created: 2020-10-09
-updated: 2022-10-04
+updated: 2022-12-14
 ---
 IT用語のひとこと説明です。
 
@@ -12,6 +12,7 @@ IT用語のひとこと説明です。
 <li><a href="#A">A</a></li>
 <li><a href="#C">C</a></li>
 <li><a href="#D">D</a></li>
+<li><a href="#J">J</a></li>
 <li><a href="#う">う</a></li>
 <li><a href="#さ">さ</a></li>
 </ul>
@@ -99,6 +100,22 @@ IT用語のひとこと説明です。
 ### 参考
 - [(まもりの種) IT化とDXの違いは？DXの前提となる電子化の重要性とは？](https://www.mamoru-kun.com/tips/it-dx/)
 
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="J">J</a><a class="heading-anchor-permalink" href="#J">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2022-12-14" updated="2022-12-14" %}</div>
+<dl>
+  {% include article_parts/term_dt.html category_id="it" title="JWT【JSON Web Tokens】" %}
+  <dd markdown="span">JSONデータに署名や暗号化を施す方法を定めたオープン標準 ([RFC 7519](https://www.rfc-editor.org/rfc/rfc7519)) 。略称はJWT。読み方は「ジョット」。
+  {% include update_info_inline.html created="2022-12-14" updated="2022-12-14" %}
+  </dd>
+</dl>
+
+### 参考
+- [JWT](https://jwt.io/)
+- [RFC 7519](https://www.rfc-editor.org/rfc/rfc7519)
 
 {% include goto_pagetop.html %}
 
