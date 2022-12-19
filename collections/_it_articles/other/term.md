@@ -10,6 +10,7 @@ IT用語のひとこと説明です。
 
 <ul id="index_ul">
 <li><a href="#A">A</a></li>
+<li><a href="#D">D</a></li>
 <li><a href="#J">J</a></li>
 <li><a href="#う">う</a></li>
 <li><a href="#さ">さ</a></li>
@@ -28,6 +29,22 @@ IT用語のひとこと説明です。
 
 ### 参考
 - [(e-Words) ARM64 【AArch64】 A64](https://e-words.jp/w/ARM64.html)
+
+{% include goto_pagetop.html %}
+
+* * *
+## <a name="D">D</a><a class="heading-anchor-permalink" href="#D">§</a>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-02-25" updated="2021-08-27" %}</div>
+<dl>
+  {% include article_parts/term_dt.html category_id="it" title="DX【Digital Transformation】" %}
+  <dd markdown="span">デジタルトランスフォーメーション）の略語。  
+  企業がデジタル技術を活用し、ビジネスモデルや企業そのものを変革していくことを意味する。
+  {% include update_info_inline.html created="2021-08-27" updated="2021-08-27" %}</dd>
+</dl>
+
+### 参考
+- [(まもりの種) IT化とDXの違いは？DXの前提となる電子化の重要性とは？](https://www.mamoru-kun.com/tips/it-dx/)
+
 
 {% include goto_pagetop.html %}
 
