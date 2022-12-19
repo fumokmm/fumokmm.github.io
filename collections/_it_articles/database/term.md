@@ -7,11 +7,6 @@ updated: 2022-12-19
 ---
 こちらはデータベースの用語のメモになります。
 
-{% comment %}
-あとで消す
-  {% include article_parts/term_dt.html category_id="it" title="DCL【Data Control Language】" %}
-
-{% endcomment %}
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
