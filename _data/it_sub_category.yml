@@ -55,9 +55,11 @@
 
 # D
 - sub_category_id: database
-  sub_category_label: Database
+  sub_category_label: データベース
   link: /it/database/
   article_group:
+    - id: basis-group
+      label: 基本事項
     - id: summary-group
       label: まとめ
     - id: tips-group
