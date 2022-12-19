@@ -6,9 +6,3 @@ created: 2022-12-19
 updated: 2022-12-19
 ---
 こちらはデータベースの用語のメモになります。
-
-{% comment %}
-あとで消す
-  {% include article_parts/term_dt.html category_id="it" title="DCL【Data Control Language】" %}
-
-{% endcomment %}
