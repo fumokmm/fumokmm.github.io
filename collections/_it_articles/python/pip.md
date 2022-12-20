@@ -3,9 +3,9 @@ title: pipのメモ
 article_group_id: library-group
 display_order: 10
 created: 2021-10-14
-updated: 2021-10-14
+updated: 2022-12-20
 ---
-
+{% capture link_to_it_reverse_resolution %}{% link _it_articles/reverse_resolution/index.md %}{% endcapture %}{% assign link_to_it_reverse_resolution = link_to_it_reverse_resolution | remove: 'index' %}
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
@@ -225,7 +225,10 @@ $ pip <em>install --no-index --find-links</em>=<em class="orange">/tmp/whl/six-1
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-10-14" updated="2021-10-14" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-10-14" updated="2022-12-20" %}</div>
+### 関連メモ
+- [PDFファイルを結合する]({% link _it_articles/reverse_resolution/combine_pdf_files.md %})
+
 ### 参照
 - [Python公式サイト](https://www.python.org/)
 - [PyPI](https://pypi.org/)
