@@ -345,6 +345,12 @@ defaults:
     values:
       sub_category_id: "consciousness_and_unconsciousness"
 
+  # 脳について
+  - scope:
+      path: "_life_articles/brain"
+    values:
+      sub_category_id: "brain"
+
   # 習慣化について
   - scope:
       path: "_life_articles/habituation"
