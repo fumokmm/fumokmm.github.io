@@ -1,3 +1,7 @@
+- sub_category_group: mind
+  sub_category_group_order: 110
+  description: こちらは精神や心についてのメモになります
+
 - sub_category_group: self_improvement
   sub_category_group_order: 140
   description: こちらは自己啓発についてのメモになります

@@ -75,6 +75,13 @@
   sub_category_order: 10
   description: 意識と無意識についてのメモ
 
+- sub_category_id: brain
+  sub_category_label: 脳について
+  link: /life/brain/
+  sub_category_group: mind
+  sub_category_order: 20
+  description: 脳についてのメモ
+
 - sub_category_id: habituation
   sub_category_label: 習慣化について
   link: /life/habituation/
