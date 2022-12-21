@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Codeのメモ
 created: 2020-09-16
-updated: 2022-10-30
+updated: 2022-12-21
 ---
 こちらはVisual Studio Codeのメモになります。
 
