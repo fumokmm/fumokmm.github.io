@@ -2,7 +2,7 @@
 layout: default_layout
 title: IT技術メモ
 created: 2020-09-02
-updated: 2022-12-21
+updated: 2022-12-27
 ---
 ## こちらはプログラミング関連のメモになります
 <table>
@@ -275,3 +275,14 @@ updated: 2022-12-21
     </tr>
     {% endfor %}
 </table>
+
+{% comment %}
+カテゴリグループ分、ループしながら記事テーブルを構築
+{% endcomment %}
+{% assign sub_category_groups = site.data.it_sub_category_group | sort: 'sub_category_group_order' %}
+{% for sub_cat_grp in sub_category_groups %}
+{% include article_parts/article_table.html
+    category_id="it"
+    sub_category_group=sub_cat_grp.sub_category_group
+    description=sub_cat_grp.description %}
+{% endfor %}
