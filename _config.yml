@@ -115,6 +115,12 @@ defaults:
     values:
       sub_category_id: "julia"
 
+  # インフラ
+  - scope:
+      path: "_it_articles/infrastructure"
+    values:
+      sub_category_id: "infrastructure"
+
   # Linux
   - scope:
       path: "_it_articles/linux"
