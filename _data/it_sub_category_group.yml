@@ -1,3 +1,7 @@
 - sub_category_group: network
   sub_category_group_order: 50
   description: こちらはネットワーク関連のメモになります
+
+- sub_category_group: other
+  sub_category_group_order: 160
+  description: こちらはその他のメモになります
