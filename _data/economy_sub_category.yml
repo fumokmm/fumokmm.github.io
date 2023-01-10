@@ -1,6 +1,9 @@
 - sub_category_id: investment
   sub_category_label: 投資について
   link: /economy/investment/
+  article_group:
+    - id: basis-group
+      label: 基本事項
   sub_category_group: investment
   sub_category_order: 10
   description: 投資についてのメモ
@@ -8,6 +11,9 @@
 - sub_category_id: accounting
   sub_category_label: 会計について
   link: /economy/accounting/
+  article_group:
+    - id: basis-group
+      label: 基本事項
   sub_category_group: accounting
   sub_category_order: 10
   description: 会計についてのメモ
