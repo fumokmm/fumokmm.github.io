@@ -14,7 +14,7 @@
 
 - sub_category_id: tax
   sub_category_label: 税金について
-  link: /it/java/
+  link: /economy/tax/
   article_group:
     - id: basis-group
       label: 基本事項

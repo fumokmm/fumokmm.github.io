@@ -2,7 +2,7 @@
 layout: default_layout
 title: 経済についてのメモ
 created: 2021-05-29
-updated: 2022-01-14
+updated: 2023-01-10
 ---
 {% comment %}
 カテゴリグループ分、ループしながら記事テーブルを構築
