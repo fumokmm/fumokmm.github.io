@@ -464,6 +464,12 @@ defaults:
     values:
       sub_category_id: "accounting"
 
+  # 税金についてのメモ
+  - scope:
+      path: "_economy_articles/tax"
+    values:
+      sub_category_id: "tax"
+
 ################################## 雑学
   - scope:
       path: "_trivia_articles"

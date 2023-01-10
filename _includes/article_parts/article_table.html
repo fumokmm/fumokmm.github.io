@@ -4,10 +4,18 @@
     {% comment %}
     カテゴリにより取得するデータを分ける
     {% endcomment %}
-    {% if include.category_id == 'it' %}
+    {% if include.category_id == 'economy' %}
+        {% assign sub_categories_source = site.data.economy_sub_category %}
+    {% elsif include.category_id == 'it' %}
         {% assign sub_categories_source = site.data.it_sub_category %}
     {% elsif include.category_id == 'life' %}
         {% assign sub_categories_source = site.data.life_sub_category %}
+    {% elsif include.category_id == 'reading' %}
+        {% assign sub_categories_source = site.data.reading_sub_category %}
+    {% elsif include.category_id == 'science' %}
+        {% assign sub_categories_source = site.data.science_sub_category %}
+    {% elsif include.category_id == 'trivia' %}
+        {% assign sub_categories_source = site.data.trivia_sub_category %}
     {% endif %}
 
     {% assign sub_categories = sub_categories_source | where: 'sub_category_group', include.sub_category_group
@@ -17,12 +25,24 @@
         {% comment %}
         カテゴリにより取得するデータを分ける
         {% endcomment %}
-        {% if include.category_id == 'it' %}
-            {% assign articles = site.it_articles  | where: 'category_id', include.category_id
-                                                   | where: 'sub_category_id', sub_cat.sub_category_id %}
+        {% if include.category_id == 'economy' %}
+            {% assign articles = site.economy_articles | where: 'category_id', include.category_id
+                                                       | where: 'sub_category_id', sub_cat.sub_category_id %}
+        {% elsif include.category_id == 'it' %}
+            {% assign articles = site.it_articles | where: 'category_id', include.category_id
+                                                  | where: 'sub_category_id', sub_cat.sub_category_id %}
         {% elsif include.category_id == 'life' %}
-            {% assign articles = site.life_articles  | where: 'category_id', include.category_id
-                                                     | where: 'sub_category_id', sub_cat.sub_category_id %}
+            {% assign articles = site.life_articles | where: 'category_id', include.category_id
+                                                    | where: 'sub_category_id', sub_cat.sub_category_id %}
+        {% elsif include.category_id == 'reading' %}
+            {% assign articles = site.reading_articles | where: 'category_id', include.category_id
+                                                    | where: 'sub_category_id', sub_cat.sub_category_id %}
+        {% elsif include.category_id == 'science' %}
+            {% assign articles = site.science_articles | where: 'category_id', include.category_id
+                                                    | where: 'sub_category_id', sub_cat.sub_category_id %}
+        {% elsif include.category_id == 'trivia' %}
+            {% assign articles = site.trivia_articles | where: 'category_id', include.category_id
+                                                    | where: 'sub_category_id', sub_cat.sub_category_id %}
         {% endif %}
         {% assign last_updated_article = articles | sort: 'updated' | last %}
 
