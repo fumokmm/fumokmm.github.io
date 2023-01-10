@@ -1,0 +1,11 @@
+- sub_category_group: investment
+  sub_category_group_order: 10
+  description: こちらは投資についてのメモ
+
+- sub_category_group: accounting
+  sub_category_group_order: 20
+  description: こちらは会計についてのメモ
+
+# - sub_category_group: tax
+#   sub_category_group_order: 30
+#   description: こちらは税金についてのメモ
