@@ -2,7 +2,7 @@
 layout: default_layout
 title: 科学のメモ
 created: 2021-02-18
-updated: 2022-06-30
+updated: 2023-01-12
 ---
 ## こちらは物理学のメモになります
 <table>
