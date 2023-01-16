@@ -1,7 +1,7 @@
 ---
 title: A5:SQL Mk-2のメモ
 created: 2022-10-23
-updated: 2022-10-23
+updated: 2023-01-16
 ---
 {% include sub_category_index/it_sub_category_index_with_groups.html
     category_id="it"
