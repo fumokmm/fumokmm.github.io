@@ -15,7 +15,7 @@ updated: 2023-01-16
 
 * * *
 ## <a name="オブジェクトのアイコンと操作">オブジェクトのアイコンと操作</a><a class="heading-anchor-permalink" href="#オブジェクトのアイコンと操作">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2023-01-16" updated="2023-01-16" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2023-01-16" updated="2023-01-17" %}</div>
 ### エンティティオブジェクト
 <p class="center size-1" markdown="span">
 ![](/assets/img/articles/it/a5m2/er_diagram_editor/1_entity_object.png)
@@ -25,6 +25,8 @@ updated: 2023-01-16
 <p class="center size-1" markdown="span">
 ![](/assets/img/articles/it/a5m2/er_diagram_editor/2_relationship_object.png)
 </p>
+1. 親エンティティをクリック
+1. 子エンティティをクリック
 
 ### コメントオブジェクト
 <p class="center size-1" markdown="span">
@@ -40,6 +42,8 @@ updated: 2023-01-16
 <p class="center size-1" markdown="span">
 ![](/assets/img/articles/it/a5m2/er_diagram_editor/5_subtype_object.png)
 </p>
+- エンティティとサブタイプはリレーションシップでつなぐ
+- サブタイプの子には親エンティティの主キーが追加される
 
 ### 線分オブジェクト
 <p class="center size-1" markdown="span">
@@ -50,6 +54,7 @@ updated: 2023-01-16
 <p class="center size-1" markdown="span">
 ![](/assets/img/articles/it/a5m2/er_diagram_editor/7_shape_object.png)
 </p>
+- シェイプや画像を追加
 
 {% include goto_pagetop.html %}
 
