@@ -3,7 +3,7 @@ title: A5:SQL Mk-2のERエディタについて
 article_group_id: tips-group
 display_order: 20
 created: 2023-01-16
-updated: 2023-01-17
+updated: 2023-01-18
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -26,44 +26,44 @@ A5:SQLに付属のERエディタの使い方をメモしておきます。
 
 * * *
 ## <a name="オブジェクトのアイコンと操作">オブジェクトのアイコンと操作</a><a class="heading-anchor-permalink" href="#オブジェクトのアイコンと操作">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2023-01-16" updated="2023-01-17" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2023-01-16" updated="2023-01-18" %}</div>
 ### エンティティオブジェクト
 <p class="center size-1" markdown="span">
-![](/assets/img/articles/it/a5m2/er_diagram_editor/1_entity_object.png)
+![](https://drive.google.com/uc?id=19J7gOGGlFQrLl8WOA6rwfsu59HArrAOS)
 </p>
 
 ### リレーションシップオブジェクト
 <p class="center size-1" markdown="span">
-![](/assets/img/articles/it/a5m2/er_diagram_editor/2_relationship_object.png)
+![](https://drive.google.com/uc?id=19V6gnbhUeTcWphS__-XfZQCDZV59jmfY)
 </p>
 1. 親エンティティをクリック
 1. 子エンティティをクリック
 
 ### コメントオブジェクト
 <p class="center size-1" markdown="span">
-![](/assets/img/articles/it/a5m2/er_diagram_editor/3_comment_object.png)
+![](https://drive.google.com/uc?id=19DwK3PvLqKfMdqPJLetL2Y047JSQqTCY)
 </p>
 
 ### ビューオブジェクト
 <p class="center size-1" markdown="span">
-![](/assets/img/articles/it/a5m2/er_diagram_editor/4_view_object.png)
+![](https://drive.google.com/uc?id=19MjSnENywJugDJoHGHgErHjAz7nfJ5zr)
 </p>
 
 ### サブタイプオブジェクト
 <p class="center size-1" markdown="span">
-![](/assets/img/articles/it/a5m2/er_diagram_editor/5_subtype_object.png)
+![](https://drive.google.com/uc?id=19WpH5YaGySEfdQCNx9oyQquPz_V8ddkJ)
 </p>
 - エンティティとサブタイプはリレーションシップでつなぐ
 - サブタイプの子には親エンティティの主キーが追加される
 
 ### 線分オブジェクト
 <p class="center size-1" markdown="span">
-![](/assets/img/articles/it/a5m2/er_diagram_editor/6_line_object.png)
+![](https://drive.google.com/uc?id=19MEcHQgDCO3DrZPYUAn0JZBMkUkz1441)
 </p>
 
 ### シェイプオブジェクト、画像（シェイプオブジェクト）
 <p class="center size-1" markdown="span">
-![](/assets/img/articles/it/a5m2/er_diagram_editor/7_shape_object.png)
+![](https://drive.google.com/uc?id=19Op4D0_xNPIqUbf4KXVbr7G49Edgha1R)
 </p>
 - シェイプや画像を追加
 
