@@ -426,6 +426,12 @@ defaults:
     values:
       sub_category_id: "physics"
 
+  # 宇宙のメモ
+  - scope:
+      path: "_science_articles/universe"
+    values:
+      sub_category_id: "universe"
+
   # 心理学のメモ
   - scope:
       path: "_science_articles/psychology"

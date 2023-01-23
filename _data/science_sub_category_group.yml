@@ -1,0 +1,19 @@
+- sub_category_group: physics
+  sub_category_group_order: 10
+  description: こちらは物理学についてのメモになります
+
+- sub_category_group: universe
+  sub_category_group_order: 20
+  description: こちらは宇宙についてのメモになります
+
+- sub_category_group: psychology
+  sub_category_group_order: 30
+  description: こちらは心理学についてのメモになります
+
+- sub_category_group: paradox
+  sub_category_group_order: 40
+  description: こちらはパラドックスについてのメモになります
+
+- sub_category_group: future_prediction
+  sub_category_group_order: 50
+  description: こちらは未来予測についてのメモになります
