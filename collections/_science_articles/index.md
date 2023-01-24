@@ -2,7 +2,7 @@
 layout: default_layout
 title: 科学のメモ
 created: 2021-02-18
-updated: 2023-01-23
+updated: 2023-01-24
 ---
 {% comment %}
 カテゴリグループ分、ループしながら記事テーブルを構築
