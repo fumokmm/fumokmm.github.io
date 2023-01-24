@@ -5,6 +5,13 @@
   sub_category_order: 10
   description: 物理学のメモ
 
+- sub_category_id: universe
+  sub_category_label: 宇宙
+  link: /science/universe/
+  sub_category_group: universe
+  sub_category_order: 10
+  description: 宇宙のメモ
+
 - sub_category_id: psychology
   sub_category_label: 心理学
   link: /science/psychology/
