@@ -2,6 +2,10 @@
   sub_category_group_order: 50
   description: こちらはネットワーク関連のメモになります
 
+- sub_category_group: build_tool
+  sub_category_group_order: 130
+  description: こちらはビルドツール関連のメモになります
+
 - sub_category_group: other
   sub_category_group_order: 160
   description: こちらはその他のメモになります
