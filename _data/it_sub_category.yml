@@ -211,6 +211,17 @@
   sub_category_order: 10
   description: "Liquidは[Shopify](https://www.shopify.com/)作成の[Ruby](/it/ruby)で書かれたテンプレート言語です。Jekyllなどでも使われています。"
 
+# M
+- sub_category_id: maven
+  sub_category_label: Maven
+  link: /it/maven/
+  article_group:
+    - id: basis-group
+      label: 基本事項
+  sub_category_group: build_tool
+  sub_category_order: 5
+  description: Apache Mavenについてのメモ
+
 # O
 - sub_category_id: oracle
   sub_category_label: Oracle

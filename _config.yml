@@ -127,6 +127,12 @@ defaults:
     values:
       sub_category_id: linux
 
+  # Maven
+  - scope:
+      path: "_it_articles/maven"
+    values:
+      sub_category_id: maven
+
   # Kotlin
   - scope:
       path: "_it_articles/kotlin"
