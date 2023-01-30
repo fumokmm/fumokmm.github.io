@@ -2,7 +2,7 @@
 layout: default_layout
 title: 人生についてのメモ
 created: 2021-01-20
-updated: 2022-12-20
+updated: 2023-01-31
 ---
 ## こちらはミニマリズムについてのメモになります
 <table>
