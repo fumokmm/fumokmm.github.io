@@ -3,7 +3,7 @@ title: Outlookで送信済みメールを再編集し新規メールとして送
 article_group_id: tips-group
 display_order: 10
 created: 2021-07-12
-updated: 2021-07-12
+updated: 2023-01-30
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -15,11 +15,15 @@ updated: 2021-07-12
 
 * * *
 ## <a name="方法">方法</a><a class="heading-anchor-permalink" href="#方法">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-07-12" updated="2021-07-12" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-07-12" updated="2023-01-30" %}</div>
 - 再編集したいメールを送信済みアイテムの中から選択し、ダブルクリックで開きます。
 - メニュー「メッセージ」タブ -> 「アクション」→「このメッセージを再送」をクリックします。
 - 送信した内容が残った状態でメール編集画面に切り替わります。
   - 再編集して送信します。
+
+<p class="center size-10" markdown="span">
+![](https://drive.google.com/uc?id=1DecmXM4RStzhrl8YdzkPu7G_26BeQuma)
+</p>
 
 {% include goto_pagetop.html %}
 
