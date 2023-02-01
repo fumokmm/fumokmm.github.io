@@ -16,6 +16,16 @@
   sub_category_order: 30
   description: 高機能かつ軽量な汎用SQLクライアント / ER図作成ソフト / フリーソフト（読み：エーファイブ・エスキューエル・マークツー）のメモ
 
+- sub_category_id: application
+  sub_category_label: アプリケーション
+  link: /it/application/
+  article_group:
+    - id: basis-group
+      label: 基本事項
+  sub_category_group: application
+  sub_category_order: 40
+  description: アプリケーションについてのメモ
+
 # C
 - sub_category_id: c
   sub_category_label: C言語

@@ -283,6 +283,12 @@ defaults:
     values:
       sub_category_id: "system_development"
 
+  # アプリケーション
+  - scope:
+      path: "_it_articles/application"
+    values:
+      sub_category_id: "application"
+
 ################################## 人生
   - scope:
       path: "_life_articles"
