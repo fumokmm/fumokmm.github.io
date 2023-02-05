@@ -143,6 +143,11 @@
 - sub_category_id: gradle
   sub_category_label: Gradle
   link: /it/gradle/
+  article_group:
+    - id: basis-group
+      label: 基本事項
+    - id: tips-group
+      label: Tips
   sub_category_group: build_tool
   sub_category_order: 10
   description: "[Groovy](/it/groovy/)製のビルドツールです。"
