@@ -97,6 +97,12 @@ defaults:
     values:
       sub_category_id: "git"
 
+  # HUGO
+  - scope:
+      path: "_it_articles/hugo"
+    values:
+      sub_category_id: "hugo"
+
   # iPhone
   - scope:
       path: "_it_articles/iphone"

@@ -159,6 +159,17 @@
   sub_category_order: 90
   description: Javaから派生した動的型付けのプログラミング言語についてのメモ
 
+# H
+- sub_category_id: hugo
+  sub_category_label: HUGO
+  link: /it/hugo/
+  article_group:
+    - id: getting-started-group
+      label: 導入
+  sub_category_group: static_site_generator
+  sub_category_order: 10
+  description: "[Go言語](/it/go/)で記述された静的サイトジェネレーター"
+
 # I
 - sub_category_id: iphone
   sub_category_label: iPhone
