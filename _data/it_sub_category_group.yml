@@ -10,6 +10,10 @@
   sub_category_group_order: 130
   description: こちらはビルドツール関連のメモになります
 
+- sub_category_group: static_site_generator
+  sub_category_group_order: 135
+  description: こちらは静的サイトジェネレーター関連のメモになります
+
 - sub_category_group: other
   sub_category_group_order: 160
   description: こちらはその他のメモになります
