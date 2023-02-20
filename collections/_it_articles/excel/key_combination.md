@@ -3,7 +3,7 @@ title: Excel作業効率を上げるキーコンビネーション
 article_group_id: tips-group
 display_order: 900
 created: 2020-12-17
-updated: 2021-11-18
+updated: 2023-02-20
 ---
 ここではExcel作業するときに知っていると作業効率の上がるキーコンビネーションをまとめておきます。
 
@@ -22,8 +22,12 @@ updated: 2021-11-18
 
 * * *
 ## <a name="general">全般</a><a class="heading-anchor-permalink" href="#general">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-03-25" updated="2021-03-25" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2021-03-25" updated="2023-02-20" %}</div>
+### <a name="keyboard">キーボード操作</a>
 {% include article_parts/key_combination.html title="直前の操作を繰り返す" key1="F4" %}
+
+### <a name="mouse">マウス操作</a>
+{% include article_parts/key_combination.html title="横スクロール" key1="Shift" key2="Ctrl" key3="マウススクロール" %}
 
 {% include goto_pagetop.html %}
 
@@ -143,7 +147,10 @@ updated: 2021-11-18
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2021-11-18" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2020-12-17" updated="2023-02-20" %}</div>
+### 関連メモ
+- [Excelで横スクロールする]({% link _it_articles/excel/horizontal_scrolling.md %})
+
 ### 参考サイト
 - [(Office Hack) Excelのシート名変更のショートカットキー（Windows）](https://office-hack.com/excel/shortcutkey-sheetname-change/)
 - [(Office TANAKA) 行/列を簡単に表示/非表示する](http://officetanaka.net/excel/function/tips/tips37.htm)
