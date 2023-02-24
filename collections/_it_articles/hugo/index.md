@@ -1,7 +1,7 @@
 ---
 title: HUGOのメモ
 created: 2023-02-17
-updated: 2023-02-17
+updated: 2023-02-24
 ---
 {% include sub_category_index/it_sub_category_index_with_groups.html
     category_id="it"
