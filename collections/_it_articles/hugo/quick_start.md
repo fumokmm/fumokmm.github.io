@@ -3,7 +3,7 @@ title: HUGOをクイックスタートする
 article_group_id: getting-started-group
 display_order: 20
 created: 2023-02-24
-updated: 2023-02-24
+updated: 2023-03-01
 ---
 
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
@@ -93,7 +93,7 @@ Resolving deltas: 100% (1468/1468), done.
 
 * * *
 ## <a name="サイトの設定をいじる">サイトの設定をいじる</a><a class="heading-anchor-permalink" href="#サイトの設定をいじる">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2023-02-24" updated="2023-02-24" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2023-02-24" updated="2023-03-01" %}</div>
 ### config.toml を編集
 サイトフォルダの直下にある`config.toml`ファイルを編集します。  
 最終行に以下のようにテーマとして何を使うかの設定行を追加します。
@@ -108,6 +108,19 @@ title = 'My New Hugo Site'
 </pre>
 </div>
 - 赤字部分を追記
+
+また、たぶんこのメモを見てくれている人は日本語を使う人が大半かと思うので、`languageCode`も`ja-jp`にしておくと良い気がします。
+<div class="code-box">
+<div class="title">config.toml</div>
+<div class="copy-button">Copy</div>
+<pre>
+baseURL = 'http://example.org/'
+languageCode = <em>'ja-jp'</em>
+title = 'My New Hugo Site'
+theme = 'ananke'
+</pre>
+</div>
+- 赤字部分を編集
 
 {% include goto_pagetop.html %}
 
@@ -155,9 +168,10 @@ Press Ctrl+C to stop
 
 * * *
 ## <a name="参考">参考</a><a class="heading-anchor-permalink" href="#参考">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2023-02-24" updated="2023-02-24" %}</div>
+<div class="chapter-updated">{% include update_info_inline.html created="2023-02-24" updated="2023-03-01" %}</div>
 ### 参考サイト
 - [(公式サイト) Quick Start](https://gohugo.io/getting-started/quick-start/)
+- [(天才まくまくノート) Hugo で新規の Web サイトを作成する](https://maku77.github.io/p/bt5enw6/)
 
 {% include goto_pagetop.html %}
 
