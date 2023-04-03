@@ -5,4 +5,4 @@ display_order: 40
 created: 2021-02-08
 updated: 2021-08-31
 ---
-こちらはVBAでデータベース操作を行う方法のメモです。  
+- 当メモは、[VBAでデータベース操作](https://thinktwice.tech/it/vba/database_control/)へ移管しました。
