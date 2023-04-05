@@ -5,6 +5,4 @@ display_order: 80
 created: 2021-04-20
 updated: 2022-09-29
 ---
-{% capture link_to_it_rust %}{% link _it_articles/rust/index.md %}{% endcapture %}{% assign link_to_it_rust = link_to_it_rust | remove: 'index' %}
-
-TOMLのメモです。
+- 当メモは、[TOMLのメモ](https://thinktwice.tech/it/structured_text_data_format/toml/)へ移管しました。
