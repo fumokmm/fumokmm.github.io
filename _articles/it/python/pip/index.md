@@ -5,4 +5,5 @@ display_order: 10
 created: 2021-10-14
 updated: 2022-12-20
 ---
-{% capture link_to_it_reverse_resolution %}{% link _it_articles/reverse_resolution/index.md %}{% endcapture %}{% assign link_to_it_reverse_resolution = link_to_it_reverse_resolution | remove: 'index' %}
+## 移管しました
+- 当メモは、[pipのメモ](https://thinktwice.tech/it/python/pip/)へ移管しました。
