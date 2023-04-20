@@ -1,8 +1,13 @@
 ---
 title: Home
 created: 2020-09-02
-updated: 2023-03-31
+updated: 2023-04-20
 ---
+<div style="border: 1px solid red; padding: 5px;">
+当サイトは新ドメイン(<a href="https://thinktwice.tech/">https://thinktwice.tech/</a>)へ順次移管中です。<br>
+移管完了後、サイトはクローズ予定です。2023-04-20
+</div>
+
 # これは何？
 Think Twiceにお越しいただき、ありがとうございます。このサイトは[@fumokmm](https://twitter.com/fumokmm)のメモサイトです。  
 ブログでの情報整理に限界を感じ、サイトでの整理方法に戻ってきました。  

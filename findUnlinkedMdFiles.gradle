@@ -1,0 +1,46 @@
+// https://chat.openai.com/chat/f9840e05-e095-48c0-97c0-093703d000e6
+import java.nio.file.FileVisitOption
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
+
+def findUnlinkedMdFiles(String folderPath) {
+    Path rootPath = Paths.get(folderPath)
+    List<Path> mdFiles = []
+
+    Files.walk(rootPath)
+         .filter { it.toFile().isFile() }
+         .filter { it.toString().endsWith('.md') }
+         .forEach { mdFiles << it }
+
+    List<Path> unlinkedFiles = []
+
+    mdFiles.each { mdFile ->
+        String content = new File(mdFile.toUri()).text
+
+        def inlineLinkPattern = ~/\[[^\]]+\]\([^)]+\)/
+        def liquidLinkPattern = ~/\{%\s*link\s+[^%]+%\}/
+        def liquidVarPattern = ~/(\{\{[^}]+\}\})/
+
+        def hasInlineLink = inlineLinkPattern.matcher(content).find()
+        def hasLiquidLink = liquidLinkPattern.matcher(content).find()
+        def hasLiquidVar = liquidVarPattern.matcher(content).find()
+
+        if (!hasInlineLink && !hasLiquidLink && !hasLiquidVar) {
+            unlinkedFiles << mdFile
+        }
+    }
+
+    unlinkedFiles
+}
+
+task findUnlinkedMdFilesInFolder(type: DefaultTask) {
+    doLast {
+        def folderPath = "${projectDir}/collections/_history"
+
+        def unlinkedFiles = findUnlinkedMdFiles(folderPath)
+
+        println "リンクのないファイル一覧:"
+        unlinkedFiles.each { println it }
+    }
+}
