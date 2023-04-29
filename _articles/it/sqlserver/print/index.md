@@ -5,3 +5,4 @@ display_order: 100
 created: 2021-08-02
 updated: 2021-08-02
 ---
+- 当メモは、[SQL Serverで任意のメッセージを出力する](https://thinktwice.tech/it/sqlserver/print/)へ移管しました。

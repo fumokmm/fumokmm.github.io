@@ -5,7 +5,7 @@ display_order: 40
 created: 2020-09-28
 updated: 2020-09-28
 ---
-
+- 当メモは、[Visual Studio Codeで矩形選択](https://thinktwice.tech/it/vscode/rectangular_selection/)へ移管しました。
 ## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
 
 <ul id="index_ul">
