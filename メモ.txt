@@ -4,7 +4,7 @@
 ## ビルド (プロジェクトルートにて)
 ./gradlew updateAll -Ptarget=all clean && bundle exec jekyll server
 
-## リリース (_scriptsにて)
+## リリース (_scripts にて)
 git tag
 # → [Shift + G]で最新タグ名確認
 ./git-publish	タグ名
