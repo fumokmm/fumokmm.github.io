@@ -5,4 +5,4 @@ display_order: 20
 created: 2020-09-02
 updated: 2021-01-04
 ---
-こちらはVBAの型についてのメモです。
+- 当メモは、[VBAの型](https://thinktwice.tech/it/vba/type/)へ移管しました。
