@@ -5,3 +5,4 @@ display_order: 10
 created: 2021-09-24
 updated: 2021-09-24
 ---
+- 当メモは、[Windows環境(WSL)にGoをインストール](https://thinktwice.tech/it/go/install_in_windows_wsl/)へ移管しました。
