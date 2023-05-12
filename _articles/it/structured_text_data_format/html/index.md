@@ -5,5 +5,4 @@ display_order: 40
 created: 2021-04-20
 updated: 2021-04-20
 ---
-HTMLのメモです。
-そのうち書きます。
+- 当メモは、[HTMLのメモ](https://thinktwice.tech/it/structured_text_data_format/html/)へ移管しました。

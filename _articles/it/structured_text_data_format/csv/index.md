@@ -5,5 +5,4 @@ display_order: 10
 created: 2021-04-20
 updated: 2021-04-20
 ---
-CSVのメモです。
-そのうち書きます。
+- 当メモは、[CSVのメモ](https://thinktwice.tech/it/structured_text_data_format/csv/)へ移管しました。
