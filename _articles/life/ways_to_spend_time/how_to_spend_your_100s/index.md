@@ -4,4 +4,4 @@ display_order: 100
 created: 2022-09-05
 updated: 2022-09-05
 ---
-書き途中
+- 当メモは、[100代の過ごし方](https://thinktwice.tech/life/ways_to_spend_time/how_to_spend_your_100s/)へ移管しました。

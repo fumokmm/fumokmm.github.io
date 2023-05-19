@@ -4,26 +4,5 @@ display_order: 10
 created: 2021-02-18
 updated: 2021-02-18
 ---
-
-## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
-
-<ul id="index_ul">
-<li><a href="#about">時間について</a></li>
-<li><a href="#reference">参考</a></li>
-</ul>
-
-* * *
-## <a name="about">時間について</a><a class="heading-anchor-permalink" href="#about">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-02-18" updated="2021-02-18" %}</div>
-なぜ時間は過去から未来に流れるのか。なぜ過去は定まっているのに未来は未知なのか。
-
-{% include goto_pagetop.html %}
-
-* * *
-## <a name="reference">参考</a><a class="heading-anchor-permalink" href="#reference">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-02-18" updated="2021-02-18" %}</div>
-- {% include book/book_126.html %} {% comment %} 時間はどこで生まれるのか {% endcomment %}
-
-{% include goto_pagetop.html %}
-
+- 当メモは、[時間について](https://thinktwice.tech/science/physics/time/)へ移管しました。
 {% include articles_common_script.html %}

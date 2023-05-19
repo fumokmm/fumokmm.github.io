@@ -4,5 +4,5 @@ display_order: 90
 created: 2022-09-05
 updated: 2022-09-05
 ---
-書き途中
+- 当メモは、[90代の過ごし方](https://thinktwice.tech/life/ways_to_spend_time/how_to_spend_your_90s/)へ移管しました。
 {% include articles_common_script.html %}

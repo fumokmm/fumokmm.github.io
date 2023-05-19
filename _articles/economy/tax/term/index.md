@@ -5,4 +5,4 @@ display_order: 10
 created: 2023-01-10
 updated: 2023-01-10
 ---
-こちらは税金の用語のメモになります。
+- 当メモは、[税金の用語](https://thinktwice.tech/economy/tax/term/)へ移管しました。

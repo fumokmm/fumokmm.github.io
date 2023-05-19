@@ -4,3 +4,4 @@ display_order: 10
 created: 2022-06-30
 updated: 2023-01-12
 ---
+- 当メモは、[未来予測 2025年](https://thinktwice.tech/science/future_prediction/year2025/)へ移管しました。
