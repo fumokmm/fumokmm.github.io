@@ -4,6 +4,4 @@ display_order: 10
 created: 2010-06-05
 updated: 2021-04-08
 ---
-当メモは2010-06-05に[投稿されたもの](https://npnl.hatenablog.jp/entry/20100605/1275736594)を加筆修正し、再掲したものです。  
-当初の掲載からだいぶ時間が経過していますので、古い内容のものもあると思いますのでご注意下さい。  
-順次アップデートしていく予定です。
+- 当メモは、[Groovy基礎文法最速マスター](https://thinktwice.tech/it/groovy/the_fastest_way_to_master_basic_grammar/)へ移管しました。
