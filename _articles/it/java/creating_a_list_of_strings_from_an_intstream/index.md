@@ -5,4 +5,4 @@ display_order: 80
 created: 2020-08-28
 updated: 2021-07-13
 ---
-当メモは2020-08-28に[投稿されたもの](https://npnl.hatenablog.jp/entry/2020/08/28/190738)を加筆修正し、再掲したものです。
+- 当メモは、[JavaでIntStreamからStringのListを作る](https://thinktwice.tech/it/java/creating_a_list_of_strings_from_an_intstream/)へ移管しました。

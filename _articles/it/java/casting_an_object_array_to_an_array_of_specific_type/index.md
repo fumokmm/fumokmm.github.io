@@ -5,4 +5,4 @@ display_order: 30
 created: 2008-09-02
 updated: 2021-10-03
 ---
-当メモは2008-09-02に[投稿されたもの](https://npnl.hatenablog.jp/entry/20080902/1220372739)を加筆修正し、再掲したものです。
+- 当メモは、[Javaでオブジェクト配列を特定の型の配列にキャストする](https://thinktwice.tech/it/java/casting_an_object_array_to_an_array_of_specific_type/)へ移管しました。
