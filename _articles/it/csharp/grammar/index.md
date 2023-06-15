@@ -5,4 +5,4 @@ display_order: 10
 created: 2022-01-11
 updated: 2022-01-11
 ---
-ここではC#の文法を簡単にまとめておきます。
+- 当メモは、[C#の文法](https://thinktwice.tech/it/csharp/grammar/)へ移管しました。

@@ -5,6 +5,5 @@ display_order: 900
 created: 2020-12-17
 updated: 2023-02-20
 ---
-- 当メモは、[Excelの作業効率を上げるキーコンビネーション](https://thinktwice.tech/it/excel/key_combinations_to_improve_excel_efficiency/)へ移管しました。
-
+- 当メモは、[Excelの作業効率を上げるキーコンビネーションやキーボードショートカット](https://thinktwice.tech/it/excel/keyboard_shortcuts_in_excel/)へ移管しました。
 {% include articles_common_script.html %}
