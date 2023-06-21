@@ -5,4 +5,4 @@ display_order: 50
 created: 2022-07-14
 updated: 2022-08-29
 ---
-XMATCH関数はMATCH関数の上位互換です。使える環境の人は使わない手はないです。
+- 当メモは、[ExcelのXMATCH関数](https://thinktwice.tech/it/excel/formula_xmatch/)へ移管しました。

@@ -5,3 +5,4 @@ display_order: 10
 created: 2022-08-24
 updated: 2022-08-24
 ---
+- 当メモは、[Windows環境(WSL)にZigをインストール](https://thinktwice.tech/it/zig/install_zig_in_windows_wsl/)へ移管しました。

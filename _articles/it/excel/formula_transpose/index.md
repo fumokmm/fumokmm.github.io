@@ -5,4 +5,4 @@ display_order: 20
 created: 2022-05-29
 updated: 2022-08-29
 ---
-TRANSPOSE関数を使うと行列を入れ替えた値を簡単に参照できるようになります。
+- 当メモは、[ExcelのTRANSPOSE関数](https://thinktwice.tech/it/excel/formula_transpose/)へ移管しました。

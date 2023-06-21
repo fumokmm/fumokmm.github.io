@@ -5,4 +5,4 @@ display_order: 30
 created: 2022-05-29
 updated: 2022-05-29
 ---
-LAMBDA関数(ラムダ関数)を使うと簡単な一時関数を作成できます。
+- 当メモは、[ExcelのLAMBDA関数](https://thinktwice.tech/it/excel/formula_lambda/)へ移管しました。

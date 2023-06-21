@@ -5,4 +5,4 @@ display_order: 30
 created: 2022-05-18
 updated: 2022-05-29
 ---
-Excelで他のセルの値を参照してくるとき、セルの値が空白だったりすると「0」と表示されてしまう場合があります。そんなときにその「0」の値を消す方法をメモしておきます。
+- 当メモは、[Excelでセルの値が0の時に0を非表示にする方法](https://thinktwice.tech/it/excel/how_to_hide_zero_in_excel_when_the_value_of_a_cell_is_zero/)へ移管しました。
