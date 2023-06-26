@@ -4,3 +4,4 @@ display_order: 20
 created: 2022-05-12
 updated: 2022-05-12
 ---
+- 当メモは、[完璧主義について](https://thinktwice.tech/life/failure/perfectionism/)へ移管しました。

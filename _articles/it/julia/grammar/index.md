@@ -4,4 +4,4 @@ display_order: 20
 created: 2021-06-09
 updated: 2021-06-09
 ---
-ここではJuliaの文法を簡単にまとめておきます。
+- 当メモは、[Juliaの文法](https://thinktwice.tech/it/julia/grammar_of_julia/)へ移管しました。
