@@ -5,6 +5,6 @@ display_order: 10
 created: 2022-07-04
 updated: 2022-07-04
 ---
-- 当メモは、[Scheme処理系をインストール](https://thinktwice.tech/it/scheme/install/)へ移管しました。
+- 当メモは、[Scheme処理系をインストール](https://thinktwice.tech/it/scheme/install_scheme/)へ移管しました。
 
 {% include articles_common_script.html %}
