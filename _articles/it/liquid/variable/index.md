@@ -4,4 +4,4 @@ display_order: 20
 created: 2021-09-08
 updated: 2021-09-08
 ---
-いくつかの方法で変数に値を設定することができます。
+- 当メモは、[Liquidの変数設定](https://thinktwice.tech/it/liquid/liquid_variable_settings/)へ移管しました。
