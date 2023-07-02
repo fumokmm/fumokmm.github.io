@@ -5,4 +5,4 @@ display_order: 100
 created: 2020-09-14
 updated: 2021-08-10
 ---
-PowerShellの実行ポリシーのについてメモです。
+- 当メモは、[PowerShellの実行ポリシーのについて](https://thinktwice.tech/it/powershell/about_powershell_execution_policies/)へ移管しました。
