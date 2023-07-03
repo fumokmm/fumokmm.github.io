@@ -5,4 +5,4 @@ display_order: 10
 created: 2022-12-20
 updated: 2022-12-20
 ---
-{% capture link_to_it_python %}{% link _it_articles/python/index.md %}{% endcapture %}{% assign link_to_it_python = link_to_it_python | remove: 'index' %}
+- 当メモは、[PDFファイルを結合する](https://thinktwice.tech/it/reverse_resolution/combine_pdf_files/)へ移管しました。
