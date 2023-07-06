@@ -5,25 +5,5 @@ display_order: 10
 created: 2021-05-13
 updated: 2021-05-13
 ---
-## <a name="index">目次</a><a class="heading-anchor-permalink" href="#目次">§</a>
-
-<ul id="index_ul">
-<li><a href="#矩形選択">矩形選択</a></li>
-</ul>
-
-* * *
-## <a name="矩形選択">矩形選択</a><a class="heading-anchor-permalink" href="#矩形選択">§</a>
-<div class="chapter-updated">{% include update_info_inline.html created="2021-05-13" updated="2021-05-13" %}</div>
-- `Alt + マウスで選択`。
-
-![](https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumokmm/20210513/20210513211934.png)
-
-- ちなみに、`Alt`を押さないと行単位の選択になる。
-
-![](https://cdn-ak.f.st-hatena.com/images/fotolife/f/fumokmm/20210513/20210513211429.png)
-
-- 選択した後は、`右クリック`でクリップボードにコピーできる。
-
-{% include goto_pagetop.html %}
-
+- 当メモは、[PowerShellで矩形選択する](https://thinktwice.tech/it/powershell/rectangular_selection_in_powershell/)へ移管しました。
 {% include articles_common_script.html %}
