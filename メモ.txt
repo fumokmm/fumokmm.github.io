@@ -2,8 +2,7 @@
 - 当メモは、[タイトル](URL)へ移管しました。
 
 ## ビルド (プロジェクトルートにて)
-
-
+./gradlew updateAll -Ptarget=all clean && bundle exec jekyll server
 
 ## リリース (_scripts にて)
 git tag
