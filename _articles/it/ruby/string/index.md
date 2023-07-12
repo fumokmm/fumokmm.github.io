@@ -5,4 +5,4 @@ display_order: 20
 created: 2021-03-09
 updated: 2021-03-09
 ---
-ここではRubyの文字列操作について簡単にまとめておきます。
+- 当メモは、[Rubyで文字列操作](https://thinktwice.tech/it/ruby/string_manipulation_in_ruby/)へ移管しました。
