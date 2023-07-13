@@ -5,3 +5,4 @@ display_order: 40
 created: 2021-07-28
 updated: 2021-07-28
 ---
+- 当メモは、[PowerShellでファイルをコピーする](https://thinktwice.tech/it/powershell/copy_a_file_with_powershell/)へ移管しました。
