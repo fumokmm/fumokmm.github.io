@@ -5,3 +5,4 @@ display_order: 50
 created: 2020-09-18
 updated: 2021-08-13
 ---
+- 当メモは、[PowerShellで実行中のスクリプトのあるディレクトリを取得する](https://thinktwice.tech/it/powershell/get_the_directory_where_a_script_is_running_in_powershell/)へ移管しました。
