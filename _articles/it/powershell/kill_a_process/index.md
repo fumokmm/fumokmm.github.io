@@ -5,3 +5,4 @@ display_order: 110
 created: 2022-02-16
 updated: 2022-02-16
 ---
+- 当メモは、[PowerShellでプロセスを強制終了させる](https://thinktwice.tech/it/powershell/kill_a_process_with_powershell/)へ移管しました。
