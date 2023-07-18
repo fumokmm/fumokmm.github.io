@@ -5,4 +5,4 @@ display_order: 70
 created: 2021-12-22
 updated: 2022-02-07
 ---
-
+- 当メモは、[Pythonでタイムスタンプ文字列を作成する](https://thinktwice.tech/it/python/creating_a_timestamp_string_in_python/)へ移管しました。
