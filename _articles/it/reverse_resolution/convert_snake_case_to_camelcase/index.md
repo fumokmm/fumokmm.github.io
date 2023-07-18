@@ -5,4 +5,4 @@ display_order: 30
 created: 2022-03-31
 updated: 2022-03-31
 ---
-{% capture link_to_it_excel %}{% link _it_articles/excel/index.md %}{% endcapture %}{% assign link_to_it_excel = link_to_it_excel | remove: 'index' %}
+- 当メモは、[スネークケースをキャメルケースに変換する](https://thinktwice.tech/it/reverse_resolution/convert_snake_case_to_camelcase/)へ移管しました。

@@ -5,4 +5,4 @@ display_order: 10
 created: 2022-03-27
 updated: 2022-03-27
 ---
-{% capture link_to_it_python %}{% link _it_articles/python/index.md %}{% endcapture %}{% assign link_to_it_python = link_to_it_python | remove: 'index' %}
+- 当メモは、[JSONの読み込み](https://thinktwice.tech/it/reverse_resolution/reading_json/)へ移管しました。

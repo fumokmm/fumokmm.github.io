@@ -5,5 +5,4 @@ display_order: 10
 created: 2022-02-02
 updated: 2022-02-02
 ---
-{% capture link_to_it_python %}{% link _it_articles/python/index.md %}{% endcapture %}
-{% assign link_to_it_python = link_to_it_python | remove: 'index' %}
+- 当メモは、[ファイルのサイズを取得する](https://thinktwice.tech/it/reverse_resolution/get_the_size_of_a_file/)へ移管しました。

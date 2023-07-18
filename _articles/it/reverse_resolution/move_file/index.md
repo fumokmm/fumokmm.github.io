@@ -5,4 +5,4 @@ display_order: 30
 created: 2022-02-21
 updated: 2022-02-21
 ---
-{% capture link_to_it_python %}{% link _it_articles/python/index.md %}{% endcapture %}{% assign link_to_it_python = link_to_it_python | remove: 'index' %}
+- 当メモは、[ファイルを移動する](https://thinktwice.tech/it/reverse_resolution/move_a_file/)へ移管しました。

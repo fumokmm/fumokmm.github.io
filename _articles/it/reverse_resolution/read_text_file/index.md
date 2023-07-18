@@ -5,4 +5,4 @@ display_order: 10
 created: 2022-03-02
 updated: 2022-03-13
 ---
-{% capture link_to_it_ruby %}{% link _it_articles/ruby/index.md %}{% endcapture %}{% assign link_to_it_ruby = link_to_it_ruby | remove: 'index' %}
+- 当メモは、[テキストファイルから入力する(読み込み)](https://thinktwice.tech/it/reverse_resolution/input_from_text_file_read/)へ移管しました。

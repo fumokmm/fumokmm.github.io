@@ -5,5 +5,4 @@ display_order: 20
 created: 2022-02-03
 updated: 2022-02-03
 ---
-{% capture link_to_it_python %}{% link _it_articles/python/index.md %}{% endcapture %}
-{% assign link_to_it_python = link_to_it_python | remove: 'index' %}
+- 当メモは、[ファイルの存在チェック](https://thinktwice.tech/it/reverse_resolution/checking_for_the_existence_of_a_file/)へ移管しました。

@@ -5,4 +5,4 @@ display_order: 20
 created: 2022-03-17
 updated: 2022-03-17
 ---
-{% capture link_to_it_powershell %}{% link _it_articles/powershell/index.md %}{% endcapture %}{% assign link_to_it_powershell = link_to_it_powershell | remove: 'index' %}
+- 当メモは、[スクリプトの引数](https://thinktwice.tech/it/reverse_resolution/script_arguments/)へ移管しました。
