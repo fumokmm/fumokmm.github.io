@@ -5,5 +5,4 @@ display_order: 30
 created: 2022-02-02
 updated: 2022-02-02
 ---
-{% capture link_to_it_java %}{% link _it_articles/java/index.md %}{% endcapture %}
-{% assign link_to_it_java = link_to_it_java | remove: 'index' %}
+- 当メモは、[Pythonのコンテキストマネージャ](https://thinktwice.tech/it/python/context_manager_in_python/)へ移管しました。
