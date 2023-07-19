@@ -5,4 +5,4 @@ display_order: 20
 created: 2020-11-21
 updated: 2020-11-21
 ---
-- 当メモは、[SQL Serverでテーブル定義情報を取得するSQL](https://thinktwice.tech/it/sqlserver/sql_to_get_table_definition_information_in_sqlserver/)へ移管しました。
+- 当メモは、[SQL Serverでテーブル定義情報を取得するSQL](https://thinktwice.tech/it/sqlserver/sql_to_get_table_definition_information_in_sql_server/)へ移管しました。

@@ -5,4 +5,4 @@ display_order: 45
 created: 2021-02-15
 updated: 2021-02-15
 ---
-※メモの中で出てくる人物名は仮名です。たまたま同性同名の方がいらっしゃいましたらごめんなさい。
+- 当メモは、[SQL ServerのRANK, DENSE_RANK, ROW_NUMBERの違い](https://thinktwice.tech/it/sqlserver/difference_between_rank_dense_rank_and_row_number_in_sql_server/)へ移管しました。
