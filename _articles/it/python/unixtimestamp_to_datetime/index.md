@@ -5,3 +5,4 @@ display_order: 80
 created: 2022-01-26
 updated: 2022-01-26
 ---
+- 当メモは、[PythonでUNIXタイムスタンプからdatetimeへ変換する](https://thinktwice.tech/it/python/convert_unix_timestamp_to_datetime_in_python/)へ移管しました。
