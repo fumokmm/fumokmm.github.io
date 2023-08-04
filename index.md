@@ -1,11 +1,12 @@
 ---
 title: Home
 created: 2020-09-02
-updated: 2023-04-20
+updated: 2023-07-31
 ---
 <div style="border: 1px solid red; padding: 5px;">
-当サイトは新ドメイン(<a href="https://thinktwice.tech/">https://thinktwice.tech/</a>)へ順次移管中です。<br>
-移管完了後、サイトはクローズ予定です。2023-04-20
+当サイトは新ドメイン(<a href="https://thinktwice.tech/">https://thinktwice.tech/</a>)へ移管が完了しました。<br>
+今後新たにメモが追加されることはありません。<br>
+最新の内容は新ドメインの方を御覧ください。2023-07-31
 </div>
 
 # これは何？
