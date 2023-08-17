@@ -5,6 +5,6 @@ display_order: 20
 created: 2019-12-04
 updated: 2021-07-13
 ---
-- 当メモは、[Kotlinでクラスパス上にあるプロパティファイルを読み込む](https://thinktwice.tech/it/kotlin/read_property_files_on_the_classpath/)へ移管しました。
+- 当メモは、[Kotlinでクラスパス上にあるプロパティファイルを読み込む](https://thinktwice.tech/it/kotlin/reading_property_files_on_the_classpath_in_kotlin/)へ移管しました。
 
 {% include articles_common_script.html %}

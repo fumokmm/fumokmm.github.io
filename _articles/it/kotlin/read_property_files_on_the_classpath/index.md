@@ -1,8 +1,0 @@
----
-title: Kotlinでクラスパス上にあるプロパティファイルを読み込む
-article_group_id: howto-group
-display_order: 20
-created: 2019-12-04
-updated: 2021-07-13
----
-- 当メモは、[Kotlinでクラスパス上にあるプロパティファイルを読み込む](https://thinktwice.tech/it/kotlin/read_property_files_on_the_classpath/)へ移管しました。
